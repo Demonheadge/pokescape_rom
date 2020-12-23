@@ -7,37 +7,34 @@
 
 struct PokemonSubstruct0
 {
-    /*0x00*/ u16 species;
-    /*0x02*/ u16 heldItem;
-    /*0x04*/ u32 experience;
-    /*0x08*/ u8 ppBonuses;
-    /*0x09*/ u8 friendship;
-    /*0x0A*/ u8 pokeball:5; //31 balls
-             u8 unused0_A:3;
-    /*0x0B*/ u8 unused0_B;
-}; /* size = 12 */
+    u16 species;
+    u16 heldItem;
+    u32 experience;
+    u8 ppBonuses;
+    u8 friendship;
+};
 
 struct PokemonSubstruct1
 {
-    /*0x00*/ u16 moves[MAX_MON_MOVES];
-    /*0x08*/ u8 pp[MAX_MON_MOVES];
-}; /* size = 12 */
+    u16 moves[MAX_MON_MOVES];
+    u8 pp[MAX_MON_MOVES];
+};
 
 struct PokemonSubstruct2
 {
-    /*0x00*/ u8 hpEV;
-    /*0x01*/ u8 attackEV;
-    /*0x02*/ u8 defenseEV;
-    /*0x03*/ u8 speedEV;
-    /*0x04*/ u8 spAttackEV;
-    /*0x05*/ u8 spDefenseEV;
-    /*0x06*/ u8 cool;
-    /*0x07*/ u8 beauty;
-    /*0x08*/ u8 cute;
-    /*0x09*/ u8 smart;
-    /*0x0A*/ u8 tough;
-    /*0x0B*/ u8 sheen;
-}; /* size = 12 */
+    u8 hpEV;
+    u8 attackEV;
+    u8 defenseEV;
+    u8 speedEV;
+    u8 spAttackEV;
+    u8 spDefenseEV;
+    u8 cool;
+    u8 beauty;
+    u8 cute;
+    u8 smart;
+    u8 tough;
+    u8 sheen;
+};
 
 struct PokemonSubstruct3
 {
@@ -46,7 +43,7 @@ struct PokemonSubstruct3
 
  /* 0x02 */ u16 metLevel:7;
  /* 0x02 */ u16 metGame:4;
- /* 0x03 */ u16 unused3_3:4;
+ /* 0x03 */ u16 pokeball:4;
  /* 0x03 */ u16 otGender:1;
 
  /* 0x04 */ u32 hpIV:5;
@@ -77,7 +74,7 @@ struct PokemonSubstruct3
  /* 0x0B */ u32 giftRibbon7:1;
  /* 0x0B */ u32 fatefulEncounter:4;
  /* 0x0B */ u32 obedient:1;
-}; /* size = 12 */
+};
 
 union PokemonSubstruct
 {
