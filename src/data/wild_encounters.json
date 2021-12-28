@@ -96,33 +96,68 @@
         {
           "map": "MAP_ROUTE1",
           "base_label": "gRoute10",
-          "water_mons": {
-            "encounter_rate": 0,
+          "land_mons": {
+            "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRAYFISH"
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_CHICK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_COD"
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_LAMB"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_CALF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROGSPAWN"
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_CHICK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_FROG_NORMAL_FORM"
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 1,
+                "max_level": 6,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_PENGLING"
               }
             ]
           },
@@ -191,68 +226,33 @@
               }
             ]
           },
-          "land_mons": {
-            "encounter_rate": 20,
+          "water_mons": {
+            "encounter_rate": 0,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 3,
-                "species": "SPECIES_CHICK"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CRAYFISH"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
-                "species": "SPECIES_LAMB"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_COD"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
-                "species": "SPECIES_CALF"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
               },
               {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_CHICK"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROGSPAWN"
               },
               {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 1,
-                "max_level": 6,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_PENGLING"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GIANT_FROG_NORMAL_FORM"
               }
             ]
           }
@@ -260,6 +260,71 @@
         {
           "map": "MAP_LUMBRIDGE_SWAMP",
           "base_label": "gLumbridge_Swamp0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_FROGSPAWN"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 7,
+                "max_level": 11,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 11,
+                "species": "SPECIES_SNAKE_NORMAL_FORM"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SNAKE_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_SALAMANDER_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -344,76 +409,76 @@
                 "species": "SPECIES_BUNYIP"
               }
             ]
-          },
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_FROGSPAWN"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 7,
-                "max_level": 11,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_CROW"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_SNAKE_NORMAL_FORM"
-              },
-              {
-                "min_level": 8,
-                "max_level": 11,
-                "species": "SPECIES_SNAKE_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_SALAMANDER_GREEN_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 8,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 8,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              }
-            ]
           }
         },
         {
           "map": "MAP_LUMBRIDGE",
           "base_label": "gLumbridge0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 6,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 6,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 6,
+                "species": "SPECIES_IMP"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -498,76 +563,76 @@
                 "species": "SPECIES_EEL_SLIMY_FORM"
               }
             ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 6,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 6,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 5,
-                "max_level": 6,
-                "species": "SPECIES_IMP"
-              }
-            ]
           }
         },
         {
           "map": "MAP_DRAYNOR",
           "base_label": "gDraynor0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMP"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -652,64 +717,68 @@
                 "species": "SPECIES_TARPON"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_PORT_SARIM",
+          "base_label": "gPort_Sarim0",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PIGLET"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_WINSTON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_SQUIRREL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_SPIDER_GIANT_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_CRABLET_FIRST_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_CRABLET_FIRST_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_PLANT_STRANGE_FORM"
               },
               {
                 "min_level": 5,
@@ -717,11 +786,7 @@
                 "species": "SPECIES_IMP"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_PORT_SARIM",
-          "base_label": "gPort_Sarim0",
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -806,44 +871,28 @@
                 "species": "SPECIES_JELLYFISH"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_RIMMINGTON",
+          "base_label": "gRimmington0",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+                "species": "SPECIES_IMPLING_BABY_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAT_NORMAL_FORM"
+                "species": "SPECIES_CROW"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WINSTON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SQUIRREL"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+                "species": "SPECIES_RAVENLING"
               },
               {
                 "min_level": 5,
@@ -853,29 +902,45 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CRABLET_FIRST_FORM"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CRABLET_FIRST_FORM"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PLANT_STRANGE_FORM"
+                "species": "SPECIES_CHICK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMP"
+                "species": "SPECIES_PUPPY_PUP_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CABBAGE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDER_HUGE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HATCHLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CRABLING"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_RIMMINGTON",
-          "base_label": "gRimmington0",
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -960,10 +1025,58 @@
                 "species": "SPECIES_BELTFISH"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_RIMMINGTON",
+          "base_label": "gRimmington1"
+        },
+        {
+          "map": "MAP_FALADOR",
+          "base_label": "gFalador0",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUCKLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDER_GIANT_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PUPPY_PUP_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KITTEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_MOLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUCK_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUCKLING"
+              },
               {
                 "min_level": 5,
                 "max_level": 5,
@@ -977,63 +1090,15 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAVENLING"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SPIDER_GIANT_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PUPPY_PUP_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CABBAGE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDER_HUGE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HATCHLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRABLING"
+                "species": "SPECIES_DUCK_NORMAL_FORM"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_RIMMINGTON",
-          "base_label": "gRimmington1"
-        },
-        {
-          "map": "MAP_FALADOR",
-          "base_label": "gFalador0",
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -1118,76 +1183,76 @@
                 "species": "SPECIES_DUCK_NORMAL_FORM"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_ROUTE10",
+          "base_label": "gRoute100",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUCKLING"
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SPIDER_GIANT_FORM"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PUPPY_PUP_FORM"
+                "species": "SPECIES_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_KITTEN"
+                "species": "SPECIES_RACOON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMP"
+                "species": "SPECIES_KEBBIT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BABY_MOLE"
+                "species": "SPECIES_RACOON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUCK_NORMAL_FORM"
+                "species": "SPECIES_SPIDER_HUGE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUCKLING"
+                "species": "SPECIES_RACOON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
+                "species": "SPECIES_SPIDER_HUGE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUCK_NORMAL_FORM"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_ROUTE10",
-          "base_label": "gRoute100",
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -1272,76 +1337,76 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RACOON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 9,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_KEBBIT"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RACOON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDER_HUGE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RACOON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDER_HUGE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              }
-            ]
           }
         },
         {
           "map": "MAP_ROUTE11",
           "base_label": "gRoute11",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 25,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_WINSTON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_HERBERT"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_HERBERT"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_WINSTON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_CRABLING"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_WINSTON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_CRAB_MOSS_FORM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_CRAB_RED_FORM"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -1426,76 +1491,76 @@
                 "species": "SPECIES_CRAB_GREY_FORM"
               }
             ]
-          },
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 25,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_WINSTON"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_HERBERT"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_HERBERT"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_SEAGULL_NORMAL_FORM"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_WINSTON"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_CRABLING"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_WINSTON"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_CRAB_MOSS_FORM"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_CRAB_RED_FORM"
-              }
-            ]
           }
         },
         {
           "map": "MAP_ROUTE12",
           "base_label": "gRoute12",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_RABBIT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 1,
+                "max_level": 4,
+                "species": "SPECIES_RABBIT"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -1580,76 +1645,76 @@
                 "species": "SPECIES_GOBLINFISH"
               }
             ]
-          },
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_RABBIT"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 4,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 1,
-                "max_level": 4,
-                "species": "SPECIES_RABBIT"
-              }
-            ]
           }
         },
         {
           "map": "MAP_ROUTE13",
           "base_label": "gRoute13",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_COW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHEEP_WHITE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BEAR_CUB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KEBBIT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FOAL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BULL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RAM_FLUFFY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PYREFIEND"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SCORPLING"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -1732,71 +1797,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_COW"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SHEEP_WHITE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BEAR_CUB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_KEBBIT"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FOAL"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BULL"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RAM_FLUFFY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PYREFIEND"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SCORPLING"
               }
             ]
           }
@@ -2169,71 +2169,6 @@
         {
           "map": "MAP_MILL_LANE_MILL",
           "base_label": "gMill_Lane_Mill0",
-          "wheat_mons": {
-            "encounter_rate": 40,
-            "mons": [
-              {
-                "min_level": 2,
-                "max_level": 8,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 3,
-                "max_level": 8,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 8,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 4,
-                "max_level": 8,
-                "species": "SPECIES_CROW"
-              },
-              {
-                "min_level": 3,
-                "max_level": 10,
-                "species": "SPECIES_CROW"
-              },
-              {
-                "min_level": 2,
-                "max_level": 9,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 3,
-                "max_level": 8,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 3,
-                "max_level": 9,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 3,
-                "max_level": 8,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 5,
-                "max_level": 9,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 10,
-                "species": "SPECIES_BABY_YAK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_BABY_YAK"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -2295,6 +2230,71 @@
               {
                 "min_level": 3,
                 "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
+              }
+            ]
+          },
+          "wheat_mons": {
+            "encounter_rate": 40,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 8,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 3,
+                "max_level": 8,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 8,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 3,
+                "max_level": 10,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 2,
+                "max_level": 9,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 3,
+                "max_level": 8,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 3,
+                "max_level": 9,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 3,
+                "max_level": 8,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 10,
+                "species": "SPECIES_BABY_YAK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
                 "species": "SPECIES_BABY_YAK"
               }
             ]
@@ -2682,36 +2682,6 @@
         {
           "map": "MAP_TZHAAR_FIGHT_CAVES",
           "base_label": "gTzhaar_FightCaves0",
-          "water_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -2774,6 +2744,36 @@
                 "min_level": 5,
                 "max_level": 100,
                 "species": "SPECIES_JAL_MEJRAH"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
@@ -2919,121 +2919,6 @@
         {
           "map": "MAP_LUMBRIDGE_SWAMP_CAVES",
           "base_label": "gLumbridge_Swamp_Caves0",
-          "fishing_mons": {
-            "encounter_rate": 30,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROGSPAWN"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROGSPAWN"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_CAVE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 180,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 4,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROGSPAWN"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_CAVE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -3098,41 +2983,126 @@
                 "species": "SPECIES_STRYKEWYRM_MINI_FORM"
               }
             ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 180,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROGSPAWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROGSPAWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_CAVE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROGSPAWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_CAVE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              }
+            ]
           }
         },
         {
           "map": "MAP_DWARVEN_MINE_B1F",
           "base_label": "gDwarven_Mine_B1F0",
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -3195,6 +3165,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_SCORPION_PIT_FORM"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
@@ -3754,91 +3754,6 @@
         {
           "map": "MAP_ROUTE2",
           "base_label": "gRoute20",
-          "fishing_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -3903,11 +3818,7 @@
                 "species": "SPECIES_IMP"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_WIZARDS_TOWER",
-          "base_label": "gWizardsTower0",
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -3992,7 +3903,11 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_WIZARDS_TOWER",
+          "base_label": "gWizardsTower0",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -4057,11 +3972,7 @@
                 "species": "SPECIES_SNOW_IMP"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_MUDSKIPPER_POINT",
-          "base_label": "gMudskipperPoint0",
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -4146,7 +4057,11 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_MUDSKIPPER_POINT",
+          "base_label": "gMudskipperPoint0",
           "land_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -4211,11 +4126,7 @@
                 "species": "SPECIES_CRAB_MOSS_FORM"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_ROUTE9",
-          "base_label": "gRoute90",
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -4244,36 +4155,6 @@
                 "max_level": 5,
                 "species": "SPECIES_NONE"
               },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
@@ -4330,7 +4211,11 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_ROUTE9",
+          "base_label": "gRoute90",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -4395,11 +4280,37 @@
                 "species": "SPECIES_PLANT_STRANGE_FORM"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_ROUTE8",
-          "base_label": "gRoute80",
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -4428,36 +4339,6 @@
                 "max_level": 5,
                 "species": "SPECIES_NONE"
               },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
@@ -4514,7 +4395,11 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_ROUTE8",
+          "base_label": "gRoute80",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -4579,11 +4464,37 @@
                 "species": "SPECIES_COW"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_ROUTE4",
-          "base_label": "gRoute40",
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -4668,7 +4579,11 @@
                 "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_ROUTE4",
+          "base_label": "gRoute40",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -4731,6 +4646,91 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_BIRD_NEST"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
@@ -4807,36 +4807,6 @@
         {
           "map": "MAP_ROUTE38",
           "base_label": "gRoute380",
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -4899,6 +4869,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_BLOODVELD_MUTATED_PHYSICAL_FORM"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
@@ -5044,91 +5044,6 @@
         {
           "map": "MAP_DRAYNOR_SEWERS_4",
           "base_label": "gDraynor_Sewers_40",
-          "fishing_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CROCODILE_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_SLIMY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_EEL_CAVE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CROCODILE_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CROCODILE_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CROCODILE_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -5193,96 +5108,96 @@
                 "species": "SPECIES_CROCODILE_NORMAL_FORM"
               }
             ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROCODILE_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SLIMY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_CAVE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROCODILE_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROCODILE_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROCODILE_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOBLINFISH"
+              }
+            ]
           }
         },
         {
           "map": "MAP_VARROCK_SEWERS_1F",
           "base_label": "gVarrock_Sewers_1F0",
-          "fishing_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -5347,69 +5262,35 @@
                 "species": "SPECIES_SPIDER_DEADLYRED_FORM"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_SINKHOLE_1",
-          "base_label": "gSinkhole_10",
-          "fishing_mons": {
-            "encounter_rate": 50,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BLUE_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_LOBSTER_HEIM_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
-              }
-            ]
           },
-          "rock_smash_mons": {
-            "encounter_rate": 50,
+          "fishing_mons": {
+            "encounter_rate": 0,
             "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
               {
                 "min_level": 5,
                 "max_level": 5,
@@ -5438,35 +5319,39 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 50,
+            "encounter_rate": 0,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_HEIM_CRAB"
+                "species": "SPECIES_NONE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_EEL_DUSK_FORM"
+                "species": "SPECIES_NONE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_EEL_SALVE_FORM"
+                "species": "SPECIES_NONE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_EEL_CAVE_FORM"
+                "species": "SPECIES_NONE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BLUE_CRAB"
+                "species": "SPECIES_NONE"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_SINKHOLE_1",
+          "base_label": "gSinkhole_10",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -5529,6 +5414,121 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_DEMON_PUMMELER_FORM"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BLUE_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LOBSTER_HEIM_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HEIM_CRAB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_DUSK_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_SALVE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EEL_CAVE_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BLUE_CRAB"
               }
             ]
           }

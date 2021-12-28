@@ -12,16 +12,6 @@
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
     {
-      "id": "LAYOUT_SLATEPORT_CITY",
-      "name": "SlateportCity_Layout",
-      "width": 40,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
-      "border_filepath": "data/layouts/SlateportCity/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity/map.bin"
-    },
-    {
       "id": "LAYOUT_MAUVILLE_CITY",
       "name": "MauvilleCity_Layout",
       "width": 40,
@@ -72,16 +62,6 @@
       "blockdata_filepath": "data/layouts/MossdeepCity/map.bin"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY",
-      "name": "SootopolisCity_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
       "width": 40,
@@ -110,16 +90,6 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/OldaleTown/border.bin",
       "blockdata_filepath": "data/layouts/OldaleTown/map.bin"
-    },
-    {
-      "id": "LAYOUT_DEWFORD_TOWN",
-      "name": "DewfordTown_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/DewfordTown/border.bin",
-      "blockdata_filepath": "data/layouts/DewfordTown/map.bin"
     },
     {
       "id": "LAYOUT_LAVARIDGE_TOWN",
@@ -172,206 +142,6 @@
       "blockdata_filepath": "data/layouts/Route101/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE110",
-      "name": "Route110_Layout",
-      "width": 40,
-      "height": 100,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/Route110/border.bin",
-      "blockdata_filepath": "data/layouts/Route110/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE111",
-      "name": "Route111_Layout",
-      "width": 40,
-      "height": 140,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/Route111/border.bin",
-      "blockdata_filepath": "data/layouts/Route111/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE112",
-      "name": "Route112_Layout",
-      "width": 40,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/Route112/border.bin",
-      "blockdata_filepath": "data/layouts/Route112/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE113",
-      "name": "Route113_Layout",
-      "width": 100,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
-      "border_filepath": "data/layouts/Route113/border.bin",
-      "blockdata_filepath": "data/layouts/Route113/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE114",
-      "name": "Route114_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
-      "border_filepath": "data/layouts/Route114/border.bin",
-      "blockdata_filepath": "data/layouts/Route114/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE115",
-      "name": "Route115_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
-      "border_filepath": "data/layouts/Route115/border.bin",
-      "blockdata_filepath": "data/layouts/Route115/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE116",
-      "name": "Route116_Layout",
-      "width": 100,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/Route116/border.bin",
-      "blockdata_filepath": "data/layouts/Route116/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE117",
-      "name": "Route117_Layout",
-      "width": 60,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/Route117/border.bin",
-      "blockdata_filepath": "data/layouts/Route117/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE118",
-      "name": "Route118_Layout",
-      "width": 80,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/Route118/border.bin",
-      "blockdata_filepath": "data/layouts/Route118/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE119",
-      "name": "Route119_Layout",
-      "width": 40,
-      "height": 140,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/Route119/border.bin",
-      "blockdata_filepath": "data/layouts/Route119/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE120",
-      "name": "Route120_Layout",
-      "width": 40,
-      "height": 100,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/Route120/border.bin",
-      "blockdata_filepath": "data/layouts/Route120/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE121",
-      "name": "Route121_Layout",
-      "width": 80,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
-      "border_filepath": "data/layouts/Route121/border.bin",
-      "blockdata_filepath": "data/layouts/Route121/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE122",
-      "name": "Route122_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
-      "border_filepath": "data/layouts/Route122/border.bin",
-      "blockdata_filepath": "data/layouts/Route122/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE123",
-      "name": "Route123_Layout",
-      "width": 140,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
-      "border_filepath": "data/layouts/Route123/border.bin",
-      "blockdata_filepath": "data/layouts/Route123/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE124",
-      "name": "Route124_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route124/border.bin",
-      "blockdata_filepath": "data/layouts/Route124/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE125",
-      "name": "Route125_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route125/border.bin",
-      "blockdata_filepath": "data/layouts/Route125/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE126",
-      "name": "Route126_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route126/border.bin",
-      "blockdata_filepath": "data/layouts/Route126/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE127",
-      "name": "Route127_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route127/border.bin",
-      "blockdata_filepath": "data/layouts/Route127/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE128",
-      "name": "Route128_Layout",
-      "width": 120,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route128/border.bin",
-      "blockdata_filepath": "data/layouts/Route128/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE129",
-      "name": "Route129_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/Route129/border.bin",
-      "blockdata_filepath": "data/layouts/Route129/map.bin"
-    },
-    {
       "id": "LAYOUT_ROUTE130_MIRAGE_ISLAND",
       "name": "Route130_MirageIsland_Layout",
       "width": 80,
@@ -380,76 +150,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route130_MirageIsland/border.bin",
       "blockdata_filepath": "data/layouts/Route130_MirageIsland/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE131",
-      "name": "Route131_Layout",
-      "width": 60,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route131/border.bin",
-      "blockdata_filepath": "data/layouts/Route131/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE132",
-      "name": "Route132_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route132/border.bin",
-      "blockdata_filepath": "data/layouts/Route132/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE133",
-      "name": "Route133_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route133/border.bin",
-      "blockdata_filepath": "data/layouts/Route133/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE134",
-      "name": "Route134_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route134/border.bin",
-      "blockdata_filepath": "data/layouts/Route134/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE126",
-      "name": "Underwater_Route126_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route126/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route126/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE127",
-      "name": "Underwater_Route127_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route127/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route127/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE128",
-      "name": "Underwater_Route128_Layout",
-      "width": 120,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route128/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route128/map.bin"
     },
     {
       "id": "LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
@@ -562,26 +262,6 @@
       "blockdata_filepath": "data/layouts/House3/map.bin"
     },
     {
-      "id": "LAYOUT_DEWFORD_TOWN_GYM",
-      "name": "DewfordTown_Gym_Layout",
-      "width": 18,
-      "height": 28,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_DewfordGym",
-      "border_filepath": "data/layouts/DewfordTown_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/DewfordTown_Gym/map.bin"
-    },
-    {
-      "id": "LAYOUT_DEWFORD_TOWN_HALL",
-      "name": "DewfordTown_Hall_Layout",
-      "width": 17,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/DewfordTown_Hall/border.bin",
-      "blockdata_filepath": "data/layouts/DewfordTown_Hall/map.bin"
-    },
-    {
       "id": "LAYOUT_HOUSE4",
       "name": "House4_Layout",
       "width": 10,
@@ -682,26 +362,6 @@
       "blockdata_filepath": "data/layouts/HouseWithBed/map.bin"
     },
     {
-      "id": "LAYOUT_SLATEPORT_CITY_STERNS_SHIPYARD_1F",
-      "name": "SlateportCity_SternsShipyard_1F_Layout",
-      "width": 21,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
-      "name": "SlateportCity_SternsShipyard_2F_Layout",
-      "width": 17,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_2F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_2F/map.bin"
-    },
-    {
       "id": "LAYOUT_UNKNOWN_084294C4",
       "name": "Unknown_084294C4_Layout",
       "width": 1,
@@ -720,36 +380,6 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/Unknown_084294E8/border.bin",
       "blockdata_filepath": "data/layouts/Unknown_084294E8/map.bin"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_POKEMON_FAN_CLUB",
-      "name": "SlateportCity_PokemonFanClub_Layout",
-      "width": 14,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonFanClub",
-      "border_filepath": "data/layouts/SlateportCity_PokemonFanClub/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_PokemonFanClub/map.bin"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
-      "name": "SlateportCity_OceanicMuseum_1F_Layout",
-      "width": 20,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
-      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
-      "name": "SlateportCity_OceanicMuseum_2F_Layout",
-      "width": 20,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
-      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F/map.bin"
     },
     {
       "id": "LAYOUT_HARBOR",
@@ -962,26 +592,6 @@
       "blockdata_filepath": "data/layouts/MossdeepCity_Gym/map.bin"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_1F",
-      "name": "SootopolisCity_Gym_1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_B1F",
-      "name": "SootopolisCity_Gym_B1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_SIDNEYS_ROOM",
       "name": "EverGrandeCity_SidneysRoom_Layout",
       "width": 13,
@@ -1172,16 +782,6 @@
       "blockdata_filepath": "data/layouts/RusturfTunnel/map.bin"
     },
     {
-      "id": "LAYOUT_UNDERWATER_SOOTOPOLIS_CITY",
-      "name": "Underwater_SootopolisCity_Layout",
-      "width": 20,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_SootopolisCity/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_SootopolisCity/map.bin"
-    },
-    {
       "id": "LAYOUT_DESERT_RUINS",
       "name": "DesertRuins_Layout",
       "width": 17,
@@ -1300,16 +900,6 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/MtPyre_6F/border.bin",
       "blockdata_filepath": "data/layouts/MtPyre_6F/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_SEAFLOOR_CAVERN",
-      "name": "Underwater_SeafloorCavern_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_SeafloorCavern/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_SeafloorCavern/map.bin"
     },
     {
       "id": "LAYOUT_SEAFLOOR_CAVERN_ENTRANCE",
@@ -2412,16 +2002,6 @@
       "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/map.bin"
     },
     {
-      "id": "LAYOUT_UNDERWATER_ROUTE124",
-      "name": "Underwater_Route124_Layout",
-      "width": 80,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route124/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route124/map.bin"
-    },
-    {
       "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_1F",
       "name": "MossdeepCity_SpaceCenter_1F_Layout",
       "width": 16,
@@ -2490,26 +2070,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AncientTomb/border.bin",
       "blockdata_filepath": "data/layouts/AncientTomb/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE134",
-      "name": "Underwater_Route134_Layout",
-      "width": 18,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route134/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route134/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_SEALED_CHAMBER",
-      "name": "Underwater_SealedChamber_Layout",
-      "width": 22,
-      "height": 48,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_SealedChamber/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_SealedChamber/map.bin"
     },
     {
       "id": "LAYOUT_SEALED_CHAMBER_OUTER_ROOM",
@@ -2642,16 +2202,6 @@
       "blockdata_filepath": "data/layouts/RustboroCity_Flat2_3F/map.bin"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
-      "name": "SootopolisCity_LotadAndSeedotHouse_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_HALL_OF_FAME",
       "name": "EverGrandeCity_HallOfFame_Layout",
       "width": 15,
@@ -2740,36 +2290,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE1",
-      "name": "SootopolisCity_House1_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House1/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House1/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE2",
-      "name": "SootopolisCity_House2_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House2/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House2/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE3",
-      "name": "SootopolisCity_House3_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House3/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
@@ -3200,16 +2720,6 @@
       "secondary_tileset": "gTileset_BattleArena",
       "border_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LEGENDS_BATTLE",
-      "name": "SootopolisCity_LegendsBattle_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity_LegendsBattle/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LegendsBattle/map.bin"
     },
     {
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS",
@@ -3692,16 +3202,6 @@
       "blockdata_filepath": "data/layouts/IslandHarbor/map.bin"
     },
     {
-      "id": "LAYOUT_UNDERWATER_MARINE_CAVE",
-      "name": "Underwater_MarineCave_Layout",
-      "width": 20,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_MarineCave/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_MarineCave/map.bin"
-    },
-    {
       "id": "LAYOUT_MARINE_CAVE_ENTRANCE",
       "name": "MarineCave_Entrance_Layout",
       "width": 20,
@@ -3730,36 +3230,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TerraCave_End/border.bin",
       "blockdata_filepath": "data/layouts/TerraCave_End/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE105",
-      "name": "Underwater_Route105_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route105/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route105/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE125",
-      "name": "Underwater_Route125_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route125/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route125/map.bin"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE129",
-      "name": "Underwater_Route129_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route129/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route129/map.bin"
     },
     {
       "id": "LAYOUT_MARINE_CAVE_END",
@@ -4020,36 +3490,6 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SkyPillar_Top_Clean/border.bin",
       "blockdata_filepath": "data/layouts/SkyPillar_Top_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
-      "name": "SootopolisCity_MysteryEventsHouse_B1F_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F_STAIRS_UNBLOCKED",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
       "id": "LAYOUT_LUMBRIDGE",

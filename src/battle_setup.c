@@ -615,8 +615,8 @@ u8 BattleSetup_GetTerrainId(void)
         if (MetatileBehavior_IsBridge(tileBehavior) == TRUE)
             return BATTLE_TERRAIN_WATER;
     }
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE113) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE113))
-        return BATTLE_TERRAIN_SAND;
+    //if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE113) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE113))
+    //    return BATTLE_TERRAIN_SAND;
     if (GetSav1Weather() == 8)
         return BATTLE_TERRAIN_SAND;
 

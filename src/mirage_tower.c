@@ -261,9 +261,9 @@ static u16 gUnknown_030012A8[8];
 
 bool8 IsMirageTowerVisible(void)
 {
-    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)))
-        return FALSE;
-    return FlagGet(FLAG_MIRAGE_TOWER_VISIBLE);
+    //if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)))
+    //    return FALSE;
+    //return FlagGet(FLAG_MIRAGE_TOWER_VISIBLE);
 }
 
 static void UpdateMirageTowerPulseBlend(u8 taskId)
@@ -284,10 +284,10 @@ void TryStartMirageTowerPulseBlendEffect(void)
         return;
     }
 
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(ROUTE111)
-     || gSaveBlock1Ptr->location.mapNum != MAP_NUM(ROUTE111)
-     || !FlagGet(FLAG_MIRAGE_TOWER_VISIBLE))
-        return;
+    //if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(ROUTE111)
+    // || gSaveBlock1Ptr->location.mapNum != MAP_NUM(ROUTE111)
+    // || !FlagGet(FLAG_MIRAGE_TOWER_VISIBLE))
+    //    return;
 
     sMirageTowerPulseBlend = AllocZeroed(sizeof(*sMirageTowerPulseBlend));
     InitPulseBlend(&sMirageTowerPulseBlend->pulseBlend);
@@ -298,11 +298,11 @@ void TryStartMirageTowerPulseBlendEffect(void)
 
 void ClearMirageTowerPulseBlendEffect(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(ROUTE111)
-     || gSaveBlock1Ptr->location.mapNum   != MAP_NUM(ROUTE111)
-     || !FlagGet(FLAG_MIRAGE_TOWER_VISIBLE)
-     || sMirageTowerPulseBlend == NULL)
-        return;
+    //if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(ROUTE111)
+    // || gSaveBlock1Ptr->location.mapNum   != MAP_NUM(ROUTE111)
+    // || !FlagGet(FLAG_MIRAGE_TOWER_VISIBLE)
+    // || sMirageTowerPulseBlend == NULL)
+    //    return;
 
     if (FuncIsActiveTask(UpdateMirageTowerPulseBlend))
         DestroyTask(sMirageTowerPulseBlend->taskId);

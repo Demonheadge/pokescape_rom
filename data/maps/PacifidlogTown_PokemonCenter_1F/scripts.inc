@@ -6,7 +6,7 @@ PacifidlogTown_PokemonCenter_1F_MapScripts:: @ 82034A7
 	.byte 0
 
 PacifidlogTown_PokemonCenter_1F_OnTransition: @ 82034B2
-	setrespawn HEAL_LOCATION_PACIFIDLOG_TOWN
+
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_Nurse:: @ 82034B6

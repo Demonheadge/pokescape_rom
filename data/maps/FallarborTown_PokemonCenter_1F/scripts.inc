@@ -7,7 +7,6 @@ FallarborTown_PokemonCenter_1F_MapScripts:: @ 8200BCD
 	.byte 0
 
 FallarborTown_PokemonCenter_1F_OnTransition: @ 8200BD8
-	setrespawn HEAL_LOCATION_FALLARBOR_TOWN
 	call Common_EventScript_UpdateBrineyLocation
 	end
 

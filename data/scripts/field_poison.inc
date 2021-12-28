@@ -21,6 +21,6 @@ EventScript_FieldWhiteOut:: @ 82736D9
 	end
 
 EventScript_SetRespawnLavaridgePkmnCenter:: @ 82736F4
-	setrespawn HEAL_LOCATION_LAVARIDGE_TOWN
+
 	return
 

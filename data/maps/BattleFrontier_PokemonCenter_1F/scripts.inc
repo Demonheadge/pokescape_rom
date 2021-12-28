@@ -6,7 +6,7 @@ BattleFrontier_PokemonCenter_1F_MapScripts:: @ 82678F9
 	.byte 0
 
 BattleFrontier_PokemonCenter_1F_OnTransition: @ 8267904
-	setrespawn HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST
+
 	end
 
 BattleFrontier_PokemonCenter_1F_EventScript_Nurse:: @ 8267908

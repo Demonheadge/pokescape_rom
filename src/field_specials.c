@@ -332,38 +332,38 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
         case SS_TIDAL_DEPART_SLATEPORT:
             if (*varCruiseStepCount < 60)
             {
-                *mapNum = MAP_NUM(ROUTE134);
+            //    *mapNum = MAP_NUM(ROUTE134);
                 *x = *varCruiseStepCount + 19;
             }
             else if (*varCruiseStepCount < 140)
             {
-                *mapNum = MAP_NUM(ROUTE133);
+            //    *mapNum = MAP_NUM(ROUTE133);
                 *x = *varCruiseStepCount - 60;
             }
             else
             {
-                *mapNum = MAP_NUM(ROUTE132);
+            //    *mapNum = MAP_NUM(ROUTE132);
                 *x = *varCruiseStepCount - 140;
             }
             break;
         case SS_TIDAL_HALFWAY_SLATEPORT:
             if (*varCruiseStepCount < 66)
             {
-                *mapNum = MAP_NUM(ROUTE132);
+            //    *mapNum = MAP_NUM(ROUTE132);
                 *x = 65 - *varCruiseStepCount;
             }
             else if (*varCruiseStepCount < 146) {
-                *mapNum = MAP_NUM(ROUTE133);
+            //    *mapNum = MAP_NUM(ROUTE133);
                 *x = 145 - *varCruiseStepCount;
             }
             else
             {
-                *mapNum = MAP_NUM(ROUTE134);
+            //    *mapNum = MAP_NUM(ROUTE134);
                 *x = 224 - *varCruiseStepCount;
             }
             break;
     }
-    *mapGroup = MAP_GROUP(ROUTE132);
+    //*mapGroup = MAP_GROUP(ROUTE132);
     *y = 20;
     return SS_TIDAL_LOCATION_CURRENTS;
 }
@@ -2028,19 +2028,16 @@ bool8 UsedPokemonCenterWarp(void)
     static const u16 sPokemonCenters[] = 
     { 
         MAP_OLDALE_TOWN_POKEMON_CENTER_1F, 
-        MAP_DEWFORD_TOWN_POKEMON_CENTER_1F, 
 
         MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F, 
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F, 
         MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F, 
         MAP_PETALBURG_CITY_POKEMON_CENTER_1F, 
-        MAP_SLATEPORT_CITY_POKEMON_CENTER_1F, 
         MAP_MAUVILLE_CITY_POKEMON_CENTER_1F, 
         MAP_RUSTBORO_CITY_POKEMON_CENTER_1F, 
         MAP_FORTREE_CITY_POKEMON_CENTER_1F, 
         MAP_LILYCOVE_CITY_POKEMON_CENTER_1F, 
         MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F, 
-        MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F, 
         MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F, 
         MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 
         MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F, 
@@ -3571,20 +3568,7 @@ void CreateAbnormalWeatherEvent(void)
 bool32 GetAbnormalWeatherMapNameAndType(void)
 {
     static const u8 sAbnormalWeatherMapNumbers[] = {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
+
     };
 
     u16 abnormalWeather = VarGet(VAR_ABNORMAL_WEATHER_LOCATION);
@@ -3601,20 +3585,7 @@ bool8 AbnormalWeatherHasExpired(void)
 {
     // Duplicate array.
     static const u8 sAbnormalWeatherMapNumbers[] = {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
+
     };
 
     u16 steps = VarGet(VAR_ABNORMAL_WEATHER_STEP_COUNTER);
@@ -3628,35 +3599,23 @@ bool8 AbnormalWeatherHasExpired(void)
     if (++steps > 999)
     {
         VarSet(VAR_ABNORMAL_WEATHER_STEP_COUNTER, 0);
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_MARINE_CAVE))
-        {
-            switch (gSaveBlock1Ptr->location.mapNum)
-            {
-                case MAP_NUM(UNDERWATER_MARINE_CAVE):
-                case MAP_NUM(MARINE_CAVE_ENTRANCE):
-                case MAP_NUM(MARINE_CAVE_END):
-                case MAP_NUM(TERRA_CAVE_ENTRANCE):
-                case MAP_NUM(TERRA_CAVE_END):
-                    VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
-                    return FALSE;
-                default:
-                    break;
-            }
-        }
+        //if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_MARINE_CAVE))
+        //{
+        //    switch (gSaveBlock1Ptr->location.mapNum)
+        //    {
+                //case MAP_NUM(UNDERWATER_MARINE_CAVE):
+        //        case MAP_NUM(MARINE_CAVE_ENTRANCE):
+        //        case MAP_NUM(MARINE_CAVE_END):
+        //        case MAP_NUM(TERRA_CAVE_ENTRANCE):
+        //        case MAP_NUM(TERRA_CAVE_END):
+        //            VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
+        //            return FALSE;
+        //        default:
+        //            break;
+        //    }
+        //}
 
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_ROUTE127))
-        {
-            switch (gSaveBlock1Ptr->location.mapNum)
-            {
-                case MAP_NUM(UNDERWATER_ROUTE127):
-                case MAP_NUM(UNDERWATER_ROUTE129):
-                case MAP_NUM(UNDERWATER_ROUTE125):
-                    VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
-                    return FALSE;
-                default:
-                    break;
-            }
-        }
+
 
         if (gSaveBlock1Ptr->location.mapNum == sAbnormalWeatherMapNumbers[abnormalWeather - 1] &&
             gSaveBlock1Ptr->location.mapGroup == 0)
@@ -3954,34 +3913,11 @@ void GetBattlePyramidHint(void)
     gSpecialVar_Result -= (gSpecialVar_Result / 20) * 20;
 }
 
-// Used to avoid a potential softlock if the player respawns on Dewford with no way off
-void ResetHealLocationFromDewford(void)
-{
-    if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(DEWFORD_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(DEWFORD_TOWN))
-    {
-        SetLastHealLocationWarp(HEAL_LOCATION_PETALBURG_CITY);
-    }
-}
 
 bool8 InPokemonCenter(void)
 {
     static const u16 sPokemonCenters[] =
     {
-        MAP_OLDALE_TOWN_POKEMON_CENTER_1F,
-        MAP_DEWFORD_TOWN_POKEMON_CENTER_1F,
-        MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F,
-        MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,
-        MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F,
-        MAP_PETALBURG_CITY_POKEMON_CENTER_1F,
-        MAP_SLATEPORT_CITY_POKEMON_CENTER_1F,
-        MAP_MAUVILLE_CITY_POKEMON_CENTER_1F,
-        MAP_RUSTBORO_CITY_POKEMON_CENTER_1F,
-        MAP_FORTREE_CITY_POKEMON_CENTER_1F,
-        MAP_LILYCOVE_CITY_POKEMON_CENTER_1F,
-        MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F,
-        MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F,
-        MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F,
-        MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F,
         MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F,
         MAP_BATTLE_COLOSSEUM_2P,
         MAP_TRADE_CENTER,

@@ -191,30 +191,7 @@ static const struct {
     u8 level;
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
-    {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15, 
-        .location = MAP_NUM(ROUTE114),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13, 
-        .location = MAP_NUM(ROUTE117),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25, 
-        .location = MAP_NUM(ROUTE120),
-    },
-    {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
-        .level = 8, 
-        .location = MAP_NUM(ROUTE116),
-    }
+    
 };
 
 static const u16 sGoldSymbolFlags[] = {
@@ -2793,16 +2770,16 @@ bool8 IsPriceDiscounted(u8 newsKind)
     switch (newsKind)
     {
         case POKENEWS_SLATEPORT:
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLATEPORT_CITY) && gSpecialVar_LastTalked == 25)
-            {
-                return TRUE;
-            }
+            //if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLATEPORT_CITY) && gSpecialVar_LastTalked == 25)
+            //{
+            //    return TRUE;
+            //}
             return FALSE;
         case POKENEWS_LILYCOVE:
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
-            {
-                return TRUE;
-            }
+            //if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
+            //{
+            //    return TRUE;
+            //}
             return FALSE;
     }
     return TRUE;

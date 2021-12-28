@@ -1009,23 +1009,23 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
         {
         case MAP_NUM(LILYCOVE_CITY):
         case MAP_NUM(MOSSDEEP_CITY):
-        case MAP_NUM(SOOTOPOLIS_CITY):
+        //case MAP_NUM(SOOTOPOLIS_CITY):
         case MAP_NUM(EVER_GRANDE_CITY):
-        case MAP_NUM(ROUTE124):
-        case MAP_NUM(ROUTE125):
-        case MAP_NUM(ROUTE126):
-        case MAP_NUM(ROUTE127):
-        case MAP_NUM(ROUTE128):
+        //case MAP_NUM(ROUTE124):
+        //case MAP_NUM(ROUTE125):
+        //case MAP_NUM(ROUTE126):
+        //case MAP_NUM(ROUTE127):
+        //case MAP_NUM(ROUTE128):
             return TRUE;
         default:
             if (VarGet(VAR_SOOTOPOLIS_CITY_STATE) < 4)
                 return FALSE;
             switch (warp->mapNum)
             {
-            case MAP_NUM(ROUTE129):
-            case MAP_NUM(ROUTE130):
-            case MAP_NUM(ROUTE131):
-                return TRUE;
+            //case MAP_NUM(ROUTE129):
+            //case MAP_NUM(ROUTE130):
+            //case MAP_NUM(ROUTE131):
+            //    return TRUE;
             }
         }
     }
@@ -1034,13 +1034,13 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
 
 static bool16 NoMusicInSotopolisWithLegendaries(struct WarpData *warp)
 {
-    if (VarGet(VAR_SKY_PILLAR_STATE) != 1)
-        return FALSE;
-    else if (warp->mapGroup != MAP_GROUP(SOOTOPOLIS_CITY))
-        return FALSE;
-    else if (warp->mapNum == MAP_NUM(SOOTOPOLIS_CITY))
-        return TRUE;
-    else
+    //if (VarGet(VAR_SKY_PILLAR_STATE) != 1)
+    //    return FALSE;
+    //else if (warp->mapGroup != MAP_GROUP(SOOTOPOLIS_CITY))
+    //    return FALSE;
+    //else if (warp->mapNum == MAP_NUM(SOOTOPOLIS_CITY))
+    //    return TRUE;
+    //else
         return FALSE;
 }
 
@@ -1090,10 +1090,10 @@ u16 GetCurrLocationDefaultMusic(void)
     u16 music;
 
     // Play the desert music only when the sandstorm is active on Route 111.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111)
-     && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)
-     && GetSav1Weather() == WEATHER_SANDSTORM)
-        return MUS_ROUTE111;
+    //if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111)
+    // && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)
+    // && GetSav1Weather() == WEATHER_SANDSTORM)
+    //    return MUS_ROUTE111;
 
     music = GetLocationMusic(&gSaveBlock1Ptr->location);
     if (music != MUS_ROUTE118)
@@ -1211,16 +1211,16 @@ void TryFadeOutOldMapMusic(void)
     u16 warpMusic = GetWarpDestinationMusic();
     if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE && warpMusic != GetCurrentMapMusic())
     {
-        if (currentMusic == MUS_SURF
-            && VarGet(VAR_SKY_PILLAR_STATE) == 2
-            && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SOOTOPOLIS_CITY)
-            && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SOOTOPOLIS_CITY)
-            && sWarpDestination.mapGroup == MAP_GROUP(SOOTOPOLIS_CITY)
-            && sWarpDestination.mapNum == MAP_NUM(SOOTOPOLIS_CITY)
-            && sWarpDestination.x == 29
-            && sWarpDestination.y == 53)
-            return;
-        FadeOutMapMusic(GetMapMusicFadeoutSpeed());
+        //if (currentMusic == MUS_SURF
+            //&& VarGet(VAR_SKY_PILLAR_STATE) == 2
+            //&& gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SOOTOPOLIS_CITY)
+            //&& gSaveBlock1Ptr->location.mapNum == MAP_NUM(SOOTOPOLIS_CITY)
+            //&& sWarpDestination.mapGroup == MAP_GROUP(SOOTOPOLIS_CITY)
+            //&& sWarpDestination.mapNum == MAP_NUM(SOOTOPOLIS_CITY)
+            //&& sWarpDestination.x == 29
+            //&& sWarpDestination.y == 53)
+            //return;
+        //FadeOutMapMusic(GetMapMusicFadeoutSpeed());
     }
 }
 
@@ -1295,19 +1295,19 @@ void UpdateAmbientCry(s16 *state, u16 *delayCounter)
 
 static void ChooseAmbientCrySpecies(void)
 {
-    if ((gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE130)
-     && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE130))
-     && !IsMirageIslandPresent())
-    {
+    //if ((gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE130)
+    // && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE130))
+    // && !IsMirageIslandPresent())
+    //{
         // Only play water pokemon cries on this route
         // when Mirage Island is not present
-        sIsAmbientCryWaterMon = TRUE;
-        sAmbientCrySpecies = GetLocalWaterMon();
-    }
-    else
-    {
+    //    sIsAmbientCryWaterMon = TRUE;
+    //    sAmbientCrySpecies = GetLocalWaterMon();
+    //}
+    //else
+    //{
         sAmbientCrySpecies = GetLocalWildMon(&sIsAmbientCryWaterMon);
-    }
+    //}
 }
 
 u8 GetMapTypeByGroupAndId(s8 mapGroup, s8 mapNum)
