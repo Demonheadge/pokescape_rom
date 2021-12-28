@@ -16,7 +16,7 @@
     {
       "direction": "emerge",
       "offset": 0,
-      "map": "MAP_ROUTE105"
+      "map": "NULL"
     }
   ],
   "object_events": [

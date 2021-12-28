@@ -172,86 +172,6 @@
       "blockdata_filepath": "data/layouts/Route101/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE102",
-      "name": "Route102_Layout",
-      "width": 50,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route102/border.bin",
-      "blockdata_filepath": "data/layouts/Route102/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE103",
-      "name": "Route103_Layout",
-      "width": 80,
-      "height": 22,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route103/border.bin",
-      "blockdata_filepath": "data/layouts/Route103/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE104",
-      "name": "Route104_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/Route104/border.bin",
-      "blockdata_filepath": "data/layouts/Route104/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE105",
-      "name": "Route105_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route105/border.bin",
-      "blockdata_filepath": "data/layouts/Route105/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE106",
-      "name": "Route106_Layout",
-      "width": 80,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route106/border.bin",
-      "blockdata_filepath": "data/layouts/Route106/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE107",
-      "name": "Route107_Layout",
-      "width": 60,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route107/border.bin",
-      "blockdata_filepath": "data/layouts/Route107/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE108",
-      "name": "Route108_Layout",
-      "width": 60,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
-      "border_filepath": "data/layouts/Route108/border.bin",
-      "blockdata_filepath": "data/layouts/Route108/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE109",
-      "name": "Route109_Layout",
-      "width": 40,
-      "height": 63,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
-      "border_filepath": "data/layouts/Route109/border.bin",
-      "blockdata_filepath": "data/layouts/Route109/map.bin"
-    },
-    {
       "id": "LAYOUT_ROUTE110",
       "name": "Route110_Layout",
       "width": 40,
@@ -670,46 +590,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/House4/border.bin",
       "blockdata_filepath": "data/layouts/House4/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVARIDGE_TOWN_HERB_SHOP",
-      "name": "LavaridgeTown_HerbShop_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/LavaridgeTown_HerbShop/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_HerbShop/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVARIDGE_TOWN_GYM_1F",
-      "name": "LavaridgeTown_Gym_1F_Layout",
-      "width": 17,
-      "height": 19,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LavaridgeGym",
-      "border_filepath": "data/layouts/LavaridgeTown_Gym_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVARIDGE_TOWN_GYM_B1F",
-      "name": "LavaridgeTown_Gym_B1F_Layout",
-      "width": 17,
-      "height": 19,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LavaridgeGym",
-      "border_filepath": "data/layouts/LavaridgeTown_Gym_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
-      "name": "LavaridgeTown_PokemonCenter_1F_Layout",
-      "width": 14,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/map.bin"
     },
     {
       "id": "LAYOUT_FALLARBOR_TOWN_LEFTOVER_RSCONTEST_LOBBY",
