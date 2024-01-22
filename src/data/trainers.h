@@ -3744,6 +3744,152 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_SCAPEINK},
     },
 
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HILL_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_hill_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_1},
+    },
+    
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HILL_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_hill_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_2},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_3},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_4},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_5},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_FIRE_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_fire_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_6),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_6},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_7] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_FIRE_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_fire_giant,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_7),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_7},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_8] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_8),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_8},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_9] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_9),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_9},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_10] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_10),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_10},
+    },
+    [TRAINER_KOUREND_CATACOMBS_TRAINER_11] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_KOUREND_CATACOMBS_TRAINER_11),
+        .party = {.NoItemDefaultMoves = sParty_KOUREND_CATACOMBS_TRAINER_11},
+    },
+
+
 
 
 

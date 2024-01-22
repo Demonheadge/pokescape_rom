@@ -4214,6 +4214,84 @@ static const struct TrainerMonNoItemDefaultMoves sParty_SCAPEINK[] = {
     },
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_7[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_8[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_9[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_10[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_KOUREND_CATACOMBS_TRAINER_11[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+
 
 
 //GYM LEADERS

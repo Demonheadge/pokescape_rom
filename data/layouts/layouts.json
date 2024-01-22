@@ -7900,6 +7900,16 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_8/border.bin",
       "blockdata_filepath": "data/layouts/Kourend_Catacombs_8/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAOS_TUNNELS_B2F",
+      "name": "Chaos_Tunnels_B2F_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Chaos_Tunnels_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Chaos_Tunnels_B2F/map.bin"
     }
   ]
 }

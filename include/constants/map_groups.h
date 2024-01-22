@@ -708,6 +708,7 @@
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_2 (38 | (36 << 8))
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_3 (39 | (36 << 8))
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_4 (40 | (36 << 8))
+#define MAP_CHAOS_TUNNELS_B2F           (41 | (36 << 8))
 
 // gMapGroup_PokescapeIndoorTutorialIsland
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))
