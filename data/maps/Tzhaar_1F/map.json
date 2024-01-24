@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_GA_AL",
-      "x": 16,
+      "x": 14,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
-      "x": 22,
+      "x": 37,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
-      "x": 35,
-      "y": 5,
+      "x": 36,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -68,12 +68,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
-      "x": 17,
-      "y": 18,
+      "x": 32,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_4",
-      "x": 51,
+      "x": 49,
       "y": 36,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -94,10 +94,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_GA_AL",
-      "x": 54,
-      "y": 35,
+      "x": 57,
+      "y": 38,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 3,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -120,20 +120,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
-      "x": 40,
-      "y": 18,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
-      "x": 45,
+      "x": 39,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -146,21 +133,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
-      "x": 37,
-      "y": 23,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
-      "x": 26,
-      "y": 26,
+      "x": 42,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -172,7 +146,33 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
-      "x": 29,
+      "x": 34,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
+      "x": 38,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_2",
+      "x": 33,
       "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -185,8 +185,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
-      "x": 60,
-      "y": 13,
+      "x": 59,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 3,
@@ -208,6 +208,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_MOD_SARNIE",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_4",
+      "x": 26,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BANK_EventScript_Banker",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
+      "x": 48,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 6,
+      "movement_range_y": 6,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -219,15 +245,15 @@
       "dest_warp_id": 1
     },
     {
-      "x": 9,
-      "y": 14,
+      "x": 8,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_GIANT_MOLE_CAVE",
       "dest_warp_id": 0
     },
     {
-      "x": 27,
-      "y": 7,
+      "x": 9,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
       "dest_warp_id": 0

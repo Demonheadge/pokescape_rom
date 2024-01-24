@@ -892,6 +892,7 @@
 #define MAP_TZHAAR_1F          (0 | (49 << 8))
 #define MAP_TZHAAR_FIGHT_CAVES (1 | (49 << 8))
 #define MAP_TZHAAR_CAVES_1     (2 | (49 << 8))
+#define MAP_TZHAAR_CAVES_2     (3 | (49 << 8))
 
 // gMapGroup_PokescapeIndoorVarious
 #define MAP_ROUTE1_HOUSE_FRED                   (0 | (50 << 8))
