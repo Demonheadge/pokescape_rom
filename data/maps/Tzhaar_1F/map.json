@@ -224,12 +224,25 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_1",
-      "x": 48,
-      "y": 10,
+      "x": 46,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 6,
       "movement_range_y": 6,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OZAN",
+      "x": 28,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -245,15 +258,15 @@
       "dest_warp_id": 1
     },
     {
-      "x": 8,
-      "y": 1,
+      "x": 6,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_GIANT_MOLE_CAVE",
       "dest_warp_id": 0
     },
     {
-      "x": 9,
-      "y": 1,
+      "x": 67,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
       "dest_warp_id": 0
@@ -283,7 +296,7 @@
       "x": 65,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_TZHAAR_1F",
+      "dest_map": "MAP_TZHAAR_CAVES_2",
       "dest_warp_id": 0
     }
   ],
