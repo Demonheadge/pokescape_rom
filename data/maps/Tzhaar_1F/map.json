@@ -107,10 +107,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TZHAAR_3",
-      "x": 53,
-      "y": 29,
+      "x": 56,
+      "y": 30,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 3,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
