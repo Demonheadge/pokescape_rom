@@ -872,7 +872,8 @@
     "Varrock_Gertrude_House",
     "Varrock_GeneralStore",
     "Varrock_Aubury_Store",
-    "Grand_Exchange_Indoor"
+    "Grand_Exchange_Indoor",
+    "Varrock_Sewers_3F"
   ],
   "gMapGroup_PokescapeIndoorBarbarianVillage": [
     "BarbarianVillage_GymHall",

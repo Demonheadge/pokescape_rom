@@ -453,6 +453,13 @@
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
       "dest_warp_id": 0
+    },
+    {
+      "x": 44,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_SEWERS_1F",
+      "dest_warp_id": 6
     }
   ],
   "coord_events": [

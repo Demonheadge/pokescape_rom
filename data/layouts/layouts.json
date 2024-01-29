@@ -7920,6 +7920,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Tzhaar_Caves_2/border.bin",
       "blockdata_filepath": "data/layouts/Tzhaar_Caves_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_SEWERS_3F",
+      "name": "Varrock_Sewers_3F_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Varrock_Sewers_3F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Sewers_3F/map.bin"
     }
   ]
 }
