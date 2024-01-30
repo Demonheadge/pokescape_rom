@@ -2662,6 +2662,11 @@ static const u8 sSLAYER_GEM_Desc[] = _(
     "your Slayer Master.\n"
     "");
     
+static const u8 sCheeseDesc[] = _(
+    "Some cheese you found in\n"
+    "the Sewers. It seems like\n"
+    "it may be sentient.");
+    
 
 static const u8 sFrogeelBurgerDesc[] = _(
     "A Fresh burger\n"

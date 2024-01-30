@@ -360,7 +360,7 @@ script VARROCK_NPC_GUARD_7
 {
     faceplayer
     namebox ("Guard")
-    msgbox(format("Past this is the Wilderness, it is a lawless place and I can not in good conscience allow you to go there without a stern warning. Be careful."))
+    msgbox(format("Past this is the Wilderness, it is a lawless place and I can not in good conscience allow you to go there without a stern warning.\pBe careful."))
     closemessage
     hidenamebox
     release
@@ -416,6 +416,17 @@ script VARROCK_NPC_14
     faceplayer
     namebox ("Guard")
     msgbox(format("Purple Sweets are really yum!\pI know it is a waste eating them myself but I cannot help it."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_15
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Do you enjoy farming as much as me?\pBe sure to make good friends with the Strange Plants.\pBut keep them away from Dark types."))
     closemessage
     hidenamebox
     release

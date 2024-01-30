@@ -15613,6 +15613,41 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerOffset = 0 ,
 	},
 
+	[NATIONAL_DEX_SCURRIUS_MELEE_FORM] =
+	{
+	.categoryName = _("Rat"),
+	.height = 0,
+	.weight = 0,
+	.description = gScurriusPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
+	[NATIONAL_DEX_SCURRIUS_RANGED_FORM] =
+	{
+	.categoryName = _("Rat"),
+	.height = 0,
+	.weight = 0,
+	.description = gScurriusPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
+	[NATIONAL_DEX_SCURRIUS_MAGIC_FORM] =
+	{
+	.categoryName = _("Rat"),
+	.height = 0,
+	.weight = 0,
+	.description = gScurriusPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
 
 
 

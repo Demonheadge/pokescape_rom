@@ -358,6 +358,16 @@ VARROCK_NPC_14::
 	end
 
 
+VARROCK_NPC_15::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_15_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 VARROCK_NPC_Romeo::
 	faceplayer
 	namebox VARROCK_NPC_Romeo_Text_0
@@ -1228,7 +1238,8 @@ VARROCK_NPC_GUARD_7_Text_0:
 	.string "Past this is the Wilderness, it is a\n"
 	.string "lawless place and I can not in good\l"
 	.string "conscience allow you to go there\l"
-	.string "without a stern warning. Be careful.$"
+	.string "without a stern warning.\p"
+	.string "Be careful.$"
 
 VARROCK_NPC_10_Text_0:
 	.string "They say the king is a surprisingly\n"
@@ -1258,6 +1269,12 @@ VARROCK_NPC_14_Text_0:
 	.string "Purple Sweets are really yum!\p"
 	.string "I know it is a waste eating them myself\n"
 	.string "but I cannot help it.$"
+
+VARROCK_NPC_15_Text_0:
+	.string "Do you enjoy farming as much as me?\p"
+	.string "Be sure to make good friends with the\n"
+	.string "Strange Plants.\p"
+	.string "But keep them away from Dark types.$"
 
 VARROCK_NPC_Romeo_Text_0:
 	.string "Romeo$"

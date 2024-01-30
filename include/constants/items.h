@@ -811,10 +811,12 @@
 //DUNGEONEERING ITEMS
 #define ITEM_DG_BALL_OF_WOOL 657
 #define ITEM_DG_ROPE 658
+#define ITEM_SCURRIUS_CHEESE 659
 
 
 
-#define ITEMS_COUNT 659
+
+#define ITEMS_COUNT 660
 // Last available item ID due to ITEM_EXPANSION (see battle_config.h)
 // #define ITEM_ID_LIMIT 964
 #define ITEM_FIELD_ARROW ITEMS_COUNT

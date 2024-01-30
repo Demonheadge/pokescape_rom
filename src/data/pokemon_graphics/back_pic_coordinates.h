@@ -6681,6 +6681,21 @@ const struct MonCoords gMonBackPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
+	[SPECIES_SCURRIUS_MELEE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SCURRIUS_RANGED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SCURRIUS_MAGIC_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
 
 
 

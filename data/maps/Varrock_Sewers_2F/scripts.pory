@@ -1,0 +1,60 @@
+mapscripts Varrock_Sewers_2F_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        call(Randomise_VarrockSewer_2F_Spawns)
+    }
+}
+
+script Randomise_VarrockSewer_2F_Spawns
+{
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(12,26,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(10,18,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(9,12,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(11,12,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(12,2,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(29,2,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(33,2,726,1)
+        setvar(VAR_TEMP_6, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(41,7,726,1)
+        setvar(VAR_TEMP_7, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+
+
+
+
+script ITEM_VARROCK_SEWERS_1
+{
+    finditem(ITEM_SCURRIUS_CHEESE)
+    end
+}

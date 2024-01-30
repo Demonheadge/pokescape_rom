@@ -694,6 +694,7 @@ const u32 *const gItemIconTable[][2] =
 
     [ITEM_DG_BALL_OF_WOOL] = {gItemIcon_woolBall, gItemIconPalette_woolBall},
     [ITEM_DG_ROPE] = {gItemIcon_EscapeRope, gItemIconPalette_EscapeRope},
+    [ITEM_SCURRIUS_CHEESE] = {gItemIcon_cheese, gItemIconPalette_cheese},
     
 
     

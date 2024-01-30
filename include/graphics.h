@@ -9257,6 +9257,27 @@ extern const u32 gMonShinyPalette_Skotizo[];
 extern const u32 gMonStillFrontPic_Skotizo[];
 extern const u8 gMonIcon_Skotizo[];
 extern const u8 gMonFootprint_Skotizo[];
+extern const u32 gMonFrontPic_Scurrius_Melee_Form[];
+extern const u32 gMonPalette_Scurrius_Melee_Form[];
+extern const u32 gMonBackPic_Scurrius_Melee_Form[];
+extern const u32 gMonShinyPalette_Scurrius_Melee_Form[];
+extern const u32 gMonStillFrontPic_Scurrius_Melee_Form[];
+extern const u8 gMonIcon_Scurrius_Melee_Form[];
+extern const u8 gMonFootprint_Scurrius_Melee_Form[];
+extern const u32 gMonFrontPic_Scurrius_Ranged_Form[];
+extern const u32 gMonPalette_Scurrius_Ranged_Form[];
+extern const u32 gMonBackPic_Scurrius_Ranged_Form[];
+extern const u32 gMonShinyPalette_Scurrius_Ranged_Form[];
+extern const u32 gMonStillFrontPic_Scurrius_Ranged_Form[];
+extern const u8 gMonIcon_Scurrius_Ranged_Form[];
+extern const u8 gMonFootprint_Scurrius_Ranged_Form[];
+extern const u32 gMonFrontPic_Scurrius_Magic_Form[];
+extern const u32 gMonPalette_Scurrius_Magic_Form[];
+extern const u32 gMonBackPic_Scurrius_Magic_Form[];
+extern const u32 gMonShinyPalette_Scurrius_Magic_Form[];
+extern const u32 gMonStillFrontPic_Scurrius_Magic_Form[];
+extern const u8 gMonIcon_Scurrius_Magic_Form[];
+extern const u8 gMonFootprint_Scurrius_Magic_Form[];
 
 //POKESCAPE END
 extern const u32 gMonPic_Egg[];
@@ -11384,6 +11405,8 @@ extern const u32 gItemIcon_Xeric[];
 extern const u32 gItemIconPalette_Xeric[];
 extern const u32 gItemIcon_SLAYER_GEM[];
 extern const u32 gItemIconPalette_SLAYER_GEM[];
+extern const u32 gItemIcon_cheese[];
+extern const u32 gItemIconPalette_cheese[];
 //------
 
 // pokescape crops

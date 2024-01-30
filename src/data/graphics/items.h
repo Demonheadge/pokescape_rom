@@ -1473,7 +1473,8 @@ const u32 gItemIcon_Xeric[] = INCBIN_U32("graphics/items/pokescape_icons/xeric.4
 const u32 gItemIconPalette_Xeric[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/xeric.gbapal.lz");
 const u32 gItemIcon_SLAYER_GEM[] = INCBIN_U32("graphics/items/pokescape_icons/slayergem.4bpp.lz");
 const u32 gItemIconPalette_SLAYER_GEM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/slayergem.gbapal.lz");
-
+const u32 gItemIcon_cheese[] = INCBIN_U32("graphics/items/pokescape_icons/cheese.4bpp.lz");
+const u32 gItemIconPalette_cheese[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/cheese.gbapal.lz");
 
 
 //pokescape tms

@@ -7842,6 +7842,17 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
+    [ITEM_SCURRIUS_CHEESE] =
+    {
+        .name = _("CHEESE"),
+        .itemId = ITEM_SCURRIUS_CHEESE,
+        .price = 0,
+        .description = sCheeseDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 
 
     [ITEM_DG_BALL_OF_WOOL] =

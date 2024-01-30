@@ -12,13 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "right",
-      "offset": 0,
-      "map": "MAP_VARROCK_SEWERS_1F"
-    }
-  ],
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -31,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0"
+      "flag": "FLAG_TEMP_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -44,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -122,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ENCOUNTER_SLIME",
-      "flag": "0"
+      "flag": "FLAG_TEMP_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MOSS_GIANT",
@@ -174,7 +168,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ENCOUNTER_SLIME",
-      "flag": "0"
+      "flag": "FLAG_TEMP_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MUGGER",
@@ -217,56 +211,56 @@
     {
       "type": "trigger",
       "x": 34,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     },
     {
       "type": "trigger",
       "x": 31,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     },
     {
       "type": "trigger",
       "x": 38,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_2",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     },
     {
       "type": "trigger",
       "x": 24,
-      "y": 24,
+      "y": 25,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_5",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     },
     {
       "type": "trigger",
       "x": 23,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_3",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     },
     {
       "type": "trigger",
       "x": 19,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_4",
       "var_value": "0",
-      "script": "NULL"
+      "script": "ENCOUNTER_WALL_CREATURE"
     }
   ],
   "bg_events": [
@@ -287,12 +281,20 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "type": "hidden_item",
+      "type": "sign",
+      "x": 2,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DUNGEONEERING_DOOR_VarrockSewers"
+    },
+    {
+      "type": "sign",
       "x": 5,
       "y": 4,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SCURRIUS_CAULDRON"
     }
   ]
 }

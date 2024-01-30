@@ -879,7 +879,12 @@ static const struct MenuAction MultichoiceList_SLAYER_MASTER[] =
     {gText_OpenSlayerRewardShop},
     {gText_Exit},
 };
-
+static const struct MenuAction MultichoiceList_SCURRIUS[] =
+{
+    {gText_CAVE_FUNGUS},
+    {gText_GLOWING_MOSS},
+    {gText_BROWN_WATER},
+};
 
 
 static const struct MenuAction MultichoiceList_Exit[] =
@@ -1022,6 +1027,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BANKOPTIONS]				   = MULTICHOICE(MultichoiceList_BANKOPTIONS),
     [MULTI_FREMMYTEAMS]				   = MULTICHOICE(MultichoiceList_FREMMYTEAMS),
     [MULTI_SLAYER_MASTER]			   = MULTICHOICE(MultichoiceList_SLAYER_MASTER),
+    [MULTI_SCURRIUS]			       = MULTICHOICE(MultichoiceList_SCURRIUS),
+    
 	
 };
 

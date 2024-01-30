@@ -3091,7 +3091,9 @@ extern const u8 gText_NEITIZNOT[];
 extern const u8 gText_GetSlayerAssignment[];
 extern const u8 gText_OpenSlayerRewardShop[];
 
-
+extern const u8 gText_CAVE_FUNGUS[];
+extern const u8 gText_GLOWING_MOSS[];
+extern const u8 gText_BROWN_WATER[];
 
 //pokescape cheat menu
 extern const u8 gText_CheatEvolutionShop[];

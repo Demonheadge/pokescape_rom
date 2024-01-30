@@ -1,2 +1,633 @@
 Varrock_Sewers_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Varrock_Sewers_1F_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+Varrock_Sewers_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call Randomise_VarrockSewer_1F_Spawns
+	return
+
+
+Randomise_VarrockSewer_1F_Spawns::
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_2
+Randomise_VarrockSewer_1F_Spawns_1:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_5
+Randomise_VarrockSewer_1F_Spawns_4:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_8
+Randomise_VarrockSewer_1F_Spawns_7:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_11
+Randomise_VarrockSewer_1F_Spawns_10:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_14
+Randomise_VarrockSewer_1F_Spawns_13:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_17
+Randomise_VarrockSewer_1F_Spawns_16:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_20
+Randomise_VarrockSewer_1F_Spawns_19:
+	random 2
+	compare VAR_RESULT, 1
+	goto_if_eq Randomise_VarrockSewer_1F_Spawns_23
+Randomise_VarrockSewer_1F_Spawns_22:
+	special DrawWholeMapView
+	return
+
+Randomise_VarrockSewer_1F_Spawns_2:
+	setmetatile 15, 29, 726, 1
+	setvar VAR_TEMP_0, 1
+	goto Randomise_VarrockSewer_1F_Spawns_1
+
+Randomise_VarrockSewer_1F_Spawns_5:
+	setmetatile 8, 24, 726, 1
+	setvar VAR_TEMP_1, 1
+	goto Randomise_VarrockSewer_1F_Spawns_4
+
+Randomise_VarrockSewer_1F_Spawns_8:
+	setmetatile 21, 28, 726, 1
+	setvar VAR_TEMP_2, 1
+	goto Randomise_VarrockSewer_1F_Spawns_7
+
+Randomise_VarrockSewer_1F_Spawns_11:
+	setmetatile 30, 27, 726, 1
+	setvar VAR_TEMP_3, 1
+	goto Randomise_VarrockSewer_1F_Spawns_10
+
+Randomise_VarrockSewer_1F_Spawns_14:
+	setmetatile 23, 12, 726, 1
+	setvar VAR_TEMP_4, 1
+	goto Randomise_VarrockSewer_1F_Spawns_13
+
+Randomise_VarrockSewer_1F_Spawns_17:
+	setmetatile 19, 5, 726, 1
+	setvar VAR_TEMP_5, 1
+	goto Randomise_VarrockSewer_1F_Spawns_16
+
+Randomise_VarrockSewer_1F_Spawns_20:
+	setmetatile 10, 2, 726, 1
+	setvar VAR_TEMP_6, 1
+	goto Randomise_VarrockSewer_1F_Spawns_19
+
+Randomise_VarrockSewer_1F_Spawns_23:
+	setmetatile 8, 2, 726, 1
+	setvar VAR_TEMP_7, 1
+	goto Randomise_VarrockSewer_1F_Spawns_22
+
+
+ENCOUNTER_WALL_CREATURE::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WallBeast
+	playSE SE_LEDGE
+	msgbox ENCOUNTER_WALL_CREATURE_Text_0
+	waitmovement 0
+	specialvar VAR_RESULT, GetCurrentMap
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_1F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_2
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_2F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_2
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_3F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_2
+ENCOUNTER_WALL_CREATURE_1:
+	dowildbattle
+	switch VAR_RESULT
+	case B_OUTCOME_WON, ENCOUNTER_WALL_CREATURE_10
+	case B_OUTCOME_CAUGHT, ENCOUNTER_WALL_CREATURE_11
+ENCOUNTER_WALL_CREATURE_8:
+	release
+	end
+
+ENCOUNTER_WALL_CREATURE_2:
+	call VARROCK_SEWERS_ENCOUNTERS
+	goto ENCOUNTER_WALL_CREATURE_1
+
+ENCOUNTER_WALL_CREATURE_10:
+	fadescreen FADE_TO_BLACK
+	specialvar VAR_RESULT, GetCurrentMap
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_1F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_13
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_2F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_14
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_3F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_15
+ENCOUNTER_WALL_CREATURE_12:
+	fadescreen FADE_FROM_BLACK
+	goto ENCOUNTER_WALL_CREATURE_8
+
+ENCOUNTER_WALL_CREATURE_11:
+	fadescreen FADE_TO_BLACK
+	specialvar VAR_RESULT, GetCurrentMap
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_1F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_20
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_2F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_21
+	compare VAR_RESULT, MAP_VARROCK_SEWERS_3F
+	goto_if_eq ENCOUNTER_WALL_CREATURE_22
+ENCOUNTER_WALL_CREATURE_19:
+	fadescreen FADE_FROM_BLACK
+	goto ENCOUNTER_WALL_CREATURE_8
+
+ENCOUNTER_WALL_CREATURE_13:
+	call VARROCK_SEWERS_1F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_12
+
+ENCOUNTER_WALL_CREATURE_14:
+	call VARROCK_SEWERS_2F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_12
+
+ENCOUNTER_WALL_CREATURE_15:
+	call VARROCK_SEWERS_3F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_12
+
+ENCOUNTER_WALL_CREATURE_20:
+	call VARROCK_SEWERS_1F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_19
+
+ENCOUNTER_WALL_CREATURE_21:
+	call VARROCK_SEWERS_2F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_19
+
+ENCOUNTER_WALL_CREATURE_22:
+	call VARROCK_SEWERS_3F_CHECK_PLAYER_STAND
+	goto ENCOUNTER_WALL_CREATURE_19
+
+
+VARROCK_SEWERS_ENCOUNTERS::
+	random 5
+	switch VAR_RESULT
+	case 0, VARROCK_SEWERS_ENCOUNTERS_3
+	case 1, VARROCK_SEWERS_ENCOUNTERS_4
+	case 2, VARROCK_SEWERS_ENCOUNTERS_5
+	case 3, VARROCK_SEWERS_ENCOUNTERS_6
+	case 4, VARROCK_SEWERS_ENCOUNTERS_7
+VARROCK_SEWERS_ENCOUNTERS_1:
+	return
+
+VARROCK_SEWERS_ENCOUNTERS_3:
+	setwildbattle SPECIES_WALL_BEAST, 10, ITEM_NONE
+	goto VARROCK_SEWERS_ENCOUNTERS_1
+
+VARROCK_SEWERS_ENCOUNTERS_4:
+	setwildbattle SPECIES_WALL_BEAST, 10, ITEM_NONE
+	goto VARROCK_SEWERS_ENCOUNTERS_1
+
+VARROCK_SEWERS_ENCOUNTERS_5:
+	setwildbattle SPECIES_WALL_BEAST, 10, ITEM_NONE
+	goto VARROCK_SEWERS_ENCOUNTERS_1
+
+VARROCK_SEWERS_ENCOUNTERS_6:
+	setwildbattle SPECIES_WALL_BEAST, 10, ITEM_NONE
+	goto VARROCK_SEWERS_ENCOUNTERS_1
+
+VARROCK_SEWERS_ENCOUNTERS_7:
+	setwildbattle SPECIES_WALL_BEAST, 10, ITEM_NONE
+	goto VARROCK_SEWERS_ENCOUNTERS_1
+
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND::
+	getplayerxy VAR_TEMP_F, VAR_TEMP_E
+	compare VAR_TEMP_F, 15
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_31
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_29:
+	compare VAR_TEMP_F, 8
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_28
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_26:
+	compare VAR_TEMP_F, 21
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_25
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_23:
+	compare VAR_TEMP_F, 30
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_22
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_20:
+	compare VAR_TEMP_F, 23
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_19
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_17:
+	compare VAR_TEMP_F, 19
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_16
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_14:
+	compare VAR_TEMP_F, 10
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_13
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_11:
+	compare VAR_TEMP_F, 8
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_10
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1:
+	special DrawWholeMapView
+	return
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_2:
+	setmetatile 15, 29, 726, 1
+	setvar VAR_TEMP_0, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_3:
+	setmetatile 8, 24, 726, 1
+	setvar VAR_TEMP_1, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_4:
+	setmetatile 21, 28, 726, 1
+	setvar VAR_TEMP_2, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_5:
+	setmetatile 30, 27, 726, 1
+	setvar VAR_TEMP_3, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_6:
+	setmetatile 23, 12, 726, 1
+	setvar VAR_TEMP_4, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_7:
+	setmetatile 19, 5, 726, 1
+	setvar VAR_TEMP_5, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_8:
+	setmetatile 10, 2, 726, 1
+	setvar VAR_TEMP_6, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_9:
+	setmetatile 8, 2, 726, 1
+	setvar VAR_TEMP_7, 1
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_10:
+	compare VAR_TEMP_E, 3
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_9
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_13:
+	compare VAR_TEMP_E, 3
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_8
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_11
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_16:
+	compare VAR_TEMP_E, 6
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_7
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_14
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_19:
+	compare VAR_TEMP_E, 13
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_6
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_17
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_22:
+	compare VAR_TEMP_E, 28
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_5
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_20
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_25:
+	compare VAR_TEMP_E, 29
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_4
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_23
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_28:
+	compare VAR_TEMP_E, 25
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_3
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_26
+
+VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_31:
+	compare VAR_TEMP_E, 30
+	goto_if_eq VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_2
+	goto VARROCK_SEWERS_1F_CHECK_PLAYER_STAND_29
+
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND::
+	getplayerxy VAR_TEMP_F, VAR_TEMP_E
+	compare VAR_TEMP_F, 12
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_31
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_29:
+	compare VAR_TEMP_F, 10
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_28
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_26:
+	compare VAR_TEMP_F, 9
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_25
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_23:
+	compare VAR_TEMP_F, 11
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_22
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_20:
+	compare VAR_TEMP_F, 12
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_19
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_17:
+	compare VAR_TEMP_F, 29
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_16
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_14:
+	compare VAR_TEMP_F, 33
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_13
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_11:
+	compare VAR_TEMP_F, 41
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_10
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1:
+	special DrawWholeMapView
+	return
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_2:
+	setmetatile 12, 26, 726, 1
+	setvar VAR_TEMP_0, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_3:
+	setmetatile 10, 18, 726, 1
+	setvar VAR_TEMP_1, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_4:
+	setmetatile 9, 12, 726, 1
+	setvar VAR_TEMP_2, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_5:
+	setmetatile 11, 12, 726, 1
+	setvar VAR_TEMP_3, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_6:
+	setmetatile 12, 2, 726, 1
+	setvar VAR_TEMP_4, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_7:
+	setmetatile 29, 2, 726, 1
+	setvar VAR_TEMP_5, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_8:
+	setmetatile 33, 2, 726, 1
+	setvar VAR_TEMP_6, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_9:
+	setmetatile 41, 7, 726, 1
+	setvar VAR_TEMP_7, 1
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_10:
+	compare VAR_TEMP_E, 8
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_9
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_13:
+	compare VAR_TEMP_E, 3
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_8
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_11
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_16:
+	compare VAR_TEMP_E, 3
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_7
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_14
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_19:
+	compare VAR_TEMP_E, 3
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_6
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_17
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_22:
+	compare VAR_TEMP_E, 13
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_5
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_20
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_25:
+	compare VAR_TEMP_E, 13
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_4
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_23
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_28:
+	compare VAR_TEMP_E, 19
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_3
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_26
+
+VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_31:
+	compare VAR_TEMP_E, 27
+	goto_if_eq VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_2
+	goto VARROCK_SEWERS_2F_CHECK_PLAYER_STAND_29
+
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND::
+	getplayerxy VAR_TEMP_F, VAR_TEMP_E
+	compare VAR_TEMP_F, 34
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_23
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_21:
+	compare VAR_TEMP_F, 31
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_20
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_18:
+	compare VAR_TEMP_F, 38
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_17
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_15:
+	compare VAR_TEMP_F, 23
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_14
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_12:
+	compare VAR_TEMP_F, 19
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_11
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_9:
+	compare VAR_TEMP_F, 24
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_8
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1:
+	special DrawWholeMapView
+	return
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_2:
+	setmetatile 34, 1, 726, 1
+	setvar VAR_TEMP_0, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_3:
+	setmetatile 31, 1, 726, 1
+	setvar VAR_TEMP_1, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_4:
+	setmetatile 38, 17, 726, 1
+	setvar VAR_TEMP_2, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_5:
+	setmetatile 23, 15, 726, 1
+	setvar VAR_TEMP_3, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_6:
+	setmetatile 19, 15, 726, 1
+	setvar VAR_TEMP_4, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_7:
+	setmetatile 24, 24, 726, 1
+	setvar VAR_TEMP_5, 1
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_8:
+	compare VAR_TEMP_E, 25
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_7
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_1
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_11:
+	compare VAR_TEMP_E, 16
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_6
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_9
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_14:
+	compare VAR_TEMP_E, 16
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_5
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_12
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_17:
+	compare VAR_TEMP_E, 18
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_4
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_15
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_20:
+	compare VAR_TEMP_E, 2
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_3
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_18
+
+VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_23:
+	compare VAR_TEMP_E, 2
+	goto_if_eq VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_2
+	goto VARROCK_SEWERS_3F_CHECK_PLAYER_STAND_21
+
+
+NPC_VARROCK_SEWERS_WOMAN::
+	faceplayer
+	msgbox NPC_VARROCK_SEWERS_WOMAN_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_Smuggler_XericsAmulet::
+	lock
+	faceplayer
+	namebox NPC_Smuggler_XericsAmulet_Text_0
+	checkitem ITEM_XERIC, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq NPC_Smuggler_XericsAmulet_2
+NPC_Smuggler_XericsAmulet_1:
+	msgbox NPC_Smuggler_XericsAmulet_Text_2
+	closemessage
+	hidenamebox
+	release
+	end
+
+NPC_Smuggler_XericsAmulet_2:
+	msgbox NPC_Smuggler_XericsAmulet_Text_1
+	closemessage
+	hidenamebox
+	giveitem ITEM_XERIC, 1
+	goto NPC_Smuggler_XericsAmulet_1
+
+
+NPC_Varrock_Church_Man::
+	lock
+	namebox NPC_Varrock_Church_Man_Text_0
+	msgbox NPC_Varrock_Church_Man_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_Varrock_Church_Father_Lawrence::
+	lock
+	faceplayer
+	namebox NPC_Varrock_Church_Father_Lawrence_Text_0
+	msgbox NPC_Varrock_Church_Father_Lawrence_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_Abyss_LostGuard::
+	lock
+	namebox NPC_Abyss_LostGuard_Text_0
+	msgbox NPC_Abyss_LostGuard_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+TELEPORT_LEAVE_ABYSS::
+	msgbox TELEPORT_LEAVE_ABYSS_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne TELEPORT_LEAVE_ABYSS_2
+TELEPORT_LEAVE_ABYSS_1:
+	closemessage
+	release
+	end
+
+TELEPORT_LEAVE_ABYSS_2:
+	msgbox TELEPORT_LEAVE_ABYSS_Text_1
+	warp MAP_VARROCK, 56, 23
+	goto TELEPORT_LEAVE_ABYSS_1
+
+
+ENCOUNTER_WALL_CREATURE_Text_0:
+	.string "Something jumps out of the wall towards\n"
+	.string "you!$"
+
+NPC_VARROCK_SEWERS_WOMAN_Text_0:
+	.string "The rats are unusually aggressive\n"
+	.string "lately.\p"
+	.string "I wonder if it has something to do with\n"
+	.string "the noise I hear coming through the\l"
+	.string "pipes.$"
+
+NPC_Smuggler_XericsAmulet_Text_0:
+	.string "Smuggler$"
+
+NPC_Smuggler_XericsAmulet_Text_1:
+	.string "Psst, have you heard?\p"
+	.string "There's a huge continent to the west\n"
+	.string "called Zeah.\p"
+	.string "Not many people from this continent\n"
+	.string "know about it due to how strict their\l"
+	.string "laws are over there…\p"
+	.string "……\p"
+	.string "Speaking of which, I need to get rid of\n"
+	.string "this amulet.\p"
+	.string "Take it.$"
+
+NPC_Smuggler_XericsAmulet_Text_2:
+	.string "You never got that amulet from me.$"
+
+NPC_Varrock_Church_Man_Text_0:
+	.string "Man$"
+
+NPC_Varrock_Church_Man_Text_1:
+	.string "Zzz…$"
+
+NPC_Varrock_Church_Father_Lawrence_Text_0:
+	.string "Lawrence$"
+
+NPC_Varrock_Church_Father_Lawrence_Text_1:
+	.string "Please remove those monsters from my\n"
+	.string "Church.$"
+
+NPC_Abyss_LostGuard_Text_0:
+	.string "Guard$"
+
+NPC_Abyss_LostGuard_Text_1:
+	.string "Urgh, my head.\p"
+	.string "I think something went wrong within the\n"
+	.string "teleportion matrix.$"
+
+TELEPORT_LEAVE_ABYSS_Text_0:
+	.string "Would you like to teleport back to\n"
+	.string "Gielinor?$"
+
+TELEPORT_LEAVE_ABYSS_Text_1:
+	.string "As you step into the rift the world\n"
+	.string "around you starts to shimmer.$"

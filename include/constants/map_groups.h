@@ -616,6 +616,7 @@
 #define MAP_WILDERNESS_VOLCANO_LOBBY    (20 | (34 << 8))
 #define MAP_GRAND_EXCHANGE              (21 | (34 << 8))
 #define MAP_VARROCK_GRAND_EXCHANGE_PATH (22 | (34 << 8))
+#define MAP_VARROCK_CHURCH              (23 | (34 << 8))
 
 // gMapGroup_PokescapeRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -709,6 +710,7 @@
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_3 (39 | (36 << 8))
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_4 (40 | (36 << 8))
 #define MAP_CHAOS_TUNNELS_B2F           (41 | (36 << 8))
+#define MAP_ABYSSAL_REALM_3             (42 | (36 << 8))
 
 // gMapGroup_PokescapeIndoorTutorialIsland
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

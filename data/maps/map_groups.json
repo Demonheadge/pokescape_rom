@@ -663,7 +663,8 @@
     "WizardsTower",
     "Wilderness_Volcano_Lobby",
     "GrandExchange",
-    "Varrock_GrandExchange_Path"
+    "Varrock_GrandExchange_Path",
+    "Varrock_Church"
   ],
   "gMapGroup_PokescapeRoutes": [
     "Route1",
@@ -756,7 +757,8 @@
     "Lumbridge_Swamp_Caves_WGS_2",
     "Lumbridge_Swamp_Caves_WGS_3",
     "Lumbridge_Swamp_Caves_WGS_4",
-    "Chaos_Tunnels_B2F"
+    "Chaos_Tunnels_B2F",
+    "Abyssal_Realm_3"
   ],
   "gMapGroup_PokescapeIndoorTutorialIsland": [
     "Tutorial_Island_Lab_Up",

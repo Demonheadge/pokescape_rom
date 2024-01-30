@@ -1,0 +1,206 @@
+mapscripts Varrock_Sewers_3F_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        call(Randomise_VarrockSewer_3F_Spawns)
+        call(VARROCK_SEWERS_3F_STATE)
+    }
+}
+
+script VARROCK_SEWERS_3F_STATE
+{
+    if (flag(FLAG_DG_DOOR_VARROCK_SEWERS) == TRUE) {
+        setmetatile(2, 25, 121, 0)
+        special(DrawWholeMapView)
+    }
+    return
+}
+
+script Randomise_VarrockSewer_3F_Spawns
+{
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(34,1,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(31,1,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(38,17,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(23,15,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(19,15,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(24,24,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+
+script DUNGEONEERING_DOOR_VarrockSewers
+{
+    if (flag(FLAG_DG_DOOR_VARROCK_SEWERS) == FALSE)
+    {
+        msgbox(format("It appears to be a mysterious door.\pWould you like to try and pry it open?"), MSGBOX_YESNO)
+        closemessage
+		if (var(VAR_RESULT))
+        {
+            playse(SE_SWITCH)
+            waitse
+            delay(30)
+            setmetatile(2, 25, 121, 0)
+            special(DrawWholeMapView) 
+            playse(SE_ICE_BREAK)
+            msgbox(format("The door opens."))
+            closemessage
+            setflag(FLAG_DG_DOOR_VARROCK_SEWERS)
+        }
+    }
+    else
+    {
+        msgbox(format("The door is already open."))
+        closemessage
+    } 
+    release
+    end
+}
+
+
+
+
+script SCURRIUS_TRIGGER
+{
+    lock
+    if (var(VAR_SCURRIUS) == 4) {
+        msgbox(format("You hear many little rat sounds coming from within."))
+        closemessage
+        release
+        end
+    }
+    msgbox(format("As you approach the wall you hear a loud growl."))
+    closemessage
+    delay(1)
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("SKREAWROOWL!"))
+    waitmoncry
+    closemessage
+	delay(1)
+    msgbox(format("The monster seems to be hungry."))
+    checkitem(ITEM_DARK_TOTEM, 1)
+    if (var(VAR_RESULT)) {
+         msgbox(format("Would you like to give it the cheese in your backpack?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT)){
+                if ((var(VAR_SCURRIUS) == 1) || (var(VAR_SCURRIUS) == 2) || (var(VAR_SCURRIUS) == 3))
+                {
+                    msgbox(format("The stench of the cheese makes the Monster feral!\pIt goobles up the cheese then attacks!"))
+                    goto(ENCOUNTER_SCURRIUS)
+                }
+                else 
+                {
+                    msgbox(format("The Monster is displeased by the cheese and turns away.\pMaybe there is a way to make it smell more appealing."))
+                }
+
+            }
+    }
+    else {
+        msgbox(format("Maybe it wants some cheese."))
+    }
+    closemessage
+    release
+    end
+}
+
+script SCURRIUS_CAULDRON
+{
+    msgbox(format("Smells good.\pThere are a bunch of ingredients scattered around the cauldron."))
+    if ((var(VAR_SCURRIUS) == 1) || (var(VAR_SCURRIUS) == 2) ||(var(VAR_SCURRIUS) == 3)) {
+        closemessage
+        release
+        end
+    }
+    checkitem(ITEM_DARK_TOTEM, 1)
+    if (var(VAR_RESULT)) {
+       msgbox(format("The cheese in your backpack reacts to the cauldron, it wants to be dunked in.\pWould you like to dunk the cheese?"), MSGBOX_YESNO)
+       if (var(VAR_RESULT)){
+        msgbox(format("The cheese happily swims around in the soup.\pBut it seems to want something grater.\pYou notice the ingredients next to the cauldron and decide to put one in.\pWhich ingredient do you choose?"))
+        multichoicedefault (1, 0, MULTI_SCURRIUS, 0, 0)
+            switch (var(VAR_RESULT)) {
+                case 0:
+                    msgbox(format("You sprinkle the Cave Fungus into the cauldron."))
+                    setvar(VAR_SCURRIUS, 1)
+                case 1:
+                    msgbox(format("As you sprinkle the Glowing Moss into the cauldron a Moss Giant stares at you from across the room."))
+                    setvar(VAR_SCURRIUS, 2)
+                case 2:
+                    msgbox(format("You pour the smelly Brown Water into the cauldron."))
+                    setvar(VAR_SCURRIUS, 3)
+            }
+        msgbox(format("The cheese is looking a bit blue.\pYou scoop the cheese out of the cauldron, it smells foul!\pYou put it away in your backpack."))
+       }
+    }
+    closemessage
+    release
+    end
+}
+
+script ENCOUNTER_SCURRIUS
+{
+	lock
+    namebox ("SCURRIUS")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("SKREAWROOWL!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    if (var(VAR_SCURRIUS) == 1) 
+    {
+        setwildbattle (SPECIES_SCURRIUS_MELEE_FORM, 30, ITEM_NONE)
+    }
+    elif (var(VAR_SCURRIUS) == 2) 
+    {
+        setwildbattle (SPECIES_SCURRIUS_RANGED_FORM, 30, ITEM_NONE)
+    }
+    elif (var(VAR_SCURRIUS) == 3) 
+    {
+        setwildbattle (SPECIES_SCURRIUS_MAGIC_FORM, 30, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            //removeitem(ITEM_CHEESE, 1)
+            setvar(VAR_SCURRIUS, 4)
+            msgbox(format("You feel the catacombs shake and tremble as the Dark Totem shatters into pieces.\pThe air feels renewed."))
+            closemessage
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            //removeitem(ITEM_CHEESE, 1)
+            setvar(VAR_SCURRIUS, 4)
+            msgbox(format("You feel the catacombs shake and tremble as the Dark Totem shatters into pieces.\pThe air feels renewed."))
+            closemessage
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_RAN:
+            msgbox(format("Scurrius is displeased."))
+            closemessage
+        case B_OUTCOME_PLAYER_TELEPORTED:
+            msgbox(format("Scurrius is in disbelief you just teleported away from battle."))
+            closemessage
+    }
+    release
+	end
+}

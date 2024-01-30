@@ -9174,6 +9174,26 @@ const u32 gMonShinyPalette_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/S
 const u8 gMonIcon_Skotizo[] = INCBIN_U8("graphics/pokescape_monsters/Skotizo/icon.4bpp");
 const u8 gMonFootprint_Skotizo[] = INCBIN_U8("graphics/pokescape_monsters/Skotizo/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Scurrius_Melee_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Melee_Form/front.4bpp.lz");
+const u32 gMonPalette_Scurrius_Melee_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Melee_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scurrius_Melee_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Melee_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scurrius_Melee_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Melee_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scurrius_Melee_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Melee_Form/icon.4bpp");
+const u8 gMonFootprint_Scurrius_Melee_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Melee_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Scurrius_Ranged_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Ranged_Form/front.4bpp.lz");
+const u32 gMonPalette_Scurrius_Ranged_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Ranged_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scurrius_Ranged_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Ranged_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scurrius_Ranged_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Ranged_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scurrius_Ranged_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Ranged_Form/icon.4bpp");
+const u8 gMonFootprint_Scurrius_Ranged_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Ranged_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Magic_Form/front.4bpp.lz");
+const u32 gMonPalette_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Magic_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Magic_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Magic_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scurrius_Magic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Magic_Form/icon.4bpp");
+const u8 gMonFootprint_Scurrius_Magic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Magic_Form/footprint.1bpp");
 
 
 

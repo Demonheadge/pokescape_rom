@@ -1,0 +1,349 @@
+mapscripts Varrock_Sewers_1F_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        call(Randomise_VarrockSewer_1F_Spawns)
+    }
+
+}
+
+script Randomise_VarrockSewer_1F_Spawns
+{
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(15,29,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(8,24,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(21,28,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(30,27,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(23,12,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(19,5,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(10,2,726,1)
+        setvar(VAR_TEMP_6, 1)
+    }
+    random(2)
+    if (var(VAR_RESULT) == 1) {
+        setmetatile(8,2,726,1)
+        setvar(VAR_TEMP_7, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+
+
+
+
+script ENCOUNTER_WALL_CREATURE {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_WallBeast)
+    playSE(SE_LEDGE)
+    msgbox(format("Something jumps out of the wall towards you!"))
+    waitmovement(0)
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if ((var(VAR_RESULT) == MAP_VARROCK_SEWERS_1F) || (var(VAR_RESULT) == MAP_VARROCK_SEWERS_2F) || (var(VAR_RESULT) == MAP_VARROCK_SEWERS_3F)) {
+        call(VARROCK_SEWERS_ENCOUNTERS)
+    }
+    dowildbattle
+    switch(var(VAR_RESULT)){
+        case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            specialvar (VAR_RESULT, GetCurrentMap)
+            if (var(VAR_RESULT) == MAP_VARROCK_SEWERS_1F){
+                call(VARROCK_SEWERS_1F_CHECK_PLAYER_STAND)
+            }
+            elif (var(VAR_RESULT) == MAP_VARROCK_SEWERS_2F){
+                call(VARROCK_SEWERS_2F_CHECK_PLAYER_STAND)
+            }
+            elif (var(VAR_RESULT) == MAP_VARROCK_SEWERS_3F){
+                call(VARROCK_SEWERS_3F_CHECK_PLAYER_STAND)
+            }
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            specialvar (VAR_RESULT, GetCurrentMap)
+            if (var(VAR_RESULT) == MAP_VARROCK_SEWERS_1F){
+                call(VARROCK_SEWERS_1F_CHECK_PLAYER_STAND)
+            }
+            elif (var(VAR_RESULT) == MAP_VARROCK_SEWERS_2F){
+                call(VARROCK_SEWERS_2F_CHECK_PLAYER_STAND)
+            }
+            elif (var(VAR_RESULT) == MAP_VARROCK_SEWERS_3F){
+                call(VARROCK_SEWERS_3F_CHECK_PLAYER_STAND)
+            }
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+
+
+}
+
+script VARROCK_SEWERS_ENCOUNTERS
+{
+    random(5)
+    switch (var(VAR_RESULT)) {
+        case 0: 
+            setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+        case 1: 
+            setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+        case 2: 
+            setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+        case 3: 
+            setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+        case 4: 
+            setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+    }
+    return
+}
+
+script VARROCK_SEWERS_1F_CHECK_PLAYER_STAND {
+    getplayerxy(VAR_TEMP_F, VAR_TEMP_E)
+    if ((var(VAR_TEMP_F) == 15) && (var(VAR_TEMP_E) == 30)){
+        setmetatile(15,29,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 8) && (var(VAR_TEMP_E) == 25)){
+        setmetatile(8,24,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 21) && (var(VAR_TEMP_E) == 29)){
+        setmetatile(21,28,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 30) && (var(VAR_TEMP_E) == 28)){
+        setmetatile(30,27,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 23) && (var(VAR_TEMP_E) == 13)){
+        setmetatile(23,12,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 19) && (var(VAR_TEMP_E) == 6)){
+        setmetatile(19,5,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 10) && (var(VAR_TEMP_E) == 3)){
+        setmetatile(10,2,726,1)
+        setvar(VAR_TEMP_6, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 8) && (var(VAR_TEMP_E) == 3)){
+        setmetatile(8,2,726,1)
+        setvar(VAR_TEMP_7, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+script VARROCK_SEWERS_2F_CHECK_PLAYER_STAND {
+    getplayerxy(VAR_TEMP_F, VAR_TEMP_E)
+    if ((var(VAR_TEMP_F) == 12) && (var(VAR_TEMP_E) == 27)){
+        setmetatile(12,26,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 10) && (var(VAR_TEMP_E) == 19)){
+        setmetatile(10,18,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 9) && (var(VAR_TEMP_E) == 13)){
+        setmetatile(9,12,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 11) && (var(VAR_TEMP_E) == 13)){
+        setmetatile(11,12,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 12) && (var(VAR_TEMP_E) == 3)){
+        setmetatile(12,2,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 29) && (var(VAR_TEMP_E) == 3)){
+        setmetatile(29,2,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 33) && (var(VAR_TEMP_E) == 3)){
+        setmetatile(33,2,726,1)
+        setvar(VAR_TEMP_6, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 41) && (var(VAR_TEMP_E) == 8)){
+        setmetatile(41,7,726,1)
+        setvar(VAR_TEMP_7, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+script VARROCK_SEWERS_3F_CHECK_PLAYER_STAND {
+    getplayerxy(VAR_TEMP_F, VAR_TEMP_E)
+    if ((var(VAR_TEMP_F) == 34) && (var(VAR_TEMP_E) == 2)){
+        setmetatile(34,1,726,1)
+        setvar(VAR_TEMP_0, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 31) && (var(VAR_TEMP_E) == 2)){
+        setmetatile(31,1,726,1)
+        setvar(VAR_TEMP_1, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 38) && (var(VAR_TEMP_E) == 18)){
+        setmetatile(38,17,726,1)
+        setvar(VAR_TEMP_2, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 23) && (var(VAR_TEMP_E) == 16)){
+        setmetatile(23,15,726,1)
+        setvar(VAR_TEMP_3, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 19) && (var(VAR_TEMP_E) == 16)){
+        setmetatile(19,15,726,1)
+        setvar(VAR_TEMP_4, 1)
+    }
+    elif ((var(VAR_TEMP_F) == 24) && (var(VAR_TEMP_E) == 25)){
+        setmetatile(24,24,726,1)
+        setvar(VAR_TEMP_5, 1)
+    }
+    special(DrawWholeMapView) 
+    return
+}
+
+
+
+
+
+
+
+script NPC_VARROCK_SEWERS_WOMAN
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("The rats are unusually aggressive lately.\pI wonder if it has something to do with the noise I hear coming through the pipes."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script NPC_Smuggler_XericsAmulet
+{
+    lock
+    faceplayer
+    namebox("Smuggler")
+    checkitem(ITEM_XERIC, 1)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Psst, have you heard?\pThere's a huge continent to the west called Zeah.\pNot many people from this continent know about it due to how strict their laws are over there…\p……\pSpeaking of which, I need to get rid of this amulet.\pTake it."))
+        closemessage
+        hidenamebox
+        giveitem(ITEM_XERIC, 1)
+    }
+    msgbox(format("You never got that amulet from me."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_Varrock_Church_Man
+{
+    lock
+    namebox("Man")
+    msgbox(format("Zzz…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_Varrock_Church_Father_Lawrence
+{
+    lock
+    faceplayer
+    namebox("Lawrence")
+    msgbox(format("Please remove those monsters from my Church."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_Abyss_LostGuard
+{
+    lock
+    namebox("Guard")
+    msgbox(format("Urgh, my head.\pI think something went wrong within the teleportion matrix."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TELEPORT_LEAVE_ABYSS 
+{
+    msgbox(format("Would you like to teleport back to Gielinor?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+        msgbox(format("As you step into the rift the world around you starts to shimmer."))
+        warp (MAP_VARROCK,56,23)
+    }
+    closemessage
+    release
+    end
+}

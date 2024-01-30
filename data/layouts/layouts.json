@@ -7930,6 +7930,26 @@
       "secondary_tileset": "gTileset_PokeScape_Sewers",
       "border_filepath": "data/layouts/Varrock_Sewers_3F/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Sewers_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_CHURCH",
+      "name": "Varrock_Church_Layout",
+      "width": 10,
+      "height": 15,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/Varrock_Church/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Church/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABYSSAL_REALM_3",
+      "name": "Abyssal_Realm_3_Layout",
+      "width": 9,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Abyss",
+      "border_filepath": "data/layouts/Abyssal_Realm_3/border.bin",
+      "blockdata_filepath": "data/layouts/Abyssal_Realm_3/map.bin"
     }
   ]
 }

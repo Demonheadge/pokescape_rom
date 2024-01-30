@@ -7460,3 +7460,7 @@ const u8 gAbyssal_GuardianPokedexText[] = _(
 const u8 gSkotizoPokedexText[] = _(
 "A demon found deep within the depths\n"
 "of Kourend. It's origins are unknown.");
+
+const u8 gScurriusPokedexText[] = _(
+"A big rat.\n"
+"");

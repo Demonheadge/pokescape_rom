@@ -1337,6 +1337,9 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_TZTOK_JAD_RS3_MEGA_FORM] = sTzTok_Jad_RS3_Mega_FormLevelUpLearnset,
     [SPECIES_ABYSSAL_GUARDIAN] = sAbyssal_GuardianLevelUpLearnset,
     [SPECIES_SKOTIZO] = sSkotizoLevelUpLearnset,
+    [SPECIES_SCURRIUS_MELEE_FORM] = sScurrius_Melee_FormLevelUpLearnset,
+    [SPECIES_SCURRIUS_RANGED_FORM] = sScurrius_Ranged_FormLevelUpLearnset,
+    [SPECIES_SCURRIUS_MAGIC_FORM] = sScurrius_Magic_FormLevelUpLearnset,
 
 
 

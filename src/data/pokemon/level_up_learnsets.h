@@ -25139,3 +25139,18 @@ static const struct LevelUpMove sSkotizoLevelUpLearnset[] = {
 LEVEL_UP_MOVE(1, MOVE_SCRATCH),
 LEVEL_UP_END
 };
+
+static const struct LevelUpMove sScurrius_Melee_FormLevelUpLearnset[] = {
+LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+LEVEL_UP_END
+};
+
+static const struct LevelUpMove sScurrius_Ranged_FormLevelUpLearnset[] = {
+LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+LEVEL_UP_END
+};
+
+static const struct LevelUpMove sScurrius_Magic_FormLevelUpLearnset[] = {
+LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+LEVEL_UP_END
+};

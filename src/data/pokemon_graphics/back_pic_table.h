@@ -1336,6 +1336,9 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 	SPECIES_SPRITE(TZTOK_JAD_RS3_MEGA_FORM, gMonBackPic_TzTok_Jad_RS3_Mega_Form),
 	SPECIES_SPRITE(ABYSSAL_GUARDIAN, gMonBackPic_Abyssal_Guardian),
 	SPECIES_SPRITE(SKOTIZO, gMonBackPic_Skotizo),
+	SPECIES_SPRITE(SCURRIUS_MELEE_FORM, gMonBackPic_Scurrius_Melee_Form),
+	SPECIES_SPRITE(SCURRIUS_RANGED_FORM, gMonBackPic_Scurrius_Ranged_Form),
+	SPECIES_SPRITE(SCURRIUS_MAGIC_FORM, gMonBackPic_Scurrius_Magic_Form),
 
 
 

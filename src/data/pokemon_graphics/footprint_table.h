@@ -1336,6 +1336,9 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_TZTOK_JAD_RS3_MEGA_FORM] = gMonFootprint_TzTok_Jad_RS3_Mega_Form,
     [SPECIES_ABYSSAL_GUARDIAN] = gMonFootprint_Abyssal_Guardian,
     [SPECIES_SKOTIZO] = gMonFootprint_Skotizo,
+    [SPECIES_SCURRIUS_MELEE_FORM] = gMonFootprint_Scurrius_Melee_Form,
+    [SPECIES_SCURRIUS_RANGED_FORM] = gMonFootprint_Scurrius_Ranged_Form,
+    [SPECIES_SCURRIUS_MAGIC_FORM] = gMonFootprint_Scurrius_Magic_Form,
 
 
 

@@ -1754,3 +1754,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Tzhaar_Caves_2/scripts.inc"
 
 	.include "data/maps/Varrock_Sewers_3F/scripts.inc"
+
+	.include "data/maps/Varrock_Church/scripts.inc"
+
+	.include "data/maps/Abyssal_Realm_3/scripts.inc"

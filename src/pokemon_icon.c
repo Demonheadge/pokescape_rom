@@ -1360,6 +1360,9 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_PIG_SUMMONING_FORM] = gMonIcon_Pig_Summoning_Form,
 	[SPECIES_ABYSSAL_GUARDIAN] = gMonIcon_Abyssal_Guardian,
 	[SPECIES_SKOTIZO] = gMonIcon_Skotizo,
+	[SPECIES_SCURRIUS_MELEE_FORM] = gMonIcon_Scurrius_Melee_Form,
+	[SPECIES_SCURRIUS_RANGED_FORM] = gMonIcon_Scurrius_Ranged_Form,
+	[SPECIES_SCURRIUS_MAGIC_FORM] = gMonIcon_Scurrius_Magic_Form,
 	//POKESCAPE END
     [SPECIES_EGG] = gMonIcon_Egg,
     [SPECIES_UNOWN_B] = gMonIcon_UnownB,
@@ -2732,6 +2735,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_PIG_SUMMONING_FORM] = 0,
 	[SPECIES_ABYSSAL_GUARDIAN] = 2,
 	[SPECIES_SKOTIZO] = 0,
+	[SPECIES_SCURRIUS_MELEE_FORM] = 0,
+	[SPECIES_SCURRIUS_RANGED_FORM] = 0,
+	[SPECIES_SCURRIUS_MAGIC_FORM] = 0,
 
 	//POKESCAPE END
     [SPECIES_EGG] = 2,

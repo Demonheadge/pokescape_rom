@@ -1895,6 +1895,9 @@ const u8 gText_NEITIZNOT[] =_("NEITIZNOT");
 const u8 gText_GetSlayerAssignment[] =_("SLAYER ASSIGNMENT");
 const u8 gText_OpenSlayerRewardShop[] =_("REWARD SHOP");
 
+const u8 gText_CAVE_FUNGUS[] =_("CAVE FUNGUS");
+const u8 gText_GLOWING_MOSS[] =_("GLOWING MOSS");
+const u8 gText_BROWN_WATER[] =_("BROWN WATER");
 
 //misc
 const u8 gText_NextMenu[] =_("Next");

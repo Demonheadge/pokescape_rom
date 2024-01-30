@@ -388,7 +388,7 @@ script ITEM_SAFARI_ZONE_POUCH
 
 script POKESCAPE_CURRENT_VERSION
 {
-    msgbox(format("PokeScape Version 5.0"))
+    msgbox(format("PokeScape Version 1.5.2"))
     closemessage
     end
 }
