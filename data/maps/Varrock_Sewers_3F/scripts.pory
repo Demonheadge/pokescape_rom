@@ -99,7 +99,7 @@ script SCURRIUS_TRIGGER
     closemessage
 	delay(1)
     msgbox(format("The monster seems to be hungry."))
-    checkitem(ITEM_DARK_TOTEM, 1)
+    checkitem(ITEM_SCURRIUS_CHEESE, 1)
     if (var(VAR_RESULT)) {
          msgbox(format("Would you like to give it the cheese in your backpack?"), MSGBOX_YESNO)
             if (var(VAR_RESULT)){
@@ -131,7 +131,7 @@ script SCURRIUS_CAULDRON
         release
         end
     }
-    checkitem(ITEM_DARK_TOTEM, 1)
+    checkitem(ITEM_SCURRIUS_CHEESE, 1)
     if (var(VAR_RESULT)) {
        msgbox(format("The cheese in your backpack reacts to the cauldron, it wants to be dunked in.\pWould you like to dunk the cheese?"), MSGBOX_YESNO)
        if (var(VAR_RESULT)){
@@ -182,14 +182,14 @@ script ENCOUNTER_SCURRIUS
     switch(var(VAR_RESULT)){
 		case B_OUTCOME_WON:
             fadescreen(FADE_TO_BLACK)
-            //removeitem(ITEM_CHEESE, 1)
+            removeitem(ITEM_SCURRIUS_CHEESE, 1)
             setvar(VAR_SCURRIUS, 4)
             msgbox(format("You feel the catacombs shake and tremble as the Dark Totem shatters into pieces.\pThe air feels renewed."))
             closemessage
             fadescreen(FADE_FROM_BLACK)
         case B_OUTCOME_CAUGHT:
             fadescreen(FADE_TO_BLACK)
-            //removeitem(ITEM_CHEESE, 1)
+            removeitem(ITEM_SCURRIUS_CHEESE, 1)
             setvar(VAR_SCURRIUS, 4)
             msgbox(format("You feel the catacombs shake and tremble as the Dark Totem shatters into pieces.\pThe air feels renewed."))
             closemessage
