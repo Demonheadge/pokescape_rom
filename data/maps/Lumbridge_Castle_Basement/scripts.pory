@@ -26,7 +26,7 @@ script NPC_LumbridgeBasement_Demonheadge
 	lock
 	faceplayer
     namebox ("Demonheadge")
-	msgbox(format("Hi there, I hope you enjoy playing PokeScape.\pJust so you know this portal leads to my beta testing area.\pSo please do not go here unless you have finished playing the beta and want to mess around with some buggy mess, cheat, etc.\pI do highly reccomend you play through the beta once first."))
+	msgbox(format("Hi there, I hope you enjoy playing PokeScape.\pJust so you know this portal leads to my beta testing area.\pSo please do not go here unless you have finished playing the beta and want to mess around with some buggy mess, cheat, etc.\pI do highly recommend you play through the beta once first."))
     waitmessage
     hidenamebox
 	release

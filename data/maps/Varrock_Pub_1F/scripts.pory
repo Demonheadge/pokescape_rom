@@ -136,7 +136,7 @@ script NPC_VarrockPub_NPC5
     lock
     faceplayer
     namebox("Guard")
-    msgbox(format("Appearntly some fragments of a stone are the key to Mega Evolution.\pBut what stone can do that?")) 
+    msgbox(format("Apparently some fragments of a stone are the key to Mega Evolution.\pBut what stone can do that?")) 
     hidenamebox
     release
     end

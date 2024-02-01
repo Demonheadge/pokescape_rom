@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+- 
+
+### Fixed
+
+- Fixed various Typos
+
+- Fixed some graphical issues.
+
+### Removed
+
+- Removed Vanilla Potion from PC and replaced with other items.
+
 
 ## [1.5.2] - 30-01-2024
 

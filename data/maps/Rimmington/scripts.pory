@@ -1116,7 +1116,7 @@ script NPC_RIMMINGTON_NPC_5
     lock
     faceplayer
     namebox("CUPHOLDER")
-    msgbox(format("I want to buy a skillcape, but I appearntly don't have the level to wear it."))
+    msgbox(format("I want to buy a skillcape, but I apparently don't have the level to wear it."))
     hidenamebox
     release
     end

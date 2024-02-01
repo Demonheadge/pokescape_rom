@@ -2315,7 +2315,7 @@ static const u8 sScroll_05_Desc[] = _(
 static const u8 sScroll_06_Desc[] = _(
     "This Scroll\n"
     "contains the move:\n"
-    "(Nitro Charge)");
+    "(Flame Charge)");
 
 static const u8 sScroll_07_Desc[] = _(
     "This Scroll\n"
@@ -2375,7 +2375,7 @@ static const u8 sScroll_17_Desc[] = _(
 static const u8 sScroll_18_Desc[] = _(
     "This Scroll\n"
     "contains the move:\n"
-    "()");
+    "(Steel Wing)");
 
 static const u8 sScroll_19_Desc[] = _(
     "This Scroll\n"
@@ -2510,7 +2510,7 @@ static const u8 sScroll_44_Desc[] = _(
 static const u8 sScroll_45_Desc[] = _(
     "This Scroll\n"
     "contains the move:\n"
-    "(Spectral Theif)");
+    "(Spectral Thief)");
 
 static const u8 sScroll_46_Desc[] = _(
     "This Scroll\n"
@@ -2545,7 +2545,7 @@ static const u8 sScroll_51_Desc[] = _(
 static const u8 sScroll_52_Desc[] = _(
     "This Scroll\n"
     "contains the move:\n"
-    "()");
+    "(Powder)");
 
 static const u8 sScroll_53_Desc[] = _(
     "This Scroll\n"

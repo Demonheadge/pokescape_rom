@@ -434,7 +434,7 @@ script NPC_FALADORCASTLE_GYM_SirRentee
 	lock
 	faceplayer
     namebox ("Sir Rentee")
-	msgbox(format("I am the designer of all the Family Crests.\pI wanted to make a design for the Badge of the Falador Gym too, but Sir Amik prevered the design of some 'Stan' fella over my design.\pSigh, guess I could not compete against such artistic brilliance."))
+	msgbox(format("I am the designer of all the Family Crests.\pI wanted to make a design for the Badge of the Falador Gym too, but Sir Amik preferred the design of some 'Stan' fella over my design.\pSigh, guess I could not compete against such artistic brilliance."))
     closemessage
     hidenamebox
 	release
