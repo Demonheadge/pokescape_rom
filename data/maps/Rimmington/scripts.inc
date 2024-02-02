@@ -1770,7 +1770,7 @@ NPC_RIMMINGTON_NPC_4_Text_1:
 
 NPC_RIMMINGTON_NPC_5_Text_0:
 	.string "I want to buy a skillcape, but I\n"
-	.string "appearntly don't have the level to wear\l"
+	.string "apparently don't have the level to wear\l"
 	.string "it.$"
 
 NPC_RIMMINGTON_NPC_6_Text_0:

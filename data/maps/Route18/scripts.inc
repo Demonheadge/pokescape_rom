@@ -258,8 +258,8 @@ BATTLE_ROUTE18_TRAINER6_Text_2:
 	.string "Me respect you strength.$"
 
 BATTLE_ROUTE18_TRAINER7_Text_0:
-	.string "Good of you to come through the east\n"
-	.string "gate, you would by cruched by the\l"
+	.string "Good of you to come through the west\n"
+	.string "gate, you would by crushed by the\l"
 	.string "south.$"
 
 BATTLE_ROUTE18_TRAINER7_Text_1:

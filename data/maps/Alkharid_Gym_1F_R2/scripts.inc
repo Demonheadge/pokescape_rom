@@ -794,7 +794,7 @@ BARROWS_GUTHAN_Text_0:
 	.string "Guthan$"
 
 BARROWS_GUTHAN_Text_1:
-	.string "I am known simple as Guthan.\p"
+	.string "I am known simply as Guthan.\p"
 	.string "Face me if you dare!$"
 
 TEST_BATTLE_Text_0:

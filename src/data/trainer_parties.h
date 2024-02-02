@@ -3991,7 +3991,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 31,
-    .species = SPECIES_CHARMELEON,
+    .species = SPECIES_CHAMELEON,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_4[] = {

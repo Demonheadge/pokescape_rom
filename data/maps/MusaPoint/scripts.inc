@@ -292,8 +292,8 @@ NPC_Monkey_Text_1:
 	.string "Oook, Ook!$"
 
 NPC_MUSA_POINT_PubOwner_Text_0:
-	.string "Can I intrest you in some of our famous\n"
-	.string "Karamajan Rum?\p"
+	.string "Can I interest you in some of our\n"
+	.string "famous Karamjan Rum?\p"
 	.string "Or perhaps you would like some of our\n"
 	.string "wines, spirits or beers?$"
 

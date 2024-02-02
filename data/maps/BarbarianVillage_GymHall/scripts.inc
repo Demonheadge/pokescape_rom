@@ -609,7 +609,7 @@ NPC_BARBGYM_BARBARIAN_1_Text_0:
 
 NPC_BARBGYM_BARBARIAN_1_Text_1:
 	.string "Your battle was impressive!\p"
-	.string "You are now a honnorary Barbarian!\p"
+	.string "You are now a honorary Barbarian!\p"
 	.string "You should go see Litara about\n"
 	.string "accessing our Stronghold.$"
 
@@ -645,7 +645,7 @@ NPC_BARBGYM_BARBARIAN_2_Text_1:
 
 NPC_BARBGYM_BARBARIAN_2_Text_2:
 	.string "In this corner we have the challenger\n"
-	.string "known simple as {PLAYER}!$"
+	.string "known simply as {PLAYER}!$"
 
 NPC_BARBGYM_BARBARIAN_2_Text_3:
 	.string "And in this corner it is our very own\n"
@@ -759,8 +759,8 @@ NPC_BARBGYM_BARBARIAN_2_Text_28:
 	.string "And of course we cannot forget this,\n"
 	.string "the main reason you are here today.\p"
 	.string "Here you go {PLAYER} I proudly award\n"
-	.string "you this Gym Badge and also hearby\l"
-	.string "declare you an honnorary Barbarian!$"
+	.string "you this Gym Badge and also hereby\l"
+	.string "declare you an honorary Barbarian!$"
 
 NPC_BARBGYM_BARBARIAN_2_Text_29:
 	.string "{PLAYER} received the Barbarian\n"

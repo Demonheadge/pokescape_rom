@@ -976,7 +976,7 @@ VARROCK_GYM_GENERIC_BOOK_Text_4:
 	.string "beautiful strong looking woman\l"
 	.string "crushing a Turoth between her thighs.\p"
 	.string "The text reads…\p"
-	.string "The truth behind Neive the Slayer\n"
+	.string "The truth behind Nieve the Slayer\n"
 	.string "Master.$"
 
 VARROCK_GYM_GENERIC_BOOK_Text_5:
@@ -1156,7 +1156,7 @@ VARROCK_GYM_GUARD_BLOCKING_Text_0:
 VARROCK_GYM_GUARD_6_Text_0:
 	.string "This castle is no where near as\n"
 	.string "confusing as the Falador Castle, I am\l"
-	.string "greatful for that.$"
+	.string "grateful for that.$"
 
 BATTLE_VARROCK_GYM_TRAINER_1_Text_0:
 	.string "Hey you!\n"

@@ -56,7 +56,7 @@ NPC_LumbridgeBasement_Demonheadge_Text_1:
 	.string "have finished playing the beta and\l"
 	.string "want to mess around with some buggy\l"
 	.string "mess, cheat, etc.\p"
-	.string "I do highly reccomend you play through\n"
+	.string "I do highly recommend you play through\n"
 	.string "the beta once first.$"
 
 NPC_LumbridgeBasement_Item_Text_0:

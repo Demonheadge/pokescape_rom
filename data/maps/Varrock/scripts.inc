@@ -1187,7 +1187,7 @@ VARROCK_NPC_Guard_6_Text_1:
 	.string "Dwarf$"
 
 VARROCK_NPC_Guard_6_Text_2:
-	.string "And the kart system goes to the\n"
+	.string "And the cart system goes to the\n"
 	.string "castle?$"
 
 VARROCK_NPC_Guard_6_Text_3:
@@ -1384,8 +1384,8 @@ NPC_ARCHAEOLOGIST_BLOCKADE_1_Text_0:
 	.string "Please wait awhile, we recently\n"
 	.string "uncovered some mysterious ruins within\l"
 	.string "our digsite.\p"
-	.string "We are in the middle of excervating\n"
-	.string "them and cannot risk being disterbed.$"
+	.string "We are in the middle of excavating them\n"
+	.string "and cannot risk being disturbed.$"
 
 NPC_ARCHAEOLOGIST_BLOCKADE_1_Text_1:
 	.string "You should see it!\p"

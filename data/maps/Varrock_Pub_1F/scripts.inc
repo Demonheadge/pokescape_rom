@@ -489,7 +489,7 @@ NPC_VarrockPub_NPC4_Text_6:
 	.string "the monsters.$"
 
 NPC_VarrockPub_NPC5_Text_0:
-	.string "Appearntly some fragments of a stone\n"
+	.string "Apparently some fragments of a stone\n"
 	.string "are the key to Mega Evolution.\p"
 	.string "But what stone can do that?$"
 
