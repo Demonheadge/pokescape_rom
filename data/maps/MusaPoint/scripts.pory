@@ -193,7 +193,7 @@ script NPC_MUSA_POINT_PubOwner
 	lock
 	faceplayer
     //namebox ("")
-	msgbox(format("Can I intrest you in some of our famous Karamajan Rum?\pOr perhaps you would like some of our wines, spirits or beers?"))
+	msgbox(format("Can I interest you in some of our famous Karamjan Rum?\pOr perhaps you would like some of our wines, spirits or beers?"))
     closemessage
     hidenamebox
 	release

@@ -178,7 +178,7 @@ script BATTLE_ROUTE18_TRAINER6 // GOBLIN
 
 script BATTLE_ROUTE18_TRAINER7 // GUARD
 {
-    trainerbattle_single(TRAINER_ROUTE18_TRAINER_7, format("Good of you to come through the east gate, you would by cruched by the south."),format("Maybe you can stand up against those Dark Wizards."))
+    trainerbattle_single(TRAINER_ROUTE18_TRAINER_7, format("Good of you to come through the west gate, you would by crushed by the south."),format("Maybe you can stand up against those Dark Wizards."))
     //namebox ("")
     msgbox(format("The Dark Wizards are a problem for years but we don't have enough funding to deal with them."))
 	hidenamebox

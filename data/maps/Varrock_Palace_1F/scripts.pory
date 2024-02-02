@@ -240,7 +240,7 @@ script VARROCK_GYM_GENERIC_BOOK
         case 3:
             msgbox(format("This is book looks interesting to read."))
         case 4:
-            msgbox(format("It is a magazine!\pIt appears to be an image of a very beautiful strong looking woman crushing a Turoth between her thighs.\pThe text reads…\pThe truth behind Neive the Slayer Master."))
+            msgbox(format("It is a magazine!\pIt appears to be an image of a very beautiful strong looking woman crushing a Turoth between her thighs.\pThe text reads…\pThe truth behind Nieve the Slayer Master."))
     }
     if (var(VAR_POKESCAPE_VARROCK_GYM_QUEST) == 10)
     {
@@ -632,7 +632,7 @@ script VARROCK_GYM_GUARD_6
 {
     lock
     faceplayer
-    msgbox(format("This castle is no where near as confusing as the Falador Castle, I am greatful for that."))
+    msgbox(format("This castle is no where near as confusing as the Falador Castle, I am grateful for that."))
     closemessage
     hidenamebox
     release

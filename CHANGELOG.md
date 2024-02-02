@@ -14,6 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Fixed some graphical issues.
 
+- Fixed some collisions.
+
 ### Removed
 
 - Removed Vanilla Potion from PC and replaced with other items.

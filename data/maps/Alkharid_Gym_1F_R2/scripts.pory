@@ -702,7 +702,7 @@ script BARROWS_GUTHAN {
     lock
     faceplayer
     namebox("Guthan")
-    msgbox(format("I am known simple as Guthan.\pFace me if you dare!"))
+    msgbox(format("I am known simply as Guthan.\pFace me if you dare!"))
     hidenamebox
     closemessage
     trainerbattle_no_intro(TRAINER_BARROWS_GUTHAN, msgbox(format("That was a very enjoyable battle!")))

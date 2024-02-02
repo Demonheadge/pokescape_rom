@@ -277,7 +277,7 @@ script VARROCK_NPC_Guard_6
     namebox ("Guard")
     msgbox(format("Yes the castle is to the north."))
     namebox ("Dwarf")
-    msgbox(format("And the kart system goes to the castle?"))
+    msgbox(format("And the cart system goes to the castle?"))
     namebox ("Guard")
     msgbox(format("No, it goes to the Grand Exchange."))
     namebox ("Dwarf")
@@ -715,7 +715,7 @@ script NPC_ARCHAEOLOGIST_BLOCKADE_1
     faceplayer
     namebox("Archaeologist")
     //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
-        msgbox(format("Stop!\pPlease wait awhile, we recently uncovered some mysterious ruins within our digsite.\pWe are in the middle of excervating them and cannot risk being disterbed."))
+        msgbox(format("Stop!\pPlease wait awhile, we recently uncovered some mysterious ruins within our digsite.\pWe are in the middle of excavating them and cannot risk being disturbed."))
         if (flag(FLAG_BADGE07_GET)){
             msgbox(format("You should see it!\pThe city of senstinstin has been found!"))
             hidenamebox

@@ -215,7 +215,7 @@ script NPC_BARBGYM_BARBARIAN_1
     faceplayer
     namebox("Haakon")
     if (flag(FLAG_BADGE06_GET) == TRUE) {
-        msgbox(format("Your battle was impressive!\pYou are now a honnorary Barbarian!\pYou should go see Litara about accessing our Stronghold."))
+        msgbox(format("Your battle was impressive!\pYou are now a honorary Barbarian!\pYou should go see Litara about accessing our Stronghold."))
         hidenamebox
         closemessage
         release
@@ -279,7 +279,7 @@ script NPC_BARBGYM_BARBARIAN_2
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACELEFT)
     waitmovement(0)
-    msgbox(format("In this corner we have the challenger known simple as {PLAYER}!"))
+    msgbox(format("In this corner we have the challenger known simply as {PLAYER}!"))
     hidenamebox
     closemessage
     playse (SE_M_ENCORE2)
@@ -434,7 +434,7 @@ script NPC_BARBGYM_BARBARIAN_2
     hidenamebox
     giveitem(ITEM_TM66_BRUTAL_SWING)
     namebox("Gunthor")
-    msgbox(format("And of course we cannot forget this, the main reason you are here today.\pHere you go {PLAYER} I proudly award you this Gym Badge and also hearby declare you an honnorary Barbarian!"))
+    msgbox(format("And of course we cannot forget this, the main reason you are here today.\pHere you go {PLAYER} I proudly award you this Gym Badge and also hereby declare you an honorary Barbarian!"))
     hidenamebox
     playfanfare(MUS_PS_QUEST_COMPLETE)
     msgbox(format("{PLAYER} received the Barbarian BADGE from Gunthor the Brave."))
