@@ -527,10 +527,10 @@ static const struct MenuAction sMenuActions_StartingTowns_F2P[] = {
 };
 
 static const struct MenuAction sMenuActions_StartingTowns_P2P[] = {
-    {gText_NewGame_Region_5, NULL}, //YANNILE
-    {gText_NewGame_Region_6, NULL}, //ARDOUNGE
-    {gText_NewGame_Region_7, NULL}, //SEERS VILLAGE
-    {gText_NewGame_Region_8, NULL} //RELLEKA
+    {gText_NewGame_Region_5, NULL}, //YANILLE
+    {gText_NewGame_Region_6, NULL}, //ARDOUGNE
+    {gText_NewGame_Region_7, NULL}, //SEERS' VILLAGE
+    {gText_NewGame_Region_8, NULL} //RELLEKKA
 };
 
 static const u8 *const sMalePresetNames[] = {
