@@ -61,7 +61,7 @@ script ALKHARID_NPC_4
 {
     faceplayer
     //namebox ("")
-    msgbox(format("Dont cause trouble here in city, law enforcement has a tendency to call upon several more guards unneedingly for the smallest of cases."))
+    msgbox(format("Don't cause trouble here in the city, law enforcement has a tendency to call upon several more guards unnecessarily for the smallest of cases."))
     closemessage
     //hidenamebox
     release
