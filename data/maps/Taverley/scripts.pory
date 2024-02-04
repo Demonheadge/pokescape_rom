@@ -1,0 +1,146 @@
+mapscripts Taverley_MapScripts {
+
+}
+
+script TAVERLEY_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("Welcome to Taverley.\pHome of the Druids and the secrets of Herblore."))
+	release
+	end
+}
+
+
+script TAVERLEY_CORGI
+{
+	lock
+	faceplayer
+	msgbox(format("The dog tries to lick your hands as you pet him."))
+	release
+	end
+}
+
+script TAVERLEY_POH
+{
+	lock
+	faceplayer
+	msgbox(format("Home sweet home?\pMaybe one day, but you'll need to buy one from an estate agent first!"))
+	release
+	end
+}
+
+script TAVERLEY_DUNGEON_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("BEWARE!\pStay clear of the dungeon to the south!\pIt is full of many dangerous monsters that will kill any unprepared adventurers.\pProceed with extreme caution!"))
+	release
+	end
+}
+
+script FRITZ_THE_EXPERIMENT
+{
+	lock
+	faceplayer
+	msgbox(format("The creature stares intensely at you.\pFor a split second you could have sworn that its skin appeared to ripple ready to change shape."))
+	release
+	end
+}
+
+
+
+
+
+//NPCS
+script TAVERLEY_BOY
+{
+    faceplayer
+    //namebox ("Harvey")
+    msgbox(format("I kicked my ball over that hedge into that garden!\pThe old lady who lives there is scary... She's taken my ball and won't give it back."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script GUTHIX_RAPTOR
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Caw cawcaw caaaw!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script NORA_T_HAGG
+{
+    faceplayer
+    //namebox ("Nora. T. Hagg")
+    msgbox(format("That pesky kid keeps kicking his ball into my garden. I am sick and tired of it! \pIf he wants it back, he can come and get it himself. After all, Fritz could do with a snack.."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+script PIKKUPSTIX
+{
+    faceplayer
+    //namebox ("Pikkupstix")
+    msgbox(format("I used to teach only the most worthy of adventurers the mystical art of Summoning. \pHowever, ever since the wizards got hold of our pouches and augmented them to catch wild creatures suddenly nobody wants to learn anymore."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+script ALAIN
+{
+    faceplayer
+    //namebox ("Alain")
+    msgbox(format("Something was flying overhead earlier! \pDid you see it? \pIt had yellow and red stripes, and I could have sworn I saw a disembodied hand waving at me. \pWhat on Gielinor could that have been?"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+script TEGID
+{
+    faceplayer
+    //namebox ("Tegid")
+    msgbox(format("I was washing my clothes in the lake the other day and some adventurer came along and stole my soap!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+script TAVERLEY_DRUID_1
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Good day to you, may nature smile upon you."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script TAVERLEY_DRUID_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("There was a strange man in a funny hat here for a while.\pHe kept trying to scam people by sell beans that were "magical".\pEverybody knows there's no such thing as magic beans."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
