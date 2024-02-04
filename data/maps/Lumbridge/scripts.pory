@@ -182,7 +182,7 @@ script Lumbridge_HATIUS
 	lock
 	faceplayer
 	namebox ("Hatius")
-	msgbox(format("There were some muggers in the alley eyeing off my 3rd age armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
+	msgbox(format("There were some muggers in the alley eyeing up my 3rd age armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
 	hidenamebox
 	release
 	end
@@ -376,7 +376,7 @@ script Lumbridge_Guard_EAST
 	lock
 	faceplayer
 	namebox ("DeShawn")
-	msgbox(format("Be careful, there are a lot of gobins across the bridge."))
+	msgbox(format("Be careful, there are a lot of goblins across the bridge."))
 	hidenamebox
 	release
 	end
@@ -705,7 +705,7 @@ script Lumbridge_House_NPC4
 {
 	lock
 	faceplayer
-	msgbox(format("Some monster evolve differently depending on which evolution method."))
+	msgbox(format("Not all monsters evolve the same way.\pYou'll need to experiment to find the correct evolution method."))
 	release
 	end
 }	
@@ -727,7 +727,7 @@ script Lumbridge_House_NPC6
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("If you cant rest in a bank try a bed.\pSome beds are very inviting."))
+	msgbox(format("If you can't rest in a bank try a bed.\pSome beds are very inviting."))
 	//hidenamebox
 	release
 	end
