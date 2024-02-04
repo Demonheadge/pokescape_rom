@@ -26,6 +26,15 @@ script ALKHARID_SIGN
 	end
 }
 
+script ALKHARID_WELL
+{
+	lock
+	faceplayer
+	msgbox(format("No matter how hard you look, you can't see any polar bears down there."))
+	release
+	end
+}
+
 //NPCS
 script ALKHARID_NPC_1
 {
@@ -121,7 +130,7 @@ script ALKHARID_NPC_10
 {
     faceplayer
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("I'm glad I managed to get assigned as a guard outside the palace.\pTherer were too many adventurers coming into the palace and trapping my brothers behind furniture to kill them."))
     closemessage
     //hidenamebox
     release
