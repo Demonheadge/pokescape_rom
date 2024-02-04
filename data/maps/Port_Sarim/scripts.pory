@@ -373,7 +373,7 @@ script NPC_PORTSARIM_MONK_1
 	lock
 	faceplayer
     namebox ("Monk")
-	msgbox(format("I cannot believe they nicked out ship…"))
+	msgbox(format("I cannot believe they nicked our ship…"))
     waitmessage
     hidenamebox
 	release
