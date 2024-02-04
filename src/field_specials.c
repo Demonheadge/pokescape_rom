@@ -2455,7 +2455,7 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_SaradominBrew,
         gText_PhoenixNecklace,
         gText_AbyssalWhip,
-        gText_DragonfireSheild,
+        gText_DragonfireShield,
         gText_DragonClaws,
         gText_DragonDaggerP,
         gText_DragonScimitar,

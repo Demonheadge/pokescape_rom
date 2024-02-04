@@ -129,7 +129,7 @@ static const u8 *const sSlayerShopItemDescriptions[] =
     gText_SaradominBrew_Desc,
     gText_PhoenixNecklace_Desc,
     gText_AbyssalWhip_Desc,
-    gText_DragonfireSheild_Desc,
+    gText_DragonfireShield_Desc,
     gText_DragonClaws_Desc,
     gText_DragonDaggerP_Desc,
     gText_DragonScimitar_Desc,
