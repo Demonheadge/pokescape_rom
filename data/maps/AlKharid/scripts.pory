@@ -205,8 +205,8 @@ script ALKHARID_NPC_16
 script SHANTYPASS_NPC_1
 {
     faceplayer
-    //namebox ("")
-    msgbox(format(""))
+    //namebox ("Shantay Guard")
+    msgbox(format("Go talk to Shantay. I'm on duty and I don't have time to talk to the likes of you!"))
     closemessage
     //hidenamebox
     release
@@ -215,8 +215,8 @@ script SHANTYPASS_NPC_1
 script SHANTYPASS_NPC_2
 {
     faceplayer
-    //namebox ("")
-    msgbox(format(""))
+    //namebox ("Shantay")
+    msgbox(format("This is the pass of Shantay. I guard this area with my men. I am responsible for keeping this pass open.\pUnfortunately it is currently undergoing some repairs. Please come back again later."))
     closemessage
     //hidenamebox
     release
@@ -226,7 +226,7 @@ script SHANTYPASS_NPC_3
 {
     faceplayer
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("I help Shantay prevent outlaws from getting out of the desert. And we stop the inexperienced from a dry death in the sands."))
     closemessage
     //hidenamebox
     release
