@@ -81,7 +81,7 @@ script ALKHARID_NPC_6
 {
     faceplayer
     //namebox ("")
-    msgbox(format("Did you know theres a ban on magic carpets in Al Kharid?\pApparently their leader died using one at one point."))
+    msgbox(format("Did you know there's a ban on magic carpets in Al Kharid?\pApparently their leader died using one at one point."))
     closemessage
     //hidenamebox
     release
@@ -141,7 +141,7 @@ script ALKHARID_NPC_12
 {
     faceplayer
     //namebox ("Spirit Angler")
-    msgbox(format("The Spirit of the Sea has awoken and is creating intense storms for sailors.\p I wonder if there are any adventurers brave enough to defeat it."))
+    msgbox(format("The Spirit of the Sea has awoken and is creating intense storms for sailors.\pI wonder if there are any adventurers brave enough to defeat it."))
     closemessage
     //hidenamebox
     release
@@ -150,8 +150,8 @@ script ALKHARID_NPC_12
 script ALKHARID_NPC_13
 {
     faceplayer
-    //namebox ("")
-    msgbox(format(""))
+    //namebox ("Ozan")
+    msgbox(format("Who am I?\pOnly the most famous hero ever born in Al Kharid!\pI helped aid in the defence of Burthorpe from the troll invasion.\pI helped rescue the druid master Pikkupstix from the depths of Daemonheim!\p…{PAUSE 32}\pWhat do you mean you've never heard of me?"))
     closemessage
     //hidenamebox
     release
