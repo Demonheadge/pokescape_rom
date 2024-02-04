@@ -140,8 +140,8 @@ script ALKHARID_NPC_11
 script ALKHARID_NPC_12
 {
     faceplayer
-    //namebox ("")
-    msgbox(format(""))
+    //namebox ("Spirit Angler")
+    msgbox(format("The Spirit of the Sea has awoken and is creating intense storms for sailors.\p I wonder if there are any adventurers brave enough to defeat it."))
     closemessage
     //hidenamebox
     release
