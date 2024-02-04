@@ -1921,7 +1921,7 @@ const u8 gText_OPENWORLD[] =_("OPEN WORLD");
 const u8 gText_F2P[] =_("FREE TO PLAY");
 const u8 gText_P2P[] =_("MEMBERS");
 
-const u8 gText_NewGame_F2PorP2P[] =_("Before we begin you must selection a\nregion to start in.\pDo you wish to start in F2P or P2P?");
+const u8 gText_NewGame_F2PorP2P[] =_("Before we begin you must select a\nregion to start in.\pDo you wish to start in F2P or P2P?");
 const u8 gText_NewGame_TownSelection[] =_("Choose your starting town.");
 const u8 gText_NewGame_Region_1[] =_("LUMBRIDGE");
 const u8 gText_NewGame_Region_2[] =_("FALADOR");
