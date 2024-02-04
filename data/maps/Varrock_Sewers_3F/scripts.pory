@@ -204,3 +204,55 @@ script ENCOUNTER_SCURRIUS
     release
 	end
 }
+
+
+//Battles
+script BATTLE_VARROCK_SEWERS_3F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_1, format("*tree sounds*"),format("*sad tree sounds*"))
+    namebox ("MOSS GIANT")
+    msgbox(format("*sad tree sounds*"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_VARROCK_SEWERS_3F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_2, format("*moss sounds*"),format("*resigned moss sounds*"))
+    namebox ("MOSS GIANT")
+    msgbox(format("*resigned moss sounds*"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_VARROCK_SEWERS_3F_TRAINER_3
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_3, format("*angry wooden sounds*"),format("*wooden groaning sounds*"))
+    namebox ("MOSS GIANT")
+    msgbox(format("*resigned moss sounds*"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_VARROCK_SEWERS_3F_TRAINER_4
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_4, format("Even in the sewers of Varrock, you still have to stand and deliver!"),format("Aww rats..."))
+    namebox ("MUGGER")
+    msgbox(format("Aww rats..."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_VARROCK_SEWERS_3F_TRAINER_5
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_5, format("Several rats crawl out of the skeleton as it attacks you!"),format("The skeleton stands still. It seems like the rats were what made the skeleton move."))
+    namebox ("SKELETON")
+    msgbox(format("The skeleton stands still. It seems like the rats were what made the skeleton move."))
+	hidenamebox
+    release
+	end
+}

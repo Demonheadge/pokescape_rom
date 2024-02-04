@@ -4517,6 +4517,256 @@ static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] =
     .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
     }
 };
+
+//Varrock Sewers (1F)
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_BIRD_NEST_GOD_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ANICHAIR,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ABYSSAL_DEMON_REANIMATED_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SQUIRREL,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SPARKY,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_RUNE,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_IMPLING_ESSENCE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_DEMON_LESSER_OSRS_FORM,
+    },
+};
+
+
+//Varrock Sewers (2F)
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_SHADOW_HOUND,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_IMPLING_DRAGON_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_EXORAXE,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_BULL,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_MONKEY_GHOST_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_DEATHWING,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_MINOTAUR_REANIMATED_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_CAT_OVERGROWN_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_CAT_LAZY_FORM,
+    },
+};
+
+//Varrock Sewers (3F)
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ZYGOMITE,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ZYGOMITE_MAGICAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ZYGOMITE_ZANARIAN_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ZYGOMITE_ANCIENT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_GIANT_RAT_CRYPT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_GIANT_RAT_DUNGEON_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_RAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_RAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_RAT_CRYPT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_RAT_CRYPT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_GIANT_RAT_CRYPT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GIANT_RAT_BLESSED_FORM,
+    },
+};
+
 /*
 //#GYM - KARAMJA - TokHaar
 static const struct TrainerMonNoItemCustomMoves sParty_LEADER_TOKHAAR_FINAL[] = {

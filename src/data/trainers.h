@@ -3910,7 +3910,219 @@ const struct Trainer gTrainers[] =
     },
     
 
+//Varrock Sewers (1F)
+    [TRAINER_VARROCK_SEWERS_1F_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Shellullaby"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_1},
+    },
 
+    [TRAINER_VARROCK_SEWERS_1F_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SUMMONER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_summoner,
+        .trainerName = _("Necrodancer"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_1F_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_1F_TRAINER_2},
+    },
+
+    [TRAINER_VARROCK_SEWERS_1F_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_jmod_f,
+        .trainerName = _("cbow4lyf"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_1F_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_1F_TRAINER_3},
+    },
+
+    [TRAINER_VARROCK_SEWERS_1F_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("IceBRG"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_1F_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_1F_TRAINER_4},
+    },
+
+//Varrock Sewers (2F)
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Skelly"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_1},
+    },
+
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SUMMONER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_summoner,
+        .trainerName = _("D3dF1sh"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_2},
+    },
+
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Ankledeep"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_3},
+    },
+
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_IRONMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_ironman,
+        .trainerName = _("4xedM4ng4"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_4},
+    },
+
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SUMMONER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_summoner,
+        .trainerName = _("Thay4n Scribe"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_5},
+    },
+
+    [TRAINER_VARROCK_SEWERS_2F_TRAINER_6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _("B0nd M0n3y"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_2F_TRAINER_6),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_2F_TRAINER_6},
+    },
+
+//Varrock Sewers (3F)
+    [TRAINER_VARROCK_SEWERS_3F_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Treesbee"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_3F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_3F_TRAINER_1},
+    },
+
+    [TRAINER_VARROCK_SEWERS_3F_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Yggdraugr"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_3F_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_3F_TRAINER_2},
+    },
+
+    [TRAINER_VARROCK_SEWERS_3F_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Barklee"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_3F_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_3F_TRAINER_3},
+    },
+
+    [TRAINER_VARROCK_SEWERS_3F_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MUGGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_mugger,
+        .trainerName = _("Clinton"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_3F_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_3F_TRAINER_4},
+    },
+
+    [TRAINER_VARROCK_SEWERS_3F_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Rattbrittle"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_SEWERS_3F_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_SEWERS_3F_TRAINER_5},
+    },
 
 
 };
+

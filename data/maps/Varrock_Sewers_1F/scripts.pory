@@ -225,7 +225,7 @@ script VARROCK_SEWERS_3F_CHECK_PLAYER_STAND {
 
 
 
-
+//NPCS
 
 script NPC_VARROCK_SEWERS_WOMAN
 {
@@ -238,16 +238,58 @@ script NPC_VARROCK_SEWERS_WOMAN
     end
 }
 
+script VARROCK_SEWERS_1F_FISHERMAN
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("I've been fishing for rare monsters here for a while now, but I haven't found any.\pAll I've managed to catch is a useless key that I can't even battle with!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
 
 
+//Battles
+script BATTLE_VARROCK_SEWERS_1F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_1F_TRAINER_1, format("The skeleton hushes you, telling you to be quiet."),format("The skeleton seemed to want the eggs to lay undisturbed."))
+    namebox ("SKELETON")
+    msgbox(format("The skeleton seemed to want the eggs to lay undisturbed."))
+	hidenamebox
+    release
+	end
+}
 
+script BATTLE_VARROCK_SEWERS_1F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_1F_TRAINER_2, format("Are you ready to indulge yourself in the dark arts of necromancy?"),format("I guess you're more interested in necromance. Say, are you doing anything later..?"))
+    namebox ("NECROMANCER")
+    msgbox(format("I guess you're more interested in necromance. Say, are you doing anything later..?"))
+	hidenamebox
+    release
+	end
+}
 
+script BATTLE_VARROCK_SEWERS_1F_TRAINER_3
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_1F_TRAINER_3, format("You just entered my strike zone!"),format("This is now my defeat zone.."))
+    namebox ("RANGER")
+    msgbox(format("This is now my defeat zone.."))
+	hidenamebox
+    release
+	end
+}
 
-
-
-
-
-
+script BATTLE_VARROCK_SEWERS_1F_TRAINER_4
+{
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_1F_TRAINER_4, format("Hey! You're ruining my training area. Get out of here"),format("I guess there's enough rats for the both of us to train on."))
+    namebox ("MAGE")
+    msgbox(format("I guess there's enough rats for the both of us to train on."))
+	hidenamebox
+    release
+	end
+}
 
 
 
