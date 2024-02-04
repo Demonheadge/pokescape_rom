@@ -17,6 +17,15 @@ script ALKHARID_GNOMEGLIDER
     end
 }
 
+script ALKHARID_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("Welcome to Al Kharid.\pThe jewel of the Kharidian Desert."))
+	release
+	end
+}
+
 //NPCS
 script ALKHARID_NPC_1
 {
@@ -102,7 +111,7 @@ script ALKHARID_NPC_9
 {
     faceplayer
     //namebox ("")
-    msgbox(format("We deal with a lot of thiefs and cutthroats here.\pAl Kharid does not welcome them, yet they keep coming back."))
+    msgbox(format("We deal with a lot of thieves and cutthroats here.\pAl Kharid does not welcome them, yet they keep coming back."))
     closemessage
     //hidenamebox
     release
