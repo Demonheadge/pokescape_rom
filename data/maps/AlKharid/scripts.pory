@@ -111,7 +111,7 @@ script ALKHARID_NPC_9
 {
     faceplayer
     //namebox ("")
-    msgbox(format("We deal with a lot of thieves and cutthroats here.\pAl Kharid does not welcome them, yet they keep coming back."))
+    msgbox(format("I heard rumours of archaeologists carrying out an excavation on some ruins nearby.\pI wonder what magical artifacts might be sealed inside."))
     closemessage
     //hidenamebox
     release
@@ -131,7 +131,7 @@ script ALKHARID_NPC_11
 {
     faceplayer
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("We deal with a lot of thieves and cutthroats here.\pAl Kharid does not welcome them, yet they keep coming back."))
     closemessage
     //hidenamebox
     release
