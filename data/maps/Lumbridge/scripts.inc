@@ -842,7 +842,7 @@ Lumbridge_HATIUS_Text_0:
 
 Lumbridge_HATIUS_Text_1:
 	.string "There were some muggers in the alley\n"
-	.string "eyeing off my 3rd age armour.\p"
+	.string "eyeing up my 3rd age armour.\p"
 	.string "So I've had to change into a more casual\n"
 	.string "look.\p"
 	.string "But now the Goblins are eyeing me, I\n"
@@ -940,7 +940,7 @@ Lumbridge_Guard_EAST_Text_0:
 	.string "DeShawn$"
 
 Lumbridge_Guard_EAST_Text_1:
-	.string "Be careful, there are a lot of gobins\n"
+	.string "Be careful, there are a lot of goblins\n"
 	.string "across the bridge.$"
 
 Lumbridge_Guard_SOUTH_Text_0:
@@ -1004,8 +1004,9 @@ Lumbridge_House_NPC3_Text_0:
 	.string "catching monsters.$"
 
 Lumbridge_House_NPC4_Text_0:
-	.string "Some monster evolve differently\n"
-	.string "depending on which evolution method.$"
+	.string "Not all monsters evolve the same way.\p"
+	.string "You'll need to experiment to find the\n"
+	.string "correct evolution method.$"
 
 Lumbridge_House_NPC5_Text_0:
 	.string "Luckily monsters only faint.\p"
@@ -1013,7 +1014,7 @@ Lumbridge_House_NPC5_Text_0:
 	.string "funeral services.$"
 
 Lumbridge_House_NPC6_Text_0:
-	.string "If you cant rest in a bank try a bed.\p"
+	.string "If you can't rest in a bank try a bed.\p"
 	.string "Some beds are very inviting.$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_0:
