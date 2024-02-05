@@ -14,39 +14,39 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE12",
       "offset": 34,
-      "map": "MAP_ROUTE12"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE13",
       "offset": 0,
-      "map": "MAP_ROUTE13"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE1",
       "offset": 32,
-      "map": "MAP_ROUTE1"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_LUMBRIDGE",
       "offset": -44,
-      "map": "MAP_LUMBRIDGE"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_VARROCK",
       "offset": 0,
-      "map": "MAP_VARROCK"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE21",
       "offset": -18,
-      "map": "MAP_ROUTE21"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE22",
       "offset": 0,
-      "map": "MAP_ROUTE22"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -174,14 +174,14 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_ROUTE14",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

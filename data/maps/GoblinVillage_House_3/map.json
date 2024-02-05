@@ -60,21 +60,21 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_GOBLIN_VILLAGE",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_GOBLIN_VILLAGE_HOUSE_3",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_GOBLIN_VILLAGE_HOUSE_3",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

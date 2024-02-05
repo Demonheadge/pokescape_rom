@@ -34,7 +34,7 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_1",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     }
   ],
   "coord_events": [

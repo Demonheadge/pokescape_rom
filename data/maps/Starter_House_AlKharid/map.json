@@ -47,14 +47,14 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     },
     {
       "x": 3,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 22
+      "dest_warp_id": "22"
     }
   ],
   "coord_events": [

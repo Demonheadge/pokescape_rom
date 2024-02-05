@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE25",
       "offset": 0,
-      "map": "MAP_ROUTE25"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE23",
       "offset": 0,
-      "map": "MAP_ROUTE23"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE24",
       "offset": 0,
-      "map": "MAP_ROUTE24"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE26",
       "offset": 0,
-      "map": "MAP_ROUTE26"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_GOBLIN_VILLAGE",
       "offset": -44,
-      "map": "MAP_GOBLIN_VILLAGE"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE27",
       "offset": 26,
-      "map": "MAP_ROUTE27"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -117,7 +117,7 @@
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINE_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

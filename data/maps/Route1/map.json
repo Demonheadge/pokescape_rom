@@ -14,39 +14,39 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_MILL_LANE_MILL",
       "offset": 16,
-      "map": "MAP_MILL_LANE_MILL"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_DRAYNOR",
       "offset": -22,
-      "map": "MAP_DRAYNOR"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE3",
       "offset": 12,
-      "map": "MAP_ROUTE3"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_DRAYNOR_MANOR",
       "offset": -16,
-      "map": "MAP_DRAYNOR_MANOR"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE14",
       "offset": -32,
-      "map": "MAP_ROUTE14"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_LUMBRIDGE",
       "offset": 36,
-      "map": "MAP_LUMBRIDGE"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE22",
       "offset": 48,
-      "map": "MAP_ROUTE22"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -486,21 +486,21 @@
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ROUTE1_HOUSE_FRED",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 21,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 43,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

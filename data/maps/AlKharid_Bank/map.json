@@ -60,7 +60,7 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

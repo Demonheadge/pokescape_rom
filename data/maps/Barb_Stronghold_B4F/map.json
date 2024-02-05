@@ -151,21 +151,21 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_BARB_STRONGHOLD_B3F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 3,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 19,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_BARB_STRONGHOLD_B3F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE4",
       "offset": 12,
-      "map": "MAP_ROUTE4"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE6",
       "offset": 0,
-      "map": "MAP_ROUTE6"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_PORT_SARIM",
       "offset": 0,
-      "map": "MAP_PORT_SARIM"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_DRAYNOR",
       "offset": 0,
-      "map": "MAP_DRAYNOR"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE8",
       "offset": -22,
-      "map": "MAP_ROUTE8"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -112,7 +112,7 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

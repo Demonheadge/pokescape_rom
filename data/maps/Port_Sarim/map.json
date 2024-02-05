@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE5",
       "offset": 0,
-      "map": "MAP_ROUTE5"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_DRAYNOR",
       "offset": -12,
-      "map": "MAP_DRAYNOR"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE2",
       "offset": 26,
-      "map": "MAP_ROUTE2"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE10",
       "offset": 10,
-      "map": "MAP_ROUTE10"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE11",
       "offset": -24,
-      "map": "MAP_ROUTE11"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -515,70 +515,70 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_BETTYS_EMPORIUM",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_BANK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_JEWELRY_STORE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_BRIANS_BAZAAR_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_FISHING_STORE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 4,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_GENERAL_STORE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 42,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 29,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_PUB_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_MINIGAME_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

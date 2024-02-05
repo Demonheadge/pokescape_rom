@@ -34,7 +34,7 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE1",
       "offset": 16,
-      "map": "MAP_ROUTE1"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_MILL_LANE_MILL",
       "offset": 10,
-      "map": "MAP_MILL_LANE_MILL"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE20",
       "offset": -54,
-      "map": "MAP_ROUTE20"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -102,28 +102,28 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 20,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 20,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

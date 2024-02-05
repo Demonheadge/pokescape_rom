@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_KOUREND_CATACOMBS_3",
       "offset": -15,
-      "map": "MAP_KOUREND_CATACOMBS_3"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_KOUREND_CATACOMBS_2",
       "offset": 0,
-      "map": "MAP_KOUREND_CATACOMBS_2"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -84,7 +84,7 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

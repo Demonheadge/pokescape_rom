@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_KOUREND_CATACOMBS_1",
       "offset": 0,
-      "map": "MAP_KOUREND_CATACOMBS_1"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_KOUREND_CATACOMBS_3",
       "offset": 35,
-      "map": "MAP_KOUREND_CATACOMBS_3"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_KOUREND_CATACOMBS_5",
       "offset": 26,
-      "map": "MAP_KOUREND_CATACOMBS_5"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_KOUREND_CATACOMBS_6",
       "offset": 0,
-      "map": "MAP_KOUREND_CATACOMBS_6"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_KOUREND_CATACOMBS_7",
       "offset": 0,
-      "map": "MAP_KOUREND_CATACOMBS_7"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -229,91 +229,91 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_1",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 26,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 31,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 31,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 36,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 38,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 43,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 40,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 45,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 48,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 47,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_6",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_1",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     }
   ],
   "coord_events": [

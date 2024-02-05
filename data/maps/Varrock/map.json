@@ -14,49 +14,49 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE15",
       "offset": 32,
-      "map": "MAP_ROUTE15"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE16",
       "offset": 2,
-      "map": "MAP_ROUTE16"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE17",
       "offset": -22,
-      "map": "MAP_ROUTE17"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE13",
       "offset": 20,
-      "map": "MAP_ROUTE13"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_VARROCK_NORTH",
       "offset": 0,
-      "map": "MAP_VARROCK_NORTH"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE18",
       "offset": 4,
-      "map": "MAP_ROUTE18"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE14",
       "offset": 0,
-      "map": "MAP_ROUTE14"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE22",
       "offset": -32,
-      "map": "MAP_ROUTE22"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE21",
       "offset": 32,
-      "map": "MAP_ROUTE21"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -522,140 +522,140 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_THESSALIA_SHOP",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 22,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_WEAPON_SHOP",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 30,
       "y": 39,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_HOUSE_1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 20,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_HOUSE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 51,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_AUBURY_STORE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 54,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_EAST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 41,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_LOWE_SHOP",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 30,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PUB_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 62,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_HOUSE_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PUB_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 46,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 48,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_GENERAL_STORE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_WEST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 57,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_MUSEUM",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 58,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_MUSEUM",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 54,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_TUTORIAL_ISLAND",
       "offset": -10,
-      "map": "MAP_TUTORIAL_ISLAND"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE2",
       "offset": 4,
-      "map": "MAP_ROUTE2"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -188,7 +188,7 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

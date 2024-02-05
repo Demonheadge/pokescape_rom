@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE28",
       "offset": 0,
-      "map": "MAP_ROUTE28"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE12",
       "offset": 0,
-      "map": "MAP_ROUTE12"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE13",
       "offset": -40,
-      "map": "MAP_ROUTE13"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE15",
       "offset": 6,
-      "map": "MAP_ROUTE15"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE46",
       "offset": 42,
-      "map": "MAP_ROUTE46"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -294,7 +294,7 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

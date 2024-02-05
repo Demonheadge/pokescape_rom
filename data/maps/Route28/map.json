@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_ROUTE12",
       "offset": -32,
-      "map": "MAP_ROUTE12"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_AL_KHARID",
       "offset": -10,
-      "map": "MAP_AL_KHARID"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE29",
       "offset": 0,
-      "map": "MAP_ROUTE29"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -258,6 +258,14 @@
       "type": "sign",
       "x": 10,
       "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
