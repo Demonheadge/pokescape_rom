@@ -22,21 +22,21 @@
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_LAB_DOWN",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 18,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 19,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

@@ -717,7 +717,7 @@ script NPC_ARCHAEOLOGIST_BLOCKADE_1
     //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
         msgbox(format("Stop!\pPlease wait awhile, we recently uncovered some mysterious ruins within our digsite.\pWe are in the middle of excavating them and cannot risk being disturbed."))
         if (flag(FLAG_BADGE07_GET)){
-            msgbox(format("You should see it!\pThe city of senstinstin has been found!"))
+            msgbox(format("You should see it!\pThe city of Senntisten has been found!"))
             hidenamebox
             closemessage
             //APPLY MOVEMENT

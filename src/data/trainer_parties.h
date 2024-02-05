@@ -4878,7 +4878,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_6
 }
 
 //TzHaar Caves 1 - Wave 3 (Jad)
-static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_JAD[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_TZHAAR_CAVES_1_JAD[] = {
     {
     .iv = 0,
     .lvl = 60,
@@ -4908,6 +4908,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_JAD[] = {
     .lvl = 55,
     .species = SPECIES_YT_HURKOT,
     .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
+    },
+}
+
+
+//Route 35
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_35_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_GUTHIXIAN_BUTTERFLY,
+    },
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_GUTHRAPTOR,
+    },
+}
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_35_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_SPOOKAXE,
+    },
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = GOLEM_TITAN,
     },
 }
 

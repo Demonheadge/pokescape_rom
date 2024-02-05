@@ -23724,6 +23724,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_TAVERLEY",
+          "base_label": "gTaverley0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_GUTHIXIAN_BUTTERFLY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_GUTHIXIAN_BUTTERFLY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_PIG"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_PIG"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_COW"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_COW"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_PIG"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_COW"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_COW_DAIRY_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 25,
+                "max_level": 26,
+                "species": "SPECIES_FOX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GUTHLING"
+              }
+            ]
+          }
         }
       ]
     },

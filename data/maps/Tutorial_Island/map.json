@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_WIZARDS_TOWER",
       "offset": 10,
-      "map": "MAP_WIZARDS_TOWER"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -105,56 +105,56 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_CAVE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 43,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_CHURCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 47,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_SHOP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 47,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 42,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_CHURCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

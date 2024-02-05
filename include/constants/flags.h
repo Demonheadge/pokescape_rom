@@ -1235,9 +1235,9 @@
 #define FLAG_ITEM_KOUREND_CATACOMBS_3                            0x477
 #define FLAG_ITEM_KOUREND_CATACOMBS_4                             0x478
 #define FLAG_ITEM_KOUREND_CATACOMBS_5                                           0x479 // Unused Flag
-#define FLAG_ITEM_ROUTE_116_POTION                                  0x47A
-#define FLAG_ITEM_ROUTE_119_ELIXIR_2                                0x47B
-#define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
+#define FLAG_ITEM_ROUTE_35_MITHRIL_POUCH                                 0x47A  // I have no idea if I've done this correctly
+#define FLAG_ITEM_ROUTE_35_BREAD                               0x47B // Or this one
+#define FLAG_ITEM_ROUTE_35_CABBAGE                                  0x47C // Still practicing these
 #define FLAG_ITEM_ROUTE_121_REVIVE                                  0x47D
 #define FLAG_ITEM_ROUTE_121_ZINC                                    0x47E
 #define FLAG_ITEM_MAGMA_HIDEOUT_1F_RARE_CANDY                       0x47F

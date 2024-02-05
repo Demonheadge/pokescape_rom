@@ -3,3 +3,85 @@ mapscripts Route46_MapScripts {
         setvar(VAR_EVOLUTION_MAP_STATE, 16) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
     }
 }
+
+//NPCS
+script ROUTE46_ARCHAEOLOGIST
+{
+    faceplayer
+    //namebox ("Archaeologist")
+    msgbox(format("You won't believe what happened! \pWhilst excavating nearby, I found the most magical pot... \pbut I dropped it!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+script ROUTE46_PVMER
+{
+    faceplayer
+    //namebox ("Le Me")
+    msgbox(format("I'm waiting until they open up the digsite so I can be the first one inside! \pWho knows what rare monsters are hiding down there?"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script ROUTE46_STUDENT
+{
+    faceplayer
+    //namebox ("Student")
+    msgbox(format("The study of Earth Sciences is: the study of the earth, its contents and history... \pSorry, I didn't see you there. \pI'm too busy studying for my Earth Sciences exam to talk more right now."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+//Miscellanous
+script LOCKED_DOOR
+{
+	lock
+	faceplayer
+	msgbox(format("It is securely locked."))
+	release
+	end
+}
+
+script DIGSITE_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("Anyone wishing to do any work on the digsite must first prove they have passed all 3 Earth Science exams."))
+	release
+	end
+}
+
+script PLACEHOLDER_ITEM_DIGSITE_1
+{
+	lock
+	faceplayer
+	msgbox(format("It is a fragile looking animal skull. \pYou're worried it may be damaged if handled without the proper equipment and decide to leave it alone."))
+	release
+	end
+}
+
+script PLACEHOLDER_ITEM_DIGSITE_2
+{
+	lock
+	faceplayer
+	msgbox(format("You rummage through the pile of items. \pUnfortunately all you can find are broken arrow shafts and pieces of damaged armour. \pThis must be the archaeologist's discarded item pile."))
+	release
+	end
+}
+
+script PLACEHOLDER_ITEM_DIGSITE_3
+{
+	lock
+	faceplayer
+	msgbox(format("You find a panning tray laying beside the river bed. \pYou have no idea how to use it, so leave it where it is for now."))
+	release
+	end
+}

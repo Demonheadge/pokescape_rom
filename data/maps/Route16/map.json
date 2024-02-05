@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE15",
       "offset": 0,
-      "map": "MAP_ROUTE15"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE17",
       "offset": 0,
-      "map": "MAP_ROUTE17"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_VARROCK",
       "offset": -2,
-      "map": "MAP_VARROCK"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_VARROCK_NORTH",
       "offset": -40,
-      "map": "MAP_VARROCK_NORTH"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE38",
       "offset": -34,
-      "map": "MAP_ROUTE38"
+      "direction": "right"
     }
   ],
   "object_events": [

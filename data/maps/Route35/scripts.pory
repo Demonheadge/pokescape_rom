@@ -1,0 +1,90 @@
+mapscripts Route35_MapScripts {
+
+}
+
+//NPCs
+script LADY_OF_THE_LAKE
+{
+    faceplayer
+    //namebox ("The Lady of the Lake")
+    msgbox(format("Aye, I have the sword Excalibur in my possession.\p'Tis very valuable, and not an artefact to be given away lightly.\pOh? You're chasing after monsters instead?\pI heard some strange noises from that dungeon nearby. Try there."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script ASSISTANT_STAN
+{
+    faceplayer
+    //namebox ("Assistant Stan")
+    msgbox(format("Oh, don't mind me. I fell out of the basket while Auguste was trying to adjust our trajectory.\pI'm sure he'll come back for me. Eventually."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script ROUTE_35_DWARF
+{
+    faceplayer
+    //namebox ("Dwarf")
+    msgbox(format("I thought I'd finally make my fortune selling pickaxes to adventurers that come to mine those stars that fall from the sky.\pTurns out most of them have pickaxes made from stronger metal than I've ever seen a dwarf forge.\pIt's really making me reconsider my career."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+
+
+//Miscellanous
+script TAVERLEY_DUNGEON
+{
+	lock
+	faceplayer
+	msgbox(format("You can hear the ferocious roars of dragons coming from the dungeon.\pYou decide not to go down the ladder until you have suitable anti dragonfire protection."))
+	release
+	end
+}
+
+
+script ITEM_ROUTE_35_MITHRIL_POUCH
+{
+    finditem(ITEM_MITHRIL_POUCH)
+    end
+}
+
+script ITEM_ROUTE_35_BREAD
+{
+    finditem(ITEM_BREAD)
+    end
+}
+
+script ITEM_ROUTE_35_CABBAGE
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+
+//Battles
+script BATTLE_ROUTE_35_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_35_TRAINER_1, format("By Guthix, I cannot in good conscience let you go down that dungeon to your death!"),format("Since I can't stop you, may Guthix be with you."))
+    namebox ("Druid")
+    msgbox(format("Since I can't stop you, may Guthix be with you."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_35_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_35_TRAINER_2, format("I heard there was a shooting star to mine here, but all I've found is a battle instead!"),format("I should stick to Motherlode Mine."))
+    namebox ("Druid")
+    msgbox(format("I should stick to Motherlode Mine."))
+	hidenamebox
+    release
+	end
+}
