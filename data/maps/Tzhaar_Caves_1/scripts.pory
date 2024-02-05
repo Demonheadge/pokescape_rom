@@ -1,0 +1,65 @@
+mapscripts Tzhaar_1F_MapScripts {
+
+}
+
+//Battles - Wave 1
+script BATTLE_TZHAAR_CAVES_1_TRAINER_1
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_1, format("You need help little JalYt?"),format("Maybe not.."))
+    namebox ("TZHAAR")
+    msgbox(format("Maybe not.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TZHAAR_CAVES_1_TRAINER_2
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_2, format("Our obsidian bodies are harder than any JalYt."),format("You tougher than you look."))
+    namebox ("TZHAAR")
+    msgbox(format("You tougher than you look."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TZHAAR_CAVES_1_TRAINER_3
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_3, format("You are not trusted, this is secret area."),format("Less questions! Move on now JalYt."))
+    namebox ("TZHAAR")
+    msgbox(format("Less questions! Move on now JalYt."))
+	hidenamebox
+    release
+	end
+}
+
+//Battles - Wave 2
+script BATTLE_TZHAAR_CAVES_1_TRAINER_4
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_4, format("You need help little JalYt?"),format("You may beat me but you never beat TzTok-Jad!"))
+    namebox ("TZHAAR")
+    msgbox(format("You may beat me but you never beat TzTok-Jad!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TZHAAR_CAVES_1_TRAINER_5
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_5, format("Kot kl, zek e JalYt!"),format("Very few JalYt ever make it this far."))
+    namebox ("TZHAAR")
+    msgbox(format("Very few JalYt ever make it this far."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TZHAAR_CAVES_1_TRAINER_6
+{
+    trainerbattle_single(TRAINER_TZHAAR_CAVES_1_TRAINER_6, format("Does this JalYt have what it takes to become a Kal-Xil?"),format("One final test remains then we find out."))
+    namebox ("TZHAAR")
+    msgbox(format("One final test remains then we find out."))
+	hidenamebox
+    release
+	end
+}

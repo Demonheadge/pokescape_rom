@@ -24,7 +24,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TZHAAR_GAAL",
       "flag": "0"
     },
     {
@@ -245,7 +245,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TZHAAR_OZAN",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ZANIK",
+      "x": 61,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TZHAAR_ZANIK",
       "flag": "0"
     }
   ],
@@ -255,49 +268,49 @@
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 6,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_FIGHT_CAVES",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 67,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 57,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_CAVES_1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 66,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_CAVES_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 65,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_CAVES_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

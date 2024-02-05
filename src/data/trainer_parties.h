@@ -4767,6 +4767,151 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     },
 };
 
+//TzHaar Caves 1 - Wave 1
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_TZ_KIH,
+    },
+}
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KIH,
+    },
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KEK,
+    },
+}
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KIH,
+    },
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 49,
+    .species = SPECIES_TOK_XIL,
+    },
+};
+
+//TzHaar Caves 1 - Wave 2
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KIH,
+    },
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 49,
+    .species = SPECIES_TOK_XIL,
+    },
+}
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 49,
+    .species = SPECIES_TOK_XIL,
+    },
+    {
+    .iv = 0,
+    .lvl = 51,
+    .species = SPECIES_YT_MEJKOT,
+    },
+}
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_TZ_KEK,
+    },
+    {
+    .iv = 0,
+    .lvl = 49,
+    .species = SPECIES_TOK_XIL,
+    },
+    {
+    .iv = 0,
+    .lvl = 51,
+    .species = SPECIES_YT_MEJKOT,
+    },
+    {
+    .iv = 0,
+    .lvl = 53,
+    .species = SPECIES_KET_ZEK,
+    },
+}
+
+//TzHaar Caves 1 - Wave 3 (Jad)
+static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_JAD[] = {
+    {
+    .iv = 0,
+    .lvl = 60,
+    .species = SPECIES_TZTOK_JAD,
+    .moves = {MOVE_FLAME_CHARGE, MOVE_ANCIENT_POWER, MOVE_HEAD_SMASH, MOVE_ROCK_TOMB}
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_YT_HURKOT,
+    .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_YT_HURKOT,
+    .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_YT_HURKOT,
+    .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_YT_HURKOT,
+    .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
+    },
+}
+
+
 /*
 //#GYM - KARAMJA - TokHaar
 static const struct TrainerMonNoItemCustomMoves sParty_LEADER_TOKHAAR_FINAL[] = {

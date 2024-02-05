@@ -4124,5 +4124,104 @@ const struct Trainer gTrainers[] =
     },
 
 
+//TzHaar Caves 1
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Ket-Jeh"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_1},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Ket-Ak"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_2},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Xil-Hok"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_3},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Xil-Gek"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_4},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Xil-Xox"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_5},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_TRAINER_6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tzhaar,
+        .trainerName = _("TzHaar-Mej-Kal"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_6),
+        .party = {.NoItemDefaultMoves = sParty_TZHAAR_CAVES_1_TRAINER_6},
+    },
+
+    [TRAINER_TZHAAR_CAVES_1_JAD] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_UNKNOWN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_tokhaar,
+        .trainerName = _("TokHaar-Hok"),
+        .items = {ITEM_CHOCOLATE_CAKE, ITEM_CHOCOLATE_CAKE, ITEM_BLUEBERRY_SPECIAL},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TZHAAR_CAVES_1_TRAINER_JAD),
+        .party = {.NoItemCustomMoves = sParty_TZHAAR_CAVES_1_TRAINER_JAD},
+    },
+
 };
 

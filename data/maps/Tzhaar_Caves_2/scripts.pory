@@ -1,0 +1,27 @@
+mapscripts Tzhaar_Caves_2_MapScripts {
+
+}
+
+
+//NPCS
+script TZHAAR_CAVES_2_NPC_1
+{
+    faceplayer
+    //namebox ("TzHaar-Ket-Keh")
+    msgbox(format("Ah, trusted and most capable JalYt, this is the city of Mor Ul Rek.\pIt has grand central inferno, our birthing pool.\pIt currently closed, but one day you go see for yourself!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script TZHAAR_CAVES_2_NPC_2
+{
+    faceplayer
+    //namebox ("Rendimento")
+    msgbox(format("It only took thousands of purple sweets and hundreds of hours of perfect tick manipulation, but finally..\pThe first level 3 with a firecape!\pWhat do you mean xzact did it first?!"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}

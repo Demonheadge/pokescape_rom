@@ -1,0 +1,42 @@
+mapscripts Tzhaar_1F_MapScripts {
+
+}
+
+
+//NPCS
+script TZHAAR_GAAL
+{
+    faceplayer
+    //namebox ("Ga'al")
+    msgbox(format("Guh?\p.TzHaar?"))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+//Would like to include some variable dialogue for after you have completed the Gym challenge? Maybe 'Ga'al not die in...caves like other Ga'al. All thanks to...you!'
+
+script TZHAAR_OZAN
+{
+    faceplayer
+    //namebox ("Ozan")
+    msgbox(format("I've been adventuring with a goblin friend called Zanik lately.\pShe says a brave adventurer saved her city and defeated an evil god, and when I look into those big eyes I can't believe she's exaggerating.\pI am sure she's around here somewhere."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+script TZHAAR_ZANIK
+{
+    faceplayer
+    //namebox ("Zanik")
+    msgbox(format("I have been fighting in the Fight Caves. \pI haven't gotten to the end yet though.\pThey say there's some huge creature called TzTok-Jad."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+
+//Possibly include some variable dialogue that acknowledges you have seen Jad if you have the badge?

@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TZHAAR_CAVES_2_NPC_1",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TZHAAR_CAVES_2_NPC_2",
       "flag": "0"
     }
   ],
@@ -60,7 +60,7 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [
