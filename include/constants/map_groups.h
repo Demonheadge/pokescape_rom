@@ -766,6 +766,7 @@
 #define MAP_PORT_SARIM_BRIANS_BAZAAR_2F (9 | (40 << 8))
 #define MAP_PORT_SARIM_BANK             (10 | (40 << 8))
 #define MAP_PORT_SARIM_CHURCH           (11 | (40 << 8))
+#define MAP_PORT_SARIM_LIGHTHOUSE       (12 | (40 << 8))
 
 // gMapGroup_PokescapeIndoorRimmington
 #define MAP_RIMMINGTON_HOUSE_1F         (0 | (41 << 8))

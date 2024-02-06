@@ -7950,6 +7950,16 @@
       "secondary_tileset": "gTileset_Abyss",
       "border_filepath": "data/layouts/Abyssal_Realm_3/border.bin",
       "blockdata_filepath": "data/layouts/Abyssal_Realm_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_LIGHTHOUSE",
+      "name": "PortSarim_Lighthouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/PortSarim_Lighthouse/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Lighthouse/map.bin"
     }
   ]
 }

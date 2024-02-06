@@ -1,4 +1,5 @@
 {
+  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -812,7 +813,8 @@
     "PortSarim_BriansBazaar_1F",
     "PortSarim_BriansBazaar_2F",
     "PortSarim_Bank",
-    "PortSarim_Church"
+    "PortSarim_Church",
+    "PortSarim_Lighthouse"
   ],
   "gMapGroup_PokescapeIndoorRimmington": [
     "Rimmington_House_1F",

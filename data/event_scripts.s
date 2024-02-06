@@ -1758,3 +1758,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Varrock_Church/scripts.inc"
 
 	.include "data/maps/Abyssal_Realm_3/scripts.inc"
+
+	.include "data/maps/PortSarim_Lighthouse/scripts.inc"
