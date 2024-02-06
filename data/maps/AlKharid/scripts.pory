@@ -20,16 +20,13 @@ script ALKHARID_GNOMEGLIDER
 script ALKHARID_SIGN
 {
 	lock
-	faceplayer
 	msgbox(format("Welcome to Al Kharid.\pThe jewel of the Kharidian Desert."))
 	release
 	end
 }
 
-script ALKHARID_WELL
+script ALKHARID_WATERWELL
 {
-	lock
-	faceplayer
 	msgbox(format("No matter how hard you look, you can't see any polar bears down there."))
 	release
 	end

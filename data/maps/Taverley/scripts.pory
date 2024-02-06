@@ -48,14 +48,6 @@ script FRITZ_THE_EXPERIMENT
 	end
 }
 
-script LOCKED_DOOR
-{
-	lock
-	faceplayer
-	msgbox(format("It is securely locked."))
-	release
-	end
-}
 
 
 
@@ -63,10 +55,10 @@ script LOCKED_DOOR
 script TAVERLEY_BOY
 {
     faceplayer
-    //namebox ("Harvey")
+    namebox ("Harvey")
     msgbox(format("I kicked my ball over that hedge into that garden!\pThe old lady who lives there is scary... She's taken my ball and won't give it back."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -74,10 +66,10 @@ script TAVERLEY_BOY
 script GUTHIX_RAPTOR
 {
     faceplayer
-    //namebox ("")
+    namebox ("")
     msgbox(format("Caw cawcaw caaaw!"))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -85,10 +77,10 @@ script GUTHIX_RAPTOR
 script NORA_T_HAGG
 {
     faceplayer
-    //namebox ("Nora. T. Hagg")
+    namebox ("Nora. T. Hagg")
     msgbox(format("That pesky kid keeps kicking his ball into my garden. I am sick and tired of it! \pIf he wants it back, he can come and get it himself. After all, Fritz could do with a snack.."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -97,10 +89,10 @@ script NORA_T_HAGG
 script PIKKUPSTIX
 {
     faceplayer
-    //namebox ("Pikkupstix")
+    namebox ("Pikkupstix")
     msgbox(format("I used to teach only the most worthy of adventurers the mystical art of Summoning. \pHowever, ever since the wizards got hold of our pouches and augmented them to catch wild creatures suddenly nobody wants to learn anymore."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -109,10 +101,10 @@ script PIKKUPSTIX
 script ALAIN
 {
     faceplayer
-    //namebox ("Alain")
+    namebox ("Alain")
     msgbox(format("Something was flying overhead earlier! \pDid you see it? \pIt had yellow and red stripes, and I could have sworn I saw a disembodied hand waving at me. \pWhat on Gielinor could that have been?"))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -121,10 +113,10 @@ script ALAIN
 script TEGID
 {
     faceplayer
-    //namebox ("Tegid")
+    namebox ("Tegid")
     msgbox(format("I was washing my clothes in the lake the other day and some adventurer came along and stole my soap!"))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -145,7 +137,7 @@ script TAVERLEY_DRUID_2
 {
     faceplayer
     //namebox ("")
-    msgbox(format("There was a strange man in a funny hat here for a while.\pHe kept trying to scam people by sell beans that were "magical".\pEverybody knows there's no such thing as magic beans."))
+    msgbox(format("There was a strange man in a funny hat here for a while.\pHe kept trying to scam people by sell beans that were 'magical'.\pEverybody knows there's no such thing as magic beans."))
     closemessage
     //hidenamebox
     release

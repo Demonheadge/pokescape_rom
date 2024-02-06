@@ -4548,8 +4548,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINE
     {
     .iv = 0,
     .lvl = 29,
-    .species = SPECIES_BIRD_NEST_GOD_FORM,
-    },
+    .species = SPECIES_BIRDS_NEST_GOD_FORM,
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_2[] = {
@@ -4562,7 +4562,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_ABYSSAL_DEMON_REANIMATED_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_3[] = {
@@ -4575,7 +4575,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_SPARKY,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINER_4[] = {
@@ -4593,7 +4593,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_1F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_DEMON_LESSER_OSRS_FORM,
-    },
+    }
 };
 
 
@@ -4608,7 +4608,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_HAND_SKELETAL_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_2[] = {
@@ -4616,7 +4616,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 35,
     .species = SPECIES_SHADOW_HOUND,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_3[] = {
@@ -4624,7 +4624,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 34,
     .species = SPECIES_HAND_SKELETAL_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_4[] = {
@@ -4642,7 +4642,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_BULL,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_5[] = {
@@ -4660,7 +4660,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_MINOTAUR_REANIMATED_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINER_6[] = {
@@ -4673,7 +4673,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_2F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_CAT_LAZY_FORM,
-    },
+    }
 };
 
 //Varrock Sewers (3F)
@@ -4687,7 +4687,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_PLANT_STRANGE_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_2[] = {
@@ -4705,7 +4705,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_ZYGOMITE_ZANARIAN_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_3[] = {
@@ -4718,7 +4718,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_PLANT_STRANGE_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_4[] = {
@@ -4731,7 +4731,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_GIANT_RAT_DUNGEON_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINER_5[] = {
@@ -4764,7 +4764,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_SEWERS_3F_TRAINE
     .iv = 0,
     .lvl = 32,
     .species = SPECIES_GIANT_RAT_BLESSED_FORM,
-    },
+    }
 };
 
 //TzHaar Caves 1 - Wave 1
@@ -4773,8 +4773,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_1
     .iv = 0,
     .lvl = 34,
     .species = SPECIES_TZ_KIH,
-    },
-}
+    }
+};
 
 static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_2[] = {
     {
@@ -4786,8 +4786,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_2
     .iv = 0,
     .lvl = 45,
     .species = SPECIES_TZ_KEK,
-    },
-}
+    }
+};
 
 static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_3[] = {
     {
@@ -4804,7 +4804,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_3
     .iv = 0,
     .lvl = 49,
     .species = SPECIES_TOK_XIL,
-    },
+    }
 };
 
 //TzHaar Caves 1 - Wave 2
@@ -4828,8 +4828,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_4
     .iv = 0,
     .lvl = 49,
     .species = SPECIES_TOK_XIL,
-    },
-}
+    }
+};
 
 static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_5[] = {
     {
@@ -4846,8 +4846,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_5
     .iv = 0,
     .lvl = 51,
     .species = SPECIES_YT_MEJKOT,
-    },
-}
+    }
+};
 
 static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_6[] = {
     {
@@ -4874,11 +4874,11 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TZHAAR_CAVES_1_TRAINER_6
     .iv = 0,
     .lvl = 53,
     .species = SPECIES_KET_ZEK,
-    },
-}
+    }
+};
 
-//TzHaar Caves 1 - Wave 3 (Jad)
-static const struct TrainerMonNoItemCustomMoves sParty_TZHAAR_CAVES_1_JAD[] = {
+//TzHaar Caves 1 - Wave 3 (Jad)                 
+static const struct TrainerMonNoItemCustomMoves sParty_TZHAAR_CAVES_1_TRAINER_JAD[] = {
     {
     .iv = 0,
     .lvl = 60,
@@ -4908,8 +4908,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_TZHAAR_CAVES_1_JAD[] = {
     .lvl = 55,
     .species = SPECIES_YT_HURKOT,
     .moves = {MOVE_AROMATHERAPY, MOVE_MILK_DRINK, MOVE_FLAME_CHARGE, MOVE_DIG}
-    },
-}
+    }
+};
 
 
 //Route 35
@@ -4923,8 +4923,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_35_TRAINER_1[] = {
     .iv = 0,
     .lvl = 36,
     .species = SPECIES_GUTHRAPTOR,
-    },
-}
+    }
+};
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_35_TRAINER_2[] = {
     {
@@ -4935,9 +4935,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_35_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 36,
-    .species = GOLEM_TITAN,
-    },
-}
+    .species = SPECIES_GOLEM_TITAN,
+    }
+};
 
 
 /*

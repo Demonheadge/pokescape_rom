@@ -277,6 +277,51 @@ ENCOUNTER_SCURRIUS_13:
 	goto ENCOUNTER_SCURRIUS_8
 
 
+BATTLE_VARROCK_SEWERS_3F_TRAINER_1::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_3F_TRAINER_1, BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_0, BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_1
+	namebox BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_2::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_3F_TRAINER_2, BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_0, BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_1
+	namebox BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_3::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_3F_TRAINER_3, BATTLE_VARROCK_SEWERS_3F_TRAINER_3_Text_0, BATTLE_VARROCK_SEWERS_3F_TRAINER_3_Text_1
+	namebox BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_4::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_3F_TRAINER_4, BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_0, BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_1
+	namebox BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_5::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_3F_TRAINER_5, BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_0, BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_1
+	namebox BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_1
+	hidenamebox
+	release
+	end
+
+
 DUNGEONEERING_DOOR_VarrockSewers_Text_0:
 	.string "It appears to be a mysterious door.\p"
 	.string "Would you like to try and pry it open?$"
@@ -371,3 +416,46 @@ ENCOUNTER_SCURRIUS_Text_2:
 ENCOUNTER_SCURRIUS_Text_3:
 	.string "Scurrius is in disbelief you just\n"
 	.string "teleported away from battle.$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_0:
+	.string "'tree sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_1:
+	.string "'sad tree sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_1_Text_2:
+	.string "MOSS GIANT$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_0:
+	.string "'moss sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_2_Text_1:
+	.string "'resigned moss sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_3_Text_0:
+	.string "'angry wooden sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_3_Text_1:
+	.string "'wooden groaning sounds'$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_0:
+	.string "Even in the sewers of Varrock, you still\n"
+	.string "have to stand and deliver!$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_1:
+	.string "Aww rats...$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_4_Text_2:
+	.string "MUGGER$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_0:
+	.string "Several rats crawl out of the skeleton\n"
+	.string "as it attacks you!$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_1:
+	.string "The skeleton stands still. It seems like\n"
+	.string "the rats were what made the skeleton\l"
+	.string "move.$"
+
+BATTLE_VARROCK_SEWERS_3F_TRAINER_5_Text_2:
+	.string "SKELETON$"

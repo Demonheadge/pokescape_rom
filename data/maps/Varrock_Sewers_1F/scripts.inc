@@ -506,6 +506,50 @@ NPC_VARROCK_SEWERS_WOMAN::
 	end
 
 
+VARROCK_SEWERS_1F_FISHERMAN::
+	faceplayer
+	msgbox VARROCK_SEWERS_1F_FISHERMAN_Text_0
+	closemessage
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_1::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_1F_TRAINER_1, BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_0, BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_1
+	namebox BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_2::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_1F_TRAINER_2, BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_0, BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_1
+	namebox BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_3::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_1F_TRAINER_3, BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_0, BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_1
+	namebox BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_4::
+	trainerbattle_single TRAINER_VARROCK_SEWERS_1F_TRAINER_4, BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_0, BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_1
+	namebox BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_2
+	msgbox BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_1
+	hidenamebox
+	release
+	end
+
+
 NPC_Smuggler_XericsAmulet::
 	lock
 	faceplayer
@@ -584,6 +628,56 @@ NPC_VARROCK_SEWERS_WOMAN_Text_0:
 	.string "I wonder if it has something to do with\n"
 	.string "the noise I hear coming through the\l"
 	.string "pipes.$"
+
+VARROCK_SEWERS_1F_FISHERMAN_Text_0:
+	.string "I've been fishing for rare monsters\n"
+	.string "here for a while now, but I haven't\l"
+	.string "found any.\p"
+	.string "All I've managed to catch is a useless\n"
+	.string "key that I can't even battle with!$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_0:
+	.string "The skeleton hushes you, telling you to\n"
+	.string "be quiet.$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_1:
+	.string "The skeleton seemed to want the eggs\n"
+	.string "to lay undisturbed.$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_1_Text_2:
+	.string "SKELETON$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_0:
+	.string "Are you ready to indulge yourself in the\n"
+	.string "dark arts of necromancy?$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_1:
+	.string "I guess you're more interested in\n"
+	.string "necromance. Say, are you doing\l"
+	.string "anything later..?$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_2_Text_2:
+	.string "NECROMANCER$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_0:
+	.string "You just entered my strike zone!$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_1:
+	.string "This is now my defeat zone..$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_3_Text_2:
+	.string "RANGER$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_0:
+	.string "Hey! You're ruining my training area. Get\n"
+	.string "out of here$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_1:
+	.string "I guess there's enough rats for the\n"
+	.string "both of us to train on.$"
+
+BATTLE_VARROCK_SEWERS_1F_TRAINER_4_Text_2:
+	.string "MAGE$"
 
 NPC_Smuggler_XericsAmulet_Text_0:
 	.string "Smuggler$"

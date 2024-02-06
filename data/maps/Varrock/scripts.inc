@@ -1389,7 +1389,7 @@ NPC_ARCHAEOLOGIST_BLOCKADE_1_Text_0:
 
 NPC_ARCHAEOLOGIST_BLOCKADE_1_Text_1:
 	.string "You should see it!\p"
-	.string "The city of senstinstin has been found!$"
+	.string "The city of Senntisten has been found!$"
 
 BATTLE_Varrock_Max_Text_0:
 	.string "Max$"

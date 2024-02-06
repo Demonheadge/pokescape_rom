@@ -92,7 +92,6 @@ script CUPHOLDER_NPC
 script LOCKED_DOOR
 {
 	lock
-	faceplayer
 	msgbox(format("It is securely locked."))
 	release
 	end

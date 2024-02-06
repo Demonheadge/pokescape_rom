@@ -356,22 +356,6 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 26,
-      "y": 20,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "ALKHARID_WELL"
-    },
-    {
-      "type": "sign",
-      "x": 20,
-      "y": 36,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
-    },
-    {
-      "type": "sign",
       "x": 34,
       "y": 1,
       "elevation": 0,
@@ -384,7 +368,15 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "ALKHARID_GNOMEGLIDER"
+    },
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ALKHARID_WATERWELL"
     }
   ]
 }

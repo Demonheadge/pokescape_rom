@@ -14,6 +14,19 @@ ALKHARID_GNOMEGLIDER::
 	end
 
 
+ALKHARID_SIGN::
+	lock
+	msgbox ALKHARID_SIGN_Text_0
+	release
+	end
+
+
+ALKHARID_WATERWELL::
+	msgbox ALKHARID_WATERWELL_Text_0
+	release
+	end
+
+
 ALKHARID_NPC_1::
 	faceplayer
 	msgbox ALKHARID_NPC_1_Text_0
@@ -98,7 +111,7 @@ ALKHARID_NPC_10::
 
 ALKHARID_NPC_11::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_11_Text_0
 	closemessage
 	release
 	end
@@ -106,7 +119,7 @@ ALKHARID_NPC_11::
 
 ALKHARID_NPC_12::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_12_Text_0
 	closemessage
 	release
 	end
@@ -114,7 +127,7 @@ ALKHARID_NPC_12::
 
 ALKHARID_NPC_13::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_13_Text_0
 	closemessage
 	release
 	end
@@ -122,7 +135,7 @@ ALKHARID_NPC_13::
 
 ALKHARID_NPC_14::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_14_Text_0
 	closemessage
 	release
 	end
@@ -130,7 +143,7 @@ ALKHARID_NPC_14::
 
 ALKHARID_NPC_15::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_14_Text_0
 	closemessage
 	release
 	end
@@ -138,7 +151,7 @@ ALKHARID_NPC_15::
 
 ALKHARID_NPC_16::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox ALKHARID_NPC_14_Text_0
 	closemessage
 	release
 	end
@@ -146,7 +159,7 @@ ALKHARID_NPC_16::
 
 SHANTYPASS_NPC_1::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox SHANTYPASS_NPC_1_Text_0
 	closemessage
 	release
 	end
@@ -154,7 +167,7 @@ SHANTYPASS_NPC_1::
 
 SHANTYPASS_NPC_2::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox SHANTYPASS_NPC_2_Text_0
 	closemessage
 	release
 	end
@@ -162,7 +175,7 @@ SHANTYPASS_NPC_2::
 
 SHANTYPASS_NPC_3::
 	faceplayer
-	msgbox ALKHARID_NPC_10_Text_0
+	msgbox SHANTYPASS_NPC_3_Text_0
 	closemessage
 	release
 	end
@@ -170,6 +183,14 @@ SHANTYPASS_NPC_3::
 
 ALKHARID_GNOMEGLIDER_Text_0:
 	.string "It is a Gnome Glider.$"
+
+ALKHARID_SIGN_Text_0:
+	.string "Welcome to Al Kharid.\p"
+	.string "The jewel of the Kharidian Desert.$"
+
+ALKHARID_WATERWELL_Text_0:
+	.string "No matter how hard you look, you can't\n"
+	.string "see any polar bears down there.$"
 
 ALKHARID_NPC_1_Text_0:
 	.string "The Gnome Glider is currently\n"
@@ -186,10 +207,11 @@ ALKHARID_NPC_3_Text_0:
 	.string "Welcome to Al Kharid, NOOB!$"
 
 ALKHARID_NPC_4_Text_0:
-	.string "Dont cause trouble here in city, law\n"
-	.string "enforcement has a tendency to call\l"
-	.string "upon several more guards unneedingly\l"
-	.string "for the smallest of cases.$"
+	.string "Don't cause trouble here in the city,\n"
+	.string "law enforcement has a tendency to call\l"
+	.string "upon several more guards\l"
+	.string "unnecessarily for the smallest of\l"
+	.string "cases.$"
 
 ALKHARID_NPC_5_Text_0:
 	.string "Up North is the desert, you can find\n"
@@ -199,7 +221,7 @@ ALKHARID_NPC_5_Text_0:
 	.string "under those conditions.$"
 
 ALKHARID_NPC_6_Text_0:
-	.string "Did you know theres a ban on magic\n"
+	.string "Did you know there's a ban on magic\n"
 	.string "carpets in Al Kharid?\p"
 	.string "Apparently their leader died using one\n"
 	.string "at one point.$"
@@ -213,10 +235,62 @@ ALKHARID_NPC_8_Text_0:
 	.string "to challenge the prince?$"
 
 ALKHARID_NPC_9_Text_0:
-	.string "We deal with a lot of thiefs and\n"
+	.string "I heard rumours of archaeologists\n"
+	.string "carrying out an excavation on some\l"
+	.string "ruins nearby.\p"
+	.string "I wonder what magical artifacts might\n"
+	.string "be sealed inside.$"
+
+ALKHARID_NPC_10_Text_0:
+	.string "I'm glad I managed to get assigned as a\n"
+	.string "guard outside the palace.\p"
+	.string "Therer were too many adventurers\n"
+	.string "coming into the palace and trapping my\l"
+	.string "brothers behind furniture to kill them.$"
+
+ALKHARID_NPC_11_Text_0:
+	.string "We deal with a lot of thieves and\n"
 	.string "cutthroats here.\p"
 	.string "Al Kharid does not welcome them, yet\n"
 	.string "they keep coming back.$"
 
-ALKHARID_NPC_10_Text_0:
+ALKHARID_NPC_12_Text_0:
+	.string "The Spirit of the Sea has awoken and is\n"
+	.string "creating intense storms for sailors.\p"
+	.string "I wonder if there are any adventurers\n"
+	.string "brave enough to defeat it.$"
+
+ALKHARID_NPC_13_Text_0:
+	.string "Who am I?\p"
+	.string "Only the most famous hero ever born in\n"
+	.string "Al Kharid!\p"
+	.string "I helped aid in the defence of\n"
+	.string "Burthorpe from the troll invasion.\p"
+	.string "I helped rescue the druid master\n"
+	.string "Pikkupstix from the depths of\l"
+	.string "Daemonheim!\p"
+	.string "…{PAUSE 32}\p"
+	.string "What do you mean you've never heard of\n"
+	.string "me?$"
+
+ALKHARID_NPC_14_Text_0:
 	.string "$"
+
+SHANTYPASS_NPC_1_Text_0:
+	.string "This is the pass of Shantay. I guard\n"
+	.string "this area with my men. I am responsible\l"
+	.string "for keeping this pass open.\p"
+	.string "Unfortunately it is currently\n"
+	.string "undergoing some repairs. Please come\l"
+	.string "back again later.$"
+
+SHANTYPASS_NPC_2_Text_0:
+	.string "I help Shantay prevent outlaws from\n"
+	.string "getting out of the desert. And we stop\l"
+	.string "the inexperienced from a dry death in\l"
+	.string "the sands.$"
+
+SHANTYPASS_NPC_3_Text_0:
+	.string "Go talk to Shantay. I'm on duty and I\n"
+	.string "don't have time to talk to the likes of\l"
+	.string "you!$"

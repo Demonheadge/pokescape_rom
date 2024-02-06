@@ -209,9 +209,9 @@ script ENCOUNTER_SCURRIUS
 //Battles
 script BATTLE_VARROCK_SEWERS_3F_TRAINER_1
 {
-    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_1, format("*tree sounds*"),format("*sad tree sounds*"))
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_1, format("'tree sounds'"),format("'sad tree sounds'"))
     namebox ("MOSS GIANT")
-    msgbox(format("*sad tree sounds*"))
+    msgbox(format("'sad tree sounds'"))
 	hidenamebox
     release
 	end
@@ -219,9 +219,9 @@ script BATTLE_VARROCK_SEWERS_3F_TRAINER_1
 
 script BATTLE_VARROCK_SEWERS_3F_TRAINER_2
 {
-    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_2, format("*moss sounds*"),format("*resigned moss sounds*"))
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_2, format("'moss sounds'"),format("'resigned moss sounds'"))
     namebox ("MOSS GIANT")
-    msgbox(format("*resigned moss sounds*"))
+    msgbox(format("'resigned moss sounds'"))
 	hidenamebox
     release
 	end
@@ -229,9 +229,9 @@ script BATTLE_VARROCK_SEWERS_3F_TRAINER_2
 
 script BATTLE_VARROCK_SEWERS_3F_TRAINER_3
 {
-    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_3, format("*angry wooden sounds*"),format("*wooden groaning sounds*"))
+    trainerbattle_single(TRAINER_VARROCK_SEWERS_3F_TRAINER_3, format("'angry wooden sounds'"),format("'wooden groaning sounds'"))
     namebox ("MOSS GIANT")
-    msgbox(format("*resigned moss sounds*"))
+    msgbox(format("'resigned moss sounds'"))
 	hidenamebox
     release
 	end

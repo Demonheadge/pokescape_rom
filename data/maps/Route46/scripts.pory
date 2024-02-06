@@ -41,14 +41,6 @@ script ROUTE46_STUDENT
 
 
 //Miscellanous
-script LOCKED_DOOR
-{
-	lock
-	faceplayer
-	msgbox(format("It is securely locked."))
-	release
-	end
-}
 
 script DIGSITE_SIGN
 {
