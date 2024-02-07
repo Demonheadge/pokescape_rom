@@ -1,42 +1,95 @@
+const OBJ_EVENT_ID_TOBIAS = 11
+const OBJ_EVENT_ID_LORIS = 10
+const OBJ_EVENT_ID_MONK_1 = 6
+const OBJ_EVENT_ID_MONK_2 = 7
+const OBJ_EVENT_ID_SEAGULL_1 = 18
+const OBJ_EVENT_ID_SEAGULL_2 = 17
+const OBJ_EVENT_ID_FISHERMAN = 35
+const OBJ_EVENT_ID_MAN = 33
+const OBJ_EVENT_ID_QUESTER = 34
+const OBJ_EVENT_ID_JAILGUARD = 37
+
+
 mapscripts Port_Sarim_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-    goto(PORTSARIM_STATE)
-    
+        call(PORTSARIM_STATE)
     }
-    
-    
 } 
 
 
 
 
 
-
-
+script VARSETTER {
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 100)
+}
 
 
 
 script PORTSARIM_STATE{
-	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-        //HAM EVENT PORT SARIM
-		case 0: 
-            end
-
-        //HAM EVENT PORT SARIM - ENDS - FALADOR BLOCKADE LEAVES (Add switch to Route script)
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            removeobject(21)
-            removeobject(22)
-            removeobject(23)
-            removeobject(24)
-            removeobject(25)
-            removeobject(26)
-            removeobject(27)
-            setflag(FLAG_EVENT_PORTSARIM_HAM_BOAT)
-            return
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORYMODE
+    {
+        switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 100:
+                addobject(21)
+                addobject(22)
+                addobject(23)
+                addobject(24)
+                addobject(25)
+                addobject(26)
+                addobject(27)
+                clearflag(FLAG_TEMP_1F)
+                clearflag(FLAG_TEMP_1E)
+                setobjectmovementtype(OBJ_EVENT_ID_TOBIAS, MOVEMENT_TYPE_FACE_RIGHT)
+                setobjectxyperm(OBJ_EVENT_ID_TOBIAS, 19, 20)
+                setobjectmovementtype(OBJ_EVENT_ID_MONK_2, MOVEMENT_TYPE_NONE)
+                setobjectxyperm(OBJ_EVENT_ID_MONK_2, 30, 20)
+                setobjectmovementtype(OBJ_EVENT_ID_MONK_1, MOVEMENT_TYPE_NONE)
+                setobjectxyperm(OBJ_EVENT_ID_MONK_1, 31, 20)
+                setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 19, 18)
+                setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN, MOVEMENT_TYPE_FACE_RIGHT)
+                setobjectxyperm(OBJ_EVENT_ID_SEAGULL_1, 9, 30)
+                setobjectxyperm(OBJ_EVENT_ID_LORIS, 19, 34)
+                setobjectmovementtype(OBJ_EVENT_ID_LORIS, MOVEMENT_TYPE_FACE_LEFT)
+                setobjectxyperm(OBJ_EVENT_ID_SEAGULL_2, 44, 11)
+                setobjectxyperm(OBJ_EVENT_ID_MAN, 12, 8)
+                setobjectmovementtype(OBJ_EVENT_ID_QUESTER, MOVEMENT_TYPE_FACE_RIGHT)
+                setobjectxyperm(OBJ_EVENT_ID_QUESTER, 20, 19)
+                return
+            case 101:
+                setobjectmovementtype(OBJ_EVENT_ID_QUESTER, MOVEMENT_TYPE_FACE_DOWN)
+                setobjectxyperm(OBJ_EVENT_ID_QUESTER, 20, 18)
+                setobjectmovementtype(OBJ_EVENT_ID_TOBIAS, MOVEMENT_TYPE_FACE_RIGHT)
+                setobjectxyperm(OBJ_EVENT_ID_TOBIAS, 18, 21)
+                setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN, MOVEMENT_TYPE_FACE_DOWN)
+                setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 19, 18)
+                addobject(27)
+                clearflag(FLAG_TEMP_1E)
+                setobjectmovementtype(OBJ_EVENT_ID_JAILGUARD, MOVEMENT_TYPE_FACE_DOWN)
+                setobjectxyperm(OBJ_EVENT_ID_JAILGUARD, 6, 40)
+        }
+        removeobject(21)
+        removeobject(22)
+        removeobject(23)
+        removeobject(24)
+        removeobject(25)
+        removeobject(26)
+        removeobject(27)
+        setflag(FLAG_TEMP_1F)
+        setflag(FLAG_TEMP_1E)
+        return
+    }
+    else { //OPENWORLD MODE - REMOVE ALL STORYMODE OBJECTS
+        removeobject(21)
+        removeobject(22)
+        removeobject(23)
+        removeobject(24)
+        removeobject(25)
+        removeobject(26)
+        removeobject(27)
+        setflag(FLAG_TEMP_1F)
+        return
     }
 }
 
@@ -106,6 +159,10 @@ script PORTSARIM_HAM_EVENT_PART2 {
     msgbox(format("…"))
     waitmessage 
     hidenamebox
+    closemessage
+    applymovement(21, PORTSARIM_HAM_MEMBERS_5)
+    applymovement(22, PORTSARIM_HAM_MEMBERS_5)
+    waitmovement(0)
     namebox ("H.A.M Leader")
     msgbox(format("Alright grunts!\pWe are moving out to Karamja for our next mission!\pEveryone on the ship!"))
     waitmessage 
@@ -120,17 +177,19 @@ script PORTSARIM_HAM_EVENT_PART2 {
     removeobject(24)
     removeobject(25)
     removeobject(26)
-    setflag(FLAG_EVENT_PORTSARIM_HAM_BOAT)
-    setvar(VAR_POKESCAPE_FALADOR_STATE, 1)
+    setflag(FLAG_TEMP_1F)
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 101)
     fadescreen(FADE_FROM_BLACK)
     applymovement(27, PORTSARIM_HAM_BOAT)
     waitmovement(0)
     removeobject(27)
+    setflag(FLAG_TEMP_1E)
     //---MOVE CAMERA BACK FROM HAM---
     delay(10)
     savebgm(MUS_DUMMY)
     fadedefaultbgm
     special(SpawnCameraObject) 
+    call(PORTSARIM_STATE)
     return
 }
 
@@ -164,6 +223,11 @@ movement PORTSARIM_HAM_BOAT{
     walk_slow_right
     walk_slow_right
     walk_slow_right
+}
+movement PORTSARIM_HAM_MEMBERS_5{
+	walk_left
+    walk_up
+    walk_left * 8
 }
 
 movement PORTSARIM_HAM_CAMERA_1{
@@ -267,6 +331,25 @@ script NPC_PORTSARIM_CAPTIAN_TOBIAS
 	lock
 	faceplayer
     namebox ("Tobias")
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 100:
+                msgbox(format("There seems to be some sort of commotion happening over there."))
+                applymovement(OBJ_EVENT_ID_TOBIAS, Movement_FACERIGHT)
+                waitmovement(0)
+                closemessage
+                hidenamebox
+                release
+                end
+            case 101:
+                msgbox(format("This cannot be good.\pThey ran off towards the lighthouse in a rush."))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
+
+
     if (flag(FLAG_BADGE02_GET) == false) 
 	{
         msgbox(format("Sorry but our boat has popped a leak.\pIt will be some time before it is repaired.\pYou should go visit the Party Room in Falador or something while you are waiting."))
@@ -360,6 +443,23 @@ script NPC_PORTSARIM_NPC_1
 {
 	lock
 	faceplayer
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 100:
+                msgbox(format("Something is happening over there."))
+                applymovement(OBJ_EVENT_ID_FISHERMAN, Movement_FACERIGHT)
+                waitmovement(0)
+                closemessage
+                hidenamebox
+                release
+                end
+            case 101:
+                msgbox(format("They seem like trouble.\pI hope the jail guards arrest them."))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
     //namebox ("NAME")
 	msgbox(format("Sailing will never happen, get over it."))
     waitmessage
@@ -373,7 +473,16 @@ script NPC_PORTSARIM_MONK_1
 	lock
 	faceplayer
     namebox ("Monk")
-	msgbox(format("I cannot believe they nicked our ship…"))
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 101:
+                msgbox(format("I cannot believe they nicked our ship…"))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
+	msgbox(format("You cannot come to Entrana with those monsters."))
     waitmessage
     hidenamebox
 	release
@@ -385,6 +494,15 @@ script NPC_PORTSARIM_MONK_2
 	lock
 	faceplayer
     namebox ("Monk")
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 101:
+                msgbox(format("They stole our ship!\pMay Saradomin smite them!"))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
 	msgbox(format("Sorry, but you cannot enter Entrana while you have those despicable creatures with you."))
     waitmessage
     hidenamebox
@@ -432,6 +550,23 @@ script NPC_PORTSARIM_NPC_5
 {
 	lock
 	faceplayer
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 100:
+                msgbox(format("There seems to be some sort of commotion happening over there."))
+                applymovement(OBJ_EVENT_ID_QUESTER, Movement_FACERIGHT)
+                waitmovement(0)
+                closemessage
+                hidenamebox
+                release
+                end
+            case 101:
+                msgbox(format("Those pink robed people seemed to have rushed off towards the lighthouse."))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
     //namebox ("NAME")
 	msgbox(format("I wish I had my own port, maybe a player owned port?"))
     waitmessage
@@ -652,6 +787,26 @@ script NPC_PORTSARIM_BATTLEAXE_LOREBOOK
 
 
 
+script NPC_PORTSARIM_NPC_JAILGUARD
+{
+	lock
+	faceplayer
+    switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            //HAM EVENT, PORT SARIM BOAT
+            case 101:
+                msgbox(format("Was that H.A.M that just ran into the lighthouse?!\pEh, I'm on my break, let it be someone elses problem."))
+                closemessage
+                hidenamebox
+                release
+                end
+    }
+    //namebox ("NAME")
+	msgbox(format("I am on my break, don't bother me."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
 
 
 

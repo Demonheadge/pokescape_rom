@@ -108,9 +108,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MONK_1",
       "x": 31,
-      "y": 20,
+      "y": 21,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -120,12 +120,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MONK_2",
-      "x": 30,
+      "x": 28,
       "y": 20,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_PORTSARIM_MONK_1",
@@ -311,7 +311,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
@@ -324,7 +324,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
@@ -337,7 +337,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
@@ -350,7 +350,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_PATTY",
@@ -363,7 +363,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PIGLET",
@@ -376,7 +376,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PORTSARIM_HAM_EVENT_TRIGGER1",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SHIP_1",
@@ -389,7 +389,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_EVENT_PORTSARIM_HAM_BOAT"
+      "flag": "FLAG_TEMP_1E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SHIP_1",
@@ -474,7 +474,7 @@
       "x": 19,
       "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -506,6 +506,19 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BerryTreeScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_DRAYNOR",
+      "x": 4,
+      "y": 43,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_PORTSARIM_NPC_JAILGUARD",
       "flag": "0"
     }
   ],
@@ -587,8 +600,8 @@
       "x": 25,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "0",
+      "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
+      "var_value": "100",
       "script": "PORTSARIM_HAM_EVENT_TRIGGER2"
     },
     {
@@ -596,8 +609,8 @@
       "x": 23,
       "y": 20,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "0",
+      "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
+      "var_value": "100",
       "script": "PORTSARIM_HAM_EVENT_TRIGGER1"
     }
   ],
@@ -636,8 +649,8 @@
     },
     {
       "type": "sign",
-      "x": 8,
-      "y": 43,
+      "x": 11,
+      "y": 41,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LOCKED_DOOR"

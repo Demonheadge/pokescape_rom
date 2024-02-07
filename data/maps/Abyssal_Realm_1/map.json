@@ -504,6 +504,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Check_Dungeon_Seed"
+    },
+    {
+      "type": "sign",
+      "x": 59,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VARSETTER"
     }
   ]
 }

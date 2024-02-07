@@ -101,11 +101,11 @@
 #define VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE 0x4052 // POKESCAPE Unused Var
 #define VAR_LAVARIDGE_TOWN_STATE             0x4053
 #define VAR_CURRENT_SECRET_BASE              0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_POKESCAPE_WIZARDS_TOWER_STATE            0x4055 // Unused Var
+#define VAR_POKESCAPE_WIZARDS_TOWER_STATE    0x4055 // Unused Var
 #define VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE            0x4056 // Unused Var
-#define VAR_POKESCAPE_RIMMINGTON_STATE                 0x4057
-#define VAR_POKESCAPE_DRAYNOR_GUARD_STATE             0x4058
-#define VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE              0x4059 // Unused Var
+#define VAR_POKESCAPE_RIMMINGTON_STATE       0x4057
+#define VAR_POKESCAPE_DRAYNOR_GUARD_STATE    0x4058
+#define VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE 0x4059 // Unused Var
 #define VAR_POKESCAPE_RAC_QUEST_STATE              0x405A
 #define VAR_POKESCAPE_RAC_QUEST_ELEJ               0x405B // Unused Var
 #define VAR_POKESCAPE_RAC_QUEST_JAGEXMODS              0x405C // Unused Var
@@ -143,20 +143,20 @@
 #define VAR_SEED                             0x407C // Unused Var
 #define VAR_DUNGEONEERING_DOOR                   0x407D // Unused Var
 #define VAR_DUNGEONEERING_RANDOM_PUZZLE_3                   0x407E // Unused Var
-#define VAR_STORE_SEED_RESULT                   0x407F // Unused Var
-#define VAR_DUNGEONEERING_STARTER_ROOM                   0x4080 // Unused Var
-#define VAR_DUNGEONEERING_BOSS_ROOM                   0x4081 // Unused Var
-#define VAR_DUNGEONEERING_RANDOM_PUZZLE_1      0x4082
-#define VAR_DUNGEONEERING_RANDOM_PUZZLE_2                    0x4083 // Unused Var
+#define VAR_STORE_SEED_RESULT                0x407F // Unused Var
+#define VAR_DUNGEONEERING_STARTER_ROOM       0x4080 // Unused Var
+#define VAR_DUNGEONEERING_BOSS_ROOM          0x4081 // Unused Var
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_1    0x4082
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_2    0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                  0x4084
-#define VAR_DUNGEONEERING_RANDOM_PUZZLE_4              0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_4    0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE               0x4086
 #define VAR_CABLE_CLUB_STATE                 0x4087
 #define VAR_CONTEST_TYPE                     0x4088
 #define VAR_SECRET_BASE_INITIALIZED          0x4089
 #define VAR_CONTEST_PRIZE_PICKUP             0x408A
-#define VAR_SCURRIUS                    0x408B // Unused Var
-#define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN  0x408C
+#define VAR_SCURRIUS                         0x408B // Unused Var
+#define VAR_POKESCAPE_STORYMODE_PROGRESS     0x408C //VAR_LITTLEROOT_HOUSES_STATE_BRENDAN
 #define VAR_LITTLEROOT_RIVAL_STATE           0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE          0x408E
 #define VAR_DEVON_CORP_3F_STATE              0x408F

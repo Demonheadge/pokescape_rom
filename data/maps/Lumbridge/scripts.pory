@@ -77,9 +77,6 @@ script OPENWORLD_STATE_LUMBRIDGE {
 
 
 
-
-
-
 script CUPHOLDER_NPC
 {
 	lock
