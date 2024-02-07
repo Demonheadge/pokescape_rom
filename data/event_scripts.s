@@ -1764,3 +1764,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PortSarim_Lighthouse_2F/scripts.inc"
 
 	.include "data/maps/PortSarim_Lighthouse_3F/scripts.inc"
+
+	.include "data/maps/Melzars_Maze_1F/scripts.inc"
+
+	.include "data/maps/Melzars_Maze_2F/scripts.inc"
+
+	.include "data/maps/Melzars_Maze_3F/scripts.inc"
+
+	.include "data/maps/Melzars_Maze_B1F/scripts.inc"
+
+	.include "data/maps/Route48/scripts.inc"
+
+	.include "data/maps/Route49/scripts.inc"

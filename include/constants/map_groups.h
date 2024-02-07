@@ -666,6 +666,8 @@
 #define MAP_ROUTE45 (44 | (35 << 8))
 #define MAP_ROUTE46 (45 | (35 << 8))
 #define MAP_ROUTE47 (46 | (35 << 8))
+#define MAP_ROUTE48 (47 | (35 << 8))
+#define MAP_ROUTE49 (48 | (35 << 8))
 
 // gMapGroup_PokescapeDungeons
 #define MAP_TUTORIAL_ISLAND_CAVE        (0 | (36 << 8))
@@ -782,6 +784,10 @@
 #define MAP_RIMMINGTON_BANK             (8 | (41 << 8))
 #define MAP_ROUTE8_MAKEOVER_MAGE        (9 | (41 << 8))
 #define MAP_ROUTE8_CRAFTING_GUILD       (10 | (41 << 8))
+#define MAP_MELZARS_MAZE_1F             (11 | (41 << 8))
+#define MAP_MELZARS_MAZE_2F             (12 | (41 << 8))
+#define MAP_MELZARS_MAZE_3F             (13 | (41 << 8))
+#define MAP_MELZARS_MAZE_B1F            (14 | (41 << 8))
 
 // gMapGroup_PokescapeIndoorFalador
 #define MAP_FALADOR_HAIRDRESSERS     (0 | (42 << 8))

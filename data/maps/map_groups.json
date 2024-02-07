@@ -713,7 +713,9 @@
     "Route44",
     "Route45",
     "Route46",
-    "Route47"
+    "Route47",
+    "Route48",
+    "Route49"
   ],
   "gMapGroup_PokescapeDungeons": [
     "Tutorial_Island_Cave",
@@ -829,7 +831,11 @@
     "Rimmington_Lab",
     "Rimmington_Bank",
     "Route8_MakeoverMage",
-    "Route8_CraftingGuild"
+    "Route8_CraftingGuild",
+    "Melzars_Maze_1F",
+    "Melzars_Maze_2F",
+    "Melzars_Maze_3F",
+    "Melzars_Maze_B1F"
   ],
   "gMapGroup_PokescapeIndoorFalador": [
     "Falador_Hairdressers",
