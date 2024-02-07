@@ -148,7 +148,7 @@ script TAVERLEY_DRUID_3
 {
     faceplayer
     //namebox ("")
-    msgbox(format("Admiring my cabbages, are you?.\pDeliciousness be with you.\pOh, you don't know what I'm talking about.."))
+    msgbox(format("Admiring my cabbages, are you?\pDeliciousness be with you.\pOh, you don't know what I'm talking about.."))
     closemessage
     //hidenamebox
     release

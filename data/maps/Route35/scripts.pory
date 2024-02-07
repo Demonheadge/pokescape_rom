@@ -6,10 +6,10 @@ mapscripts Route35_MapScripts {
 script LADY_OF_THE_LAKE
 {
     faceplayer
-    //namebox ("The Lady of the Lake")
+    namebox ("The Lady of the Lake")
     msgbox(format("Aye, I have the sword Excalibur in my possession.\p'Tis very valuable, and not an artefact to be given away lightly.\pOh? You're chasing after monsters instead?\pI heard some strange noises from that dungeon nearby. Try there."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -17,10 +17,10 @@ script LADY_OF_THE_LAKE
 script ASSISTANT_STAN
 {
     faceplayer
-    //namebox ("Assistant Stan")
+    namebox ("Assistant Stan")
     msgbox(format("Oh, don't mind me. I fell out of the basket while Auguste was trying to adjust our trajectory.\pI'm sure he'll come back for me. Eventually."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -82,7 +82,7 @@ script BATTLE_ROUTE_35_TRAINER_1
 script BATTLE_ROUTE_35_TRAINER_2
 {
     trainerbattle_single(TRAINER_ROUTE_35_TRAINER_2, format("I heard there was a shooting star to mine here, but all I've found is a battle instead!"),format("I should stick to Motherlode Mine."))
-    namebox ("Druid")
+    namebox ("Miner")
     msgbox(format("I should stick to Motherlode Mine."))
 	hidenamebox
     release

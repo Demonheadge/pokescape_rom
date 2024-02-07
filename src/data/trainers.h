@@ -4223,5 +4223,35 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemCustomMoves = sParty_TZHAAR_CAVES_1_TRAINER_JAD},
     },
 
+
+//Route 35
+    [TRAINER_ROUTE_35_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MONK,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_monk,
+        .trainerName = _("Jethro"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_35_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_35_TRAINER_1},
+    },
+
+    [TRAINER_ROUTE_35_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _("St4r Min3r"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_35_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_35_TRAINER_2},
+    },
+
 };
 

@@ -7,10 +7,10 @@ mapscripts Tzhaar_1F_MapScripts {
 script TZHAAR_GAAL
 {
     faceplayer
-    //namebox ("Ga'al")
+    namebox ("Ga'al")
     msgbox(format("Guh?\p.TzHaar?"))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -20,10 +20,10 @@ script TZHAAR_GAAL
 script TZHAAR_OZAN
 {
     faceplayer
-    //namebox ("Ozan")
+    namebox ("Ozan")
     msgbox(format("I've been adventuring with a goblin friend called Zanik lately.\pShe says a brave adventurer saved her city and defeated an evil god, and when I look into those big eyes I can't believe she's exaggerating.\pI am sure she's around here somewhere."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
@@ -31,10 +31,10 @@ script TZHAAR_OZAN
 script TZHAAR_ZANIK
 {
     faceplayer
-    //namebox ("Zanik")
+    namebox ("Zanik")
     msgbox(format("I have been fighting in the Fight Caves. \pI haven't gotten to the end yet though.\pThey say there's some huge creature called TzTok-Jad."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
