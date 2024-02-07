@@ -5064,7 +5064,7 @@
     {
       "id": "LAYOUT_ROUTE30",
       "name": "Route30_Layout",
-      "width": 50,
+      "width": 48,
       "height": 18,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
@@ -5074,7 +5074,7 @@
     {
       "id": "LAYOUT_ROUTE31",
       "name": "Route31_Layout",
-      "width": 54,
+      "width": 52,
       "height": 26,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
@@ -6135,7 +6135,7 @@
       "id": "LAYOUT_ROUTE42",
       "name": "Route42_Layout",
       "width": 22,
-      "height": 20,
+      "height": 22,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route42/border.bin",
@@ -6145,7 +6145,7 @@
       "id": "LAYOUT_ROUTE43",
       "name": "Route43_Layout",
       "width": 20,
-      "height": 20,
+      "height": 22,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route43/border.bin",
@@ -7950,6 +7950,96 @@
       "secondary_tileset": "gTileset_Abyss",
       "border_filepath": "data/layouts/Abyssal_Realm_3/border.bin",
       "blockdata_filepath": "data/layouts/Abyssal_Realm_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_LIGHTHOUSE",
+      "name": "PortSarim_Lighthouse_Layout",
+      "width": 18,
+      "height": 13,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Yanille",
+      "border_filepath": "data/layouts/PortSarim_Lighthouse/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Lighthouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_LIGHTHOUSE_2F",
+      "name": "PortSarim_Lighthouse_2F_Layout",
+      "width": 18,
+      "height": 13,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Yanille",
+      "border_filepath": "data/layouts/PortSarim_Lighthouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Lighthouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_LIGHTHOUSE_3F",
+      "name": "PortSarim_Lighthouse_3F_Layout",
+      "width": 18,
+      "height": 15,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Yanille",
+      "border_filepath": "data/layouts/PortSarim_Lighthouse_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Lighthouse_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MELZARS_MAZE_1F",
+      "name": "Melzars_Maze_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Melzars_Maze_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Melzars_Maze_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MELZARS_MAZE_2F",
+      "name": "Melzars_Maze_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Melzars_Maze_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Melzars_Maze_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MELZARS_MAZE_3F",
+      "name": "Melzars_Maze_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Melzars_Maze_3F/border.bin",
+      "blockdata_filepath": "data/layouts/Melzars_Maze_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MELZARS_MAZE_B1F",
+      "name": "Melzars_Maze_B1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Melzars_Maze_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Melzars_Maze_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE48",
+      "name": "Route48_Layout",
+      "width": 16,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route48/border.bin",
+      "blockdata_filepath": "data/layouts/Route48/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE49",
+      "name": "Route49_Layout",
+      "width": 30,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route49/border.bin",
+      "blockdata_filepath": "data/layouts/Route49/map.bin"
     }
   ]
 }

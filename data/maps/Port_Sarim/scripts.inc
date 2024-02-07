@@ -707,7 +707,7 @@ NPC_PORTSARIM_MONK_1_Text_0:
 	.string "Monk$"
 
 NPC_PORTSARIM_MONK_1_Text_1:
-	.string "I cannot believe they nicked out ship…$"
+	.string "I cannot believe they nicked our ship…$"
 
 NPC_PORTSARIM_MONK_2_Text_0:
 	.string "Sorry, but you cannot enter Entrana\n"
