@@ -1760,3 +1760,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Abyssal_Realm_3/scripts.inc"
 
 	.include "data/maps/PortSarim_Lighthouse/scripts.inc"
+
+	.include "data/maps/PortSarim_Lighthouse_2F/scripts.inc"
+
+	.include "data/maps/PortSarim_Lighthouse_3F/scripts.inc"
