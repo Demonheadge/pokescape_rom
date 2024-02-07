@@ -44,48 +44,60 @@ FRITZ_THE_EXPERIMENT::
 
 TAVERLEY_BOY::
 	faceplayer
-	msgbox TAVERLEY_BOY_Text_0
+	namebox TAVERLEY_BOY_Text_0
+	msgbox TAVERLEY_BOY_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 GUTHIX_RAPTOR::
 	faceplayer
-	msgbox GUTHIX_RAPTOR_Text_0
+	namebox GUTHIX_RAPTOR_Text_0
+	msgbox GUTHIX_RAPTOR_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 NORA_T_HAGG::
 	faceplayer
-	msgbox NORA_T_HAGG_Text_0
+	namebox NORA_T_HAGG_Text_0
+	msgbox NORA_T_HAGG_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 PIKKUPSTIX::
 	faceplayer
-	msgbox PIKKUPSTIX_Text_0
+	namebox PIKKUPSTIX_Text_0
+	msgbox PIKKUPSTIX_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 ALAIN::
 	faceplayer
-	msgbox ALAIN_Text_0
+	namebox ALAIN_Text_0
+	msgbox ALAIN_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 TEGID::
 	faceplayer
-	msgbox TEGID_Text_0
+	namebox TEGID_Text_0
+	msgbox TEGID_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
@@ -143,6 +155,9 @@ FRITZ_THE_EXPERIMENT_Text_0:
 	.string "to change shape.$"
 
 TAVERLEY_BOY_Text_0:
+	.string "Harvey$"
+
+TAVERLEY_BOY_Text_1:
 	.string "I kicked my ball over that hedge into\n"
 	.string "that garden!\p"
 	.string "The old lady who lives there is scary...\n"
@@ -150,9 +165,15 @@ TAVERLEY_BOY_Text_0:
 	.string "back.$"
 
 GUTHIX_RAPTOR_Text_0:
+	.string "$"
+
+GUTHIX_RAPTOR_Text_1:
 	.string "Caw cawcaw caaaw!$"
 
 NORA_T_HAGG_Text_0:
+	.string "Nora. T. Hagg$"
+
+NORA_T_HAGG_Text_1:
 	.string "That pesky kid keeps kicking his ball\n"
 	.string "into my garden. I am sick and tired of\l"
 	.string "it!\p"
@@ -161,6 +182,9 @@ NORA_T_HAGG_Text_0:
 	.string "with a snack..$"
 
 PIKKUPSTIX_Text_0:
+	.string "Pikkupstix$"
+
+PIKKUPSTIX_Text_1:
 	.string "I used to teach only the most worthy of\n"
 	.string "adventurers the mystical art of\l"
 	.string "Summoning.\p"
@@ -170,6 +194,9 @@ PIKKUPSTIX_Text_0:
 	.string "nobody wants to learn anymore.$"
 
 ALAIN_Text_0:
+	.string "Alain$"
+
+ALAIN_Text_1:
 	.string "Something was flying overhead earlier!\p"
 	.string "Did you see it?\p"
 	.string "It had yellow and red stripes, and I\n"
@@ -178,6 +205,9 @@ ALAIN_Text_0:
 	.string "What on Gielinor could that have been?$"
 
 TEGID_Text_0:
+	.string "Tegid$"
+
+TEGID_Text_1:
 	.string "I was washing my clothes in the lake the\n"
 	.string "other day and some adventurer came\l"
 	.string "along and stole my soap!$"
@@ -195,7 +225,7 @@ TAVERLEY_DRUID_2_Text_0:
 	.string "as magic beans.$"
 
 TAVERLEY_DRUID_3_Text_0:
-	.string "Admiring my cabbages, are you?.\p"
+	.string "Admiring my cabbages, are you?\p"
 	.string "Deliciousness be with you.\p"
 	.string "Oh, you don't know what I'm talking\n"
 	.string "about..$"

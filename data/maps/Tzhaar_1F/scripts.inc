@@ -4,33 +4,45 @@ Tzhaar_1F_MapScripts::
 
 TZHAAR_GAAL::
 	faceplayer
-	msgbox TZHAAR_GAAL_Text_0
+	namebox TZHAAR_GAAL_Text_0
+	msgbox TZHAAR_GAAL_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 TZHAAR_OZAN::
 	faceplayer
-	msgbox TZHAAR_OZAN_Text_0
+	namebox TZHAAR_OZAN_Text_0
+	msgbox TZHAAR_OZAN_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 TZHAAR_ZANIK::
 	faceplayer
-	msgbox TZHAAR_ZANIK_Text_0
+	namebox TZHAAR_ZANIK_Text_0
+	msgbox TZHAAR_ZANIK_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 TZHAAR_GAAL_Text_0:
+	.string "Ga'al$"
+
+TZHAAR_GAAL_Text_1:
 	.string "Guh?\p"
 	.string ".TzHaar?$"
 
 TZHAAR_OZAN_Text_0:
+	.string "Ozan$"
+
+TZHAAR_OZAN_Text_1:
 	.string "I've been adventuring with a goblin\n"
 	.string "friend called Zanik lately.\p"
 	.string "She says a brave adventurer saved her\n"
@@ -40,6 +52,9 @@ TZHAAR_OZAN_Text_0:
 	.string "I am sure she's around here somewhere.$"
 
 TZHAAR_ZANIK_Text_0:
+	.string "Zanik$"
+
+TZHAAR_ZANIK_Text_1:
 	.string "I have been fighting in the Fight Caves.\p"
 	.string "I haven't gotten to the end yet though.\p"
 	.string "They say there's some huge creature\n"

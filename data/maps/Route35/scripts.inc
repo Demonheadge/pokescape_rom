@@ -4,16 +4,20 @@ Route35_MapScripts::
 
 LADY_OF_THE_LAKE::
 	faceplayer
-	msgbox LADY_OF_THE_LAKE_Text_0
+	namebox LADY_OF_THE_LAKE_Text_0
+	msgbox LADY_OF_THE_LAKE_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
 
 ASSISTANT_STAN::
 	faceplayer
-	msgbox ASSISTANT_STAN_Text_0
+	namebox ASSISTANT_STAN_Text_0
+	msgbox ASSISTANT_STAN_Text_1
 	closemessage
+	hidenamebox
 	release
 	end
 
@@ -60,7 +64,7 @@ BATTLE_ROUTE_35_TRAINER_1::
 
 BATTLE_ROUTE_35_TRAINER_2::
 	trainerbattle_single TRAINER_ROUTE_35_TRAINER_2, BATTLE_ROUTE_35_TRAINER_2_Text_0, BATTLE_ROUTE_35_TRAINER_2_Text_1
-	namebox BATTLE_ROUTE_35_TRAINER_1_Text_2
+	namebox BATTLE_ROUTE_35_TRAINER_2_Text_2
 	msgbox BATTLE_ROUTE_35_TRAINER_2_Text_1
 	hidenamebox
 	release
@@ -68,6 +72,9 @@ BATTLE_ROUTE_35_TRAINER_2::
 
 
 LADY_OF_THE_LAKE_Text_0:
+	.string "The Lady of the Lake$"
+
+LADY_OF_THE_LAKE_Text_1:
 	.string "Aye, I have the sword Excalibur in my\n"
 	.string "possession.\p"
 	.string "'Tis very valuable, and not an artefact\n"
@@ -78,6 +85,9 @@ LADY_OF_THE_LAKE_Text_0:
 	.string "dungeon nearby. Try there.$"
 
 ASSISTANT_STAN_Text_0:
+	.string "Assistant Stan$"
+
+ASSISTANT_STAN_Text_1:
 	.string "Oh, don't mind me. I fell out of the\n"
 	.string "basket while Auguste was trying to\l"
 	.string "adjust our trajectory.\p"
@@ -121,3 +131,6 @@ BATTLE_ROUTE_35_TRAINER_2_Text_0:
 
 BATTLE_ROUTE_35_TRAINER_2_Text_1:
 	.string "I should stick to Motherlode Mine.$"
+
+BATTLE_ROUTE_35_TRAINER_2_Text_2:
+	.string "Miner$"
