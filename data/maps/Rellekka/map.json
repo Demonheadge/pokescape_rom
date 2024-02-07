@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE57",
       "offset": 24,
-      "map": "MAP_ROUTE57"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_JATIZSO",
       "offset": 0,
-      "map": "MAP_JATIZSO"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -383,42 +383,42 @@
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 34,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 45,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_NEITIZNOT",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 46,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 60,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_RELLEKKA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_NEITIZNOT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

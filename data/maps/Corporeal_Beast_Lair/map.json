@@ -86,14 +86,14 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 23
+      "dest_warp_id": "23"
     },
     {
       "x": 10,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_CORPOREAL_BEAST_LAIR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

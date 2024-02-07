@@ -216,266 +216,273 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     },
     {
       "x": 43,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_RELLEKKA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 22,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 41,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_BASEMENT",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_YANILLE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_MODERATOR_LOBBY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     },
     {
       "x": 10,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 8,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_MAZCAB_OTOT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 47,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     },
     {
       "x": 35,
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     },
     {
       "x": 25,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_BARROWS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 52,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_FALADOR",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 53,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_VARROCK",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 54,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_YANILLE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 45,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 47,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_NEITIZNOT",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 55,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_RELLEKKA",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 56,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_AL_KHARID",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 48,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_CORPOREAL_BEAST_LAIR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 46,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_FOREST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 50,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_SWAMP_CAVES_JUNA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 60,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 61,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 62,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 63,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 64,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_EDGEVILLE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 65,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 66,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 67,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_GOBLIN_VILLAGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 68,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 44,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 58,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_GWD_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 59,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_DUNGEONEERING_LOBBY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 69,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

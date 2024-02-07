@@ -215,8 +215,8 @@
       "x": 5,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 126
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "126"
     }
   ],
   "coord_events": [

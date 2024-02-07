@@ -99,14 +99,14 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_YANILLE",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 1,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_YANILLE_PUB_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

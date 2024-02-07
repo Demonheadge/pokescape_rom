@@ -73,7 +73,7 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     }
   ],
   "coord_events": [

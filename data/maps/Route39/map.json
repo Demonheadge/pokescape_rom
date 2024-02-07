@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_MUSA_POINT",
       "offset": 0,
-      "map": "MAP_MUSA_POINT"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_BRIMHAVEN",
       "offset": 3,
-      "map": "MAP_BRIMHAVEN"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -214,7 +214,7 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

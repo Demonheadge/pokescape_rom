@@ -99,28 +99,28 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE29",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 5,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 22,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

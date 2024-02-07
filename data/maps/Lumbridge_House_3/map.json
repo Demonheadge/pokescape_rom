@@ -34,14 +34,14 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 8,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_3_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

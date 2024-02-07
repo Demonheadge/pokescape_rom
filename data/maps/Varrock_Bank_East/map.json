@@ -73,21 +73,21 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 1,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_EAST_UP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -99,21 +99,21 @@
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_ROUTE11",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 26,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_ASGARNIAN_DUNGEON_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_ASGARNIAN_DUNGEON_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

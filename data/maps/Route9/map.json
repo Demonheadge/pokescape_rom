@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE8",
       "offset": 0,
-      "map": "MAP_ROUTE8"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_RIMMINGTON",
       "offset": 0,
-      "map": "MAP_RIMMINGTON"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE10",
       "offset": 18,
-      "map": "MAP_ROUTE10"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -375,21 +375,21 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 15,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE9",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 51,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

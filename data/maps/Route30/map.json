@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_VARROCK_NORTH",
       "offset": -42,
-      "map": "MAP_VARROCK_NORTH"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE31",
       "offset": -4,
-      "map": "MAP_ROUTE31"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -175,7 +175,7 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_JOLLY_BOAR_PUB_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

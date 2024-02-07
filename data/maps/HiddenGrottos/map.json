@@ -138,84 +138,84 @@
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 23,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_ROUTE1",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 40,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 55,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 6,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 55,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 55,
       "y": 58,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

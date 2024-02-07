@@ -242,21 +242,21 @@
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 2,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 21,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

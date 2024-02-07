@@ -22,14 +22,14 @@
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINE_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 12,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_VORAGO_CAVERN",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

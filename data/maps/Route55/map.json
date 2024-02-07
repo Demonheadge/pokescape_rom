@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ARDOUGNE",
       "offset": -6,
-      "map": "MAP_ARDOUGNE"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE56",
       "offset": 10,
-      "map": "MAP_ROUTE56"
+      "direction": "up"
     }
   ],
   "object_events": [

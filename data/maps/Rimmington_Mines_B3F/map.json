@@ -34,21 +34,21 @@
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 4,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B2F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 9,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_QUEEN_BLACK_DRAGON_LAIR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

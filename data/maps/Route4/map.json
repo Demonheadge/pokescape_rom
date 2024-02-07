@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE3",
       "offset": 8,
-      "map": "MAP_ROUTE3"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE5",
       "offset": -12,
-      "map": "MAP_ROUTE5"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE6",
       "offset": -6,
-      "map": "MAP_ROUTE6"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -219,21 +219,21 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_POTTERINGTON_FARM_INTERIOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

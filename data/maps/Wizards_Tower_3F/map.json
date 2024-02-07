@@ -86,21 +86,21 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_ATTIC",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_DINING_HALL",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     }
   ],
   "coord_events": [

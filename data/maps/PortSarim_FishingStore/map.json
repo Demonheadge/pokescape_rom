@@ -47,7 +47,7 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

@@ -86,21 +86,21 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 31,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_SEWERS_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_SEWERS_2",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE20",
       "offset": 0,
-      "map": "MAP_ROUTE20"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE23",
       "offset": 16,
-      "map": "MAP_ROUTE23"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE25",
       "offset": -6,
-      "map": "MAP_ROUTE25"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_EDGEVILLE",
       "offset": 12,
-      "map": "MAP_EDGEVILLE"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -211,49 +211,49 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE_GYM_HALL",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE_GYM_HALL",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE_HOUSE_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE_HOUSE_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_BARB_STRONGHOLD_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

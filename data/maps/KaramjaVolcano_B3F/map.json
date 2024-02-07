@@ -281,14 +281,14 @@
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 5,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_QUEEN_BLACK_DRAGON_LAIR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

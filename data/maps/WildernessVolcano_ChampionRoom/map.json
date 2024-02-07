@@ -47,7 +47,7 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_WILDERNESS_VOLCANO_LOBBY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

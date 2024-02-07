@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_ROUTE24",
       "offset": -22,
-      "map": "MAP_ROUTE24"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_BARBARIAN_VILLAGE",
       "offset": -16,
-      "map": "MAP_BARBARIAN_VILLAGE"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE25",
       "offset": 26,
-      "map": "MAP_ROUTE25"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_DWARVEN_MINES",
       "offset": 0,
-      "map": "MAP_DWARVEN_MINES"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE40",
       "offset": 44,
-      "map": "MAP_ROUTE40"
+      "direction": "down"
     }
   ],
   "object_events": [

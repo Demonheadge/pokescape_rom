@@ -60,14 +60,14 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 1,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_GENERAL_STORE_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

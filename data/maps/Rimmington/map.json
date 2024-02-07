@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE9",
       "offset": 0,
-      "map": "MAP_ROUTE9"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE10",
       "offset": -12,
-      "map": "MAP_ROUTE10"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE11",
       "offset": 28,
-      "map": "MAP_ROUTE11"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -440,63 +440,63 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_BANK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 29,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_FLETCHING_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_CRAFTING_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_LAB",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_HETTYS_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_HOUSE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 22,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_GENERAL_STORE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 22,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_POH_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

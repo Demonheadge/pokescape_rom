@@ -60,14 +60,14 @@
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 17
+      "dest_warp_id": "17"
     },
     {
       "x": 9,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 18
+      "dest_warp_id": "18"
     }
   ],
   "coord_events": [

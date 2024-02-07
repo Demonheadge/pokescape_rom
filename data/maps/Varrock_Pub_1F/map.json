@@ -281,14 +281,14 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 9,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PUB_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

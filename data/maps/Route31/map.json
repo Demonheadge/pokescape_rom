@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE30",
       "offset": 4,
-      "map": "MAP_ROUTE30"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE47",
       "offset": 6,
-      "map": "MAP_ROUTE47"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE48",
       "offset": 36,
-      "map": "MAP_ROUTE48"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE49",
       "offset": -12,
-      "map": "MAP_ROUTE49"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -237,21 +237,21 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_CHAOS_TUNNELS_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 48,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_WILDERNESS_FOREST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 49,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_WILDERNESS_FOREST",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

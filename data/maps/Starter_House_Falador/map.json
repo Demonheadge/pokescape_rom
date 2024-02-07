@@ -47,14 +47,14 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     },
     {
       "x": 3,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 16
+      "dest_warp_id": "16"
     }
   ],
   "coord_events": [

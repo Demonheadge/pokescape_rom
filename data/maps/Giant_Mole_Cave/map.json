@@ -411,7 +411,7 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 15
+      "dest_warp_id": "15"
     }
   ],
   "coord_events": [

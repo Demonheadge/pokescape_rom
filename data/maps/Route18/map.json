@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_VARROCK",
       "offset": -4,
-      "map": "MAP_VARROCK"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE19",
       "offset": 0,
-      "map": "MAP_ROUTE19"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE20",
       "offset": -18,
-      "map": "MAP_ROUTE20"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE21",
       "offset": 0,
-      "map": "MAP_ROUTE21"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
       "offset": 26,
-      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -255,7 +255,7 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_GERTRUDE_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

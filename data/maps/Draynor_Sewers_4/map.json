@@ -47,7 +47,7 @@
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_SEWERS_2",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

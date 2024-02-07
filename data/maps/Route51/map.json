@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ARDOUGNE",
       "offset": -22,
-      "map": "MAP_ARDOUGNE"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE50",
       "offset": 0,
-      "map": "MAP_ROUTE50"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE54",
       "offset": 0,
-      "map": "MAP_ROUTE54"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_PORT_KHAZARD",
       "offset": 12,
-      "map": "MAP_PORT_KHAZARD"
+      "direction": "down"
     }
   ],
   "object_events": [

@@ -190,21 +190,21 @@
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_ROUTE30",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_ROUTE30",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 4,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_JOLLY_BOAR_PUB_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

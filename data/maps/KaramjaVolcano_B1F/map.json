@@ -112,21 +112,21 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_ROUTE39",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -476,35 +476,35 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 37
+      "dest_warp_id": "37"
     },
     {
       "x": 7,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_4",
-      "dest_warp_id": 20
+      "dest_warp_id": "20"
     },
     {
       "x": 1,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

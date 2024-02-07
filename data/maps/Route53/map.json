@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE52",
       "offset": -6,
-      "map": "MAP_ROUTE52"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_YANILLE",
       "offset": -18,
-      "map": "MAP_YANILLE"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -84,21 +84,21 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_ROUTE53",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ROUTE53",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ROUTE53",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

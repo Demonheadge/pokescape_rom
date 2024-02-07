@@ -47,14 +47,14 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 12
+      "dest_warp_id": "12"
     },
     {
       "x": 3,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_HOUSE1_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

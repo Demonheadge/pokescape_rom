@@ -437,42 +437,42 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_FOREST",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 26,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 6,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 25,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 26,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

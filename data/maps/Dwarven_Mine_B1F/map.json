@@ -749,21 +749,21 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINES",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 62,
       "y": 59,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 14,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINE_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

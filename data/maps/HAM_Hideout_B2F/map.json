@@ -333,42 +333,42 @@
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 17,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 17,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 17,
       "y": 0,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 40,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

@@ -47,14 +47,14 @@
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_HOUSE_1_UP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 3,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

@@ -47,14 +47,14 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_THESSALIA_SHOP_UP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

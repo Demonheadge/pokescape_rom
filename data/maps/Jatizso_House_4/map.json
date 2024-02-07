@@ -47,7 +47,7 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

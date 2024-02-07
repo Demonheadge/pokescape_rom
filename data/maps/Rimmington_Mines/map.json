@@ -203,21 +203,21 @@
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 2,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_ROUTE9",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -150,22 +150,22 @@
       "x": 3,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_DUNGEONEERING_11",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 13,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_DUNGEONEERING_14",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

@@ -47,21 +47,21 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 34,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 8,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B2F",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [

@@ -86,14 +86,14 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B3F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 9,
       "y": 0,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B3F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

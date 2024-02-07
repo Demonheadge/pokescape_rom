@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_VARROCK_NORTH",
       "offset": 0,
-      "map": "MAP_VARROCK_NORTH"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
       "offset": 10,
-      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -123,21 +123,21 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_GRAND_EXCHANGE_INDOOR",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 11,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_GRAND_EXCHANGE_INDOOR",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 8,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_GRAND_EXCHANGE_INDOOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

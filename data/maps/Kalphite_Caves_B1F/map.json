@@ -177,14 +177,14 @@
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B2F",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 35,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B3F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

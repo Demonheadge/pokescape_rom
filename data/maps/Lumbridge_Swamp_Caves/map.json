@@ -320,14 +320,14 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_SWAMP",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 69,
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_SWAMP_CAVES_JUNA",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

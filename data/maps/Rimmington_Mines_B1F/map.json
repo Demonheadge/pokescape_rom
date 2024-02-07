@@ -229,28 +229,28 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 23,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 27,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B2F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 6,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES_B3F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

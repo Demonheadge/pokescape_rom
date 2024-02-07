@@ -60,7 +60,7 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

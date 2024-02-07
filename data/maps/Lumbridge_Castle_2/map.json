@@ -177,35 +177,35 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 18,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 2,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_3",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 15,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_BASEMENT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

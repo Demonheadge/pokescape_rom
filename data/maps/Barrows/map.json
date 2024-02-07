@@ -112,7 +112,7 @@
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 15
+      "dest_warp_id": "15"
     }
   ],
   "coord_events": [

@@ -34,7 +34,7 @@
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINE_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

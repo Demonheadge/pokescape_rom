@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE43",
       "offset": 6,
-      "map": "MAP_ROUTE43"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_WILDERNESS_VOLCANO_LOBBY",
       "offset": 0,
-      "map": "MAP_WILDERNESS_VOLCANO_LOBBY"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -71,7 +71,7 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_ROUTE44",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

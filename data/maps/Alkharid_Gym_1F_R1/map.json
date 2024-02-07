@@ -60,7 +60,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ALKHARID_GYM_1F_R2",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

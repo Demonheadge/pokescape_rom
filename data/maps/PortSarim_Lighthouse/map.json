@@ -125,14 +125,14 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 11,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_LIGHTHOUSE_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

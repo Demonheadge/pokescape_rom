@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_MUDSKIPPER_POINT",
       "offset": 16,
-      "map": "MAP_MUDSKIPPER_POINT"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE39",
       "offset": 0,
-      "map": "MAP_ROUTE39"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -279,35 +279,35 @@
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 25,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT_BANANA_SHOP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 39,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 18,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT_PUB_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 39,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_NEITIZNOT",
       "offset": 0,
-      "map": "MAP_NEITIZNOT"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE169",
       "offset": 0,
-      "map": "MAP_ROUTE169"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE170",
       "offset": -12,
-      "map": "MAP_ROUTE170"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_RELLEKKA",
       "offset": 0,
-      "map": "MAP_RELLEKKA"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -458,112 +458,112 @@
       "y": 37,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_BANK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_HOUSE_2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_HOUSE_5",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_HOUSE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_HOUSE_4",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_HOUSE_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO_CAVE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 43,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     },
     {
       "x": 11,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 26,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 11
+      "dest_warp_id": "11"
     },
     {
       "x": 25,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 10
+      "dest_warp_id": "10"
     },
     {
       "x": 36,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 13
+      "dest_warp_id": "13"
     },
     {
       "x": 37,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 12
+      "dest_warp_id": "12"
     },
     {
       "x": 11,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 15
+      "dest_warp_id": "15"
     },
     {
       "x": 11,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
-      "dest_warp_id": 14
+      "dest_warp_id": "14"
     }
   ],
   "coord_events": [

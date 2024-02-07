@@ -150,29 +150,29 @@
       "x": 3,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_DUNGEONEERING_9",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_DUNGEONEERING_6",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

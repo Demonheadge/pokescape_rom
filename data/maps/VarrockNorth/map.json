@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_VARROCK",
       "offset": 0,
-      "map": "MAP_VARROCK"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE17",
       "offset": 16,
-      "map": "MAP_ROUTE17"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE16",
       "offset": 40,
-      "map": "MAP_ROUTE16"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE30",
       "offset": 42,
-      "map": "MAP_ROUTE30"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_GRAND_EXCHANGE",
       "offset": 0,
-      "map": "MAP_GRAND_EXCHANGE"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
       "offset": 24,
-      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -403,63 +403,63 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_SEWERS_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 49,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 50,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 49,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 59,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_CHURCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 60,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_CHURCH",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 44,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_SEWERS_1F",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [

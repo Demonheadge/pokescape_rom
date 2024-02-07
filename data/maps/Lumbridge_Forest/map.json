@@ -528,49 +528,49 @@
       "y": 44,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_SWAMP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 2,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 46,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 16
+      "dest_warp_id": "16"
     },
     {
       "x": 30,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_HAM_HIDEOUT_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 3,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 25,
       "y": 44,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_SWAMP",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 47,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 17
+      "dest_warp_id": "17"
     }
   ],
   "coord_events": [

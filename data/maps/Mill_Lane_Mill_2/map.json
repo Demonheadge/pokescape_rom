@@ -47,14 +47,14 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_MILL_LANE_MILL_1",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_MILL_LANE_MILL_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

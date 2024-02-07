@@ -34,7 +34,7 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_LOWE_SHOP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

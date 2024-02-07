@@ -86,7 +86,7 @@
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

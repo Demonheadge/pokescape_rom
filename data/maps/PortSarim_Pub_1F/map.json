@@ -112,14 +112,14 @@
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 1,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_PUB_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

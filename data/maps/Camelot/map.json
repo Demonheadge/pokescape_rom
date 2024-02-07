@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_SEERS_VILLAGE",
       "offset": 4,
-      "map": "MAP_SEERS_VILLAGE"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE58",
       "offset": 0,
-      "map": "MAP_ROUTE58"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE57",
       "offset": -16,
-      "map": "MAP_ROUTE57"
+      "direction": "left"
     }
   ],
   "object_events": [

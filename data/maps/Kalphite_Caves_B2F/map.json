@@ -125,49 +125,49 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID_MINES_B2F",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 7,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B3F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 3,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B2F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 3,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B2F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 3,
       "y": 36,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B4F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 15,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B4F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 25,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_KALPHITE_CAVES_B3F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

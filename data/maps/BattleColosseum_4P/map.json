@@ -12,36 +12,38 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_FRONTIER",
-  "connections": null,
-  "object_events": [],
+  "connections": 0,
+  "object_events": [
+
+  ],
   "warp_events": [
     {
       "x": 5,
       "y": 8,
       "elevation": 3,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 127
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "127"
     },
     {
       "x": 6,
       "y": 8,
       "elevation": 3,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 127
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "127"
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 3,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 127
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "127"
     },
     {
       "x": 8,
       "y": 8,
       "elevation": 3,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 127
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "127"
     }
   ],
   "coord_events": [
@@ -82,5 +84,7 @@
       "script": "EventScript_BattleColosseum_4P_PlayerSpot3"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+
+  ]
 }

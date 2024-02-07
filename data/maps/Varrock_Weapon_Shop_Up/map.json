@@ -47,7 +47,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_WEAPON_SHOP",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

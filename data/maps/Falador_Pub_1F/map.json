@@ -86,14 +86,14 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 2,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_PUB_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

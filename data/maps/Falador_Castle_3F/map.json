@@ -60,28 +60,28 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLE_2F",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 6,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 7,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 20,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLE_2F",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [

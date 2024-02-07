@@ -554,7 +554,7 @@
     },
     {
       "x": 9,
-      "y": 42,
+      "y": 43,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_LIGHTHOUSE",
       "dest_warp_id": "0"
@@ -636,7 +636,7 @@
     },
     {
       "type": "sign",
-      "x": 9,
+      "x": 8,
       "y": 43,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

@@ -229,42 +229,42 @@
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 41,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 3,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_CRYPT",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
