@@ -142,6 +142,7 @@ PORTSARIM_HAM_EVENT_PART2::
 	msgbox PORTSARIM_HAM_EVENT_PART2_Text_5
 	waitmessage
 	hidenamebox
+	closemessage
 	applymovement 21, PORTSARIM_HAM_MEMBERS_5
 	applymovement 22, PORTSARIM_HAM_MEMBERS_5
 	waitmovement 0
