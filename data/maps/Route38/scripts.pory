@@ -1,0 +1,142 @@
+mapscripts Route38_MapScripts {
+
+}
+
+//Battles
+script BATTLE_ROUTE_38_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_38_TRAINER_1, format("Hey noob you're on the wrong side of the map. Only pros goes through here!"),format("What do you mean Priest in Peril is a noob quest?"))
+    namebox ("Wow4lyf")
+    msgbox(format("What do you mean Priest in Peril is a noob quest?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_38_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_38_TRAINER_2, format("Some old man told me to get bones, yours will do fine."),format("I have 15 bat bones and 3 human bones. The old man will be so happy."))
+    namebox ("Guide4lyf")
+    msgbox(format("I have 15 bat bones and 3 human bones. The old man will be so happy."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_38_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_38_TRAINER_3, format("Are you lost on your way to Ardougne too?"),format("Oh, westward. I see."))
+    namebox ("xXx XOX xXx")
+    msgbox(format("Oh, westward. I see."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_38_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_38_TRAINER_4, format("I'm here to mine bones for the wise old man."),format("You can't mine bones? There is no wise old man here? Are you sure?"))
+    namebox ("Leoh")
+    msgbox(format("You can't mine bones? There is no wise old man here? Are you sure?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_38_TRAINER_5
+{
+    trainerbattle_single(TRAINER_ROUTE_38_TRAINER_5, format("This land is protected by the King of Varrock, you may not enter freely."),format("I guess we can make an exception for you."))
+    namebox ("Bernard")
+    msgbox(format("I guess we can make an exception for you."))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+script ROUTE_38_NPC_1
+{
+    faceplayer
+    namebox ("Drezel")
+    msgbox(format("Following the recent death of many members of The Myreque over in Morytania, I am afraid this area is currently off-limits by order of King Roald."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//ITEMS
+script ITEM_ROUTE_38_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}
+
+script ITEM_ROUTE_38_CAKE
+{
+    finditem(ITEM_CAKE)
+    end
+}
+
+//MISCELLANEOUS
+script MORYTANIA_WARNING_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("WARNING!\pThe land east of the River Salve is dangerous, full of vampyres and ghasts.\pNo entry is permitted, by decree of His Royal Highness King Roald III of Varrock."))
+	release
+	end
+}
+
+script ROUTE_38_GRAVE_1
+{
+	lock
+	faceplayer
+	msgbox(format("The text on the gravestone is too old and faded to read."))
+	release
+	end
+}
+
+script ROUTE_38_GRAVE_2
+{
+	lock
+	faceplayer
+	msgbox(format("There is a rune crossbow engraved in the stone.\pYou wonder what it could mean."))
+	release
+	end
+}
+
+script ROUTE_38_GRAVE_3
+{
+	lock
+	faceplayer
+	msgbox(format("In loving memory of Sani Piliu of The Myreque, who gave her life fighting to free Morytania from the vampyres."))
+	release
+	end
+}
+
+script ROUTE_38_GRAVE_4
+{
+	lock
+	faceplayer
+	msgbox(format("This grave is for Harold Evans, freedom fighter of The Myreque."))
+	release
+	end
+}
+
+script ROUTE_38_GRAVE_5
+{
+	lock
+	faceplayer
+	msgbox(format("RIP Spots. The best temple guarding dog a King could have asked for, cut down in his prime by a dim-witted adventurer."))
+	release
+	end
+}
+
+script LOCKED_DOOR_RAG_AND_BONE
+{
+	lock
+	msgbox(format("It is securely locked.\pThough as you turn to leave, you could have sworn you heard a faint mumblemumblemumble coming from inside."))
+	release
+	end
+}

@@ -38,22 +38,22 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_ROUTE_38_TRAINER_1",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
       "x": 22,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "BATTLE_ROUTE_38_TRAINER_2",
       "flag": "0"
     },
     {
@@ -64,9 +64,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_ROUTE_38_TRAINER_3",
       "flag": "0"
     },
     {
@@ -77,9 +77,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "BATTLE_ROUTE_38_TRAINER_4",
       "flag": "0"
     },
     {
@@ -105,8 +105,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE_38_PRAYER_POTION",
+      "flag": "FLAG_ITEM_ROUTE_38_PRAYER_POTION"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -131,8 +131,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE_38_CAKE",
+      "flag": "FLAG_ITEM_ROUTE_38_CAKE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MONK_1",
@@ -144,7 +144,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ROUTE_38_NPC_1",
       "flag": "0"
     },
     {
@@ -155,9 +155,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_ROUTE_38_TRAINER_5",
       "flag": "0"
     }
   ],
@@ -216,6 +216,109 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 51,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 52,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MORYTANIA_WARNING_SIGN"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MORYTANIA_WARNING_SIGN"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MORYTANIA_WARNING_SIGN"
+    },
+    {
+      "type": "sign",
+      "x": 52,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MORYTANIA_WARNING_SIGN"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_2"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_1"
+    },
+    {
+      "type": "sign",
+      "x": 53,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_4"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_3"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_1"
+    },
+    {
+      "type": "sign",
+      "x": 48,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE_38_GRAVE_5"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR_RAG_AND_BONE"
+    }
   ]
 }

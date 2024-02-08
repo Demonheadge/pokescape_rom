@@ -1,0 +1,64 @@
+mapscripts Route42_MapScripts {
+
+}
+
+//Battles
+
+script BATTLE_ROUTE_42_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_42_TRAINER_1, format("This is where true skill come into play. This battle will be settled in seconds."),format("Drat. I meant to bring a Saradomin brew, not a Saradomin owl."))
+    namebox ("JustAPure46")
+    msgbox(format("Drat. I meant to bring a Saradomin brew, not a Saradomin owl."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_42_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_42_TRAINER_2, format("Your stuff, now!"),format("Should have gone for ice barrage.."))
+    namebox ("Frogre4l")
+    msgbox(format("Should have gone for ice barrage.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_42_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_42_TRAINER_3, format("I love this scenery, your corpse will only improve it."),format("Maybe this barren landscape is fine as is without your corpse.\pIf you ever change your mind, please let me know.."))
+    namebox ("B0nediddly")
+    msgbox(format("Maybe this barren landscape is fine as is without your corpse.\pIf you ever change your mind, please let me know.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_42_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_42_TRAINER_4, format("It gives you an empty stare."),format("It gives you an acknowledging stare."))
+    namebox ("Pecs")
+    msgbox(format("Should have gone for ice barrage.."))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+script ROUTE_42_NPC_1
+{
+    faceplayer
+    namebox ("Boney McBoneface")
+    msgbox(format("Please don't hurt me!\pI never asked for this Necromancer to raise me from the dead, so I'm just standing here menacingly in the hopes he won't burn my bones or I'll never be able to rest again."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//ITEMS
+script ITEM_ROUTE_42_EASTER_EGG
+{
+    finditem(ITEM_EASTER_EGG)
+    end
+}

@@ -127,7 +127,7 @@ script NPC_ROUTE30_PKER
 
 script BATTLE_ROUTE30_TRAINER_1
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_1, format("I knew this would work, you wanted that item didn't you!\pHah!\nIt was a lure all along!"),format("What?! I've been anti-lured."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_1, format("None shall pass."),format("We will call it a draw."))
     namebox ("Black Knight")
     msgbox(format("I cannot believe I got anti-lured, I hope the other knights don't hear about this.\pJust take your loot and go."))
 	hidenamebox
@@ -135,21 +135,21 @@ script BATTLE_ROUTE30_TRAINER_1
 	end
 }
 
-script BATTLE_ROUTE30_TRAINER_2 //Bonbloc 
+script BATTLE_ROUTE30_TRAINER_2 
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_2, format("Since I cannot PK you, I'll challenge you to a battle instead!"),format("You are lucky you weren't in the Wilderness."))
-    namebox ("Bonbloc")
-    msgbox(format("I am on my way to the Jolly Boar in to split the loot I got while Pking."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_2, format("The Wilderness is full of tough monsters, you won't make it runt!"),format("It was a fair warning. I dont think I am going to make it up there.."))
+    namebox ("CowK1ller69")
+    msgbox(format("It was a fair warning. I dont think I am going to make it up there.."))
 	hidenamebox
     release
 	end
 }
 
-script BATTLE_ROUTE30_TRAINER_3 //Youbleedred 
+script BATTLE_ROUTE30_TRAINER_3
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_3, format("Woah, woah, woah!\pWhat seems to be the rush?\pWhy not stay for a battle."),format("That was over so fast!"))
-    namebox ("Youbleedred")
-    msgbox(format("Wow you have some skills!\pWe should rush some noobs together in the Wilderness one time."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_3, format("WATCH OUT SOMEONE IS GONNA RUSH YOU!"),format("OH NO.."))
+    namebox ("DClaws4lyf")
+    msgbox(format("OH NO.."))
 	hidenamebox
     release
 	end
@@ -159,7 +159,7 @@ script BATTLE_ROUTE30_TRAINER_4
 {
     trainerbattle_single(TRAINER_ROUTE30_TRAINER_4, format("I've been digging these ruins up all day, I could use a break.\pSay lets have a battle!"),format("I think we have uncovered your potential!"))
     namebox ("Archaeologist")
-    msgbox(format("These ruins look like they used to belong to a cult of Zamorak but I am not sure yet until I uncover some more."))
+    msgbox(format("These ruins look like they used to belong to others followers of Zamorak, but I'll need to do more research to be certain."))
 	hidenamebox
     release
 	end

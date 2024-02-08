@@ -1,0 +1,31 @@
+mapscripts Route51_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_54_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_54_TRAINER_1, format("I spent so long on that damn trawler getting this outfit that I don't think my legs have adjusted to being on land yet.\pLet me battle you to get my bearings!"),format("Maybe I should head back out to sea.."))
+    namebox ("AnglerLyfe")
+    msgbox(format("Maybe I should head back out to sea.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_54_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_54_TRAINER_2, format("I heard there was this magical place near here that I could go and just get free combat xp!\pDo you know where it is?"),format("Looks like I'll need all the help I can get if I can't beat you."))
+    namebox ("AFK2MAXCB")
+    msgbox(format("Looks like I'll need all the help I can get if I can't beat you."))
+	hidenamebox
+    release
+	end
+}
+
+//ITEMS
+script ITEM_ROUTE_54_PURPLE_SWEETS
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}

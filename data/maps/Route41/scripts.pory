@@ -1,0 +1,91 @@
+mapscripts Route41_MapScripts {
+
+}
+
+//Battles
+
+script BATTLE_ROUTE_41_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_41_TRAINER_1, format("WHICH WAY TO GREEN DRAGON."),format("SOUTH. AFFIRMATIVE."))
+    namebox ("jfgbs7645")
+    msgbox(format("SOUTH. AFFIRMATIVE."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_41_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_41_TRAINER_2, format("INVENTORY FULL! BANK SCRIPT ACTIVATE!"),format("ERROR! ERROR! UNABLE TO BANK!"))
+    namebox ("kzlys9278")
+    msgbox(format("ERROR! ERROR! UNABLE TO BANK!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_41_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_41_TRAINER_3, format("Bots are taking my spawns. So I guess I will kill time by killing you."),format("If you continue from here you will face bigger dangers than bots taking your spawns. Good luck."))
+    namebox ("Wari0000")
+    msgbox(format("If you continue from here you will face bigger dangers than bots taking your spawns. Good luck."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_41_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_41_TRAINER_4, format("Ice Barrage!"),format("Let me guess. You wear dragonhide? Spoilsport."))
+    namebox ("M4g3lit3")
+    msgbox(format("Let me guess. You wear dragonhide? Spoilsport."))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+script ROUTE_41_HILL_GIANTS
+{
+    faceplayer
+    namebox ("Hill Giant")
+    msgbox(format("We no have any keys.\pLeave us alone."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//The Hill Giant script is just a placeholder as I don't know how to code these as wild static encounters
+
+//MISCELLANEOUS
+
+script HAMLET
+{
+	lock
+	faceplayer
+	msgbox(format("Alas, poor Yorick!"))
+	release
+	end
+}
+
+//I put this in as I thought a cheeky reference would be funny, but can take it out if not.
+
+//ITEMS
+script ITEM_ROUTE_41_BEER
+{
+    finditem(ITEM_BEER)
+    end
+}
+
+script ITEM_ROUTE_41_CHOCOLATE_CAKE
+{
+    finditem(ITEM_CHOCOLATE_CAKE)
+    end
+}
+
+script ITEM_ROUTE_41_CABBAGE
+{
+    finditem(ITEM_CABBAGE)
+    end
+}

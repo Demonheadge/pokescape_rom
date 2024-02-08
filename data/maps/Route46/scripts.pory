@@ -4,41 +4,49 @@ mapscripts Route46_MapScripts {
     }
 }
 
+//BATTLES
+script BATTLE_ROUTE_46_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_46_TRAINER_1, format("You won't believe what happened! \pWhilst excavating nearby, I found the most magical pot..."),format("Aw, you made me drop it!"))
+    namebox ("Archaeologist")
+    msgbox(format("Aw, you made me drop it!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_46_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_46_TRAINER_2, format("I'm waiting until they open up the digsite so I can be the first one inside!\pI won't let you beat me to it!"),format("Okay, fine. I'll go explore the cave to the east instead!"))
+    namebox ("Le Me")
+    msgbox(format("Okay, fine. I'll go explore the cave to the east instead!"))
+	hidenamebox
+    release
+	end
+}
+
 //NPCS
-script ROUTE46_ARCHAEOLOGIST
-{
-    faceplayer
-    //namebox ("Archaeologist")
-    msgbox(format("You won't believe what happened! \pWhilst excavating nearby, I found the most magical pot... \pbut I dropped it!"))
-    closemessage
-    //hidenamebox
-    release
-    end
-}
-
-
-script ROUTE46_PVMER
-{
-    faceplayer
-    //namebox ("Le Me")
-    msgbox(format("I'm waiting until they open up the digsite so I can be the first one inside! \pWho knows what rare monsters are hiding down there?"))
-    closemessage
-    //hidenamebox
-    release
-    end
-}
-
 script ROUTE46_STUDENT
 {
     faceplayer
-    //namebox ("Student")
+    namebox ("Student")
     msgbox(format("The study of Earth Sciences is: the study of the earth, its contents and history... \pSorry, I didn't see you there. \pI'm too busy studying for my Earth Sciences exam to talk more right now."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }
 
+script ROUTE46_ARCHAEOLOGIST
+{
+    faceplayer
+    namebox ("Archaeologist")
+    msgbox(format("I'm not really supposed to say anything, but...\pWe think we have discovered the ruins of an ancient civilization!\pI heard that the Museum Curator is coming down personally to inspect them!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 //Miscellanous
 

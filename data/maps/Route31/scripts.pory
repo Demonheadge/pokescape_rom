@@ -140,3 +140,105 @@ script BATTLE_SCAPEINK
     release
 	end
 }
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_1, format("The Wilderness is dangereous, why are you even here?"),format("It's going to be tough, but there's runite in the Wilderness. I need to get it."))
+    namebox ("Runitescape")
+    msgbox(format("It's going to be tough, but there's runite in the Wilderness. I need to get it."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_2
+{
+    trainerbattle_double(TRAINER_ROUTE_31_TRAINER_2, format("Excuse me, this gentleman is trying to sell me charcoal for cheap. 500k a piece even!\pYeah buzz off!"),format("Charcoal isn't worth 500k? This is why you're poor and I'm not.\pDid I say 500? I meant 700k."))
+    namebox ("SkrueMcDolk & Elari")
+    msgbox(format("Charcoal isn't worth 500k? This is why you're poor and I'm not.\pDid I say 500? I meant 700k."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_3, format("I am going to kill a dragon."),format("Anti dragonfire shield? What's that?"))
+    namebox ("Derrguun")
+    msgbox(format("Anti dragonfire shield? What's that?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_4, format("How did I end up here?!\pHELP!"),format("How do I get out of here?!\pHELP!"))
+    namebox ("Cb4inP2P")
+    msgbox(format("How do I get out of here?!\pHELP!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_5
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_5, format("Buzz off, I'm collecting charcoal."),format("All the quality charcoal is gone.. Damn scammers, they ruined scamming!"))
+    namebox ("NoManSky")
+    msgbox(format("All the quality charcoal is gone.. Damn scammers, they ruined scamming!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_6
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_6, format("Psst, hey!\pHey you!\pYeah you?\pWant to buy a rock?"),format("On second thought, I think I want to hold on to this one."))
+    namebox ("WarauSales")
+    msgbox(format("On second thought, I think I want to hold on to this one."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_TRAINER_ROUTE_31_TRAINER_7
+{
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_7, format("The skeleton is pointing at something."),format("The skeleton laughs.\pYou guess it's saying something like 'hah, made you look!'."))
+    //namebox ("Cranium")
+    msgbox(format("The skeleton laughs.\pYou guess it's saying something like 'hah, made you look!'."))
+	//hidenamebox
+    release
+	end
+}
+
+
+
+//ITEMS
+script ITEM_ROUTE_31_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}
+
+script ITEM_ROUTE_31_SUPER_PRAYER_POTION
+{
+    finditem(ITEM_SUPER_PRAYER_POTION)
+    end
+}
+
+script ITEM_ROUTE_31_CHOCOLATE_CAKE
+{
+    finditem(ITEM_CHOCOLATE_CAKE)
+    end
+}
+
+//MISCELLANEOUS
+
+script CHAOS_TUNNELS_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("WARNING! DANGEROUS MONSTERS BE-\pThe rest of the text is obscured by a rather large bloodstain."))
+	release
+	end
+}

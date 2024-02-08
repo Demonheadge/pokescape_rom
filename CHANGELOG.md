@@ -6,7 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-- 
+### Added
+
+- (WIP) Added Jad encounter.
+
+- Updated Al Kharid scripts.
+
+- Updated Taverley and Route 35 scripts.
+
+- Updated Digsite scripts.
+
+- Updated Route 38 scripts.
+
+- Updated Route 30 and 31 scripts.
+
+- Updated Route 41, 42, 43, 44, and 47 scripts.
+
+- Updated Route 50, 51, and 54 scripts.
+
+- Updated Edgeville scripts.
+
+- Added trainer battles to NPCs in Varrock Sewers.
+
+- (WIP) Added Port Sarim Lighthouse
+
+- (WIP) Rework of Melzars Maze and the Wilderness to tie in with future content.
 
 ### Fixed
 

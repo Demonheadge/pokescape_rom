@@ -1,0 +1,36 @@
+mapscripts Route44_MapScripts {
+
+}
+
+//Battles
+script BATTLE_ROUTE_44_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_44_TRAINER_1, format("Polly wants a cracker."),format("....."))
+    namebox ("Fibulala")
+    msgbox(format("....."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_44_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_44_TRAINER_2, format("You made it pretty far, but now you've met me. Pity.."),format("Damn. I wanted your stuff so badly. Pity."))
+    namebox ("C Specs")
+    msgbox(format("Damn. I wanted your stuff so badly. Pity."))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+script ROUTE_44_NPC_1
+{
+    faceplayer
+    namebox ("Fravesta")
+    msgbox(format("I heard there was a good spot around here for skull tricking noobs, do you know where it is?\pOh, maybe I shouldn't have told you that..."))
+    closemessage
+    hidenamebox
+    release
+    end
+}

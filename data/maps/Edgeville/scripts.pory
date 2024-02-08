@@ -18,8 +18,8 @@ script NPC_EDGEVILLE_1
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Mugger")
+	msgbox(format("Beyond here is the Wilderness.\pI'd suggest steering clear of it if I were you.\pSomeone might mug you and take your stuff.."))
     closemessage
     hidenamebox
 	release
@@ -29,8 +29,8 @@ script NPC_EDGEVILLE_2
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Fisherman")
+	msgbox(format("There's this crazy person in that house who lives with his mum.\pIf you listen really carefully, sometimes you can hear his mum shout that he needs a bath, and you can hear him yell 'BUT I SMELL POSITIVELY EEEVIIILLLL'"))
     closemessage
     hidenamebox
 	release
@@ -40,8 +40,8 @@ script NPC_EDGEVILLE_3
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Choob")
+	msgbox(format("Welcome to Edgeville.\pAre you looking for Vannaka? He's just south of here.. in that creepy dungeon!"))
     closemessage
     hidenamebox
 	release
@@ -51,8 +51,8 @@ script NPC_EDGEVILLE_4
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("PVMer")
+	msgbox(format("If you go south into the dungeon you can face a bunch of monsters.\pAdventurers come from all over Gielinor to murder hill giants there for their bones.\pIt's quite fun actually."))
     closemessage
     hidenamebox
 	release
@@ -62,8 +62,8 @@ script NPC_EDGEVILLE_5
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("DinoSpecs")
+	msgbox(format("Argh! I nearly smited an AGS but the guy I was fighting tele'd away..\pI'm going to restock and then head north again.\pI better not find you up in the Wilderness without your most expensive items.."))
     closemessage
     hidenamebox
 	release
@@ -73,8 +73,8 @@ script NPC_EDGEVILLE_6
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Lumberjack")
+	msgbox(format("Hey, this is my yew tree! Go get your own!"))
     closemessage
     hidenamebox
 	release
@@ -84,8 +84,8 @@ script NPC_EDGEVILLE_7
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("PVMer")
+	msgbox(format("I hear some monsters only evolve in certain areas.\pFor instance, one of my chickens evolved differently while I was on Karamja!"))
     closemessage
     hidenamebox
 	release
@@ -95,8 +95,8 @@ script NPC_EDGEVILLE_8
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Man")
+	msgbox(format("Edgeville was recently rebuilt.\PBut with all these adventurers constantly using the place it almost feels well lived."))
     closemessage
     hidenamebox
 	release
@@ -106,8 +106,8 @@ script NPC_EDGEVILLE_9
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Jailer")
+	msgbox(format("Edgeville doesn't really have a monarch of its own, so we abide by the King of Misthalin.\pIt makes things easier when you can just follow orders without thinking too much about it."))
     closemessage
     hidenamebox
 	release
@@ -117,10 +117,29 @@ script NPC_EDGEVILLE_10
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Jailer")
+	msgbox(format("Let this be a fair warning. If you cause any trouble, we will lock you up and only feed you bread and water."))
     closemessage
     hidenamebox
+	release
+	end
+}
+
+//MISCELLANEOUS
+script EDGEVILLE_SIGN_1
+{
+	lock
+	faceplayer
+	msgbox(format("North to Edgeville.\pWest to the Monastery and Dwarven Mountain."))
+	release
+	end
+}
+
+script EDGEVILLE_SIGN_2
+{
+	lock
+	faceplayer
+	msgbox(format("COMING SOON: a route to the Grand Exchange.\pCourtesy of King Roald III of Varrock."))
 	release
 	end
 }

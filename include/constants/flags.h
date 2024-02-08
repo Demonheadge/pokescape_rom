@@ -1238,21 +1238,21 @@
 #define FLAG_ITEM_ROUTE_35_MITHRIL_POUCH                                 0x47A  // I have no idea if I've done this correctly
 #define FLAG_ITEM_ROUTE_35_BREAD                               0x47B // Or this one
 #define FLAG_ITEM_ROUTE_35_CABBAGE                                  0x47C // Still practicing these
-#define FLAG_ITEM_ROUTE_121_REVIVE                                  0x47D
-#define FLAG_ITEM_ROUTE_121_ZINC                                    0x47E
-#define FLAG_ITEM_MAGMA_HIDEOUT_1F_RARE_CANDY                       0x47F
-#define FLAG_ITEM_ROUTE_123_PP_UP                                   0x480
-#define FLAG_ITEM_ROUTE_123_REVIVAL_HERB                            0x481
-#define FLAG_ITEM_ROUTE_125_BIG_PEARL                               0x482
-#define FLAG_ITEM_ROUTE_127_RARE_CANDY                              0x483
-#define FLAG_ITEM_ROUTE_132_PROTEIN                                 0x484
-#define FLAG_ITEM_ROUTE_133_MAX_REVIVE                              0x485
-#define FLAG_ITEM_ROUTE_134_CARBOS                                  0x486
-#define FLAG_ITEM_ROUTE_134_STAR_PIECE                              0x487
-#define FLAG_ITEM_ROUTE_114_ENERGY_POWDER                           0x488
-#define FLAG_ITEM_ROUTE_115_PP_UP                                   0x489
-#define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP                            0x48A
-#define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS                            0x48B
+#define FLAG_ITEM_ROUTE_38_PRAYER_POTION                                  0x47D
+#define FLAG_ITEM_ROUTE_38_CAKE                                    0x47E
+#define FLAG_ITEM_ROUTE_31_PRAYER_POTION                      0x47F
+#define FLAG_ITEM_ROUTE_31_SUPER_PRAYER_POTION                                   0x480
+#define FLAG_ITEM_ROUTE_31_CHOCOLATE_CAKE                            0x481
+#define FLAG_ITEM_ROUTE_43_MOONLIGHT_MEAD                               0x482
+#define FLAG_ITEM_ROUTE_43_SPEED_LAMP                              0x483
+#define FLAG_ITEM_ROUTE_42_EASTER_EGG                                 0x484
+#define FLAG_ITEM_ROUTE_41_BEER                             0x485
+#define FLAG_ITEM_ROUTE_41_CHOCOLATE_CAKE                                  0x486
+#define FLAG_ITEM_ROUTE_41_CABBAGE                              0x487
+#define FLAG_ITEM_ROUTE_54_PURPLE_SWEETS                           0x488
+#define FLAG_ITEM_ROUTE_50_BREAD                                  0x489
+#define FLAG_ITEM_ROUTE_50_DEF_POTION                             0x48A
+#define FLAG_ITEM_ROUTE_50_SUPER_TEA                            0x48B
 #define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR                    0x48C
 #define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_FULL_RESTORE                  0x48D
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_1R_NUGGET                        0x48E

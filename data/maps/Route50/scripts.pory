@@ -1,0 +1,105 @@
+mapscripts Route50_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_50_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_50_TRAINER_1, format("I told Brother Omad I was coming out to try to find my son's blanket, but really I just needed some peace.\pI won't let you be the one to disturb it!"),format("If I wasn't so tired maybe I'd have stood a chance.."))
+    namebox ("Brother Androe")
+    msgbox(format("If I wasn't so tired maybe I'd have stood a chance.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_50_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_50_TRAINER_2, format("Gah! I can't sleep because of Brother Androe's son!\pWith his constant: Waaaaaah! Waaaaaaaaah!\pAndroe said it's natural, but it's so annoying!\pI'm going to take out my frustrations on you!"),format("Saradomin give me strength. I really hope the adventurer we sent out to retrieve the blanket is back soon."))
+    namebox ("Brother Omad")
+    msgbox(format("Saradomin give me strength. I really hope the adventurer we sent out to retrieve the blanket is back soon."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_50_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_50_TRAINER_3, format("I heard the might be a penguin agent in a barrel hiding at a dock nearby.\pDo you know which direction it might be?"),format("All you had to do was say south-east.."))
+    namebox ("Lady Pingu")
+    msgbox(format("All you had to do was say south-east.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_50_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_50_TRAINER_4, format("I'm powermining iron until I get the level for coal.\pI hear that's where the real money is!"),format("If I spent more time mining and less time battling I'd be done by now.."))
+    namebox ("Mineas Tirith")
+    msgbox(format("If I spent more time mining and less time battling I'd be done by now.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_50_TRAINER_5
+{
+    trainerbattle_single(TRAINER_ROUTE_50_TRAINER_5, format("Hi!\p and welcome to my-"),format("-guide.."))
+    namebox ("-guide..")
+    msgbox(format("Slayermusiq1"))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+
+script ROUTE50_MONK
+{
+    faceplayer
+    namebox ("Brother Cedric")
+    msgbox(format("Honey, money, woman and wine!\pI'm very, very drunk..hic..up..\pI need a jug of water."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//ITEMS
+script ITEM_ROUTE_50_BREAD
+{
+    finditem(ITEM_BREAD)
+    end
+}
+
+script ITEM_ROUTE_50_DEF_POTION
+{
+    finditem(ITEM_DEF_POTION)
+    end
+}
+
+script ITEM_ROUTE_50_SUPER_TEA
+{
+    finditem(ITEM_SUPER_TEA)
+    end
+}
+
+//MISCELLANEOUS
+script ROUTE_50_LADDER
+{
+	lock
+	faceplayer
+	msgbox(format("The ladders look broken.\pYou wouldn't want to slip and break your leg.\pPerhaps you should come back later once they've been repaired?"))
+	release
+	end
+}
+
+script ROUTE_50_CAVE
+{
+	lock
+	faceplayer
+	msgbox(format("Loud, angry noises are coming from deep inside the cave.\pThey send shivers down your spine, and make your legs feel like jelly.\pYou should come back once you're more braver and experienced."))
+	release
+	end
+}

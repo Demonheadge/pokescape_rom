@@ -1,0 +1,71 @@
+mapscripts Route51_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_51_EFFIGY
+{
+    trainerbattle_single(TRAINER_ROUTE_51_EFFIGY, format("This building will change the world.\pI simply can't let you ruin it for me!"),format("Maybe you're powerful enough to control the Homunculus.."))
+    namebox ("Effigy")
+    msgbox(format("Maybe you're powerful enough to control the Homunculus.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_51_GUNS
+{
+    trainerbattle_single(TRAINER_ROUTE_51_GUNS, format("8,999\p9,000\p9,001\p...\p9,002..13?\pArgh! You made me lose count! I'll beat you to...urghh...a pulp!"),format("I could really do with a good kebab and a cold beer down the pub right about now."))
+    namebox ("'The Guns'")
+    msgbox(format("I could really do with a good kebab and a cold beer down the pub right about now."))
+	hidenamebox
+    release
+	end
+}
+
+
+//NPCS
+
+script ROUTE51_BUILDER_1
+{
+    faceplayer
+    namebox ("Bonafido")
+    msgbox(format("A'up, mate, how's it gowin'?\pOh, we already finished workin' on the tower and need a new job.\pBut til then, we figured we may as well wait ta see what else would turns up."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE51_BUILDER_2
+{
+    faceplayer
+    namebox ("'Black-eye'")
+    msgbox(format("This 'ere tower is lookin' good ain't it?\pUs? Just having a little tea break, naturally."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE51_BUILDER_3
+{
+    faceplayer
+    namebox ("'Gummy'")
+    msgbox(format("We're playing 'Rock, Paper, Scissors'. Can't you tell?\pIt's team building!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE51_BUILDER_4
+{
+    faceplayer
+    namebox ("'No fingers'")
+    msgbox(format("Don't suppose you've seen any boots around here? Size nine, steel toed, brown leather...\pI think some adventurer mighta nicked 'em!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}

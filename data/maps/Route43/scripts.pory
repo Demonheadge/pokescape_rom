@@ -1,0 +1,78 @@
+mapscripts Route43_MapScripts {
+
+}
+
+//Battles
+
+script BATTLE_ROUTE_43_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_43_TRAINER_1, format("Rattle rattle rattle."),format("Rattle rattle rattle rattle"))
+    namebox ("Rattlerattle")
+    msgbox(format("Rattle rattle rattle rattle"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_43_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_43_TRAINER_2, format("I am not a skeleton."),format("I'm posing as a skeleton so people won't kill me.\pDon't tell the PKers."))
+    namebox ("")
+    msgbox(format("I'm posing as a skeleton so people won't kill me.\pDon't tell the PKers."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_43_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_44_TRAINER_3, format("The skeleton seems to be guarding something."),format("The skeleton no longer seems to be guarding anything."))
+    namebox ("Tonton")
+    msgbox(format("The skeleton no longer seems to be guarding anything."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_43_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_43_TRAINER_4, format("This skeleton is clearly dead on the outside."),format("The skeleton looks dead on the inside now too."))
+    namebox ("Funorb")
+    msgbox(format("The skeleton looks dead on the inside now too."))
+	hidenamebox
+    release
+	end
+}
+
+
+//ITEMS
+script ITEM_ROUTE_43_MOONLIGHT_MEAD
+{
+    finditem(ITEM_MOONLIGHT_MEAD)
+    end
+}
+
+script ITEM_ROUTE_43_SPEED_LAMP
+{
+    finditem(ITEM_SPEED_LAMP)
+    end
+}
+
+//MISCELLANEOUS
+script ROUTE_43_SIGN_1
+{
+	lock
+	faceplayer
+	msgbox(format("There are deep gouges in the wood where something with sharp claws has attacked it."))
+	release
+	end
+}
+
+script ROUTE_43_SIGN_2
+{
+	lock
+	faceplayer
+	msgbox(format("Gravediggers will be prosecuted.\pThe word 'prosecuted' has then been scribbled out and the word 'murdered' scrawled beside it in what looks like blood."))
+	release
+	end
+}
