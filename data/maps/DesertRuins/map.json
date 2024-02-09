@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_REGIROCK",
@@ -34,24 +34,26 @@
       "y": 29,
       "elevation": 3,
       "dest_map": "MAP_ROUTE111",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 8,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_DESERT_RUINS",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 8,
       "y": 11,
       "elevation": 3,
       "dest_map": "MAP_DESERT_RUINS",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
