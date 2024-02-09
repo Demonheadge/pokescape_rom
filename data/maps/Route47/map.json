@@ -36,17 +36,17 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ARCHAEOLOGIST",
+      "graphics_id": "OBJ_EVENT_GFX_DND",
       "x": 8,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "ROUTE47_ARCHAEOLOGIST",
-      "flag": ""
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_ROUTE18_TRAINER2",
+      "flag": "FLAG_TEMP_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PENGUIN_ROCK",
@@ -85,6 +85,19 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "BATTLE_ROUTE_47_TRAINER_2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARCHAEOLOGIST",
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ROUTE47_ARCHAEOLOGIST",
       "flag": "0"
     }
   ],

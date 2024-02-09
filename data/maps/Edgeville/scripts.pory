@@ -62,7 +62,7 @@ script NPC_EDGEVILLE_5
 {
 	lock
 	faceplayer
-    namebox ("DinoSpecs")
+    namebox ("SkillSpecs")
 	msgbox(format("Argh! I nearly smited an AGS but the guy I was fighting tele'd away..\pI'm going to restock and then head north again.\pI better not find you up in the Wilderness without your most expensive items.."))
     closemessage
     hidenamebox
@@ -73,7 +73,7 @@ script NPC_EDGEVILLE_6
 {
 	lock
 	faceplayer
-    namebox ("Lumberjack")
+    namebox ("Hanannie")
 	msgbox(format("Hey, this is my yew tree! Go get your own!"))
     closemessage
     hidenamebox
@@ -96,7 +96,7 @@ script NPC_EDGEVILLE_8
 	lock
 	faceplayer
     namebox ("Man")
-	msgbox(format("Edgeville was recently rebuilt.\PBut with all these adventurers constantly using the place it almost feels well lived."))
+	msgbox(format("Edgeville was recently rebuilt.\pBut with all these adventurers constantly using the place it almost feels well lived."))
     closemessage
     hidenamebox
 	release

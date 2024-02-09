@@ -153,7 +153,7 @@ script BATTLE_TRAINER_ROUTE_31_TRAINER_1
 
 script BATTLE_TRAINER_ROUTE_31_TRAINER_2
 {
-    trainerbattle_double(TRAINER_ROUTE_31_TRAINER_2, format("Excuse me, this gentleman is trying to sell me charcoal for cheap. 500k a piece even!\pYeah buzz off!"),format("Charcoal isn't worth 500k? This is why you're poor and I'm not.\pDid I say 500? I meant 700k."))
+    trainerbattle_single(TRAINER_ROUTE_31_TRAINER_2, format("Excuse me, this gentleman is trying to sell me charcoal for cheap. 500k a piece even!\pYeah buzz off!"),format("Charcoal isn't worth 500k? This is why you're poor and I'm not.\pDid I say 500? I meant 700k."))
     namebox ("SkrueMcDolk & Elari")
     msgbox(format("Charcoal isn't worth 500k? This is why you're poor and I'm not.\pDid I say 500? I meant 700k."))
 	hidenamebox

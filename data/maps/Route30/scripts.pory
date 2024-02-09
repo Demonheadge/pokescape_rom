@@ -127,7 +127,7 @@ script NPC_ROUTE30_PKER
 
 script BATTLE_ROUTE30_TRAINER_1
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_1, format("None shall pass."),format("We will call it a draw."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_1, format("I knew this would work, you wanted that item didn't you!\pHah!\nIt was a lure all along!"),format("What?! I've been anti-lured."))
     namebox ("Black Knight")
     msgbox(format("I cannot believe I got anti-lured, I hope the other knights don't hear about this.\pJust take your loot and go."))
 	hidenamebox
@@ -137,9 +137,9 @@ script BATTLE_ROUTE30_TRAINER_1
 
 script BATTLE_ROUTE30_TRAINER_2 
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_2, format("The Wilderness is full of tough monsters, you won't make it runt!"),format("It was a fair warning. I dont think I am going to make it up there.."))
-    namebox ("CowK1ller69")
-    msgbox(format("It was a fair warning. I dont think I am going to make it up there.."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_2, format("Since I cannot PK you, I'll challenge you to a battle instead!"),format("You are lucky you weren't in the Wilderness."))
+    namebox ("Bonbloc")
+    msgbox(format("I am on my way to the Jolly Boar in to split the loot I got while Pking."))
 	hidenamebox
     release
 	end
@@ -147,9 +147,9 @@ script BATTLE_ROUTE30_TRAINER_2
 
 script BATTLE_ROUTE30_TRAINER_3
 {
-    trainerbattle_single(TRAINER_ROUTE30_TRAINER_3, format("WATCH OUT SOMEONE IS GONNA RUSH YOU!"),format("OH NO.."))
-    namebox ("DClaws4lyf")
-    msgbox(format("OH NO.."))
+    trainerbattle_single(TRAINER_ROUTE30_TRAINER_3, format("Woah, woah, woah!\pWhat seems to be the rush?\pWhy not stay for a battle."),format("That was over so fast!"))
+    namebox ("Youbleedred")
+    msgbox(format("Wow you have some skills!\pWe should rush some noobs together in the Wilderness one time."))
 	hidenamebox
     release
 	end
