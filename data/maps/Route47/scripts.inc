@@ -31,8 +31,84 @@ ENCOUNTER_PENGUIN_ROCK::
 	end
 
 
+BATTLE_ROUTE_47_TRAINER_1::
+	trainerbattle_single TRAINER_ROUTE_47_TRAINER_1, BATTLE_ROUTE_47_TRAINER_1_Text_0, BATTLE_ROUTE_47_TRAINER_1_Text_1
+	namebox BATTLE_ROUTE_47_TRAINER_1_Text_2
+	msgbox BATTLE_ROUTE_47_TRAINER_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE_47_TRAINER_2::
+	trainerbattle_single TRAINER_ROUTE_47_TRAINER_2, BATTLE_ROUTE_47_TRAINER_2_Text_0, BATTLE_ROUTE_47_TRAINER_2_Text_1
+	namebox BATTLE_ROUTE_47_TRAINER_2_Text_2
+	msgbox BATTLE_ROUTE_47_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+ROUTE47_ARCHAEOLOGIST::
+	faceplayer
+	namebox ROUTE47_ARCHAEOLOGIST_Text_0
+	msgbox ROUTE47_ARCHAEOLOGIST_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+DUNGEON_SIGN::
+	lock
+	faceplayer
+	msgbox DUNGEON_SIGN_Text_0
+	release
+	end
+
+
 ENCOUNTER_PENGUIN_ROCK_Text_0:
 	.string "Penguin$"
 
 ENCOUNTER_PENGUIN_ROCK_Text_1:
 	.string "Noot! Noot!$"
+
+BATTLE_ROUTE_47_TRAINER_1_Text_0:
+	.string "This place belongs to the dark wizards.\n"
+	.string "Begone outsider!$"
+
+BATTLE_ROUTE_47_TRAINER_1_Text_1:
+	.string "Or just ignore my warning completely.\n"
+	.string "Rude.$"
+
+BATTLE_ROUTE_47_TRAINER_1_Text_2:
+	.string "Magnus$"
+
+BATTLE_ROUTE_47_TRAINER_2_Text_0:
+	.string "Stop right there! Not another step\n"
+	.string "adventurer$"
+
+BATTLE_ROUTE_47_TRAINER_2_Text_1:
+	.string "Why do you not listen to me? Begone!\n"
+	.string "Shoo!$"
+
+BATTLE_ROUTE_47_TRAINER_2_Text_2:
+	.string "Mognus$"
+
+ROUTE47_ARCHAEOLOGIST_Text_0:
+	.string "Archaeologist$"
+
+ROUTE47_ARCHAEOLOGIST_Text_1:
+	.string "I heard that people were going crazy\n"
+	.string "killing each other for spades out here.\p"
+	.string "Surely that must mean there's some\n"
+	.string "buried ruins or treasure out here,\l"
+	.string "right?\p"
+	.string "Why else would anybody want spades..?$"
+
+DUNGEON_SIGN_Text_0:
+	.string "With all the demonic symbols on the\n"
+	.string "floor nearby, you decide not to go down\l"
+	.string "the ladder.\p"
+	.string "The last thing you need right now is to\n"
+	.string "be turned into a blood sacrifice.$"

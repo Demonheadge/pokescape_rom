@@ -59,6 +59,6 @@ script ROUTE_42_NPC_1
 //ITEMS
 script ITEM_ROUTE_42_EASTER_EGG
 {
-    finditem(ITEM_EASTER_EGG)
+    finditem(ITEM_CABBAGE)
     end
 }

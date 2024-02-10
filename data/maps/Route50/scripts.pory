@@ -75,13 +75,13 @@ script ITEM_ROUTE_50_BREAD
 
 script ITEM_ROUTE_50_DEF_POTION
 {
-    finditem(ITEM_DEF_POTION)
+    finditem(ITEM_POTION_DEF)
     end
 }
 
 script ITEM_ROUTE_50_SUPER_TEA
 {
-    finditem(ITEM_SUPER_TEA)
+    finditem(ITEM_REPEL_TEA_2)
     end
 }
 

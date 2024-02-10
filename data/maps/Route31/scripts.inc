@@ -163,6 +163,90 @@ BATTLE_SCAPEINK::
 	end
 
 
+BATTLE_TRAINER_ROUTE_31_TRAINER_1::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_1, BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_2::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_2, BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_3::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_3, BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_4::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_4, BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_5::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_5, BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_6::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_6, BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_1
+	namebox BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_2
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_7::
+	trainerbattle_single TRAINER_ROUTE_31_TRAINER_7, BATTLE_TRAINER_ROUTE_31_TRAINER_7_Text_0, BATTLE_TRAINER_ROUTE_31_TRAINER_7_Text_1
+	msgbox BATTLE_TRAINER_ROUTE_31_TRAINER_7_Text_1
+	release
+	end
+
+
+ITEM_ROUTE_31_PRAYER_POTION::
+	finditem ITEM_PRAYER_POTION
+	end
+
+
+ITEM_ROUTE_31_SUPER_PRAYER_POTION::
+	finditem ITEM_SUPER_PRAYER_POTION
+	end
+
+
+ITEM_ROUTE_31_CHOCOLATE_CAKE::
+	finditem ITEM_CHOCOLATE_CAKE
+	end
+
+
+CHAOS_TUNNELS_SIGN::
+	lock
+	faceplayer
+	msgbox CHAOS_TUNNELS_SIGN_Text_0
+	release
+	end
+
+
 BATTLE_SCAPEINK_Text_0:
 	.string "Ha got you!\p"
 	.string "There is no where for you to run!$"
@@ -176,3 +260,85 @@ BATTLE_SCAPEINK_Text_2:
 BATTLE_SCAPEINK_Text_3:
 	.string "You were lucky this time, next time I\n"
 	.string "will get you for sure!$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_0:
+	.string "The Wilderness is dangereous, why are\n"
+	.string "you even here?$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_1:
+	.string "It's going to be tough, but there's\n"
+	.string "runite in the Wilderness. I need to get\l"
+	.string "it.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_1_Text_2:
+	.string "Runitescape$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_0:
+	.string "Excuse me, this gentleman is trying to\n"
+	.string "sell me charcoal for cheap. 500k a\l"
+	.string "piece even!\p"
+	.string "Yeah buzz off!$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_1:
+	.string "Charcoal isn't worth 500k? This is why\n"
+	.string "you're poor and I'm not.\p"
+	.string "Did I say 500? I meant 700k.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_2_Text_2:
+	.string "SkrueMcDolk & Elari$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_0:
+	.string "I am going to kill a dragon.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_1:
+	.string "Anti dragonfire shield? What's that?$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_3_Text_2:
+	.string "Derrguun$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_0:
+	.string "How did I end up here?!\p"
+	.string "HELP!$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_1:
+	.string "How do I get out of here?!\p"
+	.string "HELP!$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_4_Text_2:
+	.string "Cb4inP2P$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_0:
+	.string "Buzz off, I'm collecting charcoal.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_1:
+	.string "All the quality charcoal is gone.. Damn\n"
+	.string "scammers, they ruined scamming!$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_5_Text_2:
+	.string "NoManSky$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_0:
+	.string "Psst, hey!\p"
+	.string "Hey you!\p"
+	.string "Yeah you?\p"
+	.string "Want to buy a rock?$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_1:
+	.string "On second thought, I think I want to\n"
+	.string "hold on to this one.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_6_Text_2:
+	.string "WarauSales$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_7_Text_0:
+	.string "The skeleton is pointing at something.$"
+
+BATTLE_TRAINER_ROUTE_31_TRAINER_7_Text_1:
+	.string "The skeleton laughs.\p"
+	.string "You guess it's saying something like\n"
+	.string "'hah, made you look!'.$"
+
+CHAOS_TUNNELS_SIGN_Text_0:
+	.string "WARNING! DANGEROUS MONSTERS BE-\p"
+	.string "The rest of the text is obscured by a\n"
+	.string "rather large bloodstain.$"

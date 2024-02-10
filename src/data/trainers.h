@@ -4810,5 +4810,5 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_ROUTE_54_TRAINER_2},
     },
 
-},
+};
 

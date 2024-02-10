@@ -7,26 +7,40 @@ Route46_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
-ROUTE46_ARCHAEOLOGIST::
-	faceplayer
-	msgbox ROUTE46_ARCHAEOLOGIST_Text_0
-	closemessage
+BATTLE_ROUTE_46_TRAINER_1::
+	trainerbattle_single TRAINER_ROUTE_46_TRAINER_1, BATTLE_ROUTE_46_TRAINER_1_Text_0, BATTLE_ROUTE_46_TRAINER_1_Text_1
+	namebox BATTLE_ROUTE_46_TRAINER_1_Text_2
+	msgbox BATTLE_ROUTE_46_TRAINER_1_Text_1
+	hidenamebox
 	release
 	end
 
 
-ROUTE46_PVMER::
-	faceplayer
-	msgbox ROUTE46_PVMER_Text_0
-	closemessage
+BATTLE_ROUTE_46_TRAINER_2::
+	trainerbattle_single TRAINER_ROUTE_46_TRAINER_2, BATTLE_ROUTE_46_TRAINER_2_Text_0, BATTLE_ROUTE_46_TRAINER_2_Text_1
+	namebox BATTLE_ROUTE_46_TRAINER_2_Text_2
+	msgbox BATTLE_ROUTE_46_TRAINER_2_Text_1
+	hidenamebox
 	release
 	end
 
 
 ROUTE46_STUDENT::
 	faceplayer
-	msgbox ROUTE46_STUDENT_Text_0
+	namebox ROUTE46_STUDENT_Text_0
+	msgbox ROUTE46_STUDENT_Text_1
 	closemessage
+	hidenamebox
+	release
+	end
+
+
+ROUTE46_ARCHAEOLOGIST::
+	faceplayer
+	namebox BATTLE_ROUTE_46_TRAINER_1_Text_2
+	msgbox ROUTE46_ARCHAEOLOGIST_Text_0
+	closemessage
+	hidenamebox
 	release
 	end
 
@@ -63,26 +77,49 @@ PLACEHOLDER_ITEM_DIGSITE_3::
 	end
 
 
-ROUTE46_ARCHAEOLOGIST_Text_0:
+BATTLE_ROUTE_46_TRAINER_1_Text_0:
 	.string "You won't believe what happened!\p"
 	.string "Whilst excavating nearby, I found the\n"
-	.string "most magical pot...\p"
-	.string "but I dropped it!$"
+	.string "most magical pot...$"
 
-ROUTE46_PVMER_Text_0:
+BATTLE_ROUTE_46_TRAINER_1_Text_1:
+	.string "Aw, you made me drop it!$"
+
+BATTLE_ROUTE_46_TRAINER_1_Text_2:
+	.string "Archaeologist$"
+
+BATTLE_ROUTE_46_TRAINER_2_Text_0:
 	.string "I'm waiting until they open up the\n"
 	.string "digsite so I can be the first one\l"
 	.string "inside!\p"
-	.string "Who knows what rare monsters are hiding\n"
-	.string "down there?$"
+	.string "I won't let you beat me to it!$"
+
+BATTLE_ROUTE_46_TRAINER_2_Text_1:
+	.string "Okay, fine. I'll go explore the cave to\n"
+	.string "the east instead!$"
+
+BATTLE_ROUTE_46_TRAINER_2_Text_2:
+	.string "Le Me$"
 
 ROUTE46_STUDENT_Text_0:
+	.string "Student$"
+
+ROUTE46_STUDENT_Text_1:
 	.string "The study of Earth Sciences is: the\n"
 	.string "study of the earth, its contents and\l"
 	.string "history...\p"
 	.string "Sorry, I didn't see you there.\p"
 	.string "I'm too busy studying for my Earth\n"
 	.string "Sciences exam to talk more right now.$"
+
+ROUTE46_ARCHAEOLOGIST_Text_0:
+	.string "I'm not really supposed to say\n"
+	.string "anything, but...\p"
+	.string "We think we have discovered the ruins\n"
+	.string "of an ancient civilization!\p"
+	.string "I heard that the Museum Curator is\n"
+	.string "coming down personally to inspect\l"
+	.string "them!$"
 
 DIGSITE_SIGN_Text_0:
 	.string "Anyone wishing to do any work on the\n"

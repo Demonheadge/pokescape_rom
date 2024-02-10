@@ -105,7 +105,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "BATTLE_ROUTE_44_TRAINER_4",
+      "script": "BATTLE_ROUTE_43_TRAINER_4",
       "flag": "0"
     }
   ],

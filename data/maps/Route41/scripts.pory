@@ -74,7 +74,7 @@ script HAMLET
 //ITEMS
 script ITEM_ROUTE_41_BEER
 {
-    finditem(ITEM_BEER)
+    finditem(ITEM_STAT_BEER)
     end
 }
 
