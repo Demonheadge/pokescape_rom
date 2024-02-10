@@ -1,6 +1,33 @@
 mapscripts Route10_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 3) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+        call(ROUTE_10_STATE)
+    }
+}
+
+
+
+script ROUTE_10_STATE{
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORYMODE
+    {
+        switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            case 100:
+            case 101:
+                addobject(11)
+                addobject(12)
+                clearflag(FLAG_TEMP_1F)
+                return
+        }
+        removeobject(11)
+        removeobject(12)
+        setflag(FLAG_TEMP_1F)
+        return
+    }
+    else { //OPENWORLD MODE - REMOVE ALL STORYMODE OBJECTS
+        removeobject(11)
+        removeobject(12)
+        setflag(FLAG_TEMP_1F)
+        return
     }
 }
 

@@ -738,6 +738,40 @@ NPC_PORTSARIM_NPC_JAILGUARD_3:
 	end
 
 
+NPC_PORTSARIM_BLOCKADE_HAM::
+	lock
+	applymovement 9, Movement_InteractDOWN
+	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
+	msgbox NPC_PORTSARIM_BLOCKADE_HAM_Text_1
+	hidenamebox
+	waitmovement 0
+	applymovement 11, Movement_InteractUP
+	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
+	msgbox NPC_PORTSARIM_BLOCKADE_HAM_Text_2
+	waitmovement 0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_PORTSARIM_BLOCKADE_HAM_2::
+	lock
+	applymovement 11, Movement_InteractRIGHT
+	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
+	msgbox NPC_PORTSARIM_BLOCKADE_HAM_2_Text_0
+	waitmovement 0
+	applymovement 12, Movement_InteractLEFT
+	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
+	msgbox NPC_PORTSARIM_BLOCKADE_HAM_2_Text_1
+	hidenamebox
+	waitmovement 0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 PORTSARIM_HAM_EVENT_PART2_Text_0:
 	.string "H.A.M Leader$"
 
@@ -1070,3 +1104,25 @@ NPC_PORTSARIM_NPC_JAILGUARD_Text_0:
 
 NPC_PORTSARIM_NPC_JAILGUARD_Text_1:
 	.string "I am on my break, don't bother me.$"
+
+NPC_PORTSARIM_BLOCKADE_HAM_Text_0:
+	.string "H.A.M Grunt$"
+
+NPC_PORTSARIM_BLOCKADE_HAM_Text_1:
+	.string "Remind me, where are we meeting the\n"
+	.string "rest of the team?$"
+
+NPC_PORTSARIM_BLOCKADE_HAM_Text_2:
+	.string "You noob, how could you forget.\p"
+	.string "We will be meeting them at the\n"
+	.string "Lighthouse in Port Sarim.$"
+
+NPC_PORTSARIM_BLOCKADE_HAM_2_Text_0:
+	.string "I don't feel so well…$"
+
+NPC_PORTSARIM_BLOCKADE_HAM_2_Text_1:
+	.string "I told you shouldn't have eaten those\n"
+	.string "Toad Crunchies!\p"
+	.string "Now we are going to be late meeting up\n"
+	.string "with the rest of the team at the\l"
+	.string "lighthouse!$"

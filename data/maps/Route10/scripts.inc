@@ -4,6 +4,31 @@ Route10_MapScripts::
 
 Route10_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 3
+	call ROUTE_10_STATE
+	return
+
+
+ROUTE_10_STATE::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq ROUTE_10_STATE_1
+	removeobject 11
+	removeobject 12
+	setflag FLAG_TEMP_1F
+	return
+
+ROUTE_10_STATE_1:
+	switch VAR_POKESCAPE_STORYMODE_PROGRESS
+	case 100, ROUTE_10_STATE_6
+	case 101, ROUTE_10_STATE_6
+	removeobject 11
+	removeobject 12
+	setflag FLAG_TEMP_1F
+	return
+
+ROUTE_10_STATE_6:
+	addobject 11
+	addobject 12
+	clearflag FLAG_TEMP_1F
 	return
 
 

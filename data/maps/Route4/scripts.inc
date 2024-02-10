@@ -4,8 +4,47 @@ Route4_MapScripts::
 
 Route4_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	call ROUTE_4_STATE
 	call POTTERINGTON_FARM_OUTDOOR_STATE
 	goto TryMoveDaycareMan
+	return
+
+
+ROUTE_4_STATE::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq ROUTE_4_STATE_1
+	removeobject 9
+	removeobject 11
+	setflag FLAG_TEMP_1F
+	return
+
+ROUTE_4_STATE_1:
+	switch VAR_POKESCAPE_STORYMODE_PROGRESS
+	case 100, ROUTE_4_STATE_6
+	case 101, ROUTE_4_STATE_6
+	removeobject 9
+	removeobject 11
+	setflag FLAG_TEMP_1F
+	return
+
+ROUTE_4_STATE_6:
+	addobject 9
+	addobject 11
+	clearflag FLAG_TEMP_1F
+	return
+
+
+POTTERINGTON_FARM_OUTDOOR_STATE::
+	switch VAR_POKESCAPE_POTTERINGTON_FARM_STATE
+	case 0, POTTERINGTON_FARM_OUTDOOR_STATE_2
+	case 1, POTTERINGTON_FARM_OUTDOOR_STATE_3
+	return
+
+POTTERINGTON_FARM_OUTDOOR_STATE_2:
+	return
+
+POTTERINGTON_FARM_OUTDOOR_STATE_3:
+	setobjectxyperm 2, 8, 17
 	return
 
 
@@ -173,20 +212,6 @@ ROUTE4_DaycareWatcher_5:
 ROUTE4_DaycareWatcher_6:
 	msgbox ROUTE4_DaycareWatcher_Text_3
 	goto ROUTE4_DaycareWatcher_1
-
-
-POTTERINGTON_FARM_OUTDOOR_STATE::
-	switch VAR_POKESCAPE_POTTERINGTON_FARM_STATE
-	case 0, POTTERINGTON_FARM_OUTDOOR_STATE_2
-	case 1, POTTERINGTON_FARM_OUTDOOR_STATE_3
-	return
-
-POTTERINGTON_FARM_OUTDOOR_STATE_2:
-	return
-
-POTTERINGTON_FARM_OUTDOOR_STATE_3:
-	setobjectxyperm 2, 8, 17
-	return
 
 
 ROUTE4_PatchFarmer::

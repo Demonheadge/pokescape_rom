@@ -3,10 +3,56 @@ const OBJ_EVENT_ID_DAYCAREWATCHER = 2
 mapscripts Route4_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+        call(ROUTE_4_STATE)
         call(POTTERINGTON_FARM_OUTDOOR_STATE)
         goto (TryMoveDaycareMan)
     }
 }
+
+
+
+
+script ROUTE_4_STATE{
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORYMODE
+    {
+        switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
+            case 100:
+            case 101:
+                addobject(9)
+                addobject(11)
+                clearflag(FLAG_TEMP_1F)
+                return
+        }
+        removeobject(9)
+        removeobject(11)
+        setflag(FLAG_TEMP_1F)
+        return
+    }
+    else { //OPENWORLD MODE - REMOVE ALL STORYMODE OBJECTS
+        removeobject(9)
+        removeobject(11)
+        setflag(FLAG_TEMP_1F)
+        return
+    }
+}
+
+
+script POTTERINGTON_FARM_OUTDOOR_STATE{
+        switch (var(VAR_POKESCAPE_POTTERINGTON_FARM_STATE)){ 
+            case 0: 
+                return
+            case 1: 
+                setobjectxyperm(OBJ_EVENT_ID_DAYCAREWATCHER,8,17)
+                return
+        }
+}
+
+
+
+
+
+
+
 
 script MuggerBattleRoute4{
     trainerbattle_single(TRAINER_MUGGER_ROUTE4, "Stand and deliver!",format("People seem very afraid of me.\pMaybe it's the way I say hello?"))
@@ -154,17 +200,6 @@ script ROUTE4_DaycareWatcher
 
 
 
-script POTTERINGTON_FARM_OUTDOOR_STATE{
-        switch (var(VAR_POKESCAPE_POTTERINGTON_FARM_STATE)){ 
-            case 0: 
-                return
-            case 1: 
-                setobjectxyperm(OBJ_EVENT_ID_DAYCAREWATCHER,8,17)
-                return
-
-
-        }
-}
 
 
 
