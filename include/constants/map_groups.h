@@ -617,6 +617,7 @@
 #define MAP_GRAND_EXCHANGE              (21 | (34 << 8))
 #define MAP_VARROCK_GRAND_EXCHANGE_PATH (22 | (34 << 8))
 #define MAP_VARROCK_CHURCH              (23 | (34 << 8))
+#define MAP_CRANDOR                     (24 | (34 << 8))
 
 // gMapGroup_PokescapeRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))

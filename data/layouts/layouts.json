@@ -8040,6 +8040,16 @@
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route49/border.bin",
       "blockdata_filepath": "data/layouts/Route49/map.bin"
+    },
+    {
+      "id": "LAYOUT_CRANDOR",
+      "name": "Crandor_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Karamja",
+      "border_filepath": "data/layouts/Crandor/border.bin",
+      "blockdata_filepath": "data/layouts/Crandor/map.bin"
     }
   ]
 }
