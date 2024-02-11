@@ -65,15 +65,20 @@ script LIGHTHOUSE_2F_NPC_5
 
 //Battles
 
-//NOT SURE HOW TO CODE DIFFERENT DIALOGUE FOR EACH NPC GIVEN THAT THEY'RE NOT ACTUALLY A TEAM?
-
-script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE
+script BATTLE_LIGHTHOUSE_2F_TRAINER_1
 {
-    trainerbattle_single(TRAINER_LIGHTHOUSE_2F_DOUBLE_BATTLE, format("Get out of our way, we need to battle!"),format("We should have just let you go on ahead."))
+    trainerbattle_single(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("I can't get you go any further!"),format("I may have lost, but I made you lose time, so I'm the real winner."))
     namebox ("HAM Grunt Linda")
     msgbox(format("I've done my job and slowed you down. I bet we've got what we wanted here now."))
 	hidenamebox
-	namebox ("Guard Dennis")
+    release
+	end
+}
+
+script BATTLE_LIGHTHOUSE_2F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_2F_TRAINER_2, format("Out of the way, let me defeat this HAM member!"),format("I guess I'll just let you take care of them then!"))
+    namebox ("Dennis")
     msgbox(format("I knew I should have taken today off.."))
 	hidenamebox
     release

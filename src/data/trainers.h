@@ -4711,18 +4711,32 @@ const struct Trainer gTrainers[] =
     },
 
 //LIGHTHOUSE 2F
-    [TRAINER_LIGHTHOUSE_2F_DOUBLE_BATTLE] =
+    [TRAINER_LIGHTHOUSE_2F_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("Linda"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_1},
+    },
+
+    [TRAINER_LIGHTHOUSE_2F_TRAINER_2] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GUARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
-        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
-        .trainerName = _("HAM Grunt Linda and Guard Dennis"),
+        .trainerPic = TRAINER_PIC_guard_falador,
+        .trainerName = _("Dennis"),
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_DOUBLE_BATTLE),
-        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_DOUBLE_BATTLE},
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_2},
     },
 
 //LIGHTHOUSE 3F

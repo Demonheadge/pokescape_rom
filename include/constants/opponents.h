@@ -429,9 +429,10 @@
 #define TRAINER_LIGHTHOUSE_TRAINER_1 354
 #define TRAINER_LIGHTHOUSE_TRAINER_2 355
 //LIGHTHOUSE 2F
-#define TRAINER_LIGHTHOUSE_2F_DOUBLE_BATTLE 356
+#define TRAINER_LIGHTHOUSE_2F_TRAINER_1 356
+#define TRAINER_LIGHTHOUSE_2F_TRAINER_2 357
 //LIGHTHOUSE 3F
-#define TRAINER_LIGHTHOUSE_3F_TRAINER_1 357
+#define TRAINER_LIGHTHOUSE_3F_TRAINER_1 358
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows

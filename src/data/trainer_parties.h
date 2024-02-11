@@ -5722,21 +5722,24 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_TRAINER_2[] =
 
 //LIGHTHOUSE 2F
 
-static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_DOUBLE_BATTLE[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_2F_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 18,
     .species = SPECIES_PIG,
     },
+        {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_CHICKEN_NORMAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_2F_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 18,
     .species = SPECIES_MINOTAUR_NORMAL_FORM,
-    },
-    {
-    .iv = 0,
-    .lvl = 18,
-    .species = SPECIES_CHICKEN_NORMAL_FORM,
     },
     {
     .iv = 0,

@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE",
+      "script": "BATTLE_LIGHTHOUSE_2F_TRAINER_2",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE",
+      "script": "BATTLE_LIGHTHOUSE_2F_TRAINER_1",
       "flag": "0"
     },
     {
