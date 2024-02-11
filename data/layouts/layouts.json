@@ -8045,7 +8045,7 @@
       "id": "LAYOUT_CRANDOR",
       "name": "Crandor_Layout",
       "width": 60,
-      "height": 60,
+      "height": 52,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/Crandor/border.bin",

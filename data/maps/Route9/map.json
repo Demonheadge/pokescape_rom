@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE10",
       "offset": 18,
       "direction": "right"
+    },
+    {
+      "map": "MAP_CRANDOR",
+      "offset": -11,
+      "direction": "left"
     }
   ],
   "object_events": [
