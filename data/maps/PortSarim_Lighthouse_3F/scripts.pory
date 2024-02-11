@@ -1,0 +1,66 @@
+mapscripts PortSarim_Lighthouse_3F_MapScripts {
+
+}
+
+//NPCS
+script LIGHTHOUSE_3F_NPC_1
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("The guard looks like they're struggling to hold the HAM member off; you have to hurry!"))
+    closemessage
+    //hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_3F_NPC_2
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("They appear to be winning. Someone needs to stop these HAM members before it's too late."))
+    closemessage
+    //hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_3F_NPC_3
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("The guard hurriedly points to the nearby HAM members."))
+    closemessage
+    //hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_3F_NPC_4
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("The HAM member looks like they're about to cry; probably not a good look in front of one of their bosses."))
+    closemessage
+    //hidenamebox
+	release
+	end
+}
+
+//Battles
+
+script BATTLE_LIGHTHOUSE_3F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_3F_TRAINER_1, format("Our Admin is still getting what she needs, so I guess it's up to me to stop you."),format("Aw, doesn't look like I'll be getting that promotion now.."))
+	namebox ("HAM Member Leon")
+    msgbox(format("Aw, doesn't look like I'll be getting that promotion now.."))
+	hidenamebox
+    release
+	end
+}
+
+//NOT CODED IN THE ADMIN FIGHT AS UNSURE HOW YOU WANT TO DO THIS - DO YOU WANT IT AS BACK TO BACK FIGHTS, OR A DOUBLE BATTLE?

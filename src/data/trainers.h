@@ -4681,6 +4681,65 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_ROUTE_31_TRAINER_7},
     },
 
+//LIGHTHOUSE
+    [TRAINER_LIGHTHOUSE_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_guard_falador,
+        .trainerName = _("Dave"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_TRAINER_1},
+    },
+
+    [TRAINER_LIGHTHOUSE_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_guard_falador,
+        .trainerName = _("Darren"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_TRAINER_2},
+    },
+
+//LIGHTHOUSE 2F
+    [TRAINER_LIGHTHOUSE_2F_DOUBLE_BATTLE] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("HAM Grunt Linda and Guard Dennis"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_DOUBLE_BATTLE),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_DOUBLE_BATTLE},
+    },
+
+//LIGHTHOUSE 3F
+    [TRAINER_LIGHTHOUSE_3F_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_ham_grunt_m,
+        .trainerName = _("Leon"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_3F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_3F_TRAINER_1},
+    },
+
 //Route 50
     [TRAINER_ROUTE_50_TRAINER_1] =
     {

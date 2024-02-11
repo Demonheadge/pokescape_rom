@@ -145,7 +145,7 @@
 #define FLAG_DG_PUZZLE_ROOM_7               0x94    //FLAG_DOCK_REJECTED_DEVON_GOODS
 #define FLAG_DG_PUZZLE_ROOM_8               0x95    //FLAG_DELIVERED_DEVON_GOODS
 #define FLAG_DG_DOOR_VARROCK_SEWERS         0x7C    //FLAG_REGISTER_RIVAL_POKENAV
-
+#define FLAG_LIGHTHOUSE_PIRATE              0x7D    //FLAG_DEFEATED_RIVAL_ROUTE_104
 
 
 
@@ -182,7 +182,7 @@
 
 
 
-#define FLAG_DEFEATED_RIVAL_ROUTE_104        0x7D
+
 #define FLAG_DEFEATED_WALLY_VICTORY_ROAD     0x7E
 #define FLAG_MET_PRETTY_PETAL_SHOP_OWNER     0x7F
 #define FLAG_ENABLE_ROXANNE_FIRST_CALL       0x80 // Set after defeating Brawly. This will activate a call with Roxanne in order to register her.

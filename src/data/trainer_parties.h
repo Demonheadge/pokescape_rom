@@ -5682,6 +5682,89 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE_54_TRAINER_2[] = {
     }
 };
 
+//LIGHTHOUSE
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_GIANT_RAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_RAM_FLUFFY_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_RAM_SHAGGY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_BULL,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    }
+};
+
+//LIGHTHOUSE 2F
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_DOUBLE_BATTLE[] = {
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_PIG,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_CHICKEN_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_SHEEP_BLACK_FORM,
+    }
+};
+
+//LIGHTHOUSE 3F
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_PIG,
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_GIANT_RAT_NORMAL_FORM,
+    }
+};
+
 
 /*
 //#GYM - KARAMJA - TokHaar
