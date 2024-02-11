@@ -1,4 +1,11 @@
 mapscripts PortSarim_Lighthouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(JAILMAP_STATE)
+    }
+    MAP_SCRIPT_ON_LOAD { //Loads the Metatiles.
+        call(JAILMAP_STATE)
+    }
+} 
 
 script JAILMAP_STATE {
     if (flag(FLAG_LIGHTHOUSE_PIRATE) == TRUE)
@@ -8,11 +15,35 @@ script JAILMAP_STATE {
         setmetatile (4, 8, 702, 1) //BOTTOM LEFT
         setmetatile (5, 7, 89, 0) //TOP RIGHT
         setmetatile (5, 8, 89, 0) //BOTTOM RIGHT
+        setmetatile (6, 8, 701, 1) //B Corner
         special(DrawWholeMapView)
     }
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+        removeobject(4)
+        removeobject(9)
+        removeobject(10)
+        setflag(FLAG_TEMP_1E)
+        setmetatile (7, 7, 694, 0) //TOP LEFT
+        setmetatile (7, 8, 702, 1) //BOTTOM LEFT
+        setmetatile (8, 7, 89, 0) //TOP RIGHT
+        setmetatile (8, 8, 89, 0) //BOTTOM RIGHT
+        setmetatile (9, 8, 701, 1) //B Corner
+        setmetatile (13, 2, 314, 0) //Chair
+        setmetatile (12, 10, 314, 0) //Chair
+        setmetatile (13, 4, 89, 0) //Floor
+        setmetatile (12, 7, 89, 0) //Floor
+        setmetatile (13, 8, 314, 0) //Chair
+        setmetatile (13, 9, 89, 0) //Floor
+        special(DrawWholeMapView)
+        setobjectmovementtype(1, MOVEMENT_TYPE_JOG_IN_PLACE_LEFT)
+        setobjectxyperm(1, 15, 3)
+    }
+    else {
+        removeobject(7)
+        removeobject(8)
+        setflag(FLAG_TEMP_1D)
+    }
     return
-}
-
 }
 
 //NPCS
@@ -28,9 +59,92 @@ script LIGHTHOUSE_NPC_1
 	end
 }
 
+script LIGHTHOUSE_NPC_2
+{
+	lock
+	faceplayer
+    namebox ("Skeleton")
+	msgbox(format("The skeleton chuckles at all of the commotion."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_NPC_3
+{
+	lock
+	faceplayer
+    namebox ("Mugger")
+	msgbox(format("Psst.\pHelp me sneak outta here, yeah?\pI promise I won't rob you when we get outside…"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_NPC_4
+{
+	lock
+	faceplayer
+    namebox ("Black Knight")
+	msgbox(format("Oi!\pWill you ask those HAM members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+//Battles
+
+script BATTLE_LIGHTHOUSE_TRAINER_1
+{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_1, format("I couldn't stop your friends before they forced their way upstairs, but I'll make sure I stop you!"),format("What do you mean you're not with them?"))
+    namebox ("Dave")
+    msgbox(format("What do you mean you're not with them?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_LIGHTHOUSE_TRAINER_2
+{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_2, format("Vile HAM member!\nYou will go any further!"),format("You're a lot stronger than you look!"))
+    namebox ("Darren")
+    msgbox(format("Sorry I mistook you for being apart of HAM.\pBut please stop them before they cause any more damage."))
+	hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //-------------HELPING THE PIRATE----------------------------------------------------------
 
-script LIGHTHOUSE_PIRATE_STATE {
+script LIGHTHOUSE_CAPN_HAND_QUEST {
     lock
     faceplayer
     namebox ("Cap'n Hand")
@@ -60,61 +174,3 @@ script LIGHTHOUSE_PIRATE_STATE {
 
 //Presumably I can also add a second variable to allow for a battle if you free him later on but I am not sure how to do that yet?
 
-
-script LIGHTHOUSE_NPC_2
-{
-	lock
-	faceplayer
-    namebox ("")
-	msgbox(format("The skeleton chuckles at all of the commotion."))
-    closemessage
-    hidenamebox
-	release
-	end
-}
-
-script LIGHTHOUSE_NPC_3
-{
-	lock
-	faceplayer
-    namebox ("Mugger")
-	msgbox(format("Psst.\pHelp me sneak outta here, yeah?\pI promise I won't rob you when we get outside.."))
-    closemessage
-    hidenamebox
-	release
-	end
-}
-
-script LIGHTHOUSE_NPC_4
-{
-	lock
-	faceplayer
-    namebox ("Black Knight")
-	msgbox(format("Oi!\pWill you ask those HAM members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
-    closemessage
-    hidenamebox
-	release
-	end
-}
-
-//Battles
-
-script BATTLE_LIGHTHOUSE_TRAINER_1
-{
-    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_1, format("I couldn't stop your friends before they forced their way upstairs, but I'll make sure I stop you!"),format("What do you mean you're not with them?"))
-    namebox ("Dave")
-    msgbox(format("Please stop them!"))
-	hidenamebox
-    release
-	end
-}
-
-script BATTLE_LIGHTHOUSE_TRAINER_2
-{
-    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_2, format("Stay here citizen, it's far too dangerous for you to go any further!"),format("You're a lot stronger than you look!"))
-    namebox ("Darren")
-    msgbox(format("The HAM members went up this ladder, please stop them before they cause any damage."))
-	hidenamebox
-    release
-	end
-}
