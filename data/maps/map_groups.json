@@ -663,7 +663,8 @@
     "Wilderness_Volcano_Lobby",
     "GrandExchange",
     "Varrock_GrandExchange_Path",
-    "Varrock_Church"
+    "Varrock_Church",
+    "Crandor"
   ],
   "gMapGroup_PokescapeRoutes": [
     "Route1",

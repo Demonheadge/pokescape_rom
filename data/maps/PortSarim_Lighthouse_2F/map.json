@@ -19,7 +19,7 @@
       "x": 13,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -32,7 +32,7 @@
       "x": 14,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_LIGHTHOUSE_2F_TRAINER_2",
+      "script": "BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_LIGHTHOUSE_2F_TRAINER_1",
+      "script": "BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2",
       "flag": "0"
     },
     {
@@ -71,7 +71,7 @@
       "x": 7,
       "y": 9,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -84,7 +84,7 @@
       "x": 6,
       "y": 9,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
