@@ -25,10 +25,18 @@ script HIDDEN_GROTTO_ENTRY {
     release
     end
 }
+script HIDDEN_GROTTO_WARP_ROUTE_20 {
+    warp(MAP_HIDDEN_GROTTOS, 0, 0, 0)
+    waitstate
+}
 script HIDDEN_GROTTO_WARP_ROUTE_1 {
     warp(MAP_HIDDEN_GROTTOS, 1, 0, 0)
     waitstate
 }
+
+
+
+
 script HIDDEN_GROTTO_WARP_ROUTE_4 {
     warp(MAP_HIDDEN_GROTTOS, 3, 0, 0)
     waitstate
@@ -37,18 +45,18 @@ script HIDDEN_GROTTO_WARP_ROUTE_9 {
     warp(MAP_HIDDEN_GROTTOS, 4, 0, 0)
     waitstate
 }
-script HIDDEN_GROTTO_WARP_ROUTE_27 {
-    warp(MAP_HIDDEN_GROTTOS, 7, 0, 0)
-    waitstate
-}
-script HIDDEN_GROTTO_WARP_ROUTE_20 {
-    warp(MAP_HIDDEN_GROTTOS, 0, 0, 0)
-    waitstate
-}
 script HIDDEN_GROTTO_WARP_ROUTE_14 {
     warp(MAP_HIDDEN_GROTTOS, 5, 0, 0)
     waitstate
 }
+
+
+
+script HIDDEN_GROTTO_WARP_ROUTE_27 {
+    warp(MAP_HIDDEN_GROTTOS, 7, 0, 0)
+    waitstate
+}
+
 
 //CHOOSE WHAT SPAWNS
 script HIDDEN_GROTTO_ENTRY_SPAWNS {
@@ -259,10 +267,16 @@ script HIDDEN_GROTTO_LEVELS {
     return
 }
 
-script HIDDEN_GROTTO_SETFLAGS {
+script HIDDEN_GROTTO_RESET {
     clearflag(FLAG_HIDDEN_GROTTO_1)
-    closemessage
-    end
+    clearflag(FLAG_HIDDEN_GROTTO_2)
+    clearflag(FLAG_HIDDEN_GROTTO_3)
+    clearflag(FLAG_HIDDEN_GROTTO_4)
+    clearflag(FLAG_HIDDEN_GROTTO_5)
+    clearflag(FLAG_HIDDEN_GROTTO_6)
+    clearflag(FLAG_HIDDEN_GROTTO_7)
+    clearflag(FLAG_HIDDEN_GROTTO_8)
+    return
 }
 
 

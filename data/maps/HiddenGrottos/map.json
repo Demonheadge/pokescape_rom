@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 57,
+      "x": 59,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "0"
+      "flag": "FLAG_HIDDEN_GROTTO_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_GROTTO_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "FLAG_TEMP_2"
+      "flag": "FLAG_HIDDEN_GROTTO_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "FLAG_HIDDEN_GROTTO_1"
+      "flag": "FLAG_HIDDEN_GROTTO_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "0"
+      "flag": "FLAG_HIDDEN_GROTTO_5"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "0"
+      "flag": "FLAG_HIDDEN_GROTTO_6"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "0"
+      "flag": "FLAG_HIDDEN_GROTTO_7"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HIDDEN_GROTTO_INTERACT",
-      "flag": "0"
+      "flag": "FLAG_HIDDEN_GROTTO_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAC_BONBUN",
@@ -137,8 +137,8 @@
       "x": 6,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_ROUTE20",
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
@@ -151,11 +151,11 @@
       "x": 40,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_HIDDEN_GROTTOS",
+      "dest_map": "MAP_WIZARDS_TOWER",
       "dest_warp_id": "0"
     },
     {
-      "x": 55,
+      "x": 57,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4",
@@ -165,15 +165,15 @@
       "x": 6,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ROUTE9",
+      "dest_warp_id": "2"
     },
     {
       "x": 23,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_HIDDEN_GROTTOS",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ROUTE14",
+      "dest_warp_id": "1"
     },
     {
       "x": 40,
@@ -186,7 +186,7 @@
       "x": 55,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_HIDDEN_GROTTOS",
+      "dest_map": "MAP_ROUTE27",
       "dest_warp_id": "0"
     },
     {
@@ -224,11 +224,11 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 21,
-      "y": 9,
+      "x": 19,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "HIDDEN_GROTTO_SETFLAGS"
+      "script": "HIDDEN_GROTTO_RESET"
     }
   ]
 }

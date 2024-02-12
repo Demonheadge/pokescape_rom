@@ -7,10 +7,12 @@ Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 	call OPENWORLD_STATE_LUMBRIDGE
+	call HIDDEN_GROTTO_RESET
 	return
 
 Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	call MoveNPCsAfterEvents_Lumbridge
+	call HIDDEN_GROTTO_RESET
 	return
 
 

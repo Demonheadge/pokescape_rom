@@ -4,6 +4,13 @@ Varrock_MapScripts::
 
 Varrock_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 16
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Varrock_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call HIDDEN_GROTTO_RESET
+	return
+
+Varrock_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call HIDDEN_GROTTO_RESET
 	return
 
 
