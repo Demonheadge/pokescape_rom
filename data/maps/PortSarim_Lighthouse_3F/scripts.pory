@@ -1,5 +1,36 @@
 mapscripts PortSarim_Lighthouse_3F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(LIGHTHOUSE_3F_STATE)
+    }
+} 
 
+script LIGHTHOUSE_3F_STATE {
+
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+        addobject(4)
+        addobject(3)
+        addobject(6)
+        addobject(8)
+        addobject(2)
+        clearflag(FLAG_TEMP_1E)
+        addobject(1)
+        addobject(5)
+        clearflag(FLAG_TEMP_1F)
+    }
+    else {
+        removeobject(4)
+        removeobject(3)
+        removeobject(6)
+        removeobject(8)
+        removeobject(2)
+        setflag(FLAG_TEMP_1E)
+        removeobject(1)
+        removeobject(5)
+        setflag(FLAG_TEMP_1F)
+        setobjectmovementtype(7, MOVEMENT_TYPE_WANDER_AROUND)
+        setobjectxyperm(7, 10, 10)
+    }
+    return
 }
 
 //NPCS
@@ -56,3 +87,105 @@ script BATTLE_LIGHTHOUSE_3F_TRAINER_1
 }
 
 //NOT CODED IN THE ADMIN FIGHT AS UNSURE HOW YOU WANT TO DO THIS - DO YOU WANT IT AS BACK TO BACK FIGHTS, OR A DOUBLE BATTLE?
+
+
+
+script LIGHTHOUSE_HAM_BABE
+{
+    namebox ("Babe")
+	msgbox(format("Give me the map you stupid Goblin!"))
+    namebox ("WORM GOBLIN")
+	msgbox(format("Only if you pay me 10,000 GP."))
+    namebox ("Babe")
+	msgbox(format("What no one has that kind of money!"))
+    namebox ("WORM GOBLIN")
+	msgbox(format("No map for pink lady then.\pOnly way you can get map is if you take it from me.\pBut I in jail cell, you cannot reach me."))
+    namebox ("Babe")
+	msgbox(format("…\pYou're not in a jail cell anymore."))
+    namebox ("WORM GOBLIN")
+	msgbox(format("…"))
+    namebox ("Babe")
+	msgbox(format("Taste this telekentic fist!"))
+    //apllymovement, punches goblin back 2 spots.
+    //drops map as item
+    namebox ("Babe")
+	msgbox(format("I'll be taking that you stupid goblin."))
+    //picks up map turns and faces player.
+    namebox ("Babe")
+	msgbox(format("Wait who are you?\pYou want to battle bring it!"))
+    //BATTLES
+    namebox ("Babe")
+	msgbox(format("This cannot be, take the map for now but we will be back for it later.\pI won't forget you!\pTime to go everyone!"))
+    closemessage
+    //hidenamebox
+    //fadescreen black
+    fadescreen(FADE_TO_BLACK)
+    
+    //call state after setting temp flags and shit.
+    removeobject(4)
+    removeobject(3)
+    removeobject(6)
+    removeobject(8)
+    removeobject(2)
+    setflag(FLAG_TEMP_1E)
+    removeobject(7)
+    setflag(FLAG_TEMP_1D)
+    setobjectmovementtype(5, MOVEMENT_TYPE_FACE_LEFT)
+    setobjectxyperm(5, 8, 11)
+    setobjectxy(5, 8, 11)
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT)
+    waitmovement(0)
+    fadescreen(FADE_FROM_BLACK)
+    
+    
+    //Guard walks over to the player.
+    namebox ("Guard")
+	msgbox(format("Thank you for assisting us in repelling HAM.\pThey've been very organised as of late.\pIm not sure what they are after.\pBut here take this for helping us out."))
+    //Gives and ITEM or TM or something.
+    namebox ("Guard")
+	msgbox(format("Come on Goblin, back to your cell."))
+    namebox ("WORM GOBLIN")
+	msgbox(format("Me think me nose is broken…"))
+    //Guard and goblin leave.
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
+    applymovement(5, Movement_lighthouse_ham_0)
+    waitmovement(0)
+    applymovement(5, Movement_lighthouse_ham_1)
+    applymovement(1, Movement_lighthouse_ham_2)
+    waitmovement(0)
+    removeobject(1)
+    removeobject(5)
+    setflag(FLAG_TEMP_1F)
+
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 102)
+    call(LIGHTHOUSE_3F_STATE)
+    
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+movement Movement_lighthouse_ham_0
+{
+    walk_left * 3
+} 
+movement Movement_lighthouse_ham_1
+{
+    walk_right * 4
+    walk_up * 5
+    walk_right * 6
+} 
+movement Movement_lighthouse_ham_2
+{
+    walk_right * 5
+    walk_up * 5
+    walk_right * 6
+} 
+movement Movement_lighthouse_ham_3
+{
+    face_up
+    lock_facing_direction
+    walk_down
+} 

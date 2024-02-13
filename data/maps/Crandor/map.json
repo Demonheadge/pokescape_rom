@@ -253,7 +253,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 35,
+      "x": 34,
       "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
