@@ -1,0 +1,104 @@
+mapscripts Yanille_MapScripts {
+
+}
+
+//NPCS
+script NPC_YANILLE_1
+{
+	lock
+	faceplayer
+    namebox ("Colonel Radick")
+	msgbox(format("Beyond here are the Feldip Hills which is major Ogre territory!\pDo not leave these walls unless you can defend yourself, as we will be unable to rescue you should anything happen!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_2
+{
+	lock
+	faceplayer
+    namebox ("Guard Frederick")
+	msgbox(format("Ugh, the Guard Captain didn't show up for duty.\pI bet he's in the pub drinking.. again!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_3
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_4
+{
+	lock
+	faceplayer
+    namebox ("Zavistic Rarve")
+	msgbox(format("Oh bother, someone rang the bell while I was in the middle of practicing some spells and I've dropped my staff!\pIt must around here somewhere, but I can't seem to find it.."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_5
+{
+	lock
+	faceplayer
+    namebox ("Pillory Guard")
+	msgbox(format("Report to me for punishment!\pSorry, force of habit. I'm sure there's some rotten tomatoes somewhere you can throw at this delinquent if you'd like."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_6
+{
+	lock
+	faceplayer
+    namebox ("N00b1234")
+	msgbox(format("I got teleported here but the locks are spinning too quickly!\pI don't know which one is right, and I can't get out."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_7
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script YANILLE_DOG
+{
+	lock
+	msgbox(format("You give the dog a gentle pet while it dozes in the sun. He's a good doggy!"))
+	release
+	end
+}
+
+
+//ITEMS
+script ITEM_YANILLE_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}

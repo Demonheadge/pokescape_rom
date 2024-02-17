@@ -1,0 +1,65 @@
+mapscripts Route52_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_52_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_52_TRAINER_1, format("Hey, find your own iron rocks. These are mine!"),format("Fine, I suppose we can share them."))
+    namebox ("Cupholder")
+    msgbox(format("I wanted to mine beside Ardougne monastery but there was someone already there.."))
+	hidenamebox
+    release
+	end
+}
+
+//1st miner
+
+script BATTLE_ROUTE_52_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_52_TRAINER_2, format("The head of my pickaxe flew off while I was trying to mine that rock!\pYou better not be trying to steal it!"),format("I can't battle properly without my trusty pickaxe."))
+    namebox ("Cupholder")
+    msgbox(format("Oh, here it is! If I'd found it sooner, I'd probably have beaten you.."))
+	hidenamebox
+    release
+	end
+}
+
+//2nd miner
+
+script BATTLE_ROUTE_52_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_52_TRAINER_3, format("After spending my entire life in the Feldip Hills, I am finally ready to see what other monsters exist out in the world."),format("Maybe I should train more before leaving the jungle.."))
+    namebox ("Cupholder")
+    msgbox(format("Your monsters are stronger than anything I've seen before. I should do more training."))
+	hidenamebox
+    release
+	end
+}
+
+//1st hunter
+
+script BATTLE_ROUTE_52_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE_52_TRAINER_4, format("Did you know there are some rare monsters which can only be caught in the jungle south of here?"),format("They might be rare, but they didn't help me win."))
+    namebox ("Cupholder")
+    msgbox(format("I heard that there is a form of kebbit that you can only catch or evolve in Feldip Hills."))
+	hidenamebox
+    release
+	end
+}
+
+//2nd hunter
+
+//NPCS
+script ROUTE52_NPC_1
+{
+	lock
+	faceplayer
+    namebox ("Raedwald")
+	msgbox(format("I'll let you in on a little secret.\pI buried some hidden treasure near here.\pI don't want to give away too many secrets, but it's a special cloak for people who like solving clues."))
+    closemessage
+    hidenamebox
+	release
+	end
+}

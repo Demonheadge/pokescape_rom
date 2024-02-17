@@ -1253,9 +1253,9 @@
 #define FLAG_ITEM_ROUTE_50_BREAD                                  0x489
 #define FLAG_ITEM_ROUTE_50_DEF_POTION                             0x48A
 #define FLAG_ITEM_ROUTE_50_SUPER_TEA                            0x48B
-#define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR                    0x48C
-#define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_FULL_RESTORE                  0x48D
-#define FLAG_ITEM_MAGMA_HIDEOUT_3F_1R_NUGGET                        0x48E
+#define FLAG_ITEM_PORTKHAZARD_ATTACK_LAMP                    0x48C
+#define FLAG_ITEM_PORTKHAZARD_PURPLE_SWEETS                  0x48D
+#define FLAG_ITEM_YANILLE_PRAYER_POTION                        0x48E
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_2R_PP_MAX                        0x48F
 #define FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE                       0x490
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491

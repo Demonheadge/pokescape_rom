@@ -4840,6 +4840,92 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_ROUTE_51_GUNS},
     },
 
+//Route 52
+    [TRAINER_ROUTE_52_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _("C0alH3ad"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_52_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_52_TRAINER_1},
+    },
+
+    [TRAINER_ROUTE_52_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _("AfkL00t"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_52_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_52_TRAINER_2},
+    },
+
+    [TRAINER_ROUTE_52_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HUNTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_hunter_m,
+        .trainerName = _("Quaffle8"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_52_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_52_TRAINER_3},
+    },
+
+    [TRAINER_ROUTE_52_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HUNTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_hunter_f,
+        .trainerName = _("dnops"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_52_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_52_TRAINER_4},
+    },
+
+//Route 53
+    [TRAINER_ROUTE_53_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _("F0restreeGal"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_53_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_53_TRAINER_1},
+    },
+
+    [TRAINER_ROUTE_53_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_guard_khazard,
+        .trainerName = _("Terrence"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_53_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_53_TRAINER_2},
+    },
+
 //Route 54
     [TRAINER_ROUTE_54_TRAINER_1] =
     {
@@ -4869,5 +4955,47 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_ROUTE_54_TRAINER_2},
     },
 
-};
+//Route 55
+    [TRAINER_ROUTE_55_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("Slimenose"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_50_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_50_TRAINER_1},
+    },
 
+    [TRAINER_ROUTE_55_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_FARMER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miller,
+        .trainerName = _("Daisy"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_55_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_55_TRAINER_2},
+    },
+
+    [TRAINER_ROUTE_55_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_FARMER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_farmer,
+        .trainerName = _("Jeremy"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE_55_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE_55_TRAINER_3},
+    },
+
+};

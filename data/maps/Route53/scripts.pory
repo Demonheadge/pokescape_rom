@@ -1,0 +1,49 @@
+mapscripts Route53_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_53_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_53_TRAINER_1, format("I need a break from chopping logs, getting enough for these Forestry rewards is exhausting!"),format("If I'd spent less time chopping, and more time battling maybe I'd have won.."))
+    namebox ("Cupholder")
+    msgbox(format("If I'd spent less time chopping, and more time battling maybe I'd have won.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_53_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_53_TRAINER_2, format("There's danger lurking nearby adventurer! Don't go any further!"),format("After that, I think you'll be safe!"))
+    namebox ("Guard Terrence")
+    msgbox(format("Be careful out here. There are dangers that even us guards can't handle alone."))
+	hidenamebox
+    release
+	end
+}
+
+//NPCS
+script ROUTE53_NPC_1
+{
+	lock
+	faceplayer
+    namebox ("ChunkYanille")
+	msgbox(format("It took me 11 months to escape the Yanille chunk!\pI can't wait to explore the rest of Gielinor."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script ROUTE53_NPC_2
+{
+	lock
+	faceplayer
+    namebox ("Tower Guard")
+	msgbox(format("I guard the Watchtower.\pThough there isn't much guarding left to do ever since an adventurer found the crystals the ogres stole.."))
+    closemessage
+    hidenamebox
+	release
+	end
+}

@@ -22,13 +22,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Updated Route 41, 42, 43, 44, and 47 scripts.
 
-- Updated Route 50, 51, and 54 scripts.
+- Updated Route 50, 51, 52, 53, 54, and 55 scripts.
+
+- Updated Port Khazard scripts.
 
 - Updated Edgeville scripts.
 
+- Updated Yanille scripts.
+
 - Added trainer battles to NPCs in Varrock Sewers.
 
-- (WIP) Added Port Sarim Lighthouse
+- (WIP) Added Port Sarim Lighthouse, along with NPCs and trainer battles.
 
 - (WIP) Rework of Melzars Maze and the Wilderness to tie in with future content.
 

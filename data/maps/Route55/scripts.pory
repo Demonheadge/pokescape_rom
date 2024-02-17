@@ -1,0 +1,70 @@
+mapscripts Route55_MapScripts {
+
+}
+
+//BATTLES
+script BATTLE_ROUTE_55_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE_55_TRAINER_1, format("Ha! Puny human scared of Slimenose."),format("Take that! Wait, Slimenose no win?"))
+    namebox ("Slimenose")
+    msgbox(format("Slimenose win next time human.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_55_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE_55_TRAINER_2, format("I might be a farmhand, but my real passion is battling!"),format("Maybe I should stick to farming."))
+    namebox ("Daisy")
+    msgbox(format("It's tough to learn how to battle properly when you work such long hours.."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE_55_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE_55_TRAINER_3, format("Oi mate, you better not be tryin' to steal more of my seeds."),format("I guess you're more interested in battlin' than farmin'."))
+    namebox ("Jeremy")
+    msgbox(format("Adventurers keep walkin' by and takin' seeds right out my pocket!"))
+	hidenamebox
+    release
+	end
+}
+
+//MISCELLANEOUS
+script ROUTE55_SIGN_1
+{
+	lock
+	faceplayer
+	msgbox(format("It smells really bad in the cave. You should come back when you have a nosepeg."))
+	release
+	end
+}
+
+//Just added as a placeholder for anyone who tries to enter until we decide what to do with it e.g. a new map etc.
+
+script ROUTE55_SIGN_2
+{
+	lock
+	faceplayer
+	msgbox(format("Richard's Farming Supply Shop.\pWant Farming advice? Ask a gardener!"))
+	release
+	end
+}
+
+//NPCS
+script ROUTE55_NPC_1
+{
+	lock
+	faceplayer
+    namebox ("Derren")
+	msgbox(format("We weren't making enough money selling farming supplies, so we diversified our business and now we help the gnomes to breed terrorbirds specifically designed for humans to ride!\pOh! I can see you already have one of your own, how are you finding it?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+//Just placeholder dialogue

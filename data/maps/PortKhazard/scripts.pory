@@ -1,0 +1,109 @@
+mapscripts PortKhazard_MapScripts {
+
+}
+
+//ITEMS
+script ITEM_PORTKHAZARD_ATTACK_LAMP
+{
+    finditem(ITEM_ATTACK_LAMP)
+    end
+}
+
+script ITEM_PORTKHAZARD_PURPLE_SWEETS
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+
+//NPCS
+script NPC_PORTKHAZARD_1
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format("I was told I could pick up some discarded wooden planks from one of the ships here to use to train Construction, but I can't seem to find any.."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_2
+{
+	lock
+    namebox ("")
+	msgbox(format("Which way is Ardougne?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_3
+{
+	lock
+    namebox ("")
+	msgbox(format("Ardougne is south, I think? Or is it north?\pWhy don't we just start walking and find out?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_4
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format("I wonder if the wizards at the Watchtower have enchanted this fire as it never seems to go out!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_5
+{
+	lock
+	faceplayer
+    namebox ("Murphy")
+	msgbox(format("The trawler has just left actually!\pPerhaps when it comes back you can join them in another run?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_6
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format("I wanted to buy some soda ash and buckets of sand to train my Crafting but this guy isn't selling anything. What gives?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTKHAZARD_TRADER
+{
+	lock
+	faceplayer
+    namebox ("Trader Juan")
+	msgbox(format("Sorry, our ship has not returned from its last voyage.\pPlease come back later."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+//MISCELLANEOUS
+script PORTKHAZARD_SIGN_1
+{
+	lock
+	faceplayer
+	msgbox(format("The ship is currently out at sea."))
+	release
+	end
+}

@@ -1,0 +1,76 @@
+mapscripts Yanille_Pub_1F_MapScripts {
+
+}
+
+//NPCS
+script NPC_YANILLE_PUB_1F_1
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_PUB_1F_2
+{
+	lock
+	faceplayer
+    namebox ("Bartender")
+	msgbox(format("I'm afraid we're all out of alcohol at the moment.\pSomeone should tell the Guard Captain he needs to drink less!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_PUB_1F_3
+{
+	lock
+	faceplayer
+    namebox ("Vathrelk")
+	msgbox(format("I'm on Alfred Grimhand's Barcrawl.\pI've just had some Fire Brandy, but my visions still a little blurry!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_PUB_1F_4
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_PUB_1F_5
+{
+	lock
+	faceplayer
+    namebox ("Guard Captain")
+	msgbox(format("Go 'way! This pint'sh nearly finished! Unlessh you got more that ish....?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_YANILLE_PUB_1F_6
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}

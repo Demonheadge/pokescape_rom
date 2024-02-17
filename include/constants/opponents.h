@@ -433,6 +433,18 @@
 #define TRAINER_LIGHTHOUSE_2F_TRAINER_2 357
 //LIGHTHOUSE 3F
 #define TRAINER_LIGHTHOUSE_3F_TRAINER_1 358
+//ROUTE 55
+#define TRAINER_ROUTE_55_TRAINER_1 359
+#define TRAINER_ROUTE_55_TRAINER_2 360
+#define TRAINER_ROUTE_55_TRAINER_3 361
+//ROUTE 53
+#define TRAINER_ROUTE_53_TRAINER_1 362
+#define TRAINER_ROUTE_53_TRAINER_2 363
+//ROUTE 52
+#define TRAINER_ROUTE_52_TRAINER_1 364
+#define TRAINER_ROUTE_52_TRAINER_2 365
+#define TRAINER_ROUTE_52_TRAINER_3 366
+#define TRAINER_ROUTE_52_TRAINER_4 367
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
