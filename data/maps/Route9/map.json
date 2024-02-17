@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE10",
       "offset": 18,
       "direction": "right"
+    },
+    {
+      "map": "MAP_CRANDOR",
+      "offset": -11,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -233,7 +238,7 @@
       "movement_type": "MOVEMENT_TYPE_BURIED",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_type": "TRAINER_TYPE_BURIED",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "BATTLE_ROUTE9_GUTHIX_WIZARD",
       "flag": "0"

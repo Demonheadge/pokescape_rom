@@ -1,5 +1,28 @@
 PortSarim_Lighthouse_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PortSarim_Lighthouse_2F_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+PortSarim_Lighthouse_2F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	call LIGHTHOUSE_2F_STATE
+	return
+
+
+LIGHTHOUSE_2F_STATE::
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 101
+	goto_if_eq LIGHTHOUSE_2F_STATE_2
+	removeobject 4
+	removeobject 5
+	removeobject 2
+	setflag FLAG_TEMP_1E
+LIGHTHOUSE_2F_STATE_1:
+	return
+
+LIGHTHOUSE_2F_STATE_2:
+	addobject 4
+	addobject 5
+	addobject 2
+	clearflag FLAG_TEMP_1E
+	goto LIGHTHOUSE_2F_STATE_1
 
 
 LIGHTHOUSE_2F_NPC_1::

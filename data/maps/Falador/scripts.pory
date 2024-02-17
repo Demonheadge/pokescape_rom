@@ -18,14 +18,16 @@ mapscripts Falador_MapScripts {
 	call(MODTIMBO_STATE)
 	}
 
-	MAP_SCRIPT_ON_TRANSITION { //ON LOAD FOR MAP TILES
+	MAP_SCRIPT_ON_TRANSITION { 
     if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
     {
     	call(FALADOR_QUEST_STATE)
+		call(HIDDEN_GROTTO_RESET)
 	}
 	else 
 	{
 		call(OPENWORLD_STATE_FALADOR)
+		call(HIDDEN_GROTTO_RESET)
 	}
 
     }

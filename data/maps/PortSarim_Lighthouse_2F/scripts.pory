@@ -1,6 +1,27 @@
 mapscripts PortSarim_Lighthouse_2F_MapScripts {
-
+    MAP_SCRIPT_ON_TRANSITION {
+        call(LIGHTHOUSE_2F_STATE)
+    }
 }
+
+
+script LIGHTHOUSE_2F_STATE {
+
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+        addobject(4)
+        addobject(5)
+        addobject(2)
+        clearflag(FLAG_TEMP_1E)
+    }
+    else {
+        removeobject(4)
+        removeobject(5)
+        removeobject(2)
+        setflag(FLAG_TEMP_1E)
+    }
+    return
+}
+
 
 //NPCS
 script LIGHTHOUSE_2F_NPC_1
