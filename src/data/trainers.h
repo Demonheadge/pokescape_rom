@@ -4711,7 +4711,7 @@ const struct Trainer gTrainers[] =
     },
 
 //LIGHTHOUSE 2F
-    [TRAINER_LIGHTHOUSE_2F_DOUBLE_BATTLE] =
+    [TRAINER_LIGHTHOUSE_2F_TRAINER_1] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GUARD,
@@ -4721,8 +4721,22 @@ const struct Trainer gTrainers[] =
         .items = {},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_DOUBLE_BATTLE),
-        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_DOUBLE_BATTLE},
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_1},
+    },
+
+    [TRAINER_LIGHTHOUSE_2F_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_guard_draynor,
+        .trainerName = _("Lin & Den"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_2},
     },
 
 //LIGHTHOUSE 3F
@@ -4904,7 +4918,7 @@ const struct Trainer gTrainers[] =
         .trainerClass = TRAINER_CLASS_WOODCUTTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
         .trainerPic = TRAINER_PIC_woodcutter,
-        .trainerName = _("F0restreeGal"),
+        .trainerName = _("F0rstrGal"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,

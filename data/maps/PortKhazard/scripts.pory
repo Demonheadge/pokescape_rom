@@ -5,7 +5,7 @@ mapscripts PortKhazard_MapScripts {
 //ITEMS
 script ITEM_PORTKHAZARD_ATTACK_LAMP
 {
-    finditem(ITEM_ATTACK_LAMP)
+    finditem(ITEM_LAMP_ATT)
     end
 }
 
