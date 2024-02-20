@@ -411,7 +411,6 @@ script NPC_ROUTE12_Seth_Groats{
 script NPC_DOG
 {
 	lock
-	faceplayer
     playmoncry(SPECIES_GROWLITHE, 0)
 	msgbox(format("WOOF!"))
     waitmoncry

@@ -340,7 +340,6 @@ NPC_ROUTE12_Seth_Groats::
 
 NPC_DOG::
 	lock
-	faceplayer
 	playmoncry SPECIES_GROWLITHE, 0
 	msgbox NPC_DOG_Text_0
 	waitmoncry
