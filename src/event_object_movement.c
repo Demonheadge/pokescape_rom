@@ -464,12 +464,12 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_MAGGIE 0x1133
 #define OBJ_EVENT_PAL_WENDY 0x1134
 #define OBJ_EVENT_PAL_HAM_JOHANHUS 0x1135
-#define OBJ_EVENT_PAL_HAM_SIGMUND_1 0x1136
+//#define OBJ_EVENT_PAL_HAM_SIGMUND_1 0x1136
 #define OBJ_EVENT_PAL_HAM_SIGMUND_2 0x1137
-#define OBJ_EVENT_PAL_HAM_PATTY 0x1138
-#define OBJ_EVENT_PAL_HAM_DEACON 0x1139
-#define OBJ_EVENT_PAL_HAM_GRUNT_M 0x113A
-#define OBJ_EVENT_PAL_HAM_GRUNT_F 0x113B
+//#define OBJ_EVENT_PAL_HAM_PATTY 0x1138
+//#define OBJ_EVENT_PAL_HAM_DEACON 0x1139
+//#define OBJ_EVENT_PAL_HAM_GRUNT_M 0x113A
+//#define OBJ_EVENT_PAL_HAM_GRUNT_F 0x113B
 #define OBJ_EVENT_PAL_GOBLIN_1 0x113C
 #define OBJ_EVENT_PAL_GOBLIN_2 0x113D
 #define OBJ_EVENT_PAL_GOBLIN_GENERALBENTNOZE 0x113E
@@ -841,12 +841,12 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = { //Was 0xF
     {gObjectEventPalette_Maggie, OBJ_EVENT_PAL_MAGGIE},
     {gObjectEventPalette_Wendy, OBJ_EVENT_PAL_WENDY},
     {gObjectEventPalette_HAM_Johanhus, OBJ_EVENT_PAL_HAM_JOHANHUS},
-    {gObjectEventPalette_HAM_Sigmund_1, OBJ_EVENT_PAL_HAM_SIGMUND_1},
+    //{gObjectEventPalette_HAM_Sigmund_1, OBJ_EVENT_PAL_HAM_SIGMUND_1},
     {gObjectEventPalette_HAM_Sigmund_2, OBJ_EVENT_PAL_HAM_SIGMUND_2},
-    {gObjectEventPalette_HAM_Patty, OBJ_EVENT_PAL_HAM_PATTY},
-    {gObjectEventPalette_HAM_Deacon, OBJ_EVENT_PAL_HAM_DEACON},
-    {gObjectEventPalette_HAM_Grunt_M, OBJ_EVENT_PAL_HAM_GRUNT_M},
-    {gObjectEventPalette_HAM_Grunt_F, OBJ_EVENT_PAL_HAM_GRUNT_F},
+    //{gObjectEventPalette_HAM_Patty, OBJ_EVENT_PAL_HAM_PATTY},
+    //{gObjectEventPalette_HAM_Deacon, OBJ_EVENT_PAL_HAM_DEACON},
+    //{gObjectEventPalette_HAM_Grunt_M, OBJ_EVENT_PAL_HAM_GRUNT_M},
+    //{gObjectEventPalette_HAM_Grunt_F, OBJ_EVENT_PAL_HAM_GRUNT_F},
     {gObjectEventPalette_Goblin_1, OBJ_EVENT_PAL_GOBLIN_1},
     {gObjectEventPalette_Goblin_2, OBJ_EVENT_PAL_GOBLIN_2},
     {gObjectEventPalette_Goblin_GeneralBentnoze, OBJ_EVENT_PAL_GOBLIN_GENERALBENTNOZE},
