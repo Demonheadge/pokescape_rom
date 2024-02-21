@@ -1,0 +1,44 @@
+mapscripts Melzars_Maze_1F_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION{
+		setvar(VAR_EVOLUTION_MAP_STATE, 0) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+
+		if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+			//call(MELZARS_1F_STATE)
+		}
+		else
+		{
+			//call(MELZARS_1F_STATE)
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+script HAM_ROUTE9_MELZARS_1{
+    lock
+	faceplayer
+	namebox("H.A.M GRUNT")
+    msgbox(format("This is the meeting point right?\pWhere is everyone?"))
+    hidenamebox
+	closemessage
+	release
+	end
+}
+
+script HAM_ROUTE9_MELZARS_2{
+    lock
+	faceplayer
+	namebox("H.A.M GRUNT")
+    msgbox(format("Where is she?\pEveryone has already gone in to look for the map."))
+    hidenamebox
+	closemessage
+	release
+	end
+}

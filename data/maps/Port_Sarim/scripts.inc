@@ -27,8 +27,9 @@ PORTSARIM_STATE::
 
 PORTSARIM_STATE_1:
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 100, PORTSARIM_STATE_6
-	case 101, PORTSARIM_STATE_7
+	case 150, PORTSARIM_STATE_6
+	case 151, PORTSARIM_STATE_7
+	case 100, PORTSARIM_STATE_8
 PORTSARIM_STATE_4:
 	removeobject 21
 	removeobject 22
@@ -77,6 +78,9 @@ PORTSARIM_STATE_7:
 	setobjectxyperm 35, 19, 18
 	addobject 27
 	clearflag FLAG_TEMP_1E
+	goto PORTSARIM_STATE_4
+
+PORTSARIM_STATE_8:
 	setobjectmovementtype 37, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 37, 6, 40
 	goto PORTSARIM_STATE_4
@@ -308,55 +312,36 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS::
 	lock
 	faceplayer
 	namebox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0
-	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 100, NPC_PORTSARIM_CAPTIAN_TOBIAS_3
-	case 101, NPC_PORTSARIM_CAPTIAN_TOBIAS_4
-	goto_if_unset FLAG_BADGE02_GET, NPC_PORTSARIM_CAPTIAN_TOBIAS_6
+	goto_if_unset FLAG_BADGE02_GET, NPC_PORTSARIM_CAPTIAN_TOBIAS_2
 	compare VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 0
-	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_9
-NPC_PORTSARIM_CAPTIAN_TOBIAS_8:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5, MSGBOX_YESNO
+	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_5
+NPC_PORTSARIM_CAPTIAN_TOBIAS_4:
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3, MSGBOX_YESNO
 	compare VAR_RESULT, 1
-	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_12
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_7
-NPC_PORTSARIM_CAPTIAN_TOBIAS_11:
+	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_8
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5
+NPC_PORTSARIM_CAPTIAN_TOBIAS_7:
 	waitmessage
 	hidenamebox
 	release
 	end
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_3:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_2:
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1
-	applymovement 11, Movement_FACERIGHT
-	waitmovement 0
-	closemessage
 	hidenamebox
 	release
 	end
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_4:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_5:
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2
-	closemessage
-	hidenamebox
-	release
-	end
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_4
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_6:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3
-	hidenamebox
-	release
-	end
-
-NPC_PORTSARIM_CAPTIAN_TOBIAS_9:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_8:
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4
-	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_8
-
-NPC_PORTSARIM_CAPTIAN_TOBIAS_12:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_6
 	waitmessage
 	hidenamebox
 	warp MAP_MUSA_POINT, 2, 0, 0
-	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_11
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_7
 
 
 NPC_PORTSARIM_CREWMAN_1::
@@ -413,27 +398,8 @@ NPC_PORTSARIM_LORRIS::
 NPC_PORTSARIM_NPC_1::
 	lock
 	faceplayer
-	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 100, NPC_PORTSARIM_NPC_1_3
-	case 101, NPC_PORTSARIM_NPC_1_4
-	msgbox NPC_PORTSARIM_NPC_1_Text_2
-	waitmessage
-	release
-	end
-
-NPC_PORTSARIM_NPC_1_3:
 	msgbox NPC_PORTSARIM_NPC_1_Text_0
-	applymovement 35, Movement_FACERIGHT
-	waitmovement 0
-	closemessage
-	hidenamebox
-	release
-	end
-
-NPC_PORTSARIM_NPC_1_4:
-	msgbox NPC_PORTSARIM_NPC_1_Text_1
-	closemessage
-	hidenamebox
+	waitmessage
 	release
 	end
 
@@ -443,7 +409,7 @@ NPC_PORTSARIM_MONK_1::
 	faceplayer
 	namebox NPC_PORTSARIM_MONK_1_Text_0
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 101, NPC_PORTSARIM_MONK_1_3
+	case 150, NPC_PORTSARIM_MONK_1_3
 	msgbox NPC_PORTSARIM_MONK_1_Text_2
 	waitmessage
 	hidenamebox
@@ -463,7 +429,7 @@ NPC_PORTSARIM_MONK_2::
 	faceplayer
 	namebox NPC_PORTSARIM_MONK_1_Text_0
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 101, NPC_PORTSARIM_MONK_2_3
+	case 150, NPC_PORTSARIM_MONK_2_3
 	msgbox NPC_PORTSARIM_MONK_2_Text_1
 	waitmessage
 	hidenamebox
@@ -508,27 +474,8 @@ NPC_PORTSARIM_NPC_4::
 NPC_PORTSARIM_NPC_5::
 	lock
 	faceplayer
-	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 100, NPC_PORTSARIM_NPC_5_3
-	case 101, NPC_PORTSARIM_NPC_5_4
-	msgbox NPC_PORTSARIM_NPC_5_Text_1
-	waitmessage
-	release
-	end
-
-NPC_PORTSARIM_NPC_5_3:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1
-	applymovement 34, Movement_FACERIGHT
-	waitmovement 0
-	closemessage
-	hidenamebox
-	release
-	end
-
-NPC_PORTSARIM_NPC_5_4:
 	msgbox NPC_PORTSARIM_NPC_5_Text_0
-	closemessage
-	hidenamebox
+	waitmessage
 	release
 	end
 
@@ -724,7 +671,7 @@ NPC_PORTSARIM_NPC_JAILGUARD::
 	lock
 	faceplayer
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 101, NPC_PORTSARIM_NPC_JAILGUARD_3
+	case 100, NPC_PORTSARIM_NPC_JAILGUARD_3
 	msgbox NPC_PORTSARIM_NPC_JAILGUARD_Text_1
 	waitmessage
 	release
@@ -833,15 +780,6 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0:
 	.string "Tobias$"
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1:
-	.string "There seems to be some sort of\n"
-	.string "commotion happening over there.$"
-
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
-	.string "This cannot be good.\p"
-	.string "They ran off towards the lighthouse in\n"
-	.string "a rush.$"
-
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
 	.string "Sorry but our boat has popped a leak.\p"
 	.string "It will be some time before it is\n"
 	.string "repaired.\p"
@@ -849,7 +787,7 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
 	.string "Falador or something while you are\l"
 	.string "waiting.$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
 	.string "Is your name PLAYER?\p"
 	.string "I have received word that you are\n"
 	.string "participating in the MvM\l"
@@ -860,15 +798,15 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
 	.string "travel for free!\p"
 	.string "So…{PAUSE 15}… Ahem!$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
 	.string "Hi, there would you like to board the\n"
 	.string "boat to Musa Point, Karamja?$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_6:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
 	.string "All aboard!\l"
 	.string "We set sail for Karamja!$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_7:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5:
 	.string "Suit yourself.$"
 
 NPC_PORTSARIM_CREWMAN_1_Text_0:
@@ -906,13 +844,6 @@ NPC_PORTSARIM_LORRIS_Text_1:
 	.string "different.$"
 
 NPC_PORTSARIM_NPC_1_Text_0:
-	.string "Something is happening over there.$"
-
-NPC_PORTSARIM_NPC_1_Text_1:
-	.string "They seem like trouble.\p"
-	.string "I hope the jail guards arrest them.$"
-
-NPC_PORTSARIM_NPC_1_Text_2:
 	.string "Sailing will never happen, get over it.$"
 
 NPC_PORTSARIM_MONK_1_Text_0:
@@ -948,10 +879,6 @@ NPC_PORTSARIM_NPC_4_Text_0:
 	.string "I hope you like them.$"
 
 NPC_PORTSARIM_NPC_5_Text_0:
-	.string "Those pink robed people seemed to have\n"
-	.string "rushed off towards the lighthouse.$"
-
-NPC_PORTSARIM_NPC_5_Text_1:
 	.string "I wish I had my own port, maybe a player\n"
 	.string "owned port?$"
 

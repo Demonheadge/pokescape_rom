@@ -12,7 +12,6 @@ script ROUTE_10_STATE{
     {
         switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
             case 100:
-            case 101:
                 addobject(11)
                 addobject(12)
                 clearflag(FLAG_TEMP_1F)

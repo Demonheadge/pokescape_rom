@@ -8,7 +8,7 @@ PortSarim_Lighthouse_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 
 LIGHTHOUSE_3F_STATE::
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 101
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 100
 	goto_if_eq LIGHTHOUSE_3F_STATE_2
 	removeobject 4
 	removeobject 3
@@ -126,7 +126,7 @@ LIGHTHOUSE_HAM_BABE::
 	removeobject 1
 	removeobject 5
 	setflag FLAG_TEMP_1F
-	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 102
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 105
 	call LIGHTHOUSE_3F_STATE
 	closemessage
 	hidenamebox

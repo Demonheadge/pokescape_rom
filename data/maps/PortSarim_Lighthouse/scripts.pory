@@ -18,7 +18,7 @@ script JAILMAP_STATE {
         setmetatile (6, 8, 701, 1) //B Corner
         special(DrawWholeMapView)
     }
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) {
         removeobject(4)
         removeobject(9)
         removeobject(10)

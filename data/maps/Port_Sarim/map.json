@@ -601,7 +601,7 @@
       "y": 18,
       "elevation": 0,
       "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
-      "var_value": "100",
+      "var_value": "150",
       "script": "PORTSARIM_HAM_EVENT_TRIGGER2"
     },
     {
@@ -610,7 +610,7 @@
       "y": 20,
       "elevation": 0,
       "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
-      "var_value": "100",
+      "var_value": "150",
       "script": "PORTSARIM_HAM_EVENT_TRIGGER1"
     }
   ],

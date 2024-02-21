@@ -19,7 +19,6 @@ ROUTE_10_STATE::
 ROUTE_10_STATE_1:
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
 	case 100, ROUTE_10_STATE_6
-	case 101, ROUTE_10_STATE_6
 	removeobject 11
 	removeobject 12
 	setflag FLAG_TEMP_1F

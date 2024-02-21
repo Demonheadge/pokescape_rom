@@ -6,7 +6,7 @@ mapscripts PortSarim_Lighthouse_3F_MapScripts {
 
 script LIGHTHOUSE_3F_STATE {
 
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) {
         addobject(4)
         addobject(3)
         addobject(6)
@@ -157,7 +157,7 @@ script LIGHTHOUSE_HAM_BABE
     removeobject(5)
     setflag(FLAG_TEMP_1F)
 
-    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 102)
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 105) //LIGHTHOUSE EVENT FINISHED
     call(LIGHTHOUSE_3F_STATE)
     
     closemessage

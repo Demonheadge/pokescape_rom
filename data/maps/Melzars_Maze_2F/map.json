@@ -87,7 +87,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_1F",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

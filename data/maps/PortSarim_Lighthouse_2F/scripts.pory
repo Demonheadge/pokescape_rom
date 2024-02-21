@@ -7,7 +7,7 @@ mapscripts PortSarim_Lighthouse_2F_MapScripts {
 
 script LIGHTHOUSE_2F_STATE {
 
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 101) {
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) {
         addobject(4)
         addobject(5)
         addobject(2)
