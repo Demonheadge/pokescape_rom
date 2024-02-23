@@ -102,6 +102,16 @@ NPC_DWARVENMINES_DWARF_3::
 	end
 
 
+NPC_DWARVENMINES_DROGO::
+	lock
+	faceplayer
+	namebox NPC_DWARVENMINES_DROGO_Text_0
+	msgbox NPC_DWARVENMINES_DROGO_Text_1
+	hidenamebox
+	release
+	end
+
+
 ITEM_DWARVENMINES_1::
 	finditem ITEM_ROCKCAKE
 	end
@@ -114,6 +124,11 @@ ITEM_DWARVENMINES_2::
 
 ITEM_DWARVENMINES_3::
 	finditem ITEM_EARTH_RUNE
+	end
+
+
+ITEM_DWARVENMINES_4::
+	finditem ITEM_TEA
 	end
 
 
@@ -489,6 +504,16 @@ NPC_DWARVENMINES_DWARF_3_Text_0:
 	.string "sorting through the ores only to find\l"
 	.string "some Scoprions nibbling on Earth\l"
 	.string "Runes.$"
+
+NPC_DWARVENMINES_DROGO_Text_0:
+	.string "Drogo$"
+
+NPC_DWARVENMINES_DROGO_Text_1:
+	.string "'Ello, welcome to my Mining shop, friend!\p"
+	.string "Is what I would say if I had any stock\n"
+	.string "left! Sorry, I'm still waiting on more\l"
+	.string "supplies arriving from Keldagrim.\p"
+	.string "Please come back again later!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_0:
 	.string "Sir Theodore$"

@@ -5925,7 +5925,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_TRAINER_1[
 
 //MELZARS MAZE 1F
 
-static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 11,
@@ -5939,7 +5939,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAIN
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 14,
@@ -5948,7 +5948,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAIN
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 12,
