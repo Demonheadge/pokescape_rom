@@ -15,10 +15,76 @@ mapscripts Melzars_Maze_1F_MapScripts{
 
 
 
+script MELZARS_1F_RATS_QUEST {
+    lock
+    faceplayer
+    if (flag(FLAG_MELZARS_1F_RATS) == FALSE) {
+        	msgbox(format("Eek!"))
+    		closemessage
+			setwildbattle(SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE)
+			dowildbattle
+			release
+			end
+        }
+        else {
+            msgbox(format("You've already got the key. You decide not to torture the poor rats any more."))
+            hidenamebox
+            closemessage
+        }
+    release
+    end   
+}
+
+//This needs some work with Demon to fix
+
+
+//Battles
+
+script BATTLE_MELZARS_1F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_1, format("I won't let you stop our plans!"),format("You won't get very far without a key.."))
+    namebox ("Derrick")
+    msgbox(format("Awwww, I had a key to meet up with everybody else but I tripped, dropped it, and the blasted rats stole it!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZARS_1F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_2, format("The skeleton shambles towards you.."),format("The skeleton goes back to resting."))
+    //namebox ("")
+    msgbox(format("The skeleton doesn't seem interested in you anymore."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZARS_1F_TRAINER_3
+{
+    trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_3, format("The skeleton lurches to life and attacks!"),format("The skeletons bones groan under the weight of defeat."))
+    //namebox ("")
+    msgbox(format("Rattle rattle."))
+	hidenamebox
+    release
+	end
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//Route 19 Grunts
 
 
 script HAM_ROUTE9_MELZARS_1{

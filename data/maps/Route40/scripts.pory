@@ -1,0 +1,10 @@
+mapscripts Route40_MapScripts {
+
+}
+
+//ITEMS
+script ITEM_ROUTE_40_BEER
+{
+    finditem(ITEM_STAT_BEER)
+    end
+}

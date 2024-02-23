@@ -445,7 +445,10 @@
 #define TRAINER_ROUTE_52_TRAINER_2 365
 #define TRAINER_ROUTE_52_TRAINER_3 366
 #define TRAINER_ROUTE_52_TRAINER_4 367
-
+//MELZARS MAZE 1F
+#define TRAINER_MELZARS_1F_TRAINER_1 368
+#define TRAINER_MELZARS_1F_TRAINER_2 369
+#define TRAINER_MELZARS_1F_TRAINER_3 370
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

@@ -187,9 +187,19 @@ script BATTLE_ROUTE18_TRAINER7 // GUARD
 }
 
 
+//ITEMS
+script ITEM_ROUTE_18_BEER
+{
+    finditem(ITEM_STAT_BEER)
+    end
+}
 
 
-
+script ITEM_ROUTE_18_CAKE
+{
+    finditem(ITEM_CAKE)
+    end
+}
 
 
 

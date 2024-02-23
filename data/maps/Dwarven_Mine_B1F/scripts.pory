@@ -111,6 +111,18 @@ script NPC_DWARVENMINES_DWARF_3
 	release
 	end
 }
+
+script NPC_DWARVENMINES_DROGO
+{
+	lock
+	faceplayer
+    namebox ("Drogo")
+	msgbox(format("'Ello, welcome to my Mining shop, friend!\pIs what I would say if I had any stock left! Sorry, I'm still waiting on more supplies arriving from Keldagrim.\pPlease come back again later!"))
+    hidenamebox
+	release
+	end
+}
+
 //ITEMS---------------------------------
 //HIDDEN ITEMS:
 script ITEM_DWARVENMINES_1
@@ -126,6 +138,11 @@ script ITEM_DWARVENMINES_2
 script ITEM_DWARVENMINES_3
 {
     finditem(ITEM_EARTH_RUNE)
+    end
+}
+script ITEM_DWARVENMINES_4
+{
+    finditem(ITEM_TEA)
     end
 }
 

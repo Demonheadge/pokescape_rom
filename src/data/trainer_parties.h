@@ -5923,6 +5923,43 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_TRAINER_1[
     }
 };
 
+//MELZARS MAZE 1F
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_PIG,
+    }
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_TRAINER_MELZARS_1F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
 
 /*
 //#GYM - KARAMJA - TokHaar

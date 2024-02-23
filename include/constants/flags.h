@@ -1256,10 +1256,11 @@
 #define FLAG_ITEM_PORTKHAZARD_ATTACK_LAMP                    0x48C
 #define FLAG_ITEM_PORTKHAZARD_PURPLE_SWEETS                  0x48D
 #define FLAG_ITEM_YANILLE_PRAYER_POTION                        0x48E
-#define FLAG_ITEM_MAGMA_HIDEOUT_3F_2R_PP_MAX                        0x48F
-#define FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE                       0x490
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
-#define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
+#define FLAG_ITEM_GRUMS_HOUSE                        0x48F
+#define FLAG_ITEM_ROUTE_40_BEER                       0x490
+#define FLAG_ITEM_DWARVENMINES_4                     0x491
+#define FLAG_ITEM_ROUTE_18_CAKE                  0x492
+#define FLAG_ITEM_ROUTE_18_BEER                                           0x49B
 
 #define FLAG_HIDDEN_GROTTO_1                                           0x493 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_2                                           0x494 // Unused Flag
@@ -1269,7 +1270,6 @@
 #define FLAG_HIDDEN_GROTTO_6                                           0x498 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_7                                           0x499 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_8                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag

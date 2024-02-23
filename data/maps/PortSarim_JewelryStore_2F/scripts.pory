@@ -1,0 +1,11 @@
+mapscripts PortSarim_JewelryStore_2F_MapScripts {
+
+}
+
+
+//ITEMS
+script ITEM_GRUMS_HOUSE
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
