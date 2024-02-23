@@ -1,31 +1,134 @@
 mapscripts Melzars_Maze_1F_MapScripts{
+
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_POKESCAPE_STORYMODE_PROGRESS, 105: MELZARS_1F_RAT
+    ]
+
 	MAP_SCRIPT_ON_TRANSITION{
 		setvar(VAR_EVOLUTION_MAP_STATE, 0) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
-
+	
 		if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
     	{
-			//call(MELZARS_1F_STATE)
-		}
-		else
-		{
-			//call(MELZARS_1F_STATE)
-		}
+            call(MELZARS_1F_STATE)
+    	}
+	
 	}
+
+	
+
+	
+
 }
 
+script MELZARS_1F_RAT {
+	playmoncry(SPECIES_GIANT_RAT_NORMAL_FORM, 0)
+	delay(60)
+	applymovement(11, movement_MELZAR_RAT_1)
+	waitmovement(0)
+	playmoncry(SPECIES_GIANT_RAT_NORMAL_FORM, 0)
+	msgbox(format("Squeek!"))
+	waitmoncry
+	closemessage
+	delay(30)
+	applymovement(11, movement_MELZAR_RAT_3)
+	waitmovement(0)
+	playfanfare (MUS_OBTAIN_ITEM)
+	removeobject(10)
+	setflag(FLAG_TEMP_1F)
+	msgbox(format("RAT obtained the DOOR KEY."))
+	waitfanfare
+	closemessage
+	delay(30)
+	applymovement(11, movement_MELZAR_RAT_2)
+	playmoncry(SPECIES_GIANT_RAT_NORMAL_FORM, 0)
+	waitmovement(0)
+	removeobject(11)
+	setflag(FLAG_TEMP_1E)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 106) //AFTER RAT STEAL KEY CUTSCENE
+	closemessage
+    return   
+}
+
+
+script MELZARS_1F_STATE {
+	switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)) {
+			case 105: //MELZARS MAZE QUEST START
+				setvar(VAR_TEMP_F, 5)
+			case 106: //AFTER RAT STEALS KEY
+			case 110: //OBTAINED 1F KEY
+				setvar(VAR_TEMP_F, 5)
+				removeobject(10)
+				setflag(FLAG_TEMP_1F)
+				removeobject(11)
+				setflag(FLAG_TEMP_1E)
+			} 
+    return   
+}
+
+movement movement_MELZAR_RAT_1
+{
+    walk_fast_down *2
+    walk_fast_left * 1
+	walk_fast_down *2
+	walk_fast_right *2
+	walk_fast_up *2
+	walk_fast_left *2
+	walk_fast_down *2
+	walk_fast_right *1
+    face_player
+} 
+movement movement_MELZAR_RAT_2
+{
+    face_player
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	walk_faster_up * 5
+} 
+movement movement_MELZAR_RAT_3
+{
+    face_up
+} 
 
 
 script MELZARS_1F_RATS_QUEST {
     lock
     faceplayer
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) {
+	namebox ("RAT")
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106) { //AFTER RAT STEAL KEY CUTSCENE
+			playmoncry(SPECIES_GIANT_RAT_NORMAL_FORM, 0)
         	msgbox(format("Squeek!"))
+			waitmoncry
+			hidenamebox
     		closemessage
-			setwildbattle(SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE)
-			dowildbattle
-			setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110) //1F KEY OBTAINED
-			release
-			end
+			random(VAR_TEMP_F)
+			switch (var(VAR_RESULT)) {
+			case 0: 
+				setwildbattle(SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE)
+				dowildbattle
+				removeobject(VAR_LAST_TALKED)
+				setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110) //1F KEY OBTAINED
+				msgbox(format("The Rat dropped the DOOR KEY!"))
+				playfanfare (MUS_OBTAIN_ITEM)
+				msgbox(format("{PLAYER} obtained the DOOR KEY."))
+				waitfanfare
+				closemessage
+				release
+				end
+			case 1: 
+			case 2: 
+			case 3: 
+			case 4: 
+				setwildbattle(SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE)
+				dowildbattle
+				removeobject(VAR_LAST_TALKED)
+				msgbox(format("Seems like this Rat did not have the key."))
+				closemessage
+				subvar(VAR_TEMP_F, 1)
+				release
+				end
+			} 
         }
         else {
             msgbox(format("You've already got the key.\pYou decide not to torture the poor rats any more."))
@@ -39,12 +142,45 @@ script MELZARS_1F_RATS_QUEST {
 //This needs some work with Demon to fix
 
 
+script MELZARS_LOCKED_DOOR {
+
+//	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS == 110)) {
+//		msgbox(format("The Key opened the door."))
+//		setmetatile (8, 8, 828, 0)
+//	} 
+//	else {
+//		msgbox(format("This door is locked."))
+//	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Battles
 
 script BATTLE_MELZARS_1F_TRAINER_1
 {
     trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_1, format("I won't let you stop our plans!"),format("You won't get very far without a key.."))
-    namebox ("Derrick")
+    namebox ("H.A.M GRUNT")
     msgbox(format("Awwww, I had a key to meet up with everybody else but I tripped, dropped it, and the blasted rats stole it!"))
 	hidenamebox
     release
