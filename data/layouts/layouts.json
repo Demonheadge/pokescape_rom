@@ -8004,9 +8004,9 @@
     {
       "id": "LAYOUT_MELZARS_MAZE_3F",
       "name": "Melzars_Maze_3F_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Melzars_Maze_3F/border.bin",
       "blockdata_filepath": "data/layouts/Melzars_Maze_3F/map.bin"
