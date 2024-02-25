@@ -17,43 +17,48 @@
       "map": "MAP_MELZARS_MAZE_1F",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_MELZARS_MAZE_3F",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
-      "x": 17,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
-      "x": 28,
-      "y": 20,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
-      "x": 26,
+      "x": 14,
       "y": 9,
       "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -61,21 +66,47 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
-      "x": 29,
+      "x": 26,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 25,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
+      "x": 8,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
-      "x": 8,
-      "y": 4,
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 21,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -86,35 +117,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
-      "x": 13,
-      "y": 26,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 7,
-      "y": 29,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 34,
-      "y": 22,
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
+      "x": 3,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -127,136 +132,119 @@
   ],
   "warp_events": [
     {
-      "x": 34,
-      "y": 3,
+      "x": 26,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "3"
     },
     {
-      "x": 3,
-      "y": 4,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "1"
-    },
-    {
       "x": 15,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "2"
     },
     {
-      "x": 13,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 18,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 25,
-      "y": 21,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "7"
-    },
-    {
-      "x": 32,
-      "y": 23,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "9"
-    },
-    {
       "x": 3,
-      "y": 28,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 11,
-      "y": 20,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "5"
-    },
-    {
-      "x": 18,
-      "y": 29,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "7"
-    },
-    {
-      "x": 23,
-      "y": 29,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_3F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 1,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "6"
-    },
-    {
-      "x": 30,
-      "y": 29,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "8"
-    },
-    {
-      "x": 9,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_2F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 7,
-      "y": 25,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_2F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 14,
-      "y": 22,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 34,
-      "y": 30,
+      "x": 2,
+      "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_2F",
+      "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 34,
-      "y": 7,
+      "x": 25,
+      "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_2F",
+      "dest_map": "MAP_MELZARS_MAZE_3F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_3F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 17,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_3F",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_3F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_3F",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 17,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 13,
+      "y": 24,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

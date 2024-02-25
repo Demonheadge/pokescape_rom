@@ -17,11 +17,16 @@
       "map": "MAP_MELZARS_MAZE_2F",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_MELZARS_MAZE_B1F",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
       "x": 15,
       "y": 4,
       "elevation": 0,
@@ -65,8 +70,8 @@
       "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 4,
-      "movement_range_y": 4,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -87,10 +92,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
-      "x": 3,
-      "y": 21,
+      "x": 5,
+      "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -177,14 +182,14 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
     },
     {
       "x": 15,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 25,
@@ -205,27 +210,6 @@
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_B1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 3,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 13,
-      "y": 22,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 19,
-      "y": 22,
-      "elevation": 0,
-      "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "0"
     }
   ],

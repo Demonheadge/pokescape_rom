@@ -11,6 +11,10 @@ mapscripts Melzars_Maze_1F_MapScripts{
     	{
             call(MELZARS_1F_STATE)
     	}
+		elif (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if openworld
+    	{
+            call(MELZARS_1F_STATE)
+    	}
 	
 	}
 
@@ -51,17 +55,19 @@ script MELZARS_1F_RAT {
 
 
 script MELZARS_1F_STATE {
-	switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)) {
-			case 105: //MELZARS MAZE QUEST START
-				setvar(VAR_TEMP_F, 5)
-			case 106: //AFTER RAT STEALS KEY
-			case 110: //OBTAINED 1F KEY
-				setvar(VAR_TEMP_F, 5)
-				removeobject(10)
-				setflag(FLAG_TEMP_1F)
-				removeobject(11)
-				setflag(FLAG_TEMP_1E)
-			} 
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) {
+		setvar(VAR_TEMP_F, 5)
+		addobject(10)
+		clearflag(FLAG_TEMP_1F)
+		addobject(11)
+		clearflag(FLAG_TEMP_1E)
+	} 
+	else {
+		removeobject(10)
+		setflag(FLAG_TEMP_1F)
+		removeobject(11)
+		setflag(FLAG_TEMP_1E)
+	}
     return   
 }
 
@@ -80,10 +86,7 @@ movement movement_MELZAR_RAT_1
 movement movement_MELZAR_RAT_2
 {
     face_player
-	delay_16
-	delay_16
-	delay_16
-	delay_16
+	delay_16 *4
 	walk_faster_up * 5
 } 
 movement movement_MELZAR_RAT_3

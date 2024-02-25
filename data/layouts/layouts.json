@@ -7994,8 +7994,8 @@
     {
       "id": "LAYOUT_MELZARS_MAZE_2F",
       "name": "Melzars_Maze_2F_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 28,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Melzars_Maze_2F/border.bin",
@@ -8004,8 +8004,8 @@
     {
       "id": "LAYOUT_MELZARS_MAZE_3F",
       "name": "Melzars_Maze_3F_Layout",
-      "width": 35,
-      "height": 35,
+      "width": 28,
+      "height": 28,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Melzars_Maze_3F/border.bin",
@@ -8017,7 +8017,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_DraynorManor",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Melzars_Maze_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Melzars_Maze_B1F/map.bin"
     },

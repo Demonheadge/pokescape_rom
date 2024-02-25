@@ -48,23 +48,21 @@ MELZARS_1F_RAT::
 
 
 MELZARS_1F_STATE::
+	removeobject 10
+	setflag FLAG_TEMP_1F
+	removeobject 11
+	setflag FLAG_TEMP_1E
 	switch VAR_POKESCAPE_STORYMODE_PROGRESS
 	case 105, MELZARS_1F_STATE_3
-	case 106, MELZARS_1F_STATE_4
-	case 110, MELZARS_1F_STATE_4
 MELZARS_1F_STATE_1:
 	return
 
 MELZARS_1F_STATE_3:
 	setvar VAR_TEMP_F, 5
-	goto MELZARS_1F_STATE_1
-
-MELZARS_1F_STATE_4:
-	setvar VAR_TEMP_F, 5
-	removeobject 10
-	setflag FLAG_TEMP_1F
-	removeobject 11
-	setflag FLAG_TEMP_1E
+	addobject 10
+	clearflag FLAG_TEMP_1F
+	addobject 11
+	clearflag FLAG_TEMP_1E
 	goto MELZARS_1F_STATE_1
 
 
