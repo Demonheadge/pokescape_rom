@@ -1,0 +1,72 @@
+mapscripts Melzars_Maze_2F_MapScripts{
+
+}
+
+//Battles
+
+//Necromancer
+script BATTLE_MELZAR_3F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_1, format("I am Melzar's strongest apprentice. I won't let you disturb his important work."),format("Be careful, Melzar is even tougher than I am."))
+    namebox ("Ichethik")
+    msgbox(format("Melzar had a wife who died during Elvarg's attack. I think he learned necromancy to try and bring her back.\pMe? I just want to control a legion of the dead."))
+	hidenamebox
+    release
+	end
+}
+
+//Skeleton
+script BATTLE_MELZAR_3F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_2, format("The skeletons eyes glow red as it charges at you menacingly!"),format("The dark aura around the skeleton fades as it is defeated."))
+    //namebox ("")
+    msgbox(format("The skeletons eyes have returned to normal, perhaps something sinister nearby was controlling it earlier?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_3F_TRAINER_3
+{
+    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_3, format("Woah, stop right there, you're not a H.A.M member!"),format("Hey, you're strong! Would you like to join us?!"))
+    namebox ("H.A.M Grunt")
+    msgbox(format("Where did everyone else go? I was told to go to the basement but the door was locked and I can't find another way in.."))
+	hidenamebox
+    release
+	end
+}
+
+
+//NPCS
+script MELZAR_3F_SKELETON_1
+{
+    faceplayer
+    namebox ("Skeleton")
+    msgbox(format("We used to live on Crandor before Elvarg drove us out.\pWe settled here, but Elvarg followed and destroyed our camp, killing us in the process.\pMelzar cast some horrific dark magic on us and now we're just stuck here.. forever."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script MELZAR_3F_SKELETON_2
+{
+    faceplayer
+    namebox ("Skeleton")
+    msgbox(format("Melzar? He's hidden himself in the basement.\pA lot of the ladders to get down there have broken now though, and left holes in the floor where they used to be.\pBe careful or you might fall through!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script MELZAR_3F_NOOB
+{
+    faceplayer
+    namebox ("N00b234")
+    msgbox(format("I bought this house from an estate agent.\pI knew it would need a lot of renovation, but it's full of monsters!\pI want a refund!\pWait... What do you mean you get to those houses through a portal, are you mad?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}

@@ -30,7 +30,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MELZAR_3F_SKELETON_2",
       "flag": "0"
     },
     {
@@ -43,11 +43,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MELZAR_3F_SKELETON_1",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RUNE_ARMOUR",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 18,
       "y": 25,
       "elevation": 0,
@@ -56,7 +56,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MELZAR_3F_NOOB",
       "flag": "0"
     },
     {
@@ -67,9 +67,9 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_MELZAR_3F_TRAINER_2",
       "flag": "0"
     },
     {
@@ -80,9 +80,9 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BATTLE_MELZAR_3F_TRAINER_3",
       "flag": "0"
     },
     {
@@ -106,9 +106,9 @@
       "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_MELZAR_3F_TRAINER_1",
       "flag": "0"
     }
   ],
@@ -158,7 +158,7 @@
       "x": 6,
       "y": 23,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_BREAD",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -166,7 +166,7 @@
       "x": 12,
       "y": 3,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_LAMP_ATT",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -174,7 +174,7 @@
       "x": 11,
       "y": 15,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_TEA",
       "flag": "FLAG_TEMP_1"
     }
   ]

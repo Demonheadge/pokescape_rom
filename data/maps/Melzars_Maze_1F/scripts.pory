@@ -142,7 +142,7 @@ script MELZARS_1F_RATS_QUEST {
     end   
 }
 
-//This needs some work with Demon to fix
+
 
 
 script MELZARS_LOCKED_DOOR {
@@ -192,9 +192,9 @@ script BATTLE_MELZARS_1F_TRAINER_1
 
 script BATTLE_MELZARS_1F_TRAINER_2
 {
-    trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_2, format("The skeleton shambles towards you.."),format("The skeleton goes back to resting."))
-    //namebox ("")
-    msgbox(format("The skeleton doesn't seem interested in you anymore."))
+    trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_2, format("Melzar has taught us the dark arts of necromancy. There is no way you can win."),format("I guess I should go back to studying.."))
+    namebox ("Nuxor")
+    msgbox(format("They say Melzar built this place on top of the ruins of a camp of Crandorian refugees.\pI wonder what happened to them all?"))
 	hidenamebox
     release
 	end
@@ -212,9 +212,14 @@ script BATTLE_MELZARS_1F_TRAINER_3
 
 
 
+//ITEMS
+script ITEM_MELZARS_1F_ROPE
+{
+    finditem(ITEM_ESCAPE_ROPE)
+    end
+}
 
-
-
+//Need a PokeScape equivalent? Cannot currently see one in the code
 
 
 

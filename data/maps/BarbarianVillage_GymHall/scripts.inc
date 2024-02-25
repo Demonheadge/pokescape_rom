@@ -693,7 +693,7 @@ NPC_BARBGYM_BARBARIAN_2_Text_13:
 NPC_BARBGYM_BARBARIAN_2_Text_14:
 	.string "The time has come for the third and\n"
 	.string "final battle before facing our\l"
-	.string "Cheiftan.\p"
+	.string "Chieftain.\p"
 	.string "Your challenger is no other than…{PAUSE 15}…{PAUSE 15} ME!$"
 
 NPC_BARBGYM_BARBARIAN_2_Text_15:
@@ -721,7 +721,7 @@ NPC_BARBGYM_BARBARIAN_2_Text_20:
 	.string "Gym Badge is the one and only one of\l"
 	.string "the strongest in all of the MvM\l"
 	.string "Championships!\p"
-	.string "Give it up for our Cheifian… {PAUSE 15}GUNTHOR!!!$"
+	.string "Give it up for our Chieftain… {PAUSE 15}GUNTHOR!!!$"
 
 NPC_BARBGYM_BARBARIAN_2_Text_21:
 	.string "GGUUUUNNNTTHHHOOOORRR!!!!$"

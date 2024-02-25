@@ -1,0 +1,82 @@
+mapscripts Melzars_Maze_2F_MapScripts{
+
+}
+
+
+//Battles
+
+script BATTLE_MELZAR_2F_TRAINER_1
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_1, format("A skeleton appears out of nowhere."),format("The skeleton looks defeated."))
+    //namebox ("")
+    msgbox(format("The skeleton doesn't seem very talkative."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_2F_TRAINER_2
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_2, format("You hear a faint whisper in the air as the skeleton attacks. Did it say 'help'?"),format("The wind whispers again. It sounded like 'thank you'."))
+    //namebox ("")
+    msgbox(format("The skeleton almost looks relieved it no longer has to fight."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_2F_TRAINER_3
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_3, format("You'll never get the map piece before we do."),format("I should have kept up with the others.."))
+    namebox ("H.A.M Grunt")
+    msgbox(format("The other grunts kept saying 'knowledge is key' but how are books meant to help me open these doors? I need an actual key!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_2F_TRAINER_4
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_4, format("The people at Port Sarim told me something weird was happening here, so I came to check it out.\pI can't let you beat me to the end, I want the reward for myself!"),format("Maybe we can go halves?"))
+    namebox ("QuestKing")
+    msgbox(format("If I'd been less greedy, maybe I'd have paid more attention to where I was going and not gotten myself lost in here."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_2F_TRAINER_5
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_5, format("We are so close to the basement now. I can't let you foil our plan!"),format("I must have gotten injured when the ladder broke and hurt my ankle or something and that's why I lost.."))
+    namebox ("H.A.M Grunt")
+    msgbox(format("The ladder I used to climb down here broke behind me, and the only way left to go is down that hole but..\pI can't do it! I'm too scared to jump!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_MELZAR_2F_TRAINER_6
+{
+    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_6, format("Behold, my undead servants!"),format("Ugh, these zombie corpses just aren't strong enough.."))
+    namebox ("Astelazar")
+    msgbox(format("Melzar's down in the basement working on his experiments.\pI want to learn more, but I have no idea how to even get down there as there are no ladders!"))
+	hidenamebox
+    release
+	end
+}
+
+
+
+//ITEMS
+script ITEM_MELZARS_2F_RUNE
+{
+    finditem(ITEM_BODY_RUNE)
+    end
+}
+
+
+script ITEM_MELZARS_2F_BREAD
+{
+    finditem(ITEM_BREAD)
+    end
+}

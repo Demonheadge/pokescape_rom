@@ -1,5 +1,5 @@
-const ALKAHRID_GUARD_1_ID = 29
-const ALKAHRID_GUARD_2_ID = 30
+const ALKHARID_GUARD_1_ID = 29
+const ALKHARID_GUARD_2_ID = 30
 
 mapscripts Route12_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION{

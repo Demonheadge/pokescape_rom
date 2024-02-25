@@ -1,5 +1,5 @@
-const ALKAHRID_GUARD_1_ID = 29
-const ALKAHRID_GUARD_2_ID = 30
+const ALKHARID_GUARD_1_ID = 29
+const ALKHARID_GUARD_2_ID = 30
 const OBJ_EVENT_ID_PENGUIN_DND = 14
 const OBJ_EVENT_ID_PENGUIN = 13
 
@@ -44,7 +44,7 @@ script BLOCK_Alkharid_Guards
 	faceplayer
 	if (!flag(FLAG_BADGE04_GET))
         {
-			goto(BLOCK_ALKHAIRD_GATE)
+			goto(BLOCK_ALKHARID_GATE)
         }
 	msgbox(format("That is the Al-Kharid Badge!\pYou may pass."))
 	closemessage
@@ -52,41 +52,41 @@ script BLOCK_Alkharid_Guards
 	end
 }
 
-script TRIGGER_ALKHAIRD_GATE
+script TRIGGER_ALKHARID_GATE
 {
 	if (!flag(FLAG_BADGE04_GET))
         {
-			goto(BLOCK_ALKHAIRD_GATE)
+			goto(BLOCK_ALKHARID_GATE)
         }
 	release
 	end
 }
 
-script BLOCK_ALKHAIRD_GATE
+script BLOCK_ALKHARID_GATE
 {
 	lockall
-	applymovement (ALKAHRID_GUARD_1_ID,movement_BLOCK_ALKHAIRD_GATE_1)
-	applymovement (ALKAHRID_GUARD_2_ID,movement_BLOCK_ALKHAIRD_GATE_2)
+	applymovement (ALKHARID_GUARD_1_ID,movement_BLOCK_ALKHARID_GATE_1)
+	applymovement (ALKHARID_GUARD_2_ID,movement_BLOCK_ALKHARID_GATE_2)
 	waitmovement (0)
-	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
+	msgbox(format("Halt!\pOnly those whom possess the Al-Kharid Badge may enter!"))
 	closemessage
-	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHAIRD_GATE_3)
-	applymovement (ALKAHRID_GUARD_1_ID,Movement_FACELEFT)
-	applymovement (ALKAHRID_GUARD_2_ID,Movement_FACELEFT)
+	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHARID_GATE_3)
+	applymovement (ALKHARID_GUARD_1_ID,Movement_FACELEFT)
+	applymovement (ALKHARID_GUARD_2_ID,Movement_FACELEFT)
 	waitmovement (0)
 	release
 	end
 }
 
-movement movement_BLOCK_ALKHAIRD_GATE_1
+movement movement_BLOCK_ALKHARID_GATE_1
 {
 	face_down
 }
-movement movement_BLOCK_ALKHAIRD_GATE_2
+movement movement_BLOCK_ALKHARID_GATE_2
 {
 	face_up
 }
-movement movement_BLOCK_ALKHAIRD_GATE_3
+movement movement_BLOCK_ALKHARID_GATE_3
 {
 	walk_left
 }

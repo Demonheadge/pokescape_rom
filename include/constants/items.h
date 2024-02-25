@@ -213,7 +213,7 @@
 //pokescape berries
 //all berries currently just coded as cure paralysis. should probably code properly at some point.
 #define ITEM_APPLE 193
-#define ITEM_BANANNA 194
+#define ITEM_BANANA 194
 #define ITEM_CABBAGE_FARMING 195
 #define ITEM_CADAVABERRY 196
 #define ITEM_COCONUT 197

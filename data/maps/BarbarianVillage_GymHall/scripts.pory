@@ -354,7 +354,7 @@ script NPC_BARBGYM_BARBARIAN_2
     applymovement(OBJ_EVENT_ID_HAAKON, BARBARIAN_GYM_MOVEMENT_7)
     waitmovement(0)
     namebox("Haakon")
-    msgbox(format("The time has come for the third and final battle before facing our Cheiftan.\pYour challenger is no other than…{PAUSE 15}…{PAUSE 15} ME!"))
+    msgbox(format("The time has come for the third and final battle before facing our Chieftain.\pYour challenger is no other than…{PAUSE 15}…{PAUSE 15} ME!"))
     hidenamebox
     closemessage
     playse (SE_M_ENCORE2)
@@ -395,7 +395,7 @@ script NPC_BARBGYM_BARBARIAN_2
     applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACEDOWN)
     waitmovement(0)
     namebox("Haakon")
-    msgbox(format("They have done it my brother and sisters!\pThey have bested all of us.\pAll that remains between them and their Gym Badge is the one and only one of the strongest in all of the MvM Championships!\pGive it up for our Cheifian… {PAUSE 15}GUNTHOR!!!"))
+    msgbox(format("They have done it my brother and sisters!\pThey have bested all of us.\pAll that remains between them and their Gym Badge is the one and only one of the strongest in all of the MvM Championships!\pGive it up for our Chieftain… {PAUSE 15}GUNTHOR!!!"))
     hidenamebox
     closemessage
     playse (SE_M_ENCORE2)

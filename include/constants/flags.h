@@ -1261,6 +1261,10 @@
 #define FLAG_ITEM_DWARVENMINES_4                     0x491
 #define FLAG_ITEM_ROUTE_18_CAKE                  0x492
 #define FLAG_ITEM_ROUTE_18_BEER                                           0x49B
+#define FLAG_ITEM_MELZARS_1F_ROPE                                           0x49C // Unused Flag
+#define FLAG_ITEM_MELZARS_2F_RUNE                                           0x49D // Unused Flag
+#define FLAG_ITEM_MELZARS_2F_BREAD                                           0x49E // Unused Flag
+
 
 #define FLAG_HIDDEN_GROTTO_1                                           0x493 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_2                                           0x494 // Unused Flag
@@ -1270,9 +1274,6 @@
 #define FLAG_HIDDEN_GROTTO_6                                           0x498 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_7                                           0x499 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_8                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag

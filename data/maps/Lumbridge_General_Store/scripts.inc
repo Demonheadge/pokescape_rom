@@ -283,7 +283,7 @@ STORE_Helmet:
 STORE_FarmingSupplies:
     .2byte ITEM_CABBAGE_FARMING
     .2byte ITEM_APPLE
-    .2byte ITEM_BANANNA
+    .2byte ITEM_BANANA
 	.2byte ITEM_CADAVABERRY
     .2byte ITEM_COCONUT
     .2byte ITEM_CORN

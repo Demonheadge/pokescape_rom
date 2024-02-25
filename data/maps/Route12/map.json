@@ -458,7 +458,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "TRIGGER_ALKHAIRD_GATE"
+      "script": "TRIGGER_ALKHARID_GATE"
     }
   ],
   "bg_events": [

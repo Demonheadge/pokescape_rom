@@ -8017,7 +8017,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns2",
+      "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Melzars_Maze_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Melzars_Maze_B1F/map.bin"
     },

@@ -7284,10 +7284,10 @@ const struct Item gItems[] =
         .battleUsage = ITEM_B_USE_MEDICINE,
         .battleUseFunc = ItemUseInBattle_Medicine,
     },
-    [ITEM_BANANNA] =
+    [ITEM_BANANA] =
     {
-        .name = _("BANANNA"),
-        .itemId = ITEM_BANANNA,
+        .name = _("BANANA"),
+        .itemId = ITEM_BANANA,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_PAR,
         .description = sBananaDesc,

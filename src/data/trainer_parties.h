@@ -5942,8 +5942,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_1[] =
 static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_HAND_SKELETAL_FORM,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
     }
 };
 
@@ -5960,6 +5965,156 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_3[] =
     .species = SPECIES_HAND_SKELETAL_FORM,
     }
 };
+
+//MELZARS MAZE 2F
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_GIANT_RAT_CRYPT_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_SPIDER_CRYPT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_PIG,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_RAVEN_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_GOAT_BILLY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_TROUT_NORMAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PIG,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PIG,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_2F_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_MONKEY_ZOMBIE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    }
+};
+
+//MELZARS MAZE 3F
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_PIGLET,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PIG,
+    }
+};
+
+
+
+
 
 /*
 //#GYM - KARAMJA - TokHaar
