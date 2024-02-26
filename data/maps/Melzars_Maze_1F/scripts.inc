@@ -7,9 +7,15 @@ Melzars_Maze_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 0
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq Melzars_Maze_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq Melzars_Maze_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	return
 
 Melzars_Maze_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call MELZARS_1F_STATE
+	return
+
+Melzars_Maze_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 	call MELZARS_1F_STATE
 	return
 
@@ -48,21 +54,27 @@ MELZARS_1F_RAT::
 
 
 MELZARS_1F_STATE::
+	setvar VAR_TEMP_F, 5
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq MELZARS_1F_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
+	goto_if_eq MELZARS_1F_STATE_2
 	removeobject 10
 	setflag FLAG_TEMP_1F
 	removeobject 11
 	setflag FLAG_TEMP_1E
-	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 105, MELZARS_1F_STATE_3
+	removeobject 9
+	setflag FLAG_TEMP_1D
 MELZARS_1F_STATE_1:
 	return
 
-MELZARS_1F_STATE_3:
-	setvar VAR_TEMP_F, 5
+MELZARS_1F_STATE_2:
 	addobject 10
 	clearflag FLAG_TEMP_1F
 	addobject 11
 	clearflag FLAG_TEMP_1E
+	addobject 9
+	clearflag FLAG_TEMP_1D
 	goto MELZARS_1F_STATE_1
 
 
@@ -105,7 +117,7 @@ MELZARS_1F_RATS_QUEST::
 	lock
 	faceplayer
 	namebox MELZARS_1F_RATS_QUEST_Text_0
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 0
 	goto_if_eq MELZARS_1F_RATS_QUEST_2
 	msgbox MELZARS_1F_RATS_QUEST_Text_4
 	hidenamebox
@@ -133,7 +145,7 @@ MELZARS_1F_RATS_QUEST_6:
 	setwildbattle SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE
 	dowildbattle
 	removeobject VAR_LAST_TALKED
-	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 110
+	setvar VAR_POKESCAPE_MELZARS_MAZE_DOORS, 1
 	msgbox MELZARS_1F_RATS_QUEST_Text_1
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox MELZARS_1F_RATS_QUEST_Text_2
@@ -153,8 +165,76 @@ MELZARS_1F_RATS_QUEST_7:
 	end
 
 
-MELZARS_LOCKED_DOOR::
-	return
+MELZARS_LOCKED_DOOR_1F_1::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 1
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_1_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 2
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_1_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_1_2
+	msgbox MELZARS_LOCKED_DOOR_1F_1_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_1F_1_1:
+	end
+
+MELZARS_LOCKED_DOOR_1F_1_2:
+	setmetatile 8, 6, 849, 0
+	setmetatile 8, 8, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_1F_1_1
+
+
+MELZARS_LOCKED_DOOR_1F_2::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 1
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_2_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 2
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_2_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_2_2
+	msgbox MELZARS_LOCKED_DOOR_1F_1_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_1F_2_1:
+	end
+
+MELZARS_LOCKED_DOOR_1F_2_2:
+	setmetatile 14, 6, 849, 0
+	setmetatile 14, 8, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_1F_2_1
+
+
+MELZARS_LOCKED_DOOR_1F_3::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 1
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_3_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 2
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_3_2
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_3_2
+	msgbox MELZARS_LOCKED_DOOR_1F_1_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_1F_3_1:
+	end
+
+MELZARS_LOCKED_DOOR_1F_3_2:
+	setmetatile 20, 6, 849, 0
+	setmetatile 20, 8, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_1F_3_1
+
+
+MELZARS_LOCKED_DOOR_1F_4::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_1F_4_2
+	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_1F_4_1:
+	end
+
+MELZARS_LOCKED_DOOR_1F_4_2:
+	setmetatile 19, 19, 849, 0
+	setmetatile 19, 21, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_1F_4_1
 
 
 BATTLE_MELZARS_1F_TRAINER_1::
@@ -168,7 +248,8 @@ BATTLE_MELZARS_1F_TRAINER_1::
 
 BATTLE_MELZARS_1F_TRAINER_2::
 	trainerbattle_single TRAINER_MELZARS_1F_TRAINER_2, BATTLE_MELZARS_1F_TRAINER_2_Text_0, BATTLE_MELZARS_1F_TRAINER_2_Text_1
-	msgbox BATTLE_MELZARS_1F_TRAINER_2_Text_2
+	namebox BATTLE_MELZARS_1F_TRAINER_2_Text_2
+	msgbox BATTLE_MELZARS_1F_TRAINER_2_Text_3
 	hidenamebox
 	release
 	end
@@ -179,6 +260,11 @@ BATTLE_MELZARS_1F_TRAINER_3::
 	msgbox BATTLE_MELZARS_1F_TRAINER_3_Text_2
 	hidenamebox
 	release
+	end
+
+
+ITEM_MELZARS_1F_ROPE::
+	finditem ITEM_ESCAPE_ROPE
 	end
 
 
@@ -208,16 +294,16 @@ MELZARS_1F_RAT_Text_0:
 	.string "Squeek!$"
 
 MELZARS_1F_RAT_Text_1:
-	.string "RAT obtained the DOOR KEY.$"
+	.string "RAT obtained the RED KEY.$"
 
 MELZARS_1F_RATS_QUEST_Text_0:
 	.string "RAT$"
 
 MELZARS_1F_RATS_QUEST_Text_1:
-	.string "The Rat dropped the DOOR KEY!$"
+	.string "The Rat dropped the RED KEY!$"
 
 MELZARS_1F_RATS_QUEST_Text_2:
-	.string "{PLAYER} obtained the DOOR KEY.$"
+	.string "{PLAYER} obtained the RED KEY.$"
 
 MELZARS_1F_RATS_QUEST_Text_3:
 	.string "Seems like this Rat did not have the\n"
@@ -227,6 +313,13 @@ MELZARS_1F_RATS_QUEST_Text_4:
 	.string "You've already got the key.\p"
 	.string "You decide not to torture the poor rats\n"
 	.string "any more.$"
+
+MELZARS_LOCKED_DOOR_1F_1_Text_0:
+	.string "You need a red key to unlock this door.$"
+
+MELZARS_LOCKED_DOOR_1F_4_Text_0:
+	.string "You need a green key to unlock this\n"
+	.string "door.$"
 
 BATTLE_MELZARS_1F_TRAINER_1_Text_0:
 	.string "I won't let you stop our plans!$"
@@ -243,14 +336,21 @@ BATTLE_MELZARS_1F_TRAINER_1_Text_3:
 	.string "it, and the blasted rats stole it!$"
 
 BATTLE_MELZARS_1F_TRAINER_2_Text_0:
-	.string "The skeleton shambles towards you..$"
+	.string "Melzar has taught us the dark arts of\n"
+	.string "necromancy. There is no way you can\l"
+	.string "win.$"
 
 BATTLE_MELZARS_1F_TRAINER_2_Text_1:
-	.string "The skeleton goes back to resting.$"
+	.string "I guess I should go back to studying..$"
 
 BATTLE_MELZARS_1F_TRAINER_2_Text_2:
-	.string "The skeleton doesn't seem interested\n"
-	.string "in you anymore.$"
+	.string "Nuxor$"
+
+BATTLE_MELZARS_1F_TRAINER_2_Text_3:
+	.string "They say Melzar built this place on top\n"
+	.string "of the ruins of a camp of Crandorian\l"
+	.string "refugees.\p"
+	.string "I wonder what happened to them all?$"
 
 BATTLE_MELZARS_1F_TRAINER_3_Text_0:
 	.string "The skeleton lurches to life and\n"

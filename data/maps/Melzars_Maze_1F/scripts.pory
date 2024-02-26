@@ -39,7 +39,7 @@ script MELZARS_1F_RAT {
 	playfanfare (MUS_OBTAIN_ITEM)
 	removeobject(10)
 	setflag(FLAG_TEMP_1F)
-	msgbox(format("RAT obtained the DOOR KEY."))
+	msgbox(format("RAT obtained the RED KEY."))
 	waitfanfare
 	closemessage
 	delay(30)
@@ -55,18 +55,22 @@ script MELZARS_1F_RAT {
 
 
 script MELZARS_1F_STATE {
-	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) {
-		setvar(VAR_TEMP_F, 5)
+	setvar(VAR_TEMP_F, 5)
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
 		addobject(10)
 		clearflag(FLAG_TEMP_1F)
 		addobject(11)
 		clearflag(FLAG_TEMP_1E)
+		addobject(9)
+		clearflag(FLAG_TEMP_1D)
 	} 
 	else {
 		removeobject(10)
 		setflag(FLAG_TEMP_1F)
 		removeobject(11)
 		setflag(FLAG_TEMP_1E)
+		removeobject(9)
+		setflag(FLAG_TEMP_1D)
 	}
     return   
 }
@@ -99,7 +103,7 @@ script MELZARS_1F_RATS_QUEST {
     lock
     faceplayer
 	namebox ("RAT")
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106) { //AFTER RAT STEAL KEY CUTSCENE
+    if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 0) { //AFTER RAT STEAL KEY CUTSCENE
 			playmoncry(SPECIES_GIANT_RAT_NORMAL_FORM, 0)
         	msgbox(format("Squeek!"))
 			waitmoncry
@@ -111,10 +115,10 @@ script MELZARS_1F_RATS_QUEST {
 				setwildbattle(SPECIES_GIANT_RAT_NORMAL_FORM, 10, ITEM_NONE)
 				dowildbattle
 				removeobject(VAR_LAST_TALKED)
-				setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110) //1F KEY OBTAINED
-				msgbox(format("The Rat dropped the DOOR KEY!"))
+				setvar(VAR_POKESCAPE_MELZARS_MAZE_DOORS, 1) //1F KEY OBTAINED
+				msgbox(format("The Rat dropped the RED KEY!"))
 				playfanfare (MUS_OBTAIN_ITEM)
-				msgbox(format("{PLAYER} obtained the DOOR KEY."))
+				msgbox(format("{PLAYER} obtained the RED KEY."))
 				waitfanfare
 				closemessage
 				release
@@ -145,24 +149,55 @@ script MELZARS_1F_RATS_QUEST {
 
 
 
-script MELZARS_LOCKED_DOOR {
-
-//	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS == 110)) {
-//		msgbox(format("The Key opened the door."))
-//		setmetatile (8, 8, 828, 0)
-//	} 
-//	else {
-//		msgbox(format("This door is locked."))
-//	}
-
+script MELZARS_LOCKED_DOOR_1F_1 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 1) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 1 key.
+		setmetatile (8, 6, 849, 0)
+		setmetatile (8, 8, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a red key to unlock this door."))
+		closemessage
+	}
+	end
+}
+script MELZARS_LOCKED_DOOR_1F_2 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 1) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 1 key.
+		setmetatile (14, 6, 849, 0)
+		setmetatile (14, 8, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a red key to unlock this door."))
+		closemessage
+	}
+	end
+}
+script MELZARS_LOCKED_DOOR_1F_3 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 1) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 1 key.
+		setmetatile (20, 6, 849, 0)
+		setmetatile (20, 8, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a red key to unlock this door."))
+		closemessage
+	}
+	end
 }
 
-
-
-
-
-
-
+script MELZARS_LOCKED_DOOR_1F_4 {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
+		setmetatile (19, 19, 849, 0)
+		setmetatile (19, 21, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a green key to unlock this door."))
+		closemessage
+	}
+	end
+}
 
 
 

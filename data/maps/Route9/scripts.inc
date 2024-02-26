@@ -17,6 +17,8 @@ Route9_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 ROUTE9_STATE::
 	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
 	goto_if_eq ROUTE9_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
+	goto_if_eq ROUTE9_STATE_2
 	removeobject 12
 	removeobject 13
 	setflag FLAG_TEMP_1F

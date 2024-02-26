@@ -12,18 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_MELZARS_MAZE_2F",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_MELZARS_MAZE_B1F",
-      "offset": 0,
-      "direction": "down"
-    }
-  ],
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
@@ -41,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
       "x": 22,
-      "y": 22,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 2,
@@ -54,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
       "x": 23,
-      "y": 14,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -79,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
-      "x": 15,
-      "y": 12,
+      "x": 11,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -105,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
-      "x": 7,
-      "y": 17,
+      "x": 18,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 3,
@@ -131,8 +120,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
-      "x": 17,
-      "y": 15,
+      "x": 16,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 6,
@@ -140,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_MELZARS_1F_TRAINER_1",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -211,12 +200,89 @@
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_B1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_MELZARS_MAZE_1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_1"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_2"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_3"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_1"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_3"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_2"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_4"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_1F_4"
+    }
   ]
 }

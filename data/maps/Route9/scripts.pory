@@ -17,7 +17,7 @@ mapscripts Route9_MapScripts {
 
 script ROUTE9_STATE {
 
-    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) {
+    if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
         addobject(12)
         addobject(13)
         clearflag(FLAG_TEMP_1F)

@@ -302,17 +302,17 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 4,
-      "y": 23,
+      "x": 5,
+      "y": 25,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
+      "script": "BLOCK_DEMO_END"
     },
     {
       "type": "trigger",
-      "x": 4,
-      "y": 25,
+      "x": 5,
+      "y": 24,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

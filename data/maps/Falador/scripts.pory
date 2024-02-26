@@ -1148,3 +1148,57 @@ script FALADOR_QUEST_STATE_CHANGER{
 			return
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//redo
+script TRIGGER_FALADOR_CASTLE {
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //STORY
+	{
+		if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 110) {
+			lock
+			applymovement(10, Movement_InteractFACEPLAYER)
+			applymovement(9, Movement_InteractFACEPLAYER)
+			waitmovement(0)
+			namebox("White Knight")
+			msgbox(format("Sorry, but you cannot enter the gym right now."))
+			closemessage
+			hidenamebox
+			applymovement(OBJ_EVENT_ID_PLAYER, movement_lock_walk_up)
+        	waitmovement(0)
+			release
+		}
+	}
+	release
+	end
+}
+
+
+movement movement_lock_walk_up{
+	lock_facing_direction
+    walk_up
+}

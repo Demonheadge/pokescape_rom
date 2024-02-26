@@ -43,29 +43,29 @@ BLOCK_Alkharid_Guards_1:
 	end
 
 BLOCK_Alkharid_Guards_2:
-	goto BLOCK_ALKHAIRD_GATE
+	goto BLOCK_ALKHARID_GATE
 	goto BLOCK_Alkharid_Guards_1
 
 
-TRIGGER_ALKHAIRD_GATE::
-	goto_if_unset FLAG_BADGE04_GET, TRIGGER_ALKHAIRD_GATE_2
-TRIGGER_ALKHAIRD_GATE_1:
+TRIGGER_ALKHARID_GATE::
+	goto_if_unset FLAG_BADGE04_GET, TRIGGER_ALKHARID_GATE_2
+TRIGGER_ALKHARID_GATE_1:
 	release
 	end
 
-TRIGGER_ALKHAIRD_GATE_2:
-	goto BLOCK_ALKHAIRD_GATE
-	goto TRIGGER_ALKHAIRD_GATE_1
+TRIGGER_ALKHARID_GATE_2:
+	goto BLOCK_ALKHARID_GATE
+	goto TRIGGER_ALKHARID_GATE_1
 
 
-BLOCK_ALKHAIRD_GATE::
+BLOCK_ALKHARID_GATE::
 	lockall
-	applymovement 29, movement_BLOCK_ALKHAIRD_GATE_1
-	applymovement 30, movement_BLOCK_ALKHAIRD_GATE_2
+	applymovement 29, movement_BLOCK_ALKHARID_GATE_1
+	applymovement 30, movement_BLOCK_ALKHARID_GATE_2
 	waitmovement 0
-	msgbox BLOCK_ALKHAIRD_GATE_Text_0
+	msgbox BLOCK_ALKHARID_GATE_Text_0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHAIRD_GATE_3
+	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHARID_GATE_3
 	applymovement 29, Movement_FACELEFT
 	applymovement 30, Movement_FACELEFT
 	waitmovement 0
@@ -73,15 +73,15 @@ BLOCK_ALKHAIRD_GATE::
 	end
 
 
-movement_BLOCK_ALKHAIRD_GATE_1:
+movement_BLOCK_ALKHARID_GATE_1:
 	face_down
 	step_end
 
-movement_BLOCK_ALKHAIRD_GATE_2:
+movement_BLOCK_ALKHARID_GATE_2:
 	face_up
 	step_end
 
-movement_BLOCK_ALKHAIRD_GATE_3:
+movement_BLOCK_ALKHARID_GATE_3:
 	walk_left
 	step_end
 
@@ -138,9 +138,9 @@ BLOCK_Alkharid_Guards_Text_0:
 	.string "That is the Al-Kharid Badge!\p"
 	.string "You may pass.$"
 
-BLOCK_ALKHAIRD_GATE_Text_0:
+BLOCK_ALKHARID_GATE_Text_0:
 	.string "Halt!\p"
-	.string "Only those whom possess the Al-Khaird\n"
+	.string "Only those whom possess the Al-Kharid\n"
 	.string "Badge may enter!$"
 
 BLOCK_DEMO_END_Text_0:

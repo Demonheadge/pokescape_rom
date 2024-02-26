@@ -1,13 +1,32 @@
-mapscripts Melzars_Maze_2F_MapScripts{
-
+mapscripts Melzars_Maze_3F_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION{
+		setvar(VAR_EVOLUTION_MAP_STATE, 0) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+	
+		call(MELZARS_3F_STATE)
+	}
 }
+
+script MELZARS_3F_STATE {
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+		addobject(5)
+		clearflag(FLAG_TEMP_1D)
+	} 
+	else {
+		removeobject(5)
+		setflag(FLAG_TEMP_1D)
+	}
+    return   
+}
+
+
+
 
 //Battles
 
 //Necromancer
 script BATTLE_MELZAR_3F_TRAINER_1
 {
-    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_1, format("I am Melzar's strongest apprentice. I won't let you disturb his important work."),format("Be careful, Melzar is even tougher than I am."))
+    trainerbattle_single(TRAINER_MELZARS_3F_TRAINER_1, format("I am Melzar's strongest apprentice. I won't let you disturb his important work."),format("Be careful, Melzar is even tougher than I am."))
     namebox ("Ichethik")
     msgbox(format("Melzar had a wife who died during Elvarg's attack. I think he learned necromancy to try and bring her back.\pMe? I just want to control a legion of the dead."))
 	hidenamebox
@@ -18,7 +37,7 @@ script BATTLE_MELZAR_3F_TRAINER_1
 //Skeleton
 script BATTLE_MELZAR_3F_TRAINER_2
 {
-    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_2, format("The skeletons eyes glow red as it charges at you menacingly!"),format("The dark aura around the skeleton fades as it is defeated."))
+    trainerbattle_single(TRAINER_MELZARS_3F_TRAINER_2, format("The skeletons eyes glow red as it charges at you menacingly!"),format("The dark aura around the skeleton fades as it is defeated."))
     //namebox ("")
     msgbox(format("The skeletons eyes have returned to normal, perhaps something sinister nearby was controlling it earlier?"))
 	hidenamebox
@@ -28,7 +47,7 @@ script BATTLE_MELZAR_3F_TRAINER_2
 
 script BATTLE_MELZAR_3F_TRAINER_3
 {
-    trainerbattle_single(TRAINER_MELZAR_3F_TRAINER_3, format("Woah, stop right there, you're not a H.A.M member!"),format("Hey, you're strong! Would you like to join us?!"))
+    trainerbattle_single(TRAINER_MELZARS_3F_TRAINER_3, format("Woah, stop right there, you're not a H.A.M member!"),format("Hey, you're strong! Would you like to join us?!"))
     namebox ("H.A.M Grunt")
     msgbox(format("Where did everyone else go? I was told to go to the basement but the door was locked and I can't find another way in.."))
 	hidenamebox

@@ -40,39 +40,27 @@ script OPENWORLD_STATE_ROUTE6 {
 
 
 
-script FALADORSOUTH_STATE{
-	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-        //HAM EVENT PORT SARIM - FALADOR SOUTH GATE ADD NPCS
-		case 0: 
-            removeobject(2)
-            setflag(FLAG_TEMP_1)
+script FALADORSOUTH_STATE {
 
-            clearflag(FLAG_TEMP_2)
-            addobject(OBJ_EVENT_ID_MUGGER)
-            addobject(OBJ_EVENT_ID_RAT)
-            addobject(OBJ_EVENT_ID_GUARD)
-            addobject(OBJ_EVENT_ID_UNICORN)
-            
-            end
-
-        //HAM EVENT PORT SARIM - ENDS - FALADOR SOUTH GATE REMOVE NPCS
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            addobject(2)
-            clearflag(FLAG_TEMP_1)
-            
-            removeobject(OBJ_EVENT_ID_MUGGER)
-            removeobject(OBJ_EVENT_ID_RAT)
-            removeobject(OBJ_EVENT_ID_GUARD)
-            removeobject(OBJ_EVENT_ID_UNICORN)
-            setflag(FLAG_TEMP_2)
-            end
+    if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+        removeobject(2)
+        setflag(FLAG_TEMP_1)
+        clearflag(FLAG_TEMP_2)
+        addobject(OBJ_EVENT_ID_MUGGER)
+        addobject(OBJ_EVENT_ID_RAT)
+        addobject(OBJ_EVENT_ID_GUARD)
+        addobject(OBJ_EVENT_ID_UNICORN)
     }
+    else {
+        removeobject(OBJ_EVENT_ID_MUGGER)
+        removeobject(OBJ_EVENT_ID_RAT)
+        removeobject(OBJ_EVENT_ID_GUARD)
+        removeobject(OBJ_EVENT_ID_UNICORN)
+        setflag(FLAG_TEMP_2)
+    }
+    return
+    
 }
-
 
 
 

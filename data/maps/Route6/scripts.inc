@@ -26,13 +26,16 @@ OPENWORLD_STATE_ROUTE6::
 
 
 FALADORSOUTH_STATE::
-	switch VAR_POKESCAPE_FALADOR_STATE
-	case 0, FALADORSOUTH_STATE_2
-	case 1, FALADORSOUTH_STATE_3
-	case 2, FALADORSOUTH_STATE_3
-	case 3, FALADORSOUTH_STATE_3
-	case 4, FALADORSOUTH_STATE_3
-	case 5, FALADORSOUTH_STATE_3
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq FALADORSOUTH_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
+	goto_if_eq FALADORSOUTH_STATE_2
+	removeobject 5
+	removeobject 7
+	removeobject 4
+	removeobject 6
+	setflag FLAG_TEMP_2
+FALADORSOUTH_STATE_1:
 	return
 
 FALADORSOUTH_STATE_2:
@@ -43,17 +46,7 @@ FALADORSOUTH_STATE_2:
 	addobject 7
 	addobject 4
 	addobject 6
-	end
-
-FALADORSOUTH_STATE_3:
-	addobject 2
-	clearflag FLAG_TEMP_1
-	removeobject 5
-	removeobject 7
-	removeobject 4
-	removeobject 6
-	setflag FLAG_TEMP_2
-	end
+	goto FALADORSOUTH_STATE_1
 
 
 ROUTE6_BLOCK_FaladorGuard::

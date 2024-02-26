@@ -909,6 +909,38 @@ FALADOR_QUEST_STATE_CHANGER_7:
 	return
 
 
+TRIGGER_FALADOR_CASTLE::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq TRIGGER_FALADOR_CASTLE_2
+TRIGGER_FALADOR_CASTLE_1:
+	release
+	end
+
+TRIGGER_FALADOR_CASTLE_2:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 110
+	goto_if_le TRIGGER_FALADOR_CASTLE_4
+	goto TRIGGER_FALADOR_CASTLE_1
+
+TRIGGER_FALADOR_CASTLE_4:
+	lock
+	applymovement 10, Movement_InteractFACEPLAYER
+	applymovement 9, Movement_InteractFACEPLAYER
+	waitmovement 0
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox TRIGGER_FALADOR_CASTLE_Text_0
+	closemessage
+	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, movement_lock_walk_up
+	waitmovement 0
+	release
+	goto TRIGGER_FALADOR_CASTLE_1
+
+
+movement_lock_walk_up:
+	lock_facing_direction
+	walk_up
+	step_end
+
 FALADOR_SIGN_Text_0:
 	.string "Falador, home of the White Knights.$"
 
@@ -1361,3 +1393,7 @@ FALADOR_QUEST_STATE_CHANGER_Text_4:
 
 FALADOR_QUEST_STATE_CHANGER_Text_5:
 	.string "FALADORSTATE isnow 0$"
+
+TRIGGER_FALADOR_CASTLE_Text_0:
+	.string "Sorry, but you cannot enter the gym\n"
+	.string "right now.$"

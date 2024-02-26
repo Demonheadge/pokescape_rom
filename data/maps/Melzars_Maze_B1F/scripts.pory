@@ -1,0 +1,40 @@
+mapscripts Melzars_Maze_B1F_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION{
+		setvar(VAR_EVOLUTION_MAP_STATE, 0) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+	
+		call(MELZARS_B1F_STATE)
+	}
+}
+
+script MELZARS_B1F_STATE {
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+		addobject(2)
+        addobject(3)
+		clearflag(FLAG_TEMP_1D)
+	} 
+	else {
+		removeobject(2)
+        removeobject(3)
+		setflag(FLAG_TEMP_1D)
+	}
+    return   
+}
+
+
+
+script Melzar_Maze_B1F_HAM_Patty {
+	msgbox(format("Hey so this script is unfinished, but count this as Melzars Maze section completed.\pNow go to falador."))
+	closemessage
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110) //AFTER MELZARS MAZE
+	end
+}
+
+script Melzar_Maze_B1F_Melzar {
+	msgbox(format("Here take this key to the basement door. It will allow you to leave."))
+	closemessage
+    setvar(VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3) //B1F KEY OBTAINED
+    playfanfare (MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} obtained the GREEN KEY."))
+    waitfanfare
+	end
+}

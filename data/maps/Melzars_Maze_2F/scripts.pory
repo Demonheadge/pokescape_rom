@@ -1,13 +1,163 @@
 mapscripts Melzars_Maze_2F_MapScripts{
 
+    MAP_SCRIPT_ON_TRANSITION{
+		setvar(VAR_EVOLUTION_MAP_STATE, 0) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+	
+		call(MELZARS_2F_STATE)
+	
+	}
+
 }
+
+
+
+
+
+
+script MELZARS_2F_STATE {
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+		addobject(8)
+		addobject(3)
+		clearflag(FLAG_TEMP_1D)
+	} 
+	else {
+		removeobject(8)
+		removeobject(3)
+		setflag(FLAG_TEMP_1D)
+	}
+    return   
+}
+
+
+
+
+
+
+
+
+script Melzar_Maze_2F_Bookshelf {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 1) {
+		msgbox(format("You search the bookshelf and find a key!"))
+		setvar(VAR_POKESCAPE_MELZARS_MAZE_DOORS, 2) //2F KEY OBTAINED
+		playfanfare (MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} obtained the YELLOW KEY."))
+		waitfanfare
+	}
+	else {
+		msgbox(format("You search the bookshelf and find nothing interesting…"))
+	}
+	closemessage
+	end
+}
+script Melzar_Maze_2F_Picture {
+	msgbox(format("You search the picture…\pDid it's eyes just move?\pYou find nothing interesting…"))
+	closemessage
+	end
+}
+script Melzar_Maze_2F_Tools {
+	msgbox(format("You search the cupboard…\pYou find an empty Tinderbox!\pBut nothing else interesting…"))
+	closemessage
+	end
+}
+script Melzar_Maze_2F_Candle {
+	msgbox(format("You search the lit candle…\pYou burn yourself.\pYou start to question your life choices."))
+	closemessage
+	end
+}
+script Melzar_Maze_2F_Tree {
+	msgbox(format("You search the small tree…\pYou find nothing interesting…"))
+	closemessage
+	end
+}
+script Melzar_Maze_2F_Box {
+	msgbox(format("You search the box…\pYou find dust!\pBut nothing else interesting…"))
+	closemessage
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+script MELZARS_LOCKED_DOOR_2F_1 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 2 key.
+		setmetatile (13, 12, 849, 0)
+		setmetatile (13, 14, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a yellow key to unlock this door."))
+		closemessage
+	}
+	end
+}
+script MELZARS_LOCKED_DOOR_2F_2 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 2 key.
+		setmetatile (18, 13, 849, 0)
+		setmetatile (18, 15, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a yellow key to unlock this door."))
+		closemessage
+	}
+	end
+}
+script MELZARS_LOCKED_DOOR_2F_3 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 2 key.
+		setmetatile (23, 13, 849, 0)
+		setmetatile (23, 15, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a yellow key to unlock this door."))
+		closemessage
+	}
+	end
+}
+script MELZARS_LOCKED_DOOR_2F_4 {
+	if ((var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) || (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3)) { //If you have room 2 key.
+		setmetatile (29, 13, 849, 0)
+		setmetatile (29, 15, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a yellow key to unlock this door."))
+		closemessage
+	}
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Battles
 
 script BATTLE_MELZAR_2F_TRAINER_1
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_1, format("A skeleton appears out of nowhere."),format("The skeleton looks defeated."))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_1, format("A skeleton appears out of nowhere."),format("The skeleton looks defeated."))
     //namebox ("")
     msgbox(format("The skeleton doesn't seem very talkative."))
 	hidenamebox
@@ -17,7 +167,7 @@ script BATTLE_MELZAR_2F_TRAINER_1
 
 script BATTLE_MELZAR_2F_TRAINER_2
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_2, format("You hear a faint whisper in the air as the skeleton attacks. Did it say 'help'?"),format("The wind whispers again. It sounded like 'thank you'."))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_2, format("You hear a faint whisper in the air as the skeleton attacks. Did it say 'help'?"),format("The wind whispers again. It sounded like 'thank you'."))
     //namebox ("")
     msgbox(format("The skeleton almost looks relieved it no longer has to fight."))
 	hidenamebox
@@ -27,7 +177,7 @@ script BATTLE_MELZAR_2F_TRAINER_2
 
 script BATTLE_MELZAR_2F_TRAINER_3
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_3, format("You'll never get the map piece before we do."),format("I should have kept up with the others.."))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_3, format("You'll never get the map piece before we do."),format("I should have kept up with the others.."))
     namebox ("H.A.M Grunt")
     msgbox(format("The other grunts kept saying 'knowledge is key' but how are books meant to help me open these doors? I need an actual key!"))
 	hidenamebox
@@ -37,7 +187,7 @@ script BATTLE_MELZAR_2F_TRAINER_3
 
 script BATTLE_MELZAR_2F_TRAINER_4
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_4, format("The people at Port Sarim told me something weird was happening here, so I came to check it out.\pI can't let you beat me to the end, I want the reward for myself!"),format("Maybe we can go halves?"))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_4, format("The people at Port Sarim told me something weird was happening here, so I came to check it out.\pI can't let you beat me to the end, I want the reward for myself!"),format("Maybe we can go halves?"))
     namebox ("QuestKing")
     msgbox(format("If I'd been less greedy, maybe I'd have paid more attention to where I was going and not gotten myself lost in here."))
 	hidenamebox
@@ -47,7 +197,7 @@ script BATTLE_MELZAR_2F_TRAINER_4
 
 script BATTLE_MELZAR_2F_TRAINER_5
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_5, format("We are so close to the basement now. I can't let you foil our plan!"),format("I must have gotten injured when the ladder broke and hurt my ankle or something and that's why I lost.."))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_5, format("We are so close to the basement now. I can't let you foil our plan!"),format("I must have gotten injured when the ladder broke and hurt my ankle or something and that's why I lost.."))
     namebox ("H.A.M Grunt")
     msgbox(format("The ladder I used to climb down here broke behind me, and the only way left to go is down that hole but..\pI can't do it! I'm too scared to jump!"))
 	hidenamebox
@@ -57,7 +207,7 @@ script BATTLE_MELZAR_2F_TRAINER_5
 
 script BATTLE_MELZAR_2F_TRAINER_6
 {
-    trainerbattle_single(TRAINER_MELZAR_2F_TRAINER_6, format("Behold, my undead servants!"),format("Ugh, these zombie corpses just aren't strong enough.."))
+    trainerbattle_single(TRAINER_MELZARS_2F_TRAINER_6, format("Behold, my undead servants!"),format("Ugh, these zombie corpses just aren't strong enough.."))
     namebox ("Astelazar")
     msgbox(format("Melzar's down in the basement working on his experiments.\pI want to learn more, but I have no idea how to even get down there as there are no ladders!"))
 	hidenamebox
