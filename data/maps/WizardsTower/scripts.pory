@@ -265,7 +265,7 @@ script BATTLE_WizardsTower_Trainer_1
 
 script BATTLE_WizardsTower_Trainer_2
 {
-    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_2, format("Welcome to the wizard tower, now face my magic!"),format("Hope you enjoy your stay."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_2, format("Welcome to the Wizards' Tower, now face my magic!"),format("Hope you enjoy your stay."))
     namebox ("Goldberg")
     msgbox(format("Hope you enjoy your stay."))
     hidenamebox

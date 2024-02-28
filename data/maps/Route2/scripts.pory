@@ -255,7 +255,7 @@ script NPC_ROUTE2_Wizard
 
 script BATTLE_ROUTE2_Trainer_1
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor village by any chance?"),format("Wrong direction?\pI've followed the W for south all day!"))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor Village by any chance?"),format("Wrong direction?\pI've followed the W for south all day!"))
     namebox ("How2type")
     msgbox(format("Wrong direction?\pI've followed the W for south all day!"))
     hidenamebox
@@ -265,7 +265,7 @@ script BATTLE_ROUTE2_Trainer_1
 
 script BATTLE_ROUTE2_Trainer_2
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_2, format("Passing this bridge gets you to the wizard tower."),format("Wizards use runes to conjure magic."))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_2, format("Passing this bridge gets you to the Wizards' Tower."),format("Wizards use runes to conjure magic."))
     namebox ("Tam McGrubor")
     msgbox(format("Runes are marvellous.\pUsing them on monsters might make them evolve!"))
     hidenamebox

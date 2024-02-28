@@ -298,7 +298,7 @@ script Lumbridge_Castle_Hans_1{
 	applymovement(10, Movement_Hans_4)
 	waitmovement(0)
 	namebox ("Hans")
-	msgbox(format("{PLAYER}, before you go have you heard of the MvM championships?\pMvM, which stands for Monster VS Monster, is where trainers compete against eachother in battle by using their monsters to fight for them.\pIf you wish to participate in the MvM Championships you must defeat 8 leaders from around Gielinor and make your way to the Wilderness Volcano.\pThe Duke is one of these 8 Leaders.\pIf you are interested you should pay him a visit."))
+	msgbox(format("{PLAYER}, before you go have you heard of the MvM championships?\pMvM, which stands for Monster VS Monster, is where trainers compete against each other in battle by using their monsters to fight for them.\pIf you wish to participate in the MvM Championships you must defeat 8 leaders from around Gielinor and make your way to the Wilderness Volcano.\pThe Duke is one of these 8 Leaders.\pIf you are interested you should pay him a visit."))
 	msgbox(format("Oh, before I forget take these."))
 	waitmessage
 	hidenamebox

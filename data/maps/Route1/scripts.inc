@@ -1027,7 +1027,7 @@ HAM_EVENT_Route1_MAIN_1_Text_2:
 	.string "That was cluckin' scary!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_3:
-	.string "Lets just avoid that creepy Manor from\n"
+	.string "Let's just avoid that creepy Manor from\n"
 	.string "now on.$"
 
 HAM_EVENT_Route1_MAIN_1_Text_4:
@@ -1053,10 +1053,10 @@ ArianeChaseHamEvent7_Text_0:
 
 ArianeChaseHamEvent7_Text_1:
 	.string "I'm so glad im not a chicken anymore…\n"
-	.string "that was cluckin scary.$"
+	.string "That was cluckin' scary!$"
 
 ArianeChaseHamEvent7_Text_2:
-	.string "Lets just avoid that creepy manor from\n"
+	.string "Let's just avoid that creepy manor from\n"
 	.string "now on.$"
 
 ArianeChaseHamEvent7_Text_3:

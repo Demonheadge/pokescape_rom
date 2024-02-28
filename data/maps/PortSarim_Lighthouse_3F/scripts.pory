@@ -140,7 +140,7 @@ script LIGHTHOUSE_HAM_BABE
     
     //Guard walks over to the player.
     namebox ("Guard")
-	msgbox(format("Thank you for assisting us in repelling HAM.\pThey've been very organised as of late.\pIm not sure what they are after.\pBut here take this for helping us out."))
+	msgbox(format("Thank you for assisting us in repelling HAM.\pThey've been very organised as of late.\pI'm not sure what they are after.\pBut here take this for helping us out."))
     //Gives and ITEM or TM or something.
     namebox ("Guard")
 	msgbox(format("Come on Goblin, back to your cell."))

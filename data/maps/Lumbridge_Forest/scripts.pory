@@ -59,8 +59,8 @@ script NPC_LUMBRIDGE_FOREST_1
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Monk")
+	msgbox(format("Why are all of standing around here?\pNone of your business. Get lost."))
     closemessage
     hidenamebox
 	release
@@ -70,8 +70,8 @@ script NPC_LUMBRIDGE_FOREST_2
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Warrior")
+	msgbox(format("We're looking for Zanaris...GAH!\pI mean we're not here for any particular reason at all.\p...\pOf course we know where it is! We just haven't found which tree the stupid leprechaun's hiding in yet!"))
     closemessage
     hidenamebox
 	release
@@ -81,8 +81,8 @@ script NPC_LUMBRIDGE_FOREST_3
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Wizard")
+	msgbox(format("Hahaha you dare talk to a mighty wizard such as myself?\pI bet you can't even cast windstrike yet amateur!"))
     closemessage
     hidenamebox
 	release
@@ -92,8 +92,8 @@ script NPC_LUMBRIDGE_FOREST_4
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Archer")
+	msgbox(format("Rats, I dropped my last sweet looking for that stupid lepre-\pHey! Forget anything you might have heard us say when we didn't realise you were there!"))
     closemessage
     hidenamebox
 	release
@@ -110,6 +110,9 @@ script NPC_LUMBRIDGE_FOREST_5
 	release
 	end
 }
+
+//Does anyone in Lumbridge Forest actually use this code? I can't see anyone on the map with it.
+
 script NPC_LUMBRIDGE_FOREST_6
 {
 	lock

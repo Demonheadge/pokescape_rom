@@ -373,7 +373,7 @@ script NPC_Draynor_Mugger{
 	lock
 	faceplayer
     namebox("Mugger")
-	msgbox(format("Draynor village is the town of farmers and vampyres.\pI am not sure why I decided to be a mugger here but its a job somebody has to take."))
+	msgbox(format("Draynor Village is the town of farmers and vampyres.\pI am not sure why I decided to be a mugger here but it's a job somebody has to take."))
     hidenamebox
     release
 	end

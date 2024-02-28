@@ -1355,7 +1355,7 @@ Lumbridge_Castle_Hans_1_Text_0:
 	.string "heard of the MvM championships?\p"
 	.string "MvM, which stands for Monster VS\n"
 	.string "Monster, is where trainers compete\l"
-	.string "against eachother in battle by using\l"
+	.string "against each other in battle by using\l"
 	.string "their monsters to fight for them.\p"
 	.string "If you wish to participate in the MvM\n"
 	.string "Championships you must defeat 8\l"

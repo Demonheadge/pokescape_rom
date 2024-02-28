@@ -403,7 +403,7 @@ script MudbeardBattle{
 script Route1FarmerBattle{
     trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
     namebox ("John")
-    msgbox("Its not really my lands yet.")
+    msgbox("It's not really my lands yet.")
     hidenamebox
     release
 }
@@ -615,12 +615,12 @@ script HAM_EVENT_Route1_MAIN_1{
     waitmovement(0)
     applymovement(5, HAM_Movement7_7)
     namebox("Ernest")
-    msgbox(format("I'm so glad im not a chicken anymore…\pThat was cluckin' scary!"))
+    msgbox(format("I'm so glad I'm not a chicken anymore…\pThat was cluckin' scary!"))
     hidenamebox
     waitmovement(0)
     applymovement(6, HAM_Movement7_6)
     namebox("Veronica")
-    msgbox(format("Lets just avoid that creepy Manor from now on."))
+    msgbox(format("Let's just avoid that creepy Manor from now on."))
     hidenamebox
     waitmovement(0)
     applymovement(23, HAM_Movement7_1)
@@ -747,10 +747,10 @@ script ArianeChaseHamEvent7{
     msgbox(format("Get out of my way! you're blocking the path!"))
     hidenamebox
     namebox("Ernest")
-    msgbox(format("I'm so glad im not a chicken anymore… that was cluckin scary."))
+    msgbox(format("I'm so glad I'm not a chicken anymore…\pThat was cluckin' scary!"))
     hidenamebox
     namebox("Veronica")
-    msgbox(format("Lets just avoid that creepy manor from now on."))
+    msgbox(format("Let's just avoid that creepy manor from now on."))
     hidenamebox
     msgbox(format("Kissing noises"))
     namebox("H.A.M. member")

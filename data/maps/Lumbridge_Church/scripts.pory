@@ -11,7 +11,7 @@ script Lumbridge_Church_Father_Aereck
 {
 	lock
 	faceplayer
-	msgbox(format("Monsters dont really die.\pThey will not be needing graves.\pJust take them to the bank."))
+	msgbox(format("Monsters don't really die.\pThey will not be needing graves.\pJust take them to the bank."))
 	release
 	end
 }	

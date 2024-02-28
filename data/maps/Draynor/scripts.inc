@@ -547,10 +547,10 @@ NPC_Draynor_Mugger_Text_0:
 	.string "Mugger$"
 
 NPC_Draynor_Mugger_Text_1:
-	.string "Draynor village is the town of farmers\n"
+	.string "Draynor Village is the town of farmers\n"
 	.string "and vampyres.\p"
 	.string "I am not sure why I decided to be a\n"
-	.string "mugger here but its a job somebody has\l"
+	.string "mugger here but it's a job somebody has\l"
 	.string "to take.$"
 
 NPC_Draynor_WiseOldMan_Text_0:

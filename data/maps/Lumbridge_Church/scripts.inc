@@ -418,7 +418,7 @@ Cheat_Menu_Shop_Misc:
     end
 
 Lumbridge_Church_Father_Aereck_Text_0:
-	.string "Monsters dont really die.\p"
+	.string "Monsters don't really die.\p"
 	.string "They will not be needing graves.\p"
 	.string "Just take them to the bank.$"
 

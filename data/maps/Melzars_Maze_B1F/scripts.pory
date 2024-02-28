@@ -23,7 +23,7 @@ script MELZARS_B1F_STATE {
 
 
 script Melzar_Maze_B1F_HAM_Patty {
-	msgbox(format("Hey so this script is unfinished, but count this as Melzars Maze section completed.\pNow go to falador."))
+	msgbox(format("Hey so this script is unfinished, but count this as Melzars Maze section completed.\pNow go to Falador."))
 	closemessage
     setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110) //AFTER MELZARS MAZE
 	end
@@ -36,5 +36,6 @@ script Melzar_Maze_B1F_Melzar {
     playfanfare (MUS_OBTAIN_ITEM)
     msgbox(format("{PLAYER} obtained the GREEN KEY."))
     waitfanfare
+	closemessage
 	end
 }

@@ -1013,7 +1013,7 @@ NPC_PORTSARIM_BANK_NPC_Text_0:
 	.string "Ye will never believe me lad.\p"
 	.string "I raised six seagulls.\n"
 	.string "Six!\p"
-	.string "Thats more than three!\p"
+	.string "That's more than three!\p"
 	.string "Every one of them wee flying rats\n"
 	.string "evolved to a different beastie.\p"
 	.string "What in tarnation is this sorcery lad?$"

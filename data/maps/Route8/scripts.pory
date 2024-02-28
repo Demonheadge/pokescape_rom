@@ -69,7 +69,7 @@ script ITEM_ROUTE8_ITEM_PRAYER_POTION
 //BATTLE TRAINERS
 
 script BATTLE_ROUTE8_THIEF{
-    trainerbattle_single(TRAINER_ROUTE8_THIEF, format("Hi there, you wouldn't want some very rare a expensive charcoal would you?"),format("You could have just said no…"))
+    trainerbattle_single(TRAINER_ROUTE8_THIEF, format("Hi there, you wouldn't want some very rare and expensive charcoal would you?"),format("You could have just said no…"))
     msgbox(format("You could have just said no…"))
     release
 }
@@ -376,10 +376,35 @@ FlavouredMilkShop:
 `
 
 
+script CRAFTINGGUILD_NPC_1
+{
+    namebox ("Master Crafter")
+	msgbox(format("Where's your brown apron?\pYou can't come up here unless you're wearing one."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
+script CRAFTINGGUILD_NPC_2
+{
+    namebox ("Master Crafter")
+	msgbox(format("Hello, and welcome to the Crafting Guild!\pAccomplished crafters from all over the land come here to use our top notch workshops.\pYou don't see any workshops?\pOf course not, they're all upstairs!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
-
-
+script CRAFTINGGUILD_NPC_3
+{
+    namebox ("Miner")
+	msgbox(format("I came here because I heard there were a lot of useful ores to mine, but they just have useless ore like gold or silver!\pI don't want ore for jewellery, I want ore to make my own pouches and battle monsters!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 

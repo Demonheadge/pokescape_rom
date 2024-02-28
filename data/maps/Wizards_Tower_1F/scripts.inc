@@ -791,7 +791,7 @@ NPC_WIZARDSTOWER_Book_4_Text_0:
 	.string "It seems interesting.$"
 
 NPC_WIZARDSTOWER_Book_5_Text_0:
-	.string "These notes about the Lumbridge\n"
+	.string "These notes are about the Lumbridge\n"
 	.string "Catacombs.\p"
 	.string "…{PAUSE 15} …{PAUSE 15}\p"
 	.string "The monsters located in the catacombs\n"

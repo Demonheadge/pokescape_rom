@@ -770,7 +770,7 @@ script NPC_PORTSARIM_BANK_NPC
 	lock
 	faceplayer
     //namebox ("CUSTOMER")
-	msgbox(format("Ye will never believe me lad.\pI raised six seagulls.\nSix!\pThats more than three!\pEvery one of them wee flying rats evolved to a different beastie.\pWhat in tarnation is this sorcery lad?"))
+	msgbox(format("Ye will never believe me lad.\pI raised six seagulls.\nSix!\pThat's more than three!\pEvery one of them wee flying rats evolved to a different beastie.\pWhat in tarnation is this sorcery lad?"))
     waitmessage
     hidenamebox
 	release

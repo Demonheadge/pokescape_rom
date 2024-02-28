@@ -32,7 +32,7 @@ Trainer3_MillLaneMill_Battle_Text_2:
 	.string "CASSIDY$"
 
 Trainer4_MillLaneMill_Battle_Text_0:
-	.string "I cant let you pass and meet Millie\n"
+	.string "I can't let you pass and meet Millie\n"
 	.string "without facing me.\p"
 	.string "I am after all the second strongest of\n"
 	.string "the mill three.$"

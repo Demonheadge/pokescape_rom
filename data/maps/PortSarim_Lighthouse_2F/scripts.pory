@@ -79,7 +79,7 @@ script LIGHTHOUSE_2F_NPC_5
 //Battles
 script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1
 {
-    trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("What do you think you are doing?!\pWe're in a middle of a battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
+    trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("What do you think you are doing?!\pWe're in the middle of a battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
 	namebox ("Dennis")
     msgbox(format("I knew I should have taken today off…"))
 	hidenamebox

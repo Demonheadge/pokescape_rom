@@ -377,7 +377,7 @@ script NPC_WIZARDSTOWER_Book_4
 
 script NPC_WIZARDSTOWER_Book_5
 {
-	msgbox(format("These notes about the Lumbridge Catacombs.\p…{PAUSE 15} …{PAUSE 15}\pThe monsters located in the catacombs have become far too dangerous so I would highly advice closing the catacombs to the public for the forseeable future. - Ilona."))
+	msgbox(format("These notes are about the Lumbridge Catacombs.\p…{PAUSE 15} …{PAUSE 15}\pThe monsters located in the catacombs have become far too dangerous so I would highly advice closing the catacombs to the public for the forseeable future. - Ilona."))
     closemessage
 	release
 	end

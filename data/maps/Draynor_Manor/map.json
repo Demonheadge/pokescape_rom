@@ -242,6 +242,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SCRIPT_DraynorManor_Fountain"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SCRIPT_DraynorManor_Fountain"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SCRIPT_DraynorManor_Fountain"
     }
   ]
 }

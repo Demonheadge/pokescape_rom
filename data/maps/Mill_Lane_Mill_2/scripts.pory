@@ -12,7 +12,7 @@ script Trainer3_MillLaneMill_Battle{
 } 
 
 script Trainer4_MillLaneMill_Battle{
-    trainerbattle_single(TRAINER_TRAINER4_MILLLANEMILL, format("I cant let you pass and meet Millie without facing me.\pI am after all the second strongest of the mill three."),"Wow you beat all of us.\pSay hi to Millie from me.")
+    trainerbattle_single(TRAINER_TRAINER4_MILLLANEMILL, format("I can't let you pass and meet Millie without facing me.\pI am after all the second strongest of the mill three."),"Wow you beat all of us.\pSay hi to Millie from me.")
     namebox ("DIXIE")
     msgbox(format("Wow you beat all of us.\pSay hi to Millie from me."))
     hidenamebox
