@@ -108,7 +108,7 @@ LIGHTHOUSE_2F_NPC_5_Text_1:
 
 BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_0:
 	.string "What do you think you are doing?!\p"
-	.string "We're in a middle of a battle!$"
+	.string "We're in the middle of a battle!$"
 
 BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_1:
 	.string "We should have just let you go on ahead.$"

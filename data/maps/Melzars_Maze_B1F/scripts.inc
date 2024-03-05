@@ -40,6 +40,7 @@ Melzar_Maze_B1F_Melzar::
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Melzar_Maze_B1F_Melzar_Text_1
 	waitfanfare
+	closemessage
 	end
 
 
@@ -47,7 +48,7 @@ Melzar_Maze_B1F_HAM_Patty_Text_0:
 	.string "Hey so this script is unfinished, but\n"
 	.string "count this as Melzars Maze section\l"
 	.string "completed.\p"
-	.string "Now go to falador.$"
+	.string "Now go to Falador.$"
 
 Melzar_Maze_B1F_Melzar_Text_0:
 	.string "Here take this key to the basement\n"

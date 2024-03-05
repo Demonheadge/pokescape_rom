@@ -368,7 +368,7 @@ NPC_ROUTE2_Wizard_Text_0:
 	.string "I've never found them though.$"
 
 BATTLE_ROUTE2_Trainer_1_Text_0:
-	.string "Do you know the way to Draynor village\n"
+	.string "Do you know the way to Draynor Village\n"
 	.string "by any chance?$"
 
 BATTLE_ROUTE2_Trainer_1_Text_1:
@@ -380,7 +380,7 @@ BATTLE_ROUTE2_Trainer_1_Text_2:
 
 BATTLE_ROUTE2_Trainer_2_Text_0:
 	.string "Passing this bridge gets you to the\n"
-	.string "wizard tower.$"
+	.string "Wizards' Tower.$"
 
 BATTLE_ROUTE2_Trainer_2_Text_1:
 	.string "Wizards use runes to conjure magic.$"

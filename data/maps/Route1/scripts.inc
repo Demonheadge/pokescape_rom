@@ -344,7 +344,7 @@ MudbeardBattle::
 Route1FarmerBattle::
 	trainerbattle_single TRAINER_FARMER_ROUTE1, Route1FarmerBattle_Text_0, Route1FarmerBattle_Text_1
 	namebox Route1FarmerBattle_Text_2
-	msgbox Route1FarmerBattle_Text_1
+	msgbox Route1FarmerBattle_Text_3
 	hidenamebox
 	release
 	return
@@ -685,14 +685,14 @@ ArianeChaseHamEvent7::
 	msgbox ArianeChaseHamEvent7_Text_0
 	hidenamebox
 	namebox ErnestAndVeronica_Text_0
-	msgbox ArianeChaseHamEvent7_Text_1
+	msgbox HAM_EVENT_Route1_MAIN_1_Text_2
 	hidenamebox
 	namebox ErnestAndVeronica_Text_2
-	msgbox ArianeChaseHamEvent7_Text_2
+	msgbox ArianeChaseHamEvent7_Text_1
 	hidenamebox
-	msgbox ArianeChaseHamEvent7_Text_3
+	msgbox ArianeChaseHamEvent7_Text_2
 	namebox HAM_EVENT_Route1_MAIN_1_Text_0
-	msgbox ArianeChaseHamEvent7_Text_4
+	msgbox ArianeChaseHamEvent7_Text_3
 	hidenamebox
 	release
 	lockall
@@ -701,16 +701,16 @@ ArianeChaseHamEvent7::
 	applymovement 5, ErnestShoved
 	waitmovement 0
 	namebox ErnestAndVeronica_Text_0
-	msgbox ArianeChaseHamEvent7_Text_5
+	msgbox ArianeChaseHamEvent7_Text_4
 	hidenamebox
 	release
 	lockall
 	applymovement 5, ErnestMoveBack
 	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
-	msgbox ArianeChaseHamEvent7_Text_6
+	msgbox ArianeChaseHamEvent7_Text_5
 	hidenamebox
 	namebox HAM_EVENT_Route1_MAIN_1_Text_0
-	msgbox ArianeChaseHamEvent7_Text_7
+	msgbox ArianeChaseHamEvent7_Text_6
 	hidenamebox
 	release
 	lockall
@@ -943,6 +943,9 @@ Route1FarmerBattle_Text_1:
 Route1FarmerBattle_Text_2:
 	.string "John$"
 
+Route1FarmerBattle_Text_3:
+	.string "It's not really my lands yet.$"
+
 FeetfingersBattle_Text_0:
 	.string "Me Feetfingers who you?$"
 
@@ -1023,7 +1026,7 @@ HAM_EVENT_Route1_MAIN_1_Text_1:
 	.string "I need to get to Port Sarim!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_2:
-	.string "I'm so glad im not a chicken anymore…\p"
+	.string "I'm so glad I'm not a chicken anymore…\p"
 	.string "That was cluckin' scary!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_3:
@@ -1052,27 +1055,23 @@ ArianeChaseHamEvent7_Text_0:
 	.string "path!$"
 
 ArianeChaseHamEvent7_Text_1:
-	.string "I'm so glad im not a chicken anymore…\n"
-	.string "That was cluckin' scary!$"
-
-ArianeChaseHamEvent7_Text_2:
 	.string "Let's just avoid that creepy manor from\n"
 	.string "now on.$"
 
-ArianeChaseHamEvent7_Text_3:
+ArianeChaseHamEvent7_Text_2:
 	.string "Kissing noises$"
 
-ArianeChaseHamEvent7_Text_4:
+ArianeChaseHamEvent7_Text_3:
 	.string "I SAID GET OUT OF THE WAY!!$"
 
-ArianeChaseHamEvent7_Text_5:
+ArianeChaseHamEvent7_Text_4:
 	.string "Well that was uncalled for!$"
 
-ArianeChaseHamEvent7_Text_6:
+ArianeChaseHamEvent7_Text_5:
 	.string "Stop thief! There is nowhere left for\n"
 	.string "you to run!$"
 
-ArianeChaseHamEvent7_Text_7:
+ArianeChaseHamEvent7_Text_6:
 	.string "UGH! This dumb couple keeps blocking my\n"
 	.string "way… but there is still the manor!$"
 

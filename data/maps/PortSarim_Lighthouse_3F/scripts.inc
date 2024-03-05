@@ -265,7 +265,7 @@ LIGHTHOUSE_HAM_BABE_Text_13:
 	.string "Thank you for assisting us in repelling\n"
 	.string "HAM.\p"
 	.string "They've been very organised as of late.\p"
-	.string "Im not sure what they are after.\p"
+	.string "I'm not sure what they are after.\p"
 	.string "But here take this for helping us out.$"
 
 LIGHTHOUSE_HAM_BABE_Text_14:

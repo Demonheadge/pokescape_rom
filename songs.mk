@@ -1367,6 +1367,9 @@ $(MID_SUBDIR)/MUS_PS_ROUTE_WILDERNESS.s: %.s: %.mid
 $(MID_SUBDIR)/MUS_PS_VICTORY_ROAD.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V080 -P1
 
+$(MID_SUBDIR)/MUS_PS_TRAINER_VICTORY.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V091
+
 
 
 $(MID_SUBDIR)/MUS_PS_VS_WILD_F2P.s: %.s: %.mid

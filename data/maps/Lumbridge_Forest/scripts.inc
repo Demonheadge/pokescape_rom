@@ -57,8 +57,8 @@ NPC_LUMBRIDGE_FOREST_1::
 NPC_LUMBRIDGE_FOREST_2::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_2_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_2_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -68,8 +68,8 @@ NPC_LUMBRIDGE_FOREST_2::
 NPC_LUMBRIDGE_FOREST_3::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_3_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_3_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -79,8 +79,8 @@ NPC_LUMBRIDGE_FOREST_3::
 NPC_LUMBRIDGE_FOREST_4::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_4_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_4_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -90,8 +90,8 @@ NPC_LUMBRIDGE_FOREST_4::
 NPC_LUMBRIDGE_FOREST_5::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_5_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_5_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -101,8 +101,8 @@ NPC_LUMBRIDGE_FOREST_5::
 NPC_LUMBRIDGE_FOREST_6::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_5_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_5_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -190,9 +190,47 @@ LUMBRIDGEFOREST_NPC_WOODCUTTER_Text_0:
 	.string "These bots are so annoying.$"
 
 NPC_LUMBRIDGE_FOREST_1_Text_0:
-	.string "Cupholder$"
+	.string "Monk$"
 
 NPC_LUMBRIDGE_FOREST_1_Text_1:
+	.string "Why are all of standing around here?\p"
+	.string "None of your business. Get lost.$"
+
+NPC_LUMBRIDGE_FOREST_2_Text_0:
+	.string "Warrior$"
+
+NPC_LUMBRIDGE_FOREST_2_Text_1:
+	.string "We're looking for Zanaris...GAH!\p"
+	.string "I mean we're not here for any particular\n"
+	.string "reason at all.\p"
+	.string "...\p"
+	.string "Of course we know where it is! We just\n"
+	.string "haven't found which tree the stupid\l"
+	.string "leprechaun's hiding in yet!$"
+
+NPC_LUMBRIDGE_FOREST_3_Text_0:
+	.string "Wizard$"
+
+NPC_LUMBRIDGE_FOREST_3_Text_1:
+	.string "Hahaha you dare talk to a mighty wizard\n"
+	.string "such as myself?\p"
+	.string "I bet you can't even cast windstrike\n"
+	.string "yet amateur!$"
+
+NPC_LUMBRIDGE_FOREST_4_Text_0:
+	.string "Archer$"
+
+NPC_LUMBRIDGE_FOREST_4_Text_1:
+	.string "Rats, I dropped my last sweet looking\n"
+	.string "for that stupid lepre-\p"
+	.string "Hey! Forget anything you might have\n"
+	.string "heard us say when we didn't realise you\l"
+	.string "were there!$"
+
+NPC_LUMBRIDGE_FOREST_5_Text_0:
+	.string "Cupholder$"
+
+NPC_LUMBRIDGE_FOREST_5_Text_1:
 	.string "Hello, I am a Cupholder.$"
 
 BATTLE_LUMBRIDGEFOREST_BOT1_Text_0:

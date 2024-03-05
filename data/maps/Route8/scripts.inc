@@ -317,6 +317,33 @@ FlavouredMilkShop:
     release
     end
 
+CRAFTINGGUILD_NPC_1::
+	namebox CRAFTINGGUILD_NPC_1_Text_0
+	msgbox CRAFTINGGUILD_NPC_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+CRAFTINGGUILD_NPC_2::
+	namebox CRAFTINGGUILD_NPC_1_Text_0
+	msgbox CRAFTINGGUILD_NPC_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+CRAFTINGGUILD_NPC_3::
+	namebox CRAFTINGGUILD_NPC_3_Text_0
+	msgbox CRAFTINGGUILD_NPC_3_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 PEST_CONTROL_ENTER::
 	faceplayer
 	namebox PEST_CONTROL_ENTER_Text_0
@@ -381,7 +408,7 @@ ROUTE8_MINER_3_Text_1:
 
 BATTLE_ROUTE8_THIEF_Text_0:
 	.string "Hi there, you wouldn't want some very\n"
-	.string "rare a expensive charcoal would you?$"
+	.string "rare and expensive charcoal would you?$"
 
 BATTLE_ROUTE8_THIEF_Text_1:
 	.string "You could have just said no…$"
@@ -578,6 +605,35 @@ ALTAR_EARTH_ENTER_Text_1:
 CRAFTINGGUILD_MILKSELLER_Text_0:
 	.string "Why hello there, are you interested in\n"
 	.string "some flavoured Milk?$"
+
+CRAFTINGGUILD_NPC_1_Text_0:
+	.string "Master Crafter$"
+
+CRAFTINGGUILD_NPC_1_Text_1:
+	.string "Where's your brown apron?\p"
+	.string "You can't come up here unless you're\n"
+	.string "wearing one.$"
+
+CRAFTINGGUILD_NPC_2_Text_0:
+	.string "Hello, and welcome to the Crafting\n"
+	.string "Guild!\p"
+	.string "Accomplished crafters from all over the\n"
+	.string "land come here to use our top notch\l"
+	.string "workshops.\p"
+	.string "You don't see any workshops?\p"
+	.string "Of course not, they're all upstairs!$"
+
+CRAFTINGGUILD_NPC_3_Text_0:
+	.string "Miner$"
+
+CRAFTINGGUILD_NPC_3_Text_1:
+	.string "I came here because I heard there were\n"
+	.string "a lot of useful ores to mine, but they\l"
+	.string "just have useless ore like gold or\l"
+	.string "silver!\p"
+	.string "I don't want ore for jewellery, I want\n"
+	.string "ore to make my own pouches and battle\l"
+	.string "monsters!$"
 
 PEST_CONTROL_ENTER_Text_0:
 	.string "Void Squire$"

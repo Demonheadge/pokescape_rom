@@ -158,7 +158,7 @@ ROUTE6_BLOCK_FaladorGuard_Text_7:
 	.string "Neeeigh!$"
 
 BATTLE_ROUTE6_FIREMAKER_Text_0:
-	.string "Hey get out of my way, im making\n"
+	.string "Hey get out of my way, I'm making\n"
 	.string "bonfires here!$"
 
 BATTLE_ROUTE6_FIREMAKER_Text_1:

@@ -5984,8 +5984,8 @@
     {
       "id": "LAYOUT_TZHAAR_CAVES_1",
       "name": "Tzhaar_Caves_1_Layout",
-      "width": 60,
-      "height": 40,
+      "width": 48,
+      "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Tzhaar_Caves_1/border.bin",
@@ -8050,6 +8050,56 @@
       "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/Crandor/border.bin",
       "blockdata_filepath": "data/layouts/Crandor/map.bin"
+    },
+    {
+      "id": "LAYOUT_DAEMONHEIM",
+      "name": "Daemonheim_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Ice_Mountain",
+      "border_filepath": "data/layouts/Daemonheim/border.bin",
+      "blockdata_filepath": "data/layouts/Daemonheim/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE0",
+      "name": "Route0_Layout",
+      "width": 40,
+      "height": 46,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route0/border.bin",
+      "blockdata_filepath": "data/layouts/Route0/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_CAVES_3",
+      "name": "Tzhaar_Caves_3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_Caves_3/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_Caves_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_CAVES_4",
+      "name": "Tzhaar_Caves_4_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_Caves_4/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_Caves_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_CAVES_5",
+      "name": "Tzhaar_Caves_5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_Caves_5/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_Caves_5/map.bin"
     }
   ]
 }

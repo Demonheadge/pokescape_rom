@@ -332,4 +332,4 @@ NPC_PortSarim_Church_Monk_2_Text_0:
 	.string "Not many people visit our Church out\n"
 	.string "here.\p"
 	.string "I don't think many people know of its\n"
-	.string "existance.$"
+	.string "existence.$"

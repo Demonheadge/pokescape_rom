@@ -1302,6 +1302,7 @@ SECTIONS {
         sound/songs/midi/MUS_PS_ENCOUNTER_MITHRILMAN.o(.rodata);
         sound/songs/midi/MUS_PS_QUEST_COMPLETE.o(.rodata);
         sound/songs/midi/MUS_PS_KOUREND_CATACOMBS.o(.rodata);
+        sound/songs/midi/MUS_PS_TRAINER_VICTORY.o(.rodata);
         
 	
 		

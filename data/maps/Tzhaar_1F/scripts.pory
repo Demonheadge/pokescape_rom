@@ -15,6 +15,198 @@ script TZHAAR_GAAL
     end
 }
 
+script TRIGGER_TZHAAR_GYM_GAAL_1
+{
+    //if gym badge not obtained
+    faceplayer
+    namebox ("Ga'al")
+    msgbox(format("Allow us to escort you back to the Tzhaar City."))
+    closemessage
+    hidenamebox
+    //applymovement 
+    //warp
+    release
+    end
+}
+
+
+
+script TZHAAR_GYM_NPC
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Welcome to the Tzhaar Fight Caves!\pOnly MvM challengers may enter.\pIf you wish to participate see TokHaar-Hok in Kiln to the north."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_1
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("We Tzhaar are strong.\pOur strongest participate in what you call MvM Championships.\pWe even have a gym located in the Elder Kiln which is located in the north of the city."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_2
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pWould you like me to escort you?"))
+    closemessage
+    hidenamebox
+    //Warp to gym leader.
+
+    //if gym badge is got:
+    msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pYou seem skilled enough that you no longer need an escort."))
+    release
+    end
+}
+
+script TZHAAR_NPC_3
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Ever since we have participated in the MvM championships there have been many of your kind passing through our city.\pWe have had to reinforce our tunnels for safety."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_4
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("If you wish to heal check out our bank by the Fight Caves to the south east."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_5
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Be careful, many of your kind get lost in city.\pIf you get lost try talking to us."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_6
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("To the north are our sacred Kilns.\pTo the west leads deep into the volcano.\pTo the south-east leads to the Fight Caves.\pTo the south leads to the island.\pSo many ways to go, which way will you take?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_7
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("I have to constantly clear this corridor as we get cave-in's quite often."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_8
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("While we like to fight, we also like to make friends.\pWill you be our friend?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_9
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("When defeated we Tzhaar turn into TokKul.\pWhich is what we use for currency around here.\pBut for all of your MvM supplies we charge you the regular GP."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_10
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("I could have swore I heard this TokKul talking to me.\pEh, probably nothing."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_11
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("There are 3 different races.\pTokHaar, Jal and Tzhaar.\pThere are also the Ga'al, they are new."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_RUNE_ARMOUR
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("This gym challenge is so hard.\pI keep getting 1-hit…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_12
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("These tunnels lead to deep into the heart of the volcano.\pYou are not ready to enter yet."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script TZHAAR_NPC_BANKER
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Greetings, welcome to the Bank of Tzhaar!\pWe are learning new things from this human.\pWhat can I help you with today?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
 //Would like to include some variable dialogue for after you have completed the Gym challenge? Maybe 'Ga'al not die in...caves like other Ga'al. All thanks to...you!'
 
 script TZHAAR_OZAN

@@ -618,6 +618,7 @@
 #define MAP_VARROCK_GRAND_EXCHANGE_PATH (22 | (34 << 8))
 #define MAP_VARROCK_CHURCH              (23 | (34 << 8))
 #define MAP_CRANDOR                     (24 | (34 << 8))
+#define MAP_DAEMONHEIM                  (25 | (34 << 8))
 
 // gMapGroup_PokescapeRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -669,6 +670,7 @@
 #define MAP_ROUTE47 (46 | (35 << 8))
 #define MAP_ROUTE48 (47 | (35 << 8))
 #define MAP_ROUTE49 (48 | (35 << 8))
+#define MAP_ROUTE0  (49 | (35 << 8))
 
 // gMapGroup_PokescapeDungeons
 #define MAP_TUTORIAL_ISLAND_CAVE        (0 | (36 << 8))
@@ -906,6 +908,9 @@
 #define MAP_TZHAAR_FIGHT_CAVES (1 | (49 << 8))
 #define MAP_TZHAAR_CAVES_1     (2 | (49 << 8))
 #define MAP_TZHAAR_CAVES_2     (3 | (49 << 8))
+#define MAP_TZHAAR_CAVES_3     (4 | (49 << 8))
+#define MAP_TZHAAR_CAVES_4     (5 | (49 << 8))
+#define MAP_TZHAAR_CAVES_5     (6 | (49 << 8))
 
 // gMapGroup_PokescapeIndoorVarious
 #define MAP_ROUTE1_HOUSE_FRED                   (0 | (50 << 8))

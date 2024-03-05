@@ -8273,7 +8273,7 @@ static void Cmd_various(void)
         }
         break;
     case VARIOUS_PLAY_TRAINER_DEFEATED_MUSIC:
-        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_VICTORY_TRAINER, TRUE);
+        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_PS_TRAINER_VICTORY, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
     case VARIOUS_STAT_TEXT_BUFFER:

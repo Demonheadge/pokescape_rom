@@ -14,32 +14,60 @@ script NPC_TZHAAR_GYM_TOKHAAR
 {
     lock
     faceplayer
-    namebox("TokHaar")
+    namebox("TokHaar-Hok")
 
-    if (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST) == 1) {
-        msgbox(format("Go to the Fight Caves."))
+
+
+    switch (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST)){ 
+		case 0:
+			msgbox(format("Welcome to the Elder Kiln, MvM Challenger.\pI am TokHaar-Hok.\pIf you want the Tzhaar Gym badge you must defeat me.\pBut before that you must prove yourself against TzTok-Jad within the Fight Caves."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 2)
+        case 1:
+            msgbox(format("Would you like to start your Fight Caves gym challenge?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT))
+            {
+            msgbox(format("Very well, Ga'al will escort you to the caves."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 3)
+            }
+        case 18:
+            msgbox(format("Pathetic, to think you would panic and run from the fight caves!\pTry again but next time don't run away like a coward."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1)
+        case 19:
+            msgbox(format("Impressive, well done MvM Challenger.\pYou defeated TzTok-Jad and the Fight Caves.\pYou may now challenge me, I will give you time to prepare.\pCome back when you are ready to face me."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 20)
+        case 20: 
+            msgbox(format("Are you ready for your battle against me?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT))
+            {
+            msgbox(format("Very well. Show me what you got."))
+            //Battle TokHaar Hok
+            hidenamebox
+            trainerbattle_no_intro(TRAINER_ALKHARID_GYM_PRINCE_ALI, msgbox(format("That was a very enjoyable battle!")))
+            namebox("TokHaar-Hok")
+            msgbox(format("You have done very well.\pTo mark your triumph, accept a gym badge."))
+            hidenamebox
+            playfanfare(MUS_PS_QUEST_COMPLETE) //MUS_OBTAIN_BADGE MUS_PS_QUEST_COMPLETE
+            msgbox(format("{PLAYER} received the TZHAAR BADGE from TokHaar-Hok."))
+            waitfanfare
+            waitmessage
+            namebox("TokHaar-Hok")
+            msgbox(format("Also have this Scroll."))
+            hidenamebox
+            giveitem (ITEM_TM48, 1) //Power Gem.
+            compare(VAR_RESULT, FALSE)
+            goto_if_eq(Common_EventScript_ShowBagIsFull)
+            playbgm(MUS_PS_ALKHARID, 0)
+            savebgm(MUS_PS_ALKHARID)
+            namebox("TokHaar-Hok")
+            msgbox(format("That move is called Power Gem.\pIt sparkles just as all our precious Gems around the palace do."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 30)
+            setflag(FLAG_BADGE05_GET)
+            addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
+            //call(SetGymTrainers_TZHAAR)
+            }
+        case 30: 
+            msgbox(format("Hello again."))
     }
-
-    if (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST) == 18) {
-        msgbox(format("Pathetic, to think you would panic and run from the fight caves!\pTry again but next time don't run away like a coward."))
-        setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1)
-    }
-
-    if (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST) == 19) {
-        msgbox(format("You defeated TzTok Jad!"))
-    }
-
-    if (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST) == 20) {
-        msgbox(format("You caught TzTok Jad!"))
-    }
-
-    if (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST) == 0) {
-        msgbox(format("Welcome to the Tzhaar Gym.\pIf you wish to battle me you must show your strength in the Fight Caves."))
-        setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1)
-    }
-
-    
-    
     hidenamebox
     closemessage
     release

@@ -664,7 +664,8 @@
     "GrandExchange",
     "Varrock_GrandExchange_Path",
     "Varrock_Church",
-    "Crandor"
+    "Crandor",
+    "Daemonheim"
   ],
   "gMapGroup_PokescapeRoutes": [
     "Route1",
@@ -715,7 +716,8 @@
     "Route46",
     "Route47",
     "Route48",
-    "Route49"
+    "Route49",
+    "Route0"
   ],
   "gMapGroup_PokescapeDungeons": [
     "Tutorial_Island_Cave",
@@ -953,7 +955,10 @@
     "Tzhaar_1F",
     "Tzhaar_FightCaves",
     "Tzhaar_Caves_1",
-    "Tzhaar_Caves_2"
+    "Tzhaar_Caves_2",
+    "Tzhaar_Caves_3",
+    "Tzhaar_Caves_4",
+    "Tzhaar_Caves_5"
   ],
   "gMapGroup_PokescapeIndoorVarious": [
     "Route1_House_Fred",
