@@ -875,6 +875,7 @@
 #define MAP_DUNGEONEERING_LOBBY (16 | (46 << 8))
 
 // gMapGroup47
+#define MAP_EDGEVILLE_GYM (0 | (47 << 8))
 
 // gMapGroup_PokescapeOutdoorMembers
 #define MAP_YANILLE       (0 | (48 << 8))

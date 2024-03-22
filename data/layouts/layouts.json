@@ -8100,6 +8100,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Tzhaar_Caves_5/border.bin",
       "blockdata_filepath": "data/layouts/Tzhaar_Caves_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_GYM",
+      "name": "Edgeville_Gym_Layout",
+      "width": 30,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Edgeville_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_Gym/map.bin"
     }
   ]
 }

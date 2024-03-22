@@ -1788,3 +1788,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Tzhaar_Caves_4/scripts.inc"
 
 	.include "data/maps/Tzhaar_Caves_5/scripts.inc"
+
+	.include "data/maps/Edgeville_Gym/scripts.inc"
