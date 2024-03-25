@@ -32,6 +32,16 @@
       "map": "MAP_ROUTE19",
       "offset": 44,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE200",
+      "offset": 20,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_GRAND_EXCHANGE",
+      "offset": 14,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -49,13 +59,13 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PVMER",
-      "x": 12,
-      "y": 28,
+      "graphics_id": "OBJ_EVENT_GFX_PKER_RUSHER",
+      "x": 10,
+      "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_EDGEVILLE_7",
@@ -102,7 +112,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 8,
+      "x": 7,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -128,7 +138,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PKER",
-      "x": 7,
+      "x": 5,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
@@ -167,8 +177,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 16,
-      "y": 30,
+      "x": 0,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -190,6 +200,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ITEM_EDGEVILLE_1",
       "flag": "FLAG_ITEM_EDGEVILLE_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_DRAYNOR",
+      "x": 41,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DOG_GUARD",
+      "x": 42,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DURIAL321",
+      "x": 18,
+      "y": 0,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -204,7 +253,7 @@
       "x": 15,
       "y": 31,
       "elevation": 0,
-      "dest_map": "MAP_EDGEVILLE",
+      "dest_map": "MAP_EDGEVILLE_GYM",
       "dest_warp_id": "0"
     },
     {
@@ -273,11 +322,19 @@
     },
     {
       "type": "sign",
-      "x": 41,
-      "y": 9,
+      "x": 43,
+      "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EDGEVILLE_SIGN_2"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SIGNPOST_EDGEVILLE_GYM"
     }
   ]
 }

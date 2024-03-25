@@ -34,13 +34,13 @@
       "direction": "up"
     },
     {
-      "map": "MAP_GRAND_EXCHANGE",
-      "offset": 0,
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
+      "offset": 24,
       "direction": "left"
     },
     {
-      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
-      "offset": 24,
+      "map": "MAP_GRAND_EXCHANGE",
+      "offset": -12,
       "direction": "left"
     }
   ],

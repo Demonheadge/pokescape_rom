@@ -57,6 +57,11 @@
       "map": "MAP_ROUTE21",
       "offset": 32,
       "direction": "left"
+    },
+    {
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH",
+      "offset": -14,
+      "direction": "left"
     }
   ],
   "object_events": [

@@ -12,6 +12,15 @@ ITEM_EDGEVILLE_1::
 	end
 
 
+SIGNPOST_EDGEVILLE_GYM::
+	lock
+	msgbox SIGNPOST_EDGEVILLE_GYM_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 NPC_EDGEVILLE_1::
 	lock
 	faceplayer
@@ -137,6 +146,10 @@ EDGEVILLE_SIGN_2::
 	release
 	end
 
+
+SIGNPOST_EDGEVILLE_GYM_Text_0:
+	.string "Edgeville Gym, located beneath the\n"
+	.string "graveyard.$"
 
 NPC_EDGEVILLE_1_Text_0:
 	.string "Mugger$"

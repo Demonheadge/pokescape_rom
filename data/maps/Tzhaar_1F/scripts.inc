@@ -193,8 +193,7 @@ TZHAAR_GYM_NPC_Text_0:
 	.string "Welcome to the Tzhaar Fight Caves!\p"
 	.string "Only MvM challengers may enter.\p"
 	.string "If you wish to participate see\n"
-	.string "TokHaar-Hok in the cave next to this\l"
-	.string "one.$"
+	.string "TokHaar-Hok in Kiln to the north.$"
 
 TZHAAR_NPC_1_Text_0:
 	.string "We Tzhaar are strong.\p"

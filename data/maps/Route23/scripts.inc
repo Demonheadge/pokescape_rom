@@ -4,6 +4,22 @@ Route23_MapScripts::
 
 Route23_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 3
+	call ROUTE23_STATE
+	return
+
+
+ROUTE23_STATE::
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 150
+	goto_if_ge ROUTE23_STATE_1
+	removeobject 11
+	removeobject 10
+	setflag FLAG_TEMP_1F
+	return
+
+ROUTE23_STATE_1:
+	addobject 11
+	addobject 10
+	clearflag FLAG_TEMP_1F
 	return
 
 

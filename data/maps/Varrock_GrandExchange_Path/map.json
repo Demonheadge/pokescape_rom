@@ -24,14 +24,19 @@
       "direction": "down"
     },
     {
-      "map": "MAP_GRAND_EXCHANGE",
-      "offset": -10,
-      "direction": "up"
-    },
-    {
       "map": "MAP_VARROCK_NORTH",
       "offset": -24,
       "direction": "right"
+    },
+    {
+      "map": "MAP_VARROCK",
+      "offset": 14,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_GRAND_EXCHANGE",
+      "offset": -16,
+      "direction": "up"
     }
   ],
   "object_events": [

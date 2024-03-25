@@ -13,6 +13,16 @@ script ITEM_EDGEVILLE_1
     end
 }
 
+script SIGNPOST_EDGEVILLE_GYM
+{
+	lock
+	msgbox(format("Edgeville Gym, located beneath the graveyard."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
 //NPCS
 script NPC_EDGEVILLE_1
 {

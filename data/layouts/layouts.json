@@ -5024,7 +5024,7 @@
     {
       "id": "LAYOUT_EDGEVILLE",
       "name": "Edgeville_Layout",
-      "width": 44,
+      "width": 54,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Edgeville",
@@ -7134,8 +7134,8 @@
     {
       "id": "LAYOUT_GRAND_EXCHANGE",
       "name": "GrandExchange_Layout",
-      "width": 20,
-      "height": 24,
+      "width": 26,
+      "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/GrandExchange/border.bin",
@@ -8110,6 +8110,16 @@
       "secondary_tileset": "gTileset_PokeScape_Sewers",
       "border_filepath": "data/layouts/Edgeville_Gym/border.bin",
       "blockdata_filepath": "data/layouts/Edgeville_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE200",
+      "name": "Route200_Layout",
+      "width": 34,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Edgeville",
+      "border_filepath": "data/layouts/Route200/border.bin",
+      "blockdata_filepath": "data/layouts/Route200/map.bin"
     }
   ]
 }
