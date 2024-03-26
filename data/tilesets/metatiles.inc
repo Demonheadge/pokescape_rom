@@ -786,3 +786,10 @@ gMetatiles_Ice_Mountain::
 	.align 1
 gMetatileAttributes_Ice_Mountain::
 	.incbin "data/tilesets/secondary/ice_mountain/metatile_attributes.bin"
+	.align 1
+gMetatiles_ChaosTunnels::
+	.incbin "data/tilesets/secondary/chaos_tunnels/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_ChaosTunnels::
+	.incbin "data/tilesets/secondary/chaos_tunnels/metatile_attributes.bin"

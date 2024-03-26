@@ -2370,3 +2370,23 @@ gTilesetPalettes_Ice_Mountain::
 	.align 2
 gTilesetTiles_Ice_Mountain::
 	.incbin "data/tilesets/secondary/ice_mountain/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_ChaosTunnels::
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/chaos_tunnels/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_ChaosTunnels::
+	.incbin "data/tilesets/secondary/chaos_tunnels/tiles.4bpp.lz"

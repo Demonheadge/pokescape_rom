@@ -6967,7 +6967,7 @@
       "width": 50,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "secondary_tileset": "gTileset_ChaosTunnels",
       "border_filepath": "data/layouts/WildernessVolcano_ChampionRoom/border.bin",
       "blockdata_filepath": "data/layouts/WildernessVolcano_ChampionRoom/map.bin"
     },
