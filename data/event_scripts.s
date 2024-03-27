@@ -1792,3 +1792,27 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Edgeville_Gym/scripts.inc"
 
 	.include "data/maps/Route200/scripts.inc"
+
+	.include "data/maps/Edgeville_House_1/scripts.inc"
+
+	.include "data/maps/Edgeville_House_2/scripts.inc"
+
+	.include "data/maps/Edgeville_House_3/scripts.inc"
+
+	.include "data/maps/Edgeville_House_4/scripts.inc"
+
+	.include "data/maps/Edgeville_Bank/scripts.inc"
+
+	.include "data/maps/Edgeville_General_Store/scripts.inc"
+
+	.include "data/maps/Edgeville_General_Store_2F/scripts.inc"
+
+	.include "data/maps/Ice_Mountain/scripts.inc"
+
+	.include "data/maps/Dwarven_Mines_House_1/scripts.inc"
+
+	.include "data/maps/Dwarven_Mines_House_2/scripts.inc"
+
+	.include "data/maps/Dwarven_Mines_House_3/scripts.inc"
+
+	.include "data/maps/Route19_CookingGuild/scripts.inc"

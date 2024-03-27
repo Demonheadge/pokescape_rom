@@ -8120,6 +8120,126 @@
       "secondary_tileset": "gTileset_Edgeville",
       "border_filepath": "data/layouts/Route200/border.bin",
       "blockdata_filepath": "data/layouts/Route200/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_HOUSE_1",
+      "name": "Edgeville_House_1_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_HOUSE_2",
+      "name": "Edgeville_House_2_Layout",
+      "width": 6,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_HOUSE_3",
+      "name": "Edgeville_House_3_Layout",
+      "width": 8,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_HOUSE_4",
+      "name": "Edgeville_House_4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_House_4/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_House_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_BANK",
+      "name": "Edgeville_Bank_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Edgeville_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_GENERAL_STORE",
+      "name": "Edgeville_General_Store_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_General_Store/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_General_Store/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_GENERAL_STORE_2F",
+      "name": "Edgeville_General_Store_2F_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_General_Store_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_General_Store_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_MOUNTAIN",
+      "name": "Ice_Mountain_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Ice_Mountain",
+      "border_filepath": "data/layouts/Ice_Mountain/border.bin",
+      "blockdata_filepath": "data/layouts/Ice_Mountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_DWARVEN_MINES_HOUSE_1",
+      "name": "Dwarven_Mines_House_1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Dwarven_Mines_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Dwarven_Mines_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DWARVEN_MINES_HOUSE_2",
+      "name": "Dwarven_Mines_House_2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Dwarven_Mines_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Dwarven_Mines_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DWARVEN_MINES_HOUSE_3",
+      "name": "Dwarven_Mines_House_3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Dwarven_Mines_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Dwarven_Mines_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE19_COOKING_GUILD",
+      "name": "Route19_CookingGuild_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Route19_CookingGuild/border.bin",
+      "blockdata_filepath": "data/layouts/Route19_CookingGuild/map.bin"
     }
   ]
 }

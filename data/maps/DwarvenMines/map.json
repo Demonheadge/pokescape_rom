@@ -123,28 +123,28 @@
       "x": 5,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DWARVEN_MINE_B1F",
+      "dest_map": "MAP_DWARVEN_MINES_HOUSE_1",
       "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DWARVEN_MINE_B1F",
+      "dest_map": "MAP_DWARVEN_MINES_HOUSE_1",
       "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DWARVEN_MINE_B1F",
+      "dest_map": "MAP_DWARVEN_MINES_HOUSE_2",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_DWARVEN_MINE_B1F",
+      "dest_map": "MAP_DWARVEN_MINES_HOUSE_3",
       "dest_warp_id": "0"
     }
   ],

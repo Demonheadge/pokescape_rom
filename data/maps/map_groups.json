@@ -763,7 +763,8 @@
     "Lumbridge_Swamp_Caves_WGS_3",
     "Lumbridge_Swamp_Caves_WGS_4",
     "Chaos_Tunnels_B2F",
-    "Abyssal_Realm_3"
+    "Abyssal_Realm_3",
+    "Ice_Mountain"
   ],
   "gMapGroup_PokescapeIndoorTutorialIsland": [
     "Tutorial_Island_Lab_Up",
@@ -887,7 +888,8 @@
     "Varrock_GeneralStore",
     "Varrock_Aubury_Store",
     "Grand_Exchange_Indoor",
-    "Varrock_Sewers_3F"
+    "Varrock_Sewers_3F",
+    "Route19_CookingGuild"
   ],
   "gMapGroup_PokescapeIndoorBarbarianVillage": [
     "BarbarianVillage_GymHall",
@@ -923,7 +925,17 @@
     "Dungeoneering_Lobby"
   ],
   "gMapGroup47": [
-    "Edgeville_Gym"
+    "Edgeville_Gym",
+    "Edgeville_House_1",
+    "Edgeville_House_2",
+    "Edgeville_House_3",
+    "Edgeville_House_4",
+    "Edgeville_Bank",
+    "Edgeville_General_Store",
+    "Edgeville_General_Store_2F",
+    "Dwarven_Mines_House_1",
+    "Dwarven_Mines_House_2",
+    "Dwarven_Mines_House_3"
   ],
   "gMapGroup_PokescapeOutdoorMembers": [
     "Yanille",

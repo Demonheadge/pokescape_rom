@@ -37,6 +37,11 @@
       "map": "MAP_ROUTE27",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ICE_MOUNTAIN",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

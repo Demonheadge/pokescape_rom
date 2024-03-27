@@ -32,6 +32,11 @@
       "map": "MAP_EDGEVILLE",
       "offset": -6,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ICE_MOUNTAIN",
+      "offset": -26,
+      "direction": "up"
     }
   ],
   "object_events": [

@@ -717,6 +717,7 @@
 #define MAP_LUMBRIDGE_SWAMP_CAVES_WGS_4 (40 | (36 << 8))
 #define MAP_CHAOS_TUNNELS_B2F           (41 | (36 << 8))
 #define MAP_ABYSSAL_REALM_3             (42 | (36 << 8))
+#define MAP_ICE_MOUNTAIN                (43 | (36 << 8))
 
 // gMapGroup_PokescapeIndoorTutorialIsland
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))
@@ -841,6 +842,7 @@
 #define MAP_VARROCK_AUBURY_STORE      (24 | (43 << 8))
 #define MAP_GRAND_EXCHANGE_INDOOR     (25 | (43 << 8))
 #define MAP_VARROCK_SEWERS_3F         (26 | (43 << 8))
+#define MAP_ROUTE19_COOKING_GUILD     (27 | (43 << 8))
 
 // gMapGroup_PokescapeIndoorBarbarianVillage
 #define MAP_BARBARIAN_VILLAGE_GYM_HALL (0 | (44 << 8))
@@ -876,7 +878,17 @@
 #define MAP_DUNGEONEERING_LOBBY (16 | (46 << 8))
 
 // gMapGroup47
-#define MAP_EDGEVILLE_GYM (0 | (47 << 8))
+#define MAP_EDGEVILLE_GYM              (0 | (47 << 8))
+#define MAP_EDGEVILLE_HOUSE_1          (1 | (47 << 8))
+#define MAP_EDGEVILLE_HOUSE_2          (2 | (47 << 8))
+#define MAP_EDGEVILLE_HOUSE_3          (3 | (47 << 8))
+#define MAP_EDGEVILLE_HOUSE_4          (4 | (47 << 8))
+#define MAP_EDGEVILLE_BANK             (5 | (47 << 8))
+#define MAP_EDGEVILLE_GENERAL_STORE    (6 | (47 << 8))
+#define MAP_EDGEVILLE_GENERAL_STORE_2F (7 | (47 << 8))
+#define MAP_DWARVEN_MINES_HOUSE_1      (8 | (47 << 8))
+#define MAP_DWARVEN_MINES_HOUSE_2      (9 | (47 << 8))
+#define MAP_DWARVEN_MINES_HOUSE_3      (10 | (47 << 8))
 
 // gMapGroup_PokescapeOutdoorMembers
 #define MAP_YANILLE       (0 | (48 << 8))
