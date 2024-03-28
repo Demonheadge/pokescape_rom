@@ -174,7 +174,7 @@ HAM_HIDEOUT_GOLDENGNOME_EVENT::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_POKESCAPE_GOLDENGNOMES, 15
-	warpwhitefade MAP_VARROCK_PUB_1F, 255, 2, 20
+	warpwhitefade MAP_DRAYNOR, 255, 14, 28
 	release
 	end
 
@@ -403,7 +403,7 @@ GOLDENGNOME_EVENT_START_4:
 
 GOLDENGNOME_EVENT_END::
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractFACELEFT
-	applymovement 2, Movement_InteractFACERIGHT
+	applymovement 1, Movement_InteractFACERIGHT
 	waitmovement 0
 	msgbox GOLDENGNOME_EVENT_END_Text_0
 	waitmessage
@@ -450,8 +450,8 @@ HAM_HIDEOUT_GOLDENGNOME_EVENT_Text_5:
 	.string "I am Demonheadge, the creator of\n"
 	.string "PokeScape.\p"
 	.string "And as of a few seconds ago I have been\n"
-	.string "informed that PokeScape has just won\l"
-	.string "a Golden Gnome!$"
+	.string "informed that PokeScape has been\l"
+	.string "nominated for a Golden Gnome!$"
 
 HAM_HIDEOUT_GOLDENGNOME_EVENT_Text_6:
 	.string "That's crazy right?!\p"
@@ -523,7 +523,7 @@ HAM_HIDEOUT_GOLDENGNOME_EVENT_Text_18:
 	.string "Awards!$"
 
 GOLDENGNOME_EVENT_START_Text_0:
-	.string "Hi, would you like to watch the Golden\n"
+	.string "Would you like to watch the Golden\n"
 	.string "Gnomes Awards?$"
 
 GOLDENGNOME_EVENT_START_Text_1:

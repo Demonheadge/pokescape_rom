@@ -59,6 +59,16 @@ PUB_EVENT_STATE_3:
 	return
 
 
+NPC_VarrockPub_GOLDENGNOMES::
+	lock
+	faceplayer
+	namebox NPC_VarrockPub_GOLDENGNOMES_Text_0
+	msgbox NPC_VarrockPub_GOLDENGNOMES_Text_1
+	hidenamebox
+	release
+	end
+
+
 NPC_VarrockPub_BARBARIAN::
 	lock
 	faceplayer
@@ -411,6 +421,15 @@ RAC_Snow::
 	release
 	end
 
+
+NPC_VarrockPub_GOLDENGNOMES_Text_0:
+	.string "Drunk Man$"
+
+NPC_VarrockPub_GOLDENGNOMES_Text_1:
+	.string "hic…\n"
+	.string "YoU kNow whaT stiNkz?!\p"
+	.string "tHe faCt thAt PoK.S.ape lOsT the.. LoSt.\p"
+	.string "G..d..n .nO.mes.$"
 
 NPC_VarrockPub_BARBARIAN_Text_0:
 	.string "Barbarian$"

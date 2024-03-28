@@ -218,8 +218,9 @@
 #define FLAG_DUNGEONEERING_ITEM_15                   0xA5
 #define FLAG_DUNGEONEERING_ITEM_16                   0xA6
 
-#define FLAG_RECEIVED_TM34                   0xA7
-#define FLAG_RECEIVED_TM50                   0xA8
+#define FLAG_DIANGO_GIFT_DRAGONKITE                   0xA7 //FLAG_RECEIVED_TM34
+#define FLAG_DIANGO_GIFT_FROGEELBURGER                   0xA8  //FLAG_RECEIVED_TM50
+
 #define FLAG_RECEIVED_TM42                   0xA9
 #define FLAG_RECEIVED_TM40                   0xAA
 #define FLAG_RECEIVED_TM04                   0xAB

@@ -4,8 +4,10 @@ mapscripts Draynor_MapScripts {
     MAP_SCRIPT_ON_LOAD {
         call(WizardsTower_Draynor_STATE)
         call(DRAYNOR_GUARD_STATE)
-        end
         }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_POKESCAPE_GOLDENGNOMES, 15: GOLDENGNOME_EVENT_END
+    ]
 }
 
 
@@ -138,19 +140,100 @@ script Draynor_Diango {
 	lock
 	faceplayer
     namebox("Diango")
-    random(3)
-        switch (var(VAR_RESULT)) {
-            case 0: 
-                msgbox(format("Howdy!\pHave you seen my holiday items?\pLook at this toy horsey!\pHi-ho Silver, and away!"))
-            case 1:
-                msgbox(format("Howdy!\pLook at this cool spinning plate I have!\pOh dear, I dropped it."))
-            case 2:
-                msgbox(format("Howdy!\pDo you like my rubber chicken?\pWhack!"))
+    //random(3)
+    //    switch (var(VAR_RESULT)) {
+     //       case 0: 
+    //            msgbox(format("Howdy!\pHave you seen my holiday items?\pLook at this toy horsey!\pHi-ho Silver, and away!"))
+     //       case 1:
+     //           msgbox(format("Howdy!\pLook at this cool spinning plate I have!\pOh dear, I dropped it."))
+     //       case 2:
+     //           msgbox(format("Howdy!\pDo you like my rubber chicken?\pWhack!"))
+     //   }
+
+
+    msgbox(format("Howdy!\pWould you like to see if you have any gifts avaliable?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+        hidenamebox
+        msgbox(format("Loading - please wait{PAUSE 32}.{PAUSE 32}.{PAUSE 32}."))
+        random(3)
+        if (var(VAR_RESULT) == 0) {
+            msgbox(format("Connection Lost.\pPlease wait - attempting to reestablish{PAUSE 32}.{PAUSE 32}.{PAUSE 32}."))
         }
+        
+
+        //check flag for gift
+        if (flag(FLAG_DIANGO_GIFT_DRAGONKITE) == FALSE) {
+            call(GIFT_DRAGONKITE)
+        }
+        elif (flag(FLAG_DIANGO_GIFT_FROGEELBURGER) == FALSE) {
+            call(GIFT_FROGEELBURGER)
+        }
+        elif (var(VAR_POKESCAPE_GOLDENGNOMES) == 0) {
+            msgbox(format("An announcement was found!"))
+            call(GOLDENGNOME_EVENT_START)
+        }
+        else {
+            msgbox(format("There was no gift to be found…"))
+        }
+
+
+
+        
+    }
+    else {
+        msgbox(format("Thank you come again."))
+    }
+
+    
+
+
+
+    
+
+    
+    
     hidenamebox
     release
 	end
 }
+
+script GIFT_DRAGONKITE {
+    msgbox(format("Gift successfully found!"))
+
+    givemon (SPECIES_DRAGONKITE, 10, ITEM_NONE)
+    bufferspeciesname(1, SPECIES_DRAGONKITE)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained a {STR_VAR_2}."))
+	waitmessage
+	waitfanfare
+	bufferspeciesname(0, SPECIES_DRAGONKITE)
+    setflag(FLAG_DIANGO_GIFT_DRAGONKITE)
+
+    msgbox(format("There is a note alongside the gift, it reads:"))
+    msgbox(format("Thank you for using Gift System.\n- Diango"))
+    return
+}
+script GIFT_FROGEELBURGER {
+    msgbox(format("Gift successfully found!"))
+
+    additem(ITEM_FROGEEL_BURGER, 1)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained a FROGEEL BURGER."))
+	waitmessage
+	waitfanfare
+    setflag(FLAG_DIANGO_GIFT_FROGEELBURGER)
+
+    msgbox(format("There is a note alongside the gift, it reads:"))
+    msgbox(format("Thank you for playing PokeScape.\pCheck out our website and discord server for the latest updates."))
+    return
+}
+
+
+
+
+
+
+
 
 script Draynor_Miss_Schism{
 	lock

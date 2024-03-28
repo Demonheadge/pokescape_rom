@@ -58,6 +58,16 @@ script PUB_EVENT_STATE {
 
 //NPCS.
 
+script NPC_VarrockPub_GOLDENGNOMES
+{
+    lock
+    faceplayer
+    namebox("Drunk Man")
+    msgbox(format("hic…\nYoU kNow whaT stiNkz?!\ptHe faCt thAt PoK.S.ape lOsT the.. LoSt.\pG..d..n .nO.mes.")) 
+    hidenamebox
+    release
+    end
+}
 
 script NPC_VarrockPub_BARBARIAN
 {
