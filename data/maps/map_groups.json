@@ -903,7 +903,13 @@
     "AlKharid_House_1",
     "AlKharid_Bank",
     "Starter_House_AlKharid",
-    "Alkharid_Gym_2F_R1"
+    "Alkharid_Gym_2F_R1",
+    "AlKharid_House_2",
+    "AlKharid_House_3",
+    "AlKharid_House_4_1F",
+    "AlKharid_House_4_2F",
+    "AlKharid_GeneralStore",
+    "AlKharid_Tent"
   ],
   "gMapGroup46": [
     "Dungeoneering_1",

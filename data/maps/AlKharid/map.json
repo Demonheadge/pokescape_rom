@@ -149,8 +149,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
-      "x": 28,
-      "y": 19,
+      "x": 39,
+      "y": 27,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -238,7 +238,7 @@
       "x": 43,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_AL_KHARID_GENERAL_STORE",
       "dest_warp_id": "0"
     },
     {
@@ -287,28 +287,28 @@
       "x": 18,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": "12"
+      "dest_map": "MAP_AL_KHARID_HOUSE_2",
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID_HOUSE_1",
+      "dest_map": "MAP_AL_KHARID_HOUSE_3",
       "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_AL_KHARID_HOUSE_1",
       "dest_warp_id": "0"
     },
     {
       "x": 43,
       "y": 20,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_AL_KHARID_HOUSE_1",
       "dest_warp_id": "0"
     },
     {
@@ -330,6 +330,20 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_STARTER_HOUSE_AL_KHARID",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_AL_KHARID_HOUSE_4_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_AL_KHARID_HOUSE_4_2F",
       "dest_warp_id": "0"
     }
   ],
@@ -372,8 +386,8 @@
     },
     {
       "type": "sign",
-      "x": 26,
-      "y": 20,
+      "x": 25,
+      "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ALKHARID_WATERWELL"

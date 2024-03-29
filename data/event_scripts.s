@@ -1816,3 +1816,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Dwarven_Mines_House_3/scripts.inc"
 
 	.include "data/maps/Route19_CookingGuild/scripts.inc"
+
+	.include "data/maps/AlKharid_House_2/scripts.inc"
+
+	.include "data/maps/AlKharid_House_3/scripts.inc"
+
+	.include "data/maps/AlKharid_House_4_1F/scripts.inc"
+
+	.include "data/maps/AlKharid_House_4_2F/scripts.inc"
+
+	.include "data/maps/AlKharid_GeneralStore/scripts.inc"
+
+	.include "data/maps/AlKharid_Tent/scripts.inc"

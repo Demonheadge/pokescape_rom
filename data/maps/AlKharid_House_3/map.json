@@ -1,0 +1,41 @@
+{
+  "id": "MAP_AL_KHARID_HOUSE_3",
+  "name": "AlKharid_House_3",
+  "layout": "LAYOUT_AL_KHARID_HOUSE_3",
+  "music": "MUS_PS_ALKHARID",
+  "region_map_section": "MAPSEC_ALKHARID",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_AL_KHARID",
+      "dest_warp_id": "9"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_COAL_ORE",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

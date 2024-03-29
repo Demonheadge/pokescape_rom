@@ -4757,7 +4757,7 @@
       "width": 10,
       "height": 9,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Lumbridge_House_4/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_House_4/map.bin"
     },
@@ -7304,8 +7304,8 @@
     {
       "id": "LAYOUT_AL_KHARID_HOUSE_1",
       "name": "AlKharid_House_1_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 8,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/AlKharid_House_1/border.bin",
@@ -8154,8 +8154,8 @@
     {
       "id": "LAYOUT_EDGEVILLE_HOUSE_4",
       "name": "Edgeville_House_4_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 8,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Edgeville_House_4/border.bin",
@@ -8240,6 +8240,66 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Route19_CookingGuild/border.bin",
       "blockdata_filepath": "data/layouts/Route19_CookingGuild/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_HOUSE_2",
+      "name": "AlKharid_House_2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_HOUSE_3",
+      "name": "AlKharid_House_3_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_HOUSE_4_1F",
+      "name": "AlKharid_House_4_1F_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_House_4_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_House_4_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_HOUSE_4_2F",
+      "name": "AlKharid_House_4_2F_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_House_4_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_House_4_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_GENERAL_STORE",
+      "name": "AlKharid_GeneralStore_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_GeneralStore/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_GeneralStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_TENT",
+      "name": "AlKharid_Tent_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_Tent/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_Tent/map.bin"
     }
   ]
 }
