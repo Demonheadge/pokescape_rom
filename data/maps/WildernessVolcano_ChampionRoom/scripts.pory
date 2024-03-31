@@ -1,0 +1,75 @@
+
+mapscripts WildernessVolcano_ChampionRoom_MapScripts {
+
+}
+
+
+
+script NPC_WILDERNESS_CRATER_START_CHALLENGE
+{
+    lock
+    faceplayer
+    //namebox(".")
+    msgbox(format("Welcome to the Wilderness Crater!\pBefore you can challenge the most elite MvMers I must check that you have 8 badges.")) 
+    msgbox(format("Alright! You have 8 Badges. You may enter. Good luck with your challenge!")) 
+    hidenamebox
+    release
+    end
+}
+
+
+script WILDERNESS_CRATER_SIR_TIFFY
+{
+    lock
+    faceplayer
+    namebox("Sir Tiffy")
+    msgbox(format("Hello {PLAYER}. I've heard a lot of good things about you. I am looking forward to this battle! I am number 1 in your challenge."))
+    hidenamebox
+    release
+    end
+}
+
+script WILDERNESS_CRATER_HAZELMARE
+{
+    lock
+    faceplayer
+    namebox("Hazelmare")
+    msgbox(format("you hear thoughts in your mind…\pI am number 3. I can read your every move.")) 
+    hidenamebox
+    release
+    end
+}
+
+script WILDERNESS_CRATER_HANS
+{
+    lock
+    faceplayer
+    namebox("HANS")
+    msgbox(format("{PLAYER}! Welcome to Lumbridge!")) 
+    hidenamebox
+    release
+    end
+}
+
+script WILDERNESS_CRATER_ZANIK
+{
+    lock
+    faceplayer
+    namebox("Zanik")
+    msgbox(format("It's good to see you again {PLAYER}! Ive been wanting to battle you ever since we battled alongside eachother to take down H.A.M!")) 
+    hidenamebox
+    release
+    end
+}
+
+
+script WILDERNESS_CRATER_WISEOLDMAN
+{
+    lock
+    faceplayer
+    namebox("Wise Old Man")
+    msgbox(format("Hello you mysterious person.\pYou must be strong to make it here. Lets do it. If not Ill just take all your party hats.")) 
+    hidenamebox
+    release
+    end
+}

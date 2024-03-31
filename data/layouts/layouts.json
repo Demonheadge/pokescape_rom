@@ -8300,6 +8300,46 @@
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/AlKharid_Tent/border.bin",
       "blockdata_filepath": "data/layouts/AlKharid_Tent/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_ROOM_1",
+      "name": "WildernessVolcano_Room_1_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_ChaosTunnels",
+      "border_filepath": "data/layouts/WildernessVolcano_Room_1/border.bin",
+      "blockdata_filepath": "data/layouts/WildernessVolcano_Room_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_ROOM_2",
+      "name": "WildernessVolcano_Room_2_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_ChaosTunnels",
+      "border_filepath": "data/layouts/WildernessVolcano_Room_2/border.bin",
+      "blockdata_filepath": "data/layouts/WildernessVolcano_Room_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_ROOM_3",
+      "name": "WildernessVolcano_Room_3_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_ChaosTunnels",
+      "border_filepath": "data/layouts/WildernessVolcano_Room_3/border.bin",
+      "blockdata_filepath": "data/layouts/WildernessVolcano_Room_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_ROOM_4",
+      "name": "WildernessVolcano_Room_4_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_ChaosTunnels",
+      "border_filepath": "data/layouts/WildernessVolcano_Room_4/border.bin",
+      "blockdata_filepath": "data/layouts/WildernessVolcano_Room_4/map.bin"
     }
   ]
 }

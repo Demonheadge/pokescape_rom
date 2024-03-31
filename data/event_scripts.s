@@ -1828,3 +1828,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AlKharid_GeneralStore/scripts.inc"
 
 	.include "data/maps/AlKharid_Tent/scripts.inc"
+
+	.include "data/maps/WildernessVolcano_Room_1/scripts.inc"
+
+	.include "data/maps/WildernessVolcano_Room_2/scripts.inc"
+
+	.include "data/maps/WildernessVolcano_Room_3/scripts.inc"
+
+	.include "data/maps/WildernessVolcano_Room_4/scripts.inc"

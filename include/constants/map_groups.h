@@ -1013,6 +1013,10 @@
 #define MAP_GWD_3                               (77 | (50 << 8))
 #define MAP_HIDDEN_GROTTOS                      (78 | (50 << 8))
 #define MAP_KOUREND_CATACOMBS_8                 (79 | (50 << 8))
+#define MAP_WILDERNESS_VOLCANO_ROOM_1           (80 | (50 << 8))
+#define MAP_WILDERNESS_VOLCANO_ROOM_2           (81 | (50 << 8))
+#define MAP_WILDERNESS_VOLCANO_ROOM_3           (82 | (50 << 8))
+#define MAP_WILDERNESS_VOLCANO_ROOM_4           (83 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

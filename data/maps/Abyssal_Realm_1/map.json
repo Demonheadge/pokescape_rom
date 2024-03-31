@@ -483,6 +483,13 @@
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 71,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERNESS_VOLCANO_LOBBY",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

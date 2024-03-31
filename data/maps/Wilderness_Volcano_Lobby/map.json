@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAPTOR",
-      "x": 6,
+      "x": 7,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_WILDERNESS_CRATER_START_CHALLENGE",
       "flag": "0"
     },
     {
@@ -117,8 +117,15 @@
       "x": 6,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_WILDERNESS_VOLCANO_CHAMPION_ROOM",
+      "dest_map": "MAP_WILDERNESS_VOLCANO_ROOM_1",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_warp_id": "39"
     }
   ],
   "coord_events": [
