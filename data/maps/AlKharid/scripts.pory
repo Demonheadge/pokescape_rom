@@ -229,3 +229,50 @@ script SHANTYPASS_NPC_3
     release
     end
 }
+
+
+
+
+
+
+script ITEM_ALKHARID_INDOOR_1
+{
+    finditem(ITEM_NONE)
+    end
+}
+script ITEM_ALKHARID_INDOOR_2
+{
+    finditem(ITEM_NONE)
+    end
+}
+
+script ALKHARID_INDOOR_NPC_1
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_INDOOR_NPC_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    //hidenamebox
+    release
+    end
+} 
+script ALKHARID_INDOOR_NPC_3
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    //hidenamebox
+    release
+    end
+} 

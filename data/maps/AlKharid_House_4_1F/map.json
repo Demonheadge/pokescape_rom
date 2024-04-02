@@ -24,7 +24,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ALKHARID_INDOOR_NPC_3",
       "flag": "0"
     }
   ],
@@ -34,7 +34,7 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": "0"
+      "dest_warp_id": "15"
     }
   ],
   "coord_events": [

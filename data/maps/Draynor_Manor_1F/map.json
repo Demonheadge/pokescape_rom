@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_2",
-      "x": 27,
+      "x": 28,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
-      "x": 15,
+      "x": 16,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WENDY",
-      "x": 9,
+      "x": 10,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
-      "x": 34,
+      "x": 35,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
-      "x": 28,
+      "x": 29,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 20,
+      "x": 21,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -107,7 +107,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 32,
+      "x": 33,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -120,7 +120,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 40,
+      "x": 41,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 42,
+      "x": 43,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -146,7 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 29,
+      "x": 30,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -159,7 +159,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 9,
+      "x": 10,
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -172,7 +172,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHAIR",
-      "x": 17,
+      "x": 18,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 27,
+      "x": 28,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -198,7 +198,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_QUESTER",
-      "x": 14,
+      "x": 15,
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -211,7 +211,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 8,
+      "x": 9,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -220,26 +220,26 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SCRIPT_DraynorManor_Poison",
-      "flag": "0"
+      "flag": "FLAG_TEMP_A"
     }
   ],
   "warp_events": [
     {
-      "x": 23,
+      "x": 24,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 25,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
       "dest_warp_id": "1"
     },
     {
-      "x": 41,
+      "x": 42,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR",
@@ -253,14 +253,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 27,
+      "x": 28,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_2F",
       "dest_warp_id": "0"
     },
     {
-      "x": 34,
+      "x": 35,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_CRYPT",
@@ -273,14 +273,6 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 8,
-      "y": 16,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SIGN_DRAYNORMANOR_LEVER_1"
-    },
-    {
-      "type": "sign",
       "x": 9,
       "y": 16,
       "elevation": 0,
@@ -289,7 +281,15 @@
     },
     {
       "type": "sign",
-      "x": 8,
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SIGN_DRAYNORMANOR_LEVER_1"
+    },
+    {
+      "type": "sign",
+      "x": 9,
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -297,15 +297,15 @@
     },
     {
       "type": "sign",
-      "x": 5,
-      "y": 22,
+      "x": 6,
+      "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SIGN_DRAYNORMANOR_LEVER_1"
     },
     {
       "type": "sign",
-      "x": 11,
+      "x": 12,
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -313,7 +313,7 @@
     },
     {
       "type": "sign",
-      "x": 12,
+      "x": 13,
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

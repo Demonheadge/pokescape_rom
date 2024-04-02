@@ -1836,3 +1836,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/WildernessVolcano_Room_3/scripts.inc"
 
 	.include "data/maps/WildernessVolcano_Room_4/scripts.inc"
+
+	.include "data/maps/Mudskipper_Point_ThurgosHut/scripts.inc"
+
+	.include "data/maps/Varrock_House_5/scripts.inc"

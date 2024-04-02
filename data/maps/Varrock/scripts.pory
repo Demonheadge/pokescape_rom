@@ -16,7 +16,13 @@ mapscripts Varrock_MapScripts {
 
 
 
-
+script VARROCK_SEWERS_SIGNPOST
+{
+    msgbox(format("Sewers - Watch out for rats."))
+    closemessage
+    release
+    end
+}
 
 script VARROCK_SIGNPOST
 {
@@ -453,6 +459,26 @@ script VARROCK_NPC_Romeo
     end
 }
 
+script VARROCK_URI
+{
+    lock
+    faceplayer
+    namebox ("Uri")
+    msgbox(format("Do you like solving puzzles?\pFinding unexpected goodies?\pWell say no more!\pThese items…{PAUSE 32} are…{PAUSE 32} for…{PAUSE 32} you!"))
+    closemessage
+    hidenamebox
+    giveitem(ITEM_ITEMFINDER)
+    namebox ("Uri")
+    msgbox(format("Hidden treasures lay everywhere!\pUntil we meet again!"))
+    closemessage
+    hidenamebox
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_URI_ITEMFINDER)
+    removeobject(VAR_LAST_TALKED)
+    fadescreen(FADE_FROM_BLACK)
+    release
+    end
+}
 
 script VARROCKSTORE_NPC_1
 {

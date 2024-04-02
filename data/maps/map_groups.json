@@ -889,7 +889,8 @@
     "Varrock_Aubury_Store",
     "Grand_Exchange_Indoor",
     "Varrock_Sewers_3F",
-    "Route19_CookingGuild"
+    "Route19_CookingGuild",
+    "Varrock_House_5"
   ],
   "gMapGroup_PokescapeIndoorBarbarianVillage": [
     "BarbarianVillage_GymHall",
@@ -1063,6 +1064,7 @@
     "WildernessVolcano_Room_1",
     "WildernessVolcano_Room_2",
     "WildernessVolcano_Room_3",
-    "WildernessVolcano_Room_4"
+    "WildernessVolcano_Room_4",
+    "Mudskipper_Point_ThurgosHut"
   ]
 }

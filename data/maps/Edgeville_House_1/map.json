@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_RUNE_ARMOUR",
-      "x": 4,
+      "x": 5,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -24,13 +24,13 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_EDGEVILLE_HOUSE_NPC_6",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 4,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_EDGEVILLE",

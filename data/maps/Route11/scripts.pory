@@ -103,6 +103,16 @@ script NPC_MUDSKIPPERPOINT_FAIRY {
 	end
 }
 
+script NPC_MUDSKIPPERPOINT_THURGO { 
+	lock
+	faceplayer
+    namebox("THURGO")
+	msgbox(format("I don't suppose you have any Redberry Pie?"))
+    hidenamebox
+    release
+	end
+}
+
 script BATTLE_MUDSKIPPERPOINT_SLAYER{
     trainerbattle_single(TRAINER_MUDSKIPPERPOINT_SLAYER, format("No!\pI left my explosive potions at the bank!"),format("This is such an xp waste!"))
     msgbox(format("How am I meant to challenge the Morges to a battle without explosive potions and a full team of fainted monsters."))

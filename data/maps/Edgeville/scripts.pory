@@ -369,3 +369,132 @@ script EDGEVILLE_GYM_GIVE_SLAYER_POINTS {
 
 	return
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EDGEVILLE INDOOR 
+
+
+script ITEM_EDGEVILLE_INDOOR_1
+{
+    finditem(ITEM_NONE)
+    end
+}
+script ITEM_EDGEVILLE_INDOOR_2
+{
+    finditem(ITEM_NONE)
+    end
+}
+
+script NPC_EDGEVILLE_HOUSE_NPC_1 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_2 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_3 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_4 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_5 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_6 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_7 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_8 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_9 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_EDGEVILLE_HOUSE_NPC_10 {
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}

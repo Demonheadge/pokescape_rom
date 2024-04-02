@@ -324,6 +324,116 @@ EDGEVILLE_GYM_GIVE_SLAYER_POINTS::
 	return
 
 
+ITEM_EDGEVILLE_INDOOR_1::
+	finditem ITEM_NONE
+	end
+
+
+ITEM_EDGEVILLE_INDOOR_2::
+	finditem ITEM_NONE
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_1::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_2::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_3::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_4::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_5::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_6::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_7::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_8::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_9::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_EDGEVILLE_HOUSE_NPC_10::
+	lock
+	faceplayer
+	msgbox NPC_EDGEVILLE_HOUSE_NPC_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 SIGNPOST_EDGEVILLE_GYM_Text_0:
 	.string "Edgeville Gym, located beneath the\n"
 	.string "graveyard.$"
@@ -534,3 +644,6 @@ EDGEVILLE_GYM_GIVE_SLAYER_POINTS_Text_0:
 
 EDGEVILLE_GYM_GIVE_SLAYER_POINTS_Text_1:
 	.string "You should return to Vannaka.$"
+
+NPC_EDGEVILLE_HOUSE_NPC_1_Text_0:
+	.string "Hello, I am a Cupholder.$"

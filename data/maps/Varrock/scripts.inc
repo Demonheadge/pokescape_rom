@@ -14,6 +14,13 @@ Varrock_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	return
 
 
+VARROCK_SEWERS_SIGNPOST::
+	msgbox VARROCK_SEWERS_SIGNPOST_Text_0
+	closemessage
+	release
+	end
+
+
 VARROCK_SIGNPOST::
 	msgbox VARROCK_SIGNPOST_Text_0
 	closemessage
@@ -381,6 +388,26 @@ VARROCK_NPC_Romeo::
 	msgbox VARROCK_NPC_Romeo_Text_1
 	closemessage
 	hidenamebox
+	release
+	end
+
+
+VARROCK_URI::
+	lock
+	faceplayer
+	namebox VARROCK_URI_Text_0
+	msgbox VARROCK_URI_Text_1
+	closemessage
+	hidenamebox
+	giveitem ITEM_ITEMFINDER
+	namebox VARROCK_URI_Text_0
+	msgbox VARROCK_URI_Text_2
+	closemessage
+	hidenamebox
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_URI_ITEMFINDER
+	removeobject VAR_LAST_TALKED
+	fadescreen FADE_FROM_BLACK
 	release
 	end
 
@@ -1031,6 +1058,9 @@ GIVE_RANDOM_ITEM_28_30:
 	goto GIVE_RANDOM_ITEM_28_1
 
 
+VARROCK_SEWERS_SIGNPOST_Text_0:
+	.string "Sewers - Watch out for rats.$"
+
 VARROCK_SIGNPOST_Text_0:
 	.string "Varrock, the trade centre of the\n"
 	.string "Gielinor.$"
@@ -1288,6 +1318,19 @@ VARROCK_NPC_Romeo_Text_0:
 
 VARROCK_NPC_Romeo_Text_1:
 	.string "Juliet, where art thou!$"
+
+VARROCK_URI_Text_0:
+	.string "Uri$"
+
+VARROCK_URI_Text_1:
+	.string "Do you like solving puzzles?\p"
+	.string "Finding unexpected goodies?\p"
+	.string "Well say no more!\p"
+	.string "These items…{PAUSE 32} are…{PAUSE 32} for…{PAUSE 32} you!$"
+
+VARROCK_URI_Text_2:
+	.string "Hidden treasures lay everywhere!\p"
+	.string "Until we meet again!$"
 
 VARROCKSTORE_NPC_1_Text_0:
 	.string "Noob$"

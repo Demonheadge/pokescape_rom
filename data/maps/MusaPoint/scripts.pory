@@ -45,7 +45,17 @@ script NPC_LegendArts
 
 
 
-
+script SIGNPOST_MUSA_POINT
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Musa Point - The best bannanas in all of Karamaja!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 //ITEMS
 script ITEM_MUSA_POINT_1
@@ -53,7 +63,11 @@ script ITEM_MUSA_POINT_1
     finditem(ITEM_PURPLE_SWEETS)
     end
 }
-
+script ITEM_MUSA_POINT_2
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
 
 //NPCS
 script NPC_MUSA_POINT_1
@@ -194,6 +208,28 @@ script NPC_MUSA_POINT_PubOwner
 	faceplayer
     //namebox ("")
 	msgbox(format("Can I interest you in some of our famous Karamjan Rum?\pOr perhaps you would like some of our wines, spirits or beers?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_Pub_Sailer
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_Pub_BarCrawl
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("Hello, I am a Cupholder."))
     closemessage
     hidenamebox
 	release

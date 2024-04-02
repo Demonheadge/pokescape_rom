@@ -133,15 +133,22 @@ NPC_ROUTE30_PKER::
 	faceplayer
 	namebox NPC_ROUTE30_PKER_Text_0
 	msgbox NPC_ROUTE30_PKER_Text_1
+	goto_if_set FLAG_RECEIVED_TM37_DARKERMANZ, NPC_ROUTE30_PKER_2
+NPC_ROUTE30_PKER_1:
+	release
+	end
+
+NPC_ROUTE30_PKER_2:
+	msgbox NPC_ROUTE30_PKER_Text_2
 	closemessage
 	hidenamebox
 	giveitem ITEM_TM37_THOUSAND_ARROWS
 	namebox NPC_ROUTE30_PKER_Text_0
-	msgbox NPC_ROUTE30_PKER_Text_2
+	msgbox NPC_ROUTE30_PKER_Text_3
 	closemessage
 	hidenamebox
-	release
-	end
+	setflag FLAG_RECEIVED_TM37_DARKERMANZ
+	goto NPC_ROUTE30_PKER_1
 
 
 BATTLE_ROUTE30_TRAINER_1::
@@ -233,11 +240,13 @@ NPC_ROUTE30_PKER_Text_1:
 	.string "There is nothing more satisfying than\n"
 	.string "spec'ing someone out.\p"
 	.string "I love using the move Dark Descent to\n"
-	.string "take my competition out of the game.\p"
+	.string "take my competition out of the game.$"
+
+NPC_ROUTE30_PKER_Text_2:
 	.string "Here I'll share this with you so you can\n"
 	.string "understand what I mean.$"
 
-NPC_ROUTE30_PKER_Text_2:
+NPC_ROUTE30_PKER_Text_3:
 	.string "You should try Dark Descent out on\n"
 	.string "some noobs in the Wilderness.$"
 

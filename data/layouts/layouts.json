@@ -8124,7 +8124,7 @@
     {
       "id": "LAYOUT_EDGEVILLE_HOUSE_1",
       "name": "Edgeville_House_1_Layout",
-      "width": 6,
+      "width": 8,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -8134,8 +8134,8 @@
     {
       "id": "LAYOUT_EDGEVILLE_HOUSE_2",
       "name": "Edgeville_House_2_Layout",
-      "width": 6,
-      "height": 12,
+      "width": 7,
+      "height": 11,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Edgeville_House_2/border.bin",
@@ -8144,7 +8144,7 @@
     {
       "id": "LAYOUT_EDGEVILLE_HOUSE_3",
       "name": "Edgeville_House_3_Layout",
-      "width": 8,
+      "width": 9,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -8174,8 +8174,8 @@
     {
       "id": "LAYOUT_EDGEVILLE_GENERAL_STORE",
       "name": "Edgeville_General_Store_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 11,
+      "height": 9,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Edgeville_General_Store/border.bin",
@@ -8184,8 +8184,8 @@
     {
       "id": "LAYOUT_EDGEVILLE_GENERAL_STORE_2F",
       "name": "Edgeville_General_Store_2F_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 11,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Edgeville_General_Store_2F/border.bin",
@@ -8296,7 +8296,7 @@
       "name": "AlKharid_Tent_Layout",
       "width": 10,
       "height": 10,
-      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/AlKharid_Tent/border.bin",
       "blockdata_filepath": "data/layouts/AlKharid_Tent/map.bin"
@@ -8340,6 +8340,26 @@
       "secondary_tileset": "gTileset_ChaosTunnels",
       "border_filepath": "data/layouts/WildernessVolcano_Room_4/border.bin",
       "blockdata_filepath": "data/layouts/WildernessVolcano_Room_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MUDSKIPPER_POINT_THURGOS_HUT",
+      "name": "Mudskipper_Point_ThurgosHut_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_GoblinVillage",
+      "border_filepath": "data/layouts/Mudskipper_Point_ThurgosHut/border.bin",
+      "blockdata_filepath": "data/layouts/Mudskipper_Point_ThurgosHut/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_5",
+      "name": "Varrock_House_5_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_5/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_5/map.bin"
     }
   ]
 }

@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GENERAL_STORE_CLERK",
-      "x": 4,
+      "x": 5,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENERAL_STORE_CLERK",
-      "x": 5,
+      "x": 6,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PKER_RUSHER",
-      "x": 5,
+      "x": 6,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -50,12 +50,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_EDGEVILLE_HOUSE_NPC_7",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PKER",
-      "x": 1,
+      "x": 2,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
@@ -63,20 +63,20 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_EDGEVILLE_HOUSE_NPC_8",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 4,
+      "x": 5,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_EDGEVILLE",
       "dest_warp_id": "3"
     },
     {
-      "x": 6,
+      "x": 7,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_EDGEVILLE_GENERAL_STORE_2F",

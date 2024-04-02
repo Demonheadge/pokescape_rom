@@ -843,6 +843,7 @@
 #define MAP_GRAND_EXCHANGE_INDOOR     (25 | (43 << 8))
 #define MAP_VARROCK_SEWERS_3F         (26 | (43 << 8))
 #define MAP_ROUTE19_COOKING_GUILD     (27 | (43 << 8))
+#define MAP_VARROCK_HOUSE_5           (28 | (43 << 8))
 
 // gMapGroup_PokescapeIndoorBarbarianVillage
 #define MAP_BARBARIAN_VILLAGE_GYM_HALL (0 | (44 << 8))
@@ -1017,6 +1018,7 @@
 #define MAP_WILDERNESS_VOLCANO_ROOM_2           (81 | (50 << 8))
 #define MAP_WILDERNESS_VOLCANO_ROOM_3           (82 | (50 << 8))
 #define MAP_WILDERNESS_VOLCANO_ROOM_4           (83 | (50 << 8))
+#define MAP_MUDSKIPPER_POINT_THURGOS_HUT        (84 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

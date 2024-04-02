@@ -87,6 +87,16 @@ NPC_MUDSKIPPERPOINT_FAIRY::
 	end
 
 
+NPC_MUDSKIPPERPOINT_THURGO::
+	lock
+	faceplayer
+	namebox NPC_MUDSKIPPERPOINT_THURGO_Text_0
+	msgbox NPC_MUDSKIPPERPOINT_THURGO_Text_1
+	hidenamebox
+	release
+	end
+
+
 BATTLE_MUDSKIPPERPOINT_SLAYER::
 	trainerbattle_single TRAINER_MUDSKIPPERPOINT_SLAYER, BATTLE_MUDSKIPPERPOINT_SLAYER_Text_0, BATTLE_MUDSKIPPERPOINT_SLAYER_Text_1
 	msgbox BATTLE_MUDSKIPPERPOINT_SLAYER_Text_2
@@ -174,6 +184,13 @@ NPC_MUDSKIPPERPOINT_FAIRY_Text_0:
 NPC_MUDSKIPPERPOINT_FAIRY_Text_1:
 	.string "I am not sure why, but our Fairy Ring\n"
 	.string "network seems to be down.$"
+
+NPC_MUDSKIPPERPOINT_THURGO_Text_0:
+	.string "THURGO$"
+
+NPC_MUDSKIPPERPOINT_THURGO_Text_1:
+	.string "I don't suppose you have any Redberry\n"
+	.string "Pie?$"
 
 BATTLE_MUDSKIPPERPOINT_SLAYER_Text_0:
 	.string "No!\p"

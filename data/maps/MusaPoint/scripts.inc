@@ -38,7 +38,23 @@ NPC_LegendArts::
 	end
 
 
+SIGNPOST_MUSA_POINT::
+	lock
+	faceplayer
+	namebox SIGNPOST_MUSA_POINT_Text_0
+	msgbox SIGNPOST_MUSA_POINT_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 ITEM_MUSA_POINT_1::
+	finditem ITEM_PURPLE_SWEETS
+	end
+
+
+ITEM_MUSA_POINT_2::
 	finditem ITEM_PURPLE_SWEETS
 	end
 
@@ -46,8 +62,8 @@ ITEM_MUSA_POINT_1::
 NPC_MUSA_POINT_1::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	namebox SIGNPOST_MUSA_POINT_Text_0
+	msgbox NPC_MUSA_POINT_1_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -117,8 +133,8 @@ NPC_MUSA_POINT_7::
 NPC_MUSA_POINT_8::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	namebox SIGNPOST_MUSA_POINT_Text_0
+	msgbox NPC_MUSA_POINT_1_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -171,6 +187,26 @@ NPC_MUSA_POINT_PubOwner::
 	lock
 	faceplayer
 	msgbox NPC_MUSA_POINT_PubOwner_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_MUSA_POINT_Pub_Sailer::
+	lock
+	faceplayer
+	msgbox NPC_MUSA_POINT_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_MUSA_POINT_Pub_BarCrawl::
+	lock
+	faceplayer
+	msgbox NPC_MUSA_POINT_1_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -230,10 +266,14 @@ NPC_LegendArts_Text_1:
 	.string "What…{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}…\n"
 	.string "How did I get here?$"
 
-NPC_MUSA_POINT_1_Text_0:
+SIGNPOST_MUSA_POINT_Text_0:
 	.string "Cupholder$"
 
-NPC_MUSA_POINT_1_Text_1:
+SIGNPOST_MUSA_POINT_Text_1:
+	.string "Musa Point - The best bannanas in all of\n"
+	.string "Karamaja!$"
+
+NPC_MUSA_POINT_1_Text_0:
 	.string "Hello, I am a Cupholder.$"
 
 NPC_MUSA_POINT_2_Text_0:
