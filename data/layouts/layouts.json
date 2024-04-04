@@ -4774,7 +4774,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_CASTLE_2",
       "name": "Lumbridge_Castle_2_Layout",
-      "width": 36,
+      "width": 38,
       "height": 17,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -4784,7 +4784,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_CASTLE_3",
       "name": "Lumbridge_Castle_3_Layout",
-      "width": 36,
+      "width": 38,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -6924,8 +6924,8 @@
     {
       "id": "LAYOUT_BARBARIAN_VILLAGE_GYM_HALL",
       "name": "BarbarianVillage_GymHall_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 12,
+      "height": 18,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_PokeScape_HAM",
       "border_filepath": "data/layouts/BarbarianVillage_GymHall/border.bin",
@@ -7164,7 +7164,7 @@
     {
       "id": "LAYOUT_ALKHARID_GYM_1F_R2",
       "name": "Alkharid_Gym_1F_R2_Layout",
-      "width": 20,
+      "width": 22,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns2",

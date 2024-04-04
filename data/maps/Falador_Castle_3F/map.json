@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GYMLEADER_SIR_AMIK_VARZE",
-      "x": 6,
-      "y": 6,
+      "x": 3,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
@@ -56,22 +56,22 @@
   ],
   "warp_events": [
     {
-      "x": 5,
-      "y": 4,
+      "x": 8,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLE_2F",
       "dest_warp_id": "7"
     },
     {
-      "x": 6,
-      "y": 9,
+      "x": 9,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
       "dest_warp_id": "5"
     },
     {
-      "x": 7,
-      "y": 4,
+      "x": 10,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
       "dest_warp_id": "6"

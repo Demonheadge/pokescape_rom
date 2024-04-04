@@ -95,6 +95,30 @@ script LIGHTHOUSE_NPC_4
 	end
 }
 
+script LIGHTHOUSE_GUARD_1
+{
+	lock
+	faceplayer
+    namebox ("Jailer")
+	msgbox(format(""))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_GUARD_2
+{
+	lock
+	faceplayer
+    namebox ("Jailer")
+	msgbox(format(""))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
 //Battles
 
 script BATTLE_LIGHTHOUSE_TRAINER_1

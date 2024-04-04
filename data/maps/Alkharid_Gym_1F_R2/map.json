@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GYMLEADER_PRINCE_ALI",
-      "x": 9,
-      "y": 3,
+      "x": 10,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRIBEMEN_2",
-      "x": 11,
-      "y": 5,
+      "x": 12,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -39,19 +39,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_ALKHARID_OSMAN",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 7,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
@@ -82,19 +69,6 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
       "x": 10,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_TEMP_B"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 11,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -104,6 +78,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
+      "x": 11,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
@@ -120,7 +107,20 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 1,
+      "x": 13,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
+      "x": 2,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 6,
+      "x": 7,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -146,7 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 9,
+      "x": 10,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -160,14 +160,14 @@
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 10,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
       "dest_warp_id": "2"
     },
     {
-      "x": 10,
+      "x": 11,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
@@ -181,14 +181,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
+      "x": 18,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ALKHARID_GYM_1F_R1",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 19,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ALKHARID_GYM_2F_R1",
@@ -198,8 +198,17 @@
   "coord_events": [
     {
       "type": "trigger",
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_ALKHARID_GYM_QUEST",
+      "var_value": "0",
+      "script": "TRIGGER_QUEST_ALKHARID_GYM"
+    },
+    {
+      "type": "trigger",
       "x": 10,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_POKESCAPE_ALKHARID_GYM_QUEST",
       "var_value": "0",
@@ -208,7 +217,7 @@
     {
       "type": "trigger",
       "x": 9,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_POKESCAPE_ALKHARID_GYM_QUEST",
       "var_value": "0",
@@ -217,7 +226,7 @@
     {
       "type": "trigger",
       "x": 8,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_POKESCAPE_ALKHARID_GYM_QUEST",
       "var_value": "0",

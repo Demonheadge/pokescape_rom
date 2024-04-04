@@ -219,13 +219,14 @@ script LUMBRIDGE_GYM_TRAINER_2 {
 
 
 script LUMBRIDGE_GYM_TRAINER_3 {
-	trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum."),format("Then again this side of the Lum is pretty big."))
-    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+	//trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum."),format("Then again this side of the Lum is pretty big."))
+    trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("Oh you are a Gym Challenger?\pSorry but this way is blocked off."),format("You'll have to go around if you want to get to the top of the Castle."))
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 4: 
 			lock
 			faceplayer
 			namebox("Jesse")
-			msgbox(format("Maybe I should train on the other side of the river."))
+			msgbox(format("You will have to go around if you want to get to the top of the Castle."))
 			hidenamebox
 			release
 			end
@@ -233,7 +234,7 @@ script LUMBRIDGE_GYM_TRAINER_3 {
 			lock
 			faceplayer
 			namebox("Jesse")
-            msgbox(format("Oh wow!\nWhere do you train?\pMaybe I should train there!"))
+            msgbox(format("You will have to go around if you want to get to the top of the Castle."))
 			hidenamebox
             release
 			end
