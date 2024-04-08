@@ -85,6 +85,19 @@ movement_BLOCK_ALKHARID_GATE_3:
 	walk_left
 	step_end
 
+ALKHARID_GATE_GUARD::
+	lockall
+	faceplayer
+	msgbox BLOCK_ALKHARID_GATE_Text_0
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHARID_GATE_3
+	applymovement 29, Movement_FACELEFT
+	applymovement 30, Movement_FACELEFT
+	waitmovement 0
+	release
+	end
+
+
 BLOCK_DEMO_END::
 	lockall
 	msgbox BLOCK_DEMO_END_Text_0

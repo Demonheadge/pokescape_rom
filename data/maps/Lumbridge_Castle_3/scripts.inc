@@ -4,14 +4,14 @@ Lumbridge_Castle_3_MapScripts::
 
 Lumbridge_Castle_3_MapScripts_MAP_SCRIPT_ON_LOAD:
 	call LUMBRIDGE_GYM_MUSIC
-	goto LUMBRIDGE_GYM_STATE
+	call LUMBRIDGE_GYM_STATE
 	return
 
 
 LUMBRIDGE_GYM_MUSIC::
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 4, LUMBRIDGE_GYM_MUSIC_2
-	case 5, LUMBRIDGE_GYM_MUSIC_3
+	switch VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST
+	case 1, LUMBRIDGE_GYM_MUSIC_2
+	case 2, LUMBRIDGE_GYM_MUSIC_3
 	return
 
 LUMBRIDGE_GYM_MUSIC_2:
@@ -24,60 +24,42 @@ LUMBRIDGE_GYM_MUSIC_3:
 
 
 LUMBRIDGE_GYM_STATE::
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 4, LUMBRIDGE_GYM_STATE_2
-	case 5, LUMBRIDGE_GYM_STATE_3
-	case 6, LUMBRIDGE_GYM_STATE_4
-	case 7, LUMBRIDGE_GYM_STATE_4
-	case 8, LUMBRIDGE_GYM_STATE_4
-	case 9, LUMBRIDGE_GYM_STATE_4
+	switch VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST
+	case 0, LUMBRIDGE_GYM_STATE_3
+	case 1, LUMBRIDGE_GYM_STATE_4
+	case 2, LUMBRIDGE_GYM_STATE_5
 	return
 
-LUMBRIDGE_GYM_STATE_2:
-	removeobject 1
-	setflag FLAG_TEMP_1
-	setobjectxyperm 4, 5, 4
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	setmetatile 3, 7, 1, 0
-	setmetatile 4, 7, 1, 0
-	setmetatile 5, 7, 1, 0
-	setmetatile 5, 6, 1, 0
-	setmetatile 2, 6, 17, 1
-	setmetatile 2, 7, 17, 1
-	setmetatile 7, 4, 26, 1
-	setmetatile 8, 4, 26, 1
-	special DrawWholeMapView
-	release
-	end
-
 LUMBRIDGE_GYM_STATE_3:
-	setobjectxyperm 4, 5, 4
+	setobjectxyperm 4, 5, 6
 	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 18, 4
-	setobjectmovementtype 2, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT
-	setmetatile 3, 7, 1, 0
-	setmetatile 4, 7, 1, 0
-	setmetatile 5, 7, 1, 0
-	setmetatile 5, 6, 1, 0
-	setmetatile 2, 6, 17, 1
-	setmetatile 2, 7, 17, 1
-	setmetatile 7, 4, 26, 1
-	setmetatile 8, 4, 26, 1
-	setmetatile 31, 5, 2, 0
-	setmetatile 32, 5, 2, 0
-	setmetatile 31, 6, 1, 0
-	setmetatile 30, 6, 2, 0
-	setmetatile 33, 8, 17, 1
-	setmetatile 33, 7, 18, 1
-	setmetatile 29, 4, 17, 1
-	setmetatile 28, 4, 26, 1
+	setmetatile 4, 6, 17, 1
+	setmetatile 5, 7, 17, 1
+	setmetatile 6, 6, 26, 1
+	setmetatile 6, 7, 17, 1
+	setobjectxyperm 2, 31, 5
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_RIGHT
+	setmetatile 32, 5, 17, 1
+	setmetatile 31, 6, 17, 1
+	setmetatile 32, 6, 17, 1
+	setmetatile 32, 7, 17, 1
 	special DrawWholeMapView
-	release
-	end
+	return
 
 LUMBRIDGE_GYM_STATE_4:
-	release
-	end
+	removeobject 1
+	setflag FLAG_TEMP_1
+	setobjectxyperm 4, 6, 4
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setmetatile 4, 6, 1, 0
+	setmetatile 5, 7, 1, 0
+	setmetatile 6, 6, 1, 0
+	setmetatile 6, 7, 1, 0
+	special DrawWholeMapView
+	return
+
+LUMBRIDGE_GYM_STATE_5:
+	return
 
 
 NPC_DUKE_1::
@@ -100,7 +82,7 @@ NPC_DUKE_1_2:
 	fadescreen FADE_TO_BLACK
 	removeobject 1
 	setflag FLAG_TEMP_1
-	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 4
+	setvar VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST, 1
 	fadescreen FADE_FROM_BLACK
 	call LUMBRIDGE_GYM_MUSIC
 	goto LUMBRIDGE_GYM_STATE
@@ -112,10 +94,10 @@ LUMBRIDGE_GYM_GUARD_1::
 	lock
 	faceplayer
 	namebox LUMBRIDGE_GYM_GUARD_1_Text_0
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 3, LUMBRIDGE_GYM_GUARD_1_3
-	case 4, LUMBRIDGE_GYM_GUARD_1_4
-	case 5, LUMBRIDGE_GYM_GUARD_1_5
+	switch VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST
+	case 0, LUMBRIDGE_GYM_GUARD_1_3
+	case 1, LUMBRIDGE_GYM_GUARD_1_4
+	case 2, LUMBRIDGE_GYM_GUARD_1_5
 	hidenamebox
 	release
 	end
@@ -143,10 +125,10 @@ LUMBRIDGE_GYM_GUARD_2::
 	lock
 	faceplayer
 	namebox LUMBRIDGE_GYM_GUARD_1_Text_0
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 3, LUMBRIDGE_GYM_GUARD_2_3
-	case 4, LUMBRIDGE_GYM_GUARD_2_3
-	case 5, LUMBRIDGE_GYM_GUARD_2_4
+	switch VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST
+	case 0, LUMBRIDGE_GYM_GUARD_2_3
+	case 1, LUMBRIDGE_GYM_GUARD_2_3
+	case 2, LUMBRIDGE_GYM_GUARD_2_4
 	hidenamebox
 	release
 	end

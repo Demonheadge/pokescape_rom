@@ -883,6 +883,8 @@
 #define MAP_DUNGEONEERING_15    (14 | (46 << 8))
 #define MAP_DUNGEONEERING_16    (15 | (46 << 8))
 #define MAP_DUNGEONEERING_LOBBY (16 | (46 << 8))
+#define MAP_DAEMONHEIM_GYM      (17 | (46 << 8))
+#define MAP_DAEMONHEIM_BANK     (18 | (46 << 8))
 
 // gMapGroup47
 #define MAP_EDGEVILLE_GYM              (0 | (47 << 8))

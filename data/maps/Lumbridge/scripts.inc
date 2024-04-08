@@ -11,12 +11,71 @@ Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-	call MoveNPCsAfterEvents_Lumbridge
+	call STORYMODE_STATE_LUMBRIDGE
 	call HIDDEN_GROTTO_RESET
 	return
 
 
 OPENWORLD_STATE_LUMBRIDGE::
+	setobjectxyperm 14, 43, 20
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 23, 40, 4
+	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 3, 13, 7
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 13, 12, 7
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 21, 35, 11
+	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 11, 52, 21
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 39, 33
+	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 1, 8, 12
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 8, 13
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm 15, 26, 39
+	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 18, 35, 42
+	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
+	return
+
+
+STORYMODE_STATE_LUMBRIDGE::
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
+	goto_if_eq STORYMODE_STATE_LUMBRIDGE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 5
+	goto_if_eq STORYMODE_STATE_LUMBRIDGE_5
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 10
+	goto_if_eq STORYMODE_STATE_LUMBRIDGE_5
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 15
+	goto_if_eq STORYMODE_STATE_LUMBRIDGE_10
+	return
+
+STORYMODE_STATE_LUMBRIDGE_2:
+	return
+
+STORYMODE_STATE_LUMBRIDGE_5:
+	setobjectxyperm 14, 41, 20
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 23, 40, 4
+	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 3, 13, 7
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 13, 12, 7
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 21, 35, 11
+	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 11, 52, 21
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 1, 8, 12
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 8, 13
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	return
+
+STORYMODE_STATE_LUMBRIDGE_10:
 	setobjectxyperm 14, 43, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 23, 40, 4
@@ -212,7 +271,7 @@ Lumbridge_BANKER_2:
 	end
 
 Lumbridge_BANKER_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_BANKER_2
 	goto Lumbridge_BANKER_1
 
@@ -239,7 +298,7 @@ Lumbridge_EVENT_NPC1_2:
 	end
 
 Lumbridge_EVENT_NPC1_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_EVENT_NPC1_2
 	goto Lumbridge_EVENT_NPC1_1
 
@@ -262,7 +321,7 @@ Lumbridge_EVENT_NPC2_2:
 	end
 
 Lumbridge_EVENT_NPC2_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_EVENT_NPC2_2
 	goto Lumbridge_EVENT_NPC2_1
 
@@ -285,7 +344,7 @@ Lumbridge_EVENT_NPC3_2:
 	end
 
 Lumbridge_EVENT_NPC3_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_EVENT_NPC3_2
 	goto Lumbridge_EVENT_NPC3_1
 
@@ -322,7 +381,7 @@ Lumbridge_Guard_NORTH_2:
 	end
 
 Lumbridge_Guard_NORTH_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_Guard_NORTH_2
 	goto Lumbridge_Guard_NORTH_1
 
@@ -353,14 +412,15 @@ Lumbridge_Guard_EAST_2:
 	end
 
 Lumbridge_Guard_EAST_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_Guard_EAST_2
 	goto Lumbridge_Guard_EAST_1
 
 
 Lumbridge_Guard_SOUTH::
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
-	goto_if_eq Lumbridge_Guard_SOUTH_1
+	goto_if_eq Lumbridge_Guard_SOUTH_3
+Lumbridge_Guard_SOUTH_2:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
@@ -370,16 +430,6 @@ Lumbridge_Guard_SOUTH::
 	end
 
 Lumbridge_Guard_SOUTH_1:
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, Lumbridge_Guard_SOUTH_5
-	case 1, Lumbridge_Guard_SOUTH_5
-	case 2, Lumbridge_Guard_SOUTH_5
-	case 3, Lumbridge_Guard_SOUTH_5
-	case 4, Lumbridge_Guard_SOUTH_5
-	case 5, Lumbridge_Guard_SOUTH_6
-	return
-
-Lumbridge_Guard_SOUTH_5:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
@@ -388,14 +438,10 @@ Lumbridge_Guard_SOUTH_5:
 	release
 	end
 
-Lumbridge_Guard_SOUTH_6:
-	lock
-	faceplayer
-	namebox Lumbridge_Guard_SOUTH_Text_0
-	msgbox Lumbridge_Guard_SOUTH_Text_2
-	hidenamebox
-	release
-	end
+Lumbridge_Guard_SOUTH_3:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 10
+	goto_if_le Lumbridge_Guard_SOUTH_1
+	goto Lumbridge_Guard_SOUTH_2
 
 
 Lumbridge_Guard_NORTH_TRIGGER::
@@ -421,7 +467,7 @@ Lumbridge_Guard_NORTH_TRIGGER_2:
 	end
 
 Lumbridge_Guard_NORTH_TRIGGER_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_Guard_NORTH_TRIGGER_2
 	goto Lumbridge_Guard_NORTH_TRIGGER_1
 
@@ -462,7 +508,7 @@ Lumbridge_Guard_EAST_TRIGGER_2:
 	end
 
 Lumbridge_Guard_EAST_TRIGGER_3:
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
 	goto_if_eq Lumbridge_Guard_EAST_TRIGGER_2
 	goto Lumbridge_Guard_EAST_TRIGGER_1
 
@@ -482,21 +528,12 @@ LUMBRIDGE_GUARD_EAST_TRIGGER_2:
 
 Lumbridge_Guard_SOUTH_TRIGGER::
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
-	goto_if_eq Lumbridge_Guard_SOUTH_TRIGGER_1
+	goto_if_eq Lumbridge_Guard_SOUTH_TRIGGER_3
+Lumbridge_Guard_SOUTH_TRIGGER_2:
 	release
-	return
+	end
 
 Lumbridge_Guard_SOUTH_TRIGGER_1:
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, Lumbridge_Guard_SOUTH_TRIGGER_5
-	case 1, Lumbridge_Guard_SOUTH_TRIGGER_5
-	case 2, Lumbridge_Guard_SOUTH_TRIGGER_5
-	case 3, Lumbridge_Guard_SOUTH_TRIGGER_5
-	case 4, Lumbridge_Guard_SOUTH_TRIGGER_5
-	case 5, Lumbridge_Guard_SOUTH_TRIGGER_6
-	return
-
-Lumbridge_Guard_SOUTH_TRIGGER_5:
 	lock
 	PlaySE SE_PIN
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1
@@ -511,9 +548,10 @@ Lumbridge_Guard_SOUTH_TRIGGER_5:
 	release
 	end
 
-Lumbridge_Guard_SOUTH_TRIGGER_6:
-	release
-	end
+Lumbridge_Guard_SOUTH_TRIGGER_3:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 10
+	goto_if_le Lumbridge_Guard_SOUTH_TRIGGER_1
+	goto Lumbridge_Guard_SOUTH_TRIGGER_2
 
 
 LUMBRIDGE_GUARD_SOUTH_TRIGGER_1:
@@ -528,65 +566,6 @@ LUMBRIDGE_PLAYER_SOUTH_TRIGGER:
 LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	face_left
 	step_end
-
-MoveNPCsAfterEvents_Lumbridge::
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, MoveNPCsAfterEvents_Lumbridge_3
-	case 1, MoveNPCsAfterEvents_Lumbridge_4
-	case 2, MoveNPCsAfterEvents_Lumbridge_4
-	case 3, MoveNPCsAfterEvents_Lumbridge_4
-	case 4, MoveNPCsAfterEvents_Lumbridge_4
-	case 5, MoveNPCsAfterEvents_Lumbridge_5
-MoveNPCsAfterEvents_Lumbridge_1:
-	return
-
-MoveNPCsAfterEvents_Lumbridge_3:
-	return
-
-MoveNPCsAfterEvents_Lumbridge_4:
-	setobjectxyperm 14, 41, 20
-	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 23, 40, 4
-	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 13, 7
-	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm 13, 12, 7
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 21, 35, 11
-	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 11, 52, 21
-	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 1, 8, 12
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 8, 13
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	goto MoveNPCsAfterEvents_Lumbridge_1
-
-MoveNPCsAfterEvents_Lumbridge_5:
-	setobjectxyperm 14, 43, 20
-	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 23, 40, 4
-	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 13, 7
-	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm 13, 12, 7
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 21, 35, 11
-	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 11, 52, 21
-	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 39, 33
-	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 1, 8, 12
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 8, 13
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm 15, 26, 39
-	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 18, 35, 42
-	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
-	goto MoveNPCsAfterEvents_Lumbridge_1
-
 
 Lumbridge_House_NPC1::
 	lock
@@ -960,8 +939,8 @@ Lumbridge_Guard_SOUTH_Text_2:
 	.string "So be careful.$"
 
 Lumbridge_House_NPC1_Text_0:
-	.string "The forge broke, so I've sent for a\n"
-	.string "dwarf to come from Falador to fix it.$"
+	.string "The forge broke, so I've requested\n"
+	.string "someone from Falador to fix it.$"
 
 Lumbridge_GeneralStore_NPC1_Text_0:
 	.string "It is better to have more pouches than\n"

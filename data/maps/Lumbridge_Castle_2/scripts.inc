@@ -336,6 +336,7 @@ Lumbridge_Castle_Hans_1::
 	setflag FLAG_SYS_POKEDEX_GET
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 5
 	release
 	end
 
@@ -875,6 +876,7 @@ QUEST_Cooks_Assistant_STATE_20:
 	applymovement 1, COOK_COOKSASSISTANT_1
 	waitmovement 0
 	msgbox QUEST_Cooks_Assistant_STATE_Text_16
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 10
 	goto QUEST_Cooks_Assistant_STATE_19
 
 

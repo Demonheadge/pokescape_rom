@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPLORER_JACK",
-      "x": 3,
+      "x": 4,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 4,
+      "x": 5,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,14 +43,14 @@
   ],
   "warp_events": [
     {
-      "x": 4,
+      "x": 5,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER2",
       "dest_warp_id": "0"
     },
     {
-      "x": 2,
+      "x": 3,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
@@ -63,7 +63,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 1,
+      "x": 2,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

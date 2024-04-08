@@ -2,6 +2,7 @@ mapscripts Lumbridge_Castle_1_MapScripts {
 
 	MAP_SCRIPT_ON_LOAD {
         call(LUMBRIDGE_GYM_MUSIC)
+		call(LUMBRIDGE_GYM_OUTSIDE_STATE)
     }
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:TryHideHans
 
@@ -14,7 +15,33 @@ mapscripts Lumbridge_Castle_1_MapScripts {
 
 
 
+script LUMBRIDGE_GYM_OUTSIDE_STATE {
 
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		setobjectxyperm(2,21,24)
+		setobjectmovementtype(2,MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT)
+		setobjectxyperm(4,21,25)
+		setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT)
+		setobjectxyperm(1,24,24)
+		setobjectmovementtype(1,MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT)
+		setobjectxyperm(10,21,27)
+		setobjectmovementtype(10,MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT)
+		setobjectxyperm(11,24,26)
+		setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT)
+		setobjectxyperm(3,24,23)
+		setobjectmovementtype(3,MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT)
+		return
+	}
+	if (var(VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST) == 1) { //START GYM CHALLENGE
+		setobjectxyperm(7,14,8)
+		return
+	}
+
+	setobjectxyperm(7,15,12)
+	setobjectxyperm(5,36,17)
+	setobjectxyperm(6,12,18)
+	return
+}
 
 
 
@@ -65,7 +92,12 @@ script Lumbridge_Castle_NPC1
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("There is no way to avoid combat in a battle.\pBut you can run from wild battles."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("Prof.Normal Tree is a famous monster researcher.\pThey say he knows everything about every monster!"))
+	}
+	else {
+		msgbox(format("There is no way to avoid combat in a battle.\pBut you can run from wild battles."))
+	}
 	//hidenamebox
 	release
 	end
@@ -76,7 +108,12 @@ script Lumbridge_Castle_NPC2
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("You need money for more pouches?\pSorry I am not doubling money."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("Guthix, Saradomin, Zamorak…\pWhich one do I choose?"))
+	}
+	else {
+		msgbox(format("You need money for more pouches?\pSorry I am not doubling money."))
+	}
 	//hidenamebox
 	release
 	end
@@ -87,7 +124,12 @@ script Lumbridge_Castle_NPC3
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("The Duke holds power over Lumbridge.\pBut personally I dont think he is that good of a ruler."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("What do you mean the monsters are all birds?!\pI don't get it."))
+	}
+	else {
+		msgbox(format("The Duke holds power over Lumbridge.\pBut personally I dont think he is that good of a ruler."))
+	}
 	//hidenamebox
 	release
 	end
@@ -98,7 +140,12 @@ script Lumbridge_Castle_NPC4
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("The best way to find your enemies type is to just use moves.\pIdentify their weakness!"))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("My friend over in Kandarin appearntly got a different monster from the professor."))
+	}
+	else {
+		msgbox(format("The best way to find your enemies type is to just use moves.\pIdentify their weakness!"))
+	}
 	//hidenamebox
 	release
 	end
@@ -110,7 +157,12 @@ script Lumbridge_Castle_NPC5
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("I need flour from the mill but it is such a long trip."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("I got my very own Bestiary!\pBut yikes!\pI don't think I am ever going to be able to fill this out."))
+	}
+	else {
+		msgbox(format("I need flour from the mill but it is such a long trip."))
+	}
 	//hidenamebox
 	release
 	end
@@ -122,7 +174,12 @@ script Lumbridge_Castle_NPC6
 	lock
 	faceplayer
 	//namebox ("???")
-	msgbox(format("The Duke is sort of like the regional champion around here.\pBetter stay on his good side."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
+		msgbox(format("Pouches, huh?\pI never knew we could trap monsters within those."))
+	}
+	else {
+		msgbox(format("The Duke is sort of like the regional champion around here.\pBetter stay on his good side."))
+	}
 	//hidenamebox
 	release
 	end
@@ -174,8 +231,8 @@ script ImpBattleLumbridge{
 
 script LUMBRIDGE_GYM_TRAINER_1 {
 	trainerbattle_single(TRAINER_LUMBRIDGE_GYM1, format("You think you are ready to face the Duke?\pWell I do not think so!"),format("You are ready to face the duke after all it seems.") )
-    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-		case 4: 
+    switch (var(VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST)){ 
+		case 1: 
 			lock
 			faceplayer
 			namebox("Anabell")
@@ -183,7 +240,7 @@ script LUMBRIDGE_GYM_TRAINER_1 {
 			hidenamebox
 			release
 			end
-        case 5:
+        case 2:
 			lock
 			faceplayer
 			namebox("Anabell")
@@ -197,8 +254,8 @@ script LUMBRIDGE_GYM_TRAINER_1 {
 
 script LUMBRIDGE_GYM_TRAINER_2 {
 	trainerbattle_single(TRAINER_LUMBRIDGE_GYM2, format("Feast your eyes upon pure cuteness!"),format("I may have lost but have you ever seen something so cute?") )
-    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-		case 4: 
+    switch (var(VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST)){ 
+		case 1: 
 			lock
 			faceplayer
 			namebox("Gideon")
@@ -206,7 +263,7 @@ script LUMBRIDGE_GYM_TRAINER_2 {
 			hidenamebox
 			release
 			end
-        case 5:
+        case 2:
 			lock
 			faceplayer
 			namebox("Gideon")
@@ -221,8 +278,8 @@ script LUMBRIDGE_GYM_TRAINER_2 {
 script LUMBRIDGE_GYM_TRAINER_3 {
 	//trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum."),format("Then again this side of the Lum is pretty big."))
     trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("Oh you are a Gym Challenger?\pSorry but this way is blocked off."),format("You'll have to go around if you want to get to the top of the Castle."))
-	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-		case 4: 
+	switch (var(VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST)){ 
+		case 1: 
 			lock
 			faceplayer
 			namebox("Jesse")
@@ -230,11 +287,11 @@ script LUMBRIDGE_GYM_TRAINER_3 {
 			hidenamebox
 			release
 			end
-        case 5:
+        case 2:
 			lock
 			faceplayer
 			namebox("Jesse")
-            msgbox(format("You will have to go around if you want to get to the top of the Castle."))
+            msgbox(format("I wish I had someone to help me clean this mess up."))
 			hidenamebox
             release
 			end
@@ -243,8 +300,8 @@ script LUMBRIDGE_GYM_TRAINER_3 {
 
 script LUMBRIDGE_GYM_TRAINER_4 {
 	trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure.\nYou barely pass. ") )
-    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-		case 4: 
+    switch (var(VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST)){ 
+		case 1: 
 			lock
 			faceplayer
 			namebox("Jericho")
@@ -252,7 +309,7 @@ script LUMBRIDGE_GYM_TRAINER_4 {
 			hidenamebox
 			release
 			end
-        case 5:
+        case 2:
 			lock
 			faceplayer
 			namebox("Jericho")

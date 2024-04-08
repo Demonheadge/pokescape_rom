@@ -1840,3 +1840,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Mudskipper_Point_ThurgosHut/scripts.inc"
 
 	.include "data/maps/Varrock_House_5/scripts.inc"
+
+	.include "data/maps/Daemonheim_Gym/scripts.inc"
+
+	.include "data/maps/Daemonheim_Bank/scripts.inc"

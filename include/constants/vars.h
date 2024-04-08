@@ -163,7 +163,7 @@
 #define VAR_BRINEY_HOUSE_STATE               0x4090
 #define VAR_POKESCAPE_MELZARS_MAZE_DOORS                    0x4091 // Unused Var VAR_UNUSED_0x4091
 #define VAR_LITTLEROOT_INTRO_STATE           0x4092
-#define VAR_MAUVILLE_GYM_STATE               0x4093
+#define VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST               0x4093 // //VAR_MAUVILLE_GYM_STATE
 #define VAR_LILYCOVE_MUSEUM_2F_STATE         0x4094
 #define VAR_LILYCOVE_FAN_CLUB_STATE          0x4095
 #define VAR_BRINEY_LOCATION                  0x4096

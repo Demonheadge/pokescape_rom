@@ -4464,7 +4464,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_HOUSE_1",
       "name": "Lumbridge_House_1_Layout",
-      "width": 6,
+      "width": 7,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -4474,7 +4474,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_HOUSE_2",
       "name": "Lumbridge_House_2_Layout",
-      "width": 6,
+      "width": 7,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4484,7 +4484,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_HOUSE_RODDECK1",
       "name": "Lumbridge_House_Roddeck1_Layout",
-      "width": 6,
+      "width": 8,
       "height": 9,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -4504,7 +4504,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_HOUSE_STARTER1",
       "name": "Lumbridge_House_Starter1_Layout",
-      "width": 6,
+      "width": 8,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -4514,7 +4514,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_HOUSE_STARTER2",
       "name": "Lumbridge_House_Starter2_Layout",
-      "width": 12,
+      "width": 13,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -5534,7 +5534,7 @@
     {
       "id": "LAYOUT_POTTERINGTON_FARM_INTERIOR",
       "name": "Potterington_Farm_Interior_Layout",
-      "width": 12,
+      "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -5794,7 +5794,7 @@
     {
       "id": "LAYOUT_DRAYNOR_HOUSE_WO_M_1F",
       "name": "Draynor_House_WoM_1F_Layout",
-      "width": 10,
+      "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",
@@ -5804,7 +5804,7 @@
     {
       "id": "LAYOUT_DRAYNOR_HOUSE_WO_M_2F",
       "name": "Draynor_House_WoM_2F_Layout",
-      "width": 10,
+      "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",
@@ -6344,7 +6344,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE_SWAMP_HOUSE_FATHER_URHNEY",
       "name": "Lumbridge_Swamp_House_FatherUrhney_Layout",
-      "width": 10,
+      "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Petalburg",
@@ -8055,9 +8055,9 @@
       "id": "LAYOUT_DAEMONHEIM",
       "name": "Daemonheim_Layout",
       "width": 40,
-      "height": 40,
+      "height": 30,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Ice_Mountain",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Daemonheim/border.bin",
       "blockdata_filepath": "data/layouts/Daemonheim/map.bin"
     },
@@ -8360,6 +8360,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_House_5/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_House_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_DAEMONHEIM_GYM",
+      "name": "Daemonheim_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Daemonheim_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Daemonheim_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_DAEMONHEIM_BANK",
+      "name": "Daemonheim_Bank_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Daemonheim_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/Daemonheim_Bank/map.bin"
     }
   ]
 }

@@ -315,6 +315,7 @@ script Lumbridge_Castle_Hans_1{
 	setflag (FLAG_SYS_POKEDEX_GET)
 	setflag (FLAG_SYS_NATIONAL_DEX)
 	special (EnableNationalPokedex)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 5) //Received Monster from Prof. Normal Tree
 	release
 	end
 }
@@ -750,6 +751,8 @@ script QUEST_Cooks_Assistant_STATE{
 					applymovement(OBJ_EVENT_ID_COOK,COOK_COOKSASSISTANT_1)
 					waitmovement(0)
 					msgbox(format("Oh?\nWhat's that?\pYou wanted to challenge the Duke to a Gym Battle?\pWhy didn't you say so!\pGo straight up those stairs.\n I'll let him know you're coming."))
+					setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 10) //Completed Cooks Assistant
+				
 				}
 
 				hidenamebox
@@ -758,14 +761,14 @@ script QUEST_Cooks_Assistant_STATE{
 			}
 		case 3: 
 			namebox ("Cook")
-			if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) 
+			if ((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 10))
 			{
-				msgbox(format("Once again, thank you for your help making the cake."))
+				msgbox(format("Just head up those stairs, you'll find the Duke up there."))
 				hidenamebox
 				release
 				end
 			}
-			msgbox(format("Just head up those stairs, you'll find the Duke up there."))
+			msgbox(format("Once again, thank you for your help making the cake."))
 			hidenamebox
 			release
 			end

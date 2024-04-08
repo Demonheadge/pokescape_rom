@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_DUCK_WALK",
-      "x": 3,
+      "x": 4,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 2,
+      "x": 3,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,14 +43,14 @@
   ],
   "warp_events": [
     {
-      "x": 8,
+      "x": 9,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER1",
       "dest_warp_id": "0"
     },
     {
-      "x": 1,
+      "x": 2,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
@@ -63,7 +63,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 10,
+      "x": 11,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -71,7 +71,7 @@
     },
     {
       "type": "sign",
-      "x": 9,
+      "x": 10,
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

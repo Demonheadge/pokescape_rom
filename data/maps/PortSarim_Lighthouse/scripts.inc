@@ -99,6 +99,28 @@ LIGHTHOUSE_NPC_4::
 	end
 
 
+LIGHTHOUSE_GUARD_1::
+	lock
+	faceplayer
+	namebox LIGHTHOUSE_GUARD_1_Text_0
+	msgbox LIGHTHOUSE_GUARD_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+LIGHTHOUSE_GUARD_2::
+	lock
+	faceplayer
+	namebox LIGHTHOUSE_GUARD_1_Text_0
+	msgbox LIGHTHOUSE_GUARD_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 BATTLE_LIGHTHOUSE_TRAINER_1::
 	trainerbattle_single TRAINER_LIGHTHOUSE_TRAINER_1, BATTLE_LIGHTHOUSE_TRAINER_1_Text_0, BATTLE_LIGHTHOUSE_TRAINER_1_Text_1
 	namebox BATTLE_LIGHTHOUSE_TRAINER_1_Text_2
@@ -183,6 +205,12 @@ LIGHTHOUSE_NPC_4_Text_1:
 	.string "out on their way back down?\p"
 	.string "They just walked right past me like we\n"
 	.string "didn't even know each other!$"
+
+LIGHTHOUSE_GUARD_1_Text_0:
+	.string "Jailer$"
+
+LIGHTHOUSE_GUARD_1_Text_1:
+	.string "$"
 
 BATTLE_LIGHTHOUSE_TRAINER_1_Text_0:
 	.string "I couldn't stop your friends before\n"

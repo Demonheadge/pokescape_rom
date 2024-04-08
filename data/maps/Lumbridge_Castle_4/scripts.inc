@@ -37,18 +37,25 @@ GYMLEADER_DUKE_BATTLEWON::
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	namebox GYMLEADER_DUKE_Text_0
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_3
-	msgbox GYMLEADER_DUKE_BATTLEWON_Text_4
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq GYMLEADER_DUKE_BATTLEWON_2
+GYMLEADER_DUKE_BATTLEWON_1:
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	call SetGymTrainers_LUMBRIDGE
-	removeobject 1
+	removeobject 13
 	setflag FLAG_BADGE01_GET
 	addvar VAR_GAMEMODE_LEVEL_SCALING, 1
-	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 5
+	setvar VAR_POKESCAPE_LUMBRIDGE_GYM_QUEST, 2
 	fadescreen FADE_FROM_BLACK
 	release
 	end
+
+GYMLEADER_DUKE_BATTLEWON_2:
+	msgbox GYMLEADER_DUKE_BATTLEWON_Text_4
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 15
+	goto GYMLEADER_DUKE_BATTLEWON_1
 
 
 SetGymTrainers_LUMBRIDGE::
@@ -80,7 +87,7 @@ GYMLEADER_DUKE_BATTLEWON_Text_0:
 	.string "definitely earned it.$"
 
 GYMLEADER_DUKE_BATTLEWON_Text_1:
-	.string "{PLAYER} received the Lumbridge\n"
+	.string "{PLAYER} received the LUMBRIDGE\n"
 	.string "BADGE from Duke Horacio.$"
 
 GYMLEADER_DUKE_BATTLEWON_Text_2:
@@ -98,8 +105,8 @@ GYMLEADER_DUKE_BATTLEWON_Text_4:
 	.string "next gym, correct?\p"
 	.string "Then you would be wanting to go to\n"
 	.string "Falador.\p"
-	.string "Might I suggest first stopping off at\n"
-	.string "the Wizards Tower, south of Draynor\l"
-	.string "and doing some training with the\l"
-	.string "Wizards?\p"
+	.string "I suggest first stopping off at the\n"
+	.string "Wizards Tower, south of Draynor and\l"
+	.string "doing some training with the Wizards\l"
+	.string "before then.\p"
 	.string "Best of luck adventurer!$"
