@@ -43,10 +43,11 @@ script WizardsTower_DraynorManor_Crypt_STATE{
 			case 5:
 			case 6: 
             case 7: 
+            case 8: 
                 release
                 end
-            case 8: 
             case 9: 
+            case 10: 
                 //HIDE NPCs
                 removeobject(HAMGRUNT_ID) //HAM
                 removeobject(COUNTDRAYNOR_ID)
@@ -131,7 +132,8 @@ script EVENT_HAM_DRAYNORMANOR_CRYPT {
         
         delay(16)
         fadescreen(FADE_FROM_BLACK)
-        setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,8)
+        setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,9)
+        setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 30)
         setvar(VAR_TEMP_0, 1) 
         release
         end
@@ -216,7 +218,7 @@ movement MOVEMENT_DraynorManorCrypt_HAM_4 {
     walk_slow_right
     walk_slow_down
     walk_slow_right
-    
+    set_invisible
     walk_down
     set_invisible
     walk_slow_right * 2

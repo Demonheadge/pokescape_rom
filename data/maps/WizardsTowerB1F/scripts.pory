@@ -24,14 +24,14 @@ script WizardsTower_B1F_STATE{
             case 5:
             case 6: 
             case 7: 
-            case 8: 
+            case 9: 
                 setflag(FLAG_TEMP_1)
                 setflag(FLAG_TEMP_2) 
                 removeobject(SEDRIDOR_ID)
                 removeobject(ARIANE_ID)
                 release
                 return
-            case 9: 
+            case 10: 
                 clearflag(FLAG_TEMP_1)
                 clearflag(FLAG_TEMP_2)
                 addobject(SEDRIDOR_ID)

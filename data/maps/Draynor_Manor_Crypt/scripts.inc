@@ -46,8 +46,9 @@ WizardsTower_DraynorManor_Crypt_STATE::
 	case 5, WizardsTower_DraynorManor_Crypt_STATE_2
 	case 6, WizardsTower_DraynorManor_Crypt_STATE_2
 	case 7, WizardsTower_DraynorManor_Crypt_STATE_2
-	case 8, WizardsTower_DraynorManor_Crypt_STATE_3
+	case 8, WizardsTower_DraynorManor_Crypt_STATE_2
 	case 9, WizardsTower_DraynorManor_Crypt_STATE_3
+	case 10, WizardsTower_DraynorManor_Crypt_STATE_3
 	return
 
 WizardsTower_DraynorManor_Crypt_STATE_2:
@@ -135,7 +136,8 @@ EVENT_HAM_DRAYNORMANOR_CRYPT_1:
 	waitmovement 0
 	delay 16
 	fadescreen FADE_FROM_BLACK
-	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 30
 	setvar VAR_TEMP_0, 1
 	release
 	end
@@ -216,6 +218,7 @@ MOVEMENT_DraynorManorCrypt_HAM_4:
 	walk_slow_right
 	walk_slow_down
 	walk_slow_right
+	set_invisible
 	walk_down
 	set_invisible
 	walk_slow_right

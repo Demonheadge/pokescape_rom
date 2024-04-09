@@ -13,7 +13,7 @@ Draynor_Manor_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 Draynor_Manor_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8, HAM_EVENT_DraynorManor_DOOR_CALL
+	map_script_2 VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9, HAM_EVENT_DraynorManor_DOOR_CALL
 	.2byte 0
 
 
@@ -29,6 +29,7 @@ WizardsTower_DraynorManor_STATE::
 	case 7, WizardsTower_DraynorManor_STATE_4
 	case 8, WizardsTower_DraynorManor_STATE_5
 	case 9, WizardsTower_DraynorManor_STATE_6
+	case 10, WizardsTower_DraynorManor_STATE_7
 	return
 
 WizardsTower_DraynorManor_STATE_2:
@@ -54,13 +55,19 @@ WizardsTower_DraynorManor_STATE_4:
 	end
 
 WizardsTower_DraynorManor_STATE_5:
+	removeobject 1
+	setflag FLAG_TEMP_1
+	setvar VAR_TEMP_0, 1
+	return
+
+WizardsTower_DraynorManor_STATE_6:
 	clearflag FLAG_TEMP_1
 	addobject 1
 	setobjectxyperm 1, 14, 24
 	setvar VAR_TEMP_0, 1
 	return
 
-WizardsTower_DraynorManor_STATE_6:
+WizardsTower_DraynorManor_STATE_7:
 	removeobject 1
 	setflag FLAG_TEMP_1
 	setvar VAR_TEMP_0, 1
@@ -138,7 +145,8 @@ HAM_EVENT_DraynorManor_Ariane_1::
 	waitmovement 0
 	removeobject 1
 	setflag FLAG_TEMP_1
-	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 10
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 35
 	end
 
 
@@ -164,7 +172,8 @@ HAM_EVENT_DraynorManor_DOOR_WRONG::
 	waitmovement 0
 	removeobject 1
 	setflag FLAG_TEMP_1
-	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 10
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 35
 	end
 
 
@@ -419,14 +428,14 @@ HAM_EVENT_DraynorManor_DOOR_LEFT_Text_0:
 	.string "Ariane$"
 
 HAM_EVENT_DraynorManor_DOOR_LEFT_Text_1:
-	.string "There you are!\p"
-	.string "I thought something bad had happened\n"
-	.string "since you were in there for so long.$"
+	.string "There you are!$"
 
 HAM_EVENT_DraynorManor_Ariane_1_Text_0:
-	.string "I think that guy is long gone by now.\p"
+	.string "I gave chase to that guy but he\n"
+	.string "escaped…\p"
 	.string "I'm heading back to report to Sedridor.\p"
-	.string "Thanks for you assistance.$"
+	.string "Thanks for you assistance.\p"
+	.string "Come visit me at the tower sometime!$"
 
 HAM_EVENT_DraynorManor_DOOR_WRONG_Text_0:
 	.string "Hey {PLAYER} is that you over there?$"

@@ -2,50 +2,344 @@ mapscripts Draynor_Manor_1F_MapScripts {
 
     MAP_SCRIPT_ON_LOAD {
         call(DraynorManor_Lever_STATE)
-        //call(STORYMODE_STATE_DRAYNORMANOR_1F)
+        call(STORYMODE_STATE_DRAYNORMANOR_1F)
         }
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT,
     }
 
     MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7: HAM_EVENT_DRAYNORMANOR_1F
+        VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7: HAM_EVENT_DRAYNORMANOR_1F
+        VAR_TEMP_B, 1: HAM_EVENT_DRAYNORMANOR_1F
     ]
 
 }
 
+script STORYMODE_STATE_DRAYNORMANOR_1F {
+    removeobject(17) //ARIANE
+    setflag(FLAG_TEMP_1F)
+
+    checkfollower
+    if (var(VAR_RESULT)) {
+        setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
+    }
+    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 8: 
+                checkfollower
+                if (!var(VAR_RESULT)) {
+                    addobject(17) //ARIANE
+                    clearflag(FLAG_TEMP_1F)
+                    setvar(VAR_TEMP_B, 1)
+                }
+    }
+    return
+}
+
 
 script HAM_EVENT_DRAYNORMANOR_1F {
+    lockall
     switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
             case 7: 
-                //applies movement to player walking 2 steps
+
+                getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+                if (var(VAR_TEMP_1) == 24){
+                    setobjectxyperm(17, 24, 22)
+                } 
+                elif (var(VAR_TEMP_1) == 25){
+                    setobjectxyperm(17, 25, 22)
+                }
+                setobjectmovementtype(17, MOVEMENT_TYPE_FACE_UP)
+                
+            //applies movement to player walking 2 steps
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_DraynorManor_Entry_1)
+			    waitmovement(0)
+                delay(32)
+                playse(SE_DOOR)
                 addobject(17) //ARIANE
                 clearflag(FLAG_TEMP_1F)
-                //applymovement comes in the door slowly walks behind the player.
+                delay(32)
+            //applymovement comes in the door slowly walks behind the player.
+                applymovement(17, Movement_DraynorManor_Entry_2)
+			    waitmovement(0)
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN)
+			    waitmovement(0)
+
                 namebox("Ariane")
                 msgbox(format("…{PAUSE 32}…{PAUSE 32}…\nHe… Hey you…\pCan… can we go together?"))
-                //apply movement walks infront of the player.
-                msgbox(format("Pssh!\nI'm not scared, what do you take me for-"))
+                closemessage
                 hidenamebox
+            //apply movement walks infront of the player.
+                applymovement(17, Movement_DraynorManor_Entry_4)
+			    waitmovement(0)
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACELEFT)
+			    waitmovement(0)
+                msgbox(format("Pssh!\pI'm not scared, what do you take me for?"))
+                hidenamebox
+            //RAT
+                applymovement(6, Movement_DraynorManor_Entry_Rat)
+                playmoncry(SPECIES_RAT_NORMAL_FORM, 1)
                 namebox("Rat")
                 msgbox(format("Squeeek!"))
-                //apply movement RAT
+                waitmovement(0)
+                removeobject(6)
+                setflag(FLAG_TEMP_19)
+                waitmoncry
+            
+                playse(SE_LEDGE)
+                applymovement(17, MOVEMENT_EXCLAMATIONMARK_JUMP_UP)
+			    waitmovement(0)
                 namebox("Ariane")
                 msgbox(format("Eeek!"))
-                //apply movement ariane runs behind the player agaain
+            //apply movement ariane runs behind the player agaain
+                applymovement(17, Movement_DraynorManor_Entry_5)
+			    waitmovement(0)
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN)
+			    waitmovement(0)
                 msgbox(format("Okay, maybe I am a little scared…\pYou lead the way."))
-                //ARIANE JOINS THE PARTY and Follows!
+                closemessage
+                hidenamebox
                 setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8)
+                setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 25)
 
-                //Did that chair just move?!
-                //I doubt he would be outside.
-                //As mysterious as this hidden lever is, I am not following you down there.
-                //I hear noises coming from the basement, could that be the pink man?
+            //ARIANE JOINS THE PARTY and Follows!
+                playfanfare(MUS_OBTAIN_SYMBOL)
+                msgbox(format("ARIANE JOINS THE PARTY!"))
+                waitfanfare
+                closemessage
+                hidenamebox
+                loadword(0, FOLLOWING_Ariane)
+                setfollower(17, 0x100)
+                setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
+            case 8:
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_DraynorManor_Entry_3)
+			    waitmovement(0)
+
+                getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+                if (var(VAR_TEMP_1) == 24){
+                    applymovement(17, MOVEMENT_WALKLEFT)
+			        waitmovement(0)
+                    applymovement(17, MOVEMENT_WALKLEFT)
+			        waitmovement(0)
+                } 
+                elif (var(VAR_TEMP_1) == 25){
+                    applymovement(17, MOVEMENT_WALKLEFT)
+			        waitmovement(0)
+                }
+
+                
 
 
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT)
+			    waitmovement(0)
+                namebox("Ariane")
+                msgbox(format("…{PAUSE 32}…{PAUSE 32}…\nHe… Hey you came back…\pCan… can we please go together?\pI'm scared."))
+                hidenamebox
+                //ARIANE JOINS THE PARTY and Follows!
+                playfanfare(MUS_OBTAIN_SYMBOL)
+                msgbox(format("ARIANE JOINS THE PARTY!"))
+                waitfanfare
+                closemessage
+                hidenamebox
+                loadword(0, FOLLOWING_Ariane)
+                setfollower(17, 0x100)
+                setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
+                setvar(VAR_TEMP_B, 0) //Ends this mapscript
+                    
+    }
+    release
+    return
+}
 
+
+                
+                
+                
+
+movement Movement_DraynorManor_Entry_1 {
+    walk_slow_up * 2
+}
+movement Movement_DraynorManor_Entry_2 {
+    delay_16
+    walk_slow_up
+}
+movement Movement_DraynorManor_Entry_3 {
+    walk_slow_up
+}
+
+movement Movement_DraynorManor_Entry_4 {
+    walk_left
+    walk_up
+    face_player
+}
+movement Movement_DraynorManor_Entry_5 {
+    walk_faster_down
+    walk_faster_right
+    face_player
+}
+
+movement MOVEMENT_EXCLAMATIONMARK_JUMP_LEFT {
+    emote_exclamation_mark
+    jump_in_place_left
+}
+movement MOVEMENT_EXCLAMATIONMARK_JUMP_UP {
+    emote_exclamation_mark
+    jump_in_place_up
+}
+
+movement Movement_DraynorManor_Entry_Rat {
+    walk_faster_left * 6
+    walk_faster_up * 9
+}
+
+script FOLLOWING_Ariane {
+
+    namebox("Ariane")
+    facefollower 
+    random(9)
+    switch (var(VAR_RESULT)) {
+        case 0:
+            msgbox(format("This place is 2spooky4me!"))
+        case 1:
+            msgbox(format("Where do you think the pink guy went?"))
+        case 2:
+            msgbox(format("Hey mine name is Ariane, what is yours?\p…{PAUSE 32}{PLAYER}?\nThat's a cute name."))
+        case 3:
+            msgbox(format("You know what?\pWith you here this place isn't as scary.\pEEK!\nWhat was that!?"))
+        case 4:
+            msgbox(format("What's with all of these weird-looking chickens around the place?"))
+        case 5:
+            msgbox(format("We haven't checked the basement yet, we should look there."))
+        case 6:
+            msgbox(format("Did…{PAUSE 32} that armour just move?!"))
+        case 7:
+            msgbox(format("How can anyone even live here…"))
+        case 8:
+            msgbox(format("Eeek!\pI think I just saw a ghost!"))
+    }
+    
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_1 {
+    facefollower 
+    namebox("Ariane")
+    msgbox(format("What are you doing?\pThat guy is still in here somewhere.\pWait you aren't going to leave me here are you?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        msgbox(format("Eeek!!"))
+        closemessage
+        hidenamebox
+        setvar(VAR_TEMP_A, 0) //Sets triggers for leaving.
+        getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+        if (var(VAR_TEMP_1) == 24){
+            warp(MAP_DRAYNOR_MANOR, 0, 0, 0)
+        } 
+        elif (var(VAR_TEMP_1) == 25){
+            warp(MAP_DRAYNOR_MANOR, 1, 0, 0)
+        }
+        
+        destroyfollower
+    }
+    else {
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKUP)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKUP)
+        waitmovement(0)
     }
 }
+
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_2 {
+    checkfollower
+    if (var(VAR_RESULT)) {
+        facefollower 
+        
+        playse(SE_LEDGE)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, MOVEMENT_EXCLAMATIONMARK_JUMP_LEFT)
+        waitmovement(0)
+        namebox("Ariane")
+        msgbox(format("Eeek!!\pDid that chair just move?!"))
+        closemessage
+        hidenamebox
+        setvar(VAR_TEMP_C, 1)
+    }
+    release
+    end
+}
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_3 {
+    checkfollower
+    if (var(VAR_RESULT)) {
+        delay(32)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_FACELEFT)
+        waitmovement(0)
+        delay(32)
+        facefollower
+        namebox("Ariane")
+        msgbox(format("I hear noises coming from the basement, lets go look!"))
+        closemessage
+        hidenamebox
+        setvar(VAR_TEMP_E, 1)
+    }
+    release
+    end
+}
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_4 {
+    checkfollower
+    if (var(VAR_RESULT)) {
+        facefollower
+        namebox("Ariane")
+        msgbox(format("I doubt he would be outside.\pLets go look elsewhere."))
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKDOWN)
+        waitmovement(0)
+        setvar(VAR_TEMP_D, 1)
+    }
+    release
+    end
+}
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_5 {
+    checkfollower
+    if (var(VAR_RESULT)) {
+        facefollower
+        namebox("Ariane")
+        msgbox(format("As mysterious as this is, we are looking for the pink man.\pNot some lever side quest."))
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT)
+        waitmovement(0)
+        setvar(VAR_TEMP_D, 1)
+    }
+    release
+    end
+}
+script TRIGGER_ARIANE_DRAYNORMANOR_1F_6 {
+    checkfollower
+    if (var(VAR_RESULT)) {
+        facefollower
+        namebox("Ariane")
+        msgbox(format("Uh…{PAUSE 32} Actually on second thoughts I'll stay up here.\pYou check down there without me."))
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT)
+        waitmovement(0)
+        facefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACELEFT)
+        delay(32)
+        setvar(VAR_TEMP_9, 1)
+        warp(MAP_DRAYNOR_MANOR_CRYPT, 0, 0, 0)
+        destroyfollower
+    }
+    release
+    end
+}
+
+
 
 
 script DraynorManor_Lever_STATE{

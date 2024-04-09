@@ -42,6 +42,7 @@ WizardsTower_STATE::
 	case 7, WizardsTower_STATE_4
 	case 8, WizardsTower_STATE_4
 	case 9, WizardsTower_STATE_4
+	case 10, WizardsTower_STATE_4
 	return
 
 WizardsTower_STATE_2:
@@ -85,6 +86,7 @@ WizardsTower_SEDRIDOR::
 	case 7, WizardsTower_SEDRIDOR_3
 	case 8, WizardsTower_SEDRIDOR_3
 	case 9, WizardsTower_SEDRIDOR_3
+	case 10, WizardsTower_SEDRIDOR_3
 	return
 
 WizardsTower_SEDRIDOR_2:
@@ -118,6 +120,7 @@ WizardsTower_Wizard::
 	case 7, WizardsTower_Wizard_3
 	case 8, WizardsTower_Wizard_3
 	case 9, WizardsTower_Wizard_4
+	case 10, WizardsTower_Wizard_4
 	return
 
 WizardsTower_Wizard_2:
@@ -160,6 +163,7 @@ WizardsTower_EVENT_TRIGGER::
 	case 7, WizardsTower_EVENT_TRIGGER_2
 	case 8, WizardsTower_EVENT_TRIGGER_2
 	case 9, WizardsTower_EVENT_TRIGGER_3
+	case 10, WizardsTower_EVENT_TRIGGER_3
 	return
 
 WizardsTower_EVENT_TRIGGER_2:

@@ -20,6 +20,7 @@ WizardsTower_Outdoors_STATE::
 	case 7, WizardsTower_Outdoors_STATE_5
 	case 8, WizardsTower_Outdoors_STATE_5
 	case 9, WizardsTower_Outdoors_STATE_5
+	case 10, WizardsTower_Outdoors_STATE_5
 	return
 
 WizardsTower_Outdoors_STATE_2:

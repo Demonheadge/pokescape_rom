@@ -62,13 +62,14 @@ script QUEST_STATE_WizardsTower_ROUTE2{
             case 6: 
             case 7: 
             case 8: 
+            case 9: 
                 //HIDE NPCs
                 setflag(FLAG_TEMP_1)
                 removeobject(2)
                 removeobject(3)
                 release
                 end
-            case 9: 
+            case 10: 
                 setflag(FLAG_TEMP_1)
                 setflag(FLAG_TEMP_2) //HIDE MUGGER
                 setvar(VAR_TEMP_2, 1) //HIDE MUGGER TRIGGER

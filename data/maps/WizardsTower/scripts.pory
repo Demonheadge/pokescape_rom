@@ -42,6 +42,7 @@ mapscripts WizardsTower_MapScripts{
             case 7: 
             case 8: 
             case 9: 
+            case 10: 
                 setflag(FLAG_TEMP_1)
                 setflag(FLAG_TEMP_2)
                 release

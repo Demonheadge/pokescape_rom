@@ -80,7 +80,7 @@ script STORYMODE_STATE_LUMBRIDGE {
 		return
 	}
 	//NPCs After gym badge is obtained.
-	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 15) {
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) >= 15) { //EQUAL or GREATER Than
 		setobjectxyperm(14, 43, 20)
 		setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 		setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 40, 4)

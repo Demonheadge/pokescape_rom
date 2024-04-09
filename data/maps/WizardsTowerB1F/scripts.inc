@@ -17,8 +17,8 @@ WizardsTower_B1F_STATE::
 	case 5, WizardsTower_B1F_STATE_2
 	case 6, WizardsTower_B1F_STATE_2
 	case 7, WizardsTower_B1F_STATE_2
-	case 8, WizardsTower_B1F_STATE_2
-	case 9, WizardsTower_B1F_STATE_3
+	case 9, WizardsTower_B1F_STATE_2
+	case 10, WizardsTower_B1F_STATE_3
 	return
 
 WizardsTower_B1F_STATE_2:

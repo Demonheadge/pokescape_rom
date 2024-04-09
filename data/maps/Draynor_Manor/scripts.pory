@@ -4,7 +4,7 @@ mapscripts Draynor_Manor_MapScripts {
         call(WizardsTower_DraynorManor_STATE)
         }
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8: HAM_EVENT_DraynorManor_DOOR_CALL
+		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9: HAM_EVENT_DraynorManor_DOOR_CALL
     ]
 	MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT,
@@ -54,13 +54,17 @@ script WizardsTower_DraynorManor_STATE{
 				setvar(VAR_TEMP_0, 1)
 				release
 				end
-            case 8: 
+			case 8: 
+				removeobject(1) //ariane
+                setflag(FLAG_TEMP_1)
+				setvar(VAR_TEMP_0, 1)
+            case 9: 
 				clearflag(FLAG_TEMP_1)
 				addobject(1) //ariane
 				//MOVE ARIANE
 				setobjectxyperm(1,14,24)
 				setvar(VAR_TEMP_0, 1)
-            case 9: 
+            case 10: 
                 //HIDE NPCs
                 removeobject(1) //ariane
                 setflag(FLAG_TEMP_1)
@@ -156,7 +160,7 @@ script HAM_EVENT_DraynorManor_DOOR_LEFT{
     applymovement(1, Ariane_DraynorManor_5)
 	waitmovement(0)
 	namebox("Ariane")
-    msgbox(format("There you are!\pI thought something bad had happened since you were in there for so long."))
+    msgbox(format("There you are!"))
 	goto(HAM_EVENT_DraynorManor_Ariane_1)
 	
 }
@@ -167,20 +171,21 @@ script HAM_EVENT_DraynorManor_DOOR_RIGHT{
     applymovement(1, Ariane_DraynorManor_5)
 	waitmovement(0)
 	namebox("Ariane")
-    msgbox(format("There you are!\pI thought something bad had happened since you were in there for so long."))
+    msgbox(format("There you are!"))
 	goto(HAM_EVENT_DraynorManor_Ariane_1)
 	
 }
 
 script HAM_EVENT_DraynorManor_Ariane_1{
-	msgbox(format("I think that guy is long gone by now.\pI'm heading back to report to Sedridor.\pThanks for you assistance."))
+	msgbox(format("I gave chase to that guy but he escaped…\pI'm heading back to report to Sedridor.\pThanks for you assistance.\pCome visit me at the tower sometime!"))
 	closemessage
 	hidenamebox
 	applymovement(1, Ariane_DraynorManor_6)
 	waitmovement(0)
 	removeobject(1) //ariane
     setflag(FLAG_TEMP_1)
-	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,9)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
 	end
 }
 
@@ -199,14 +204,15 @@ script HAM_EVENT_DraynorManor_DOOR_WRONG{
 	applymovement(OBJ_EVENT_ID_PLAYER, Ariane_DraynorManor_10)
 	waitmovement(0)
 	namebox("Ariane")
-	msgbox(format("I think that guy is long gone by now.\pI'm heading back to report to Sedridor.\pThanks for you assistance."))
+	msgbox(format("I gave chase to that guy but he escaped…\pI'm heading back to report to Sedridor.\pThanks for you assistance.\pCome visit me at the tower sometime!"))
 	closemessage
 	hidenamebox
 	applymovement(1, Ariane_DraynorManor_9)
 	waitmovement(0)
 	removeobject(1) //ariane
     setflag(FLAG_TEMP_1)
-	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,9)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
 	end
 }
 

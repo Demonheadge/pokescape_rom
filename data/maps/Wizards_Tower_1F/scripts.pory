@@ -63,6 +63,7 @@ script WizardsTower_STATE{
 		case 7: 
 		case 8: 
 		case 9: 
+		case 10: 
 			//MOVE WIZARD
 			setobjectxyperm(4,5,14)
 			setobjectmovementtype(4,MOVEMENT_TYPE_LOOK_AROUND)
@@ -100,6 +101,7 @@ script WizardsTower_SEDRIDOR{
 		case 7: 
 		case 8: 
 		case 9: 
+		case 10: 
 			lock
 			faceplayer
 			namebox ("Sedridor")
@@ -138,6 +140,7 @@ script WizardsTower_Wizard{
 			release
 			end
 		case 9: 
+		case 10: 
 			lock
 			faceplayer
 			namebox ("Finix")
@@ -171,7 +174,8 @@ script WizardsTower_EVENT_TRIGGER{
 			waitmovement(0)
 			release
 			end
-		case 9: 
+		case 9:
+		case 10: 
 			release
 			end
 	}
