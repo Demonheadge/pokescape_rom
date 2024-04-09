@@ -70,7 +70,7 @@ script Gillie_Groats{
 			hidenamebox
 			closemessage
 			giveitem(ITEM_TOP_QUALITY_MILK)
-			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, 1)
+			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, SUB_QUEST_COOKSASSISTANT_2)
             namebox ("Gillie Groats")
 			msgbox(format("Say hello to the cook for me!"))
 			hidenamebox
@@ -173,7 +173,7 @@ script NPC_LUMBRIDGE_CHICKEN{
 			waitmoncry
 			msgbox(format("The chicken laid an egg!"))
 			giveitem(ITEM_SUPER_LARGE_EGG)
-			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, 0)
+			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, SUB_QUEST_COOKSASSISTANT_1)
 			release
 			end
 		}

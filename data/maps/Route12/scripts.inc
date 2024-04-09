@@ -74,7 +74,7 @@ Gillie_Groats_4:
 	hidenamebox
 	closemessage
 	giveitem ITEM_TOP_QUALITY_MILK
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, 1
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, SUB_QUEST_COOKSASSISTANT_2
 	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_3
 	hidenamebox
@@ -168,7 +168,7 @@ NPC_LUMBRIDGE_CHICKEN_4:
 	waitmoncry
 	msgbox NPC_LUMBRIDGE_CHICKEN_Text_4
 	giveitem ITEM_SUPER_LARGE_EGG
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, 0
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, SUB_QUEST_COOKSASSISTANT_1
 	release
 	end
 

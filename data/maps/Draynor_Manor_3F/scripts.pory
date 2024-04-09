@@ -47,7 +47,7 @@ script ITEM_DRAYNORMANOR_OILCAN
 {
     finditem(ITEM_OIL_CAN)
     closemessage
-	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 0)
+	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, SUB_QUEST_ERNESTTHECHICKEN_1)
     end
 }
 
@@ -55,7 +55,7 @@ script ITEM_DRAYNORMANOR_RUBBERTUBE
 {
     finditem(ITEM_RUBBER_TUBE)
     closemessage
-	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 1)
+	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, SUB_QUEST_ERNESTTHECHICKEN_2)
     end
 }
 
@@ -93,7 +93,7 @@ script SCRIPT_DraynorManor_Fountain {
             removeitem(ITEM_FISH_FOOD_POISONED)
             finditem(ITEM_PRESSURE_GAUGE)
             closemessage
-			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 2)
+			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, SUB_QUEST_ERNESTTHECHICKEN_3)
 			end
 		}
 		else {

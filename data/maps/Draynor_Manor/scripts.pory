@@ -65,6 +65,7 @@ script WizardsTower_DraynorManor_STATE{
 				setobjectxyperm(1,14,24)
 				setvar(VAR_TEMP_0, 1)
             case 10: 
+			case 11: 
                 //HIDE NPCs
                 removeobject(1) //ariane
                 setflag(FLAG_TEMP_1)
@@ -148,6 +149,13 @@ script HAM_EVENT_DraynorManor_DOOR_CALL {
 		elif (var(VAR_TEMP_1) == 15){
 			call(HAM_EVENT_DraynorManor_DOOR_RIGHT)
 		}
+		elif (var(VAR_TEMP_2) == 41) {
+			clearflag(FLAG_TEMP_1)
+            addobject(1)
+			setobjectxyperm(1,21,36)
+			setobjectxy(1,21,36)
+			call(HAM_EVENT_DraynorManor_DOOR_WHITEOUT)
+		}
 		else {
 			call(HAM_EVENT_DraynorManor_DOOR_WRONG)
 		}
@@ -216,6 +224,35 @@ script HAM_EVENT_DraynorManor_DOOR_WRONG{
 	end
 }
 
+script HAM_EVENT_DraynorManor_DOOR_WHITEOUT{
+	
+
+	applymovement(1, Ariane_DraynorManor_11)
+	waitmovement(0)
+
+	namebox("Ariane")
+    msgbox(format("What?!\p{PLAYER}! How did you get here?!\pUrgh nevermind that!"))
+	msgbox(format("I gave chase to that guy but he escaped…\pI'm heading back to report to Sedridor.\pThanks for you assistance.\pCome visit me at the tower sometime!"))
+	closemessage
+	hidenamebox
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+		if (var(VAR_TEMP_1) == 20){
+			applymovement(1, Ariane_DraynorManor_11)
+			waitmovement(0)
+		} 
+		elif (var(VAR_TEMP_1) == 21){
+			applymovement(1, MOVEMENT_WALKLEFT)
+			waitmovement(0)
+			applymovement(1, Ariane_DraynorManor_11)
+			waitmovement(0)
+		}
+	
+	removeobject(1) //ariane
+    setflag(FLAG_TEMP_1)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
+	end
+}
 
 
 
@@ -253,6 +290,9 @@ movement Ariane_DraynorManor_10{
 	face_down
 }
 
+movement Ariane_DraynorManor_11{
+	walk_down * 4
+}
 
 
 

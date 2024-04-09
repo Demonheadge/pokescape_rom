@@ -46,6 +46,10 @@ script WizardsTower_STATE{
 		case 3: 
 		case 4: 
 		case 5:
+		case 6: 
+		case 7: 
+		case 8: 
+		case 9: 
 			//MOVE WIZARD
 			setobjectxyperm(4,8,14)
 			setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
@@ -59,11 +63,10 @@ script WizardsTower_STATE{
 
 			setflag(FLAG_TEMP_2)
 			setvar(VAR_TEMP_B, 1)
-		case 6: 
-		case 7: 
-		case 8: 
-		case 9: 
+		
+		
 		case 10: 
+		case 11: 
 			//MOVE WIZARD
 			setobjectxyperm(4,5,14)
 			setobjectmovementtype(4,MOVEMENT_TYPE_LOOK_AROUND)
@@ -102,6 +105,7 @@ script WizardsTower_SEDRIDOR{
 		case 8: 
 		case 9: 
 		case 10: 
+		case 11: 
 			lock
 			faceplayer
 			namebox ("Sedridor")
@@ -141,6 +145,7 @@ script WizardsTower_Wizard{
 			end
 		case 9: 
 		case 10: 
+		case 11: 
 			lock
 			faceplayer
 			namebox ("Finix")
@@ -163,6 +168,7 @@ script WizardsTower_EVENT_TRIGGER{
 		case 6: 
 		case 7: 
 		case 8: 
+		case 9:
 			lock
 			applymovement(4, Movement_Wizard_WizardsTower4)
 			waitmovement(0)
@@ -174,8 +180,9 @@ script WizardsTower_EVENT_TRIGGER{
 			waitmovement(0)
 			release
 			end
-		case 9:
+		
 		case 10: 
+		case 11: 
 			release
 			end
 	}
@@ -653,7 +660,7 @@ script NPC_WIZARDSTOWER_PulseCore
 		lock
 		delay(16)
 		playse(SE_PIN)
-		applymovement(2 rinsit_1)
+		applymovement(2, rinsit_1)
 		waitmovement(0)
 		namebox ("Rinsit")
 		msgbox(format("Hey!\pDon't touch my bag of rocks!\pI mean Runes, not rocks!"))

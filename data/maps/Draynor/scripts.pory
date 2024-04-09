@@ -44,6 +44,7 @@ script WizardsTower_Draynor_STATE{
             case 8: 
             case 9: 
             case 10: 
+		    case 11: 
                 //HIDE NPCs
                 setflag(FLAG_TEMP_1)
 				setflag(FLAG_TEMP_2)
@@ -437,7 +438,8 @@ script Draynor_Morgan{
             release
             end
         case 9:
-        case 10:
+        case 10: 
+		case 11:
             lock
 	        faceplayer
             namebox("Morgan")

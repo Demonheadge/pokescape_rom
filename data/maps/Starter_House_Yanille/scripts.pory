@@ -41,3 +41,36 @@ script Following_ZanikTalk {
     release
     end
 }
+
+script Follower_Frogeel {
+
+    lock
+    faceplayer
+    namebox("FROGEEL")
+    msgbox(format("AAAAAAAAAAAAAAAAAAA!"))
+    msgbox(format("Take Frogeel for a walk?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        loadword(0, Following_Frogeel)
+        setfollower(2, 0x100)
+        msgbox(format("AAAAAAAAAAAAAAAAAAA!"))
+        msgbox(format("Frogeel is now following you."))
+    }
+    hidenamebox
+    closemessage
+    release
+    end
+
+}
+script Following_Frogeel {
+    msgbox(format("Tell Frogeel to stop following you?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        msgbox(format("Despair!\lFor Frogeel is gone."))
+        destroyfollower
+    }
+    hidenamebox
+    closemessage
+    release
+    end
+}

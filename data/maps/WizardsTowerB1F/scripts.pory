@@ -24,6 +24,7 @@ script WizardsTower_B1F_STATE{
             case 5:
             case 6: 
             case 7: 
+            case 8: 
             case 9: 
                 setflag(FLAG_TEMP_1)
                 setflag(FLAG_TEMP_2) 
@@ -32,6 +33,7 @@ script WizardsTower_B1F_STATE{
                 release
                 return
             case 10: 
+            case 11: 
                 clearflag(FLAG_TEMP_1)
                 clearflag(FLAG_TEMP_2)
                 addobject(SEDRIDOR_ID)
@@ -57,23 +59,41 @@ script NPC_WizardsTowerB1F_Sedridor{
     lock
     faceplayer
     namebox("Sedridor")
+    
+    if (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 10) {
+        msgbox(format("Hello {PLAYER}, I heard from Ariane that you gave chase into Draynor Manor.\pIt's a shame that they got away but it cannot be helped.\pHere I would like you to have this for your troubles."))
+        hidenamebox
+        closemessage
+        giveitem(ITEM_SPIRIT_SHARD, 5)
+        setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 11)
+        release
+        end
+    }
+
+
+
+    checkitem(ITEM_TALISMAN_MYSTERY, 1)
+    if (var(VAR_RESULT)) {
+        msgbox(format("You have something for me from the Duke of Lumbridge?\pMay I take a look at it for a moment?"))
+        //applymovement
+        msgbox(format("Aha!\pSo that's what this is!"))
+        msgbox(format("{PLAYER}, have you seen any of those mysterious altars in your travels?\pThese talismans grants you access to the realm within the altar.\pActually could you do me one small favour?\pTake this talisman to the Air Altar and report your findings back to me.\pIt will be beneficial for your travels."))
+        subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_RUNE_MYSTERIES, SUB_QUEST_RUNEMYSTERIES_1)
+        hidenamebox
+        closemessage
+        giveitem(ITEM_TALISMAN_AIR, 1)
+        removeitem(ITEM_TALISMAN_MYSTERY, 1)
+        msgbox(format("The Air altar is located south of Falador on Route 7.\pGood luck."))
+        release
+        end
+    }
+
     checkitem(ITEM_TALISMAN_AIR, 1)
-        if (!var(VAR_RESULT)){
-            msgbox(format("Hello {PLAYER}, I heard from Ariane that you gave chase into Draynor Manor.\pI would like you to have this."))
-            hidenamebox
-            giveitem(ITEM_TALISMAN_AIR)
-            namebox("Sedridor")
-            msgbox(format("I recieved this Talisman from the Duke of Lumbridge.\pAfter a bit of research I have come to the conclusion that it can be used on those mysterious altars.\pYou should go try it out."))
-            hidenamebox
-            closemessage
-            release
-            end
-        }
-        else {
-            msgbox(format("Hello {PLAYER}, have you visited those mysterious altars?"))
-            hidenamebox
-            closemessage
-            release
-            end
-        }
+    if (var(VAR_RESULT)){
+        msgbox(format("Hello {PLAYER}, have you visited those mysterious altars?\pThe Air altar is located south of Falador on Route 7."))
+        hidenamebox
+        closemessage
+        release
+        end
+    }
 }

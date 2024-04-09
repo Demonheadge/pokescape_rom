@@ -26,6 +26,7 @@ WizardsTower_Draynor_STATE::
 	case 8, WizardsTower_Draynor_STATE_5
 	case 9, WizardsTower_Draynor_STATE_5
 	case 10, WizardsTower_Draynor_STATE_5
+	case 11, WizardsTower_Draynor_STATE_5
 	return
 
 WizardsTower_Draynor_STATE_2:
@@ -386,6 +387,7 @@ Draynor_Morgan::
 	case 8, Draynor_Morgan_2
 	case 9, Draynor_Morgan_3
 	case 10, Draynor_Morgan_3
+	case 11, Draynor_Morgan_3
 	return
 
 Draynor_Morgan_2:

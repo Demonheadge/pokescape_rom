@@ -95,6 +95,8 @@ script QUEST_STATE_WizardsTower_ROUTE1{
                 end
 			case 6: 
             case 7: 
+            case 8:
+            case 9: 
                 //HIDE NPCs
                 setflag(FLAG_TEMP_1)
 				setflag(FLAG_TEMP_2)
@@ -106,9 +108,10 @@ script QUEST_STATE_WizardsTower_ROUTE1{
                 addobject(5) //ernest
                 release
                 end
-            case 8: 
-            case 9: 
+             
+            
             case 10: 
+		    case 11: 
                 //HIDE NPCs
                 setflag(FLAG_TEMP_1)
 				setflag(FLAG_TEMP_2)
@@ -542,6 +545,8 @@ script ErnestAndVeronica {
                 case 5:
                 case 6: 
                 case 7: 
+                case 8: 
+                case 9:
                     namebox("Ernest")
                     msgbox(format("Professor Oddenstein made me human again!"))
                     hidenamebox
@@ -552,9 +557,9 @@ script ErnestAndVeronica {
                     closemessage
                     release
                     end
-                case 8: 
-                case 9: 
+                 
                 case 10: 
+		        case 11: 
                     namebox("Veronica")
                     msgbox(format("Did you ever end up getting some directions?"))
                     hidenamebox

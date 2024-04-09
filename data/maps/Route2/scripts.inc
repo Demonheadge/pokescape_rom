@@ -46,6 +46,7 @@ QUEST_STATE_WizardsTower_ROUTE2::
 	case 8, QUEST_STATE_WizardsTower_ROUTE2_5
 	case 9, QUEST_STATE_WizardsTower_ROUTE2_5
 	case 10, QUEST_STATE_WizardsTower_ROUTE2_6
+	case 11, QUEST_STATE_WizardsTower_ROUTE2_6
 	return
 
 QUEST_STATE_WizardsTower_ROUTE2_2:

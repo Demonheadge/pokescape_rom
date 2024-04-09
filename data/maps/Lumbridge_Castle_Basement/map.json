@@ -37,7 +37,7 @@
       "movement_range_y": 9,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FROGEEL",
+      "script": "Follower_Frogeel",
       "flag": "0"
     },
     {

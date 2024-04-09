@@ -16,12 +16,16 @@ mapscripts Draynor_Manor_1F_MapScripts {
 }
 
 script STORYMODE_STATE_DRAYNORMANOR_1F {
-    removeobject(17) //ARIANE
-    setflag(FLAG_TEMP_1F)
+
+    
 
     checkfollower
     if (var(VAR_RESULT)) {
         setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
+    }
+    else {
+        removeobject(17) //ARIANE
+        setflag(FLAG_TEMP_1F)
     }
     switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
             case 8: 
@@ -108,7 +112,7 @@ script HAM_EVENT_DRAYNORMANOR_1F {
                 closemessage
                 hidenamebox
                 loadword(0, FOLLOWING_Ariane)
-                setfollower(17, 0x100)
+                setfollower(17, 0x80)
                 setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
             case 8:
                 applymovement(OBJ_EVENT_ID_PLAYER, Movement_DraynorManor_Entry_3)
@@ -141,7 +145,7 @@ script HAM_EVENT_DRAYNORMANOR_1F {
                 closemessage
                 hidenamebox
                 loadword(0, FOLLOWING_Ariane)
-                setfollower(17, 0x100)
+                setfollower(17, 0x80)
                 setvar(VAR_TEMP_A, 1) //Sets triggers for leaving.
                 setvar(VAR_TEMP_B, 0) //Ends this mapscript
                     
@@ -204,7 +208,11 @@ script FOLLOWING_Ariane {
         case 2:
             msgbox(format("Hey mine name is Ariane, what is yours?\p…{PAUSE 32}{PLAYER}?\nThat's a cute name."))
         case 3:
-            msgbox(format("You know what?\pWith you here this place isn't as scary.\pEEK!\nWhat was that!?"))
+            msgbox(format("You know what?\pWith you here this place isn't as scary."))
+            playse(SE_LEDGE)
+            applymovement(17, MOVEMENT_EXCLAMATIONMARK_JUMP_UP)
+            waitmovement(0)
+            msgbox(format("EEK!\nWhat was that!?"))
         case 4:
             msgbox(format("What's with all of these weird-looking chickens around the place?"))
         case 5:
@@ -297,7 +305,6 @@ script TRIGGER_ARIANE_DRAYNORMANOR_1F_4 {
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN)
         applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKDOWN)
         waitmovement(0)
-        setvar(VAR_TEMP_D, 1)
     }
     release
     end
@@ -313,7 +320,7 @@ script TRIGGER_ARIANE_DRAYNORMANOR_1F_5 {
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
         applymovement(OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT)
         waitmovement(0)
-        setvar(VAR_TEMP_D, 1)
+        setvar(VAR_TEMP_9, 1)
     }
     release
     end
@@ -346,32 +353,32 @@ script DraynorManor_Lever_STATE{
         switch (var(VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE)){ 
             case 0: 
                 //LEFT
-                setmetatile(6, 17, 602, 1)
-                setmetatile(6, 18, 602, 1)
-                setmetatile(6, 19, 602, 1)
-                setmetatile(6, 20, 602, 1)
-                setmetatile(6, 21, 602, 1)
+                setmetatile(7, 17, 602, 1)
+                setmetatile(7, 18, 602, 1)
+                setmetatile(7, 19, 602, 1)
+                setmetatile(7, 20, 602, 1)
+                setmetatile(7, 21, 602, 1)
                 //RIGHT
-                setmetatile(7, 17, 604, 1)
-                setmetatile(7, 18, 604, 1)
-                setmetatile(7, 19, 604, 1)
-                setmetatile(7, 20, 604, 1)
-                setmetatile(7, 21, 604, 1)
+                setmetatile(8, 17, 604, 1)
+                setmetatile(8, 18, 604, 1)
+                setmetatile(8, 19, 604, 1)
+                setmetatile(8, 20, 604, 1)
+                setmetatile(8, 21, 604, 1)
                 special(DrawWholeMapView) 
                 return
             case 1: 
                 //LEFT
-                setmetatile(6, 17, 570, 1)
-                setmetatile(6, 18, 578, 1)
-                setmetatile(6, 19, 586, 1)
-                setmetatile(6, 20, 516, 0)
-                setmetatile(6, 21, 594, 1)
-                //RIGHT
-                setmetatile(7, 17, 572, 1)
-                setmetatile(7, 18, 580, 1)
-                setmetatile(7, 19, 588, 1)
+                setmetatile(7, 17, 570, 1)
+                setmetatile(7, 18, 578, 1)
+                setmetatile(7, 19, 586, 1)
                 setmetatile(7, 20, 516, 0)
-                setmetatile(7, 21, 596, 1)
+                setmetatile(7, 21, 594, 1)
+                //RIGHT
+                setmetatile(8, 17, 572, 1)
+                setmetatile(8, 18, 580, 1)
+                setmetatile(8, 19, 588, 1)
+                setmetatile(8, 20, 516, 0)
+                setmetatile(8, 21, 596, 1)
                 special(DrawWholeMapView) 
                 return
             }
@@ -389,17 +396,17 @@ script SIGN_DRAYNORMANOR_LEVER_1 {
 			lock
             msgbox(format("You pull a hidden lever!"))
             //LEFT
-			setmetatile(6, 17, 570, 1)
-            setmetatile(6, 18, 578, 1)
-            setmetatile(6, 19, 586, 1)
-            setmetatile(6, 20, 516, 0)
-            setmetatile(6, 21, 594, 1)
-            //RIGHT
-			setmetatile(7, 17, 572, 1)
-            setmetatile(7, 18, 580, 1)
-            setmetatile(7, 19, 588, 1)
+			setmetatile(7, 17, 570, 1)
+            setmetatile(7, 18, 578, 1)
+            setmetatile(7, 19, 586, 1)
             setmetatile(7, 20, 516, 0)
-            setmetatile(7, 21, 596, 1)
+            setmetatile(7, 21, 594, 1)
+            //RIGHT
+			setmetatile(8, 17, 572, 1)
+            setmetatile(8, 18, 580, 1)
+            setmetatile(8, 19, 588, 1)
+            setmetatile(8, 20, 516, 0)
+            setmetatile(8, 21, 596, 1)
 
 			special(DrawWholeMapView) 
 			setvar(VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE, 1)
@@ -410,17 +417,17 @@ script SIGN_DRAYNORMANOR_LEVER_1 {
 			lock
             msgbox(format("You pull a hidden lever!"))
             //LEFT
-			setmetatile(6, 17, 602, 1)
-            setmetatile(6, 18, 602, 1)
-            setmetatile(6, 19, 602, 1)
-            setmetatile(6, 20, 602, 1)
-            setmetatile(6, 21, 602, 1)
+			setmetatile(7, 17, 602, 1)
+            setmetatile(7, 18, 602, 1)
+            setmetatile(7, 19, 602, 1)
+            setmetatile(7, 20, 602, 1)
+            setmetatile(7, 21, 602, 1)
             //RIGHT
-			setmetatile(7, 17, 604, 1)
-            setmetatile(7, 18, 604, 1)
-            setmetatile(7, 19, 604, 1)
-            setmetatile(7, 20, 604, 1)
-            setmetatile(7, 21, 604, 1)
+			setmetatile(8, 17, 604, 1)
+            setmetatile(8, 18, 604, 1)
+            setmetatile(8, 19, 604, 1)
+            setmetatile(8, 20, 604, 1)
+            setmetatile(8, 21, 604, 1)
 
 			special(DrawWholeMapView) 
 			setvar(VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE, 0)

@@ -41,7 +41,7 @@ script GiveQuestWheat{
     msgbox("Congratulations!\nHere is the flour.")
     hidenamebox
     giveitem(ITEM_EXTRA_FINE_FLOUR)
-    subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, 2)
+    subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT, SUB_QUEST_COOKSASSISTANT_3)
     namebox ("Millie Miller")
     msgbox(format("If you run out you may get some more from me anytime you wish.\pAlthough it will come at a cost.\pTehehehe!"))
     hidenamebox

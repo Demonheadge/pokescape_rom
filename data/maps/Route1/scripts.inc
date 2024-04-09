@@ -68,9 +68,10 @@ QUEST_STATE_WizardsTower_ROUTE1::
 	case 5, QUEST_STATE_WizardsTower_ROUTE1_3
 	case 6, QUEST_STATE_WizardsTower_ROUTE1_4
 	case 7, QUEST_STATE_WizardsTower_ROUTE1_4
-	case 8, QUEST_STATE_WizardsTower_ROUTE1_5
-	case 9, QUEST_STATE_WizardsTower_ROUTE1_5
+	case 8, QUEST_STATE_WizardsTower_ROUTE1_4
+	case 9, QUEST_STATE_WizardsTower_ROUTE1_4
 	case 10, QUEST_STATE_WizardsTower_ROUTE1_5
+	case 11, QUEST_STATE_WizardsTower_ROUTE1_5
 	return
 
 QUEST_STATE_WizardsTower_ROUTE1_2:
@@ -424,9 +425,10 @@ ErnestAndVeronica_1:
 	case 5, ErnestAndVeronica_6
 	case 6, ErnestAndVeronica_6
 	case 7, ErnestAndVeronica_6
-	case 8, ErnestAndVeronica_7
-	case 9, ErnestAndVeronica_7
+	case 8, ErnestAndVeronica_6
+	case 9, ErnestAndVeronica_6
 	case 10, ErnestAndVeronica_7
+	case 11, ErnestAndVeronica_7
 	return
 
 ErnestAndVeronica_5:

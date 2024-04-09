@@ -49,6 +49,7 @@ WizardsTower_DraynorManor_Crypt_STATE::
 	case 8, WizardsTower_DraynorManor_Crypt_STATE_2
 	case 9, WizardsTower_DraynorManor_Crypt_STATE_3
 	case 10, WizardsTower_DraynorManor_Crypt_STATE_3
+	case 11, WizardsTower_DraynorManor_Crypt_STATE_3
 	return
 
 WizardsTower_DraynorManor_Crypt_STATE_2:

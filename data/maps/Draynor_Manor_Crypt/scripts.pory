@@ -34,29 +34,30 @@ script OPENWORLD_STATE_DRAYNORMANOR_CRYPT {
 
 
 script WizardsTower_DraynorManor_Crypt_STATE{
-        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
-            case 0: 
-            case 1: 
-            case 2: 
-			case 3: 
-            case 4:
-			case 5:
-			case 6: 
-            case 7: 
-            case 8: 
-                release
-                end
-            case 9: 
-            case 10: 
-                //HIDE NPCs
-                removeobject(HAMGRUNT_ID) //HAM
-                removeobject(COUNTDRAYNOR_ID)
-                setflag(FLAG_TEMP_1)
-                setflag(FLAG_TEMP_2)
-                setvar(VAR_TEMP_0, 1)
-                release
-                end  
-            }
+    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+        case 0: 
+        case 1: 
+        case 2: 
+        case 3: 
+        case 4:
+        case 5:
+        case 6: 
+        case 7: 
+        case 8: 
+            release
+            end
+        case 9: 
+        case 10: 
+        case 11: 
+            //HIDE NPCs
+            removeobject(HAMGRUNT_ID) //HAM
+            removeobject(COUNTDRAYNOR_ID)
+            setflag(FLAG_TEMP_1)
+            setflag(FLAG_TEMP_2)
+            setvar(VAR_TEMP_0, 1)
+            release
+            end  
+        }
     }
 
 

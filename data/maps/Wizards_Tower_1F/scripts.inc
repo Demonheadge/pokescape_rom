@@ -38,11 +38,12 @@ WizardsTower_STATE::
 	case 3, WizardsTower_STATE_3
 	case 4, WizardsTower_STATE_3
 	case 5, WizardsTower_STATE_3
-	case 6, WizardsTower_STATE_4
-	case 7, WizardsTower_STATE_4
-	case 8, WizardsTower_STATE_4
-	case 9, WizardsTower_STATE_4
+	case 6, WizardsTower_STATE_3
+	case 7, WizardsTower_STATE_3
+	case 8, WizardsTower_STATE_3
+	case 9, WizardsTower_STATE_3
 	case 10, WizardsTower_STATE_4
+	case 11, WizardsTower_STATE_4
 	return
 
 WizardsTower_STATE_2:
@@ -87,6 +88,7 @@ WizardsTower_SEDRIDOR::
 	case 8, WizardsTower_SEDRIDOR_3
 	case 9, WizardsTower_SEDRIDOR_3
 	case 10, WizardsTower_SEDRIDOR_3
+	case 11, WizardsTower_SEDRIDOR_3
 	return
 
 WizardsTower_SEDRIDOR_2:
@@ -121,6 +123,7 @@ WizardsTower_Wizard::
 	case 8, WizardsTower_Wizard_3
 	case 9, WizardsTower_Wizard_4
 	case 10, WizardsTower_Wizard_4
+	case 11, WizardsTower_Wizard_4
 	return
 
 WizardsTower_Wizard_2:
@@ -162,8 +165,9 @@ WizardsTower_EVENT_TRIGGER::
 	case 6, WizardsTower_EVENT_TRIGGER_2
 	case 7, WizardsTower_EVENT_TRIGGER_2
 	case 8, WizardsTower_EVENT_TRIGGER_2
-	case 9, WizardsTower_EVENT_TRIGGER_3
+	case 9, WizardsTower_EVENT_TRIGGER_2
 	case 10, WizardsTower_EVENT_TRIGGER_3
+	case 11, WizardsTower_EVENT_TRIGGER_3
 	return
 
 WizardsTower_EVENT_TRIGGER_2:
@@ -582,7 +586,7 @@ NPC_WIZARDSTOWER_PulseCore::
 	lock
 	delay 16
 	playse SE_PIN
-	applymovement 2 rinsit_1
+	applymovement 2, rinsit_1
 	waitmovement 0
 	namebox NPC_WIZARDSTOWER_Rinsit_Text_0
 	msgbox NPC_WIZARDSTOWER_PulseCore_Text_7

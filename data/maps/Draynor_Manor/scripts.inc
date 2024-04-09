@@ -30,6 +30,7 @@ WizardsTower_DraynorManor_STATE::
 	case 8, WizardsTower_DraynorManor_STATE_5
 	case 9, WizardsTower_DraynorManor_STATE_6
 	case 10, WizardsTower_DraynorManor_STATE_7
+	case 11, WizardsTower_DraynorManor_STATE_7
 	return
 
 WizardsTower_DraynorManor_STATE_2:
@@ -105,6 +106,8 @@ HAM_EVENT_DraynorManor_DOOR_CALL::
 	goto_if_eq HAM_EVENT_DraynorManor_DOOR_CALL_1
 	compare VAR_TEMP_1, 15
 	goto_if_eq HAM_EVENT_DraynorManor_DOOR_CALL_2
+	compare VAR_TEMP_2, 41
+	goto_if_eq HAM_EVENT_DraynorManor_DOOR_CALL_3
 	call HAM_EVENT_DraynorManor_DOOR_WRONG
 	return
 
@@ -114,6 +117,14 @@ HAM_EVENT_DraynorManor_DOOR_CALL_1:
 
 HAM_EVENT_DraynorManor_DOOR_CALL_2:
 	call HAM_EVENT_DraynorManor_DOOR_RIGHT
+	return
+
+HAM_EVENT_DraynorManor_DOOR_CALL_3:
+	clearflag FLAG_TEMP_1
+	addobject 1
+	setobjectxyperm 1, 21, 36
+	setobjectxy 1, 21, 36
+	call HAM_EVENT_DraynorManor_DOOR_WHITEOUT
 	return
 
 
@@ -177,6 +188,39 @@ HAM_EVENT_DraynorManor_DOOR_WRONG::
 	end
 
 
+HAM_EVENT_DraynorManor_DOOR_WHITEOUT::
+	applymovement 1, Ariane_DraynorManor_11
+	waitmovement 0
+	namebox HAM_EVENT_DraynorManor_DOOR_LEFT_Text_0
+	msgbox HAM_EVENT_DraynorManor_DOOR_WHITEOUT_Text_0
+	msgbox HAM_EVENT_DraynorManor_Ariane_1_Text_0
+	closemessage
+	hidenamebox
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 20
+	goto_if_eq HAM_EVENT_DraynorManor_DOOR_WHITEOUT_2
+	compare VAR_TEMP_1, 21
+	goto_if_eq HAM_EVENT_DraynorManor_DOOR_WHITEOUT_3
+HAM_EVENT_DraynorManor_DOOR_WHITEOUT_1:
+	removeobject 1
+	setflag FLAG_TEMP_1
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 10
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 35
+	end
+
+HAM_EVENT_DraynorManor_DOOR_WHITEOUT_2:
+	applymovement 1, Ariane_DraynorManor_11
+	waitmovement 0
+	goto HAM_EVENT_DraynorManor_DOOR_WHITEOUT_1
+
+HAM_EVENT_DraynorManor_DOOR_WHITEOUT_3:
+	applymovement 1, MOVEMENT_WALKLEFT
+	waitmovement 0
+	applymovement 1, Ariane_DraynorManor_11
+	waitmovement 0
+	goto HAM_EVENT_DraynorManor_DOOR_WHITEOUT_1
+
+
 Ariane_DraynorManor_5:
 	walk_up
 	walk_up
@@ -224,6 +268,13 @@ Ariane_DraynorManor_10:
 	face_right
 	delay_16
 	face_down
+	step_end
+
+Ariane_DraynorManor_11:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	step_end
 
 HAM_EVENT_DraynorManor_MAIN_1::
@@ -439,6 +490,11 @@ HAM_EVENT_DraynorManor_Ariane_1_Text_0:
 
 HAM_EVENT_DraynorManor_DOOR_WRONG_Text_0:
 	.string "Hey {PLAYER} is that you over there?$"
+
+HAM_EVENT_DraynorManor_DOOR_WHITEOUT_Text_0:
+	.string "What?!\p"
+	.string "{PLAYER}! How did you get here?!\p"
+	.string "Urgh nevermind that!$"
 
 HAM_EVENT_DraynorManor_MAIN_1_Text_0:
 	.string "Did he seriously have to go inside this\n"

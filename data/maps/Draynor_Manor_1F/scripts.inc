@@ -20,32 +20,32 @@ Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 
 STORYMODE_STATE_DRAYNORMANOR_1F::
-	removeobject 17
-	setflag FLAG_TEMP_1F
 	checkfollower
 	compare VAR_RESULT, 0
 	goto_if_ne STORYMODE_STATE_DRAYNORMANOR_1F_2
+	removeobject 17
+	setflag FLAG_TEMP_1F
 STORYMODE_STATE_DRAYNORMANOR_1F_1:
 	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
-	case 8, STORYMODE_STATE_DRAYNORMANOR_1F_6
-STORYMODE_STATE_DRAYNORMANOR_1F_4:
+	case 8, STORYMODE_STATE_DRAYNORMANOR_1F_7
+STORYMODE_STATE_DRAYNORMANOR_1F_5:
 	return
 
 STORYMODE_STATE_DRAYNORMANOR_1F_2:
 	setvar VAR_TEMP_A, 1
 	goto STORYMODE_STATE_DRAYNORMANOR_1F_1
 
-STORYMODE_STATE_DRAYNORMANOR_1F_6:
+STORYMODE_STATE_DRAYNORMANOR_1F_7:
 	checkfollower
 	compare VAR_RESULT, 0
-	goto_if_eq STORYMODE_STATE_DRAYNORMANOR_1F_7
-	goto STORYMODE_STATE_DRAYNORMANOR_1F_4
+	goto_if_eq STORYMODE_STATE_DRAYNORMANOR_1F_8
+	goto STORYMODE_STATE_DRAYNORMANOR_1F_5
 
-STORYMODE_STATE_DRAYNORMANOR_1F_7:
+STORYMODE_STATE_DRAYNORMANOR_1F_8:
 	addobject 17
 	clearflag FLAG_TEMP_1F
 	setvar VAR_TEMP_B, 1
-	goto STORYMODE_STATE_DRAYNORMANOR_1F_4
+	goto STORYMODE_STATE_DRAYNORMANOR_1F_5
 
 
 HAM_EVENT_DRAYNORMANOR_1F::
@@ -114,7 +114,7 @@ HAM_EVENT_DRAYNORMANOR_1F_5:
 	closemessage
 	hidenamebox
 	loadword 0, FOLLOWING_Ariane
-	setfollower 17, 0x100
+	setfollower 17, 0x80
 	setvar VAR_TEMP_A, 1
 	goto HAM_EVENT_DRAYNORMANOR_1F_1
 
@@ -138,7 +138,7 @@ HAM_EVENT_DRAYNORMANOR_1F_10:
 	closemessage
 	hidenamebox
 	loadword 0, FOLLOWING_Ariane
-	setfollower 17, 0x100
+	setfollower 17, 0x80
 	setvar VAR_TEMP_A, 1
 	setvar VAR_TEMP_B, 0
 	goto HAM_EVENT_DRAYNORMANOR_1F_1
@@ -252,26 +252,30 @@ FOLLOWING_Ariane_5:
 
 FOLLOWING_Ariane_6:
 	msgbox FOLLOWING_Ariane_Text_3
-	goto FOLLOWING_Ariane_1
-
-FOLLOWING_Ariane_7:
+	playse SE_LEDGE
+	applymovement 17, MOVEMENT_EXCLAMATIONMARK_JUMP_UP
+	waitmovement 0
 	msgbox FOLLOWING_Ariane_Text_4
 	goto FOLLOWING_Ariane_1
 
-FOLLOWING_Ariane_8:
+FOLLOWING_Ariane_7:
 	msgbox FOLLOWING_Ariane_Text_5
 	goto FOLLOWING_Ariane_1
 
-FOLLOWING_Ariane_9:
+FOLLOWING_Ariane_8:
 	msgbox FOLLOWING_Ariane_Text_6
 	goto FOLLOWING_Ariane_1
 
-FOLLOWING_Ariane_10:
+FOLLOWING_Ariane_9:
 	msgbox FOLLOWING_Ariane_Text_7
 	goto FOLLOWING_Ariane_1
 
-FOLLOWING_Ariane_11:
+FOLLOWING_Ariane_10:
 	msgbox FOLLOWING_Ariane_Text_8
+	goto FOLLOWING_Ariane_1
+
+FOLLOWING_Ariane_11:
+	msgbox FOLLOWING_Ariane_Text_9
 	goto FOLLOWING_Ariane_1
 
 
@@ -371,7 +375,6 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_4_2:
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN
 	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKDOWN
 	waitmovement 0
-	setvar VAR_TEMP_D, 1
 	goto TRIGGER_ARIANE_DRAYNORMANOR_1F_4_1
 
 
@@ -392,7 +395,7 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_5_2:
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT
 	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT
 	waitmovement 0
-	setvar VAR_TEMP_D, 1
+	setvar VAR_TEMP_9, 1
 	goto TRIGGER_ARIANE_DRAYNORMANOR_1F_5_1
 
 
@@ -428,30 +431,30 @@ DraynorManor_Lever_STATE::
 	return
 
 DraynorManor_Lever_STATE_2:
-	setmetatile 6, 17, 602, 1
-	setmetatile 6, 18, 602, 1
-	setmetatile 6, 19, 602, 1
-	setmetatile 6, 20, 602, 1
-	setmetatile 6, 21, 602, 1
-	setmetatile 7, 17, 604, 1
-	setmetatile 7, 18, 604, 1
-	setmetatile 7, 19, 604, 1
-	setmetatile 7, 20, 604, 1
-	setmetatile 7, 21, 604, 1
+	setmetatile 7, 17, 602, 1
+	setmetatile 7, 18, 602, 1
+	setmetatile 7, 19, 602, 1
+	setmetatile 7, 20, 602, 1
+	setmetatile 7, 21, 602, 1
+	setmetatile 8, 17, 604, 1
+	setmetatile 8, 18, 604, 1
+	setmetatile 8, 19, 604, 1
+	setmetatile 8, 20, 604, 1
+	setmetatile 8, 21, 604, 1
 	special DrawWholeMapView
 	return
 
 DraynorManor_Lever_STATE_3:
-	setmetatile 6, 17, 570, 1
-	setmetatile 6, 18, 578, 1
-	setmetatile 6, 19, 586, 1
-	setmetatile 6, 20, 516, 0
-	setmetatile 6, 21, 594, 1
-	setmetatile 7, 17, 572, 1
-	setmetatile 7, 18, 580, 1
-	setmetatile 7, 19, 588, 1
+	setmetatile 7, 17, 570, 1
+	setmetatile 7, 18, 578, 1
+	setmetatile 7, 19, 586, 1
 	setmetatile 7, 20, 516, 0
-	setmetatile 7, 21, 596, 1
+	setmetatile 7, 21, 594, 1
+	setmetatile 8, 17, 572, 1
+	setmetatile 8, 18, 580, 1
+	setmetatile 8, 19, 588, 1
+	setmetatile 8, 20, 516, 0
+	setmetatile 8, 21, 596, 1
 	special DrawWholeMapView
 	return
 
@@ -465,16 +468,16 @@ SIGN_DRAYNORMANOR_LEVER_1::
 SIGN_DRAYNORMANOR_LEVER_1_2:
 	lock
 	msgbox SIGN_DRAYNORMANOR_LEVER_1_Text_0
-	setmetatile 6, 17, 570, 1
-	setmetatile 6, 18, 578, 1
-	setmetatile 6, 19, 586, 1
-	setmetatile 6, 20, 516, 0
-	setmetatile 6, 21, 594, 1
-	setmetatile 7, 17, 572, 1
-	setmetatile 7, 18, 580, 1
-	setmetatile 7, 19, 588, 1
+	setmetatile 7, 17, 570, 1
+	setmetatile 7, 18, 578, 1
+	setmetatile 7, 19, 586, 1
 	setmetatile 7, 20, 516, 0
-	setmetatile 7, 21, 596, 1
+	setmetatile 7, 21, 594, 1
+	setmetatile 8, 17, 572, 1
+	setmetatile 8, 18, 580, 1
+	setmetatile 8, 19, 588, 1
+	setmetatile 8, 20, 516, 0
+	setmetatile 8, 21, 596, 1
 	special DrawWholeMapView
 	setvar VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE, 1
 	release
@@ -483,16 +486,16 @@ SIGN_DRAYNORMANOR_LEVER_1_2:
 SIGN_DRAYNORMANOR_LEVER_1_3:
 	lock
 	msgbox SIGN_DRAYNORMANOR_LEVER_1_Text_0
-	setmetatile 6, 17, 602, 1
-	setmetatile 6, 18, 602, 1
-	setmetatile 6, 19, 602, 1
-	setmetatile 6, 20, 602, 1
-	setmetatile 6, 21, 602, 1
-	setmetatile 7, 17, 604, 1
-	setmetatile 7, 18, 604, 1
-	setmetatile 7, 19, 604, 1
-	setmetatile 7, 20, 604, 1
-	setmetatile 7, 21, 604, 1
+	setmetatile 7, 17, 602, 1
+	setmetatile 7, 18, 602, 1
+	setmetatile 7, 19, 602, 1
+	setmetatile 7, 20, 602, 1
+	setmetatile 7, 21, 602, 1
+	setmetatile 8, 17, 604, 1
+	setmetatile 8, 18, 604, 1
+	setmetatile 8, 19, 604, 1
+	setmetatile 8, 20, 604, 1
+	setmetatile 8, 21, 604, 1
 	special DrawWholeMapView
 	setvar VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE, 0
 	release
@@ -775,25 +778,27 @@ FOLLOWING_Ariane_Text_2:
 
 FOLLOWING_Ariane_Text_3:
 	.string "You know what?\p"
-	.string "With you here this place isn't as scary.\p"
+	.string "With you here this place isn't as scary.$"
+
+FOLLOWING_Ariane_Text_4:
 	.string "EEK!\n"
 	.string "What was that!?$"
 
-FOLLOWING_Ariane_Text_4:
+FOLLOWING_Ariane_Text_5:
 	.string "What's with all of these weird-looking\n"
 	.string "chickens around the place?$"
 
-FOLLOWING_Ariane_Text_5:
+FOLLOWING_Ariane_Text_6:
 	.string "We haven't checked the basement yet,\n"
 	.string "we should look there.$"
 
-FOLLOWING_Ariane_Text_6:
+FOLLOWING_Ariane_Text_7:
 	.string "Did…{PAUSE 32} that armour just move?!$"
 
-FOLLOWING_Ariane_Text_7:
+FOLLOWING_Ariane_Text_8:
 	.string "How can anyone even live here…$"
 
-FOLLOWING_Ariane_Text_8:
+FOLLOWING_Ariane_Text_9:
 	.string "Eeek!\p"
 	.string "I think I just saw a ghost!$"
 

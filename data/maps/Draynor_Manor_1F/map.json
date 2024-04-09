@@ -340,7 +340,7 @@
       "x": 4,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TEMP_E",
+      "var": "VAR_TEMP_9",
       "var_value": "0",
       "script": "TRIGGER_ARIANE_DRAYNORMANOR_1F_5"
     },

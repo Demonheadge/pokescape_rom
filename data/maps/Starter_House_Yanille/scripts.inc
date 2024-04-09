@@ -45,6 +45,44 @@ Following_ZanikTalk::
 	end
 
 
+Follower_Frogeel::
+	lock
+	faceplayer
+	namebox Follower_Frogeel_Text_0
+	msgbox Follower_Frogeel_Text_1
+	msgbox Follower_Frogeel_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne Follower_Frogeel_2
+Follower_Frogeel_1:
+	hidenamebox
+	closemessage
+	release
+	end
+
+Follower_Frogeel_2:
+	loadword 0, Following_Frogeel
+	setfollower 2, 0x100
+	msgbox Follower_Frogeel_Text_1
+	msgbox Follower_Frogeel_Text_3
+	goto Follower_Frogeel_1
+
+
+Following_Frogeel::
+	msgbox Following_Frogeel_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne Following_Frogeel_2
+Following_Frogeel_1:
+	hidenamebox
+	closemessage
+	release
+	end
+
+Following_Frogeel_2:
+	msgbox Following_Frogeel_Text_1
+	destroyfollower
+	goto Following_Frogeel_1
+
+
 FollowerTest_Text_0:
 	.string "Zanik$"
 
@@ -53,3 +91,22 @@ FollowerTest_Text_1:
 
 Following_ZanikTalk_Text_0:
 	.string "Hi, Where are we going?$"
+
+Follower_Frogeel_Text_0:
+	.string "FROGEEL$"
+
+Follower_Frogeel_Text_1:
+	.string "AAAAAAAAAAAAAAAAAAA!$"
+
+Follower_Frogeel_Text_2:
+	.string "Take Frogeel for a walk?$"
+
+Follower_Frogeel_Text_3:
+	.string "Frogeel is now following you.$"
+
+Following_Frogeel_Text_0:
+	.string "Tell Frogeel to stop following you?$"
+
+Following_Frogeel_Text_1:
+	.string "Despair!\l"
+	.string "For Frogeel is gone.$"
