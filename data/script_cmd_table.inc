@@ -236,6 +236,10 @@ gScriptCmdTable::
 	.4byte ScrCmd_questmenu                 @ 0xe9
     .4byte ScrCmd_subquestmenu              @ 0xea
     .4byte ScrCmd_returnqueststate          @ 0xeb
+	.4byte ScrCmd_setfollower				@ 0xec
+    .4byte ScrCmd_destroyfollower			@ 0xed
+    .4byte ScrCmd_facefollower				@ 0xee
+    .4byte ScrCmd_checkfollower				@ 0xef
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

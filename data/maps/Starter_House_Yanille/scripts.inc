@@ -24,3 +24,32 @@ Starter_House_Yanille_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	map_script_2 VAR_TEMP_0, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
 	.2byte 0
 
+
+FollowerTest::
+	lock
+	faceplayer
+	namebox FollowerTest_Text_0
+	loadword 0, Following_ZanikTalk
+	setfollower 3, 0x100
+	msgbox FollowerTest_Text_1
+	hidenamebox
+	release
+	end
+
+
+Following_ZanikTalk::
+	msgbox Following_ZanikTalk_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+FollowerTest_Text_0:
+	.string "Zanik$"
+
+FollowerTest_Text_1:
+	.string "Hey I will follow you!$"
+
+Following_ZanikTalk_Text_0:
+	.string "Hi, Where are we going?$"

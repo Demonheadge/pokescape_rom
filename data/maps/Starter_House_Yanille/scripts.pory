@@ -17,3 +17,27 @@ mapscripts Starter_House_Yanille_MapScripts {
         VAR_TEMP_0, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
     ]
 }
+
+
+
+
+script FollowerTest {
+
+    lock
+    faceplayer
+    namebox("Zanik")
+    loadword(0, Following_ZanikTalk)
+    setfollower(3, 0x100)
+    msgbox(format("Hey I will follow you!"))
+    hidenamebox
+    release
+    end
+
+}
+script Following_ZanikTalk {
+    msgbox(format("Hi, Where are we going?"))
+    hidenamebox
+    closemessage
+    release
+    end
+}
