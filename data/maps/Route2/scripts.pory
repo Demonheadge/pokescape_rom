@@ -175,8 +175,21 @@ script HAM_EVENT_Route2_TRIGGER_2{
     waitmovement(0)
     goto(HAM_EVENT_Route2_MAIN_2)
 }
-
-
+script HAM_EVENT_Route2_TRIGGER_3{
+    applymovement(3, Movement_FACEDOWN)
+    applymovement (OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+    waitmovement(0)
+    namebox("Ariane")
+    msgbox(format("Have you seen a man in pink?\pI don't know which way he went…"))
+    hidenamebox
+    closemessage
+    applymovement(3, Movement_FACELEFT)
+    applymovement (OBJ_EVENT_ID_PLAYER, movement_WALKRIGHT)
+    waitmovement(0)
+}
+movement movement_WALKRIGHT{
+    walk_right
+}
 
 movement HAM_Movement5_1{
     walk_in_place_fast_right * 3
@@ -255,9 +268,9 @@ script NPC_ROUTE2_Wizard
 
 script BATTLE_ROUTE2_Trainer_1
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor Village by any chance?"),format("Wrong direction?\pI've followed the W for south all day!"))
-    namebox ("How2type")
-    msgbox(format("Wrong direction?\pI've followed the W for south all day!"))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Please no!\pI'm so close to the Bank I don't want to be sent back to Lumbridge!"),format("Nooo!\pBack to Lumbridge I go!"))
+    //namebox ("SkIlla4Eva")
+    msgbox(format("If the swamp wasn't hard enough there was also a forest to pass through!?\pThis is too much for a skiller…"))
     hidenamebox
     release
     end

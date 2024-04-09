@@ -1960,7 +1960,18 @@ const u8 gText_MapName_MillLaneMill[] = _("Mill Lane Mill");
 const u8 gText_MapName_Route1[] = _("Route 1");
 const u8 gText_MapName_Route12[] = _("Route 12");
 
-
+//Rune Mysteries
+const u8 gText_SideQuestName_RuneMysteries[] = _("Rune Mysteries");
+const u8 gText_SideQuestDesc_RuneMysteries[] = _("Deliver the mysterious Talisman\nto Archmage Sedridor in\nthe Wizards' Tower.");
+const u8 gText_SideQuestDesc_Completed_RuneMysteries[] = _("Quest Completed!");
+const u8 gText_MapName_WizardsTower[] = _("Wizards' Tower");
+const u8 gText_SubQuest_RuneMysteries_1[] = _("Mysterious Talisman");
+const u8 gText_SubQuest1_Desc_RuneMysteries_1[] = _("You delivered the Talisman\nto Archmage Sedridor.");
+const u8 gText_SubQuest_RuneMysteries_2[] = _("Mysterious Ruins");
+const u8 gText_SubQuest1_Desc_RuneMysteries_2[] = _("You accessed the Ruins\nusing the Talisman.");
+const u8 gText_SubQuest_RuneMysteries_3[] = _("Reported Findings");
+const u8 gText_SubQuest1_Desc_RuneMysteries_3[] = _("You reported everything you\nfound out to Duke Horacio.");
+const u8 gText_MapName_Route7[] = _("Route 7");
 //Ernest the Chicken
 const u8 gText_SideQuestName_Ernest[] = _("Ernest the Chicken");
 const u8 gText_SideQuestDesc_Ernest[] = _("Help Prof.Oddenstein resurect Poly.");

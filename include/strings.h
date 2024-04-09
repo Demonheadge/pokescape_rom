@@ -3164,6 +3164,20 @@ extern const u8 gText_SubQuest_Cooks_Assistant_3[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_1[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_2[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_3[];
+//Quest - Rune Mysteries
+extern const u8 gText_SideQuestName_RuneMysteries[];
+extern const u8 gText_SideQuestDesc_RuneMysteries[];
+extern const u8 gText_SideQuestDesc_Completed_RuneMysteries[];
+extern const u8 gText_MapName_WizardsTower[];
+extern const u8 gText_SubQuest_RuneMysteries_1[];
+extern const u8 gText_SubQuest_RuneMysteries_2[];
+extern const u8 gText_SubQuest_RuneMysteries_3[];
+extern const u8 gText_SubQuest1_Desc_RuneMysteries_1[];
+extern const u8 gText_SubQuest1_Desc_RuneMysteries_2[];
+extern const u8 gText_SubQuest1_Desc_RuneMysteries_3[];
+extern const u8 gText_MapName_Route7[];
+
+
 //Quest - Ernest
 extern const u8 gText_SideQuestName_Ernest[];
 extern const u8 gText_SideQuestDesc_Ernest[];

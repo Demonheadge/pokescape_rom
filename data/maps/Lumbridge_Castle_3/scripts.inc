@@ -42,7 +42,6 @@ LUMBRIDGE_GYM_STATE_3:
 	setmetatile 32, 5, 17, 1
 	setmetatile 31, 6, 17, 1
 	setmetatile 32, 6, 17, 1
-	setmetatile 32, 7, 17, 1
 	special DrawWholeMapView
 	return
 
@@ -55,6 +54,11 @@ LUMBRIDGE_GYM_STATE_4:
 	setmetatile 5, 7, 1, 0
 	setmetatile 6, 6, 1, 0
 	setmetatile 6, 7, 1, 0
+	setobjectxyperm 2, 31, 5
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_RIGHT
+	setmetatile 32, 5, 17, 1
+	setmetatile 31, 6, 17, 1
+	setmetatile 32, 6, 17, 1
 	special DrawWholeMapView
 	return
 
@@ -67,11 +71,13 @@ NPC_DUKE_1::
 	faceplayer
 	namebox NPC_DUKE_1_Text_0
 	goto_if_unset FLAG_BADGE01_GET, NPC_DUKE_1_2
-	msgbox NPC_DUKE_1_Text_2
+	checkitem ITEM_TALISMAN_MYSTERY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_DUKE_1_6
+	msgbox NPC_DUKE_1_Text_4
+NPC_DUKE_1_5:
+	closemessage
 	hidenamebox
-	release
-	end
-
 	release
 	end
 
@@ -88,6 +94,11 @@ NPC_DUKE_1_2:
 	goto LUMBRIDGE_GYM_STATE
 	release
 	end
+
+NPC_DUKE_1_6:
+	msgbox NPC_DUKE_1_Text_2
+	msgbox NPC_DUKE_1_Text_3
+	goto NPC_DUKE_1_5
 
 
 LUMBRIDGE_GYM_GUARD_1::
@@ -176,6 +187,19 @@ NPC_DUKE_1_Text_1:
 	.string "I shall be waiting!$"
 
 NPC_DUKE_1_Text_2:
+	.string "Have you been to see the Archmage\n"
+	.string "about that Talisman yet?$"
+
+NPC_DUKE_1_Text_3:
+	.string "Wizards' Tower is located south of\n"
+	.string "Draynor Village.\p"
+	.string "You can get there through Lumbridge\n"
+	.string "Swamp to the south of here.\p"
+	.string "Return to me once you've delivered the\n"
+	.string "Talisman and I'll give you something\l"
+	.string "for your troubles.$"
+
+NPC_DUKE_1_Text_4:
 	.string "You fought well earlier!\n"
 	.string "I look forward to a rematch.$"
 

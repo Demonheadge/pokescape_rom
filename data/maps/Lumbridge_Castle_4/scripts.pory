@@ -46,8 +46,17 @@ script GYMLEADER_DUKE{
     msgbox(format("That move is called Slack off, which is exactly what I love to do on my days off.\pHopefully it will help you on your journey."))
     if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
     {
-        msgbox(format("Also, I suppose you'll be heading to the next gym, correct?\pThen you would be wanting to go to Falador.\pI suggest first stopping off at the Wizards Tower, south of Draynor and doing some training with the Wizards before then.\pBest of luck adventurer!"))
+        msgbox(format("Before you go, could you to do me a favour?\pPop over to the Wizards' Tower and have the Archmage check out this mysterious Talisman for me.\pI would go myself but I have a Castle and Gym to run."))
+        closemessage
+        hidenamebox
+        giveitem(ITEM_TALISMAN_MYSTERY, 1)
+        namebox("Duke Horacio")
+        msgbox(format("Wizards' Tower is located south of Draynor Village.\pYou can get there through Lumbridge Swamp to the south of here.\pReturn to me once you've delivered the Talisman and I'll give you something for your troubles.\pBest of luck adventurer!"))
+        closemessage
+        hidenamebox
         setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 15) //Obtained the LUMBRIDGE BADGE
+        //START RUNE MYSTERIES QUEST
+        startquest (QUEST_RUNE_MYSTERIES)
     }
     closemessage
     hidenamebox

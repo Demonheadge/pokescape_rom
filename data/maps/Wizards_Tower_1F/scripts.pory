@@ -240,6 +240,7 @@ script HAM_EVENT_WizardsTower_1 {
 		fadedefaultbgm
 		setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1)
 		setvar(VAR_TEMP_B, 1)
+		setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 20)
 		release
 		end
 	}

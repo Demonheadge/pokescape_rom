@@ -21,10 +21,10 @@ WizardsTower_Draynor_STATE::
 	case 3, WizardsTower_Draynor_STATE_2
 	case 4, WizardsTower_Draynor_STATE_3
 	case 5, WizardsTower_Draynor_STATE_4
-	case 6, WizardsTower_Draynor_STATE_4
-	case 7, WizardsTower_Draynor_STATE_4
-	case 8, WizardsTower_Draynor_STATE_4
-	case 9, WizardsTower_Draynor_STATE_4
+	case 6, WizardsTower_Draynor_STATE_5
+	case 7, WizardsTower_Draynor_STATE_5
+	case 8, WizardsTower_Draynor_STATE_5
+	case 9, WizardsTower_Draynor_STATE_5
 	return
 
 WizardsTower_Draynor_STATE_2:
@@ -44,6 +44,13 @@ WizardsTower_Draynor_STATE_3:
 	return
 
 WizardsTower_Draynor_STATE_4:
+	setflag FLAG_TEMP_1
+	removeobject 21
+	clearflag FLAG_TEMP_2
+	addobject 24
+	return
+
+WizardsTower_Draynor_STATE_5:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	removeobject 21
@@ -115,7 +122,6 @@ HAM_Movement6_2:
 	step_end
 
 Draynor_Ariane::
-	lock
 	namebox HAM_EVENT_Draynor_Text_0
 	msgbox Draynor_Ariane_Text_0
 	hidenamebox
@@ -436,8 +442,10 @@ HAM_EVENT_Draynor_Text_1:
 	.string "Maybe the market…$"
 
 Draynor_Ariane_Text_0:
-	.string "He doesn't seem to be here…\p"
-	.string "I hope he didn't leave town…$"
+	.string "I cannot see him anywhere…\p"
+	.string "Did I take a wrong turn?\p"
+	.string "I hope he didn't run north towards\n"
+	.string "Draynor Manor…$"
 
 NPC_PIG_Text_0:
 	.string "OINK!$"

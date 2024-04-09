@@ -1,14 +1,39 @@
 Draynor_Manor_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_TRANSITION, Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
 	call DraynorManor_Lever_STATE
-	end
+	return
 
 Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	return
+
+Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7, HAM_EVENT_DRAYNORMANOR_1F
+	.2byte 0
+
+
+HAM_EVENT_DRAYNORMANOR_1F::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 7, HAM_EVENT_DRAYNORMANOR_1F_2
+	return
+
+HAM_EVENT_DRAYNORMANOR_1F_2:
+	addobject 17
+	clearflag FLAG_TEMP_1F
+	namebox HAM_EVENT_DRAYNORMANOR_1F_Text_0
+	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_1
+	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_2
+	hidenamebox
+	namebox HAM_EVENT_DRAYNORMANOR_1F_Text_3
+	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_4
+	namebox HAM_EVENT_DRAYNORMANOR_1F_Text_0
+	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_5
+	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_6
 	return
 
 
@@ -318,6 +343,31 @@ BATTLE_DRAYNORMANOR_Trainer_8::
 	release
 	end
 
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_0:
+	.string "Ariane$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_1:
+	.string "…{PAUSE 32}…{PAUSE 32}…\n"
+	.string "He… Hey you…\p"
+	.string "Can… can we go together?$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_2:
+	.string "Pssh!\n"
+	.string "I'm not scared, what do you take me for-$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_3:
+	.string "Rat$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_4:
+	.string "Squeeek!$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_5:
+	.string "Eeek!$"
+
+HAM_EVENT_DRAYNORMANOR_1F_Text_6:
+	.string "Okay, maybe I am a little scared…\p"
+	.string "You lead the way.$"
 
 SIGN_DRAYNORMANOR_LEVER_1_Text_0:
 	.string "You pull a hidden lever!$"

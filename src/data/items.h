@@ -6665,6 +6665,17 @@ const struct Item gItems[] =
         .battleUsage = ITEM_B_USE_OTHER,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+    [ITEM_TALISMAN_MYSTERY] =
+    {
+        .name = _("TALISMAN"),
+        .itemId = ITEM_TALISMAN_MYSTERY,
+        .price = 0,
+        .description = sTALISMANDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = ITEM_B_USE_OTHER,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 //CRAFTING ITEMS	
     [ITEM_COPPER_ORE] =
     {

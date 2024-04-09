@@ -21,7 +21,7 @@ mapscripts Route1_MapScripts {
 
         if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
     	{
-            call(TryMoveNpcsRoute1)
+            call(STORYMODE_STATE_ROUTE1) 
     	}
 		else
 		{
@@ -50,6 +50,18 @@ script OPENWORLD_STATE_ROUTE1 {
         setobjectxyperm(OBJ_EVENT_ID_ERNEST,10,12)
         setobjectxyperm(OBJ_EVENT_ID_VERONICA,10,13)
 		return
+}
+
+script STORYMODE_STATE_ROUTE1{
+    //Cows will move after you have interacted with the Wizards' Tower.
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) >= 20) { //If Storymode progress is EQUAL or MORE.
+        setobjectxyperm(4, 42, 10)
+        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+        setobjectxyperm(12, 37, 12)
+        setobjectxyperm(13, 43, 12)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+    }
+    return
 }
 
 
@@ -114,32 +126,15 @@ script QUEST_STATE_WizardsTower_ROUTE1{
 
 
 
-script TryMoveNpcsRoute1{
-    if (flag(FLAG_BADGE01_GET)){
-        setobjectxyperm(4, 42, 10)
-        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
-
-        setobjectxyperm(12, 37, 12)
-
-        setobjectxyperm(13, 43, 12)
-        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
-    }
-    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 6)){
-        removeobject(22)
-        setflag(FLAG_TEMP_5)
-        removeobject(23)
-        setflag(FLAG_TEMP_4)
-    }
-    return
-}
 
 
 
 
 
-script Route1WarpCheck{
-    map_script_2 (VAR_TEMP_1, 0, TryMoveNpcsRoute1)
-}
+
+//script Route1WarpCheck{
+//    map_script_2 (VAR_TEMP_1, 0, STORYMODE_STATE_ROUTE1)
+//}
 
 
 
@@ -301,20 +296,18 @@ script BLOCK_ROUTE1_FARMER {
     lock 
     faceplayer
     namebox("Farmer")
-    if (!flag(FLAG_BADGE01_GET)){
+
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 15) { 
+        msgbox(format("Hey sorry bud, I think I'm going to be here awhile.\pIf you want to get to Draynor you'll have to go through the swamp to the south."))
+    }
+    elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 10) { //If Storymode progress is EQUAL or LESS.
         msgbox(format("Some Goblins scared my cows out of their pens.\pNow I'm struggling to get them back in!"))
-        hidenamebox
-        closemessage
-        release
-        end
     }
     else{
         msgbox(format("I finally got my Cows out of the way."))
-        hidenamebox
-        closemessage
-        release
-        end
     }
+    hidenamebox
+    closemessage
     release
     end
 }

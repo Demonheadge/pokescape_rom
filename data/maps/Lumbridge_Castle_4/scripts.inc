@@ -54,7 +54,15 @@ GYMLEADER_DUKE_BATTLEWON_1:
 
 GYMLEADER_DUKE_BATTLEWON_2:
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_4
+	closemessage
+	hidenamebox
+	giveitem ITEM_TALISMAN_MYSTERY, 1
+	namebox GYMLEADER_DUKE_Text_0
+	msgbox GYMLEADER_DUKE_BATTLEWON_Text_5
+	closemessage
+	hidenamebox
 	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 15
+	startquest QUEST_RUNE_MYSTERIES
 	goto GYMLEADER_DUKE_BATTLEWON_1
 
 
@@ -101,12 +109,20 @@ GYMLEADER_DUKE_BATTLEWON_Text_3:
 	.string "journey.$"
 
 GYMLEADER_DUKE_BATTLEWON_Text_4:
-	.string "Also, I suppose you'll be heading to the\n"
-	.string "next gym, correct?\p"
-	.string "Then you would be wanting to go to\n"
-	.string "Falador.\p"
-	.string "I suggest first stopping off at the\n"
-	.string "Wizards Tower, south of Draynor and\l"
-	.string "doing some training with the Wizards\l"
-	.string "before then.\p"
+	.string "Before you go, could you to do me a\n"
+	.string "favour?\p"
+	.string "Pop over to the Wizards' Tower and have\n"
+	.string "the Archmage check out this\l"
+	.string "mysterious Talisman for me.\p"
+	.string "I would go myself but I have a Castle\n"
+	.string "and Gym to run.$"
+
+GYMLEADER_DUKE_BATTLEWON_Text_5:
+	.string "Wizards' Tower is located south of\n"
+	.string "Draynor Village.\p"
+	.string "You can get there through Lumbridge\n"
+	.string "Swamp to the south of here.\p"
+	.string "Return to me once you've delivered the\n"
+	.string "Talisman and I'll give you something\l"
+	.string "for your troubles.\p"
 	.string "Best of luck adventurer!$"

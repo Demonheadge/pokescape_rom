@@ -20,7 +20,7 @@ Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
-	call TryMoveNpcsRoute1
+	call STORYMODE_STATE_ROUTE1
 	return
 
 
@@ -41,6 +41,21 @@ OPENWORLD_STATE_ROUTE1::
 	setobjectxyperm 5, 10, 12
 	setobjectxyperm 6, 10, 13
 	return
+
+
+STORYMODE_STATE_ROUTE1::
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 20
+	goto_if_ge STORYMODE_STATE_ROUTE1_2
+STORYMODE_STATE_ROUTE1_1:
+	return
+
+STORYMODE_STATE_ROUTE1_2:
+	setobjectxyperm 4, 42, 10
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 37, 12
+	setobjectxyperm 13, 43, 12
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	goto STORYMODE_STATE_ROUTE1_1
 
 
 QUEST_STATE_WizardsTower_ROUTE1::
@@ -104,35 +119,6 @@ QUEST_STATE_WizardsTower_ROUTE1_5:
 	setobjectxyperm 6, 10, 13
 	release
 	end
-
-
-TryMoveNpcsRoute1::
-	goto_if_set FLAG_BADGE01_GET, TryMoveNpcsRoute1_2
-TryMoveNpcsRoute1_1:
-	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
-	goto_if_ne TryMoveNpcsRoute1_5
-TryMoveNpcsRoute1_4:
-	return
-
-TryMoveNpcsRoute1_2:
-	setobjectxyperm 4, 42, 10
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 37, 12
-	setobjectxyperm 13, 43, 12
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
-	goto TryMoveNpcsRoute1_1
-
-TryMoveNpcsRoute1_5:
-	removeobject 22
-	setflag FLAG_TEMP_5
-	removeobject 23
-	setflag FLAG_TEMP_4
-	goto TryMoveNpcsRoute1_4
-
-
-Route1WarpCheck::
-	map_script_2 VAR_TEMP_1, 0, TryMoveNpcsRoute1
-	return
 
 
 NPC_DUCK::
@@ -263,22 +249,24 @@ BLOCK_ROUTE1_FARMER::
 	lock
 	faceplayer
 	namebox BLOCK_ROUTE1_FARMER_Text_0
-	goto_if_unset FLAG_BADGE01_GET, BLOCK_ROUTE1_FARMER_2
-	msgbox BLOCK_ROUTE1_FARMER_Text_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 15
+	goto_if_eq BLOCK_ROUTE1_FARMER_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 10
+	goto_if_le BLOCK_ROUTE1_FARMER_3
+	msgbox BLOCK_ROUTE1_FARMER_Text_3
+BLOCK_ROUTE1_FARMER_1:
 	hidenamebox
 	closemessage
-	release
-	end
-
 	release
 	end
 
 BLOCK_ROUTE1_FARMER_2:
 	msgbox BLOCK_ROUTE1_FARMER_Text_1
-	hidenamebox
-	closemessage
-	release
-	end
+	goto BLOCK_ROUTE1_FARMER_1
+
+BLOCK_ROUTE1_FARMER_3:
+	msgbox BLOCK_ROUTE1_FARMER_Text_2
+	goto BLOCK_ROUTE1_FARMER_1
 
 
 THIEF_ROUTE_1::
@@ -863,11 +851,18 @@ BLOCK_ROUTE1_FARMER_Text_0:
 	.string "Farmer$"
 
 BLOCK_ROUTE1_FARMER_Text_1:
+	.string "Hey sorry bud, I think I'm going to be\n"
+	.string "here awhile.\p"
+	.string "If you want to get to Draynor you'll\n"
+	.string "have to go through the swamp to the\l"
+	.string "south.$"
+
+BLOCK_ROUTE1_FARMER_Text_2:
 	.string "Some Goblins scared my cows out of\n"
 	.string "their pens.\p"
 	.string "Now I'm struggling to get them back in!$"
 
-BLOCK_ROUTE1_FARMER_Text_2:
+BLOCK_ROUTE1_FARMER_Text_3:
 	.string "I finally got my Cows out of the way.$"
 
 THIEF_ROUTE_1_Text_0:

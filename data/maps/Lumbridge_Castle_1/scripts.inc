@@ -254,7 +254,7 @@ LUMBRIDGE_GYM_TRAINER_3_3:
 	lock
 	faceplayer
 	namebox LUMBRIDGE_GYM_TRAINER_3_Text_2
-	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_3
+	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_4
 	hidenamebox
 	release
 	end
@@ -417,6 +417,10 @@ LUMBRIDGE_GYM_TRAINER_3_Text_2:
 LUMBRIDGE_GYM_TRAINER_3_Text_3:
 	.string "You will have to go around if you want\n"
 	.string "to get to the top of the Castle.$"
+
+LUMBRIDGE_GYM_TRAINER_3_Text_4:
+	.string "I wish I had someone to help me clean\n"
+	.string "this mess up.$"
 
 LUMBRIDGE_GYM_TRAINER_4_Text_0:
 	.string "Ready to face the Duke himself? Let us\n"

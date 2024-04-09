@@ -35,10 +35,6 @@ OPENWORLD_STATE_LUMBRIDGE::
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 8, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm 15, 26, 39
-	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 18, 35, 42
-	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 
@@ -94,10 +90,6 @@ STORYMODE_STATE_LUMBRIDGE_10:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 8, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm 15, 26, 39
-	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 18, 35, 42
-	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 

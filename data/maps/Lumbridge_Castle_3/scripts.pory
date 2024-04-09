@@ -41,7 +41,6 @@ script LUMBRIDGE_GYM_STATE{
             setmetatile(32, 5, 17, 1)
             setmetatile(31, 6, 17, 1)
             setmetatile(32, 6, 17, 1)
-            setmetatile(32, 7, 17, 1)
             special(DrawWholeMapView) 
             return
 		case 1: //BEGIN GYM CHALLENGE
@@ -55,6 +54,11 @@ script LUMBRIDGE_GYM_STATE{
             setmetatile(5, 7, 1, 0)
             setmetatile(6, 6, 1, 0)
             setmetatile(6, 7, 1, 0)
+            setobjectxyperm(2, 31, 5)
+            setobjectmovementtype(2,MOVEMENT_TYPE_FACE_RIGHT)
+            setmetatile(32, 5, 17, 1)
+            setmetatile(31, 6, 17, 1)
+            setmetatile(32, 6, 17, 1)
 			special(DrawWholeMapView) 
 			return
 		case 2: //FINISH GYM CHALLENGE
@@ -103,10 +107,16 @@ script NPC_DUKE_1{
         end
     }
     else {
-        msgbox(format("You fought well earlier!\n I look forward to a rematch."))
+        checkitem(ITEM_TALISMAN_MYSTERY, 1) //RUNE MYSTERIES
+        if (var(VAR_RESULT)){
+            msgbox(format("Have you been to see the Archmage about that Talisman yet?"))
+            msgbox(format("Wizards' Tower is located south of Draynor Village.\pYou can get there through Lumbridge Swamp to the south of here.\pReturn to me once you've delivered the Talisman and I'll give you something for your troubles."))
+        }
+        else {
+            msgbox(format("You fought well earlier!\n I look forward to a rematch."))
+        }
+        closemessage
         hidenamebox
-        release
-        end
     }
     release
     end

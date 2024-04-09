@@ -46,10 +46,10 @@ script OPENWORLD_STATE_LUMBRIDGE {
 		setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
 		setobjectxyperm(OBJ_EVENT_ID_DONIE, 8, 13)
 		setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
-		setobjectxyperm(15, 26, 39)
-		setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
-		setobjectxyperm(18, 35, 42)
-		setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
+		//setobjectxyperm(15, 26, 39)
+		//setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
+		//setobjectxyperm(18, 35, 42)
+		//setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
 		return
 }
 
@@ -99,10 +99,10 @@ script STORYMODE_STATE_LUMBRIDGE {
 		setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
 		setobjectxyperm(OBJ_EVENT_ID_DONIE, 8, 13)
 		setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
-		setobjectxyperm(15, 26, 39)
-		setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
-		setobjectxyperm(18, 35, 42)
-		setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
+		//setobjectxyperm(15, 26, 39)
+		//setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
+		//setobjectxyperm(18, 35, 42)
+		//setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
 		return
 	}
 	return

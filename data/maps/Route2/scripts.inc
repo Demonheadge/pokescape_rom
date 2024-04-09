@@ -166,6 +166,24 @@ HAM_EVENT_Route2_TRIGGER_2::
 	return
 
 
+HAM_EVENT_Route2_TRIGGER_3::
+	applymovement 3, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
+	waitmovement 0
+	namebox HAM_EVENT_WizardsTower_4_Text_0
+	msgbox HAM_EVENT_Route2_TRIGGER_3_Text_0
+	hidenamebox
+	closemessage
+	applymovement 3, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, movement_WALKRIGHT
+	waitmovement 0
+	return
+
+
+movement_WALKRIGHT:
+	walk_right
+	step_end
+
 HAM_Movement5_1:
 	walk_in_place_fast_right
 	walk_in_place_fast_right
@@ -264,8 +282,7 @@ NPC_ROUTE2_Wizard::
 
 BATTLE_ROUTE2_Trainer_1::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_1
-	namebox BATTLE_ROUTE2_Trainer_1_Text_2
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_2
 	hidenamebox
 	release
 	end
@@ -362,21 +379,28 @@ HAM_EVENT_Route2_MAIN_1_Text_4:
 HAM_EVENT_Route2_TRIGGER_1_Text_0:
 	.string "There you are!$"
 
+HAM_EVENT_Route2_TRIGGER_3_Text_0:
+	.string "Have you seen a man in pink?\p"
+	.string "I don't know which way he went…$"
+
 NPC_ROUTE2_Wizard_Text_0:
 	.string "They say that there are hidden floors\n"
 	.string "within the Wizards' Tower.\p"
 	.string "I've never found them though.$"
 
 BATTLE_ROUTE2_Trainer_1_Text_0:
-	.string "Do you know the way to Draynor Village\n"
-	.string "by any chance?$"
+	.string "Please no!\p"
+	.string "I'm so close to the Bank I don't want to\n"
+	.string "be sent back to Lumbridge!$"
 
 BATTLE_ROUTE2_Trainer_1_Text_1:
-	.string "Wrong direction?\p"
-	.string "I've followed the W for south all day!$"
+	.string "Nooo!\p"
+	.string "Back to Lumbridge I go!$"
 
 BATTLE_ROUTE2_Trainer_1_Text_2:
-	.string "How2type$"
+	.string "If the swamp wasn't hard enough there\n"
+	.string "was also a forest to pass through!?\p"
+	.string "This is too much for a skiller…$"
 
 BATTLE_ROUTE2_Trainer_2_Text_0:
 	.string "Passing this bridge gets you to the\n"

@@ -224,8 +224,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
-      "x": 3,
-      "y": 9,
+      "x": 15,
+      "y": 27,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 9,
@@ -263,8 +263,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAT",
-      "x": 4,
-      "y": 8,
+      "x": 16,
+      "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 9,

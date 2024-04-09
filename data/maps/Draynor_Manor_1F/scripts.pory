@@ -2,12 +2,49 @@ mapscripts Draynor_Manor_1F_MapScripts {
 
     MAP_SCRIPT_ON_LOAD {
         call(DraynorManor_Lever_STATE)
-        end
+        //call(STORYMODE_STATE_DRAYNORMANOR_1F)
         }
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT,
     }
 
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7: HAM_EVENT_DRAYNORMANOR_1F
+    ]
+
+}
+
+
+script HAM_EVENT_DRAYNORMANOR_1F {
+    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 7: 
+                //applies movement to player walking 2 steps
+                addobject(17) //ARIANE
+                clearflag(FLAG_TEMP_1F)
+                //applymovement comes in the door slowly walks behind the player.
+                namebox("Ariane")
+                msgbox(format("…{PAUSE 32}…{PAUSE 32}…\nHe… Hey you…\pCan… can we go together?"))
+                //apply movement walks infront of the player.
+                msgbox(format("Pssh!\nI'm not scared, what do you take me for-"))
+                hidenamebox
+                namebox("Rat")
+                msgbox(format("Squeeek!"))
+                //apply movement RAT
+                namebox("Ariane")
+                msgbox(format("Eeek!"))
+                //apply movement ariane runs behind the player agaain
+                msgbox(format("Okay, maybe I am a little scared…\pYou lead the way."))
+                //ARIANE JOINS THE PARTY and Follows!
+                setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8)
+
+                //Did that chair just move?!
+                //I doubt he would be outside.
+                //As mysterious as this hidden lever is, I am not following you down there.
+                //I hear noises coming from the basement, could that be the pink man?
+
+
+
+    }
 }
 
 

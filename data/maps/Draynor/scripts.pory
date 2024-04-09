@@ -34,6 +34,11 @@ script WizardsTower_Draynor_STATE{
                 release
                 return
             case 5:
+                setflag(FLAG_TEMP_1)
+                removeobject(21)
+                clearflag(FLAG_TEMP_2)
+                addobject(24)
+                return
 			case 6: 
             case 7: 
             case 8: 
@@ -105,9 +110,8 @@ movement HAM_Movement6_2{
 }
 
 script Draynor_Ariane{
-	lock
     namebox("Ariane")
-	msgbox(format("He doesn't seem to be here…\pI hope he didn't leave town…"))
+    msgbox(format("I cannot see him anywhere…\pDid I take a wrong turn?\pI hope he didn't run north towards Draynor Manor…"))
     hidenamebox
     release
 	end

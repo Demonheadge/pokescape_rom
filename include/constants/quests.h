@@ -15,37 +15,13 @@
 #define QUEST_MENU_BUFFER_QUEST_NAME    10   //buffers a quest name to gStringVar1
 
 // quest number defines
-#define QUEST_COOKS_ASSISTANT          0 //COOKS ASSISTANT.
-#define QUEST_ERNEST_THE_CHICKEN       1
-#define QUEST_KOUREND_SLAYER         2
-#define QUEST_ARTFIGHT_JATIZSO          3 //QUEST_ARTFIGHT_JATIZSO
-#define QUEST_5          4
-#define QUEST_6          5
-#define QUEST_7          6
-#define QUEST_8          7
-#define QUEST_ARTFIGHT_NEITIZNOT       8
-#define QUEST_10         9
-#define QUEST_11        10
-#define QUEST_12        11
-#define QUEST_13        12
-#define QUEST_14        13
-#define QUEST_15        14
-#define QUEST_16        15
-#define QUEST_17        16
-#define QUEST_18        17
-#define QUEST_19        18
-#define QUEST_20        19
-#define QUEST_21        20
-#define QUEST_22        21
-#define QUEST_23        22
-#define QUEST_24        23
-#define QUEST_25        24
-#define QUEST_26        25
-#define QUEST_27        26
-#define QUEST_28        27
-#define QUEST_29        28
-#define QUEST_30        29
-#define QUEST_COUNT     (QUEST_KOUREND_SLAYER + 1)
+#define QUEST_COOKS_ASSISTANT           0   //COOKS ASSISTANT.
+#define QUEST_RUNE_MYSTERIES            1   //RUNE MYSTERIES
+#define QUEST_ERNEST_THE_CHICKEN        2   //ERNEST THE CHICKEN
+#define QUEST_KOUREND_SLAYER            3   //DARK TOTEM
+#define QUEST_ARTFIGHT_JATIZSO          4   //QUEST_ARTFIGHT_JATIZSO
+#define QUEST_ARTFIGHT_NEITIZNOT        5
+#define QUEST_COUNT                     (QUEST_KOUREND_SLAYER + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1
@@ -77,15 +53,19 @@
 #define SUB_QUEST_28        27
 #define SUB_QUEST_29        28
 #define SUB_QUEST_30        29
+#define SUB_QUEST_RUNEMYSTERIES_1        30
+#define SUB_QUEST_RUNEMYSTERIES_2        31
+#define SUB_QUEST_RUNEMYSTERIES_3        32
 
 #define QUEST_ARTFIGHT_JATIZSO_SUB_COUNT        5
 #define QUEST_ARTFIGHT_NEITIZNOT_SUB_COUNT      5
 #define QUEST_ERNEST_THE_CHICKEN_SUB_COUNT      3
 #define QUEST_COOKS_ASSISTANT_SUB_COUNT         3
 #define QUEST_KOUREND_SLAYER_SUB_COUNT          3
+#define QUEST_RUNE_MYSTERIES_SUB_COUNT          3
 
 
-#define SUB_QUEST_COUNT (QUEST_COOKS_ASSISTANT_SUB_COUNT + QUEST_KOUREND_SLAYER_SUB_COUNT + QUEST_ARTFIGHT_JATIZSO_SUB_COUNT + QUEST_ARTFIGHT_NEITIZNOT_SUB_COUNT + QUEST_ERNEST_THE_CHICKEN_SUB_COUNT)
+#define SUB_QUEST_COUNT (QUEST_COOKS_ASSISTANT_SUB_COUNT + QUEST_RUNE_MYSTERIES_SUB_COUNT + QUEST_KOUREND_SLAYER_SUB_COUNT + QUEST_ARTFIGHT_JATIZSO_SUB_COUNT + QUEST_ARTFIGHT_NEITIZNOT_SUB_COUNT + QUEST_ERNEST_THE_CHICKEN_SUB_COUNT)
 
 #define QUEST_ARRAY_COUNT (SUB_QUEST_COUNT > QUEST_COUNT ? SUB_QUEST_COUNT : QUEST_COUNT)
 #endif // GUARD_CONSTANTS_QUESTS_H

@@ -812,16 +812,17 @@ QUEST_Cooks_Assistant_STATE_4:
 	namebox QUEST_Cooks_Assistant_STATE_Text_0
 	msgbox QUEST_Cooks_Assistant_STATE_Text_15
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
-	goto_if_eq QUEST_Cooks_Assistant_STATE_20
-QUEST_Cooks_Assistant_STATE_19:
+	goto_if_eq QUEST_Cooks_Assistant_STATE_22
+QUEST_Cooks_Assistant_STATE_21:
 	hidenamebox
 	release
 	end
 
 QUEST_Cooks_Assistant_STATE_5:
 	namebox QUEST_Cooks_Assistant_STATE_Text_0
-	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
-	goto_if_eq QUEST_Cooks_Assistant_STATE_17
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq QUEST_Cooks_Assistant_STATE_18
+QUEST_Cooks_Assistant_STATE_16:
 	msgbox QUEST_Cooks_Assistant_STATE_Text_18
 	hidenamebox
 	release
@@ -871,13 +872,18 @@ QUEST_Cooks_Assistant_STATE_17:
 	release
 	end
 
-QUEST_Cooks_Assistant_STATE_20:
+QUEST_Cooks_Assistant_STATE_18:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 10
+	goto_if_le QUEST_Cooks_Assistant_STATE_17
+	goto QUEST_Cooks_Assistant_STATE_16
+
+QUEST_Cooks_Assistant_STATE_22:
 	playse SE_PIN
 	applymovement 1, COOK_COOKSASSISTANT_1
 	waitmovement 0
 	msgbox QUEST_Cooks_Assistant_STATE_Text_16
 	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 10
-	goto QUEST_Cooks_Assistant_STATE_19
+	goto QUEST_Cooks_Assistant_STATE_21
 
 
 COOK_COOKSASSISTANT_1:
@@ -1499,12 +1505,12 @@ QUEST_Cooks_Assistant_STATE_Text_16:
 	.string "I'll let him know you're coming.$"
 
 QUEST_Cooks_Assistant_STATE_Text_17:
-	.string "Once again, thank you for your help\n"
-	.string "making the cake.$"
-
-QUEST_Cooks_Assistant_STATE_Text_18:
 	.string "Just head up those stairs, you'll find\n"
 	.string "the Duke up there.$"
+
+QUEST_Cooks_Assistant_STATE_Text_18:
+	.string "Once again, thank you for your help\n"
+	.string "making the cake.$"
 
 QUEST_Cooks_Assistant_STATE_Text_19:
 	.string "Thank you for all of your help earlier!$"
