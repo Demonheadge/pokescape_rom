@@ -23,14 +23,11 @@ PORTSARIM_STATE::
 	removeobject 26
 	removeobject 27
 	setflag FLAG_TEMP_1F
+	removeobject 38
+	setflag FLAG_TEMP_1D
 	return
 
 PORTSARIM_STATE_1:
-	switch VAR_POKESCAPE_STORYMODE_PROGRESS
-	case 150, PORTSARIM_STATE_6
-	case 151, PORTSARIM_STATE_7
-	case 100, PORTSARIM_STATE_8
-PORTSARIM_STATE_4:
 	removeobject 21
 	removeobject 22
 	removeobject 23
@@ -40,6 +37,13 @@ PORTSARIM_STATE_4:
 	removeobject 27
 	setflag FLAG_TEMP_1F
 	setflag FLAG_TEMP_1E
+	removeobject 38
+	setflag FLAG_TEMP_1D
+	switch VAR_POKESCAPE_STORYMODE_PROGRESS
+	case 150, PORTSARIM_STATE_6
+	case 151, PORTSARIM_STATE_7
+	case 100, PORTSARIM_STATE_8
+PORTSARIM_STATE_4:
 	return
 
 PORTSARIM_STATE_6:
@@ -83,6 +87,8 @@ PORTSARIM_STATE_7:
 PORTSARIM_STATE_8:
 	setobjectmovementtype 37, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 37, 6, 40
+	addobject 38
+	clearflag FLAG_TEMP_1D
 	goto PORTSARIM_STATE_4
 
 
@@ -312,15 +318,18 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS::
 	lock
 	faceplayer
 	namebox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0
-	goto_if_unset FLAG_BADGE02_GET, NPC_PORTSARIM_CAPTIAN_TOBIAS_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 100
+	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_2
+NPC_PORTSARIM_CAPTIAN_TOBIAS_1:
+	goto_if_unset FLAG_BADGE02_GET, NPC_PORTSARIM_CAPTIAN_TOBIAS_5
 	compare VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 0
-	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_5
-NPC_PORTSARIM_CAPTIAN_TOBIAS_4:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3, MSGBOX_YESNO
-	compare VAR_RESULT, 1
 	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_8
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5
 NPC_PORTSARIM_CAPTIAN_TOBIAS_7:
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4, MSGBOX_YESNO
+	compare VAR_RESULT, 1
+	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_11
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_6
+NPC_PORTSARIM_CAPTIAN_TOBIAS_10:
 	waitmessage
 	hidenamebox
 	release
@@ -328,20 +337,24 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_7:
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_2:
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_1
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_5:
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2
 	hidenamebox
 	release
 	end
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_5:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2
-	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_4
-
 NPC_PORTSARIM_CAPTIAN_TOBIAS_8:
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_7
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_11:
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5
 	waitmessage
 	hidenamebox
 	warp MAP_MUSA_POINT, 2, 0, 0
-	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_7
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_10
 
 
 NPC_PORTSARIM_CREWMAN_1::
@@ -719,6 +732,17 @@ NPC_PORTSARIM_BLOCKADE_HAM_2::
 	end
 
 
+NPC_PORTSARIM_DRUNK_HAM::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_DRUNK_HAM_Text_0
+	msgbox NPC_PORTSARIM_DRUNK_HAM_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 PORTSARIM_HAM_EVENT_PART2_Text_0:
 	.string "H.A.M Leader$"
 
@@ -780,6 +804,11 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0:
 	.string "Tobias$"
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1:
+	.string "There seems to be some sort of\n"
+	.string "commotion happening over at the\l"
+	.string "lighthouse.$"
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
 	.string "Sorry but our boat has popped a leak.\p"
 	.string "It will be some time before it is\n"
 	.string "repaired.\p"
@@ -787,7 +816,7 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1:
 	.string "Falador or something while you are\l"
 	.string "waiting.$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
 	.string "Is your name PLAYER?\p"
 	.string "I have received word that you are\n"
 	.string "participating in the MvM\l"
@@ -798,15 +827,15 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
 	.string "travel for free!\p"
 	.string "So…{PAUSE 15}… Ahem!$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
 	.string "Hi, there would you like to board the\n"
 	.string "boat to Musa Point, Karamja?$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5:
 	.string "All aboard!\l"
 	.string "We set sail for Karamja!$"
 
-NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5:
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_6:
 	.string "Suit yourself.$"
 
 NPC_PORTSARIM_CREWMAN_1_Text_0:
@@ -1053,3 +1082,10 @@ NPC_PORTSARIM_BLOCKADE_HAM_2_Text_1:
 	.string "Now we are going to be late meeting up\n"
 	.string "with the rest of the team at the\l"
 	.string "lighthouse!$"
+
+NPC_PORTSARIM_DRUNK_HAM_Text_0:
+	.string "H.A.M Drunk$"
+
+NPC_PORTSARIM_DRUNK_HAM_Text_1:
+	.string "hic…{PAUSE 32}Where is e…{PAUSE 32}very…{PAUSE 32}one.\n"
+	.string "Oh {PAUSE 32}…right {PAUSE 32}the lighthouse… {PAUSE 32}hic…$"

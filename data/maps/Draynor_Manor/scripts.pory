@@ -193,7 +193,7 @@ script HAM_EVENT_DraynorManor_Ariane_1{
 	removeobject(1) //ariane
     setflag(FLAG_TEMP_1)
 	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
-	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 100)
 	end
 }
 
@@ -220,7 +220,7 @@ script HAM_EVENT_DraynorManor_DOOR_WRONG{
 	removeobject(1) //ariane
     setflag(FLAG_TEMP_1)
 	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
-	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 100)
 	end
 }
 
@@ -250,7 +250,7 @@ script HAM_EVENT_DraynorManor_DOOR_WHITEOUT{
 	removeobject(1) //ariane
     setflag(FLAG_TEMP_1)
 	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,10)
-	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 35)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 100)
 	end
 }
 

@@ -1681,12 +1681,15 @@ static const u8 sElementalPouchDesc[] = _(
     "MONSTERS.");
 	
 static const u8 sTALISMANDesc[] = _(
-    "A mysterious Talisman\n"
+    "A strange Talisman\n"
     "that is attracted\n"
     "towards an altar.");
 
 
-
+static const u8 sMYSTERYTALISMANDesc[] = _(
+    "A mysterious\n"
+    "Talisman.\n"
+    "(Rune Mysteries)");
 
 //COOKS ASSISTANT QUEST ----
 static const u8 sSuperLargeEggDesc[] = _(

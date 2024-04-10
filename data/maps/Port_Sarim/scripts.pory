@@ -29,6 +29,18 @@ script VARSETTER {
 script PORTSARIM_STATE{
     if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORYMODE
     {
+        removeobject(21)
+        removeobject(22)
+        removeobject(23)
+        removeobject(24)
+        removeobject(25)
+        removeobject(26)
+        removeobject(27)
+        setflag(FLAG_TEMP_1F)
+        setflag(FLAG_TEMP_1E)
+        removeobject(38)
+        setflag(FLAG_TEMP_1D)
+
         switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
             //HAM EVENT, PORT SARIM BOAT
             case 150: //SETUP AFTER FALADOR
@@ -66,19 +78,15 @@ script PORTSARIM_STATE{
                 setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 19, 18)
                 addobject(27)
                 clearflag(FLAG_TEMP_1E)
+                
             case 100:
                 setobjectmovementtype(OBJ_EVENT_ID_JAILGUARD, MOVEMENT_TYPE_FACE_DOWN)
                 setobjectxyperm(OBJ_EVENT_ID_JAILGUARD, 6, 40)
+                addobject(38)
+                clearflag(FLAG_TEMP_1D)
+                
         }
-        removeobject(21)
-        removeobject(22)
-        removeobject(23)
-        removeobject(24)
-        removeobject(25)
-        removeobject(26)
-        removeobject(27)
-        setflag(FLAG_TEMP_1F)
-        setflag(FLAG_TEMP_1E)
+        
         return
     }
     else { //OPENWORLD MODE - REMOVE ALL STORYMODE OBJECTS
@@ -90,6 +98,8 @@ script PORTSARIM_STATE{
         removeobject(26)
         removeobject(27)
         setflag(FLAG_TEMP_1F)
+        removeobject(38)
+        setflag(FLAG_TEMP_1D)
         return
     }
 }
@@ -332,6 +342,10 @@ script NPC_PORTSARIM_CAPTIAN_TOBIAS
 	lock
 	faceplayer
     namebox ("Tobias")
+
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) {
+        msgbox(format("There seems to be some sort of commotion happening over at the lighthouse."))
+    }
     //switch (var(VAR_POKESCAPE_STORYMODE_PROGRESS)){ 
             //HAM EVENT, PORT SARIM BOAT
      ///       case 100:
@@ -843,6 +857,19 @@ script NPC_PORTSARIM_BLOCKADE_HAM_2
     
     closemessage
 	hidenamebox
+	release
+	end
+}
+
+
+script NPC_PORTSARIM_DRUNK_HAM
+{
+	lock
+	faceplayer
+    namebox ("H.A.M Drunk")
+	msgbox(format("hic…{PAUSE 32}Where is e…{PAUSE 32}very…{PAUSE 32}one.\nOh {PAUSE 32}…right {PAUSE 32}the lighthouse… {PAUSE 32}hic…"))
+    waitmessage
+    hidenamebox
 	release
 	end
 }
