@@ -534,6 +534,29 @@ script NPC_DraynorManor_Ava{
     lock
 	faceplayer
 	namebox("Ava")
+
+
+
+    if (var(VAR_POKESCAPE_ERNEST_QUEST_STATE) == 1) {
+        checkitem (ITEM_OIL_CAN,1)
+        if (!var(VAR_RESULT)){
+            msgbox(format("Oil Can?\pLast time I used it was to oil up my bed to stop it from creeking.\pWhere did I leave it?\pUh…{PAUSE 32}… I believe I left it in the basement over there.\pSo if you want it you will have to go get it."))
+            hidenamebox
+            closemessage
+            release
+            end
+        }
+        else {
+            msgbox(format("Hey you found the Oil Can!\pMy bed is starting to creek again, can I use it before you go haha."))
+            closemessage
+            hidenamebox
+            closemessage
+            release
+            end
+        }
+    }
+
+
     random(5)
         switch (var(VAR_RESULT)) { 
         case 0: 

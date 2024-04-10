@@ -4,33 +4,87 @@ mapscripts Draynor_Manor_3F_MapScripts {
 
 	MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT,
-    }
+		call(DRAYNOR_MANOR_3F_STATE)
+	}
 
 
 }
 
 
+script DRAYNOR_MANOR_3F_STATE {
+	removeobject(6)
+	removeobject(7)
+	setflag(FLAG_TEMP_18)
+	setflag(FLAG_TEMP_19)
+	if (var(VAR_POKESCAPE_ERNEST_QUEST_STATE) == 4) {
+		addobject(6)
+		clearflag(FLAG_TEMP_18)
+		setflag(FLAG_TEMP_1D)
+		setflag(FLAG_TEMP_1E)
+		setflag(FLAG_TEMP_1F)
+		removeobject(2)
+		removeobject(3)
+		removeobject(4)
+		removeobject(5)
+	}
+}
+
+
+			
 
 
 
 
 
-
-
-
-script NPC_DraynorManor_Chicken{
+script NPC_DraynorManor_Chicken_1{
     lock
 	faceplayer
 	namebox("Chicken")
-	playmoncry(SPECIES_TORCHIC, 0)
+	playmoncry(SPECIES_ERNEST, 0)
     msgbox(format("BWawkrk!"))
 	waitmoncry
     hidenamebox
 	closemessage
     namebox("Prof.Oddenstein")
-    msgbox(format("Oh that?\pI call that an Ernest Chicken!\pI named it this breed after its father.\pBasically I turned this guy called Ernest into a chicken, he laid some eggs and these chickens are what hatched from them."))
+    msgbox(format("I call that an Ernest Chicken!\pI named it this breed after its father.\pBasically I turned this guy called Ernest into a chicken, he laid some eggs and these chickens are what hatched from them."))
 	hidenamebox
 	closemessage
+    release
+	end
+}
+
+script NPC_DraynorManor_OddenstienLog{
+    msgbox(format("It is Professor Oddenstien's Log book.\pWant to read it?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox(format("Log 1: I met a man named Ernest.\pThis was perfect, before he could say I word told him to be my assistant for my newest experiment.\pAnd it was a success I could now transform humans into chickens!\pWith this I will never have a shortage of eggs for breakfast."))
+			msgbox(format("Log 2: Ernest seemed like he wanted to go outside so I opened a window.\pI wonder where he will go."))
+			msgbox(format("Log 3: An adventurer brought Ernest back to me and told me his fiancee wanted him turned back into a human.\pDoes this mean I will no longer have eggs for breakfast?"))
+			msgbox(format("Log 4: With Ernest gone only his eggs remain.\pI probably have enough supply for a week but I think I will need to find another assistant soon otherwise I will run out of eggs."))
+			msgbox(format("Log 5: Nooo!\pThis is so unfortunate, the eggs have hatched!\pNow I must eat them before they hatch so I can have my breakfast."))
+			msgbox(format("Log 6: These are some weird-looking hybrid chickens.\pI think I will name them Ernest Chickens after thier father."))
+			msgbox(format("Log 7: I wonder what will happen if I turn these Ernest Chickens into humans…"))
+			msgbox(format("End of log."))
+		}
+	closemessage
+    release
+	end
+}
+
+script NPC_DraynorManor_Chicken_2{
+    lock
+	faceplayer
+	namebox("Chicken")
+	playmoncry(SPECIES_ERNEST, 0)
+    msgbox(format("BWawkrk!"))
+	waitmoncry
+    hidenamebox
+	closemessage
+	if (var(VAR_POKESCAPE_ERNEST_QUEST_STATE) == 2) {
+		msgbox(format("You pick up the weird-looking chicken."))
+		removeobject(VAR_LAST_TALKED)
+		closemessage
+		setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 3)
+	}
     release
 	end
 }
@@ -83,9 +137,39 @@ script SCRIPT_DraynorManor_Poison {
 
 
 script SCRIPT_DraynorManor_Fountain {
-    msgbox(format("There appears to be a lot of piranha in there."))
+    
+	
+	if (var(VAR_POKESCAPE_ERNEST_QUEST_STATE) == 1) {
+
+		checkitem (ITEM_PRESSURE_GAUGE,1)
+		if (var(VAR_RESULT)){
+			msgbox(format("There appears to be a lot of dead piranha in there.\p…{PAUSE 32}Oops."))
+			hidenamebox
+			closemessage
+			release
+			end
+		}
+		else {
+			msgbox(format("You spot the Pressure Gauge among a school of piranhas."))
+		}
+		
+	}
+	else {
+		msgbox(format("There appears to be a lot of piranha in there."))
+	}
 	closemessage
-    checkitem (ITEM_FISH_FOOD_POISONED,1)
+	checkitem (ITEM_FISH_FOOD, 1)
+	if (var(VAR_RESULT)){
+		msgbox(format("Would you like to use FISH FOOD?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox(format("Seeing the piranhas in the fountain you throw the fish food into the fountain."))
+			msgbox(format("…{PAUSE 32}… They eat the food within seconds.\pMaybe something from the kitchen could help slow the piranhas down long enough to grab the pressure gauge."))
+		}
+		closemessage
+		release
+		end
+	}
+    checkitem (ITEM_FISH_FOOD_POISONED, 1)
 	if (var(VAR_RESULT)){
         msgbox(format("Would you like to use FISH FOOD P++?"), MSGBOX_YESNO)
 		if (var(VAR_RESULT)){
@@ -184,6 +268,10 @@ script EventScript_DraynorManor_Received_ExExParrot{
 	return
 }
 
+//Hello there, you seem to be an adventurer.
+//You see, recently a human named Ernest was turned into a chicken. We managed to transform him back but not before he laid a bunch of eggs. 
+//Originally I thought nothing of it and was planning to have the eggs for breakfast tomorrow but they ended up hatching and now there are chicken all over the place.
+//Now I've come up with a great idea involving the increasing number of chickens. Could you help me with an experiment? 
 
 
 script NPC_DraynorManor_Oddenstein{
@@ -192,14 +280,16 @@ script NPC_DraynorManor_Oddenstein{
 	switch (var(VAR_POKESCAPE_ERNEST_QUEST_STATE)){ 
 		case 0: 
 			namebox ("Prof.Oddenstein")
-			msgbox(format("Hello there, you seem to be an adventurer.\pI have a new experiment!\pI want to bring something back to life!"))
-            msgbox(format("Would you like to assist me?"), MSGBOX_YESNO)
+			msgbox(format("Hello there, you seem to be an adventurer.\pYou see, recently a human named Ernest was turned into a chicken.\pWe managed to transform him back but not before he laid a bunch of eggs.\pOriginally I thought nothing of it and was planning to have the eggs for breakfast tomorrow but they ended up hatching and now there are chicken all over the place."))
+			msgbox(format("I've come up with a great idea involving the increasing number of chickens.\pBut I need an assistant, can you help me with my experiment?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)){
+				hidenamebox
 				startquest (QUEST_ERNEST_THE_CHICKEN)
+				namebox ("Prof.Oddenstein")
 				msgbox(format("I need a few items for my experiment to succeed can you go get me them?\pI need a Oil Can, Pressure Gauge and Rubber Tube."))
-                msgbox(format("The Oil Can should be somewhere in the basement."))
-                msgbox(format("I believe the last place I saw the Pressure Gauge was outside in the fountain."))
-                msgbox(format("As I recall McBoneFace borrowed the Rubber Tube, he should be in his room."))
+                msgbox(format("The Oil Can should be with Ava.\pShe is in the room next to the living room.\pShe loves puzzles so I'd imagine she would have hidden the door to her room behind a bookcase or something."))
+                msgbox(format("I believe the last place I saw the Pressure Gauge being used was outside in the fountain."))
+                msgbox(format("As I recall McBoneFace borrowed the Rubber Tube, he should be in his room.\pWhat he needed it for I have no idea."))
                 msgbox(format("Alright off you go my assistant!\pI cannot do this experiment without those items!"))
 				setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 1)
 				hidenamebox
@@ -232,9 +322,9 @@ script NPC_DraynorManor_Oddenstein{
                 msgbox(format("… {PAUSE 15}Just a few more adjustments…"))
                 applymovement(ODDENSTEIN_ID, MOVEMENT_DraynorManor_Oddenstein_2)
                 waitmovement(0)
-                msgbox(format("Done!\pHere take this."))
-                giveitem(ITEM_MAGICAL_CAGE,1)
-                msgbox(format("All we need now is a dead bird.\pGo dig up old polly and put her inside that cage!\pI buried her out the back by the gravestone."))
+                msgbox(format("Done!\pNow all we need is one of those chickens.\pCan you go grab one for me."))
+                //giveitem(ITEM_MAGICAL_CAGE,1)
+                //msgbox(format("All we need now is a dead bird.\pGo dig up old polly and put her inside that cage!\pI buried her out the back by the gravestone."))
 				hidenamebox
                 closemessage
                 setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 2)
@@ -250,46 +340,94 @@ script NPC_DraynorManor_Oddenstein{
 
         case 2:    
             namebox ("Prof.Oddenstein")
-            msgbox(format("Go dig up old polly and put her inside that cage!\pI buried her out the back by the gravestone."))
+			msgbox(format("Don't be shy, I know they look weird but they are just chickens.\pGo pick one up and bring it over here to me."))
+            //msgbox(format("Go dig up old polly and put her inside that cage!\pI buried her out the back by the gravestone."))
 			hidenamebox
             closemessage
 			release
 			end
 
-        case 3: 
-				namebox ("Prof.Oddenstein")
-				msgbox(format("Welcome back!\pWhat is that?\pYou say it worked!?\pShow me Polly!"))
-                hidenamebox
-                closemessage
-                special (ChoosePartyMon)
-                waitstate
-                specialvar (VAR_RESULT, ScriptGetPartyMonSpecies)
-                if (var(VAR_RESULT) == SPECIES_EXEXPARROT){
-                    namebox ("Prof.Oddenstein")
-                    msgbox(format("OLD POLLY!\pShe lives!\pThis is a fantastic breakthrough!\pOh, it seems Polly would like to go on one last adventure.\pVery well take her with you but check back in from time to time!\pThank you for assisting me!\pAlso please take this as a reward for helping me."))
-				    hidenamebox
-                    closemessage
-                    giveitem(ITEM_MINT_CAKE, 2)
-                    setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 4)
-                    release
-                    end
-                } else {
-                    namebox ("Prof.Oddenstein")
-                    msgbox(format("That's not Polly…"))
-                    hidenamebox
-                    closemessage
-                    release
-                    end
-                }
-        case 4: 
-            namebox ("Prof.Oddenstein")
-			msgbox(format("How is Polly doing?"))
+		case 3: 
+			namebox ("Prof.Oddenstein")
+			msgbox(format("Perfect, thats an Ernest Chicken exactly what we needed!\pStand back let the experiment begin!"))
             closemessage
             hidenamebox
+			//fadescreen(FADE_TO_BLACK)
+			setflag(FLAG_TEMP_1D)
+			setflag(FLAG_TEMP_1E)
+			setflag(FLAG_TEMP_1F)
+			removeobject(2)
+			removeobject(3)
+			removeobject(4)
+			removeobject(5)
+			msgbox(format("Okay, first we place the chicken down."))
+			closemessage
+			addobject(7)
+			clearflag(FLAG_TEMP_19)
+			delay(64)
+			//fadescreen(FADE_FROM_BLACK)
+
+			msgbox(format("Then we press this button and fiddle with these doohickles…"))
+			closemessage
+			delay(64)
+			msgbox(format("Wait no!\nSomething has gone wrong!"))
+			closemessage
+			//fadescreen(FADE_TO_BLACK)
+			applymovement(7, movement_chickentransform)
+			waitmovement(0)
+			msgbox(format("Nooo!"))
+			closemessage
+			setflag(FLAG_TEMP_19)
+			clearflag(FLAG_TEMP_18)
+			addobject(6)
+			removeobject(7)
+			delay(32)
+			//fadescreen(FADE_FROM_BLACK)
+			msgbox(format("Drat my experiment has ended in failure!\pLets call it there.\pPlease dispose of the failed experiment."))
+			setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 4)
+			closemessage
             end
+
+        case 4: 
+            namebox ("Prof.Oddenstein")
+			msgbox(format("Please dispose of that chicken."))
+            closemessage
+            hidenamebox
+			release
+            end
+		case 5: 
+            namebox ("Prof.Oddenstein")
+			msgbox(format("It is gone, thank you {PLAYER}."))
+			questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN)
+			giveitem(ITEM_MINT_CAKE, 2)
+			setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 6)
+            closemessage
+            hidenamebox
+			release
+            end
+		case 6: 
+			namebox ("Prof.Oddenstein")
+			msgbox(format("Thank you for your help."))
+			hidenamebox
+			closemessage
+			release
+			end
     }
 }
  
+movement movement_chickentransform {
+	levitate
+	face_left
+	delay_16 * 4
+	
+	face_right
+	delay_16  * 4
+	face_down
+	delay_16 * 4
+	stop_levitate
+	
+	//figure_8
+}
 			
 movement MOVEMENT_DraynorManor_Oddenstein_1 {
     walk_in_place_down * 3
@@ -306,7 +444,7 @@ movement MOVEMENT_DraynorManor_Oddenstein_2 {
 script CooksAssistant_Check_OilCan {
 	checkitem (ITEM_OIL_CAN,1)
 	if (!var(VAR_RESULT)){
-		msgbox(format("You don't have the Oil Can.\pIt should be somewhere in the basement."))
+		msgbox(format("You don't have the Oil Can.\pCheck with Ava.\pShe is in the room next to the living room.\pShe loves puzzles so I'd imagine she would have hidden the door to her room behind a bookcase or something."))
 		hidenamebox
         closemessage
 		release
@@ -376,7 +514,7 @@ script NPC_DraynorManor_Fisherman{
     }
 	checkitem (ITEM_FISH_FOOD,1)
 	if (var(VAR_RESULT)){
-		msgbox(format("Where did you get that fish food from?\pHopefully you didn't get it from the Kitchen, theres a bunch of poisons in there."))
+		msgbox(format("Where did you get that fish food from?\pHopefully you didn't get it from the kitchen, theres a bunch of poisons in there."))
 		hidenamebox
 		closemessage
 		release
@@ -392,7 +530,7 @@ script NPC_DraynorManor_Fisherman{
 			release
 			end
         case 1: 
-			msgbox(format("The fish are looking a bit hungry."))
+			msgbox(format("The fish are looking a bit hungry.\pI think I saw some fish food somewhere upstairs in that Manor."))
 			hidenamebox
             closemessage
 			release

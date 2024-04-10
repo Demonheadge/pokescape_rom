@@ -565,53 +565,73 @@ NPC_DraynorManor_Ava::
 	lock
 	faceplayer
 	namebox NPC_DraynorManor_Ava_Text_0
+	compare VAR_POKESCAPE_ERNEST_QUEST_STATE, 1
+	goto_if_eq NPC_DraynorManor_Ava_2
 	random 5
 	switch VAR_RESULT
-	case 0, NPC_DraynorManor_Ava_2
-	case 1, NPC_DraynorManor_Ava_3
-	case 2, NPC_DraynorManor_Ava_4
-	case 3, NPC_DraynorManor_Ava_5
-	case 4, NPC_DraynorManor_Ava_6
-	case 5, NPC_DraynorManor_Ava_7
+	case 0, NPC_DraynorManor_Ava_5
+	case 1, NPC_DraynorManor_Ava_6
+	case 2, NPC_DraynorManor_Ava_7
+	case 3, NPC_DraynorManor_Ava_8
+	case 4, NPC_DraynorManor_Ava_9
+	case 5, NPC_DraynorManor_Ava_10
 	return
 
 NPC_DraynorManor_Ava_2:
-	msgbox NPC_DraynorManor_Ava_Text_1
-	hidenamebox
-	closemessage
-	release
-	end
-
-NPC_DraynorManor_Ava_3:
+	checkitem ITEM_OIL_CAN, 1
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_DraynorManor_Ava_11
 	msgbox NPC_DraynorManor_Ava_Text_2
-	hidenamebox
 	closemessage
-	release
-	end
-
-NPC_DraynorManor_Ava_4:
-	msgbox NPC_DraynorManor_Ava_Text_3
 	hidenamebox
 	closemessage
 	release
 	end
 
 NPC_DraynorManor_Ava_5:
-	msgbox NPC_DraynorManor_Ava_Text_4
+	msgbox NPC_DraynorManor_Ava_Text_3
 	hidenamebox
 	closemessage
 	release
 	end
 
 NPC_DraynorManor_Ava_6:
-	msgbox NPC_DraynorManor_Ava_Text_5
+	msgbox NPC_DraynorManor_Ava_Text_4
 	hidenamebox
 	closemessage
 	release
 	end
 
 NPC_DraynorManor_Ava_7:
+	msgbox NPC_DraynorManor_Ava_Text_5
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_8:
 	msgbox NPC_DraynorManor_Ava_Text_6
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_9:
+	msgbox NPC_DraynorManor_Ava_Text_7
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_10:
+	msgbox NPC_DraynorManor_Ava_Text_8
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_11:
+	msgbox NPC_DraynorManor_Ava_Text_1
 	hidenamebox
 	closemessage
 	release
@@ -843,30 +863,45 @@ NPC_DraynorManor_Ava_Text_0:
 	.string "Ava$"
 
 NPC_DraynorManor_Ava_Text_1:
-	.string "I think the walls are watching me…$"
+	.string "Oil Can?\p"
+	.string "Last time I used it was to oil up my bed\n"
+	.string "to stop it from creeking.\p"
+	.string "Where did I leave it?\p"
+	.string "Uh…{PAUSE 32}… I believe I left it in the basement\n"
+	.string "over there.\p"
+	.string "So if you want it you will have to go get\n"
+	.string "it.$"
 
 NPC_DraynorManor_Ava_Text_2:
+	.string "Hey you found the Oil Can!\p"
+	.string "My bed is starting to creek again, can I\n"
+	.string "use it before you go haha.$"
+
+NPC_DraynorManor_Ava_Text_3:
+	.string "I think the walls are watching me…$"
+
+NPC_DraynorManor_Ava_Text_4:
 	.string "Who thought it was a good idea to put\n"
 	.string "piranhas in the fountain…\p"
 	.string "It is no where near big enough!$"
 
-NPC_DraynorManor_Ava_Text_3:
+NPC_DraynorManor_Ava_Text_5:
 	.string "If you see any animated chairs…\p"
 	.string "I assure you, it was not my fault.$"
 
-NPC_DraynorManor_Ava_Text_4:
+NPC_DraynorManor_Ava_Text_6:
 	.string "I'm overjoyed with my new mattress!\p"
 	.string "It almost feels like I'm being consumed\n"
 	.string "by a fluffy…{PAUSE 15}{PAUSE 15} undead…{PAUSE 15}{PAUSE 15} zombie…{PAUSE 15}\l"
 	.string "chicken…?$"
 
-NPC_DraynorManor_Ava_Text_5:
+NPC_DraynorManor_Ava_Text_7:
 	.string "If only there were more trainers\n"
 	.string "gullible enough to travel across the\l"
 	.string "land searching far and wide for my\l"
 	.string "questionable research.$"
 
-NPC_DraynorManor_Ava_Text_6:
+NPC_DraynorManor_Ava_Text_8:
 	.string "EEK!\n"
 	.string "A HUMAN…!\p"
 	.string "…Sorry…{PAUSE 15} I have spent way too much time\n"
