@@ -21,6 +21,8 @@ LIGHTHOUSE_3F_STATE::
 	setflag FLAG_TEMP_1F
 	setobjectmovementtype 7, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 7, 10, 10
+	removeobject 9
+	setflag FLAG_TEMP_F
 LIGHTHOUSE_3F_STATE_1:
 	return
 
@@ -34,6 +36,8 @@ LIGHTHOUSE_3F_STATE_2:
 	addobject 1
 	addobject 5
 	clearflag FLAG_TEMP_1F
+	removeobject 9
+	setflag FLAG_TEMP_F
 	goto LIGHTHOUSE_3F_STATE_1
 
 
@@ -77,8 +81,12 @@ BATTLE_LIGHTHOUSE_3F_TRAINER_1::
 LIGHTHOUSE_HAM_BABE::
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
 	msgbox LIGHTHOUSE_HAM_BABE_Text_1
+	applymovement 2, Movement_InteractFACELEFT
+	waitmovement 0
 	namebox LIGHTHOUSE_HAM_BABE_Text_2
 	msgbox LIGHTHOUSE_HAM_BABE_Text_3
+	applymovement 1, Movement_InteractFACERIGHT
+	waitmovement 0
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
 	msgbox LIGHTHOUSE_HAM_BABE_Text_4
 	namebox LIGHTHOUSE_HAM_BABE_Text_2
@@ -89,13 +97,29 @@ LIGHTHOUSE_HAM_BABE::
 	msgbox LIGHTHOUSE_HAM_BABE_Text_7
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
 	msgbox LIGHTHOUSE_HAM_BABE_Text_8
+	waitmovement 1
+	applymovement 2, MOVEMENT_DraynorManorCrypt_COUNT_3
+	playse SE_WALL_HIT
+	applymovement 1, MOVEMENT_DraynorManorCrypt_HAM_3
+	waitmovement 1
+	addobject 9
+	clearflag FLAG_TEMP_F
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
 	msgbox LIGHTHOUSE_HAM_BABE_Text_9
+	applymovement 2, MOVEMENT_WALKLEFT
+	waitmovement 0
+	removeobject 9
+	setflag FLAG_TEMP_F
+	delay 60
+	applymovement 2, Movement_InteractFACEPLAYER
+	waitmovement 0
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
 	msgbox LIGHTHOUSE_HAM_BABE_Text_10
+	trainerbattle_no_intro TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE, LIGHTHOUSE_HAM_BABE_Text_11
 	namebox LIGHTHOUSE_HAM_BABE_Text_0
-	msgbox LIGHTHOUSE_HAM_BABE_Text_11
+	msgbox LIGHTHOUSE_HAM_BABE_Text_12
 	closemessage
+	hidenamebox
 	fadescreen FADE_TO_BLACK
 	removeobject 4
 	removeobject 3
@@ -108,15 +132,19 @@ LIGHTHOUSE_HAM_BABE::
 	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_LEFT
 	setobjectxyperm 5, 8, 11
 	setobjectxy 5, 8, 11
+	applymovement 5, Movement_InteractFACELEFT
+	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox LIGHTHOUSE_HAM_BABE_Text_12
-	msgbox LIGHTHOUSE_HAM_BABE_Text_13
-	namebox LIGHTHOUSE_HAM_BABE_Text_12
+	namebox LIGHTHOUSE_HAM_BABE_Text_13
 	msgbox LIGHTHOUSE_HAM_BABE_Text_14
-	namebox LIGHTHOUSE_HAM_BABE_Text_2
+	namebox LIGHTHOUSE_HAM_BABE_Text_13
 	msgbox LIGHTHOUSE_HAM_BABE_Text_15
+	namebox LIGHTHOUSE_HAM_BABE_Text_16
+	msgbox LIGHTHOUSE_HAM_BABE_Text_17
+	closemessage
+	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3
 	applymovement 5, Movement_lighthouse_ham_0
 	waitmovement 0
@@ -128,8 +156,6 @@ LIGHTHOUSE_HAM_BABE::
 	setflag FLAG_TEMP_1F
 	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 105
 	call LIGHTHOUSE_3F_STATE
-	closemessage
-	hidenamebox
 	release
 	end
 
@@ -138,9 +164,11 @@ Movement_lighthouse_ham_0:
 	walk_left
 	walk_left
 	walk_left
+	walk_left
 	step_end
 
 Movement_lighthouse_ham_1:
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -164,6 +192,7 @@ Movement_lighthouse_ham_2:
 	walk_right
 	walk_right
 	walk_right
+	walk_right
 	walk_up
 	walk_up
 	walk_up
@@ -181,6 +210,10 @@ Movement_lighthouse_ham_3:
 	face_up
 	lock_facing_direction
 	walk_down
+	step_end
+
+Movement_punchGoblin:
+	walk_in_place_faster_down
 	step_end
 
 LIGHTHOUSE_3F_NPC_1_Text_0:
@@ -221,7 +254,7 @@ LIGHTHOUSE_HAM_BABE_Text_1:
 	.string "Give me the map you stupid Goblin!$"
 
 LIGHTHOUSE_HAM_BABE_Text_2:
-	.string "WORM GOBLIN$"
+	.string "Wormbrain$"
 
 LIGHTHOUSE_HAM_BABE_Text_3:
 	.string "Only if you pay me 10,000 GP.$"
@@ -253,23 +286,30 @@ LIGHTHOUSE_HAM_BABE_Text_10:
 	.string "You want to battle bring it!$"
 
 LIGHTHOUSE_HAM_BABE_Text_11:
+	.string "Who are you?\p"
+	.string "At least I have the map peice.$"
+
+LIGHTHOUSE_HAM_BABE_Text_12:
 	.string "This cannot be, take the map for now\n"
 	.string "but we will be back for it later.\p"
 	.string "I won't forget you!\p"
 	.string "Time to go everyone!$"
 
-LIGHTHOUSE_HAM_BABE_Text_12:
+LIGHTHOUSE_HAM_BABE_Text_13:
 	.string "Guard$"
 
-LIGHTHOUSE_HAM_BABE_Text_13:
+LIGHTHOUSE_HAM_BABE_Text_14:
 	.string "Thank you for assisting us in repelling\n"
 	.string "HAM.\p"
 	.string "They've been very organised as of late.\p"
 	.string "I'm not sure what they are after.\p"
 	.string "But here take this for helping us out.$"
 
-LIGHTHOUSE_HAM_BABE_Text_14:
+LIGHTHOUSE_HAM_BABE_Text_15:
 	.string "Come on Goblin, back to your cell.$"
 
-LIGHTHOUSE_HAM_BABE_Text_15:
+LIGHTHOUSE_HAM_BABE_Text_16:
+	.string "WORM GOBLIN$"
+
+LIGHTHOUSE_HAM_BABE_Text_17:
 	.string "Me think me nose is broken…$"

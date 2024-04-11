@@ -133,8 +133,10 @@ NPC_ROUTE30_PKER::
 	faceplayer
 	namebox NPC_ROUTE30_PKER_Text_0
 	msgbox NPC_ROUTE30_PKER_Text_1
-	goto_if_set FLAG_RECEIVED_TM37_DARKERMANZ, NPC_ROUTE30_PKER_2
+	goto_if_unset FLAG_RECEIVED_TM37_DARKERMANZ, NPC_ROUTE30_PKER_2
 NPC_ROUTE30_PKER_1:
+	closemessage
+	hidenamebox
 	release
 	end
 
@@ -145,8 +147,6 @@ NPC_ROUTE30_PKER_2:
 	giveitem ITEM_TM37_THOUSAND_ARROWS
 	namebox NPC_ROUTE30_PKER_Text_0
 	msgbox NPC_ROUTE30_PKER_Text_3
-	closemessage
-	hidenamebox
 	setflag FLAG_RECEIVED_TM37_DARKERMANZ
 	goto NPC_ROUTE30_PKER_1
 

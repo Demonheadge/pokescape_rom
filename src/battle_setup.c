@@ -813,7 +813,8 @@ u8 GetTrainerBattleTransition(void)
         return B_TRANSITION_AQUA;
 
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_GRUNT
-        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_BOSS)
+        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_BOSS
+        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_ADMIN)
         return B_TRANSITION_HAM;
 
     if (gTrainers[gTrainerBattleOpponent_A].doubleBattle == TRUE)

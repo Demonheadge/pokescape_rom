@@ -1845,3 +1845,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Daemonheim_Gym/scripts.inc"
 
 	.include "data/maps/Daemonheim_Bank/scripts.inc"
+
+	.include "data/maps/Zamorak_Church/scripts.inc"

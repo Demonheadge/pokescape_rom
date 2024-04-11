@@ -131,4 +131,5 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_HILL_GIANT] = _("HILL GIANT"),
     [TRAINER_CLASS_MOSS_GIANT] = _("MOSS GIANT"),
     [TRAINER_CLASS_FIRE_GIANT] = _("FIRE GIANT"),
+    [TRAINER_CLASS_HAM_ADMIN] = _("H.A.M ADMIN"),
 };

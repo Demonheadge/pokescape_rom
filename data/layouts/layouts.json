@@ -8026,7 +8026,7 @@
       "name": "Route48_Layout",
       "width": 16,
       "height": 20,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route48/border.bin",
       "blockdata_filepath": "data/layouts/Route48/map.bin"
@@ -8380,6 +8380,16 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Daemonheim_Bank/border.bin",
       "blockdata_filepath": "data/layouts/Daemonheim_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_ZAMORAK_CHURCH",
+      "name": "Zamorak_Church_Layout",
+      "width": 10,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Zamorak_Church/border.bin",
+      "blockdata_filepath": "data/layouts/Zamorak_Church/map.bin"
     }
   ]
 }

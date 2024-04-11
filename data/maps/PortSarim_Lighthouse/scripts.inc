@@ -266,5 +266,5 @@ LIGHTHOUSE_CAPN_HAND_QUEST_Text_3:
 	.string "runs off to freedom.$"
 
 LIGHTHOUSE_CAPN_HAND_QUEST_Text_4:
-	.string "Nothing, eh? Nothing be all I got,\n"
-	.string "anyway..$"
+	.string "Nothing, eh?\n"
+	.string "Nothing be all I got, anyway..$"

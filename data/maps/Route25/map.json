@@ -41,7 +41,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
       "x": 6,
       "y": 15,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_QUESTER",
+      "graphics_id": "OBJ_EVENT_GFX_RUNECRAFTER_YELLOW",
       "x": 15,
       "y": 9,
       "elevation": 3,

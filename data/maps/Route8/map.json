@@ -176,7 +176,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_ZAMORAK",
       "x": 67,
       "y": 21,
       "elevation": 3,
@@ -228,7 +228,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_MYSTIC_BLUE",
       "x": 62,
       "y": 22,
       "elevation": 3,
@@ -241,7 +241,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_MYSTIC_LIGHT",
       "x": 60,
       "y": 25,
       "elevation": 3,
@@ -254,7 +254,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_GUTHIX",
       "x": 65,
       "y": 24,
       "elevation": 3,

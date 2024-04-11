@@ -187,7 +187,7 @@ script LIGHTHOUSE_CAPN_HAND_QUEST {
             fadescreen(FADE_FROM_BLACK)
         }
         else {
-            msgbox(format("Nothing, eh? Nothing be all I got, anyway.."))
+            msgbox(format("Nothing, eh?\nNothing be all I got, anyway.."))
             hidenamebox
             closemessage
         }

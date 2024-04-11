@@ -461,6 +461,9 @@
 #define TRAINER_MELZARS_3F_TRAINER_2 378
 #define TRAINER_MELZARS_3F_TRAINER_3 379
 
+#define TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE 380
+
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_1",
       "x": 20,
       "y": 23,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_2",
       "x": 26,
       "y": 18,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_3",
       "x": 32,
       "y": 8,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_3",
       "x": 32,
       "y": 9,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_1",
       "x": 17,
       "y": 8,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARROWS_GUTHAN",
+      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_1",
       "x": 9,
       "y": 39,
       "elevation": 0,

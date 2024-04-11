@@ -4,6 +4,10 @@ mapscripts PortSarim_Lighthouse_3F_MapScripts {
     }
 } 
 
+const OBJ_EVENT_ID_BABE = 2
+const OBJ_EVENT_ID_WORMBRAIN = 1
+const OBJ_EVENT_ID_MAP = 9
+
 script LIGHTHOUSE_3F_STATE {
 
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) {
@@ -16,6 +20,8 @@ script LIGHTHOUSE_3F_STATE {
         addobject(1)
         addobject(5)
         clearflag(FLAG_TEMP_1F)
+        removeobject(OBJ_EVENT_ID_MAP)
+        setflag(FLAG_TEMP_F)
     }
     else {
         removeobject(4)
@@ -29,6 +35,8 @@ script LIGHTHOUSE_3F_STATE {
         setflag(FLAG_TEMP_1F)
         setobjectmovementtype(7, MOVEMENT_TYPE_WANDER_AROUND)
         setobjectxyperm(7, 10, 10)
+        removeobject(OBJ_EVENT_ID_MAP)
+        setflag(FLAG_TEMP_F)
     }
     return
 }
@@ -90,34 +98,64 @@ script BATTLE_LIGHTHOUSE_3F_TRAINER_1
 
 
 
+
 script LIGHTHOUSE_HAM_BABE
 {
     namebox ("Babe")
 	msgbox(format("Give me the map you stupid Goblin!"))
-    namebox ("WORM GOBLIN")
+    applymovement(OBJ_EVENT_ID_BABE, Movement_InteractFACELEFT)
+    waitmovement(0)
+    namebox ("Wormbrain")
 	msgbox(format("Only if you pay me 10,000 GP."))
+    applymovement(OBJ_EVENT_ID_WORMBRAIN, Movement_InteractFACERIGHT)
+    waitmovement(0)
     namebox ("Babe")
 	msgbox(format("What no one has that kind of money!"))
-    namebox ("WORM GOBLIN")
+    namebox ("Wormbrain")
 	msgbox(format("No map for pink lady then.\pOnly way you can get map is if you take it from me.\pBut I in jail cell, you cannot reach me."))
     namebox ("Babe")
 	msgbox(format("…\pYou're not in a jail cell anymore."))
-    namebox ("WORM GOBLIN")
+    namebox ("Wormbrain")
 	msgbox(format("…"))
     namebox ("Babe")
 	msgbox(format("Taste this telekentic fist!"))
-    //apllymovement, punches goblin back 2 spots.
-    //drops map as item
+
+//apllymovement, punches goblin back 2 spots.
+//drops map as item
+    waitmovement(OBJ_EVENT_ID_WORMBRAIN)
+    applymovement(OBJ_EVENT_ID_BABE, MOVEMENT_DraynorManorCrypt_COUNT_3)
+    playse(SE_WALL_HIT)
+    applymovement(OBJ_EVENT_ID_WORMBRAIN, MOVEMENT_DraynorManorCrypt_HAM_3)
+    waitmovement(OBJ_EVENT_ID_WORMBRAIN)
+
+
+
+
+    addobject(OBJ_EVENT_ID_MAP)
+    clearflag(FLAG_TEMP_F)
+
+    
     namebox ("Babe")
 	msgbox(format("I'll be taking that you stupid goblin."))
+    applymovement(OBJ_EVENT_ID_BABE, MOVEMENT_WALKLEFT)
+    waitmovement(0)
+    removeobject(OBJ_EVENT_ID_MAP)
+    setflag(FLAG_TEMP_F)
+    delay(60)
+    applymovement(OBJ_EVENT_ID_BABE, Movement_InteractFACEPLAYER)
+    waitmovement(0)
     //picks up map turns and faces player.
     namebox ("Babe")
 	msgbox(format("Wait who are you?\pYou want to battle bring it!"))
+
     //BATTLES
+    trainerbattle_no_intro(TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE, format("Who are you?\pAt least I have the map peice.") )
+
+
     namebox ("Babe")
 	msgbox(format("This cannot be, take the map for now but we will be back for it later.\pI won't forget you!\pTime to go everyone!"))
     closemessage
-    //hidenamebox
+    hidenamebox
     //fadescreen black
     fadescreen(FADE_TO_BLACK)
     
@@ -133,6 +171,8 @@ script LIGHTHOUSE_HAM_BABE
     setobjectmovementtype(5, MOVEMENT_TYPE_FACE_LEFT)
     setobjectxyperm(5, 8, 11)
     setobjectxy(5, 8, 11)
+    applymovement(5, Movement_InteractFACELEFT)
+    waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT)
     waitmovement(0)
     fadescreen(FADE_FROM_BLACK)
@@ -146,22 +186,23 @@ script LIGHTHOUSE_HAM_BABE
 	msgbox(format("Come on Goblin, back to your cell."))
     namebox ("WORM GOBLIN")
 	msgbox(format("Me think me nose is broken…"))
+    closemessage
+    hidenamebox
     //Guard and goblin leave.
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
     applymovement(5, Movement_lighthouse_ham_0)
     waitmovement(0)
     applymovement(5, Movement_lighthouse_ham_1)
-    applymovement(1, Movement_lighthouse_ham_2)
+    applymovement(OBJ_EVENT_ID_WORMBRAIN, Movement_lighthouse_ham_2)
     waitmovement(0)
-    removeobject(1)
+    removeobject(OBJ_EVENT_ID_WORMBRAIN)
     removeobject(5)
     setflag(FLAG_TEMP_1F)
 
     setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 105) //LIGHTHOUSE EVENT FINISHED
     call(LIGHTHOUSE_3F_STATE)
     
-    closemessage
-    hidenamebox
+    
 	release
 	end
 }
@@ -169,17 +210,17 @@ script LIGHTHOUSE_HAM_BABE
 
 movement Movement_lighthouse_ham_0
 {
-    walk_left * 3
+    walk_left * 4
 } 
 movement Movement_lighthouse_ham_1
 {
-    walk_right * 4
+    walk_right * 5
     walk_up * 5
     walk_right * 6
 } 
 movement Movement_lighthouse_ham_2
 {
-    walk_right * 5
+    walk_right * 6
     walk_up * 5
     walk_right * 6
 } 
@@ -189,3 +230,8 @@ movement Movement_lighthouse_ham_3
     lock_facing_direction
     walk_down
 } 
+
+
+movement Movement_punchGoblin {
+    walk_in_place_faster_down
+}

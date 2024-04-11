@@ -158,6 +158,11 @@ script WizardsTower_Wizard{
 
 
 script WizardsTower_EVENT_TRIGGER{
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if OPENWORLD
+    {
+		release
+		end
+	}
 	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
 		case 0: 
 		case 1: 

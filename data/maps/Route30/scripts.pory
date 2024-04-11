@@ -111,17 +111,17 @@ script NPC_ROUTE30_PKER
     faceplayer
     namebox ("Darkermanz")
     msgbox(format("There is nothing more satisfying than spec'ing someone out.\pI love using the move Dark Descent to take my competition out of the game."))
-    if (flag(FLAG_RECEIVED_TM37_DARKERMANZ) == TRUE) {
+    if (flag(FLAG_RECEIVED_TM37_DARKERMANZ) == FALSE) {
         msgbox(format("Here I'll share this with you so you can understand what I mean."))
         closemessage
         hidenamebox
         giveitem(ITEM_TM37_THOUSAND_ARROWS)
         namebox ("Darkermanz")
         msgbox(format("You should try Dark Descent out on some noobs in the Wilderness."))
-        closemessage
-        hidenamebox
         setflag(FLAG_RECEIVED_TM37_DARKERMANZ)
     }
+    closemessage
+    hidenamebox
     release
     end
 }

@@ -41,8 +41,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PKER",
-      "x": 11,
+      "graphics_id": "OBJ_EVENT_GFX_DRAGON_ARMOUR",
+      "x": 12,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_ZAMORAK",
       "x": 11,
       "y": 7,
       "elevation": 3,
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_MYSTIC_BLUE",
       "x": 11,
       "y": 17,
       "elevation": 3,
@@ -132,8 +132,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
-      "x": 12,
+      "graphics_id": "OBJ_EVENT_GFX_PKER_RUSHER",
+      "x": 11,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",

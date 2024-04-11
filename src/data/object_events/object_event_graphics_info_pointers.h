@@ -514,16 +514,38 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_POPBUBBLE;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_SNAILY;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_TIFA;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_WHISPER;
-
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hill_Giant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moss_Giant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fire_Giant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skotizo;
-
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Green;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Blue;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Red;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Black;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dragon_armour;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_1;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_2;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_3;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_4;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_5;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_6;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_7;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_8;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dungeoneering_9;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_hazelmere_1;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_hazelmere_2;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_mystic_blue;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_mystic_light;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_necromancer;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_runecrafter_green;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_runecrafter_yellow;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_wizard_zamorak;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_thok_angry;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_thok_happy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_kreearra;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_strykewyrm_wildy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_hanannie;
+
 
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
@@ -1056,6 +1078,29 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DRAGON_RED] =                       &gObjectEventGraphicsInfo_Dragon_Red,
     [OBJ_EVENT_GFX_DRAGON_BLUE] =                       &gObjectEventGraphicsInfo_Dragon_Blue,
     [OBJ_EVENT_GFX_DRAGON_BLACK] =                       &gObjectEventGraphicsInfo_Dragon_Black,
+    [OBJ_EVENT_GFX_DRAGON_ARMOUR] =                       &gObjectEventGraphicsInfo_dragon_armour,
+    [OBJ_EVENT_GFX_DUNGEONEERING_1] =                       &gObjectEventGraphicsInfo_dungeoneering_1,
+    [OBJ_EVENT_GFX_DUNGEONEERING_2] =                       &gObjectEventGraphicsInfo_dungeoneering_2,
+    [OBJ_EVENT_GFX_DUNGEONEERING_3] =                       &gObjectEventGraphicsInfo_dungeoneering_3,
+    [OBJ_EVENT_GFX_DUNGEONEERING_4] =                       &gObjectEventGraphicsInfo_dungeoneering_4,
+    [OBJ_EVENT_GFX_DUNGEONEERING_5] =                       &gObjectEventGraphicsInfo_dungeoneering_5,
+    [OBJ_EVENT_GFX_DUNGEONEERING_6] =                       &gObjectEventGraphicsInfo_dungeoneering_6,
+    [OBJ_EVENT_GFX_DUNGEONEERING_7] =                       &gObjectEventGraphicsInfo_dungeoneering_7,
+    [OBJ_EVENT_GFX_DUNGEONEERING_8] =                       &gObjectEventGraphicsInfo_dungeoneering_8,
+    [OBJ_EVENT_GFX_DUNGEONEERING_9] =                       &gObjectEventGraphicsInfo_dungeoneering_9,
+    [OBJ_EVENT_GFX_HAZELMERE_1] =                           &gObjectEventGraphicsInfo_hazelmere_1,
+    [OBJ_EVENT_GFX_HAZELMERE_2] =                           &gObjectEventGraphicsInfo_hazelmere_2,
+    [OBJ_EVENT_GFX_MYSTIC_BLUE] =                           &gObjectEventGraphicsInfo_mystic_blue,
+    [OBJ_EVENT_GFX_MYSTIC_LIGHT] =                          &gObjectEventGraphicsInfo_mystic_light,
+    [OBJ_EVENT_GFX_NECROMANCER] =                           &gObjectEventGraphicsInfo_necromancer,
+    [OBJ_EVENT_GFX_RUNECRAFTER_GREEN] =                     &gObjectEventGraphicsInfo_runecrafter_green,
+    [OBJ_EVENT_GFX_RUNECRAFTER_YELLOW] =                    &gObjectEventGraphicsInfo_runecrafter_yellow,
+    [OBJ_EVENT_GFX_WIZARD_ZAMORAK] =                        &gObjectEventGraphicsInfo_wizard_zamorak,
+    [OBJ_EVENT_GFX_THOK_ANGRY] =                            &gObjectEventGraphicsInfo_thok_angry,
+    [OBJ_EVENT_GFX_THOK_HAPPY] =                            &gObjectEventGraphicsInfo_thok_happy,
+    [OBJ_EVENT_GFX_KREEARRA] =                              &gObjectEventGraphicsInfo_kreearra,
+    [OBJ_EVENT_GFX_STRYKEWYRM_WILDY] =                      &gObjectEventGraphicsInfo_strykewyrm_wildy,
+    [OBJ_EVENT_GFX_HANANNIE] =                              &gObjectEventGraphicsInfo_hanannie,
 
 
 //ORES 

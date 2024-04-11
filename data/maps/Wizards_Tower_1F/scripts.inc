@@ -155,22 +155,28 @@ WizardsTower_Wizard_4:
 
 
 WizardsTower_EVENT_TRIGGER::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq WizardsTower_EVENT_TRIGGER_2
 	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
-	case 0, WizardsTower_EVENT_TRIGGER_2
-	case 1, WizardsTower_EVENT_TRIGGER_2
-	case 2, WizardsTower_EVENT_TRIGGER_2
-	case 3, WizardsTower_EVENT_TRIGGER_2
-	case 4, WizardsTower_EVENT_TRIGGER_2
-	case 5, WizardsTower_EVENT_TRIGGER_2
-	case 6, WizardsTower_EVENT_TRIGGER_2
-	case 7, WizardsTower_EVENT_TRIGGER_2
-	case 8, WizardsTower_EVENT_TRIGGER_2
-	case 9, WizardsTower_EVENT_TRIGGER_2
-	case 10, WizardsTower_EVENT_TRIGGER_3
-	case 11, WizardsTower_EVENT_TRIGGER_3
+	case 0, WizardsTower_EVENT_TRIGGER_5
+	case 1, WizardsTower_EVENT_TRIGGER_5
+	case 2, WizardsTower_EVENT_TRIGGER_5
+	case 3, WizardsTower_EVENT_TRIGGER_5
+	case 4, WizardsTower_EVENT_TRIGGER_5
+	case 5, WizardsTower_EVENT_TRIGGER_5
+	case 6, WizardsTower_EVENT_TRIGGER_5
+	case 7, WizardsTower_EVENT_TRIGGER_5
+	case 8, WizardsTower_EVENT_TRIGGER_5
+	case 9, WizardsTower_EVENT_TRIGGER_5
+	case 10, WizardsTower_EVENT_TRIGGER_6
+	case 11, WizardsTower_EVENT_TRIGGER_6
 	return
 
 WizardsTower_EVENT_TRIGGER_2:
+	release
+	end
+
+WizardsTower_EVENT_TRIGGER_5:
 	lock
 	applymovement 4, Movement_Wizard_WizardsTower4
 	waitmovement 0
@@ -183,7 +189,7 @@ WizardsTower_EVENT_TRIGGER_2:
 	release
 	end
 
-WizardsTower_EVENT_TRIGGER_3:
+WizardsTower_EVENT_TRIGGER_6:
 	release
 	end
 
