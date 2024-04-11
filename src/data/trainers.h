@@ -4768,6 +4768,98 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_3F_TRAINER_1},
     },
 
+//CRANDOR
+    [TRAINER_CRANDOR_SKELETON_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Parietta"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_SKELETON_1),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_SKELETON_1},
+    },
+
+    [TRAINER_CRANDOR_SKELETON_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Ulna"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_SKELETON_2),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_SKELETON_2},
+    },
+
+    [TRAINER_CRANDOR_SKELETON_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Sacroom"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_SKELETON_3),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_SKELETON_3},
+    },
+
+    [TRAINER_CRANDOR_MOSS_GIANT_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Arenga"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_MOSS_GIANT_1),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_MOSS_GIANT_1},
+    },
+
+    [TRAINER_CRANDOR_MOSS_GIANT_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Cercis"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_MOSS_GIANT_2),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_MOSS_GIANT_2},
+    },
+
+    [TRAINER_CRANDOR_MOSS_GIANT_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MOSS_GIANT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_moss_giant,
+        .trainerName = _("Nyssa"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_CRANDOR_MOSS_GIANT_3),
+        .party = {.NoItemDefaultMoves = sParty_CRANDOR_MOSS_GIANT_3},
+    },
+
+
+
+
+
+
+
+
 //Route 50
     [TRAINER_ROUTE_50_TRAINER_1] =
     {

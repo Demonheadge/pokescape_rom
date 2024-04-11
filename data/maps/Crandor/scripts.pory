@@ -1,0 +1,76 @@
+mapscripts Crandor_MapScripts {
+}
+
+//NPCS
+
+script CRANDOR_NED
+{
+    faceplayer
+    namebox ("Ned")
+    msgbox(format("It looks like we're stranded!/pNo wonder no other captains wanted to sail anywhere near Crandor.."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//ITEMS
+
+script ITEM_CRANDOR_SPIRIT_SHARD
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_CRANDOR_CHOCOLATE_CAKE
+{
+    finditem(ITEM_CHOCOLATE_CAKE)
+    end
+}
+
+script ITEM_CRANDOR_RUNE_POUCH
+{
+    finditem(ITEM_RUNE_POUCH)
+    end
+}
+
+
+
+
+//BATTLE TRAINERS
+
+script BATTLE_CRANDOR_SKELETON_1{
+    trainerbattle_single(TRAINER_CRANDOR_SKELETON_1, format("Stay.. away.."),format("Turn.. back.."))
+    msgbox(format("Turn.. back.."))
+    release
+}
+
+script BATTLE_CRANDOR_SKELETON_2{
+    trainerbattle_single(TRAINER_CRANDOR_SKELETON_2, format("The skeleton rattles angrily as you try to walk past."),format("The skeleton seems less aggressive now."))
+    msgbox(format("The skeleton is looking at the nearby rocks.."))
+    release
+}
+
+script BATTLE_CRANDOR_SKELETON_3{
+    trainerbattle_single(TRAINER_CRANDOR_SKELETON_3, format("El.."),format("..varg"))
+    msgbox(format("Be.. ware.."))
+    release
+}
+
+script BATTLE_CRANDOR_MOSS_GIANT_1{
+    trainerbattle_single(TRAINER_CRANDOR_MOSS_GIANT_1, format("The moss giant swings a big leafy arm at you."),format("The moss giant continues on it's way as if nothing happened."))
+    msgbox(format("The moss giant no longer seems interested in you."))
+    release
+}
+
+script BATTLE_CRANDOR_MOSS_GIANT_2{
+    trainerbattle_single(TRAINER_CRANDOR_MOSS_GIANT_2, format("Dragon in volcano. Human should leave."),format("Maybe human can kill dragon."))
+    msgbox(format("Please kill dragon. Too many of us burn in its fire."))
+    release
+}
+
+script BATTLE_CRANDOR_MOSS_GIANT_3{
+    trainerbattle_single(TRAINER_CRANDOR_MOSS_GIANT_3, format("Not more humans!"),format("This human strong.."))
+    msgbox(format("Get pink humans off our island.."))
+    release
+}

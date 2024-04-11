@@ -6078,7 +6078,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_1[] =
     .iv = 0,
     .lvl = 14,
     .species = SPECIES_HAND_ZOMBIE_FORM,
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_2[] = {
@@ -6112,7 +6112,95 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_3F_TRAINER_3[] =
     }
 };
 
+//CRANDOR
 
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_SKELETON_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_MONKEY_ZOMBIE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_SKELETON_2[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_MONKEY_GHOST_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_SKELETON_3[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_MONKEY_ZOMBIE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_MONKEY_GHOST_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_MOSS_GIANT_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_CRAB_MOSS_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_CRAB_MOSS_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_MOSS_GIANT_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_GIANT_CRAB_MOSS_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_MOSS_GIANT_3[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_MONKEY_KARAMJA_ADULT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_CRAB_MOSS_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_GIANT_CRAB_MOSS_FORM,
+    }
+};
 
 
 

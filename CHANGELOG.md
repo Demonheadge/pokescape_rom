@@ -8,9 +8,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Added
 
+- Updated various sprites throughout the game.
+
+- Followers! Now you can explore Gielinor with your favourite monsters alongside you in the overworld.
+
+- MUAHAHAHAHAAA! The fowl beast, Evil Chicken, is loose! Keep an eye out for it and see whether you can defeat it, or catch it for yourself.
+
+- Added Rune Mysteries quest
+
+- Updated Daemonheim, including routes and sprites.
+
+- Updated Lumbridge scripts.
+
+- Added Uri to Varrock. He likes hidden treasure, so I wonder what he might have for anybody who can find him..
+
+- Added Thurgo's Hut.
+
 - (WIP) Added Jad encounter.
 
-- Updated Al Kharid scripts.
+- Updated Al Kharid scripts, including adding interior to various houses that were previously inaccessible.
 
 - Updated Taverley and Route 35 scripts.
 
@@ -29,6 +45,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Updated Edgeville scripts.
 
 - Updated Yanille scripts.
+
+- Diango now has the ability to give players gifts. What they are though is a complete mystery..
 
 - Added trainer battles to NPCs in Varrock Sewers.
 

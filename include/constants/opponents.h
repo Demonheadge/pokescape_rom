@@ -463,6 +463,14 @@
 
 #define TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE 380
 
+//CRANDOR
+#define TRAINER_CRANDOR_SKELETON_1 381
+#define TRAINER_CRANDOR_SKELETON_2 382
+#define TRAINER_CRANDOR_SKELETON_3 383
+#define TRAINER_CRANDOR_MOSS_GIANT_1 384
+#define TRAINER_CRANDOR_MOSS_GIANT_2 385
+#define TRAINER_CRANDOR_MOSS_GIANT_3 386
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

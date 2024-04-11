@@ -51,9 +51,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_CRANDOR_MOSS_GIANT_3",
       "flag": "0"
     },
     {
@@ -64,9 +64,9 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_CRANDOR_MOSS_GIANT_2",
       "flag": "0"
     },
     {
@@ -77,9 +77,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_CRANDOR_SKELETON_2",
       "flag": "0"
     },
     {
@@ -90,9 +90,9 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_CRANDOR_SKELETON_3",
       "flag": "0"
     },
     {
@@ -103,9 +103,9 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_CRANDOR_SKELETON_1",
       "flag": "0"
     },
     {
@@ -142,9 +142,9 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "BATTLE_CRANDOR_MOSS_GIANT_1",
       "flag": "0"
     },
     {
@@ -170,7 +170,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "CRANDOR_NED",
       "flag": "0"
     },
     {
@@ -196,7 +196,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -209,7 +209,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -222,7 +222,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -235,7 +235,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_4"
     },
     {
@@ -248,7 +248,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_5"
     },
     {
@@ -261,7 +261,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_6"
     },
     {
@@ -274,7 +274,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_7"
     },
     {
@@ -287,7 +287,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_8"
     },
     {
@@ -300,7 +300,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_9"
     },
     {
@@ -313,7 +313,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_A"
     },
     {
@@ -326,7 +326,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_B"
     },
     {
@@ -339,7 +339,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_CRANDOR_SPIRIT_SHARD",
       "flag": "0"
     },
     {
@@ -352,7 +352,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_CRANDOR_RUNE_POUCH",
       "flag": "0"
     },
     {
@@ -378,7 +378,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_CRANDOR_CHOCOLATE_CAKE",
       "flag": "0"
     },
     {
@@ -391,7 +391,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "0"
     },
     {
@@ -404,7 +404,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "0"
     },
     {
@@ -417,7 +417,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "0"
     },
     {
@@ -430,7 +430,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_New_RockSmash",
       "flag": "0"
     },
     {
@@ -465,7 +465,7 @@
       "x": 39,
       "y": 40,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_PURPLE_SWEETS",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -473,7 +473,7 @@
       "x": 35,
       "y": 41,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_FIRE_RUNE",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -481,7 +481,7 @@
       "x": 14,
       "y": 33,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_REPEL_TEA_1",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -489,7 +489,7 @@
       "x": 15,
       "y": 28,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_FLAX",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -497,7 +497,7 @@
       "x": 15,
       "y": 26,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_CABBAGE",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -505,7 +505,7 @@
       "x": 20,
       "y": 21,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_PINEAPPLE_PUNCH",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -513,7 +513,7 @@
       "x": 45,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_RING_OF_LIFE",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -521,7 +521,7 @@
       "x": 37,
       "y": 3,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_POTION_HP",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -529,7 +529,7 @@
       "x": 7,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_GREEN_SCALE",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -537,7 +537,7 @@
       "x": 31,
       "y": 45,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_STAT_BEER",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -545,7 +545,7 @@
       "x": 40,
       "y": 20,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_LAMP_SPEED",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -561,7 +561,7 @@
       "x": 18,
       "y": 28,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_LAMP_DEF",
       "flag": "FLAG_TEMP_1"
     }
   ]
