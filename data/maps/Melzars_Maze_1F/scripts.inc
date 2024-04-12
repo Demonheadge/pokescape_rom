@@ -57,15 +57,16 @@ MELZARS_1F_STATE::
 	setvar VAR_TEMP_F, 5
 	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
 	goto_if_eq MELZARS_1F_STATE_2
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
-	goto_if_eq MELZARS_1F_STATE_2
 	removeobject 10
 	setflag FLAG_TEMP_1F
 	removeobject 11
 	setflag FLAG_TEMP_1E
+MELZARS_1F_STATE_1:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 110
+	goto_if_lt MELZARS_1F_STATE_6
 	removeobject 9
 	setflag FLAG_TEMP_1D
-MELZARS_1F_STATE_1:
+MELZARS_1F_STATE_5:
 	return
 
 MELZARS_1F_STATE_2:
@@ -73,9 +74,12 @@ MELZARS_1F_STATE_2:
 	clearflag FLAG_TEMP_1F
 	addobject 11
 	clearflag FLAG_TEMP_1E
+	goto MELZARS_1F_STATE_1
+
+MELZARS_1F_STATE_6:
 	addobject 9
 	clearflag FLAG_TEMP_1D
-	goto MELZARS_1F_STATE_1
+	goto MELZARS_1F_STATE_5
 
 
 movement_MELZAR_RAT_1:
@@ -237,6 +241,51 @@ MELZARS_LOCKED_DOOR_1F_4_2:
 	goto MELZARS_LOCKED_DOOR_1F_4_1
 
 
+MELZARS_LOCKED_DOOR_B1F_1::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_B1F_1_2
+	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_B1F_1_1:
+	end
+
+MELZARS_LOCKED_DOOR_B1F_1_2:
+	setmetatile 2, 11, 849, 0
+	setmetatile 2, 13, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_B1F_1_1
+
+
+MELZARS_LOCKED_DOOR_B1F_2::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_B1F_2_2
+	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_B1F_2_1:
+	end
+
+MELZARS_LOCKED_DOOR_B1F_2_2:
+	setmetatile 5, 11, 849, 0
+	setmetatile 5, 13, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_B1F_2_1
+
+
+MELZARS_LOCKED_DOOR_B1F_3::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_B1F_3_2
+	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	closemessage
+MELZARS_LOCKED_DOOR_B1F_3_1:
+	end
+
+MELZARS_LOCKED_DOOR_B1F_3_2:
+	setmetatile 10, 5, 849, 0
+	setmetatile 10, 7, 121, 0
+	special DrawWholeMapView
+	goto MELZARS_LOCKED_DOOR_B1F_3_1
+
+
 BATTLE_MELZARS_1F_TRAINER_1::
 	trainerbattle_single TRAINER_MELZARS_1F_TRAINER_1, BATTLE_MELZARS_1F_TRAINER_1_Text_0, BATTLE_MELZARS_1F_TRAINER_1_Text_1
 	namebox BATTLE_MELZARS_1F_TRAINER_1_Text_2
@@ -270,13 +319,23 @@ ITEM_MELZARS_1F_ROPE::
 
 HAM_ROUTE9_MELZARS_1::
 	lock
+	goto_if_set FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME, HAM_ROUTE9_MELZARS_1_2
 	faceplayer
 	namebox BATTLE_MELZARS_1F_TRAINER_1_Text_2
-	msgbox HAM_ROUTE9_MELZARS_1_Text_0
+	msgbox HAM_ROUTE9_MELZARS_1_Text_3
+HAM_ROUTE9_MELZARS_1_1:
 	hidenamebox
 	closemessage
 	release
 	end
+
+HAM_ROUTE9_MELZARS_1_2:
+	applymovement 13, MOVEMENT_FACE_LEFT
+	namebox BATTLE_MELZARS_1F_TRAINER_1_Text_2
+	msgbox HAM_ROUTE9_MELZARS_1_Text_0
+	namebox HAM_ROUTE9_MELZARS_1_Text_1
+	msgbox HAM_ROUTE9_MELZARS_1_Text_2
+	goto HAM_ROUTE9_MELZARS_1_1
 
 
 HAM_ROUTE9_MELZARS_2::
@@ -364,6 +423,20 @@ BATTLE_MELZARS_1F_TRAINER_3_Text_2:
 	.string "Rattle rattle.$"
 
 HAM_ROUTE9_MELZARS_1_Text_0:
+	.string "Where have you been?\p"
+	.string "Also where is everyone else?$"
+
+HAM_ROUTE9_MELZARS_1_Text_1:
+	.string "H.A.M FAN$"
+
+HAM_ROUTE9_MELZARS_1_Text_2:
+	.string "Sorry I saw all these famous people and\n"
+	.string "were wanting them to sign my robe.\p"
+	.string "Also I think they said the meetup point\n"
+	.string "was down this path at that spooky old\l"
+	.string "building.$"
+
+HAM_ROUTE9_MELZARS_1_Text_3:
 	.string "This is the meeting point right?\p"
 	.string "Where is everyone?$"
 

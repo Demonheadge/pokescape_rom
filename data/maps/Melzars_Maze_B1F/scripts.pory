@@ -29,13 +29,17 @@ script Melzar_Maze_B1F_HAM_Patty {
 	end
 }
 
-script Melzar_Maze_B1F_Melzar {
-	msgbox(format("Here take this key to the basement door. It will allow you to leave."))
-	closemessage
-    setvar(VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3) //B1F KEY OBTAINED
-    playfanfare (MUS_OBTAIN_ITEM)
-    msgbox(format("{PLAYER} obtained the GREEN KEY."))
-    waitfanfare
+script Melzar_Maze_B1F_GREEN_KEY {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 2) {
+		msgbox(format("The skeleton stares at you.\pIt appears to be giving you something."))
+		closemessage
+		setvar(VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3) //B1F KEY OBTAINED
+		playfanfare (MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} obtained the GREEN KEY."))
+		waitfanfare
+		closemessage
+	}
+	msgbox(format("The skeleton smiles at you.\pOr at least you think that's a smile."))
 	closemessage
 	end
 }

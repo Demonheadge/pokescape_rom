@@ -56,19 +56,24 @@ script MELZARS_1F_RAT {
 
 script MELZARS_1F_STATE {
 	setvar(VAR_TEMP_F, 5)
-	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
-		addobject(10)
-		clearflag(FLAG_TEMP_1F)
-		addobject(11)
-		clearflag(FLAG_TEMP_1E)
-		addobject(9)
-		clearflag(FLAG_TEMP_1D)
-	} 
+	
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105)) {
+			addobject(10)
+			clearflag(FLAG_TEMP_1F)
+			addobject(11)
+			clearflag(FLAG_TEMP_1E)
+	}
 	else {
 		removeobject(10)
 		setflag(FLAG_TEMP_1F)
 		removeobject(11)
 		setflag(FLAG_TEMP_1E)
+	}
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 110)) { //LESS THAN
+		addobject(9)
+		clearflag(FLAG_TEMP_1D)
+	} 
+	else {
 		removeobject(9)
 		setflag(FLAG_TEMP_1D)
 	}
@@ -199,7 +204,44 @@ script MELZARS_LOCKED_DOOR_1F_4 {
 	end
 }
 
+script MELZARS_LOCKED_DOOR_B1F_1 {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
+		setmetatile (2, 11, 849, 0)
+		setmetatile (2, 13, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a green key to unlock this door."))
+		closemessage
+	}
+	end
+}
 
+script MELZARS_LOCKED_DOOR_B1F_2 {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
+		setmetatile (5, 11, 849, 0)
+		setmetatile (5, 13, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a green key to unlock this door."))
+		closemessage
+	}
+	end
+}
+
+script MELZARS_LOCKED_DOOR_B1F_3 {
+	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
+		setmetatile (10, 5, 849, 0)
+		setmetatile (10, 7, 121, 0)
+		special(DrawWholeMapView) 
+	} 
+	else {
+		msgbox(format("You need a green key to unlock this door."))
+		closemessage
+	}
+	end
+}
 
 
 
@@ -269,9 +311,18 @@ script ITEM_MELZARS_1F_ROPE
 
 script HAM_ROUTE9_MELZARS_1{
     lock
-	faceplayer
-	namebox("H.A.M GRUNT")
-    msgbox(format("This is the meeting point right?\pWhere is everyone?"))
+	if (flag(FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME) == TRUE) {
+		applymovement(13, MOVEMENT_FACE_LEFT)
+		namebox("H.A.M GRUNT")
+		msgbox(format("Where have you been?\pAlso where is everyone else?"))
+		namebox("H.A.M FAN")
+		msgbox(format("Sorry I saw all these famous people and were wanting them to sign my robe.\pAlso I think they said the meetup point was down this path at that spooky old building."))
+	}
+	else {
+		faceplayer
+		namebox("H.A.M GRUNT")
+		msgbox(format("This is the meeting point right?\pWhere is everyone?"))
+	}
     hidenamebox
 	closemessage
 	release

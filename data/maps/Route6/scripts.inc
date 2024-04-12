@@ -26,10 +26,8 @@ OPENWORLD_STATE_ROUTE6::
 
 
 FALADORSOUTH_STATE::
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
-	goto_if_eq FALADORSOUTH_STATE_2
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
-	goto_if_eq FALADORSOUTH_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 110
+	goto_if_lt FALADORSOUTH_STATE_2
 	removeobject 5
 	removeobject 7
 	removeobject 4
@@ -46,7 +44,19 @@ FALADORSOUTH_STATE_2:
 	addobject 7
 	addobject 4
 	addobject 6
+	addobject 8
 	goto FALADORSOUTH_STATE_1
+
+
+ROUTE6_NPC_GUARD_HAM::
+	lock
+	faceplayer
+	namebox ROUTE6_NPC_GUARD_HAM_Text_0
+	msgbox ROUTE6_NPC_GUARD_HAM_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
 
 
 ROUTE6_BLOCK_FaladorGuard::
@@ -66,15 +76,15 @@ ROUTE6_BLOCK_FaladorGuard::
 	hidenamebox
 	applymovement 4, MOVEMENT_ROUTE6_GUARD
 	waitmovement 0
-	namebox ROUTE6_BLOCK_FaladorGuard_Text_4
-	msgbox ROUTE6_BLOCK_FaladorGuard_Text_5
+	namebox ROUTE6_NPC_GUARD_HAM_Text_0
+	msgbox ROUTE6_BLOCK_FaladorGuard_Text_4
 	closemessage
 	hidenamebox
 	applymovement 6, MOVEMENT_ROUTE6_UNICORN
 	waitmovement 0
 	playmoncry SPECIES_LOTAD, 0
-	namebox ROUTE6_BLOCK_FaladorGuard_Text_6
-	msgbox ROUTE6_BLOCK_FaladorGuard_Text_7
+	namebox ROUTE6_BLOCK_FaladorGuard_Text_5
+	msgbox ROUTE6_BLOCK_FaladorGuard_Text_6
 	waitmoncry
 	closemessage
 	hidenamebox
@@ -124,12 +134,23 @@ BATTLE_ROUTE6_MUGGER::
 
 BATTLE_ROUTE6_GUARD_1::
 	trainerbattle_single TRAINER_ROUTE6_GUARD_1, BATTLE_ROUTE6_GUARD_1_Text_0, BATTLE_ROUTE6_GUARD_1_Text_1
-	namebox ROUTE6_BLOCK_FaladorGuard_Text_4
+	namebox ROUTE6_NPC_GUARD_HAM_Text_0
 	msgbox BATTLE_ROUTE6_GUARD_1_Text_2
 	hidenamebox
 	release
 	end
 
+
+ROUTE6_NPC_GUARD_HAM_Text_0:
+	.string "Guard$"
+
+ROUTE6_NPC_GUARD_HAM_Text_1:
+	.string "We've recieved reports that there is\n"
+	.string "current H.A.M activity in Rimmington.\p"
+	.string "We wish to send some White Knights to\n"
+	.string "go investigate but they are currently\l"
+	.string "busy with some distrubances within the\l"
+	.string "Dwarven Mines.$"
 
 ROUTE6_BLOCK_FaladorGuard_Text_0:
 	.string "Mugger$"
@@ -145,16 +166,13 @@ ROUTE6_BLOCK_FaladorGuard_Text_3:
 	.string "Squeeek!$"
 
 ROUTE6_BLOCK_FaladorGuard_Text_4:
-	.string "Guard$"
-
-ROUTE6_BLOCK_FaladorGuard_Text_5:
 	.string "You will not enter Falador for as long\n"
 	.string "as I am here you disgusting mugger!$"
 
-ROUTE6_BLOCK_FaladorGuard_Text_6:
+ROUTE6_BLOCK_FaladorGuard_Text_5:
 	.string "Unicorn$"
 
-ROUTE6_BLOCK_FaladorGuard_Text_7:
+ROUTE6_BLOCK_FaladorGuard_Text_6:
 	.string "Neeeigh!$"
 
 BATTLE_ROUTE6_FIREMAKER_Text_0:

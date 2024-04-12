@@ -206,7 +206,7 @@ script VARROCK_GYM_RELDO
         {
             msgbox(format("You found all of the books that were overdu-!\pAhem, Congratulations on completing your Gym Challenge!\pHere show this to the Advisor as proof of your accomplishments."))
             hidenamebox
-            msgbox(format("Reldo scribbles on a small peice of paper before handing it to you."))
+            msgbox(format("Reldo scribbles on a small piece of paper before handing it to you."))
             namebox("Reldo")
             msgbox(format("Good luck challenger!"))
             setvar(VAR_POKESCAPE_VARROCK_GYM_QUEST, 20)

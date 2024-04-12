@@ -11422,6 +11422,14 @@ extern const u32 gItemIcon_SLAYER_GEM[];
 extern const u32 gItemIconPalette_SLAYER_GEM[];
 extern const u32 gItemIcon_cheese[];
 extern const u32 gItemIconPalette_cheese[];
+extern const u32 gItemIcon_CRANDOR_MAP_FULL[];
+extern const u32 gItemIconPalette_CRANDOR_MAP_FULL[];
+extern const u32 gItemIcon_CRANDOR_MAP_PIECE1[];
+extern const u32 gItemIconPalette_CRANDOR_MAP_PIECE1[];
+extern const u32 gItemIcon_CRANDOR_MAP_PIECE2[];
+extern const u32 gItemIconPalette_CRANDOR_MAP_PIECE2[];
+extern const u32 gItemIcon_CRANDOR_MAP_PIECE3[];
+extern const u32 gItemIconPalette_CRANDOR_MAP_PIECE3[];
 //------
 
 // pokescape crops

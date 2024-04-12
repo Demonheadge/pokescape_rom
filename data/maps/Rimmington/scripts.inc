@@ -8,20 +8,30 @@ Rimmington_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 
 Rimmington_STATE::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq Rimmington_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 110
+	goto_if_ge Rimmington_STATE_2
+Rimmington_STATE_1:
 	switch VAR_POKESCAPE_RIMMINGTON_STATE
-	case 0, Rimmington_STATE_2
-	case 1, Rimmington_STATE_3
-	case 2, Rimmington_STATE_4
-	case 3, Rimmington_STATE_4
-	case 4, Rimmington_STATE_4
-	case 5, Rimmington_STATE_4
-	case 6, Rimmington_STATE_4
-	case 7, Rimmington_STATE_4
-	case 8, Rimmington_STATE_4
-	case 9, Rimmington_STATE_4
+	case 0, Rimmington_STATE_7
+	case 1, Rimmington_STATE_8
+	case 2, Rimmington_STATE_9
+	case 3, Rimmington_STATE_9
+	case 4, Rimmington_STATE_9
+	case 5, Rimmington_STATE_9
+	case 6, Rimmington_STATE_9
+	case 7, Rimmington_STATE_9
+	case 8, Rimmington_STATE_9
+	case 9, Rimmington_STATE_9
 	return
 
 Rimmington_STATE_2:
+	setflag FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME
+	removeobject 32
+	goto Rimmington_STATE_1
+
+Rimmington_STATE_7:
 	setobjectxyperm 1, 22, 5
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_UP
 	setobjectxyperm 2, 22, 6
@@ -46,6 +56,7 @@ Rimmington_STATE_2:
 	setobjectmovementtype 23, MOVEMENT_TYPE_JOG_IN_PLACE_LEFT
 	setobjectxyperm 7, 27, 8
 	setobjectmovementtype 7, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectxyperm 6, 21, 20
 	removeobject 10
 	setobjectxyperm 21, 37, 17
 	setobjectmovementtype 21, MOVEMENT_TYPE_LOOK_AROUND
@@ -53,7 +64,7 @@ Rimmington_STATE_2:
 	release
 	end
 
-Rimmington_STATE_3:
+Rimmington_STATE_8:
 	removeobject 1
 	removeobject 2
 	removeobject 5
@@ -71,7 +82,7 @@ Rimmington_STATE_3:
 	release
 	end
 
-Rimmington_STATE_4:
+Rimmington_STATE_9:
 	release
 	end
 
@@ -287,6 +298,37 @@ NPC_RIMMINGTON_PETER::
 	release
 	end
 
+
+NPC_RIMMINGTON_HAM::
+	namebox NPC_RIMMINGTON_HAM_Text_0
+	msgbox NPC_RIMMINGTON_HAM_Text_1
+	faceplayer
+	msgbox NPC_RIMMINGTON_HAM_Text_2
+	hidenamebox
+	closemessage
+	applymovement 32, movement_ham_runtomelzars
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3
+	waitmovement 32
+	setflag FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME
+	removeobject 32
+	release
+	end
+
+
+movement_ham_runtomelzars:
+	walk_faster_down
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	step_end
 
 NPC_RIMMINGTON_GnomeBoiKevin::
 	lock
@@ -1286,6 +1328,20 @@ NPC_RIMMINGTON_PETER_Text_1:
 	.string "There are a lot of slushing noises\n"
 	.string "coming from the bottom of that well.\p"
 	.string "Someone should take a look.$"
+
+NPC_RIMMINGTON_HAM_Text_0:
+	.string "H.A.M Fan$"
+
+NPC_RIMMINGTON_HAM_Text_1:
+	.string "Hey can you sign my robes??\p"
+	.string "I'm a huge fan!$"
+
+NPC_RIMMINGTON_HAM_Text_2:
+	.string "Huh who are you?\p"
+	.string "OMG!\n"
+	.string "Is that the time?!\p"
+	.string "I was meant to meet up with the group\n"
+	.string "at that spooky old building ages ago!$"
 
 NPC_RIMMINGTON_GnomeBoiKevin_Text_0:
 	.string "Kevin$"

@@ -33,15 +33,23 @@ Melzar_Maze_B1F_HAM_Patty::
 	end
 
 
-Melzar_Maze_B1F_Melzar::
-	msgbox Melzar_Maze_B1F_Melzar_Text_0
+Melzar_Maze_B1F_GREEN_KEY::
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 2
+	goto_if_eq Melzar_Maze_B1F_GREEN_KEY_2
+Melzar_Maze_B1F_GREEN_KEY_1:
+	msgbox Melzar_Maze_B1F_GREEN_KEY_Text_2
+	closemessage
+	end
+
+Melzar_Maze_B1F_GREEN_KEY_2:
+	msgbox Melzar_Maze_B1F_GREEN_KEY_Text_0
 	closemessage
 	setvar VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox Melzar_Maze_B1F_Melzar_Text_1
+	msgbox Melzar_Maze_B1F_GREEN_KEY_Text_1
 	waitfanfare
 	closemessage
-	end
+	goto Melzar_Maze_B1F_GREEN_KEY_1
 
 
 Melzar_Maze_B1F_HAM_Patty_Text_0:
@@ -50,9 +58,13 @@ Melzar_Maze_B1F_HAM_Patty_Text_0:
 	.string "completed.\p"
 	.string "Now go to Falador.$"
 
-Melzar_Maze_B1F_Melzar_Text_0:
-	.string "Here take this key to the basement\n"
-	.string "door. It will allow you to leave.$"
+Melzar_Maze_B1F_GREEN_KEY_Text_0:
+	.string "The skeleton stares at you.\p"
+	.string "It appears to be giving you something.$"
 
-Melzar_Maze_B1F_Melzar_Text_1:
+Melzar_Maze_B1F_GREEN_KEY_Text_1:
 	.string "{PLAYER} obtained the GREEN KEY.$"
+
+Melzar_Maze_B1F_GREEN_KEY_Text_2:
+	.string "The skeleton smiles at you.\p"
+	.string "Or at least you think that's a smile.$"

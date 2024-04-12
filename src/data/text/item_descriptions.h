@@ -1743,7 +1743,15 @@ static const u8 sMagicalCageDesc[] = _(
     "dead things in.\n"
     "(Ernest Quest)");
 
+static const u8 sCrandorMapDesc[] = _(
+    "A map to the isle\n"
+    "of Crandor.\n"
+    "");
 
+static const u8 sCrandorPieceDesc[] = _(
+    "A piece of a map\n"
+    "leading to an\n"
+    "unknown location.");
 
 
 //POKESCAPE HP HEALING

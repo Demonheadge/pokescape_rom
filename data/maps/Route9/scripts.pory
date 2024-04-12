@@ -21,11 +21,21 @@ script ROUTE9_STATE {
         addobject(12)
         addobject(13)
         clearflag(FLAG_TEMP_1F)
+        if (flag(FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME) == TRUE) {
+            addobject(27)
+            clearflag(FLAG_TEMP_1E)
+        }
+        else {
+            removeobject(27)
+            setflag(FLAG_TEMP_1E)
+        }
     }
     else {
         removeobject(12)
         removeobject(13)
         setflag(FLAG_TEMP_1F)
+        removeobject(27)
+        setflag(FLAG_TEMP_1E)
     }
     return
 }

@@ -8014,7 +8014,7 @@
     {
       "id": "LAYOUT_MELZARS_MAZE_B1F",
       "name": "Melzars_Maze_B1F_Layout",
-      "width": 20,
+      "width": 22,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_DraynorManor",

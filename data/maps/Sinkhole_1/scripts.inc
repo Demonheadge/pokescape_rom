@@ -24,7 +24,8 @@ ITEM_SINKHOLE_3::
 
 SINKHOLE_NPC_FORGOTTENWARRIOR_1::
 	faceplayer
-	msgbox SINKHOLE_NPC_FORGOTTENWARRIOR_1_Text_0
+	namebox SINKHOLE_NPC_FORGOTTENWARRIOR_1_Text_0
+	msgbox SINKHOLE_NPC_FORGOTTENWARRIOR_1_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -58,7 +59,15 @@ BATTLE_SINKHOLE_NPC_FORGOTTENWARRIOR_1::
 
 
 SINKHOLE_NPC_FORGOTTENWARRIOR_1_Text_0:
-	.string "How did you find this place?$"
+	.string "Forgotten Warrior$"
+
+SINKHOLE_NPC_FORGOTTENWARRIOR_1_Text_1:
+	.string "There are many sinkhole dungeons like\n"
+	.string "this around the world.\p"
+	.string "There is also a place in Daemonheim\n"
+	.string "where the dungeons are randomised\l"
+	.string "upon entry.\p"
+	.string "It's kind of scary but cool.$"
 
 SINKHOLE_NPC_TRADER_Text_0:
 	.string "I have been down here for years.\p"
@@ -66,7 +75,9 @@ SINKHOLE_NPC_TRADER_Text_0:
 	.string "dweller here.$"
 
 SINKHOLE_NPC_FORGOTTENWARRIOR_2_Text_0:
-	.string "Have you tried fishing?\p"
+	.string "Hey thanks for opening the door\n"
+	.string "earlier.\p"
+	.string "By the way, have you tried fishing here?\p"
 	.string "There are many monsters only exclusive\n"
 	.string "to these dungeons.$"
 

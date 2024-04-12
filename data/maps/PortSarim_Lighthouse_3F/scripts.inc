@@ -51,6 +51,7 @@ LIGHTHOUSE_3F_NPC_1::
 	msgbox LIGHTHOUSE_3F_NPC_1_Text_2
 LIGHTHOUSE_3F_NPC_1_1:
 	closemessage
+	hidenamebox
 	release
 	end
 
@@ -184,7 +185,7 @@ LIGHTHOUSE_HAM_PATTY::
 	msgbox LIGHTHOUSE_HAM_PATTY_Text_16
 	hidenamebox
 	closemessage
-	giveitem ITEM_FROGEEL_BURGER, 1
+	giveitem ITEM_CRANDOR_MAP_PIECE1, 1
 	namebox LIGHTHOUSE_HAM_PATTY_Text_0
 	msgbox LIGHTHOUSE_HAM_PATTY_Text_17
 	closemessage
@@ -396,7 +397,7 @@ LIGHTHOUSE_HAM_PATTY_Text_8:
 	.string "Get a taste of this Wind Blast!$"
 
 LIGHTHOUSE_HAM_PATTY_Text_9:
-	.string "I'll be taking that map peice now.$"
+	.string "I'll be taking that map piece now.$"
 
 LIGHTHOUSE_HAM_PATTY_Text_10:
 	.string "Ew such a disgusting goblin, I don't\n"
@@ -405,7 +406,7 @@ LIGHTHOUSE_HAM_PATTY_Text_10:
 	.string "from here.$"
 
 LIGHTHOUSE_HAM_PATTY_Text_11:
-	.string "Map peice retrieved, time to head out.$"
+	.string "Map piece retrieved, time to head out.$"
 
 LIGHTHOUSE_HAM_PATTY_Text_12:
 	.string "Hey who are you?\p"
@@ -424,7 +425,7 @@ LIGHTHOUSE_HAM_PATTY_Text_14:
 	.string "Well lets see how much you want it!!$"
 
 LIGHTHOUSE_HAM_PATTY_Text_15:
-	.string "Why do you even want the map peice?$"
+	.string "Why do you even want the map piece?$"
 
 LIGHTHOUSE_HAM_PATTY_Text_16:
 	.string "Fine, take it…$"

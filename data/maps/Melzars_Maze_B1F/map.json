@@ -16,15 +16,15 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
-      "x": 11,
-      "y": 9,
+      "x": 13,
+      "y": 10,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Melzar_Maze_B1F_Melzar",
+      "script": "NULL",
       "flag": "0"
     },
     {
@@ -43,9 +43,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
       "x": 12,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -68,28 +68,28 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
-      "x": 3,
-      "y": 14,
+      "x": 6,
+      "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Melzar_Maze_B1F_GREEN_KEY",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 2,
-      "y": 15,
+      "x": 3,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 19,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_MELZARS_MAZE_1F",
@@ -97,9 +97,73 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_1"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_1"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_2"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_2"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_3"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MELZARS_LOCKED_DOOR_B1F_3"
+    }
   ]
 }

@@ -15,6 +15,13 @@ mapscripts Rimmington_MapScripts{
 
 
 script Rimmington_STATE{
+    if ((var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) || ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) >= 110))) {
+        setflag(FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME)
+        removeobject(32)
+    }
+
+    
+
 	switch (var(VAR_POKESCAPE_RIMMINGTON_STATE)){ 
 		case 0: 
             //NPCS House Portal
@@ -55,6 +62,8 @@ script Rimmington_STATE{
 
             setobjectxyperm(7,27,8)
 			setobjectmovementtype(7,MOVEMENT_TYPE_LOOK_AROUND)
+
+            setobjectxyperm(6,21,20)
 
             //NPCs around town.
             removeobject (10) //HIDEJMOD
@@ -231,6 +240,30 @@ script NPC_RIMMINGTON_PETER{
     end
 }
 
+script NPC_RIMMINGTON_HAM{
+	namebox("H.A.M Fan")
+    msgbox(format("Hey can you sign my robes??\pI'm a huge fan!"))
+    faceplayer
+    msgbox(format("Huh who are you?\pOMG!\nIs that the time?!\pI was meant to meet up with the group at that spooky old building ages ago!"))
+    hidenamebox
+	closemessage
+    applymovement(32, movement_ham_runtomelzars)
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
+    waitmovement(32)
+    setflag(FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME)
+    removeobject(32)
+	release
+	end
+}
+
+movement movement_ham_runtomelzars {
+    walk_faster_down
+    walk_faster_right
+    walk_faster_down
+    walk_faster_right * 4
+    walk_faster_down
+    walk_faster_right * 4
+}
 
 
 

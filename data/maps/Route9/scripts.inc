@@ -22,6 +22,8 @@ ROUTE9_STATE::
 	removeobject 12
 	removeobject 13
 	setflag FLAG_TEMP_1F
+	removeobject 27
+	setflag FLAG_TEMP_1E
 ROUTE9_STATE_1:
 	return
 
@@ -29,6 +31,14 @@ ROUTE9_STATE_2:
 	addobject 12
 	addobject 13
 	clearflag FLAG_TEMP_1F
+	goto_if_set FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME, ROUTE9_STATE_7
+	removeobject 27
+	setflag FLAG_TEMP_1E
+	goto ROUTE9_STATE_1
+
+ROUTE9_STATE_7:
+	addobject 27
+	clearflag FLAG_TEMP_1E
 	goto ROUTE9_STATE_1
 
 

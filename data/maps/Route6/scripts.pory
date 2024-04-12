@@ -42,7 +42,7 @@ script OPENWORLD_STATE_ROUTE6 {
 
 script FALADORSOUTH_STATE {
 
-    if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+    if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 110)) { //LESS THAN //If melzars maze hasnt been completed.
         removeobject(2)
         setflag(FLAG_TEMP_1)
         clearflag(FLAG_TEMP_2)
@@ -50,6 +50,7 @@ script FALADORSOUTH_STATE {
         addobject(OBJ_EVENT_ID_RAT)
         addobject(OBJ_EVENT_ID_GUARD)
         addobject(OBJ_EVENT_ID_UNICORN)
+        addobject(8)
     }
     else {
         removeobject(OBJ_EVENT_ID_MUGGER)
@@ -64,7 +65,16 @@ script FALADORSOUTH_STATE {
 
 
 
-
+script ROUTE6_NPC_GUARD_HAM{
+    lock
+	faceplayer
+	namebox("Guard")
+    msgbox(format("We've recieved reports that there is current H.A.M activity in Rimmington.\pWe wish to send some White Knights to go investigate but they are currently busy with some distrubances within the Dwarven Mines."))
+    hidenamebox
+	closemessage
+	release
+	end
+}
 
 
 

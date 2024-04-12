@@ -7643,6 +7643,54 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+    //
+    [ITEM_CRANDOR_MAP_FULL] =
+    {
+        .name = _("CRANDOR MAP"),
+        .itemId = ITEM_CRANDOR_MAP_FULL,
+        .price = 0,
+        .description = sCrandorMapDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_CRANDOR_MAP_PIECE1] =
+    {
+        .name = _("MAP PIECE 1"),
+        .itemId = ITEM_CRANDOR_MAP_PIECE1,
+        .price = 0,
+        .description = sCrandorPieceDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_CRANDOR_MAP_PIECE2] =
+    {
+        .name = _("MAP PIECE 2"),
+        .itemId = ITEM_CRANDOR_MAP_PIECE2,
+        .price = 0,
+        .description = sCrandorPieceDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_CRANDOR_MAP_PIECE3] =
+    {
+        .name = _("MAP PIECE 3"),
+        .itemId = ITEM_CRANDOR_MAP_PIECE3,
+        .price = 0,
+        .description = sCrandorPieceDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+
+
+    
     //TREASURES
 
     [ITEM_FLAX] =

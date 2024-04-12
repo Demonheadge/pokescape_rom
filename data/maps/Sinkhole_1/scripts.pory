@@ -28,8 +28,8 @@ script ITEM_SINKHOLE_3
 script SINKHOLE_NPC_FORGOTTENWARRIOR_1
 {
     faceplayer
-    //namebox ("RATBURGUS")
-    msgbox(format("How did you find this place?"))
+    namebox ("Forgotten Warrior")
+    msgbox(format("There are many sinkhole dungeons like this around the world.\pThere is also a place in Daemonheim where the dungeons are randomised upon entry.\pIt's kind of scary but cool."))
     closemessage
     hidenamebox
     release
@@ -39,7 +39,7 @@ script SINKHOLE_NPC_FORGOTTENWARRIOR_1
 script SINKHOLE_NPC_TRADER
 {
     faceplayer
-    //namebox ("RATBURGUS")
+    //namebox ("Smuggler")
     msgbox(format("I have been down here for years.\pIt is surprising to see a surface dweller here."))
     closemessage
     hidenamebox
@@ -52,7 +52,7 @@ script SINKHOLE_NPC_FORGOTTENWARRIOR_2
 {
     faceplayer
     //namebox ("RATBURGUS")
-    msgbox(format("Have you tried fishing?\pThere are many monsters only exclusive to these dungeons."))
+    msgbox(format("Hey thanks for opening the door earlier.\pBy the way, have you tried fishing here?\pThere are many monsters only exclusive to these dungeons."))
     closemessage
     hidenamebox
     release

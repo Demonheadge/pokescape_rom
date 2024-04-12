@@ -937,7 +937,7 @@ VARROCK_GYM_RELDO_Text_5:
 	.string "of your accomplishments.$"
 
 VARROCK_GYM_RELDO_Text_6:
-	.string "Reldo scribbles on a small peice of\n"
+	.string "Reldo scribbles on a small piece of\n"
 	.string "paper before handing it to you.$"
 
 VARROCK_GYM_RELDO_Text_7:
