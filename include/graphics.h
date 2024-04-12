@@ -9646,6 +9646,13 @@ extern const u32 gTrainerFrontPic_VoidKnight_5[];
 extern const u32 gTrainerFrontPic_WiseOldMan_1[];
 extern const u32 gTrainerFrontPic_WiseOldMan_2[];
 extern const u32 gTrainerFrontPic_wizard_zamorak[];
+extern const u32 gTrainerFrontPic_ham_babe[];
+extern const u32 gTrainerFrontPic_ham_patty[];
+extern const u32 gTrainerFrontPic_hans[];
+extern const u32 gTrainerFrontPic_hazelmere[];
+extern const u32 gTrainerFrontPic_sir_tiffy[];
+extern const u32 gTrainerFrontPic_zanik_caves[];
+extern const u32 gTrainerFrontPic_zanik_ham[];
 
 extern const u32 gTrainerPalette_Hiker[];
 extern const u32 gTrainerPalette_AquaGruntM[];
@@ -9885,6 +9892,14 @@ extern const u32 gTrainerPalette_VoidKnight_5[];
 extern const u32 gTrainerPalette_WiseOldMan_1[];
 extern const u32 gTrainerPalette_WiseOldMan_2[];
 extern const u32 gTrainerPalette_wizard_zamorak[];
+extern const u32 gTrainerPalette_ham_babe[];
+extern const u32 gTrainerPalette_ham_patty[];
+extern const u32 gTrainerPalette_hans[];
+extern const u32 gTrainerPalette_hazelmere[];
+extern const u32 gTrainerPalette_sir_tiffy[];
+extern const u32 gTrainerPalette_zanik_caves[];
+extern const u32 gTrainerPalette_zanik_ham[];
+
 
 extern const u8 gTrainerBackPic_protaganist_f[];
 extern const u8 gTrainerBackPic_protaganist_m[];

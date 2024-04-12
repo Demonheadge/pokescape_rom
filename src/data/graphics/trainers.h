@@ -442,6 +442,13 @@ const u32 gTrainerFrontPic_VoidKnight_5[] = INCBIN_U32("graphics/trainers/pokesc
 const u32 gTrainerFrontPic_WiseOldMan_1[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/WiseOldMan_1.4bpp.lz");
 const u32 gTrainerFrontPic_WiseOldMan_2[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/WiseOldMan_2.4bpp.lz");
 const u32 gTrainerFrontPic_wizard_zamorak[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/wizard_zamorak.4bpp.lz");
+const u32 gTrainerFrontPic_ham_babe[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/ham_babe.4bpp.lz");
+const u32 gTrainerFrontPic_ham_patty[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/ham_patty.4bpp.lz");
+const u32 gTrainerFrontPic_hans[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/hans.4bpp.lz");
+const u32 gTrainerFrontPic_hazelmere[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/hazelmere.4bpp.lz");
+const u32 gTrainerFrontPic_sir_tiffy[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/sir_tiffy.4bpp.lz");
+const u32 gTrainerFrontPic_zanik_caves[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/zanik_caves.4bpp.lz");
+const u32 gTrainerFrontPic_zanik_ham[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/zanik_ham.4bpp.lz");
 
 //POKESCAPE PALETTES
 const u32 gTrainerPalette_a_nub_tot[] = INCBIN_U32("graphics/trainers/pokescape/palettes/a_nub_tot.gbapal.lz");
@@ -589,7 +596,13 @@ const u32 gTrainerPalette_VoidKnight_5[] = INCBIN_U32("graphics/trainers/pokesca
 const u32 gTrainerPalette_WiseOldMan_1[] = INCBIN_U32("graphics/trainers/pokescape/palettes/WiseOldMan_1.gbapal.lz");
 const u32 gTrainerPalette_WiseOldMan_2[] = INCBIN_U32("graphics/trainers/pokescape/palettes/WiseOldMan_2.gbapal.lz");
 const u32 gTrainerPalette_wizard_zamorak[] = INCBIN_U32("graphics/trainers/pokescape/palettes/wizard_zamorak.gbapal.lz");
-
+const u32 gTrainerPalette_ham_babe[] = INCBIN_U32("graphics/trainers/pokescape/palettes/ham_babe.gbapal.lz");
+const u32 gTrainerPalette_ham_patty[] = INCBIN_U32("graphics/trainers/pokescape/palettes/ham_patty.gbapal.lz");
+const u32 gTrainerPalette_hans[] = INCBIN_U32("graphics/trainers/pokescape/palettes/hans.gbapal.lz");
+const u32 gTrainerPalette_hazelmere[] = INCBIN_U32("graphics/trainers/pokescape/palettes/hazelmere.gbapal.lz");
+const u32 gTrainerPalette_sir_tiffy[] = INCBIN_U32("graphics/trainers/pokescape/palettes/sir_tiffy.gbapal.lz");
+const u32 gTrainerPalette_zanik_caves[] = INCBIN_U32("graphics/trainers/pokescape/palettes/zanik_caves.gbapal.lz");
+const u32 gTrainerPalette_zanik_ham[] = INCBIN_U32("graphics/trainers/pokescape/palettes/zanik_ham.gbapal.lz");
 
 
 

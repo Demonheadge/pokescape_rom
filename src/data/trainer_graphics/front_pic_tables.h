@@ -236,6 +236,13 @@ const struct MonCoords gTrainerFrontPicCoords[] =
 	[TRAINER_PIC_WiseOldMan_1] = {.size = 8, .y_offset = 1},
 	[TRAINER_PIC_WiseOldMan_2] = {.size = 8, .y_offset = 1},
 	[TRAINER_PIC_wizard_zamorak] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_ham_babe] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_ham_patty] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_hans] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_hazelmere] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_sir_tiffy] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_zanik_caves] = {.size = 8, .y_offset = 1},
+	[TRAINER_PIC_zanik_ham] = {.size = 8, .y_offset = 1},
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -478,6 +485,13 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
 	TRAINER_SPRITE(WiseOldMan_1, gTrainerFrontPic_WiseOldMan_1, 0x800),
 	TRAINER_SPRITE(WiseOldMan_2, gTrainerFrontPic_WiseOldMan_2, 0x800),
 	TRAINER_SPRITE(wizard_zamorak, gTrainerFrontPic_wizard_zamorak, 0x800),
+	TRAINER_SPRITE(ham_babe, gTrainerFrontPic_ham_babe, 0x800),
+	TRAINER_SPRITE(ham_patty, gTrainerFrontPic_ham_patty, 0x800),
+	TRAINER_SPRITE(hans, gTrainerFrontPic_hans, 0x800),
+	TRAINER_SPRITE(hazelmere, gTrainerFrontPic_hazelmere, 0x800),
+	TRAINER_SPRITE(sir_tiffy, gTrainerFrontPic_sir_tiffy, 0x800),
+	TRAINER_SPRITE(zanik_caves, gTrainerFrontPic_zanik_caves, 0x800),
+	TRAINER_SPRITE(zanik_ham, gTrainerFrontPic_zanik_ham, 0x800),
 };
 
 #define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
@@ -720,4 +734,11 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 	TRAINER_PAL(WiseOldMan_1, gTrainerPalette_WiseOldMan_1),
 	TRAINER_PAL(WiseOldMan_2, gTrainerPalette_WiseOldMan_2),
 	TRAINER_PAL(wizard_zamorak, gTrainerPalette_wizard_zamorak),
+	TRAINER_PAL(ham_babe, gTrainerPalette_ham_babe),
+	TRAINER_PAL(ham_patty, gTrainerPalette_ham_patty),
+	TRAINER_PAL(hans, gTrainerPalette_hans),
+	TRAINER_PAL(hazelmere, gTrainerPalette_hazelmere),
+	TRAINER_PAL(sir_tiffy, gTrainerPalette_sir_tiffy),
+	TRAINER_PAL(zanik_caves, gTrainerPalette_zanik_caves),
+	TRAINER_PAL(zanik_ham, gTrainerPalette_zanik_ham),
 };

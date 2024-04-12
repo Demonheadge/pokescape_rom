@@ -939,6 +939,33 @@ static const union AnimCmd *const sAnims_wizard_zamorak[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_ham_babe[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_ham_patty[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_hans[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_hazelmere[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_sir_tiffy[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_zanik_caves[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_zanik_ham[] ={
+    sAnim_GeneralFrame0,
+};
 
 
 
@@ -1182,4 +1209,11 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_WiseOldMan_1] = sAnims_WiseOldMan_1,
     [TRAINER_PIC_WiseOldMan_2] = sAnims_WiseOldMan_2,
     [TRAINER_PIC_wizard_zamorak] = sAnims_wizard_zamorak,
+    [TRAINER_PIC_ham_babe] = sAnims_ham_babe,
+    [TRAINER_PIC_ham_patty] = sAnims_ham_patty,
+    [TRAINER_PIC_hans] = sAnims_hans,
+    [TRAINER_PIC_hazelmere] = sAnims_hazelmere,
+    [TRAINER_PIC_sir_tiffy] = sAnims_sir_tiffy,
+    [TRAINER_PIC_zanik_caves] = sAnims_zanik_caves,
+    [TRAINER_PIC_zanik_ham] = sAnims_zanik_ham,
 };

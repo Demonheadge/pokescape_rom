@@ -5923,6 +5923,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_TRAINER_1[
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_HAM_ADMIN_PATTY[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_PIG_WAR_FORM,
+    }
+};
+
+
+
+
 //MELZARS MAZE 1F
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MELZARS_1F_TRAINER_1[] = {

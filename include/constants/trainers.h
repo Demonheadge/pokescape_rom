@@ -254,6 +254,13 @@
 #define TRAINER_PIC_WiseOldMan_1			    232
 #define TRAINER_PIC_WiseOldMan_2			    233
 #define TRAINER_PIC_wizard_zamorak			    234
+#define TRAINER_PIC_ham_babe			        235
+#define TRAINER_PIC_ham_patty			        236
+#define TRAINER_PIC_hans			            237
+#define TRAINER_PIC_hazelmere			        238
+#define TRAINER_PIC_sir_tiffy			        239
+#define TRAINER_PIC_zanik_caves			        240
+#define TRAINER_PIC_zanik_ham			        241
 //#define TRAINER_PIC_			        204
 
 
