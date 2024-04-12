@@ -4754,13 +4754,13 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_3F_TRAINER_1},
     },
 
-    [TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE] =
+    [TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_PATTY] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_HAM_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
         .trainerPic = TRAINER_PIC_ham_grunt_m,
-        .trainerName = _("BABE"),
+        .trainerName = _("PATTY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,

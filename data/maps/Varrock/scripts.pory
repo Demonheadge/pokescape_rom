@@ -702,7 +702,7 @@ script TRIGGER_BLOCK_ROUTE38
         msgbox(format("Sorry, by order of the King only those who have obtained the Varrock Badge may pass here."))
         closemessage
         hidenamebox
-        applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT)
+        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_LEFT)
         waitmovement(0)
         setvar(VAR_TEMP_0, 1) //Dont need this.
         release

@@ -700,12 +700,12 @@ NPC_PORTSARIM_NPC_JAILGUARD_3:
 
 NPC_PORTSARIM_BLOCKADE_HAM::
 	lock
-	applymovement 9, Movement_InteractDOWN
+	applymovement 9, MOVEMENT_INTERACT_DOWN
 	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
 	msgbox NPC_PORTSARIM_BLOCKADE_HAM_Text_1
 	hidenamebox
 	waitmovement 0
-	applymovement 11, Movement_InteractUP
+	applymovement 11, MOVEMENT_INTERACT_UP
 	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
 	msgbox NPC_PORTSARIM_BLOCKADE_HAM_Text_2
 	waitmovement 0
@@ -717,11 +717,11 @@ NPC_PORTSARIM_BLOCKADE_HAM::
 
 NPC_PORTSARIM_BLOCKADE_HAM_2::
 	lock
-	applymovement 11, Movement_InteractRIGHT
+	applymovement 11, MOVEMENT_INTERACT_RIGHT
 	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
 	msgbox NPC_PORTSARIM_BLOCKADE_HAM_2_Text_0
 	waitmovement 0
-	applymovement 12, Movement_InteractLEFT
+	applymovement 12, MOVEMENT_INTERACT_LEFT
 	namebox NPC_PORTSARIM_BLOCKADE_HAM_Text_0
 	msgbox NPC_PORTSARIM_BLOCKADE_HAM_2_Text_1
 	hidenamebox

@@ -64,7 +64,12 @@ script LIGHTHOUSE_NPC_2
 	lock
 	faceplayer
     namebox ("Skeleton")
-	msgbox(format("The skeleton chuckles at all of the commotion."))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("The skeleton chuckles at all of the commotion."))
+    }
+    else {
+        msgbox(format("The skeleton says, Nothing interesting happens."))
+    }
     closemessage
     hidenamebox
 	release
@@ -88,7 +93,32 @@ script LIGHTHOUSE_NPC_4
 	lock
 	faceplayer
     namebox ("Black Knight")
-	msgbox(format("Oi!\pWill you ask those HAM members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("Oi!\pWill you ask those HAM members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
+    }
+    elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        msgbox(format("Man, I cannot beleive those HAM guys left me in here to rot.\pI'm never working with them again…"))
+    }
+    else {
+        msgbox(format("Our hideout is located near Ice Mountain.\pThere can I go now?"))
+    }
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_NPC_WORMBRAIN
+{
+	lock
+	faceplayer
+    namebox ("Wormbrain")
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        msgbox(format("Me nose hurts…"))
+    }
+    else {
+        msgbox(format("Me hate it here in jail.\pAt least me get 1 meal a day."))
+    }
     closemessage
     hidenamebox
 	release
@@ -100,7 +130,12 @@ script LIGHTHOUSE_GUARD_1
 	lock
 	faceplayer
     namebox ("Jailer")
-	msgbox(format(""))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        msgbox(format("I overheard some H.A.M members mentioning something about a maze near Rimmington.\pHopefully they aren't planning anything."))
+    }
+    else {
+        msgbox(format("I'm watching you…\pDon't try any funny stuff…"))
+    }
     closemessage
     hidenamebox
 	release
@@ -112,8 +147,13 @@ script LIGHTHOUSE_GUARD_2
 	lock
 	faceplayer
     namebox ("Jailer")
-	msgbox(format(""))
-    closemessage
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        msgbox(format("I'm contacting the customs officers over at Rimmington just incase H.A.M attempt to show up there."))
+    }
+    else {
+        msgbox(format("We've had reports of some goblins causing trouble by the cemetery.\pI guess we'll have to go over and sort them out at some point."))
+    }
+	closemessage
     hidenamebox
 	release
 	end

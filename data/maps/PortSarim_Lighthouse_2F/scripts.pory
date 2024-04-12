@@ -12,6 +12,13 @@ script LIGHTHOUSE_2F_STATE {
         addobject(5)
         addobject(2)
         clearflag(FLAG_TEMP_1E)
+        removeobject(8)
+        setflag(FLAG_TEMP_1D)
+        setobjectmovementtype(6, MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT)
+
+        setobjectmovementtype(1, MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT)
+        setobjectxyperm(1, 13, 2)
+
     }
     else {
         removeobject(4)
@@ -19,6 +26,7 @@ script LIGHTHOUSE_2F_STATE {
         removeobject(2)
         setflag(FLAG_TEMP_1E)
     }
+
     return
 }
 
@@ -27,7 +35,19 @@ script LIGHTHOUSE_2F_STATE {
 script LIGHTHOUSE_2F_NPC_1
 {
     //namebox ("")
-	msgbox(format("The guard is too engaged in battle to talk right now."))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("The guard is too engaged in battle to talk right now."))
+    }
+    elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        lock
+	    faceplayer
+        msgbox(format("Melzar…\pMelzar…\pWhy does that name ring a bell?\pOh sorry I overheard some of H.A.M talking about a guy named Melzar."))
+    }
+    else {
+        lock
+        faceplayer
+        msgbox(format("Being a guard in Port Sarim is exhausting!\pWhy?\pBecause everything comes and goes from Port Sarim!\pWe have muggers, theives, scammers, pirates, goblins if you can think of it we have it."))
+    }
     closemessage
     //hidenamebox
 	release
@@ -47,7 +67,19 @@ script LIGHTHOUSE_2F_NPC_2
 script LIGHTHOUSE_2F_NPC_3
 {
     //namebox ("")
-	msgbox(format("The guard can't talk while battling!"))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("The guard can't talk while battling!"))
+    }
+    elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
+        lock
+	    faceplayer
+        msgbox(format("You should go visit Rimmington to the east.\pThey throw the best house parties!"))
+    }
+    else {
+        lock
+        faceplayer
+        msgbox(format("Your one of those MvM guys right?\pWe were approached by the MvM organization to see if we could adapt our jail into a gym.\pBut our captain didn't like the idea of the pirate Redbeard Frank being the gym leader."))
+    }
     closemessage
     //hidenamebox
 	release
@@ -69,7 +101,24 @@ script LIGHTHOUSE_2F_NPC_5
 	lock
 	faceplayer
     namebox ("Security Guard")
-	msgbox(format("Oh god I only came here to give people tips on security!\pI'm not built for battling."))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("Oh god I only came here to give people tips on security!\pI'm not built for battling."))
+    }
+    else {
+        msgbox(format("Ahem…\pPiracy is bad.\pWhat's that?\pThis game is technically piracy?\p…I don't know how to reply to this."))
+    }
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script LIGHTHOUSE_2F_NPC_6
+{
+	lock
+	faceplayer
+    //namebox ("Guard")
+	msgbox(format("This lighthouse is also acts as the jail.\pThat way we can guard both at the same time."))
     closemessage
     hidenamebox
 	release

@@ -587,7 +587,7 @@ TRIGGER_BLOCK_ROUTE38_1:
 	msgbox TRIGGER_BLOCK_ROUTE38_Text_0
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_LEFT
 	waitmovement 0
 	setvar VAR_TEMP_0, 1
 	release

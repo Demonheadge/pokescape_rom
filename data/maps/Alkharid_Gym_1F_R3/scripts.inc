@@ -92,7 +92,7 @@ GYM_NPC_1_7:
 	goto_if_eq GYM_NPC_1_14
 	applymovement 3, Movement_AlkharidGym_NPC_1
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT
 	waitmovement 0
 	namebox GYM_NPC_1_Text_1
 	msgbox GYM_NPC_1_Text_2
@@ -123,7 +123,7 @@ GYM_NPC_1_14:
 	applymovement 3, Movement_AlkharidGym_NPC_1
 	applymovement 1, Movement_AlkharidGym_NPC_1_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT
 	waitmovement 0
 	namebox GYM_NPC_1_Text_1
 	msgbox GYM_NPC_1_Text_2
@@ -135,9 +135,9 @@ GYM_NPC_1_14:
 	msgbox GYM_NPC_1_Text_4
 	closemessage
 	hidenamebox
-	applymovement 1, Movement_WALKDOWN
+	applymovement 1, MOVEMENT_WALK_DOWN
 	waitmovement 0
-	applymovement 1, Movement_FACEUP
+	applymovement 1, MOVEMENT_FACE_UP
 	waitmovement 0
 	release
 	end
@@ -176,7 +176,7 @@ GYM_NPC_2_7:
 	goto_if_eq GYM_NPC_2_14
 	applymovement 2, Movement_AlkharidGym_NPC_2
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	namebox GYM_NPC_1_Text_1
 	msgbox GYM_NPC_1_Text_2
@@ -209,7 +209,7 @@ GYM_NPC_2_14:
 	applymovement 2, Movement_AlkharidGym_NPC_2
 	applymovement 1, Movement_AlkharidGym_NPC_2_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	namebox GYM_NPC_1_Text_1
 	msgbox GYM_NPC_1_Text_2

@@ -542,13 +542,13 @@ JATIZSO_NPC_KING_3:
 
 RAC_QUEST_START::
 	lock
-	applymovement 21, Movement_InteractRIGHT
+	applymovement 21, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_Text_1
 	closemessage
 	hidenamebox
-	applymovement 20, Movement_InteractLEFT
+	applymovement 20, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_Text_3
@@ -577,13 +577,13 @@ RAC_QUEST_START_P1::
 	msgbox RAC_QUEST_START_P1_Text_0
 	closemessage
 	hidenamebox
-	applymovement 21, Movement_InteractRIGHT
+	applymovement 21, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_P1_Text_1
 	closemessage
 	hidenamebox
-	applymovement 20, Movement_InteractLEFT
+	applymovement 20, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_P1_Text_2
@@ -602,7 +602,7 @@ RAC_QUEST_START_P1_1:
 
 RAC_QUEST_START_P1_3:
 	closemessage
-	applymovement 21, Movement_InteractRIGHT
+	applymovement 21, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_P1_Text_4
@@ -617,7 +617,7 @@ RAC_QUEST_START_P1_3:
 
 RAC_QUEST_START_P1_4:
 	closemessage
-	applymovement 20, Movement_InteractLEFT
+	applymovement 20, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_P1_Text_6
@@ -769,7 +769,7 @@ RAC_QUEST_JATIZSO_ELEJ_P1_13:
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_2
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_UP
 	waitmovement 0
 	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_3
@@ -999,58 +999,58 @@ RAC_QUEST_JATIZSO_JAGEX_P1_10:
 
 RAC_QUEST_JATIZSO_JAGEX_P1_19:
 	lock
-	applymovement 2, Movement_InteractUP
+	applymovement 2, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_3
 	closemessage
 	waitmovement 0
-	applymovement 1, Movement_InteractUP
+	applymovement 1, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_2
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_4
 	closemessage
 	waitmovement 0
-	applymovement 2, Movement_InteractUP
+	applymovement 2, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_5
 	closemessage
 	waitmovement 0
-	applymovement 1, Movement_InteractUP
+	applymovement 1, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_2
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_6
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 2, Movement_InteractUP
+	applymovement 2, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_7
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 1, Movement_InteractUP
+	applymovement 1, MOVEMENT_INTERACT_UP
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_2
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_8
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 2, Movement_InteractRIGHT
+	applymovement 2, MOVEMENT_INTERACT_RIGHT
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_9
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 1, Movement_InteractLEFT
+	applymovement 1, MOVEMENT_INTERACT_LEFT
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_2
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_10
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 2, Movement_InteractRIGHT
+	applymovement 2, MOVEMENT_INTERACT_RIGHT
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_11
 	closemessage
 	hidenamebox
 	waitmovement 0
-	applymovement 1, Movement_InteractLEFT
+	applymovement 1, MOVEMENT_INTERACT_LEFT
 	namebox JATIZSO_NPC_ModDragon_ModBats_Text_2
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P1_Text_12
 	closemessage
@@ -1158,7 +1158,7 @@ RAC_QUEST_JATIZSO_JAGEX_P2_10:
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P2_Text_2
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_UP
 	waitmovement 0
 	namebox JATIZSO_NPC_JacksonOHare_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P2_Text_3
@@ -1221,7 +1221,7 @@ RAC_QUEST_JATIZSO_JAGEX_P3_TRIGGER_2:
 	goto RAC_QUEST_JATIZSO_JAGEX_P3_TRIGGER_1
 
 RAC_QUEST_JATIZSO_JAGEX_P3_TRIGGER_4:
-	applymovement 10, Movement_InteractLEFT
+	applymovement 10, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox JATIZSO_NPC_Nicki_Text_0
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P3_TRIGGER_Text_0

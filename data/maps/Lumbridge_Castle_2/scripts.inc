@@ -135,7 +135,7 @@ Lumbridge_Castle_COOKS_TRIGGER_celler_1:
 	msgbox Lumbridge_Castle_COOKS_TRIGGER_celler_Text_0
 	waitmessage
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_LEFT
 	waitmovement 0
 	release
 	end

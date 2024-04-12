@@ -74,7 +74,7 @@ HAM_EVENT_DRAYNORMANOR_1F_5:
 	delay 32
 	applymovement 17, Movement_DraynorManor_Entry_2
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	namebox HAM_EVENT_DRAYNORMANOR_1F_Text_0
 	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_1
@@ -82,7 +82,7 @@ HAM_EVENT_DRAYNORMANOR_1F_5:
 	hidenamebox
 	applymovement 17, Movement_DraynorManor_Entry_4
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_2
 	hidenamebox
@@ -101,7 +101,7 @@ HAM_EVENT_DRAYNORMANOR_1F_5:
 	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_5
 	applymovement 17, Movement_DraynorManor_Entry_5
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_6
 	closemessage
@@ -127,7 +127,7 @@ HAM_EVENT_DRAYNORMANOR_1F_4:
 	compare VAR_TEMP_1, 25
 	goto_if_eq HAM_EVENT_DRAYNORMANOR_1F_12
 HAM_EVENT_DRAYNORMANOR_1F_10:
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT
 	waitmovement 0
 	namebox HAM_EVENT_DRAYNORMANOR_1F_Text_0
 	msgbox HAM_EVENT_DRAYNORMANOR_1F_Text_8
@@ -287,8 +287,8 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_1::
 	goto_if_ne TRIGGER_ARIANE_DRAYNORMANOR_1F_1_1
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKUP
-	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_UP
+	applymovement OBJ_EVENT_ID_FOLLOWER, MOVEMENT_WALK_UP
 	waitmovement 0
 	return
 
@@ -346,7 +346,7 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_3_1:
 
 TRIGGER_ARIANE_DRAYNORMANOR_1F_3_2:
 	delay 32
-	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_FOLLOWER, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	delay 32
 	facefollower
@@ -372,8 +372,8 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_4_2:
 	msgbox TRIGGER_ARIANE_DRAYNORMANOR_1F_4_Text_0
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN
-	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN
+	applymovement OBJ_EVENT_ID_FOLLOWER, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	goto TRIGGER_ARIANE_DRAYNORMANOR_1F_4_1
 
@@ -392,8 +392,8 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_5_2:
 	msgbox TRIGGER_ARIANE_DRAYNORMANOR_1F_5_Text_0
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT
-	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_RIGHT
+	applymovement OBJ_EVENT_ID_FOLLOWER, MOVEMENT_WALK_RIGHT
 	waitmovement 0
 	setvar VAR_TEMP_9, 1
 	goto TRIGGER_ARIANE_DRAYNORMANOR_1F_5_1
@@ -413,10 +413,10 @@ TRIGGER_ARIANE_DRAYNORMANOR_1F_6_2:
 	msgbox TRIGGER_ARIANE_DRAYNORMANOR_1F_6_Text_0
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_WALKRIGHT
+	applymovement OBJ_EVENT_ID_FOLLOWER, MOVEMENT_WALK_RIGHT
 	waitmovement 0
 	facefollower
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT
 	delay 32
 	setvar VAR_TEMP_9, 1
 	warp MAP_DRAYNOR_MANOR_CRYPT, 0, 0, 0

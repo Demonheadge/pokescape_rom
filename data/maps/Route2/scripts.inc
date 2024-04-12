@@ -169,14 +169,14 @@ HAM_EVENT_Route2_TRIGGER_2::
 
 
 HAM_EVENT_Route2_TRIGGER_3::
-	applymovement 3, Movement_FACEDOWN
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
+	applymovement 3, MOVEMENT_FACE_DOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP
 	waitmovement 0
 	namebox HAM_EVENT_WizardsTower_4_Text_0
 	msgbox HAM_EVENT_Route2_TRIGGER_3_Text_0
 	hidenamebox
 	closemessage
-	applymovement 3, Movement_FACELEFT
+	applymovement 3, MOVEMENT_FACE_LEFT
 	applymovement OBJ_EVENT_ID_PLAYER, movement_WALKRIGHT
 	waitmovement 0
 	return

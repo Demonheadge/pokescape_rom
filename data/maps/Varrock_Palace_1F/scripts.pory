@@ -36,7 +36,7 @@ script TRIGGER_VARROCK_GYM_ADVISOR
             applymovement(OBJ_EVENT_ID_ADVISOR, Movement_InteractFACEPLAYER)
             waitmovement(0)
             call(QUEST_VARROCK_GYM_1) 
-            applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN)
             waitmovement(0)
             release
             end
@@ -48,7 +48,7 @@ script TRIGGER_VARROCK_GYM_ADVISOR
             applymovement(OBJ_EVENT_ID_ADVISOR, Movement_InteractFACEPLAYER)
             waitmovement(0)
             call(QUEST_VARROCK_GYM_2)
-            applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN)
             waitmovement(0)
             release
             end
@@ -294,7 +294,7 @@ script VARROCK_GYM_BOOK_3
         {
             lock
             applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACEDOWN)
-            applymovement(9, Movement_WALKUP)
+            applymovement(9, MOVEMENT_WALK_UP)
             waitmovement(0)
 
             namebox("Priest")
@@ -305,7 +305,7 @@ script VARROCK_GYM_BOOK_3
             msgbox(format("Just hurry up and find the book you are looking for then get out.")) 
             hidenamebox 
             closemessage
-            applymovement(9, Movement_WALKDOWN)
+            applymovement(9, MOVEMENT_WALK_DOWN)
             waitmovement(0)
             applymovement(9, Movement_InteractFACERIGHT)
             waitmovement(0)

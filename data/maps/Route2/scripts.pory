@@ -178,14 +178,14 @@ script HAM_EVENT_Route2_TRIGGER_2{
     goto(HAM_EVENT_Route2_MAIN_2)
 }
 script HAM_EVENT_Route2_TRIGGER_3{
-    applymovement(3, Movement_FACEDOWN)
-    applymovement (OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+    applymovement(3, MOVEMENT_FACE_DOWN)
+    applymovement (OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP)
     waitmovement(0)
     namebox("Ariane")
     msgbox(format("Have you seen a man in pink?\pI don't know which way he went…"))
     hidenamebox
     closemessage
-    applymovement(3, Movement_FACELEFT)
+    applymovement(3, MOVEMENT_FACE_LEFT)
     applymovement (OBJ_EVENT_ID_PLAYER, movement_WALKRIGHT)
     waitmovement(0)
 }

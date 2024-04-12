@@ -71,8 +71,8 @@ script BLOCK_ALKHARID_GATE
 	msgbox(format("Halt!\pOnly those whom possess the Al-Kharid Badge may enter!"))
 	closemessage
 	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHARID_GATE_3)
-	applymovement (ALKHARID_GUARD_1_ID,Movement_FACELEFT)
-	applymovement (ALKHARID_GUARD_2_ID,Movement_FACELEFT)
+	applymovement (ALKHARID_GUARD_1_ID,MOVEMENT_FACE_LEFT)
+	applymovement (ALKHARID_GUARD_2_ID,MOVEMENT_FACE_LEFT)
 	waitmovement (0)
 	release
 	end
@@ -98,8 +98,8 @@ script ALKHARID_GATE_GUARD
 	msgbox(format("Halt!\pOnly those whom possess the Al-Kharid Badge may enter!"))
 	closemessage
 	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHARID_GATE_3)
-	applymovement (ALKHARID_GUARD_1_ID,Movement_FACELEFT)
-	applymovement (ALKHARID_GUARD_2_ID,Movement_FACELEFT)
+	applymovement (ALKHARID_GUARD_1_ID,MOVEMENT_FACE_LEFT)
+	applymovement (ALKHARID_GUARD_2_ID,MOVEMENT_FACE_LEFT)
 	waitmovement (0)
 	release
 	end

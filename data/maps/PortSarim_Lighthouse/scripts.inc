@@ -70,11 +70,18 @@ LIGHTHOUSE_NPC_2::
 	lock
 	faceplayer
 	namebox LIGHTHOUSE_NPC_2_Text_0
-	msgbox LIGHTHOUSE_NPC_2_Text_1
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 100
+	goto_if_eq LIGHTHOUSE_NPC_2_2
+	msgbox LIGHTHOUSE_NPC_2_Text_2
+LIGHTHOUSE_NPC_2_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+LIGHTHOUSE_NPC_2_2:
+	msgbox LIGHTHOUSE_NPC_2_Text_1
+	goto LIGHTHOUSE_NPC_2_1
 
 
 LIGHTHOUSE_NPC_3::
@@ -92,33 +99,78 @@ LIGHTHOUSE_NPC_4::
 	lock
 	faceplayer
 	namebox LIGHTHOUSE_NPC_4_Text_0
-	msgbox LIGHTHOUSE_NPC_4_Text_1
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 100
+	goto_if_eq LIGHTHOUSE_NPC_4_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq LIGHTHOUSE_NPC_4_3
+	msgbox LIGHTHOUSE_NPC_4_Text_3
+LIGHTHOUSE_NPC_4_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+LIGHTHOUSE_NPC_4_2:
+	msgbox LIGHTHOUSE_NPC_4_Text_1
+	goto LIGHTHOUSE_NPC_4_1
+
+LIGHTHOUSE_NPC_4_3:
+	msgbox LIGHTHOUSE_NPC_4_Text_2
+	goto LIGHTHOUSE_NPC_4_1
+
+
+LIGHTHOUSE_NPC_WORMBRAIN::
+	lock
+	faceplayer
+	namebox LIGHTHOUSE_NPC_WORMBRAIN_Text_0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq LIGHTHOUSE_NPC_WORMBRAIN_2
+	msgbox LIGHTHOUSE_NPC_WORMBRAIN_Text_2
+LIGHTHOUSE_NPC_WORMBRAIN_1:
+	closemessage
+	hidenamebox
+	release
+	end
+
+LIGHTHOUSE_NPC_WORMBRAIN_2:
+	msgbox LIGHTHOUSE_NPC_WORMBRAIN_Text_1
+	goto LIGHTHOUSE_NPC_WORMBRAIN_1
 
 
 LIGHTHOUSE_GUARD_1::
 	lock
 	faceplayer
 	namebox LIGHTHOUSE_GUARD_1_Text_0
-	msgbox LIGHTHOUSE_GUARD_1_Text_1
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq LIGHTHOUSE_GUARD_1_2
+	msgbox LIGHTHOUSE_GUARD_1_Text_2
+LIGHTHOUSE_GUARD_1_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+LIGHTHOUSE_GUARD_1_2:
+	msgbox LIGHTHOUSE_GUARD_1_Text_1
+	goto LIGHTHOUSE_GUARD_1_1
 
 
 LIGHTHOUSE_GUARD_2::
 	lock
 	faceplayer
 	namebox LIGHTHOUSE_GUARD_1_Text_0
-	msgbox LIGHTHOUSE_GUARD_1_Text_1
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 105
+	goto_if_eq LIGHTHOUSE_GUARD_2_2
+	msgbox LIGHTHOUSE_GUARD_2_Text_1
+LIGHTHOUSE_GUARD_2_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+LIGHTHOUSE_GUARD_2_2:
+	msgbox LIGHTHOUSE_GUARD_2_Text_0
+	goto LIGHTHOUSE_GUARD_2_1
 
 
 BATTLE_LIGHTHOUSE_TRAINER_1::
@@ -187,6 +239,10 @@ LIGHTHOUSE_NPC_2_Text_1:
 	.string "The skeleton chuckles at all of the\n"
 	.string "commotion.$"
 
+LIGHTHOUSE_NPC_2_Text_2:
+	.string "The skeleton says, Nothing interesting\n"
+	.string "happens.$"
+
 LIGHTHOUSE_NPC_3_Text_0:
 	.string "Mugger$"
 
@@ -206,11 +262,50 @@ LIGHTHOUSE_NPC_4_Text_1:
 	.string "They just walked right past me like we\n"
 	.string "didn't even know each other!$"
 
+LIGHTHOUSE_NPC_4_Text_2:
+	.string "Man, I cannot beleive those HAM guys\n"
+	.string "left me in here to rot.\p"
+	.string "I'm never working with them again…$"
+
+LIGHTHOUSE_NPC_4_Text_3:
+	.string "Our hideout is located near Ice\n"
+	.string "Mountain.\p"
+	.string "There can I go now?$"
+
+LIGHTHOUSE_NPC_WORMBRAIN_Text_0:
+	.string "Wormbrain$"
+
+LIGHTHOUSE_NPC_WORMBRAIN_Text_1:
+	.string "Me nose hurts…$"
+
+LIGHTHOUSE_NPC_WORMBRAIN_Text_2:
+	.string "Me hate it here in jail.\p"
+	.string "At least me get 1 meal a day.$"
+
 LIGHTHOUSE_GUARD_1_Text_0:
 	.string "Jailer$"
 
 LIGHTHOUSE_GUARD_1_Text_1:
-	.string "$"
+	.string "I overheard some H.A.M members\n"
+	.string "mentioning something about a maze\l"
+	.string "near Rimmington.\p"
+	.string "Hopefully they aren't planning\n"
+	.string "anything.$"
+
+LIGHTHOUSE_GUARD_1_Text_2:
+	.string "I'm watching you…\p"
+	.string "Don't try any funny stuff…$"
+
+LIGHTHOUSE_GUARD_2_Text_0:
+	.string "I'm contacting the customs officers\n"
+	.string "over at Rimmington just incase H.A.M\l"
+	.string "attempt to show up there.$"
+
+LIGHTHOUSE_GUARD_2_Text_1:
+	.string "We've had reports of some goblins\n"
+	.string "causing trouble by the cemetery.\p"
+	.string "I guess we'll have to go over and sort\n"
+	.string "them out at some point.$"
 
 BATTLE_LIGHTHOUSE_TRAINER_1_Text_0:
 	.string "I couldn't stop your friends before\n"

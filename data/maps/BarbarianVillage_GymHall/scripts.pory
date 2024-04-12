@@ -127,16 +127,16 @@ script BarbarianVillage_GYM_STATE{
                 setobjectmovementtype(8, MOVEMENT_TYPE_FACE_UP)
 
 
-                applymovement(OBJ_EVENT_ID_GUNTHOR, Movement_FACEUP)
-                applymovement(OBJ_EVENT_ID_LITARA, Movement_FACEUP)
-                applymovement(3, Movement_FACERIGHT)
-                applymovement(4, Movement_FACEUP)
-                applymovement(5, Movement_FACELEFT)
-                applymovement(OBJ_EVENT_ID_ATLAS, Movement_FACELEFT)
-                applymovement(7, Movement_FACEUP)
-                applymovement(8, Movement_FACEUP)
-                applymovement(9, Movement_FACERIGHT)
-                applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_FACERIGHT)
+                applymovement(OBJ_EVENT_ID_GUNTHOR, MOVEMENT_FACE_UP)
+                applymovement(OBJ_EVENT_ID_LITARA, MOVEMENT_FACE_UP)
+                applymovement(3, MOVEMENT_FACE_RIGHT)
+                applymovement(4, MOVEMENT_FACE_UP)
+                applymovement(5, MOVEMENT_FACE_LEFT)
+                applymovement(OBJ_EVENT_ID_ATLAS, MOVEMENT_FACE_LEFT)
+                applymovement(7, MOVEMENT_FACE_UP)
+                applymovement(8, MOVEMENT_FACE_UP)
+                applymovement(9, MOVEMENT_FACE_RIGHT)
+                applymovement(OBJ_EVENT_ID_MITHRILMAN, MOVEMENT_FACE_RIGHT)
                 //
                 return
 
@@ -275,9 +275,9 @@ script NPC_BARBGYM_BARBARIAN_2
     
     namebox("Haakon")
     msgbox(format("I won't keep you waiting any longer."))
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_WALKUP)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_WALK_UP)
     waitmovement(0)
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACELEFT)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_FACE_LEFT)
     waitmovement(0)
     msgbox(format("In this corner we have the challenger known simply as {PLAYER}!"))
     hidenamebox
@@ -286,7 +286,7 @@ script NPC_BARBGYM_BARBARIAN_2
 
     call (ContestHall_EventScript_VObjectAudienceLookAround)
     
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACERIGHT)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_FACE_RIGHT)
     waitmovement(0)
     namebox("Haakon")
     msgbox(format("And in this corner it is our very own Atlas!"))
@@ -297,7 +297,7 @@ script NPC_BARBGYM_BARBARIAN_2
     
     call (ContestHall_EventScript_VObjectAudienceLookAround)
 
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACEDOWN)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_FACE_DOWN)
     waitmovement(0)
     msgbox(format("Let the battles begin!"))
     hidenamebox
@@ -308,8 +308,8 @@ script NPC_BARBGYM_BARBARIAN_2
     msgbox(format("Welcome to you challenger!\pMy name is Atlas, but atlas your challenge will end as quickly as it started."))
     hidenamebox
     closemessage
-    applymovement(OBJ_EVENT_ID_ATLAS, Movement_WALKLEFT)
-    applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
+    applymovement(OBJ_EVENT_ID_ATLAS, MOVEMENT_WALK_LEFT)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_RIGHT)
     waitmovement(0)
     trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_TRAINER_1, msgbox(format("Well done but it is still too early to celebrate there still remains three more battles.")))
     namebox("Haakon")
@@ -336,8 +336,8 @@ script NPC_BARBGYM_BARBARIAN_2
     msgbox(format("Let us make this short.\pI must go back out and protect the stronghold from outsiders."))
     hidenamebox
     closemessage
-    applymovement(OBJ_EVENT_ID_LITARA, Movement_WALKLEFT)
-    applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
+    applymovement(OBJ_EVENT_ID_LITARA, MOVEMENT_WALK_LEFT)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_RIGHT)
     waitmovement(0)
     trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_TRAINER_2, msgbox(format("If you win this I may allow you access to our stronghold.")))
     namebox("Haakon")
@@ -371,13 +371,13 @@ script NPC_BARBGYM_BARBARIAN_2
 
     msgbox(format("HAAKON!{PAUSE 15} HAAKON!{PAUSE 15} HAAKON!"))
     delay(15)
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACELEFT)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_FACE_LEFT)
     waitmovement(0)
     namebox("Haakon")
     msgbox(format("I hope you are ready {PLAYER} since I am the second strongest of our village."))
     hidenamebox
     closemessage
-    applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_RIGHT)
     waitmovement(0)
     namebox("Haakon")
     msgbox(format("YARRRRRGGGHHHH!"))
@@ -392,7 +392,7 @@ script NPC_BARBGYM_BARBARIAN_2
 
     call (ContestHall_EventScript_VObjectAudienceLookAround)
 
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_FACEDOWN)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_FACE_DOWN)
     waitmovement(0)
     namebox("Haakon")
     msgbox(format("They have done it my brother and sisters!\pThey have bested all of us.\pAll that remains between them and their Gym Badge is the one and only one of the strongest in all of the MvM Championships!\pGive it up for our Chieftain… {PAUSE 15}GUNTHOR!!!"))
@@ -443,7 +443,7 @@ script NPC_BARBGYM_BARBARIAN_2
     playbgm(MUS_PS_BARBARIAN_VILLAGE, 0)
     savebgm(MUS_PS_BARBARIAN_VILLAGE)
 
-    applymovement(OBJ_EVENT_ID_HAAKON, Movement_WALKDOWN)
+    applymovement(OBJ_EVENT_ID_HAAKON, MOVEMENT_WALK_DOWN)
     waitmovement(0)
 
     namebox("Haakon")
@@ -466,35 +466,35 @@ script NPC_BARBGYM_BARBARIAN_2
 
 
 
-movement Movement_FACEUP
+movement MOVEMENT_FACE_UP
 {
 	face_up
 }  
-movement Movement_FACELEFT
+movement MOVEMENT_FACE_LEFT
 {
 	face_left
 }  
-movement Movement_FACERIGHT
+movement MOVEMENT_FACE_RIGHT
 {
 	face_right
 }  
-movement Movement_FACEDOWN
+movement MOVEMENT_FACE_DOWN
 {
 	face_down
 }  
-movement Movement_WALKUP
+movement MOVEMENT_WALK_UP
 {
     walk_up
 }
-movement Movement_WALKLEFT
+movement MOVEMENT_WALK_LEFT
 {
     walk_left
 }
-movement Movement_WALKRIGHT
+movement MOVEMENT_WALK_RIGHT
 {
     walk_right
 }
-movement Movement_WALKDOWN
+movement MOVEMENT_WALK_DOWN
 {
     walk_down
 }

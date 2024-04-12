@@ -142,7 +142,7 @@ QUEST_ALKHARID_GYM_1::
 	msgbox QUEST_ALKHARID_GYM_1_Text_4
 	closemessage
 	hidenamebox
-	applymovement 1, Movement_WALKDOWN
+	applymovement 1, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	namebox QUEST_ALKHARID_GYM_1_Text_5
@@ -176,7 +176,7 @@ QUEST_ALKHARID_GYM_1_2:
 	msgbox QUEST_ALKHARID_GYM_1_Text_2
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	return
 
@@ -427,7 +427,7 @@ GYM_NPC_7_7:
 	goto_if_eq GYM_NPC_7_14
 	applymovement 10, Movement_AlkharidGym_NPC_7
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT
 	waitmovement 0
 	namebox CHECK_IF_ALI_Text_0
 	msgbox GYM_ALKHARID_TRAINER_1_Text_1
@@ -458,7 +458,7 @@ GYM_NPC_7_14:
 	applymovement 10, Movement_AlkharidGym_NPC_7
 	applymovement 11, Movement_AlkharidGym_NPC_7_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT
 	waitmovement 0
 	namebox CHECK_IF_ALI_Text_0
 	msgbox GYM_ALKHARID_TRAINER_1_Text_1
@@ -470,9 +470,9 @@ GYM_NPC_7_14:
 	msgbox GYM_NPC_7_Text_1
 	closemessage
 	hidenamebox
-	applymovement 11, Movement_WALKDOWN
+	applymovement 11, MOVEMENT_WALK_DOWN
 	waitmovement 0
-	applymovement 11, Movement_FACEUP
+	applymovement 11, MOVEMENT_FACE_UP
 	waitmovement 0
 	release
 	end
@@ -511,7 +511,7 @@ GYM_NPC_8_7:
 	goto_if_eq GYM_NPC_8_14
 	applymovement 9, Movement_AlkharidGym_NPC_8
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP
 	waitmovement 0
 	namebox CHECK_IF_ALI_Text_0
 	msgbox GYM_ALKHARID_TRAINER_1_Text_1
@@ -542,7 +542,7 @@ GYM_NPC_8_14:
 	applymovement 9, Movement_AlkharidGym_NPC_8
 	applymovement 11, Movement_AlkharidGym_NPC_8_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP
 	waitmovement 0
 	namebox CHECK_IF_ALI_Text_0
 	msgbox GYM_ALKHARID_TRAINER_1_Text_1
@@ -554,9 +554,9 @@ GYM_NPC_8_14:
 	msgbox GYM_NPC_7_Text_1
 	closemessage
 	hidenamebox
-	applymovement 11, Movement_WALKRIGHT
+	applymovement 11, MOVEMENT_WALK_RIGHT
 	waitmovement 0
-	applymovement 11, Movement_FACELEFT
+	applymovement 11, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	release
 	end

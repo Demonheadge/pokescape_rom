@@ -54,7 +54,7 @@ SKOTIZO_TRIGGER_2:
 
 SKOTIZO_TRIGGER_5:
 	lock
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP
 	waitmovement 0
 	msgbox SKOTIZO_TRIGGER_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 0

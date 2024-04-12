@@ -551,14 +551,14 @@ script RAC_QUEST_START
 {
     lock
     //move
-    applymovement(LOCALID_Mord, Movement_InteractRIGHT)
+    applymovement(LOCALID_Mord, MOVEMENT_INTERACT_RIGHT)
     waitmovement(0)
     namebox ("Mord Gunnars")
     msgbox(format("JJATIZSO artists are better!"))
     closemessage
     hidenamebox
     //move
-    applymovement(LOCALID_Maria, Movement_InteractLEFT)
+    applymovement(LOCALID_Maria, MOVEMENT_INTERACT_LEFT)
     waitmovement(0)
     namebox ("Maria Gunnars")
     msgbox(format("No NEITIZNOT artists are better!"))
@@ -589,7 +589,7 @@ script RAC_QUEST_START_P1
     //move
     closemessage
     hidenamebox
-    applymovement(LOCALID_Mord, Movement_InteractRIGHT)
+    applymovement(LOCALID_Mord, MOVEMENT_INTERACT_RIGHT)
     waitmovement(0)
     namebox ("Mord Gunnars")
     msgbox(format("Clearly JATIZSO artists are better!"))
@@ -597,7 +597,7 @@ script RAC_QUEST_START_P1
     closemessage
     hidenamebox
 
-    applymovement(LOCALID_Maria, Movement_InteractLEFT)
+    applymovement(LOCALID_Maria, MOVEMENT_INTERACT_LEFT)
     waitmovement(0)
     namebox ("Maria Gunnars")
     msgbox(format("No clearly NEITZNOT artists are better!!"))
@@ -610,7 +610,7 @@ script RAC_QUEST_START_P1
     {
         case 0:
             closemessage
-            applymovement(LOCALID_Mord, Movement_InteractRIGHT)
+            applymovement(LOCALID_Mord, MOVEMENT_INTERACT_RIGHT)
             waitmovement(0)
             namebox ("Mord Gunnars")
             msgbox(format("Ha! I told you JATIZSO artists were better!"))
@@ -624,7 +624,7 @@ script RAC_QUEST_START_P1
             //goto(BANK_HEAL)
         case 1:
             closemessage
-            applymovement(LOCALID_Maria, Movement_InteractLEFT)
+            applymovement(LOCALID_Maria, MOVEMENT_INTERACT_LEFT)
             waitmovement(0)
             namebox ("Maria Gunnars")
             msgbox(format("Ha! I told you NEITIZNOT artists were better!"))
@@ -826,7 +826,7 @@ script RAC_QUEST_JATIZSO_ELEJ_P1
             closemessage
             hidenamebox
 
-            applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractUP)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_UP)
             waitmovement(0)
 
             namebox ("Elej")
@@ -1067,58 +1067,58 @@ script RAC_QUEST_JATIZSO_JAGEX_P1 {
         if (var(VAR_POKESCAPE_RAC_QUEST_JAGEXMODS) == 0)
         {
             lock
-            applymovement(DRAGON_ID, Movement_InteractUP)
+            applymovement(DRAGON_ID, MOVEMENT_INTERACT_UP)
             namebox ("Madame Dragon")
             msgbox(format("Wow, Eterna has really outdone herself with this piece.\pIt is so tasteful!"))
             closemessage
             waitmovement(0)
-            applymovement(BATS_ID, Movement_InteractUP)
+            applymovement(BATS_ID, MOVEMENT_INTERACT_UP)
             namebox ("Bats")
             msgbox(format("I agree, it is just so…{PAUSE 15} TASTEFUL!"))
             closemessage
             waitmovement(0)
-            applymovement(DRAGON_ID, Movement_InteractUP)
+            applymovement(DRAGON_ID, MOVEMENT_INTERACT_UP)
             namebox ("Madame Dragon")
             msgbox(format("We should send her some wine."))
             closemessage
             waitmovement(0)
-            applymovement(BATS_ID, Movement_InteractUP)
+            applymovement(BATS_ID, MOVEMENT_INTERACT_UP)
             namebox ("Bats")
             msgbox(format("That wine better be…{PAUSE 15} TASTEFUL!"))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(DRAGON_ID, Movement_InteractUP)
+            applymovement(DRAGON_ID, MOVEMENT_INTERACT_UP)
             namebox ("Madame Dragon")
             msgbox(format("Of course, it will be as tasteful as this painting!"))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(BATS_ID, Movement_InteractUP)
+            applymovement(BATS_ID, MOVEMENT_INTERACT_UP)
             namebox ("Bats")
             msgbox(format("…{PAUSE 15} TASTY!"))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(DRAGON_ID, Movement_InteractRIGHT)
+            applymovement(DRAGON_ID, MOVEMENT_INTERACT_RIGHT)
             namebox ("Madame Dragon")
             msgbox(format("Bats do me a solid and fly over to Neitiznot to drop it off to her."))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(BATS_ID, Movement_InteractLEFT)
+            applymovement(BATS_ID, MOVEMENT_INTERACT_LEFT)
             namebox ("Bats")
             msgbox(format("…{PAUSE 15} I can not do that.\pThe Art Fight rules prevents that."))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(DRAGON_ID, Movement_InteractRIGHT)
+            applymovement(DRAGON_ID, MOVEMENT_INTERACT_RIGHT)
             namebox ("Madame Dragon")
             msgbox(format("How can we give her this tasteful wine then?"))
             closemessage
             hidenamebox
             waitmovement(0)
-            applymovement(BATS_ID, Movement_InteractLEFT)
+            applymovement(BATS_ID, MOVEMENT_INTERACT_LEFT)
             namebox ("Bats")
             msgbox(format("…{PAUSE 15} We would require one that is able to sneak stealthly into Neitiznot.\pI cannot do that for my armour makes too much noise."))
             closemessage
@@ -1205,7 +1205,7 @@ script RAC_QUEST_JATIZSO_JAGEX_P2 { //JACKIE
             msgbox(format("What do you want?\p…\pYes, I am Jackie.\pAlthough I hate being refered to as that.\pWhat can I do for you?"))
             closemessage
             hidenamebox
-            applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractUP)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_UP)
             waitmovement(0)
             namebox ("Jackson")
             msgbox(format("Getting into Neitiznot is dangerous for someone who is associated with Jatizso even if just slightly.\pBut I suppose I could help you.\pOn one condition that is."))
@@ -1270,7 +1270,7 @@ script RAC_QUEST_JATIZSO_JAGEX_P3_TRIGGER { //MORGAN
         {
             checkitem(ITEM_ABYSSAL_WHIP, 1)
             if (var(VAR_RESULT)){
-                applymovement(MORGAN_ID, Movement_InteractLEFT)
+                applymovement(MORGAN_ID, MOVEMENT_INTERACT_LEFT)
                 waitmovement(0)
 				namebox ("Morgan")
 				msgbox(format("STUPID NEITIZNOTS!"))

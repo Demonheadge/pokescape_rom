@@ -53,7 +53,7 @@ TRIGGER_VARROCK_GYM_ADVISOR_5:
 	applymovement 2, Movement_InteractFACEPLAYER
 	waitmovement 0
 	call QUEST_VARROCK_GYM_1
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	release
 	end
@@ -64,7 +64,7 @@ TRIGGER_VARROCK_GYM_ADVISOR_8:
 	applymovement 2, Movement_InteractFACEPLAYER
 	waitmovement 0
 	call QUEST_VARROCK_GYM_2
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	release
 	end
@@ -355,7 +355,7 @@ VARROCK_GYM_BOOK_3_2:
 VARROCK_GYM_BOOK_3_4:
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractFACEDOWN
-	applymovement 9, Movement_WALKUP
+	applymovement 9, MOVEMENT_WALK_UP
 	waitmovement 0
 	namebox VARROCK_GYM_BOOK_3_Text_0
 	msgbox VARROCK_GYM_BOOK_3_Text_1
@@ -365,7 +365,7 @@ VARROCK_GYM_BOOK_3_4:
 	msgbox VARROCK_GYM_BOOK_3_Text_3
 	hidenamebox
 	closemessage
-	applymovement 9, Movement_WALKDOWN
+	applymovement 9, MOVEMENT_WALK_DOWN
 	waitmovement 0
 	applymovement 9, Movement_InteractFACERIGHT
 	waitmovement 0

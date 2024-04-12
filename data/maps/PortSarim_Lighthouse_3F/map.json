@@ -28,7 +28,7 @@
       "flag": "FLAG_TEMP_1F"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_BABE",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_PATTY",
       "x": 6,
       "y": 11,
       "elevation": 3,
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LIGHTHOUSE_HAM_BABE",
+      "script": "LIGHTHOUSE_HAM_PATTY",
       "flag": "FLAG_TEMP_1E"
     },
     {
@@ -142,7 +142,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "TRIGGER_LIGHTHOUSE_HAM_PATTY"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "TRIGGER_LIGHTHOUSE_HAM_PATTY"
+    }
   ],
   "bg_events": [
     {

@@ -50,7 +50,7 @@ GYM_NPC_3_7:
 	goto_if_eq GYM_NPC_3_14
 	applymovement 3, Movement_AlkharidGym_NPC_3
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
@@ -62,9 +62,9 @@ GYM_NPC_3_7:
 	closemessage
 	hidenamebox
 	setflag FLAG_ALKHARIDGYM_2
-	applymovement 3, Movement_WALKDOWN
+	applymovement 3, MOVEMENT_WALK_DOWN
 	waitmovement 0
-	applymovement 3, Movement_FACEUP
+	applymovement 3, MOVEMENT_FACE_UP
 	waitmovement 0
 	release
 	end
@@ -85,7 +85,7 @@ GYM_NPC_3_14:
 	applymovement 3, Movement_AlkharidGym_NPC_3
 	applymovement 1, Movement_AlkharidGym_NPC_3_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
@@ -97,9 +97,9 @@ GYM_NPC_3_14:
 	msgbox GYM_NPC_3_Text_4
 	closemessage
 	hidenamebox
-	applymovement 3, Movement_WALKDOWN
+	applymovement 3, MOVEMENT_WALK_DOWN
 	waitmovement 0
-	applymovement 3, Movement_FACEUP
+	applymovement 3, MOVEMENT_FACE_UP
 	waitmovement 0
 	release
 	end
@@ -138,7 +138,7 @@ GYM_NPC_4_7:
 	goto_if_eq GYM_NPC_4_14
 	applymovement 2, Movement_AlkharidGym_NPC_4
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
@@ -171,7 +171,7 @@ GYM_NPC_4_14:
 	applymovement 2, Movement_AlkharidGym_NPC_4
 	applymovement 1, Movement_AlkharidGym_NPC_4_Ali
 	delay 60
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT
 	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
@@ -183,9 +183,9 @@ GYM_NPC_4_14:
 	msgbox GYM_NPC_3_Text_4
 	closemessage
 	hidenamebox
-	applymovement 1, Movement_WALKDOWN
+	applymovement 1, MOVEMENT_WALK_DOWN
 	waitmovement 0
-	applymovement 1, Movement_FACEUP
+	applymovement 1, MOVEMENT_FACE_UP
 	waitmovement 0
 	release
 	end

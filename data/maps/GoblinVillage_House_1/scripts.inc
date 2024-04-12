@@ -30,13 +30,13 @@ NPC_GOBLINVILLAGE_PICKAXE_EVENT::
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Goblin_1
 	waitmovement 0
-	applymovement 2, Movement_InteractLEFT
+	applymovement 2, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_0
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_1
 	hidenamebox
 	closemessage
-	applymovement 1, Movement_InteractRIGHT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_2
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_3
@@ -49,7 +49,7 @@ NPC_GOBLINVILLAGE_PICKAXE_EVENT::
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_4
 	hidenamebox
 	closemessage
-	applymovement 1, Movement_InteractRIGHT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_2
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_5
@@ -60,7 +60,7 @@ NPC_GOBLINVILLAGE_PICKAXE_EVENT::
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_6
 	hidenamebox
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractUP
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_UP
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_0
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_7
@@ -82,24 +82,24 @@ NPC_GOBLINVILLAGE_PICKAXE_EVENT::
 	hidenamebox
 	closemessage
 	release
-	applymovement 1, Movement_InteractRIGHT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_2
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_11
 	hidenamebox
 	closemessage
-	applymovement 2, Movement_InteractLEFT
+	applymovement 2, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_0
 	msgbox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_12
 	hidenamebox
 	closemessage
 	release
-	applymovement 1, Movement_InteractRIGHT
-	applymovement 2, Movement_InteractLEFT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
+	applymovement 2, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
-	applymovement 1, Movement_InteractRIGHT
-	applymovement 2, Movement_InteractLEFT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
+	applymovement 2, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	applymovement 3, Movement_InteractFACEPLAYER
 	waitmovement 0
@@ -223,7 +223,7 @@ NPC_GOBLINVILLAGE_CHOOSEPICKAXE_8:
 	addobject 5
 	applymovement 5, Movement_InteractFACEUP
 	waitmovement 0
-	applymovement 5, Movement_InteractUP
+	applymovement 5, MOVEMENT_INTERACT_UP
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_CHOOSEPICKAXE_Text_5
 	msgbox NPC_GOBLINVILLAGE_CHOOSEPICKAXE_Text_6
@@ -261,25 +261,25 @@ NPC_GOBLINVILLAGE_CHOOSEPICKAXE_11:
 	goto NPC_GOBLINVILLAGE_CHOOSEPICKAXE_1
 
 
-Movement_InteractLEFT:
+MOVEMENT_INTERACT_LEFT:
 	walk_in_place_left
 	walk_in_place_left
 	walk_in_place_left
 	step_end
 
-Movement_InteractRIGHT:
+MOVEMENT_INTERACT_RIGHT:
 	walk_in_place_right
 	walk_in_place_right
 	walk_in_place_right
 	step_end
 
-Movement_InteractDOWN:
+MOVEMENT_INTERACT_DOWN:
 	walk_in_place_down
 	walk_in_place_down
 	walk_in_place_down
 	step_end
 
-Movement_InteractUP:
+MOVEMENT_INTERACT_UP:
 	walk_in_place_up
 	walk_in_place_up
 	walk_in_place_up
@@ -327,13 +327,13 @@ Movement_Goblin_1:
 
 NPC_GOBLINCHEIFS::
 	lockall
-	applymovement 2, Movement_InteractLEFT
+	applymovement 2, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_0
 	msgbox NPC_GOBLINCHEIFS_Text_0
 	hidenamebox
 	closemessage
-	applymovement 1, Movement_InteractRIGHT
+	applymovement 1, MOVEMENT_INTERACT_RIGHT
 	waitmovement 0
 	namebox NPC_GOBLINVILLAGE_PICKAXE_EVENT_Text_2
 	msgbox NPC_GOBLINCHEIFS_Text_1

@@ -4,7 +4,7 @@ mapscripts PortSarim_Lighthouse_3F_MapScripts {
     }
 } 
 
-const OBJ_EVENT_ID_BABE = 2
+const OBJ_EVENT_ID_PATTY = 2
 const OBJ_EVENT_ID_WORMBRAIN = 1
 const OBJ_EVENT_ID_MAP = 9
 
@@ -22,6 +22,7 @@ script LIGHTHOUSE_3F_STATE {
         clearflag(FLAG_TEMP_1F)
         removeobject(OBJ_EVENT_ID_MAP)
         setflag(FLAG_TEMP_F)
+        setvar(VAR_TEMP_0, 1) //sets floor trigger
     }
     else {
         removeobject(4)
@@ -45,7 +46,15 @@ script LIGHTHOUSE_3F_STATE {
 script LIGHTHOUSE_3F_NPC_1
 {
     //namebox ("")
-	msgbox(format("The guard looks like they're struggling to hold the HAM member off."))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("The guard looks like they're struggling to hold the HAM member off."))
+    }
+    else { //not guard captian but oh well
+        lock
+        faceplayer
+        namebox ("Guard Captain")
+        msgbox(format("The lighthouse is for authorized personnel only.\pBut if want to know more about it, basically we go up there every night and light a bonfire to help ships find thier way."))
+    }
     closemessage
     //hidenamebox
 	release
@@ -65,9 +74,17 @@ script LIGHTHOUSE_3F_NPC_2
 script LIGHTHOUSE_3F_NPC_3
 {
     //namebox ("")
-	msgbox(format("The guard hurriedly points to the nearby HAM members."))
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
+	    msgbox(format("The guard hurriedly points to the nearby HAM members.")) 
+    }
+    else {
+        lock
+        faceplayer
+        namebox ("Guard Captain")
+        msgbox(format("The lighthouse is for authorized personnel only.\pBut if want to know more about it, basically we go up there every night and light a bonfire to help ships find thier way."))
+    }
     closemessage
-    //hidenamebox
+    hidenamebox
 	release
 	end
 }
@@ -96,34 +113,44 @@ script BATTLE_LIGHTHOUSE_3F_TRAINER_1
 
 //NOT CODED IN THE ADMIN FIGHT AS UNSURE HOW YOU WANT TO DO THIS - DO YOU WANT IT AS BACK TO BACK FIGHTS, OR A DOUBLE BATTLE?
 
-
-
-
-script LIGHTHOUSE_HAM_BABE
+script TRIGGER_LIGHTHOUSE_HAM_PATTY
 {
-    namebox ("Babe")
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	if (var(VAR_TEMP_2) == 11){
+		applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALKLEFT)
+	} elif (var(VAR_TEMP_2) == 12){
+		applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_4)
+	}
+    waitmovement(0)
+    goto(LIGHTHOUSE_HAM_PATTY)
+}
+
+
+script LIGHTHOUSE_HAM_PATTY
+{
+    namebox ("Patty")
+    applymovement(OBJ_EVENT_ID_PATTY, MOVEMENT_INTERACT_LEFT)
 	msgbox(format("Give me the map you stupid Goblin!"))
-    applymovement(OBJ_EVENT_ID_BABE, Movement_InteractFACELEFT)
     waitmovement(0)
     namebox ("Wormbrain")
-	msgbox(format("Only if you pay me 10,000 GP."))
-    applymovement(OBJ_EVENT_ID_WORMBRAIN, Movement_InteractFACERIGHT)
+    applymovement(OBJ_EVENT_ID_WORMBRAIN, MOVEMENT_INTERACT_RIGHT)
+	msgbox(format("If human want map, then human must pay Wormbrain 10,000GP."))
     waitmovement(0)
-    namebox ("Babe")
-	msgbox(format("What no one has that kind of money!"))
+    namebox ("Patty")
+	msgbox(format("You must be joking…"))
     namebox ("Wormbrain")
-	msgbox(format("No map for pink lady then.\pOnly way you can get map is if you take it from me.\pBut I in jail cell, you cannot reach me."))
-    namebox ("Babe")
-	msgbox(format("…\pYou're not in a jail cell anymore."))
+	msgbox(format("Wormbrain never joke if pink human want map, then pink human must pay Wormbrain 10,000GP."))
+    namebox ("Patty")
+	msgbox(format("How about I just take it from you instead, hows that sound?"))
     namebox ("Wormbrain")
-	msgbox(format("…"))
-    namebox ("Babe")
-	msgbox(format("Taste this telekentic fist!"))
+	msgbox(format("Wormbrain think human is funny, would like to see human try."))
+    namebox ("Patty")
+	msgbox(format("Have it your way then goblin.\pGet a taste of this Wind Blast!"))
 
 //apllymovement, punches goblin back 2 spots.
 //drops map as item
     waitmovement(OBJ_EVENT_ID_WORMBRAIN)
-    applymovement(OBJ_EVENT_ID_BABE, MOVEMENT_DraynorManorCrypt_COUNT_3)
+    applymovement(OBJ_EVENT_ID_PATTY, MOVEMENT_DraynorManorCrypt_COUNT_3)
     playse(SE_WALL_HIT)
     applymovement(OBJ_EVENT_ID_WORMBRAIN, MOVEMENT_DraynorManorCrypt_HAM_3)
     waitmovement(OBJ_EVENT_ID_WORMBRAIN)
@@ -135,25 +162,74 @@ script LIGHTHOUSE_HAM_BABE
     clearflag(FLAG_TEMP_F)
 
     
-    namebox ("Babe")
-	msgbox(format("I'll be taking that you stupid goblin."))
-    applymovement(OBJ_EVENT_ID_BABE, MOVEMENT_WALKLEFT)
+    namebox ("Patty")
+	msgbox(format("I'll be taking that map peice now."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PATTY, MOVEMENT_WALKLEFT)
     waitmovement(0)
+    delay(32)
+    namebox ("Patty")
+	msgbox(format("Ew such a disgusting goblin, I don't want to go near you.\pSo I won't I'll just telekentic grab it from here."))
+    closemessage
+    hidenamebox
     removeobject(OBJ_EVENT_ID_MAP)
     setflag(FLAG_TEMP_F)
     delay(60)
-    applymovement(OBJ_EVENT_ID_BABE, Movement_InteractFACEPLAYER)
+    namebox ("Patty")
+	msgbox(format("Map peice retrieved, time to head out."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PATTY, movement_WALKRIGHT)
     waitmovement(0)
     //picks up map turns and faces player.
-    namebox ("Babe")
-	msgbox(format("Wait who are you?\pYou want to battle bring it!"))
+    namebox ("Patty")
+	msgbox(format("Hey who are you?\pGrunts who let this one up here?!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_LEFT)
+    waitmovement(0)
+    msgbox(format("Monster sympathiser?\pAre you here to stop me?\pOr maybe you just want the map piece.\pIt matters not, this map goes to a place called Crandor, we the Humans Against Monsters simply won't let you have it."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_LEFT)
+    waitmovement(0)
+    namebox ("Patty")
+	msgbox(format("Oh you want it that bad?\pWell lets see how much you want it!!"))
+    closemessage
+    hidenamebox
 
     //BATTLES
-    trainerbattle_no_intro(TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_BABE, format("Who are you?\pAt least I have the map peice.") )
+    trainerbattle_no_intro(TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_PATTY, format("Why do you even want the map peice?") )
+    namebox ("Patty")
+	msgbox(format("Fine, take it…"))
+    hidenamebox
+    closemessage
+    giveitem(ITEM_FROGEEL_BURGER, 1) // MAP PEICE
+    namebox ("Patty")
+	msgbox(format("You may have won this time but you cannot stop the grand ambitions of H.A.M.\pWe fight against the scourge that is monsters.\pFight us and you fight against the people."))
+    closemessage
+    hidenamebox
 
-
-    namebox ("Babe")
-	msgbox(format("This cannot be, take the map for now but we will be back for it later.\pI won't forget you!\pTime to go everyone!"))
+    applymovement(OBJ_EVENT_ID_PATTY, movement_WALKRIGHT)
+    //moves player aside
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
+    waitmovement(0)
+    namebox ("Patty")
+	msgbox(format("GRUNTS!!"))
+    hidenamebox
+    closemessage
+    //Grunts walk over
+    
+    applymovement(5, MOVEMENT_FACE_UP)
+    applymovement(4, Movement_lighthouse_ham_5)
+    waitmovement(0)
+    namebox ("H.A.M Grunt")
+	msgbox(format("Yes ma'am!"))
+    namebox ("Patty")
+	msgbox(format("We're heading out, plan A is ruined, were going with plan B.\pBabe will fix things in the maze, meanwhile we head for Musa Point on Karamja."))
+    applymovement(OBJ_EVENT_ID_PATTY, Movement_InteractFACEPLAYER)
+    waitmovement(0)
+    namebox ("Patty")
+	msgbox(format("Dont meddle with us again if you know whats good for you.\pWe serve the populace of Gielinor by ridding it of monsters, opposing us means opposing the natural order."))
     closemessage
     hidenamebox
     //fadescreen black
@@ -168,10 +244,10 @@ script LIGHTHOUSE_HAM_BABE
     setflag(FLAG_TEMP_1E)
     removeobject(7)
     setflag(FLAG_TEMP_1D)
-    setobjectmovementtype(5, MOVEMENT_TYPE_FACE_LEFT)
-    setobjectxyperm(5, 8, 11)
-    setobjectxy(5, 8, 11)
-    applymovement(5, Movement_InteractFACELEFT)
+    setobjectmovementtype(5, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectxyperm(5, 7, 11)
+    setobjectxy(5, 7, 11)
+    applymovement(5, MOVEMENT_INTERACT_DOWN)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT)
     waitmovement(0)
@@ -179,19 +255,24 @@ script LIGHTHOUSE_HAM_BABE
     
     
     //Guard walks over to the player.
-    namebox ("Guard")
-	msgbox(format("Thank you for assisting us in repelling HAM.\pThey've been very organised as of late.\pI'm not sure what they are after.\pBut here take this for helping us out."))
+    namebox ("Guard Captain")
+	msgbox(format("Thank you for assisting us in repelling H.A.M.\pThey've been very organised as of late.\pI'm not sure what they are after.\pBut here take this for helping us out."))
+    closemessage
+    hidenamebox
+    giveitem(ITEM_TM62, 1)
+    closemessage
     //Gives and ITEM or TM or something.
-    namebox ("Guard")
-	msgbox(format("Come on Goblin, back to your cell."))
-    namebox ("WORM GOBLIN")
+    applymovement(5, Movement_lighthouse_ham_0)
+    waitmovement(0)
+    namebox ("Guard Captain")
+	msgbox(format("Come on goblin, back to your cell."))
+    namebox ("Wormbrain")
 	msgbox(format("Me think me nose is broken…"))
     closemessage
     hidenamebox
     //Guard and goblin leave.
-    applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
-    applymovement(5, Movement_lighthouse_ham_0)
-    waitmovement(0)
+    //applymovement(OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3)
+    
     applymovement(5, Movement_lighthouse_ham_1)
     applymovement(OBJ_EVENT_ID_WORMBRAIN, Movement_lighthouse_ham_2)
     waitmovement(0)
@@ -200,6 +281,7 @@ script LIGHTHOUSE_HAM_BABE
     setflag(FLAG_TEMP_1F)
 
     setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 105) //LIGHTHOUSE EVENT FINISHED
+    setvar(VAR_TEMP_0, 0)
     call(LIGHTHOUSE_3F_STATE)
     
     
@@ -210,7 +292,7 @@ script LIGHTHOUSE_HAM_BABE
 
 movement Movement_lighthouse_ham_0
 {
-    walk_left * 4
+    walk_left * 3
 } 
 movement Movement_lighthouse_ham_1
 {
@@ -230,8 +312,23 @@ movement Movement_lighthouse_ham_3
     lock_facing_direction
     walk_down
 } 
-
+movement Movement_lighthouse_ham_4
+{
+    walk_left
+    walk_up
+    face_left
+} 
+movement Movement_lighthouse_ham_5
+{
+    walk_left * 3
+} 
 
 movement Movement_punchGoblin {
     walk_in_place_faster_down
 }
+
+
+
+
+
+

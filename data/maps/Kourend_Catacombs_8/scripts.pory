@@ -38,7 +38,7 @@ script SKOTIZO_TRIGGER {
     checkitem(ITEM_DARK_TOTEM, 1)
         if (var(VAR_RESULT)) {
             lock
-            applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP)
             waitmovement(0)
             msgbox(format("The Dark Totem in your backpack starts to react to the crystal.\pWould you like to use it?"), MSGBOX_YESNO)
             if (var(VAR_RESULT)){

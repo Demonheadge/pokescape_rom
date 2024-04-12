@@ -312,7 +312,7 @@ NPC_ROUTE12_Goblin_1::
 	msgbox NPC_ROUTE12_Goblin_1_Text_1
 	hidenamebox
 	closemessage
-	applymovement 6, Movement_FACEDOWN
+	applymovement 6, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	release
 	end

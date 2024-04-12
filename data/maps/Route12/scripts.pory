@@ -382,7 +382,7 @@ script NPC_ROUTE12_Goblin_1{
     msgbox(format("Go away human.\pGoblin cooking."))
     hidenamebox
 	closemessage
-	applymovement (6,Movement_FACEDOWN)
+	applymovement (6,MOVEMENT_FACE_DOWN)
 	waitmovement(0)
 	release
 	end
