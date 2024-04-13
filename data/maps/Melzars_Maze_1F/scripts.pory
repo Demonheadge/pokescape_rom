@@ -231,16 +231,22 @@ script MELZARS_LOCKED_DOOR_B1F_2 {
 }
 
 script MELZARS_LOCKED_DOOR_B1F_3 {
-	if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
-		setmetatile (10, 5, 849, 0)
-		setmetatile (10, 7, 121, 0)
-		special(DrawWholeMapView) 
-	} 
+	if (var(VAR_TEMP_E) == 1) {
+		if (var(VAR_POKESCAPE_MELZARS_MAZE_DOORS) == 3) { //If you have  b1f key.
+			setmetatile (10, 5, 849, 0)
+			setmetatile (10, 7, 121, 0)
+			special(DrawWholeMapView) 
+		} 
+		else {
+			msgbox(format("You need a green key to unlock this door."))
+			closemessage
+		}
+	}
 	else {
-		msgbox(format("You need a green key to unlock this door."))
+		msgbox(format("The door appears to be locked from this side."))
 		closemessage
 	}
-	end
+	return
 }
 
 

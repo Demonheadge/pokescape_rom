@@ -39,6 +39,7 @@ LIGHTHOUSE_3F_STATE_2:
 	removeobject 9
 	setflag FLAG_TEMP_F
 	setvar VAR_TEMP_0, 1
+	special Overworld_PlaySpecialMapMusic
 	goto LIGHTHOUSE_3F_STATE_1
 
 
@@ -303,6 +304,7 @@ Movement_lighthouse_ham_3:
 	face_up
 	lock_facing_direction
 	walk_down
+	unlock_facing_direction
 	step_end
 
 Movement_lighthouse_ham_4:

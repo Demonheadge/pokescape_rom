@@ -5931,6 +5931,21 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_3F_HAM_ADMIN_
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARSMAZE_HAM_ADMIN_BABE[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_PIG_PACK_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_MELZARSMAZE_MELZAR_THE_MAD[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_CABBAGE,
+    }
+};
 
 
 

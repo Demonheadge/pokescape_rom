@@ -2,7 +2,7 @@
   "id": "MAP_MELZARS_MAZE_B1F",
   "name": "Melzars_Maze_B1F",
   "layout": "LAYOUT_MELZARS_MAZE_B1F",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,15 +24,15 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Melzar_Maze_B1F_MelzarTheMad",
+      "flag": "FLAG_TEMP_1C"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_PATTY",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_BABE",
       "x": 14,
       "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -50,21 +50,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Melzar_Maze_B1F_HAM_GRUNT_1",
       "flag": "FLAG_TEMP_1D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_IMP",
-      "x": 13,
+      "x": 12,
       "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
@@ -78,6 +78,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Melzar_Maze_B1F_GREEN_KEY",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
+      "x": 19,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Melzar_Maze_B1F_HAM_GRUNT_4",
+      "flag": "FLAG_TEMP_1D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
+      "x": 17,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Melzar_Maze_B1F_HAM_GRUNT_2",
+      "flag": "FLAG_TEMP_1D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Melzar_Maze_B1F_HAM_GRUNT_3",
+      "flag": "FLAG_TEMP_1D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1A"
     }
   ],
   "warp_events": [
@@ -99,21 +151,48 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 10,
+      "x": 9,
       "y": 8,
       "elevation": 0,
       "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var_value": "1",
+      "script": "TRIGGER_Melzar_Maze_HAM_EVENT_MELZAR"
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 9,
       "y": 9,
       "elevation": 0,
       "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var_value": "1",
+      "script": "TRIGGER_Melzar_Maze_HAM_EVENT_MELZAR"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "1",
+      "script": "TRIGGER_Melzar_Maze_HAM_EVENT_BABE"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "1",
+      "script": "TRIGGER_Melzar_Maze_HAM_EVENT_BABE"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "1",
+      "script": "TRIGGER_Melzar_Maze_HAM_EVENT_BABE"
     }
   ],
   "bg_events": [

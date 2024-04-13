@@ -37,6 +37,8 @@ script JAILMAP_STATE {
         special(DrawWholeMapView)
         setobjectmovementtype(1, MOVEMENT_TYPE_JOG_IN_PLACE_LEFT)
         setobjectxyperm(1, 15, 3)
+        playbgm(MUS_PS_ENCOUNTER_HAM, TRUE)
+        special(Overworld_PlaySpecialMapMusic)
     }
     else {
         removeobject(7)

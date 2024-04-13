@@ -68,7 +68,7 @@ script ENCOUNTER_LESSERDEMON {
 	lock
 	faceplayer
     namebox ("Lesser Demon")
-	playmoncry(SPECIES_EKANS, 0)
+	playmoncry(SPECIES_DEMON_LESSER_OSRS_FORM, 0)
 	msgbox(format("GWARAKU!"))
 	waitmoncry
     hidenamebox

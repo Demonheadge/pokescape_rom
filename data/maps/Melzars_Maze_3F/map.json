@@ -2,7 +2,7 @@
   "id": "MAP_MELZARS_MAZE_3F",
   "name": "Melzars_Maze_3F",
   "layout": "LAYOUT_MELZARS_MAZE_3F",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

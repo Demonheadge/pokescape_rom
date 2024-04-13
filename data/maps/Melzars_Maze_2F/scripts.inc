@@ -13,6 +13,8 @@ MELZARS_2F_STATE::
 	goto_if_eq MELZARS_2F_STATE_2
 	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 106
 	goto_if_eq MELZARS_2F_STATE_2
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 107
+	goto_if_eq MELZARS_2F_STATE_2
 	removeobject 8
 	removeobject 3
 	setflag FLAG_TEMP_1D

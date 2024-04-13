@@ -53,7 +53,7 @@ ENCOUNTER_LESSERDEMON::
 	lock
 	faceplayer
 	namebox NPC_WIZARDSTOWER_LESSERDEMON_GATE_Text_1
-	playmoncry SPECIES_EKANS, 0
+	playmoncry SPECIES_DEMON_LESSER_OSRS_FORM, 0
 	msgbox ENCOUNTER_LESSERDEMON_Text_0
 	waitmoncry
 	hidenamebox

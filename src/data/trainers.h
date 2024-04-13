@@ -4768,6 +4768,35 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_3F_HAM_ADMIN_PATTY},
     },
 
+    [TRAINER_MELZARSMAZE_HAM_ADMIN_BABE] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HAM_ADMIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HAM,
+        .trainerPic = TRAINER_PIC_ham_babe,
+        .trainerName = _("BABE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_MELZARSMAZE_HAM_ADMIN_BABE),
+        .party = {.NoItemDefaultMoves = sParty_MELZARSMAZE_HAM_ADMIN_BABE},
+    },
+
+    [TRAINER_MELZARSMAZE_MELZAR_THE_MAD] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_NECROMANCER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerName = _("MELZAR"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_MELZARSMAZE_MELZAR_THE_MAD),
+        .party = {.NoItemDefaultMoves = sParty_MELZARSMAZE_MELZAR_THE_MAD},
+        .scaling = FALSE,
+    },
+    
 //CRANDOR
     [TRAINER_CRANDOR_SKELETON_1] =
     {

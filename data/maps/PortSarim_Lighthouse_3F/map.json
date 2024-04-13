@@ -2,7 +2,7 @@
   "id": "MAP_PORT_SARIM_LIGHTHOUSE_3F",
   "name": "PortSarim_Lighthouse_3F",
   "layout": "LAYOUT_PORT_SARIM_LIGHTHOUSE_3F",
-  "music": "MUS_PS_ENCOUNTER_HAM",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_PORT_SARIM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

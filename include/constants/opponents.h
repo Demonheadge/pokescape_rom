@@ -471,6 +471,9 @@
 #define TRAINER_CRANDOR_MOSS_GIANT_2 385
 #define TRAINER_CRANDOR_MOSS_GIANT_3 386
 
+#define TRAINER_MELZARSMAZE_MELZAR_THE_MAD 387
+#define TRAINER_MELZARSMAZE_HAM_ADMIN_BABE 388
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

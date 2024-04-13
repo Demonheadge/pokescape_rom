@@ -15,7 +15,7 @@ mapscripts Melzars_Maze_2F_MapScripts{
 
 
 script MELZARS_2F_STATE {
-	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106)) {
+	if ((var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 106) || (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 107)) {
 		addobject(8)
 		addobject(3)
 		clearflag(FLAG_TEMP_1D)

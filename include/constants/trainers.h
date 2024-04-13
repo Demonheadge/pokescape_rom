@@ -583,6 +583,8 @@
 #define TRAINER_CLASS_MOSS_GIANT        0x81
 #define TRAINER_CLASS_FIRE_GIANT        0x82
 #define TRAINER_CLASS_HAM_ADMIN			0x83
+#define TRAINER_CLASS_NECROMANCER		0x84
+#define TRAINER_CLASS_RUNECRAFTER		0x85
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

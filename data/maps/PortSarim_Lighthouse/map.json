@@ -2,7 +2,7 @@
   "id": "MAP_PORT_SARIM_LIGHTHOUSE",
   "name": "PortSarim_Lighthouse",
   "layout": "LAYOUT_PORT_SARIM_LIGHTHOUSE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_PORT_SARIM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

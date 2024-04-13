@@ -52,6 +52,8 @@ JAILMAP_STATE_5:
 	special DrawWholeMapView
 	setobjectmovementtype 1, MOVEMENT_TYPE_JOG_IN_PLACE_LEFT
 	setobjectxyperm 1, 15, 3
+	playbgm MUS_PS_ENCOUNTER_HAM, TRUE
+	special Overworld_PlaySpecialMapMusic
 	goto JAILMAP_STATE_4
 
 

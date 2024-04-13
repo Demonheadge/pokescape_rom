@@ -23,6 +23,7 @@ script LIGHTHOUSE_3F_STATE {
         removeobject(OBJ_EVENT_ID_MAP)
         setflag(FLAG_TEMP_F)
         setvar(VAR_TEMP_0, 1) //sets floor trigger
+        special(Overworld_PlaySpecialMapMusic)
     }
     else {
         removeobject(4)
@@ -311,6 +312,7 @@ movement Movement_lighthouse_ham_3
     face_up
     lock_facing_direction
     walk_down
+    unlock_facing_direction
 } 
 movement Movement_lighthouse_ham_4
 {

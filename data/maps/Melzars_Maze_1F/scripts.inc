@@ -272,14 +272,21 @@ MELZARS_LOCKED_DOOR_B1F_2_2:
 
 
 MELZARS_LOCKED_DOOR_B1F_3::
-	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	compare VAR_TEMP_E, 1
 	goto_if_eq MELZARS_LOCKED_DOOR_B1F_3_2
-	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	msgbox MELZARS_LOCKED_DOOR_B1F_3_Text_0
 	closemessage
 MELZARS_LOCKED_DOOR_B1F_3_1:
-	end
+	return
 
 MELZARS_LOCKED_DOOR_B1F_3_2:
+	compare VAR_POKESCAPE_MELZARS_MAZE_DOORS, 3
+	goto_if_eq MELZARS_LOCKED_DOOR_B1F_3_5
+	msgbox MELZARS_LOCKED_DOOR_1F_4_Text_0
+	closemessage
+	goto MELZARS_LOCKED_DOOR_B1F_3_1
+
+MELZARS_LOCKED_DOOR_B1F_3_5:
 	setmetatile 10, 5, 849, 0
 	setmetatile 10, 7, 121, 0
 	special DrawWholeMapView
@@ -379,6 +386,10 @@ MELZARS_LOCKED_DOOR_1F_1_Text_0:
 MELZARS_LOCKED_DOOR_1F_4_Text_0:
 	.string "You need a green key to unlock this\n"
 	.string "door.$"
+
+MELZARS_LOCKED_DOOR_B1F_3_Text_0:
+	.string "The door appears to be locked from this\n"
+	.string "side.$"
 
 BATTLE_MELZARS_1F_TRAINER_1_Text_0:
 	.string "I won't let you stop our plans!$"
