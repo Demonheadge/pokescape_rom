@@ -233,6 +233,7 @@ NPC_FISHERMAN_1::
 	checkitem ITEM_SMALL_NET, 1
 	compare VAR_RESULT, 0
 	goto_if_eq NPC_FISHERMAN_1_2
+	msgbox NPC_FISHERMAN_1_Text_3
 	release
 	end
 
@@ -850,6 +851,20 @@ NPC_FISHERMAN_1_Text_2:
 	.string "are plenty of things you could fish up\l"
 	.string "with it!$"
 
+NPC_FISHERMAN_1_Text_3:
+	.string "How are you finding fishing in the pond?\p"
+	.string "Have you caught anything yet?{PAUSE 15}\p"
+	.string "Did you know that a crayfish evolves\n"
+	.string "into a shrimp?\p"
+	.string "Or that a shrimp then evolves into a\n"
+	.string "lobster?\p"
+	.string "Apparently lobsters can then evolve\n"
+	.string "again if you level them up under\l"
+	.string "extreme weather conditions like rain,\l"
+	.string "sunshine, or hail.\p"
+	.string "But it's so peaceful here, I've never\n"
+	.string "managed to evolve one myself.$"
+
 BLOCK_ROUTE1_FARMER_Text_0:
 	.string "Farmer$"
 
@@ -879,7 +894,30 @@ ROUTE1_FarmerFred_Text_0:
 	.string "Fred$"
 
 ROUTE1_FarmerFred_Text_1:
-	.string "Get off my farm!$"
+	.string "Get off my farm!{PAUSE 15}\p"
+	.string "Oh, you're not here to kill my livestock?{PAUSE 15}\p"
+	.string "Well, as a thank you I'll let you in on a\n"
+	.string "little secret I've discovered.\p"
+	.string "Male lambs grow up to be rams, and lady\n"
+	.string "lambs grow up to be sheep.\p"
+	.string "Every farmer know that much.\p"
+	.string "What they don't know is, if you keep\n"
+	.string "training them, they can evolve even\l"
+	.string "further!\p"
+	.string "Sometimes the sheep get worked too\n"
+	.string "hard and become really sick, so watch\l"
+	.string "out for them. I think they might be\l"
+	.string "infected with that plague from\l"
+	.string "Ardougne.\p"
+	.string "And if you're really lucky, sometimes\n"
+	.string "you get a golden ram!\p"
+	.string "Sure, it doesn't lay golden eggs like a\n"
+	.string "goose but its fleece sells for a lot.\p"
+	.string "Some wizard told me to try using a water\n"
+	.string "rune on one of my sheep or rams too,\l"
+	.string "but I don't much care for magic.\p"
+	.string "Maybe you could try it and see what\n"
+	.string "happens?$"
 
 Wartfoot_Route1_Battle_Text_0:
 	.string "Brown armour best!$"

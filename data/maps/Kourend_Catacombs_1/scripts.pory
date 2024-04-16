@@ -327,6 +327,9 @@ script DARK_TOTEM_COMBINE
 
 script ROTTEN_POTATO_TELEPORT {
     
+    buffernumberstring(0, VAR_POKESCAPE_STORYMODE_PROGRESS)
+    msgbox(format("Storymode Var is: {STR_VAR_1}" ))
+
     msgbox(format("Only use this if you are stuck.\pThis will cause you to whiteout."), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
             msgbox(format("As you bite into the rotten potato you and your team feel the touch of the PokeScape gods.\pIt was too much for you."))

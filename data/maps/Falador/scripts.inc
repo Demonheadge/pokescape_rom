@@ -36,6 +36,7 @@ OPENWORLD_STATE_FALADOR::
 	special DrawWholeMapView
 	removeobject 40
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_1F
 	removeobject 37
 	removeobject 38
 	removeobject 39
@@ -252,22 +253,36 @@ NPC_FALADOR_WHITEKNIGHT_2::
 	lock
 	faceplayer
 	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
-	msgbox NPC_FALADOR_WHITEKNIGHT_2_Text_0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 120
+	goto_if_le NPC_FALADOR_WHITEKNIGHT_2_2
+	msgbox NPC_FALADOR_WHITEKNIGHT_2_Text_1
+NPC_FALADOR_WHITEKNIGHT_2_1:
 	waitmessage
 	hidenamebox
 	release
 	end
+
+NPC_FALADOR_WHITEKNIGHT_2_2:
+	msgbox NPC_FALADOR_WHITEKNIGHT_2_Text_0
+	goto NPC_FALADOR_WHITEKNIGHT_2_1
 
 
 NPC_FALADOR_WHITEKNIGHT_3::
 	lock
 	faceplayer
 	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
-	msgbox NPC_FALADOR_WHITEKNIGHT_3_Text_0
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 120
+	goto_if_le NPC_FALADOR_WHITEKNIGHT_3_2
+	msgbox NPC_FALADOR_WHITEKNIGHT_3_Text_1
+NPC_FALADOR_WHITEKNIGHT_3_1:
 	waitmessage
 	hidenamebox
 	release
 	end
+
+NPC_FALADOR_WHITEKNIGHT_3_2:
+	msgbox NPC_FALADOR_WHITEKNIGHT_3_Text_0
+	goto NPC_FALADOR_WHITEKNIGHT_3_1
 
 
 NPC_FALADOR_NPC_11::
@@ -724,10 +739,17 @@ NPC_FALADOR_GEMSTORE_NPC_1::
 	end
 
 
+HERQUIN_DIARY::
+	msgbox HERQUIN_DIARY_Text_0
+	closemessage
+	end
+
+
 NPC_FALADOR_GEMSTORE_OWNER::
 	lock
 	faceplayer
-	msgbox NPC_FALADOR_GEMSTORE_OWNER_Text_0
+	namebox NPC_FALADOR_GEMSTORE_OWNER_Text_0
+	msgbox NPC_FALADOR_GEMSTORE_OWNER_Text_1
 	waitmessage
 	hidenamebox
 	release
@@ -786,24 +808,71 @@ NPC_FALADOR_NPC_9::
 
 
 FALADOR_QUEST_STATE::
+	goto_if_unset FLAG_BADGE02_GET, FALADOR_QUEST_STATE_2
+FALADOR_QUEST_STATE_1:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 114
+	goto_if_lt FALADOR_QUEST_STATE_5
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 115
+	goto_if_eq FALADOR_QUEST_STATE_6
+	setflag FLAG_TEMP_1F
+	removeobject 43
+	setflag FLAG_TEMP_1D
+	removeobject 49
+	removeobject 50
+	removeobject 51
+	removeobject 52
+FALADOR_QUEST_STATE_4:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 111
+	goto_if_eq FALADOR_QUEST_STATE_11
+FALADOR_QUEST_STATE_10:
 	switch VAR_POKESCAPE_FALADOR_STATE
-	case 0, FALADOR_QUEST_STATE_2
-	case 1, FALADOR_QUEST_STATE_2
-	case 2, FALADOR_QUEST_STATE_3
-	case 3, FALADOR_QUEST_STATE_3
-	case 4, FALADOR_QUEST_STATE_3
-	case 5, FALADOR_QUEST_STATE_4
+	case 0, FALADOR_QUEST_STATE_14
+	case 1, FALADOR_QUEST_STATE_14
+	case 2, FALADOR_QUEST_STATE_15
+	case 3, FALADOR_QUEST_STATE_15
+	case 4, FALADOR_QUEST_STATE_15
+	case 5, FALADOR_QUEST_STATE_16
 	return
 
 FALADOR_QUEST_STATE_2:
+	setflag FLAG_MITHRILMAN2
+	goto FALADOR_QUEST_STATE_1
+
+FALADOR_QUEST_STATE_5:
+	clearflag FLAG_TEMP_1F
+	addobject 43
+	setvar VAR_TEMP_F, 1
+	goto FALADOR_QUEST_STATE_4
+
+FALADOR_QUEST_STATE_6:
+	setflag FLAG_TEMP_1E
+	removeobject 15
+	setflag FLAG_TEMP_1D
+	removeobject 49
+	removeobject 50
+	removeobject 51
+	removeobject 52
+	goto FALADOR_QUEST_STATE_4
+
+FALADOR_QUEST_STATE_11:
+	setflag FLAG_TEMP_1D
+	removeobject 49
+	removeobject 50
+	removeobject 51
+	removeobject 52
+	setvar VAR_TEMP_F, 1
+	goto FALADOR_QUEST_STATE_10
+
+FALADOR_QUEST_STATE_14:
 	return
 
-FALADOR_QUEST_STATE_3:
+FALADOR_QUEST_STATE_15:
 	removeobject 40
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_1F
 	return
 
-FALADOR_QUEST_STATE_4:
+FALADOR_QUEST_STATE_16:
 	setflag FLAG_TEMP_2
 	setmetatile 24, 6, 609, 0
 	setmetatile 24, 7, 617, 0
@@ -811,12 +880,114 @@ FALADOR_QUEST_STATE_4:
 	special DrawWholeMapView
 	removeobject 40
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_1F
 	removeobject 37
 	removeobject 38
 	removeobject 39
 	removeobject 27
 	return
 
+
+TRIGGER_QUEST_WALK_SIROWEN::
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FALADOR_WALK_UP
+	applymovement 49, movement_falador_walk_sirtheo
+	applymovement 50, movement_falador_walk_sirowen
+	applymovement 51, movement_falador_walk_other
+	applymovement 52, movement_falador_walk_sirowen
+	waitmovement 0
+	setflag FLAG_TEMP_1D
+	removeobject 49
+	removeobject 50
+	removeobject 51
+	removeobject 52
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 111
+	release
+	end
+
+
+MOVEMENT_FALADOR_WALK_UP:
+	walk_up
+	walk_up
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	face_up
+	delay_16
+	delay_16
+	face_right
+	step_end
+
+movement_falador_walk_sirowen:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+movement_falador_walk_sirtheo:
+	delay_16
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+movement_falador_walk_other:
+	delay_16
+	delay_16
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
 
 NPC_FALADOR_BLOCK_GUARD_1::
 	lock
@@ -917,8 +1088,8 @@ TRIGGER_FALADOR_CASTLE_1:
 	end
 
 TRIGGER_FALADOR_CASTLE_2:
-	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 110
-	goto_if_le TRIGGER_FALADOR_CASTLE_4
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 114
+	goto_if_lt TRIGGER_FALADOR_CASTLE_4
 	goto TRIGGER_FALADOR_CASTLE_1
 
 TRIGGER_FALADOR_CASTLE_4:
@@ -940,6 +1111,110 @@ movement_lock_walk_up:
 	lock_facing_direction
 	walk_up
 	step_end
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_1::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_2::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_3::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_3_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_4::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_NPC_10_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_5::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_5_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_6::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_6_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_7::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_7_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_8::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_STORY_WHITE_KNIGHT_8_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_PARTYROOM_PETE::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_PARTYROOM_PETE_Text_0
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_1
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_2
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_3
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_4
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_5
+	msgbox NPC_FALADOR_PARTYROOM_PETE_Text_6
+	waitmessage
+	hidenamebox
+	release
+	end
+
 
 FALADOR_SIGN_Text_0:
 	.string "Falador, home of the White Knights.$"
@@ -1033,14 +1308,35 @@ NPC_FALADOR_WHITEKNIGHT_1_Text_0:
 NPC_FALADOR_WHITEKNIGHT_1_Text_1:
 	.string "South from here is the Falador castle\n"
 	.string "home to the White Knights.\p"
-	.string "Are you interested in signing up?$"
+	.string "Are you interested in becoming a White\n"
+	.string "Knight?$"
 
 NPC_FALADOR_WHITEKNIGHT_2_Text_0:
+	.string "Sorry the Gym is closed until the\n"
+	.string "disturbance at the Dwarven Mines are\l"
+	.string "resolved.\p"
+	.string "Huh?\n"
+	.string "You want to know where the Dwarven\l"
+	.string "Mines are?\p"
+	.string "They are underneath us!\p"
+	.string "If you go to the east of town there you\n"
+	.string "can find a small shack which leads to\l"
+	.string "the mines.$"
+
+NPC_FALADOR_WHITEKNIGHT_2_Text_1:
 	.string "Past this bridge is Falador Castle!\p"
 	.string "Which is also the gym location for the\n"
 	.string "MvM Championships.$"
 
 NPC_FALADOR_WHITEKNIGHT_3_Text_0:
+	.string "Sorry but the gym is closed for a very\n"
+	.string "important mission.\p"
+	.string "In the meantime you should go visit the\n"
+	.string "Party room in the east of town.\p"
+	.string "It looks like a big castle, you cannot\n"
+	.string "miss it.$"
+
+NPC_FALADOR_WHITEKNIGHT_3_Text_1:
 	.string "Sir Amik Varze is our towns gym leader.$"
 
 NPC_FALADOR_NPC_11_Text_0:
@@ -1048,8 +1344,10 @@ NPC_FALADOR_NPC_11_Text_0:
 	.string "around Falador Park.$"
 
 NPC_FALADOR_NPC_12_Text_0:
-	.string "Oh don't mind me.\p"
-	.string "I'm just training my Firemaking skill.$"
+	.string "I cannot seem to light a fire on these\n"
+	.string "flowers.\p"
+	.string "It's not that I don't want to, it's just\n"
+	.string "some kind of magic not letting me.$"
 
 NPC_FALADOR_MINER_1_Text_0:
 	.string "I am mining coal to get enough money\n"
@@ -1308,9 +1606,22 @@ NPC_FALADOR_BANK_NPC_1_Text_0:
 NPC_FALADOR_GEMSTORE_NPC_1_Text_0:
 	.string "They say the gems from this store\n"
 	.string "comes all the way from Shilo Village.\p"
-	.string "Thats all the way over in Karamja!$"
+	.string "That's all the way over in Karamja!$"
+
+HERQUIN_DIARY_Text_0:
+	.string "The gem deliveries aren't arriving from\n"
+	.string "Shilo anymore.\p"
+	.string "I wonder if some of the natives\n"
+	.string "attacked my drivers on their way here.\p"
+	.string "I hope they are okay.\p"
+	.string "I wonder if the dwarves in the mines\n"
+	.string "nearby can provide me with any gems in\l"
+	.string "the meantime..$"
 
 NPC_FALADOR_GEMSTORE_OWNER_Text_0:
+	.string "Herquin$"
+
+NPC_FALADOR_GEMSTORE_OWNER_Text_1:
 	.string "Welcome!\p"
 	.string "I am very sorry but the shipment of\n"
 	.string "gems is still on hold and there is\l"
@@ -1319,7 +1630,7 @@ NPC_FALADOR_GEMSTORE_OWNER_Text_0:
 
 NPC_FALADOR_BANK_NPC_2_Text_0:
 	.string "I got wiped out by Sir Amik.\p"
-	.string "Guess my monsters just werent strong\n"
+	.string "Guess my monsters just weren't strong\n"
 	.string "enough.$"
 
 NPC_FALADOR_BANK_NPC_3_Text_0:
@@ -1397,3 +1708,83 @@ FALADOR_QUEST_STATE_CHANGER_Text_5:
 TRIGGER_FALADOR_CASTLE_Text_0:
 	.string "Sorry, but you cannot enter the gym\n"
 	.string "right now.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_1_Text_0:
+	.string "We are conducting an operation within\n"
+	.string "the Dwarven Mines.\p"
+	.string "Please stay clear of the area for your\n"
+	.string "safety.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_2_Text_0:
+	.string "Man, I wish I was assigned the job to\n"
+	.string "guard the party room.\p"
+	.string "Instead I was assigned to guard the\n"
+	.string "bank.\p"
+	.string "Oh? You're wondering why were are on\n"
+	.string "high alert?\p"
+	.string "That's because there have been some\n"
+	.string "issues in the Dwarven Mines as of late.\p"
+	.string "The entrance is right next door to the\n"
+	.string "party room actually.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_3_Text_0:
+	.string "Adventurer!\p"
+	.string "Welcome to Falador!\p"
+	.string "The MvM gym is located in Falador castle\n"
+	.string "south of the main square.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_5_Text_0:
+	.string "I have been assigned to this position.\p"
+	.string "Please do not get in my way.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_6_Text_0:
+	.string "Sir Owen and Sir Theodore have gone\n"
+	.string "further into the mines.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_7_Text_0:
+	.string "For this to happen at the same time as\n"
+	.string "the disturbance in the mines something\l"
+	.string "must be wrong.$"
+
+NPC_FALADOR_STORY_WHITE_KNIGHT_8_Text_0:
+	.string "I have been assigned to guard the\n"
+	.string "party room while the mission at the\l"
+	.string "dwarven mines takes place.\p"
+	.string "But man I wish I could go in, it sounds\n"
+	.string "like they're having so much fun in\l"
+	.string "there.$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_0:
+	.string "Party Pete$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_1:
+	.string "Yo, yo, yo!\p"
+	.string "I am Party Pete\p"
+	.string "This is the party hoouseee!\p"
+	.string "Are you in the mood to get down and\n"
+	.string "groooveee?$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_2:
+	.string "Radical man!\p"
+	.string "Vibe check and stuff dog!\p"
+	.string "Lets get down and boogee!$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_3:
+	.string "Yeeah, yeeeah!\p"
+	.string "The White Knights of Falador!$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_4:
+	.string "What's this!?\p"
+	.string "The creators of PokeScape have shown\n"
+	.string "that they too like to Party with the\l"
+	.string "best!$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_5:
+	.string "Oh no it's H.A.M!\p"
+	.string "Attention everyone this is a H.A.M\n"
+	.string "attack, time to get down!$"
+
+NPC_FALADOR_PARTYROOM_PETE_Text_6:
+	.string "You can only dream to have an afro like\n"
+	.string "mine.\p"
+	.string "Party hard enough you might get one.$"

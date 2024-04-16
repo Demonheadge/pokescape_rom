@@ -212,8 +212,21 @@ Trainer1_MillLaneMill_Battle_Text_3:
 	.string "Kebbie$"
 
 Trainer1_MillLaneMill_Battle_Text_4:
-	.string "I have been trying to track down\n"
-	.string "Kebbits for my collection.$"
+	.string "Since you beat me, I'll tell you a little\n"
+	.string "about what I've read about Kebbits.\p"
+	.string "The ones around here apparently evolve\n"
+	.string "at level 15.\p"
+	.string "If they have higher speed than\n"
+	.string "defence, then they'll evolve into Wild\l"
+	.string "Kebbits.\p"
+	.string "If they have higher speed than\n"
+	.string "defence, then they'll evolve into\l"
+	.string "Spotted Kebbits.\p"
+	.string "And if both of those stats are the\n"
+	.string "same, they'll evolve into Polar Kebbits.\p"
+	.string "I need to train Hunter more to learn\n"
+	.string "about how they evolve from there,\l"
+	.string "though.$"
 
 MillLaneMill_Item_WHEAT1_Text_0:
 	.string "You search the sack…\p"

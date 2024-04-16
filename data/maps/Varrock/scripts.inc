@@ -1564,7 +1564,7 @@ NPC_VARROCK_CAT_INFO_Text_0:
 
 NPC_VARROCK_CAT_INFO_Text_1:
 	.string "It is commonly known that a Kitten can\n"
-	.string "evolve into a Cat at level 20.\p"
+	.string "evolve into a Cat by levelling it up.\p"
 	.string "But a Cat can evolve into many other\n"
 	.string "forms from there.\p"
 	.string "Some cats can evolve from having\n"
@@ -1579,7 +1579,7 @@ NPC_VARROCK_CAT_INFO_Text_1:
 	.string "cause a cat to get a bit too overgrown.$"
 
 NPC_ROUTE18_MAN_Text_0:
-	.string "Over the road here is Gertrudes house.\p"
+	.string "Over the road here is Gertrude's house.\p"
 	.string "If you like cats then I think you should\n"
 	.string "pay her a visit.\p"
 	.string "If I was not busy sitting on this bench\n"

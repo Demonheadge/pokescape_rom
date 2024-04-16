@@ -380,10 +380,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCORPION",
-      "x": 54,
+      "x": 51,
       "y": 58,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 3,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -406,10 +406,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCORPION",
-      "x": 50,
-      "y": 60,
+      "x": 49,
+      "y": 61,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -433,7 +433,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 62,
-      "y": 10,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -524,7 +524,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 61,
-      "y": 10,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -667,7 +667,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_M",
       "x": 52,
-      "y": 16,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -728,6 +728,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_14"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_M",
+      "x": 59,
+      "y": 60,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_STORY_WHITE_KNIGHT_6",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_F",
+      "x": 56,
+      "y": 57,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_STORY_WHITE_KNIGHT_5",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_F",
+      "x": 52,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 61,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_F"
     }
   ],
   "warp_events": [
@@ -759,8 +811,8 @@
       "x": 51,
       "y": 20,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "1",
+      "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
+      "var_value": "111",
       "script": "NPC_FALADORCASTLE_QUEST_PART_3_1"
     },
     {
@@ -768,8 +820,8 @@
       "x": 52,
       "y": 20,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "1",
+      "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
+      "var_value": "111",
       "script": "NPC_FALADORCASTLE_QUEST_PART_3_3"
     },
     {
@@ -777,8 +829,8 @@
       "x": 50,
       "y": 20,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "1",
+      "var": "VAR_POKESCAPE_STORYMODE_PROGRESS",
+      "var_value": "111",
       "script": "NPC_FALADORCASTLE_QUEST_PART_3_2"
     }
   ],
@@ -790,6 +842,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NPC_DWARVENMINES_MINECART"
+    },
+    {
+      "type": "sign",
+      "x": 62,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NPC_DWARVENMINES_CAVEIN"
     }
   ]
 }

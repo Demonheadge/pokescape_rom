@@ -167,6 +167,17 @@ Melzar_Maze_B1F_HAM_GRUNT_4::
 	end
 
 
+Melzar_Maze_B1F_MelzarTheMad::
+	lock
+	faceplayer
+	namebox TRIGGER_Melzar_Maze_HAM_EVENT_MELZAR_Text_2
+	msgbox Melzar_Maze_B1F_MelzarTheMad_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE::
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_2, 16
@@ -302,6 +313,7 @@ TRIGGER_Melzar_Maze_HAM_EVENT_BABE_13:
 	removeobject 2
 	setflag FLAG_TEMP_1D
 	setvar VAR_TEMP_5, 2
+	playbgm MUS_PS_CAVE_F2P, FALSE
 	fadescreen FADE_FROM_BLACK
 	release
 	end
@@ -468,6 +480,10 @@ Melzar_Maze_B1F_HAM_GRUNT_3_Text_0:
 Melzar_Maze_B1F_HAM_GRUNT_4_Text_0:
 	.string "Now there is a Demon to deal with?!\p"
 	.string "When does this end…$"
+
+Melzar_Maze_B1F_MelzarTheMad_Text_0:
+	.string "I gave my pet rock some custard, its\n"
+	.string "feeling better now.$"
 
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_0:
 	.string "Babe$"

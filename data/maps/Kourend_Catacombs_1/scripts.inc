@@ -401,7 +401,9 @@ DARK_TOTEM_COMBINE_8:
 
 
 ROTTEN_POTATO_TELEPORT::
-	msgbox ROTTEN_POTATO_TELEPORT_Text_0, MSGBOX_YESNO
+	buffernumberstring 0, VAR_POKESCAPE_STORYMODE_PROGRESS
+	msgbox ROTTEN_POTATO_TELEPORT_Text_0
+	msgbox ROTTEN_POTATO_TELEPORT_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne ROTTEN_POTATO_TELEPORT_2
 	closemessage
@@ -409,7 +411,7 @@ ROTTEN_POTATO_TELEPORT::
 	end
 
 ROTTEN_POTATO_TELEPORT_2:
-	msgbox ROTTEN_POTATO_TELEPORT_Text_1
+	msgbox ROTTEN_POTATO_TELEPORT_Text_2
 	goto EventScript_FieldWhiteOut
 	release
 	end
@@ -488,10 +490,13 @@ DARK_TOTEM_COMBINE_Text_2:
 	.string "and create the Dark Totem?$"
 
 ROTTEN_POTATO_TELEPORT_Text_0:
+	.string "Storymode Var is: {STR_VAR_1}$"
+
+ROTTEN_POTATO_TELEPORT_Text_1:
 	.string "Only use this if you are stuck.\p"
 	.string "This will cause you to whiteout.$"
 
-ROTTEN_POTATO_TELEPORT_Text_1:
+ROTTEN_POTATO_TELEPORT_Text_2:
 	.string "As you bite into the rotten potato you\n"
 	.string "and your team feel the touch of the\l"
 	.string "PokeScape gods.\p"

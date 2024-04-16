@@ -76,6 +76,35 @@ ModeratorLobby_JMOD_6::
 	end
 
 
+ModeratorLobby_JMOD_OWLY::
+	lock
+	faceplayer
+	namebox ModeratorLobby_JMOD_OWLY_Text_0
+	msgbox ModeratorLobby_JMOD_OWLY_Text_1
+	hidenamebox
+	goto_if_unset FLAG_UNUSED_0x93B, ModeratorLobby_JMOD_OWLY_2
+ModeratorLobby_JMOD_OWLY_1:
+	hidenamebox
+	release
+	end
+
+ModeratorLobby_JMOD_OWLY_2:
+	msgbox ModeratorLobby_JMOD_OWLY_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ModeratorLobby_JMOD_OWLY_4
+	goto ModeratorLobby_JMOD_OWLY_1
+
+ModeratorLobby_JMOD_OWLY_4:
+	hidenamebox
+	setflag FLAG_UNUSED_0x93B
+	trainerbattle_no_intro TRAINER_JMOD_OWLY, ModeratorLobby_JMOD_OWLY_Text_3
+	namebox ModeratorLobby_JMOD_OWLY_Text_0
+	msgbox ModeratorLobby_JMOD_OWLY_Text_4
+	hidenamebox
+	call GIVE_RANDOM_ITEM
+	goto ModeratorLobby_JMOD_OWLY_1
+
+
 ModeratorLobby_JMOD_0_Text_0:
 	.string "Mod Meds$"
 
@@ -118,7 +147,7 @@ ModeratorLobby_JMOD_4_Text_1:
 	.string "My camels shall help me win this!\p"
 	.string "We have a secret weapon!\p"
 	.string "Ugthanki dung!\p"
-	.string "Wait…. now it isn't a secret…$"
+	.string "Wait… now it isn't a secret…$"
 
 ModeratorLobby_JMOD_5_Text_0:
 	.string "Mod Daze$"
@@ -137,3 +166,19 @@ ModeratorLobby_JMOD_6_Text_0:
 
 ModeratorLobby_JMOD_6_Text_1:
 	.string "For the last time it is not my birthday!$"
+
+ModeratorLobby_JMOD_OWLY_Text_0:
+	.string "Mod Owly$"
+
+ModeratorLobby_JMOD_OWLY_Text_1:
+	.string "Wooo are you?$"
+
+ModeratorLobby_JMOD_OWLY_Text_2:
+	.string "Do you wish to challenge them to a\n"
+	.string "battle?$"
+
+ModeratorLobby_JMOD_OWLY_Text_3:
+	.string "…$"
+
+ModeratorLobby_JMOD_OWLY_Text_4:
+	.string "Here have this.$"

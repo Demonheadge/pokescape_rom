@@ -42,6 +42,7 @@ script OPENWORLD_STATE_FALADOR {
 		special(DrawWholeMapView) 
 		removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
 		setflag(FLAG_TEMP_1)
+		setflag(FLAG_TEMP_1F)
 		removeobject(OBJ_EVENT_ID_BLOCK_GUARD_1)
 		removeobject(OBJ_EVENT_ID_BLOCK_GUARD_2)
 		removeobject(OBJ_EVENT_ID_BLOCK_MERCHANT)
@@ -289,7 +290,7 @@ script NPC_FALADOR_WHITEKNIGHT_1
 	lock
 	faceplayer
     namebox ("White Knight")
-	msgbox(format("South from here is the Falador castle home to the White Knights.\pAre you interested in signing up?"))
+	msgbox(format("South from here is the Falador castle home to the White Knights.\pAre you interested in becoming a White Knight?"))
     waitmessage
     hidenamebox
 	release
@@ -303,7 +304,13 @@ script NPC_FALADOR_WHITEKNIGHT_2
 	lock
 	faceplayer
     namebox ("White Knight")
-	msgbox(format("Past this bridge is Falador Castle!\pWhich is also the gym location for the MvM Championships."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 120) {
+		msgbox(format("Sorry the Gym is closed until the disturbance at the Dwarven Mines are resolved.\pHuh?\nYou want to know where the Dwarven Mines are?\pThey are underneath us!\pIf you go to the east of town there you can find a small shack which leads to the mines."))
+	}
+	else {
+		msgbox(format("Past this bridge is Falador Castle!\pWhich is also the gym location for the MvM Championships."))
+	}
+	
     waitmessage
     hidenamebox
 	release
@@ -315,7 +322,13 @@ script NPC_FALADOR_WHITEKNIGHT_3
 	lock
 	faceplayer
     namebox ("White Knight")
-	msgbox(format("Sir Amik Varze is our towns gym leader."))
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 120) {
+		msgbox(format("Sorry but the gym is closed for a very important mission.\pIn the meantime you should go visit the Party room in the east of town.\pIt looks like a big castle, you cannot miss it."))
+	}
+	else {
+		msgbox(format("Sir Amik Varze is our towns gym leader."))
+	}
+	
     waitmessage
     hidenamebox
 	release
@@ -339,7 +352,7 @@ script NPC_FALADOR_NPC_12
 	lock
 	faceplayer
     //namebox ("")
-	msgbox(format("Oh don't mind me.\pI'm just training my Firemaking skill."))
+	msgbox(format("I cannot seem to light a fire on these flowers.\pIt's not that I don't want to, it's just some kind of magic not letting me."))
     waitmessage
     hidenamebox
 	release
@@ -1038,6 +1051,42 @@ script NPC_FALADOR_NPC_9
 
 
 script FALADOR_QUEST_STATE{
+	if (!flag(FLAG_BADGE02_GET)) {
+		setflag(FLAG_MITHRILMAN2)
+	}
+	
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 114) { // before map 3 obtained in mines
+		clearflag(FLAG_TEMP_1F)
+		addobject(43)
+		setvar(VAR_TEMP_F, 1)
+	}
+	elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 115) { //after map 3 obtained in mines
+		setflag(FLAG_TEMP_1E) //hide sir tiffy
+		removeobject(15)
+		setflag(FLAG_TEMP_1D)
+		removeobject(49)
+		removeobject(50)
+		removeobject(51)
+		removeobject(52)
+	}
+	else {
+		setflag(FLAG_TEMP_1F)
+		removeobject(43)
+		setflag(FLAG_TEMP_1D)
+		removeobject(49)
+		removeobject(50)
+		removeobject(51)
+		removeobject(52)
+	}
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 111) { //after sir owen walkby
+		setflag(FLAG_TEMP_1D)
+		removeobject(49)
+		removeobject(50)
+		removeobject(51)
+		removeobject(52)
+		setvar(VAR_TEMP_F, 1)
+	}
+
 	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
 		case 0:
 		case 1: 
@@ -1047,6 +1096,7 @@ script FALADOR_QUEST_STATE{
 		case 4: //REMOVE DWARVEN MINES BLOCKADE 
             removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
 			setflag(FLAG_TEMP_1)
+			setflag(FLAG_TEMP_1F)
 			return
 
 		case 5: //REMOVE DWARVEN MINES BLOCKADE 
@@ -1057,6 +1107,7 @@ script FALADOR_QUEST_STATE{
 			special(DrawWholeMapView) 
 			removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
 			setflag(FLAG_TEMP_1)
+			setflag(FLAG_TEMP_1F)
 			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_1)
 			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_2)
 			removeobject(OBJ_EVENT_ID_BLOCK_MERCHANT)
@@ -1064,6 +1115,49 @@ script FALADOR_QUEST_STATE{
 			return
 	}
 
+}
+
+script TRIGGER_QUEST_WALK_SIROWEN
+{
+	applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FALADOR_WALK_UP)
+	applymovement(49, movement_falador_walk_sirtheo)
+	applymovement(50, movement_falador_walk_sirowen)
+	applymovement(51, movement_falador_walk_other)
+	applymovement(52, movement_falador_walk_sirowen)
+	waitmovement(0)
+	setflag(FLAG_TEMP_1D)
+	removeobject(49)
+	removeobject(50)
+	removeobject(51)
+	removeobject(52)
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 111)
+	release
+	end
+}
+
+
+movement MOVEMENT_FALADOR_WALK_UP {
+	walk_up * 2
+	delay_16 * 3
+	//face_left
+	delay_16 * 3
+	face_up
+	delay_16 * 2
+	face_right
+
+}
+
+movement movement_falador_walk_sirowen {
+	walk_right * 19
+}
+movement movement_falador_walk_sirtheo {
+	delay_16
+	walk_right * 19
+}
+movement movement_falador_walk_other {
+	delay_16
+	delay_16
+	walk_right * 19
 }
 
 script NPC_FALADOR_BLOCK_GUARD_1
@@ -1187,7 +1281,7 @@ script FALADOR_QUEST_STATE_CHANGER{
 script TRIGGER_FALADOR_CASTLE {
     if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //STORY
 	{
-		if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 110) {
+		if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 114) {
 			lock
 			applymovement(10, Movement_InteractFACEPLAYER)
 			applymovement(9, Movement_InteractFACEPLAYER)
@@ -1209,4 +1303,136 @@ script TRIGGER_FALADOR_CASTLE {
 movement movement_lock_walk_up{
 	lock_facing_direction
     walk_up
+}
+
+
+
+
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_1
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("We are conducting an operation within the Dwarven Mines.\pPlease stay clear of the area for your safety."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_2
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("Man, I wish I was assigned the job to guard the party room.\pInstead I was assigned to guard the bank.\pOh? You're wondering why were are on high alert?\pThat's because there have been some issues in the Dwarven Mines as of late.\pThe entrance is right next door to the party room actually."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_3
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("Adventurer!\pWelcome to Falador!\pThe MvM gym is located in Falador castle south of the main square."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_4
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format(""))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_5
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("I have been assigned to this position.\pPlease do not get in my way."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_6
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("Sir Owen and Sir Theodore have gone further into the mines."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_7
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("For this to happen at the same time as the disturbance in the mines something must be wrong."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_STORY_WHITE_KNIGHT_8
+{
+	lock
+	faceplayer
+    namebox ("White Knight")
+	msgbox(format("I have been assigned to guard the party room while the mission at the dwarven mines takes place.\pBut man I wish I could go in, it sounds like they're having so much fun in there."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+//Potention Party room idea
+// Battle a bunch of trainers / contest.
+
+script NPC_FALADOR_PARTYROOM_PETE
+{
+	lock
+	faceplayer
+    namebox ("Party Pete")
+	msgbox(format("Yo, yo, yo!\pI am Party Pete\pThis is the party hoouseee!\pAre you in the mood to get down and groooveee?"))
+	msgbox(format("Radical man!\pVibe check and stuff dog!\pLets get down and boogee!"))
+	msgbox(format("Yeeah, yeeeah!\pThe White Knights of Falador!"))
+	msgbox(format("What's this!?\pThe creators of PokeScape have shown that they too like to Party with the best!"))
+	msgbox(format("Oh no it's H.A.M!\pAttention everyone this is a H.A.M attack, time to get down!"))
+	msgbox(format("You can only dream to have an afro like mine.\pParty hard enough you might get one."))
+
+	
+    waitmessage
+    hidenamebox
+	release
+	end
 }

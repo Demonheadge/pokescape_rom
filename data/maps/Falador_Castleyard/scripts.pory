@@ -396,6 +396,10 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         setflag(FLAG_BADGE02_GET)
         addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
         call(SetGymTrainers_FALADOR)
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            goto(QUEST_FALADORCASTLE_GYM_SIRTHEO)
+    	}
         hidenamebox
         release
         end
@@ -407,6 +411,26 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
 }
 
 
+script QUEST_FALADORCASTLE_GYM_SIRTHEO
+{
+	lock
+    applymovement(4, movement_faladorCastle_sirtheo)
+    waitmovement(0)
+    namebox ("Sir Theodore")
+	msgbox(format("Hello {PLAYER}, Sir Owen has requested your assistnace in the interrogation chamber.\pIf you would kindly follow me."))
+    closemessage
+    hidenamebox
+    setvar(VAR_POKESCAPE_GAMEMODE_STATE, 120)
+    warp(MAP_FALADOR_CASTLE_3F, 3, 0, 0)
+	release
+	end
+}
+
+movement movement_faladorCastle_sirtheo {
+    walk_up * 7
+}
+ 
+
 
 script SetGymTrainers_FALADOR {   
     settrainerflag(TRAINER_FALADOR_GYM_1)
@@ -417,12 +441,23 @@ script SetGymTrainers_FALADOR {
 }
 
 
+script NPC_FALADORCASTLE_GYM_SIRTIFFY
+{
+	lock
+    namebox ("Sir Tif")
+	msgbox(format("Can I interest you all in a cup of tea before we begin?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
 script NPC_FALADORCASTLE_GYM_SIROWEN
 {
 	lock
 	faceplayer
     namebox ("Sir Owen")
-	msgbox(format("Hello again, these guys won't talk.\pBut there does not seem to be anything stolen, so we aren't sure what they meant by distraction."))
+	msgbox(format("Hello again, these guys won't talk yet.\pBut don't worry, we are about to go to the interrogation room.\pSo we'll get the information out of them one way or another.\pIn the meantime why not challenge Sir Amik Varze to a gym battle.\pThat is what you're here for after all right?"))
     closemessage
     hidenamebox
 	release

@@ -396,6 +396,9 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_4:
 	setflag FLAG_BADGE02_GET
 	addvar VAR_GAMEMODE_LEVEL_SCALING, 1
 	call SetGymTrainers_FALADOR
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_8
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_7:
 	hidenamebox
 	release
 	end
@@ -405,6 +408,34 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_5:
 	closemessage
 	goto NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_4
 
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_8:
+	goto QUEST_FALADORCASTLE_GYM_SIRTHEO
+	goto NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_7
+
+
+QUEST_FALADORCASTLE_GYM_SIRTHEO::
+	lock
+	applymovement 4, movement_faladorCastle_sirtheo
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_6
+	msgbox QUEST_FALADORCASTLE_GYM_SIRTHEO_Text_0
+	closemessage
+	hidenamebox
+	setvar VAR_POKESCAPE_GAMEMODE_STATE, 120
+	warp MAP_FALADOR_CASTLE_3F, 3, 0, 0
+	release
+	end
+
+
+movement_faladorCastle_sirtheo:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
 
 SetGymTrainers_FALADOR::
 	settrainerflag TRAINER_FALADOR_GYM_1
@@ -412,6 +443,16 @@ SetGymTrainers_FALADOR::
 	settrainerflag TRAINER_FALADOR_GYM_3
 	settrainerflag TRAINER_FALADOR_GYM_4
 	return
+
+
+NPC_FALADORCASTLE_GYM_SIRTIFFY::
+	lock
+	namebox NPC_FALADORCASTLE_GYM_SIRTIFFY_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_SIRTIFFY_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
 
 
 NPC_FALADORCASTLE_GYM_SIROWEN::
@@ -879,11 +920,29 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
 	.string "Unless you would like to become a white\n"
 	.string "knight instead?$"
 
+QUEST_FALADORCASTLE_GYM_SIRTHEO_Text_0:
+	.string "Hello {PLAYER}, Sir Owen has\n"
+	.string "requested your assistnace in the\l"
+	.string "interrogation chamber.\p"
+	.string "If you would kindly follow me.$"
+
+NPC_FALADORCASTLE_GYM_SIRTIFFY_Text_0:
+	.string "Sir Tif$"
+
+NPC_FALADORCASTLE_GYM_SIRTIFFY_Text_1:
+	.string "Can I interest you all in a cup of tea\n"
+	.string "before we begin?$"
+
 NPC_FALADORCASTLE_GYM_SIROWEN_Text_0:
-	.string "Hello again, these guys won't talk.\p"
-	.string "But there does not seem to be anything\n"
-	.string "stolen, so we aren't sure what they\l"
-	.string "meant by distraction.$"
+	.string "Hello again, these guys won't talk yet.\p"
+	.string "But don't worry, we are about to go to\n"
+	.string "the interrogation room.\p"
+	.string "So we'll get the information out of them\n"
+	.string "one way or another.\p"
+	.string "In the meantime why not challenge Sir\n"
+	.string "Amik Varze to a gym battle.\p"
+	.string "That is what you're here for after all\n"
+	.string "right?$"
 
 NPC_FALADORCASTLE_GYM_SirRentee_Text_0:
 	.string "Sir Rentee$"
@@ -998,7 +1057,7 @@ NPC_ROUTE24_DORIC_Text_1:
 	.string "could get me some Iron ore.\p"
 	.string "You see, suddenly all ya human-folk are\n"
 	.string "obsessed with Ironman mode and I want\l"
-	.string "in.\p"
+	.string "in.{PAUSE 15}\p"
 	.string "What does that mean I have to get it\n"
 	.string "myself?\p"
 	.string "Nonsense!\p"

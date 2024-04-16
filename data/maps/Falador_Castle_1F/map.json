@@ -54,7 +54,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_F",
       "x": 16,
       "y": 4,
       "elevation": 3,
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FALADORCASTLE_GYM_HAM",
+      "script": "NPC_FALADORCASTLE_GYM_BLACKKNIGHT",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -116,6 +116,19 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_FALADORCASTLE_GYM_HAM",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_SIRTIFFYCASHIN",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADORCASTLE_GYM_SIRTIFFY",
       "flag": "FLAG_TEMP_1"
     }
   ],

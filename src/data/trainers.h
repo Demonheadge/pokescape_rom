@@ -5318,6 +5318,21 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_MELZARS_3F_TRAINER_3},
     },
 
+    [TRAINER_JMOD_OWLY] =
+	{
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_JMOD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HAM,
+        .trainerPic = TRAINER_PIC_jmod_m,
+        .trainerName = _("OWLY"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_JMOD_OWLY),
+        .party = {.ItemDefaultMoves = sParty_JMOD_OWLY},
+        .scaling = FALSE,
+    },
+
 
 //Route 26
     [TRAINER_ROUTE26_TRAINER_1] =

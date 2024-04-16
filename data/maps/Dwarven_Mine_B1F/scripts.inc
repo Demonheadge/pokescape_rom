@@ -37,8 +37,9 @@ DWARVENMINES_QUEST_STATE::
 
 DWARVENMINES_QUEST_STATE_2:
 	removeobject 51
-	removeobject 52
+	removeobject 58
 	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_F
 	return
 
 DWARVENMINES_QUEST_STATE_3:
@@ -49,6 +50,7 @@ DWARVENMINES_QUEST_STATE_3:
 	removeobject 33
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_F
 	return
 
 
@@ -87,6 +89,14 @@ NPC_DWARVENMINES_DWARF_2::
 NPC_DWARVENMINES_MINECART::
 	lock
 	msgbox NPC_DWARVENMINES_MINECART_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_DWARVENMINES_CAVEIN::
+	lock
+	msgbox NPC_DWARVENMINES_CAVEIN_Text_0
 	hidenamebox
 	release
 	end
@@ -157,14 +167,18 @@ NPC_FALADORCASTLE_QUEST_PART_3_3::
 
 
 NPC_FALADORCASTLE_QUEST_PART_3::
+	applymovement 39, MOVEMENT_INTERACT_RIGHT
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_0
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_1
 	closemessage
 	hidenamebox
+	waitmovement 0
+	applymovement 32, MOVEMENT_INTERACT_LEFT
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_3
 	closemessage
 	hidenamebox
+	waitmovement 0
 	applymovement 39, DWARVENMINES_MOVEMENT_1
 	playse SE_PIN
 	waitmovement 0
@@ -195,72 +209,118 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_5
 	waitmovement 0
 	playbgm MUS_PS_ENCOUNTER_HAM, 1
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_8
+	applymovement 40, MOVEMENT_INTERACT_RIGHT
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_8
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_9
 	closemessage
 	hidenamebox
-	applymovement 40, DWARVENMINES_MOVEMENT_2
-	applymovement 33, DWARVENMINES_MOVEMENT_2
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_9
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_10
-	closemessage
-	hidenamebox
-	addobject 51
-	addobject 52
-	clearflag FLAG_TEMP_2
-	applymovement 51, DWARVENMINES_MOVEMENT_8
-	applymovement 52, DWARVENMINES_MOVEMENT_10
-	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7
-	applymovement 32, DWARVENMINES_MOVEMENT_7
-	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	applymovement 33, MOVEMENT_INTERACT_LEFT
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_10
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_11
 	closemessage
 	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	waitmovement 0
+	applymovement 32, MOVEMENT_WALK_UP
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	closemessage
+	hidenamebox
+	applymovement 40, DWARVENMINES_MOVEMENT_1
+	applymovement 33, DWARVENMINES_MOVEMENT_1
+	playse SE_PIN
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_8
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_13
 	closemessage
 	hidenamebox
-	applymovement 32, DWARVENMINES_MOVEMENT_2
-	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_9
-	waitmovement 0
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_14
 	closemessage
 	hidenamebox
-	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7
-	applymovement 32, DWARVENMINES_MOVEMENT_9
+	applymovement 33, MOVEMENT_INTERACT_DOWN
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_10
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
+	closemessage
+	hidenamebox
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
+	addobject 51
+	addobject 58
+	clearflag FLAG_TEMP_2
+	applymovement 51, DWARVENMINES_MOVEMENT_8
+	applymovement 58, DWARVENMINES_MOVEMENT_10
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7
+	applymovement 32, MOVEMENT_FACE_DOWN
+	applymovement 39, MOVEMENT_FACE_LEFT
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_16
 	closemessage
 	hidenamebox
-	trainerbattle_no_intro TRAINER_DWARVENMINES_HAM, NPC_FALADORCASTLE_QUEST_PART_3_Text_17
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_18
 	closemessage
 	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	applymovement 32, MOVEMENT_INTERACT_DOWN
+	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_9
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_19
 	closemessage
 	hidenamebox
-	applymovement 32, DWARVENMINES_MOVEMENT_7
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7
+	applymovement 32, DWARVENMINES_MOVEMENT_9
+	applymovement 39, MOVEMENT_INTERACT_LEFT
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_0
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_20
 	closemessage
 	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_21
 	closemessage
 	hidenamebox
+	trainerbattle_no_intro TRAINER_DWARVENMINES_BLACKKNIGHT, NPC_FALADORCASTLE_QUEST_PART_3_Text_22
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_23
+	closemessage
+	hidenamebox
+	applymovement 33, MOVEMENT_FACE_LEFT
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_10
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_24
+	closemessage
+	hidenamebox
+	applymovement 32, MOVEMENT_FACE_UP
+	waitmovement 0
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_22
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_25
+	closemessage
+	hidenamebox
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_10
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_26
+	closemessage
+	hidenamebox
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_27
+	closemessage
+	hidenamebox
 	applymovement 32, DWARVENMINES_MOVEMENT_2
 	waitmovement 0
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_23
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_28
+	closemessage
+	hidenamebox
+	applymovement 39, MOVEMENT_INTERACT_UP
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_29
+	closemessage
+	hidenamebox
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_30
 	closemessage
 	hidenamebox
 	savebgm MUS_DUMMY
@@ -272,10 +332,21 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	removeobject 33
 	removeobject 39
 	removeobject 51
-	removeobject 52
+	removeobject 58
 	removeobject 32
 	setvar VAR_POKESCAPE_FALADOR_STATE, 3
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 115
+	clearflag FLAG_TEMP_F
+	addobject 59
 	fadescreen FADE_FROM_BLACK
+	delay 32
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_31
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, movement_dwarvenmines_pickupmap
+	waitmovement 0
+	setflag FLAG_TEMP_F
+	removeobject 59
+	giveitem ITEM_CRANDOR_MAP_PIECE3, 1
 	release
 	end
 
@@ -326,6 +397,7 @@ DWARVENMINES_MOVEMENT_3:
 	walk_right
 	walk_up
 	walk_up
+	walk_up
 	step_end
 
 DWARVENMINES_MOVEMENT_4:
@@ -345,6 +417,7 @@ DWARVENMINES_MOVEMENT_4:
 	walk_right
 	walk_right
 	walk_right
+	walk_up
 	walk_up
 	walk_up
 	step_end
@@ -367,7 +440,10 @@ DWARVENMINES_MOVEMENT_5:
 	walk_right
 	walk_right
 	walk_right
+	walk_right
 	walk_up
+	walk_up
+	face_up
 	step_end
 
 DWARVENMINES_MOVEMENT_6:
@@ -380,19 +456,22 @@ DWARVENMINES_MOVEMENT_7:
 
 DWARVENMINES_MOVEMENT_8:
 	walk_fast_up
-	walk_fast_up
 	walk_fast_right
 	walk_fast_right
 	walk_fast_up
 	walk_fast_up
 	walk_fast_right
 	walk_fast_right
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
 	walk_fast_right
 	walk_fast_up
 	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	face_up
 	step_end
 
 DWARVENMINES_MOVEMENT_9:
@@ -400,11 +479,14 @@ DWARVENMINES_MOVEMENT_9:
 	step_end
 
 DWARVENMINES_MOVEMENT_10:
-	walk_fast_right
+	delay_16
 	walk_fast_up
 	walk_fast_right
 	walk_fast_right
 	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	walk_fast_right
 	walk_fast_right
 	walk_fast_up
 	walk_fast_right
@@ -414,6 +496,13 @@ DWARVENMINES_MOVEMENT_10:
 	walk_fast_up
 	walk_fast_up
 	face_right
+	step_end
+
+movement_dwarvenmines_pickupmap:
+	walk_up
+	walk_up
+	walk_up
+	face_left
 	step_end
 
 BATTLE_DWARVENMINES_SKILLER::
@@ -496,6 +585,10 @@ NPC_DWARVENMINES_MINECART_Text_0:
 	.string "minecart apart from a very boring\l"
 	.string "looking scroll.$"
 
+NPC_DWARVENMINES_CAVEIN_Text_0:
+	.string "It's impossible to go any further due to\n"
+	.string "a cave-in.$"
+
 NPC_DWARVENMINES_DWARF_3_Text_0:
 	.string "My job is to unload the ores from these\n"
 	.string "carts and get them ready for\l"
@@ -532,7 +625,8 @@ NPC_FALADORCASTLE_QUEST_PART_3_Text_4:
 	.string "Wait sir, we have an issue.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_5:
-	.string "Are you an MvM challenger perhaps?\p"
+	.string "Oh?\n"
+	.string "Are you perhaps an adventurer?\p"
 	.string "Fantastic!\p"
 	.string "Could I please ask of you to assist us\n"
 	.string "with some backup in case things get a\l"
@@ -547,67 +641,97 @@ NPC_FALADORCASTLE_QUEST_PART_3_Text_6:
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_7:
 	.string "Right you are Theodore, with us\n"
-	.string "challenger!$"
+	.string "adventurer!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_8:
-	.string "HALT!\l"
-	.string "You have no where to go!$"
-
-NPC_FALADORCASTLE_QUEST_PART_3_Text_9:
 	.string "H.A.M Member$"
 
+NPC_FALADORCASTLE_QUEST_PART_3_Text_9:
+	.string "Is this it?\p"
+	.string "Just a scrap of paper?$"
+
 NPC_FALADORCASTLE_QUEST_PART_3_Text_10:
-	.string "Keke you stole our line.$"
+	.string "H.A.M Grunt$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_11:
-	.string "What is this!?\p"
-	.string "The Black Knights?!$"
+	.string "I guess so…\p"
+	.string "Guess we should report back to the\n"
+	.string "boss on Karamja.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_12:
-	.string "Black Knight$"
+	.string "HALT!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_13:
+	.string "What?!\p"
+	.string "The White Knights?!$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_14:
+	.string "You'll be coming with us back to the\n"
+	.string "castle.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_15:
+	.string "Yeh, we don't think so.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_16:
+	.string "The Black Knights?!$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_17:
+	.string "Black Knight$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_18:
 	.string "Time to get rid of you pesky White\n"
 	.string "Knights once and for all!$"
 
-NPC_FALADORCASTLE_QUEST_PART_3_Text_14:
+NPC_FALADORCASTLE_QUEST_PART_3_Text_19:
 	.string "Looks like we are in a tight spot.\p"
 	.string "I'll take these two.\p"
-	.string "Theodore, Challenger, I trust you know\n"
+	.string "Theodore, adventurer, I trust you know\n"
 	.string "what to do.$"
 
-NPC_FALADORCASTLE_QUEST_PART_3_Text_15:
-	.string "H.A.M Grunt$"
-
-NPC_FALADORCASTLE_QUEST_PART_3_Text_16:
-	.string "You stand no chance!$"
-
-NPC_FALADORCASTLE_QUEST_PART_3_Text_17:
-	.string "Blasted White Knights!$"
-
-NPC_FALADORCASTLE_QUEST_PART_3_Text_18:
-	.string "So strong…$"
-
-NPC_FALADORCASTLE_QUEST_PART_3_Text_19:
-	.string "No matter grunts, we have already won.$"
-
 NPC_FALADORCASTLE_QUEST_PART_3_Text_20:
-	.string "What do you mean you have already won?$"
+	.string "Understood, Sir Owen!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_21:
-	.string "Kahaha!\l"
-	.string "This was but a mere distraction!\p"
-	.string "Our agent would have escaped with the\n"
-	.string "goods by now.$"
+	.string "You stand no chance!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_22:
-	.string "I will still be bringing you four in for\n"
-	.string "questioning.$"
+	.string "Blasted White Knights!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_23:
+	.string "Impossible… You are so strong…$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_24:
+	.string "No way, even with backup we lost…\p"
+	.string "We cannot let them have the map.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_25:
+	.string "And what map might that be?$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_26:
+	.string "Uhh… nothing, nothing at all!\p"
+	.string "Definitely not this scrap of paper.\p"
+	.string "Nope, no map here!$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_27:
+	.string "Very well, we will just bring you four in\n"
+	.string "for questioning.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_28:
 	.string "Thank you for your assistance\n"
 	.string "challenger.\p"
-	.string "I will be seeing you at the castle.$"
+	.string "If you could stop by the castle a bit\n"
+	.string "later and assist me in filling out a\l"
+	.string "report that'd be appricated.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_29:
+	.string "You'll never get anything from us.$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_30:
+	.string "We'll see about that…$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_31:
+	.string "It seems the H.A.M Grunt dropped\n"
+	.string "something…$"
 
 BATTLE_DWARVENMINES_SKILLER_Text_0:
 	.string "Please dont approach me.\p"

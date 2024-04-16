@@ -1,0 +1,49 @@
+
+
+mapscripts Falador_Castle_3F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            goto(FALADORCASTLE_3F_STATE)
+    	}
+    }
+}
+
+
+script FALADORCASTLE_3F_STATE {
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 120) {
+        clearflag(FLAG_TEMP_1F)
+        addobject(4)
+        addobject(5)
+        addobject(6)
+        addobject(7)
+        addobject(8)
+        addobject(9)
+        addobject(10)
+        call(QUEST_FALADORCASTLE_SIROWEN)
+    }
+    else {
+        removeobject(4)
+        removeobject(5)
+        removeobject(6)
+        removeobject(7)
+        removeobject(8)
+        removeobject(9)
+        removeobject(10)
+        setflag(FLAG_TEMP_1F)
+    }
+    return
+}
+
+
+script QUEST_FALADORCASTLE_SIROWEN
+{
+	lock
+	faceplayer
+    namebox ("Sir Owen")
+	msgbox(format("Thanks for coming {PLAYER}."))
+    closemessage
+    hidenamebox
+	release
+	end
+}

@@ -19,10 +19,10 @@ script NPC_DWARVENMINES_NPC2
 {
     lock
     faceplayer
-    \\namebox ("")
-	msgbox(format("Ho-hiiii, ho-hiiii.\pOff to work, let's try not to die!{PAUSES 15}\pOh, uh, you didn't hear me singing just now, did you?"))
+    //namebox ("")
+	msgbox(format("Ho-hiiii, ho-hiiii.\pOff to work, let's try not to die!{PAUSE 15}\pOh, uh, you didn't hear me singing just now, did you?"))
     closemessage
-    \\hidenamebox
+    //hidenamebox
 	release
 	end
 }
@@ -31,10 +31,10 @@ script NPC_DWARVENMINES_NPC3
 {
     lock
     faceplayer
-    \\namebox ("")
+    //namebox ("")
 	msgbox(format("The landslides have been getting worse recently.\pNow they're causing damage even as far south of the mountain as this.\pWhat could be causing them?"))
     closemessage
-    \\hidenamebox
+    //hidenamebox
 	release
 	end
 }
@@ -43,10 +43,10 @@ script NPC_DWARVENMINES_NPC4
 {
     lock
     faceplayer
-    \\namebox ("")
+    //namebox ("")
 	msgbox(format("Ores!\pGet 'yer ores here!{PAUSE 15}\pHmm, maybe I need a new slogan as that sounds a lot like we're selling something else!\pMaybe that would be more profitable though.."))
     closemessage
-    \\hidenamebox
+    //hidenamebox
 	release
 	end
 }

@@ -59,7 +59,7 @@ script ModeratorLobby_JMOD_4
 	lock
 	faceplayer
     namebox("Mod Camel")
-	msgbox(format("My camels shall help me win this!\pWe have a secret weapon!\pUgthanki dung!\pWait…. now it isn't a secret…"))
+	msgbox(format("My camels shall help me win this!\pWe have a secret weapon!\pUgthanki dung!\pWait… now it isn't a secret…"))
     hidenamebox
 	release
 	end
@@ -90,3 +90,30 @@ script ModeratorLobby_JMOD_6
 	release
 	end
 }	
+
+
+
+script ModeratorLobby_JMOD_OWLY { 
+	lock
+	faceplayer
+    namebox("Mod Owly")
+	msgbox(format("Wooo are you?"))
+	hidenamebox
+	if (flag(FLAG_UNUSED_0x93B) == false) 
+	{
+		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT))
+			{
+				hidenamebox
+				setflag(FLAG_UNUSED_0x93B)
+				trainerbattle_no_intro(TRAINER_JMOD_OWLY, msgbox(format("…")))
+				namebox("Mod Owly")
+				msgbox(format("Here have this."))
+				hidenamebox
+				call(GIVE_RANDOM_ITEM)
+			}
+	}
+    hidenamebox
+    release
+	end
+}

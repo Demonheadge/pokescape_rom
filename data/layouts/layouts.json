@@ -8390,6 +8390,16 @@
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Zamorak_Church/border.bin",
       "blockdata_filepath": "data/layouts/Zamorak_Church/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_PARTY_ROOM",
+      "name": "Falador_PartyRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_PartyRoom/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_PartyRoom/map.bin"
     }
   ]
 }

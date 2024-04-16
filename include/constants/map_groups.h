@@ -813,6 +813,7 @@
 #define MAP_FALADOR_CASTLE_2F        (15 | (42 << 8))
 #define MAP_FALADOR_CASTLE_3F        (16 | (42 << 8))
 #define MAP_FALADOR_MACE_STORE       (17 | (42 << 8))
+#define MAP_FALADOR_PARTY_ROOM       (18 | (42 << 8))
 
 // gMapGroup_PokescapeIndoorVarrock
 #define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))

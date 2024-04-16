@@ -6287,6 +6287,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE26_TRAINER_4[] = {
     }
 };
 
+static const struct TrainerMonItemDefaultMoves sParty_JMOD_OWLY[] = {
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_SARABIRD,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
 /*
 //#GYM - KARAMJA - TokHaar
 static const struct TrainerMonNoItemCustomMoves sParty_LEADER_TOKHAAR_FINAL[] = {
