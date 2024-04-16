@@ -916,18 +916,25 @@ script NPC_FALADOR_GEMSTORE_NPC_1
 	lock
 	faceplayer
     //namebox ("Guard")
-	msgbox(format("They say the gems from this store comes all the way from Shilo Village.\pThats all the way over in Karamja!"))
+	msgbox(format("They say the gems from this store comes all the way from Shilo Village.\pThat's all the way over in Karamja!"))
     waitmessage
     hidenamebox
 	release
 	end
 }
 
+script HERQUIN_DIARY
+{
+    msgbox(format("The gem deliveries aren't arriving from Shilo anymore.\pI wonder if some of the natives attacked my drivers on their way here.\pI hope they are okay.\pI wonder if the dwarves in the mines nearby can provide me with any gems in the meantime.."))
+    closemessage
+    end
+}
+
 script NPC_FALADOR_GEMSTORE_OWNER
 {
 	lock
 	faceplayer
-    //namebox ("Guard")
+    namebox ("Herquin")
 	msgbox(format("Welcome!\pI am very sorry but the shipment of gems is still on hold and there is nothing else I can sell you.\pPlease come again another time."))
     waitmessage
     hidenamebox
@@ -935,12 +942,13 @@ script NPC_FALADOR_GEMSTORE_OWNER
 	end
 }
 
+
 script NPC_FALADOR_BANK_NPC_2
 {
 	lock
 	faceplayer
     //namebox ("Guard")
-	msgbox(format("I got wiped out by Sir Amik.\pGuess my monsters just werent strong enough."))
+	msgbox(format("I got wiped out by Sir Amik.\pGuess my monsters just weren't strong enough."))
     waitmessage
     hidenamebox
 	release

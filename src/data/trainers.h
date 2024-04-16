@@ -5319,4 +5319,67 @@ const struct Trainer gTrainers[] =
     },
 
 
+//Route 26
+    [TRAINER_ROUTE26_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DWARF,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_dwarf_m,
+        .trainerName = _("Omril"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE26_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE26_TRAINER_1},
+    },
+
+    [TRAINER_ROUTE26_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DWARF,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_dwarf_m,
+        .trainerName = _("Elkot"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE26_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE26_TRAINER_2},
+    },
+
+    [TRAINER_ROUTE26_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_QUESTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_quester,
+        .trainerName = _("4TheL0re"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE26_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE26_TRAINER_3},
+    },
+
+    [TRAINER_ROUTE26_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_ARCHAEOLOGIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_Archaeologist,
+        .trainerName = _("Gerald"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE26_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE26_TRAINER_4},
+    },
+
+
+
+
+
+
+
 };

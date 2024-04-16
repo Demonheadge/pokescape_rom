@@ -474,6 +474,16 @@
 #define TRAINER_MELZARSMAZE_MELZAR_THE_MAD 387
 #define TRAINER_MELZARSMAZE_HAM_ADMIN_BABE 388
 
+//ROUTE26
+#define TRAINER_ROUTE26_TRAINER_1 389
+#define TRAINER_ROUTE26_TRAINER_2 390
+#define TRAINER_ROUTE26_TRAINER_3 391
+#define TRAINER_ROUTE26_TRAINER_4 392
+
+
+
+
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

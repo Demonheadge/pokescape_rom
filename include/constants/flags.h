@@ -1268,6 +1268,10 @@
 #define FLAG_ITEM_CRANDOR_SPIRIT_SHARD                                          0x49F // Unused Flag
 #define FLAG_ITEM_CRANDOR_CHOCOLATE_CAKE                                          0x4A0 // Unused Flag
 #define FLAG_ITEM_CRANDOR_RUNE_POUCH                                           0x4A1 // Unused Flag
+#define FLAG_ROUTE26_SUPER_PRAYER_POTION                                           0x4A2 // Unused Flag
+#define FLAG_ROUTE26_ADAMANT_POUCH                                          0x4A3 // Unused Flag
+#define FLAG_EDGEVILLE_INDOOR_1                                          0x4A4 // Unused Flag
+#define FLAG_EDGEVILLE_INDOOR_2                                           0x4A5 // Unused Flag
 
 #define FLAG_HIDDEN_GROTTO_1                                           0x493 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_2                                           0x494 // Unused Flag
@@ -1277,10 +1281,7 @@
 #define FLAG_HIDDEN_GROTTO_6                                           0x498 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_7                                           0x499 // Unused Flag
 #define FLAG_HIDDEN_GROTTO_8                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
+
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag

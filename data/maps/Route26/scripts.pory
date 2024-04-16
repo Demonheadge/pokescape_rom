@@ -4,3 +4,78 @@ mapscripts Route26_MapScripts{
         call(WEATHER_CHANGE_ROUTE_SNOW)
 	}
 }
+
+//Signs
+
+script SIGN_ROUTE26
+{
+	lock
+	msgbox(format("NORTH to ICE MOUNTAIN\pSOUTH to the DWARVEN MINES"))
+	release
+	end
+}
+
+
+//Battles
+
+//Dwarves
+
+script BATTLE_ROUTE26_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_1, format("Hey!\pToo many humans have been coming here and slaughtering us when are just trying to earn a living!\pI won't let you do the same!"),format("Eek! You're strong."))
+    namebox ("Omril")
+    msgbox(format("Eek! You're strong.\pPlease don't kill us all.\pI have a wife and two children at home.."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE26_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_2, format("I am a cupholder."),format("I am a cupholder."))
+    namebox ("Elkot")
+    msgbox(format("The skeletons eyes have returned to normal, perhaps something sinister nearby was controlling it earlier?"))
+    hidenamebox
+    release
+    end
+}
+
+//Quester
+script BATTLE_ROUTE26_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_3, format("Out of my way, I am on a quest for the Guildmaster of the Champions Guild!\pI must head to the top of the mountain and speak with the Oracle about obtaining a map piece to the forgotten island of Crandor so that I can slay the dragon who lives there!"),format("Maybe I need a stronger team before trying to take on a dragon.."))
+    namebox ("4TheL0re")
+    msgbox(format("Wait, what do you mean you've already found all the map pieces and defeated Elvarg?\pHow am I supposed to prove myself as a Champion now?!"))
+    hidenamebox
+    release
+    end
+}
+
+//Archaeologist
+script BATTLE_ROUTE26_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_4, format("I was told that there are the ruins of an ancient civilisation buried around here.\pIt will be my discovery, not yours!"),format("Oh.. Well maybe we could share the credit instead if we find it?"))
+    namebox ("Gerald")
+    msgbox(format("Supposedly the cavern I am searching for was one the hall of the Imcando dwarves.\pI don't think there are any of them left alive now."))
+    hidenamebox
+    release
+    end
+
+}
+
+
+
+
+//Items
+
+//script ROUTE26_SUPER_PRAYER_POTION
+{
+    finditem(ITEM_SUPER_PRAYER_POTION)
+    end
+}
+
+//script ROUTE26_ADAMANT_POUCH
+{
+    finditem(ITEM_ADAMANT_POUCH)
+    end
+}

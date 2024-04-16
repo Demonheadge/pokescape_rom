@@ -86,7 +86,7 @@ script Trainer1_MillLaneMill_Battle
 {
     trainerbattle_double(TRAINER_TRAINER1_MILLLANEMILL, format("Have you seen any Kebbits around here?"),format("I need to get a higher hunting level…"),format("I would love to have a double battle with you."))
     namebox ("Kebbie")
-    msgbox(format("I have been trying to track down Kebbits for my collection."))
+    msgbox(format("Since you beat me, I'll tell you a little about what I've read about Kebbits.\pThe ones around here apparently evolve at level 15.\pIf they have higher speed than defence, then they'll evolve into Wild Kebbits.\pIf they have higher speed than defence, then they'll evolve into Spotted Kebbits.\pAnd if both of those stats are the same, they'll evolve into Polar Kebbits.\pI need to train Hunter more to learn about how they evolve from there, though."))
     hidenamebox
     release
     end

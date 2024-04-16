@@ -287,6 +287,7 @@ script NPC_FISHERMAN_1
             end
         }
         else {
+            msgbox(format("How are you finding fishing in the pond?\pHave you caught anything yet?{PAUSE 15}\pDid you know that a crayfish evolves into a shrimp?\pOr that a shrimp then evolves into a lobster?\pApparently lobsters can then evolve again if you level them up under extreme weather conditions like rain, sunshine, or hail.\pBut it's so peaceful here, I've never managed to evolve one myself."))
             release
             end
         }
@@ -333,7 +334,7 @@ script ROUTE1_FarmerFred
 	lock
     faceplayer
     namebox("Fred")
-	msgbox(format("Get off my farm!"))
+	msgbox(format("Get off my farm!{PAUSE 15}\pOh, you're not here to kill my livestock?{PAUSE 15}\pWell, as a thank you I'll let you in on a little secret I've discovered.\pMale lambs grow up to be rams, and lady lambs grow up to be sheep.\pEvery farmer know that much.\pWhat they don't know is, if you keep training them, they can evolve even further!\pSometimes the sheep get worked too hard and become really sick, so watch out for them. I think they might be infected with that plague from Ardougne.\pAnd if you're really lucky, sometimes you get a golden ram!\pSure, it doesn't lay golden eggs like a goose but its fleece sells for a lot.\pSome wizard told me to try using a water rune on one of my sheep or rams too, but I don't much care for magic.\pMaybe you could try it and see what happens?"))
     hidenamebox
     closemessage
 	release

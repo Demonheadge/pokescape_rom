@@ -6228,7 +6228,64 @@ static const struct TrainerMonNoItemDefaultMoves sParty_CRANDOR_MOSS_GIANT_3[] =
     }
 };
 
+//ROUTE 26
 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE26_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PET_ROCK,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_SPOOKAXE,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE26_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ROCK_POLISHED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ROCK_GOLDEN_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE26_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ROOSTER_VARROCK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_SUPER_COW,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_GIANT_RAT_HELL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE26_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_YAK_PACK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_GOLEM_TITAN,
+    }
+};
 
 /*
 //#GYM - KARAMJA - TokHaar

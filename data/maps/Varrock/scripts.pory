@@ -1007,7 +1007,7 @@ script NPC_VARROCK_CAT_INFO
 	msgbox(format("It is a Bookcase filled with tons of information about cats.\pWould you like to read it?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            msgbox(format("It is commonly known that a Kitten can evolve into a Cat at level 20.\pBut a Cat can evolve into many other forms from there.\pSome cats can evolve from having specific types of monsters in the party, such as PSYCHIC types & some rats.\pOther cats can evolve by using a certain Rune on them.\pBut don't let them REST all the time otherwise they may get lazy.\pAnd even the closest of bonds may cause a cat to get a bit too overgrown."))
+            msgbox(format("It is commonly known that a Kitten can evolve into a Cat by levelling it up.\pBut a Cat can evolve into many other forms from there.\pSome cats can evolve from having specific types of monsters in the party, such as PSYCHIC types & some rats.\pOther cats can evolve by using a certain Rune on them.\pBut don't let them REST all the time otherwise they may get lazy.\pAnd even the closest of bonds may cause a cat to get a bit too overgrown."))
         }
     closemessage
 	release
@@ -1019,7 +1019,7 @@ script NPC_ROUTE18_MAN
 {
     lock
     faceplayer
-	msgbox(format("Over the road here is Gertrudes house.\pIf you like cats then I think you should pay her a visit.\pIf I was not busy sitting on this bench I would pay her a visit myself."))
+	msgbox(format("Over the road here is Gertrude's house.\pIf you like cats then I think you should pay her a visit.\pIf I was not busy sitting on this bench I would pay her a visit myself."))
     closemessage
     hidenamebox
 	release

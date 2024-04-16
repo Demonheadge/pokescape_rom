@@ -1,0 +1,17 @@
+mapscripts JollyBoar_Pub_2F_MapScripts {
+}
+
+script JOLLYBOARBOOK {
+    lock
+    msgbox(format("There is an old journal on the table.\pMost of the pages have been torn out, but you can see that there is one still left.\pDo you want to read it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)){
+            msgbox(format("Our lands are filled with impurities.\pGoblins, Dwarves and other monstrous abominations.\pEven here, in a Inn far away from most, you notice how the Wilderness is tainted,\pand how you can almost feel a darkness at the east.\pThe civilised human society is under a direct threat and they are blind to it.\pHow many people have died in a Goblin Raid?\pAnd what will happen when the dwarves take their forged arms against us?\pOr foul creatures I've never heard of doing stuff that Saradomin forbids?\pI've made up my mind, it is time for humanity to grow a backbone.\pThere are other people who feel the same as I do, there must be.\pI will gather them, and we shall not rest until the lands are clear of all the monsters! -J.U."))
+            closemessage
+        }
+        else {
+        msgbox(format("You decide not to read the journal page."))
+           closemessage
+        }
+    release
+    end   
+}

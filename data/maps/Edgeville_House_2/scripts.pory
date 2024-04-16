@@ -1,0 +1,28 @@
+mapscripts Edgeville_House_2_MapScripts {
+}
+
+//NPCS
+
+script NPC_EVIL_DAVE
+{
+    lock
+    faceplayer
+    namebox ("Evil Dave")
+	msgbox(format("Hey! You're like TOTALLY EVIL right?\pOf course, I can tell just by looking at you!\pI'll let you in on a secret...\pI am going to summon DEMONS and totally, like, take over the world!\pSo far though, I've only managed some hell-rats.\pIf you want one of your own without all the blood magic, you can use a fire rune on a rat.\pIf you train a cat while you've got one of these rats too, you might get an extra special surprise!\pAh-ha-ha-ha-ha-haa!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_DORIS
+{
+    lock
+    faceplayer
+    namebox ("Doris")
+	msgbox(format("Hello dearie, how are you doing?\pDave? Oh, he's always been evil, I think.\pHe used to want to go into Edgeville Dungeon and I thought he'd grow up to be a mighty adventurer and conquer the gym challenge there.\pBut it turns out he didn't want to be a hero, he wanted to be a monster!{PAUSE 15}\pAt least it keeps him happy."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
