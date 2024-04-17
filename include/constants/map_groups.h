@@ -759,6 +759,7 @@
 #define MAP_DRAYNOR_SEWERS_3        (7 | (39 << 8))
 #define MAP_DRAYNOR_SEWERS_4        (8 | (39 << 8))
 #define MAP_DRAYNOR_HOUSE_AGGIE     (9 | (39 << 8))
+#define MAP_DRAYNOR_HOUSE_NED       (10 | (39 << 8))
 
 // gMapGroup_PokescapeIndoorPortSarim
 #define MAP_PORT_SARIM_PUB_1F           (0 | (40 << 8))

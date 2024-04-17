@@ -8400,6 +8400,16 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_PartyRoom/border.bin",
       "blockdata_filepath": "data/layouts/Falador_PartyRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_NED",
+      "name": "Draynor_House_Ned_Layout",
+      "width": 8,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Draynor_House_Ned/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_Ned/map.bin"
     }
   ]
 }

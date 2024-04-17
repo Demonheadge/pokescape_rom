@@ -20,7 +20,7 @@ script FALADORCASTLE_3F_STATE {
         addobject(8)
         addobject(9)
         addobject(10)
-        call(QUEST_FALADORCASTLE_SIROWEN)
+        call(QUEST_FALADORCASTLE_EVENT_AFTER_GYM)
     }
     else {
         removeobject(4)
@@ -36,14 +36,22 @@ script FALADORCASTLE_3F_STATE {
 }
 
 
-script QUEST_FALADORCASTLE_SIROWEN
+
+script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to integrating room.
 {
-	lock
-	faceplayer
+	//player walks over to owen
     namebox ("Sir Owen")
 	msgbox(format("Thanks for coming {PLAYER}."))
     closemessage
     hidenamebox
+
+
+    //mention ham talks about a map and all info around their plan
+    //you mention u have the map peices.
+    //show tiffy the maps. Realises it's to crandor.
+    //tells need a captain not many sail maybe Ned in draynor.
+
+
 	release
 	end
 }

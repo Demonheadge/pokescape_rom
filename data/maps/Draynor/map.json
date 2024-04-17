@@ -396,17 +396,17 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
-      "y": 11,
+      "x": 34,
+      "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_DRAYNOR",
+      "dest_map": "MAP_DRAYNOR_HOUSE_NED",
       "dest_warp_id": "0"
     },
     {
-      "x": 27,
-      "y": 10,
+      "x": 34,
+      "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_DRAYNOR",
+      "dest_map": "MAP_DRAYNOR_HOUSE_NED",
       "dest_warp_id": "0"
     },
     {
