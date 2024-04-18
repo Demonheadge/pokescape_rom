@@ -141,7 +141,7 @@ script Lumbridge_Castle_NPC4
 	faceplayer
 	//namebox ("???")
 	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) { //Before recieving starter mon.
-		msgbox(format("My friend over in Kandarin appearntly got a different monster from the professor."))
+		msgbox(format("My friend over in Kandarin apparently got a different monster from the professor."))
 	}
 	else {
 		msgbox(format("The best way to find your enemies type is to just use moves.\pIdentify their weakness!"))

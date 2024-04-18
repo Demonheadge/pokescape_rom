@@ -157,7 +157,7 @@ script Draynor_Diango {
      //   }
 
 
-    msgbox(format("Howdy!\pWould you like to see if you have any gifts avaliable?"), MSGBOX_YESNO)
+    msgbox(format("Howdy!\pWould you like to see if you have any gifts available?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
         hidenamebox
         msgbox(format("Loading - please wait{PAUSE 32}.{PAUSE 32}.{PAUSE 32}."))

@@ -326,7 +326,7 @@ script NPC_FALADOR_WHITEKNIGHT_3
 		msgbox(format("Sorry but the gym is closed for a very important mission.\pIn the meantime you should go visit the Party room in the east of town.\pIt looks like a big castle, you cannot miss it."))
 	}
 	else {
-		msgbox(format("Sir Amik Varze is our towns gym leader."))
+		msgbox(format("Sir Amik Varze is our town's gym leader."))
 	}
 	
     waitmessage

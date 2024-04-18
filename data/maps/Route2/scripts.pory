@@ -271,8 +271,8 @@ script NPC_ROUTE2_Wizard
 script BATTLE_ROUTE2_Trainer_1
 {
     trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Please no!\pI'm so close to the Bank I don't want to be sent back to Lumbridge!"),format("Nooo!\pBack to Lumbridge I go!"))
-    //namebox ("SkIlla4Eva")
-    msgbox(format("If the swamp wasn't hard enough there was also a forest to pass through!?\pThis is too much for a skiller…"))
+    namebox ("HOW2TYPE")
+    msgbox(format("If the swamp wasn't hard enough, there was also a forest to pass through!?\pThis is too much for a skiller…"))
     hidenamebox
     release
     end

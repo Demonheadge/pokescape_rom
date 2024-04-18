@@ -37,13 +37,85 @@ script FALADORCASTLE_3F_STATE {
 
 
 
-script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to integrating room.
+script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to interrogation room.
 {
+
+//WIP
+
 	//player walks over to owen
     namebox ("Sir Owen")
-	msgbox(format("Thanks for coming {PLAYER}."))
+	msgbox(format("Thanks for coming {PLAYER}.\pWe have been hard at work interrogating the prisoners, but have run into a little problem.{PAUSE 15}Nothing they say makes any sense!\pListen for yourself. The Black Knights are just complaining..."))
     closemessage
     hidenamebox
+
+    //Sir Owen and player walk to Black Knight cell
+
+    namebox ("Black Knight")
+	msgbox(format("Did you know that Black Knights have twice the chance to get called in for an interrogation than any other type of knight???{PAUSE 15}I bet ironmen or mithrilmen don't get pulled over nearly as often by you White Knights!{PAUSE 15}These people are armourist, I tell you!\pARMOURIST!!"))
+    closemessage
+    hidenamebox
+
+	//Sir Owen and player walk down to H.A.M cell
+    
+    namebox ("Sir Owen")
+	msgbox(format("And don't get me started on the H.A.M members..."))
+    closemessage
+    hidenamebox
+
+	//player faces the HAM grunts
+    namebox ("H.A.M Grunt")
+	msgbox(format("H.A.M are going to rid Gielinor of all the monsters.\pNo more smelly goblins.\pNo more grimy dwarves.\pNo more wretched frogeels!{PAUSE 15}We'll probably leave the livestock though...\pWe will still need to eat after all.\pAll we needed to succeed was to finish the map.\pAnd locate the ultimate weapon to destroy every single monster in existence."))
+    closemessage
+    hidenamebox
+
+    //Player faces Sir Owen
+    namebox ("Sir Owen")
+	msgbox(format("See what I mean?\pThey're talking nonsense about a map when all they had was a scrap of paper with a scrawl on it.\pIt wasn't even worth picking up off the floor!\pThey've clearly never seen a map before!\p{PAUSE 15}What do you mean that it's a fragment of a larger map?\pOh, but you have all three of the pieces now?\p{PAUSE 15}Good, then they won't be able to go through with their plan!"))
+    closemessage
+    hidenamebox
+
+    //Sir Owen turns to face the grunt
+    namebox ("Sir Owen")
+	msgbox(format("And what do you think you're laughing at?"))
+    closemessage
+    hidenamebox
+
+	//player faces the HAM grunts
+    namebox ("H.A.M Grunt")
+	msgbox(format("You might have taken this piece from us, but what you don't realise is that we'd already made a copy!\pOur colleague managed to sneak off with it through a tunnel in the mines before you got there.\pBlew it up behind them too so nobody could follow.\pHahahahahahahahaha!\pNow who're the stupid ones!?"))
+    closemessage
+    hidenamebox
+
+    //Player faces Sir Owen
+    namebox ("Sir Owen")
+	msgbox(format("Oh no!\pIf they have even one piece of the map, we must move swiftly to stop them from locating this weapon!"))
+    closemessage
+    hidenamebox
+
+    //Sir Owen and the player walk over to Sir Tiffy
+
+    //Sir Owen faces the player
+    namebox ("Sir Owen")
+	msgbox(format("{PLAYER}, show Sir Tiffy the map!"))
+    closemessage
+    hidenamebox
+
+    //Player faces Sir Tiffy
+    namebox ("Sir Tiffy")
+	msgbox(format("Now what do we have here, old bean?{PAUSE 15}Hmm...\pLet me think.\pWe have dossiers on most of the islands on Gielinor.\pIt pays to know what's happening across the other kingdoms.\p{PAUSE 15}You must be pulling on my leg!\pThis is a map of Crandor.\pAround thirty years ago, it was a thriving community full of mages and adventurers.\pMany of them even became part of the Champions' Guild over in Varrock!\pHowever, one day one of their adventurers went too far and awoke a dragon that laid waste to the entire island.\pThey say it's nothing but a wasteland now.\pThat dragon must be the weapon they're looking for!\p{PAUSE 15}Now how to get there...\pYou'd have to sail, of course, but no captain in his right mind would sail to that island...{PAUSE 15}There may be one, though.\pNed.\pHe's a veteran sailor who settled in Draynor Village when people stopped letting him sail.\pIf anyone has the knowledge and experience to get there, it'll be him.\pSince you were strong enough to defeat even the best the White Knights had to offer, I trust you'll be up to the task of stopping H.A.M, old bean?\pI'll need to report this to the top brass so we can keep monitoring their activity here.\pTa-ta for now."))
+    closemessage
+    hidenamebox
+
+    //Sir Tiffy exits
+
+    //Sir Owen faces the player
+    namebox ("Sir Owen")
+	msgbox(format("What are you waiting for {PLAYER}, go!\pHead to Draynor Village and talk to Ned!"))
+    closemessage
+    hidenamebox
+
+    //Sir Owen walks the player out. He then stands outside the room and when spoken to reminds the player who to speak to and where he is.
+
 
 
     //mention ham talks about a map and all info around their plan

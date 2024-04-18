@@ -324,7 +324,7 @@ Lumbridge_Castle_NPC3_Text_1:
 	.string "good of a ruler.$"
 
 Lumbridge_Castle_NPC4_Text_0:
-	.string "My friend over in Kandarin appearntly\n"
+	.string "My friend over in Kandarin apparently\n"
 	.string "got a different monster from the\l"
 	.string "professor.$"
 

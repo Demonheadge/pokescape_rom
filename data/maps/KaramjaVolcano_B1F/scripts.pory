@@ -181,9 +181,9 @@ script NPC_KaramjaVolcano_Tzhaar_2
 
 script BATTLE_KaramjaVolcano_HAM_1
 {
-    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, format("We plan on making this volcano erupt and take out every monsters by doing so!"),format("Once we erupt this volcano it should wipe out all of the monsters on karamja!"))
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, format("We've set up camp here following rumours of a dragon nest, but I haven't seen anything!"),format("And I won't be seeing anything if I keep losing battles like this."))
     namebox ("H.A.M Grunt")
-    msgbox(format("Once we erupt this volcano it should wipe out all of the monsters on karamja!"))
+    msgbox(format("Go up the stairs?\pDon't be silly!\pThat's probably where the nest is, and the last thing I need is to be eaten..."))
     hidenamebox
     release
     end
@@ -191,9 +191,9 @@ script BATTLE_KaramjaVolcano_HAM_1
 
 script BATTLE_KaramjaVolcano_HAM_2
 {
-    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_2, format("Ahhh!\nA Lava monster!"),format("Those lava rock monsters are scary."))
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_2, format("We've set up camp here.\pI really shouldn't let you go any further."),format("Oh bother..."))
     namebox ("H.A.M Grunt")
-    msgbox(format("Those lava rock monsters are scary."))
+    msgbox(format("Look, if I'm honest, I just joined H.A.M because I liked the robes and wanted to make a few friends...\pI didn't really sign up for mass genocide, but it's too late to back out now."))
     hidenamebox
     release
     end
@@ -203,7 +203,7 @@ script BATTLE_KaramjaVolcano_HAM_3
 {
     trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_3, format("Our goal is to rid the world of all monsters!\pYou cannot stop us!"),format("I lost!\nBut you cannot stop us!"))
     namebox ("H.A.M Grunt")
-    msgbox(format("Even though you may have defeated me, you stand no chance against our leader!"))
+    msgbox(format("I only joined H.A.M last week.\pI was supposed to be guarding the supplies back at base but snuck out with the others to get some fresh air!\pI never expected to be bundled onto a boat and stranded on a deserted island..."))
     hidenamebox
     release
     end
@@ -212,9 +212,9 @@ script BATTLE_KaramjaVolcano_HAM_3
 
 script BATTLE_KaramjaVolcano_HAM_4
 {
-    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_4, format("Dont try to stop us!"),format("Ok you can try, but it wont work."))
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_4, format("We came here searching for some ancient dragon that once ravaged the island.\pDon't think you can stop us!"),format("It's already too late..."))
     namebox ("H.A.M Grunt")
-    msgbox(format("Ok you can try, but it wont work."))
+    msgbox(format("What do you mean our plan makes no sense?\pThis dragon killed every single mage that lived on this island!\pIf anything is powerful enough to rid the world of monsters, it's this dragon!"))
     hidenamebox
     release
     end

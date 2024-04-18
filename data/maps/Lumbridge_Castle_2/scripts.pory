@@ -668,7 +668,7 @@ script QUEST_Cooks_Assistant_STATE{
 	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 0: 
 			namebox ("Cook")
-			msgbox(format("Oh dear..\pWhat am I to do..\nI'm in a terrible, terrible mess!\pI should be making a cake for the Duke but I forgot to get the ingredients!"))
+			msgbox(format("Oh dear...\pWhat am I to do...\nI'm in a terrible, terrible mess!\pI should be making a cake for the Duke but I forgot to get the ingredients!"))
 			msgbox(format("Can you please help me?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)){
 				hidenamebox
@@ -709,7 +709,7 @@ script QUEST_Cooks_Assistant_STATE{
 				end
 			}
 			else {
-				msgbox(format("Please Hurry.."))
+				msgbox(format("Please hurry..."))
 				hidenamebox
 				release
 				end
