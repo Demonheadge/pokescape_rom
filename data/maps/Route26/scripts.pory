@@ -22,9 +22,9 @@ script SIGN_ROUTE26
 
 script BATTLE_ROUTE26_TRAINER_1
 {
-    trainerbattle_single(TRAINER_ROUTE26_TRAINER_1, format("Hey!\pToo many humans have been coming here and slaughtering us when are just trying to earn a living!\pI won't let you do the same!"),format("Eek! You're strong."))
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_1, format("Hey!\pToo many humans have been coming here and disturbing us when are just trying to earn a living!\pI won't let you do the same!"),format("Eek! You're strong."))
     namebox ("Omril")
-    msgbox(format("Eek! You're strong.\pPlease don't kill us all.\pI have a wife and two children at home.."))
+    msgbox(format("Please don't disturb our village."))
     hidenamebox
     release
     end
@@ -32,9 +32,9 @@ script BATTLE_ROUTE26_TRAINER_1
 
 script BATTLE_ROUTE26_TRAINER_2
 {
-    trainerbattle_single(TRAINER_ROUTE26_TRAINER_2, format("I am a cupholder."),format("I am a cupholder."))
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_2, format("Beware of landslides!\pBut for now you should beware of me!"),format("You came crashing down on me like a landslide."))
     namebox ("Elkot")
-    msgbox(format("The skeletons eyes have returned to normal, perhaps something sinister nearby was controlling it earlier?"))
+    msgbox(format("We've had no many earthquakes and landslides lately we're not sure what are actually causing them.\pMaybe something deep within the mines?"))
     hidenamebox
     release
     end
@@ -43,9 +43,9 @@ script BATTLE_ROUTE26_TRAINER_2
 //Quester
 script BATTLE_ROUTE26_TRAINER_3
 {
-    trainerbattle_single(TRAINER_ROUTE26_TRAINER_3, format("Out of my way, I am on a quest for the Guildmaster of the Champions Guild!\pI must head to the top of the mountain and speak with the Oracle about obtaining a map piece to the forgotten island of Crandor so that I can slay the dragon who lives there!"),format("Maybe I need a stronger team before trying to take on a dragon.."))
+    trainerbattle_single(TRAINER_ROUTE26_TRAINER_3, format("Out of my way, I am on a quest for the Guildmaster of the Champions Guild!"),format("Maybe I need a stronger team before trying to take on this quest…"))
     namebox ("4TheL0re")
-    msgbox(format("Wait, what do you mean you've already found all the map pieces and defeated Elvarg?\pHow am I supposed to prove myself as a Champion now?!"))
+    msgbox(format("Maybe I need a stronger team before trying to take on this quest…"))
     hidenamebox
     release
     end

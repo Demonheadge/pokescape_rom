@@ -8,7 +8,7 @@ script NPC_DWARVENMINES_NPC1
     lock
     faceplayer
     namebox ("Dwarven Apprentice")
-	msgbox(format("Inside here is Nulodion's multicannon store!\pThe only place in Gielinor that you can find the esteemed dwarf multicannon for sale\pDon't tell him I told you this, but it's actually cheaper if you buy the full set from him instead of individual parts!\p{PAUSE 15}Maybe you could spare some of the extra coin you save for me..?."))
+	msgbox(format("Inside here is Nulodion's multicannon store!\pThe only place in Gielinor that you can find the esteemed dwarf multicannon for sale.\pDon't tell him I told you this, but it's actually cheaper if you buy the full set from him instead of individual parts!\p{PAUSE 15}Maybe you could spare some of the extra coin you save for me…?"))
     closemessage
     hidenamebox
 	release
