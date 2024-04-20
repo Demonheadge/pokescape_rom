@@ -128,7 +128,7 @@ NPC_KaramjaVolcano_Tzhaar_2::
 BATTLE_KaramjaVolcano_HAM_1::
 	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, BATTLE_KaramjaVolcano_HAM_1_Text_0, BATTLE_KaramjaVolcano_HAM_1_Text_1
 	namebox EVENT_KaramjaVolcano_HAM_EnterVolcano_Text_0
-	msgbox BATTLE_KaramjaVolcano_HAM_1_Text_1
+	msgbox BATTLE_KaramjaVolcano_HAM_1_Text_2
 	hidenamebox
 	release
 	end
@@ -137,7 +137,7 @@ BATTLE_KaramjaVolcano_HAM_1::
 BATTLE_KaramjaVolcano_HAM_2::
 	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_2, BATTLE_KaramjaVolcano_HAM_2_Text_0, BATTLE_KaramjaVolcano_HAM_2_Text_1
 	namebox EVENT_KaramjaVolcano_HAM_EnterVolcano_Text_0
-	msgbox BATTLE_KaramjaVolcano_HAM_2_Text_1
+	msgbox BATTLE_KaramjaVolcano_HAM_2_Text_2
 	hidenamebox
 	release
 	end
@@ -155,7 +155,7 @@ BATTLE_KaramjaVolcano_HAM_3::
 BATTLE_KaramjaVolcano_HAM_4::
 	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_4, BATTLE_KaramjaVolcano_HAM_4_Text_0, BATTLE_KaramjaVolcano_HAM_4_Text_1
 	namebox EVENT_KaramjaVolcano_HAM_EnterVolcano_Text_0
-	msgbox BATTLE_KaramjaVolcano_HAM_4_Text_1
+	msgbox BATTLE_KaramjaVolcano_HAM_4_Text_2
 	hidenamebox
 	release
 	end
@@ -472,21 +472,35 @@ NPC_KaramjaVolcano_Tzhaar_2_Text_0:
 	.string "GET OUT!$"
 
 BATTLE_KaramjaVolcano_HAM_1_Text_0:
-	.string "We plan on making this volcano erupt\n"
-	.string "and take out every monsters by doing\l"
-	.string "so!$"
+	.string "We've set up camp here following\n"
+	.string "rumours of a dragon nest, but I haven't\l"
+	.string "seen anything!$"
 
 BATTLE_KaramjaVolcano_HAM_1_Text_1:
-	.string "Once we erupt this volcano it should\n"
-	.string "wipe out all of the monsters on\l"
-	.string "karamja!$"
+	.string "And I won't be seeing anything if I keep\n"
+	.string "losing battles like this.$"
+
+BATTLE_KaramjaVolcano_HAM_1_Text_2:
+	.string "Go up the stairs?\p"
+	.string "Don't be silly!\p"
+	.string "That's probably where the nest is, and\n"
+	.string "the last thing I need is to be eaten...$"
 
 BATTLE_KaramjaVolcano_HAM_2_Text_0:
-	.string "Ahhh!\n"
-	.string "A Lava monster!$"
+	.string "We've set up camp here.\p"
+	.string "I really shouldn't let you go any\n"
+	.string "further.$"
 
 BATTLE_KaramjaVolcano_HAM_2_Text_1:
-	.string "Those lava rock monsters are scary.$"
+	.string "Oh bother...$"
+
+BATTLE_KaramjaVolcano_HAM_2_Text_2:
+	.string "Look, if I'm honest, I just joined H.A.M\n"
+	.string "because I liked the robes and wanted\l"
+	.string "to make a few friends...\p"
+	.string "I didn't really sign up for mass\n"
+	.string "genocide, but it's too late to back out\l"
+	.string "now.$"
 
 BATTLE_KaramjaVolcano_HAM_3_Text_0:
 	.string "Our goal is to rid the world of all\n"
@@ -498,15 +512,30 @@ BATTLE_KaramjaVolcano_HAM_3_Text_1:
 	.string "But you cannot stop us!$"
 
 BATTLE_KaramjaVolcano_HAM_3_Text_2:
-	.string "Even though you may have defeated me,\n"
-	.string "you stand no chance against our\l"
-	.string "leader!$"
+	.string "I only joined H.A.M last week.\p"
+	.string "I was supposed to be guarding the\n"
+	.string "supplies back at base but snuck out\l"
+	.string "with the others to get some fresh air!\p"
+	.string "I never expected to be bundled onto a\n"
+	.string "boat and stranded on a deserted\l"
+	.string "island...$"
 
 BATTLE_KaramjaVolcano_HAM_4_Text_0:
-	.string "Dont try to stop us!$"
+	.string "We came here searching for some\n"
+	.string "ancient dragon that once ravaged the\l"
+	.string "island.\p"
+	.string "Don't think you can stop us!$"
 
 BATTLE_KaramjaVolcano_HAM_4_Text_1:
-	.string "Ok you can try, but it wont work.$"
+	.string "It's already too late...$"
+
+BATTLE_KaramjaVolcano_HAM_4_Text_2:
+	.string "What do you mean our plan makes no\n"
+	.string "sense?\p"
+	.string "This dragon killed every single mage\n"
+	.string "that lived on this island!\p"
+	.string "If anything is powerful enough to rid\n"
+	.string "the world of monsters, it's this dragon!$"
 
 BATTLE_KaramjaVolcano_HAM_5_Text_0:
 	.string "The world will be rid of monsters, you\n"

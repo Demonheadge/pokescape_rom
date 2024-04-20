@@ -2,10 +2,10 @@
   "id": "MAP_CRANDOR",
   "name": "Crandor",
   "layout": "LAYOUT_CRANDOR",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_PS_TZHAAR",
   "region_map_section": "MAPSEC_MUSA_POINT",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_RAIN_THUNDERSTORM",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -445,6 +445,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_KaramjaVolcano_HAM_2",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ELVARG",
+      "x": 17,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SHIP_1",
+      "x": 44,
+      "y": 47,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ABYSSAL_DEMON",
+      "x": 25,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TELEPORT_TO_SHIP_SCENE",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -454,10 +493,79 @@
       "elevation": 0,
       "dest_map": "MAP_KARAMJA_VOLCANO_B3F",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 44,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_CRANDOR",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_CRANDOR_SHAKE"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_CRANDOR_SHAKE"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    }
   ],
   "bg_events": [
     {

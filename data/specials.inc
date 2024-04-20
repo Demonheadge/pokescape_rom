@@ -548,3 +548,5 @@ gSpecials::
 	def_special SafariModeIncreasePouches
 	def_special GetCurrentMap
 	def_special GetSeededResult
+	def_special TeleportCamera
+	def_special ReturnCameraToPlayer

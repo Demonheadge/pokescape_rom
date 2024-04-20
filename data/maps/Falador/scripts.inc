@@ -1337,7 +1337,7 @@ NPC_FALADOR_WHITEKNIGHT_3_Text_0:
 	.string "miss it.$"
 
 NPC_FALADOR_WHITEKNIGHT_3_Text_1:
-	.string "Sir Amik Varze is our towns gym leader.$"
+	.string "Sir Amik Varze is our town's gym leader.$"
 
 NPC_FALADOR_NPC_11_Text_0:
 	.string "After I finish work today I might walk\n"

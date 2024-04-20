@@ -30,6 +30,7 @@ static void TilesetAnim_Building(u16);
 static void TilesetAnim_PokeScapeOutdoors(u16);
 static void TilesetAnim_Lumbridge(u16);
 static void TilesetAnim_Wizards_Tower(u16);
+static void TilesetAnim_Karamja(u16);
 //PokeScape//---------------
 
 static void TilesetAnim_Rustboro(u16);
@@ -87,6 +88,8 @@ static void QueueAnimTiles_PokeScapeOutdoors_LogFire(u16);
 static void QueueAnimTiles_Lumbridge_Fountain(u16);
 static void QueueAnimTiles_Wizards_Tower_Torch(u16);
 static void QueueAnimTiles_Wizards_Tower_Portal(u16);
+static void QueueAnimTiles_Karamja_scorchfire1(u16);
+static void QueueAnimTiles_Karamja_scorchfire2(u16);
 //PokeScape//---------------
 
 
@@ -182,6 +185,29 @@ const u16 *const gTilesetAnims_Wizards_Tower_Portal[] = {
 };
 
 
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame0[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_0.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame1[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_1.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame2[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_2.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame3[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_3.4bpp");
+
+const u16 *const gTilesetAnims_Karamja_scorchfire1[] = {
+    gTilesetAnims_Karamja_scorchfire1_Frame0,
+    gTilesetAnims_Karamja_scorchfire1_Frame1,
+    gTilesetAnims_Karamja_scorchfire1_Frame2,
+    gTilesetAnims_Karamja_scorchfire1_Frame3
+};
+
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame0[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_0.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame1[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_1.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame2[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_2.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame3[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_3.4bpp");
+
+const u16 *const gTilesetAnims_Karamja_scorchfire2[] = {
+    gTilesetAnims_Karamja_scorchfire2_Frame0,
+    gTilesetAnims_Karamja_scorchfire2_Frame1,
+    gTilesetAnims_Karamja_scorchfire2_Frame2,
+    gTilesetAnims_Karamja_scorchfire2_Frame3
+};
 
 
 //PokeScape//---------------
@@ -754,6 +780,13 @@ void InitTilesetAnim_Wizards_Tower(void)
     sSecondaryTilesetAnimCounterMax = 256;
     sSecondaryTilesetAnimCallback = TilesetAnim_Wizards_Tower;
 }
+
+void InitTilesetAnim_Karamja(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 256;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Karamja;
+}
 //PokeScape//---------------
 
 
@@ -829,6 +862,18 @@ static void TilesetAnim_Wizards_Tower(u16 timer)
 
 }
 
+
+static void TilesetAnim_Karamja(u16 timer)
+{
+    if (timer % 8 == 0)
+        QueueAnimTiles_Karamja_scorchfire1(timer / 8);
+    if (timer % 8 == 0)
+        QueueAnimTiles_Karamja_scorchfire2(timer / 8);
+
+}
+
+
+
 //PokeScape//---------------
 
 
@@ -849,6 +894,18 @@ static void QueueAnimTiles_PokeScapeOutdoors_LogFire(u16 timer)
 {
     u16 i = timer % 4; 
     AppendTilesetAnimToBuffer(gTilesetAnims_PokeScapeOutdoors_LogFire[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(472)), 0x80);
+}
+
+static void QueueAnimTiles_Karamja_scorchfire1(u16 timer)
+{
+    u16 i = timer % 4; 
+    AppendTilesetAnimToBuffer(gTilesetAnims_Karamja_scorchfire1[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(520)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Karamja_scorchfire2(u16 timer)
+{
+    u16 i = timer % 4; 
+    AppendTilesetAnimToBuffer(gTilesetAnims_Karamja_scorchfire2[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(524)), 4 * TILE_SIZE_4BPP);
 }
 
 

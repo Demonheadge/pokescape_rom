@@ -284,7 +284,8 @@ NPC_ROUTE2_Wizard::
 
 BATTLE_ROUTE2_Trainer_1::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_1
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_2
+	namebox BATTLE_ROUTE2_Trainer_1_Text_2
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_3
 	hidenamebox
 	release
 	end
@@ -400,7 +401,10 @@ BATTLE_ROUTE2_Trainer_1_Text_1:
 	.string "Back to Lumbridge I go!$"
 
 BATTLE_ROUTE2_Trainer_1_Text_2:
-	.string "If the swamp wasn't hard enough there\n"
+	.string "HOW2TYPE$"
+
+BATTLE_ROUTE2_Trainer_1_Text_3:
+	.string "If the swamp wasn't hard enough, there\n"
 	.string "was also a forest to pass through!?\p"
 	.string "This is too much for a skiller…$"
 

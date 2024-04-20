@@ -1599,6 +1599,19 @@ void OffsetCameraForBattle(void)
     SetCameraPanning(8, 0);
 }
 
+void TeleportCamera(void)
+{
+    UpdateSavedPos();
+    MoveCameraAndRedrawMap(gSpecialVar_0x8004 - gSaveBlock1Ptr->pos.x,
+                           gSpecialVar_0x8005 - gSaveBlock1Ptr->pos.y);
+}
+
+void ReturnCameraToPlayer(void)
+{
+    MoveCameraAndRedrawMap(gSaveBlock1Ptr->savedPos.x - gSaveBlock1Ptr->pos.x,
+                           gSaveBlock1Ptr->savedPos.y - gSaveBlock1Ptr->pos.y);
+}
+
 const struct WindowTemplate gElevatorFloor_WindowTemplate =
 {
     .bg = 0,

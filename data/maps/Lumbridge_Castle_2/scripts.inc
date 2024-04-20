@@ -1421,8 +1421,8 @@ QUEST_Cooks_Assistant_STATE_Text_0:
 	.string "Cook$"
 
 QUEST_Cooks_Assistant_STATE_Text_1:
-	.string "Oh dear..\p"
-	.string "What am I to do..\n"
+	.string "Oh dear...\p"
+	.string "What am I to do...\n"
 	.string "I'm in a terrible, terrible mess!\p"
 	.string "I should be making a cake for the Duke\n"
 	.string "but I forgot to get the ingredients!$"
@@ -1470,7 +1470,7 @@ QUEST_Cooks_Assistant_STATE_Text_9:
 	.string "Please use the range over there!$"
 
 QUEST_Cooks_Assistant_STATE_Text_10:
-	.string "Please Hurry..$"
+	.string "Please hurry...$"
 
 QUEST_Cooks_Assistant_STATE_Text_11:
 	.string "What you don't know how to bake a cake\n"

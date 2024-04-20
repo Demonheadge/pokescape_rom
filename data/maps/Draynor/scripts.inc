@@ -461,7 +461,7 @@ Draynor_Diango_Text_0:
 Draynor_Diango_Text_1:
 	.string "Howdy!\p"
 	.string "Would you like to see if you have any\n"
-	.string "gifts avaliable?$"
+	.string "gifts available?$"
 
 Draynor_Diango_Text_2:
 	.string "Loading - please wait{PAUSE 32}.{PAUSE 32}.{PAUSE 32}.$"

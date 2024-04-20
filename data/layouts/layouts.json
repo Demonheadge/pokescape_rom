@@ -8410,6 +8410,16 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Draynor_House_Ned/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_House_Ned/map.bin"
+    },
+    {
+      "id": "LAYOUT_CRANDOR_SEA_ROUTE",
+      "name": "Crandor_SeaRoute_Layout",
+      "width": 60,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Karamja",
+      "border_filepath": "data/layouts/Crandor_SeaRoute/border.bin",
+      "blockdata_filepath": "data/layouts/Crandor_SeaRoute/map.bin"
     }
   ]
 }

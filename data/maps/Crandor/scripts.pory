@@ -7,7 +7,7 @@ script CRANDOR_NED
 {
     faceplayer
     namebox ("Ned")
-    msgbox(format("It looks like we're stranded!/pNo wonder no other captains wanted to sail anywhere near Crandor.."))
+    msgbox(format("It looks like we're stranded!\pNo wonder no other captains wanted to sail anywhere near Crandor.."))
     closemessage
     hidenamebox
     release
@@ -73,4 +73,122 @@ script BATTLE_CRANDOR_MOSS_GIANT_3{
     trainerbattle_single(TRAINER_CRANDOR_MOSS_GIANT_3, format("Not more humans!"),format("This human strong.."))
     msgbox(format("Get pink humans off our island.."))
     release
+}
+
+
+
+
+
+
+
+script TRIGGER_CRANDOR_SHAKE
+{
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+	waitstate
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+	waitstate
+    //msgbox(format("Something just shook the entire island…"))
+    closemessage
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+script TRIGGER_ELVARGFLYOVER
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_elvargflyover4)
+    savebgm(MUS_DUMMY)
+    fadeoutbgm(1)
+    waitmovement(0)
+    //camera
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, movement_crandor_camera)
+    waitmovement(0)
+    playmoncry(SPECIES_ELVARG, 0)
+    waitmoncry
+    delay(16)
+    playse(SE_M_FLY)
+    applymovement(33, movement_elvargflyover2)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(8, MOVEMENT_HAM_CONFUSED)
+    
+    //setobjectxy(33,21,31)
+    delay(32)
+    //special(RemoveCameraObject)
+    //fadeinbgm(1)
+    waitmovement(0)
+    warp(MAP_KARAMJA_VOLCANO_B3F, 1)
+    
+    release
+    end
+}
+
+movement MOVEMENT_HAM_CONFUSED {
+    //emote_exclamation_mark
+    emote_question_mark
+    delay_16
+    face_down
+    delay_16
+    face_right
+    delay_16
+    face_up
+    delay_16
+    face_right
+}
+
+movement movement_crandor_camera {
+    walk_up * 5
+    delay_16
+}
+
+movement movement_elvargflyover {
+    lock_facing_direction
+    disable_anim
+    walk_diag_northeast *15
+}
+movement movement_elvargflyover4 {
+    walk_down * 3
+    set_invisible
+}
+
+movement movement_elvargflyover2 {
+    lock_facing_direction
+    disable_anim
+    walk_faster_right * 20
+}
+
+movement movement_elvargflyover_left {
+    lock_facing_direction
+    disable_anim
+    walk_faster_left * 20
+}
+
+movement movement_elvargflyover1 {
+    lock_facing_direction
+    delay_16
+    walk_diag_northwest
+    delay_16
+    walk_diag_southwest
+    fly_up
+    delay_16
+    fly_down
+    delay_16
+    figure_8
 }

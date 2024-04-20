@@ -147,8 +147,8 @@ BATTLE_LUMBRIDGEFOREST_TRAINER_2::
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_3::
 	trainerbattle_single TRAINER_LUMBRIDGEFOREST_TRAINER_3, BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_0, BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_1
-	namebox BATTLE_LUMBRIDGEFOREST_TRAINER_2_Text_2
-	msgbox BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_2
+	namebox BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_2
+	msgbox BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_3
 	hidenamebox
 	release
 	end
@@ -243,7 +243,7 @@ BATTLE_LUMBRIDGEFOREST_BOT1_Text_1:
 	.string "HELLO, I AM NOT A BOT.$"
 
 BATTLE_LUMBRIDGEFOREST_BOT1_Text_2:
-	.string "BOT$"
+	.string "alhgkj73$"
 
 BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_0:
 	.string "OMG LUL, guess what?\p"
@@ -253,11 +253,11 @@ BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_1:
 	.string "JK, I'll share.$"
 
 BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_2:
-	.string "WOODCUTTER$"
+	.string "Ch0ppa1$"
 
 BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_3:
 	.string "Like ROFLMAO you are stronk.\p"
-	.string "You sure cut me down to size, OMGEALUL!$"
+	.string "You sure cut me down to size, OMEGALUL!$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_1_Text_0:
 	.string "I am going to jump out and attack you\n"
@@ -268,7 +268,7 @@ BATTLE_LUMBRIDGEFOREST_TRAINER_1_Text_1:
 	.string "have lost this battle.$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_1_Text_2:
-	.string "MUGGER$"
+	.string "Mugger$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_2_Text_0:
 	.string "Me and me friend destroyed the path\n"
@@ -280,7 +280,7 @@ BATTLE_LUMBRIDGEFOREST_TRAINER_2_Text_1:
 	.string "Oh no, you has escaped the trap!$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_2_Text_2:
-	.string "GOBLIN$"
+	.string "Foulblood$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_2_Text_3:
 	.string "Me and me friend destroyed the path\n"
@@ -297,6 +297,9 @@ BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_1:
 	.string "Clearly big high war god favours you.$"
 
 BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_2:
+	.string "Toadtoes$"
+
+BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_3:
 	.string "Me liek this forest.\p"
 	.string "Me hope no harm comes to it.\p"
 	.string "Me would be sad if big high war god were\n"

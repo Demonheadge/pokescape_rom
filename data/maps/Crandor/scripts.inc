@@ -69,12 +69,165 @@ BATTLE_CRANDOR_MOSS_GIANT_3::
 	return
 
 
+TRIGGER_CRANDOR_SHAKE::
+	setvar VAR_0x8004, 1 @ vertical pan
+	setvar VAR_0x8005, 1 @ horizontal pan
+	setvar VAR_0x8006, 8 @ num shakes
+	setvar VAR_0x8007, 3 @ shake delay
+	special ShakeCamera
+	waitstate
+	setvar VAR_0x8004, 1 @ vertical pan
+	setvar VAR_0x8005, 1 @ horizontal pan
+	setvar VAR_0x8006, 8 @ num shakes
+	setvar VAR_0x8007, 3 @ shake delay
+	special ShakeCamera
+	waitstate
+	closemessage
+	releaseall
+	end
+
+
+TRIGGER_ELVARGFLYOVER::
+	lock
+	applymovement OBJ_EVENT_ID_PLAYER, movement_elvargflyover4
+	savebgm MUS_DUMMY
+	fadeoutbgm 1
+	waitmovement 0
+	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, movement_crandor_camera
+	waitmovement 0
+	playmoncry SPECIES_ELVARG, 0
+	waitmoncry
+	delay 16
+	playse SE_M_FLY
+	applymovement 33, movement_elvargflyover2
+	waitmovement 0
+	playse SE_PIN
+	applymovement 8, MOVEMENT_HAM_CONFUSED
+	delay 32
+	waitmovement 0
+	warp MAP_KARAMJA_VOLCANO_B3F, 1
+	release
+	end
+
+
+MOVEMENT_HAM_CONFUSED:
+	emote_question_mark
+	delay_16
+	face_down
+	delay_16
+	face_right
+	delay_16
+	face_up
+	delay_16
+	face_right
+	step_end
+
+movement_crandor_camera:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	delay_16
+	step_end
+
+movement_elvargflyover:
+	lock_facing_direction
+	disable_anim
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	walk_diag_northeast
+	step_end
+
+movement_elvargflyover4:
+	walk_down
+	walk_down
+	walk_down
+	set_invisible
+	step_end
+
+movement_elvargflyover2:
+	lock_facing_direction
+	disable_anim
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	step_end
+
+movement_elvargflyover_left:
+	lock_facing_direction
+	disable_anim
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+movement_elvargflyover1:
+	lock_facing_direction
+	delay_16
+	walk_diag_northwest
+	delay_16
+	walk_diag_southwest
+	fly_up
+	delay_16
+	fly_down
+	delay_16
+	figure_8
+	step_end
+
 CRANDOR_NED_Text_0:
 	.string "Ned$"
 
 CRANDOR_NED_Text_1:
-	.string "It looks like we're stranded!/pNo\n"
-	.string "wonder no other captains wanted to\l"
+	.string "It looks like we're stranded!\p"
+	.string "No wonder no other captains wanted to\n"
 	.string "sail anywhere near Crandor..$"
 
 BATTLE_CRANDOR_SKELETON_1_Text_0:

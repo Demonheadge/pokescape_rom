@@ -25,9 +25,9 @@ BATTLE_ROUTE26_TRAINER_1::
 
 
 BATTLE_ROUTE26_TRAINER_2::
-	trainerbattle_single TRAINER_ROUTE26_TRAINER_2, BATTLE_ROUTE26_TRAINER_2_Text_0, BATTLE_ROUTE26_TRAINER_2_Text_0
-	namebox BATTLE_ROUTE26_TRAINER_2_Text_1
-	msgbox BATTLE_ROUTE26_TRAINER_2_Text_2
+	trainerbattle_single TRAINER_ROUTE26_TRAINER_2, BATTLE_ROUTE26_TRAINER_2_Text_0, BATTLE_ROUTE26_TRAINER_2_Text_1
+	namebox BATTLE_ROUTE26_TRAINER_2_Text_2
+	msgbox BATTLE_ROUTE26_TRAINER_2_Text_3
 	hidenamebox
 	release
 	end
@@ -36,7 +36,7 @@ BATTLE_ROUTE26_TRAINER_2::
 BATTLE_ROUTE26_TRAINER_3::
 	trainerbattle_single TRAINER_ROUTE26_TRAINER_3, BATTLE_ROUTE26_TRAINER_3_Text_0, BATTLE_ROUTE26_TRAINER_3_Text_1
 	namebox BATTLE_ROUTE26_TRAINER_3_Text_2
-	msgbox BATTLE_ROUTE26_TRAINER_3_Text_3
+	msgbox BATTLE_ROUTE26_TRAINER_3_Text_1
 	hidenamebox
 	release
 	end
@@ -68,8 +68,8 @@ SIGN_ROUTE26_Text_0:
 BATTLE_ROUTE26_TRAINER_1_Text_0:
 	.string "Hey!\p"
 	.string "Too many humans have been coming here\n"
-	.string "and slaughtering us when are just\l"
-	.string "trying to earn a living!\p"
+	.string "and disturbing us when are just trying\l"
+	.string "to earn a living!\p"
 	.string "I won't let you do the same!$"
 
 BATTLE_ROUTE26_TRAINER_1_Text_1:
@@ -79,43 +79,35 @@ BATTLE_ROUTE26_TRAINER_1_Text_2:
 	.string "Omril$"
 
 BATTLE_ROUTE26_TRAINER_1_Text_3:
-	.string "Eek! You're strong.\p"
-	.string "Please don't kill us all.\p"
-	.string "I have a wife and two children at home..$"
+	.string "Please don't disturb our village.$"
 
 BATTLE_ROUTE26_TRAINER_2_Text_0:
-	.string "I am a cupholder.$"
+	.string "Beware of landslides!\p"
+	.string "But for now you should beware of me!$"
 
 BATTLE_ROUTE26_TRAINER_2_Text_1:
-	.string "Elkot$"
+	.string "You came crashing down on me like a\n"
+	.string "landslide.$"
 
 BATTLE_ROUTE26_TRAINER_2_Text_2:
-	.string "The skeletons eyes have returned to\n"
-	.string "normal, perhaps something sinister\l"
-	.string "nearby was controlling it earlier?$"
+	.string "Elkot$"
+
+BATTLE_ROUTE26_TRAINER_2_Text_3:
+	.string "We've had no many earthquakes and\n"
+	.string "landslides lately we're not sure what\l"
+	.string "are actually causing them.\p"
+	.string "Maybe something deep within the mines?$"
 
 BATTLE_ROUTE26_TRAINER_3_Text_0:
 	.string "Out of my way, I am on a quest for the\n"
-	.string "Guildmaster of the Champions Guild!\p"
-	.string "I must head to the top of the mountain\n"
-	.string "and speak with the Oracle about\l"
-	.string "obtaining a map piece to the forgotten\l"
-	.string "island of Crandor so that I can slay\l"
-	.string "the dragon who lives there!$"
+	.string "Guildmaster of the Champions Guild!$"
 
 BATTLE_ROUTE26_TRAINER_3_Text_1:
 	.string "Maybe I need a stronger team before\n"
-	.string "trying to take on a dragon..$"
+	.string "trying to take on this quest…$"
 
 BATTLE_ROUTE26_TRAINER_3_Text_2:
 	.string "4TheL0re$"
-
-BATTLE_ROUTE26_TRAINER_3_Text_3:
-	.string "Wait, what do you mean you've already\n"
-	.string "found all the map pieces and defeated\l"
-	.string "Elvarg?\p"
-	.string "How am I supposed to prove myself as a\n"
-	.string "Champion now?!$"
 
 BATTLE_ROUTE26_TRAINER_4_Text_0:
 	.string "I was told that there are the ruins of\n"

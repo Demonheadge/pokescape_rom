@@ -1,0 +1,275 @@
+
+mapscripts Crandor_SeaRoute_MapScripts {
+
+
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+        call(hideplayer)  
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_B, 0: CRANDOR_SHIP_SCENE
+    ]
+}
+
+script hideplayer {
+    hideobjectat(OBJ_EVENT_ID_PLAYER, TRUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_setinvisible)
+    waitmovement(0)
+    return
+}
+
+
+
+
+script TELEPORT_TO_SHIP_SCENE
+{
+    //warp(MAP_ROUTE32, 0, 13, 22)
+    warp(MAP_CRANDOR_SEA_ROUTE, 0, 57, 5)
+}
+script CRANDOR_SHIP_SCENE
+{
+    lockall
+    setflag(FLAG_TEMP_10)
+    removeobject(3)
+    
+    //setobjectxy(OBJ_EVENT_ID_PLAYER, 13, 22)
+    
+    //setvar(VAR_0x8004, 27)
+    //setvar(VAR_0x8005, 11)
+    //special(TeleportCamera)
+    
+    //playbgm(MUS_PS_SURFING, 0)
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_setinvisible)
+    applymovement(1, movement_crandor_ship)
+    waitmovement(0)
+    
+    namebox("Cabin Boy")
+    msgbox(format("Ned are you sure that map is correct?"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing4)
+    applymovement(1, movement_sailing4)
+    waitmovement(0)
+    namebox("Ned")
+    msgbox(format("See that scary looking rock?\pIt means we are going the right way."))
+    closemessage
+    hidenamebox
+
+
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing2)
+    applymovement(1, movement_sailing2)
+    waitmovement(0)
+    
+    setweather(WEATHER_RAIN_THUNDERSTORM)
+    doweather
+    namebox("Ned")
+    msgbox(format("Man the sails everyone, we've got a storm brewing!"))
+    closemessage
+    hidenamebox
+
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing2)
+    applymovement(1, movement_sailing2)
+    waitmovement(0)
+
+    delay(32)
+
+    playse(SE_M_FLY)
+    applymovement(2, movement_elvargflyover2)
+    waitmovement(0)
+
+    playbgm(MUS_PS_RIMMINGTON, 0)
+    namebox("Cabin Boy")
+    msgbox(format("What is that?!"))
+    closemessage
+    hidenamebox
+
+
+
+    namebox("Ned")
+    msgbox(format("Cabin Boy, {PLAYER}, are you alright?\pIt's getting a bit rough so be careful."))
+    closemessage
+    hidenamebox
+
+
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing2)
+    applymovement(1, movement_sailing2)
+    waitmovement(0)
+
+    setobjectxy(2, 22, 3)
+    playse(SE_M_FLY)
+    applymovement(2, movement_elvargflyover_left)
+
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(19, 2, 834, 0)
+    special(DrawWholeMapView) 
+    
+    delay(32)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(16, 7, 834, 0)
+    special(DrawWholeMapView) 
+
+    delay(32)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(15, 1, 834, 0)
+    special(DrawWholeMapView) 
+    waitmovement(0)
+
+    namebox("Ned")
+    msgbox(format("We are under attack!"))
+    closemessage
+    hidenamebox
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(9, 3, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing4)
+    applymovement(1, movement_sailing4)
+    waitmovement(0)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(4, 4, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing4)
+    applymovement(1, movement_sailing4)
+    waitmovement(0)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(7, 7, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+    namebox("Cabin Boy")
+    msgbox(format("Ahhhh I'm falling!"))
+    closemessage
+    hidenamebox
+    clearflag(FLAG_TEMP_10)
+    addobject(3)
+    applymovement(3, movement_cabinboy)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(14, 5, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+    namebox("Ned")
+    msgbox(format("Nooo Cabin boy!"))
+    closemessage
+    hidenamebox
+    waitmovement(0)
+    setflag(FLAG_TEMP_11)
+    removeobject(2)
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing4)
+    applymovement(1, movement_sailing4)
+    waitmovement(0)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(10, 5, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+    namebox("Ned")
+    msgbox(format("Watch out {PLAYER}!\pWe're crashing!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing4)
+    applymovement(1, movement_sailing4)
+    waitmovement(0)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    setmetatile(11, 3, 834, 0)
+    special(DrawWholeMapView) 
+	waitstate
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_sailing3)
+    applymovement(1, movement_sailing3)
+    delay(32)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_EARTHQUAKE)
+
+    namebox("Ned")
+    msgbox(format("AHHHHHHH!!!"))
+    closemessage
+    hidenamebox
+    
+    delay(60)
+    warp(MAP_CRANDOR, 1)
+}
+
+movement movement_setinvisible {
+    set_invisible
+    walk_slow_left * 10
+}
+
+movement movement_crandor_ship {
+    levitate
+    walk_slow_left * 10
+}
+
+movement movement_sailing2 {
+    walk_slow_left * 10
+}
+
+movement movement_sailing4 {
+    walk_slow_left * 2
+}
+movement movement_sailing3 {
+    lock_facing_direction
+    figure_8
+}
+
+movement movement_cabinboy {
+    face_down
+    lock_facing_direction
+    walk_slow_right
+    unlock_facing_direction
+    face_left
+    lock_facing_direction
+    walk_slow_right * 2
+    unlock_facing_direction
+    face_up
+    lock_facing_direction
+    walk_slow_right * 1
+    unlock_facing_direction
+    face_down
+    lock_facing_direction
+    walk_slow_right * 2
+    unlock_facing_direction
+    face_right
+    lock_facing_direction
+    walk_slow_right * 1
+    unlock_facing_direction
+    face_left
+    lock_facing_direction
+    walk_slow_right * 2
+    unlock_facing_direction
+    set_invisible
+}

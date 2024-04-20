@@ -996,7 +996,7 @@ gTileset_Karamja::
 	.4byte gTilesetPalettes_Karamja
 	.4byte gMetatiles_Karamja
 	.4byte gMetatileAttributes_Karamja
-	.4byte NULL
+	.4byte InitTilesetAnim_Karamja
 
 	.align 2
 gTileset_Wizards_Tower::

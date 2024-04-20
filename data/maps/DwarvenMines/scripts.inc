@@ -54,13 +54,13 @@ NPC_DWARVENMINES_NPC1_Text_1:
 	.string "store!\p"
 	.string "The only place in Gielinor that you can\n"
 	.string "find the esteemed dwarf multicannon\l"
-	.string "for sale\p"
+	.string "for sale.\p"
 	.string "Don't tell him I told you this, but it's\n"
 	.string "actually cheaper if you buy the full\l"
 	.string "set from him instead of individual\l"
 	.string "parts!\p"
 	.string "{PAUSE 15}Maybe you could spare some of the\n"
-	.string "extra coin you save for me..?.$"
+	.string "extra coin you save for me…?$"
 
 NPC_DWARVENMINES_NPC2_Text_0:
 	.string "Ho-hiiii, ho-hiiii.\p"
