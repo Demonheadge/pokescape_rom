@@ -677,6 +677,7 @@ gSongTable::
 	
 	song MUS_PS_KOUREND_CATACOMBS, 0, 0
 	song MUS_PS_TRAINER_VICTORY, 0, 0
+	song MUS_PS_VS_CHAOS_TUNNELS, 0, 0
 
 
 

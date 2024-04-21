@@ -1445,6 +1445,8 @@ $(MID_SUBDIR)/MUS_PS_QUEST_COMPLETE.s: %.s: %.mid
 $(MID_SUBDIR)/MUS_PS_KOUREND_CATACOMBS.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G146 -V080 -P1
 
+$(MID_SUBDIR)/MUS_PS_VS_CHAOS_TUNNELS.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
 	
 

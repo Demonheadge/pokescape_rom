@@ -1305,7 +1305,7 @@ SECTIONS {
         sound/songs/midi/MUS_PS_QUEST_COMPLETE.o(.rodata);
         sound/songs/midi/MUS_PS_KOUREND_CATACOMBS.o(.rodata);
         sound/songs/midi/MUS_PS_TRAINER_VICTORY.o(.rodata);
-        
+        sound/songs/midi/MUS_PS_VS_CHAOS_TUNNELS.o(.rodata);
 	
 		
     } =0

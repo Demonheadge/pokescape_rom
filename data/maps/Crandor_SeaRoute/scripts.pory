@@ -273,3 +273,101 @@ movement movement_cabinboy {
     unlock_facing_direction
     set_invisible
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//test
+
+script ENCOUNTER_CHAOS_ELEMENTAL
+{
+	lock
+	//msgbox(format("As you approach the Giant Mole, it attacks!"))
+    namebox ("CHAOS ELEMENTAL")
+    playmoncry(SPECIES_CHAOS_ELE, 0)
+	msgbox(format("SNEEEEEE!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+	setwildbattle (SPECIES_CHAOS_ELE, 30, ITEM_NONE)
+    special(BattleSetup_StartLegendaryBattle)
+	//dowildbattle
+    if (var(VAR_RESULT) == B_OUTCOME_WON) { //DEFEATED, Can still encounter again.
+        //fadescreen(FADE_TO_BLACK)
+		//setvar(VAR_GIANTMOLE_STATE, 0)
+        //setflag(FLAG_TEMP_B)
+        //removeobject (11)
+        //fadescreen(FADE_FROM_BLACK)
+		closemessage
+		end
+	}
+	elif (var(VAR_RESULT) == B_OUTCOME_CAUGHT) { //CAPTURED! Cannot encounter again.
+        //fadescreen(FADE_TO_BLACK)
+		//setvar(VAR_GIANTMOLE_STATE, 11)
+        //setflag(FLAG_TEMP_B)
+        //removeobject (11)
+        //fadescreen(FADE_FROM_BLACK)
+		closemessage
+		end
+	}
+	end
+}
+
+
+
+script playbgmKnight
+{
+	lock
+    playbgm(MUS_PS_VS_KNIGHTS, 0)
+    release
+    end
+}
+script playbgmchaostunnels
+{
+	lock
+    playbgm(MUS_PS_VS_CHAOS_TUNNELS, 0)
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+

@@ -476,7 +476,7 @@ void BattleSetup_StartLegendaryBattle(void)
 
     //POKESCAPE EDIT SEE IF SHINY
     if (IsMonShiny(&gEnemyParty[0])){
-        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
+        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_PS_VS_POKESCAPERS);
     }
      //
 
@@ -504,6 +504,13 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
+        break;
+    case SPECIES_CHAOS_ELE:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_PS_VS_CHAOS_ELEMENTAL);
+        break;
+    case SPECIES_GIANT_MOLE:
+    case SPECIES_ELVARG:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_PS_VS_LEGENDARY);
         break;
     }
 

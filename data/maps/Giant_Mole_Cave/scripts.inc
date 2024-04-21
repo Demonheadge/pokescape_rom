@@ -391,7 +391,7 @@ ENCOUNTER_GIANT_MOLE::
 	closemessage
 	delay 1
 	setwildbattle SPECIES_GIANT_MOLE, 30, ITEM_NONE
-	dowildbattle
+	special BattleSetup_StartLegendaryBattle
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq ENCOUNTER_GIANT_MOLE_2
 	compare VAR_RESULT, B_OUTCOME_CAUGHT

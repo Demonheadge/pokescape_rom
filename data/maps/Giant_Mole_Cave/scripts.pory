@@ -347,7 +347,8 @@ script ENCOUNTER_GIANT_MOLE
 	closemessage
 	delay(1)
 	setwildbattle (SPECIES_GIANT_MOLE, 30, ITEM_NONE)
-	dowildbattle
+    special(BattleSetup_StartLegendaryBattle)
+	//dowildbattle
     if (var(VAR_RESULT) == B_OUTCOME_WON) { //DEFEATED, Can still encounter again.
         fadescreen(FADE_TO_BLACK)
 		setvar(VAR_GIANTMOLE_STATE, 0)

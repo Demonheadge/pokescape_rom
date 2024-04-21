@@ -275,6 +275,46 @@ movement_cabinboy:
 	set_invisible
 	step_end
 
+ENCOUNTER_CHAOS_ELEMENTAL::
+	lock
+	namebox ENCOUNTER_CHAOS_ELEMENTAL_Text_0
+	playmoncry SPECIES_CHAOS_ELE, 0
+	msgbox ENCOUNTER_CHAOS_ELEMENTAL_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_CHAOS_ELE, 30, ITEM_NONE
+	special BattleSetup_StartLegendaryBattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_CHAOS_ELEMENTAL_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_CHAOS_ELEMENTAL_3
+	end
+
+ENCOUNTER_CHAOS_ELEMENTAL_2:
+	closemessage
+	end
+
+ENCOUNTER_CHAOS_ELEMENTAL_3:
+	closemessage
+	end
+
+
+playbgmKnight::
+	lock
+	playbgm MUS_PS_VS_KNIGHTS, 0
+	release
+	end
+
+
+playbgmchaostunnels::
+	lock
+	playbgm MUS_PS_VS_CHAOS_TUNNELS, 0
+	release
+	end
+
+
 CRANDOR_SHIP_SCENE_Text_0:
 	.string "Cabin Boy$"
 
@@ -314,3 +354,9 @@ CRANDOR_SHIP_SCENE_Text_10:
 
 CRANDOR_SHIP_SCENE_Text_11:
 	.string "AHHHHHHH!!!$"
+
+ENCOUNTER_CHAOS_ELEMENTAL_Text_0:
+	.string "CHAOS ELEMENTAL$"
+
+ENCOUNTER_CHAOS_ELEMENTAL_Text_1:
+	.string "SNEEEEEE!$"

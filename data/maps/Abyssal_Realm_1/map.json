@@ -213,10 +213,10 @@
   "warp_events": [
     {
       "x": 20,
-      "y": 23,
+      "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_FALADOR",
-      "dest_warp_id": "14"
+      "dest_map": "MAP_MINIGAME_2",
+      "dest_warp_id": "0"
     },
     {
       "x": 43,
