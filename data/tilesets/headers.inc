@@ -985,7 +985,7 @@ gTileset_PokeScape_Caves::
 	.4byte gTilesetPalettes_PokeScape_Caves
 	.4byte gMetatiles_PokeScape_Caves
 	.4byte gMetatileAttributes_PokeScape_Caves
-	.4byte NULL
+	.4byte InitTilesetAnim_PokeScape_Caves
 
 	.align 2
 gTileset_Karamja::
@@ -1084,7 +1084,7 @@ gTileset_Wilderness::
 	.4byte gTilesetPalettes_Wilderness
 	.4byte gMetatiles_Wilderness
 	.4byte gMetatileAttributes_Wilderness
-	.4byte NULL
+	.4byte InitTilesetAnim_Wilderness
 
 	.align 2
 gTileset_Barbarian_Village::
