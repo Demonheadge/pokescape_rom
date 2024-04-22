@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_1",
+      "graphics_id": "OBJ_EVENT_GFX_BARBARIAN_MALE_2",
       "x": 20,
       "y": 23,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_2",
+      "graphics_id": "OBJ_EVENT_GFX_BARBARIAN_MALE_1",
       "x": 26,
       "y": 18,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUNGEONEERING_1",
+      "graphics_id": "OBJ_EVENT_GFX_BARBARIAN_MALE_1",
       "x": 9,
       "y": 39,
       "elevation": 0,

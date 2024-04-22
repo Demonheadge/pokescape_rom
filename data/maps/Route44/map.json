@@ -22,6 +22,11 @@
       "map": "MAP_WILDERNESS_VOLCANO_LOBBY",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE47",
+      "offset": 22,
+      "direction": "down"
     }
   ],
   "object_events": [
