@@ -1025,6 +1025,7 @@
 #define MAP_MUDSKIPPER_POINT_THURGOS_HUT        (84 | (50 << 8))
 #define MAP_ZAMORAK_CHURCH                      (85 | (50 << 8))
 #define MAP_CRANDOR_SEA_ROUTE                   (86 | (50 << 8))
+#define MAP_UNGAEL                              (87 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

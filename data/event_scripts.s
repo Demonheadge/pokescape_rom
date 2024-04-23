@@ -1853,3 +1853,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Draynor_House_Ned/scripts.inc"
 
 	.include "data/maps/Crandor_SeaRoute/scripts.inc"
+
+	.include "data/maps/Ungael/scripts.inc"

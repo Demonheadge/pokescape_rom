@@ -8420,6 +8420,16 @@
       "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/Crandor_SeaRoute/border.bin",
       "blockdata_filepath": "data/layouts/Crandor_SeaRoute/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNGAEL",
+      "name": "Ungael_Layout",
+      "width": 20,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Ungael/border.bin",
+      "blockdata_filepath": "data/layouts/Ungael/map.bin"
     }
   ]
 }
