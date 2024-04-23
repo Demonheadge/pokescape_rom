@@ -1312,6 +1312,10 @@ gCryTable::
 	cry Cry_TzTok_Jad_RS3_Mega_Form
 	cry Cry_Abyssal_Guardian
 	cry Cry_Skotizo
+	cry Cry_Scurrius_Melee_Form
+	cry Cry_Scurrius_Ranged_Form
+	cry Cry_Scurrius_Magic_Form
+	cry Cry_Vorkath
 
 	.align 2
 gCryTable_Reverse::
@@ -2627,3 +2631,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_TzTok_Jad_RS3_Mega_Form
 	cry_reverse Cry_Abyssal_Guardian
 	cry_reverse Cry_Skotizo
+	cry_reverse Cry_Scurrius_Melee_Form
+	cry_reverse Cry_Scurrius_Ranged_Form
+	cry_reverse Cry_Scurrius_Magic_Form
+	cry_reverse Cry_Vorkath

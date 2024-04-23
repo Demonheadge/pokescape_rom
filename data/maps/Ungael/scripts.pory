@@ -24,15 +24,32 @@ script UNGAEL_STATE {
 script ENCOUNTER_VORKATH
 {
 	lock
+    delay(32)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    delay(60)
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+    delay(60)
+    applymovement(1, MOVEMENT_FACE_UP)
+    waitmovement(0)
+    delay(60)
     namebox ("VORKATH")
-    playmoncry(SPECIES_CHAOS_ELE, 0)
+    playmoncry(SPECIES_TZTOK_JAD_RS3_MEGA_FORM, 0)
 	msgbox(format("ROOOAAAR!"))
     waitmoncry
     hidenamebox
 	closemessage
-	delay(1)
-	setwildbattle (SPECIES_CHAOS_ELE, 60, ITEM_NONE)
+	delay(32)
+	setwildbattle (SPECIES_VORKATH, 60, ITEM_NONE)
     special(BattleSetup_StartLegendaryBattle)
+    waitstate
     if (var(VAR_RESULT) == B_OUTCOME_WON) { //DEFEATED, Can still encounter again.
         fadescreen(FADE_TO_BLACK)
         setflag(FLAG_TEMP_F)
@@ -57,7 +74,10 @@ script ENCOUNTER_VORKATH
 
 script UNGAEL_arrive {
     lock
-    applymovement(3, MOVEMENT_FACE_PLAYER)
+    applymovement(1, movement_vorkath_2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT)
+    applymovement(3, Common_Movement_FacePlayer)
     waitmovement(0)
     namebox("Sailor")
     msgbox(format("This is Ungael.\pBe wary, danger lurks on this island.\pIt's not too late to turn back."))
@@ -77,10 +97,10 @@ script UNGAEL_Fremennik_Sailor {
     if (var(VAR_RESULT))
     { 
         msgbox(format("Wise choice, let us return to the mainland."))
-        applymovement(3, MOVEMENT_BOARD_BOAT_DOWN)
-        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_DOWN)
-        waitmovement(0)
-        warp(MAP_RELLEKKA, 0, 0, 0)
+        //applymovement(3, MOVEMENT_BOARD_BOAT_DOWN)
+        //applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_DOWN)
+        //waitmovement(0)
+        warp(MAP_RELLEKKA, 6, 0, 0)
     }
     else {
         msgbox(format("Be wary, danger lurks on this island.\pIt's not too late to turn back."))
@@ -97,6 +117,18 @@ movement MOVEMENT_BOARD_BOAT_DOWN {
     set_invisible
 }
 
+movement MOVEMENT_BOARD_BOAT_UP {
+    face_up
+    jump_2_up
+    set_invisible
+}
+
+movement movement_vorkath_2 {
+    lock_facing_direction
+}
+movement movement_vorkath_1 {
+    unlock_facing_direction
+}
 
 
 script RELEKKA_Ungael_Sailor {
@@ -119,9 +151,9 @@ script RELEKKA_Ungael_Sailor {
     if (var(VAR_RESULT))
     { 
         msgbox(format("Very well, pray to your gods now as there may be no return…"))
-        applymovement(3, MOVEMENT_BOARD_BOAT_DOWN)
-        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_DOWN)
-        waitmovement(0)
+        //applymovement(3, MOVEMENT_BOARD_BOAT_UP)
+        //applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_UP)
+        //waitmovement(0)
         warp(MAP_UNGAEL, 0, 0, 0)
     }
     else {

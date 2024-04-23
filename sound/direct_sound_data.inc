@@ -5622,12 +5622,29 @@ Cry_TzTok_Jad_HD_Mega_Form::
 Cry_TzTok_Jad_RS3_Mega_Form::
 	.incbin "sound/direct_sound_samples/cries/groudon.bin"
 
+	.align 2
 Cry_Abyssal_Guardian::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
 
 	.align 2
 Cry_Skotizo::
 	.incbin "sound/direct_sound_samples/cries/swinub.bin"
+
+	.align 2
+Cry_Scurrius_Melee_Form::
+	.incbin "sound/direct_sound_samples/cries/swinub.bin"
+
+	.align 2
+Cry_Scurrius_Ranged_Form::
+	.incbin "sound/direct_sound_samples/cries/swinub.bin"
+
+	.align 2
+Cry_Scurrius_Magic_Form::
+	.incbin "sound/direct_sound_samples/cries/swinub.bin"
+
+	.align 2
+Cry_Vorkath::
+	.incbin "sound/direct_sound_samples/cries/salamence.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::
