@@ -223,8 +223,8 @@
 #define FLAG_URI_ITEMFINDER                  0xA9 //FLAG_RECEIVED_TM42
 #define FLAG_RECEIVED_TM37_DARKERMANZ        0xAA //FLAG_RECEIVED_TM40
 #define FLAG_POKESCAPE_RIMMINGTON_HAM_LOST_TIME                   0xAB //FLAG_RECEIVED_TM04
+#define FLAG_CAPTURED_VORKATH                0xAC //FLAG_RECEIVED_TM03
 
-#define FLAG_RECEIVED_TM03                   0xAC
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF

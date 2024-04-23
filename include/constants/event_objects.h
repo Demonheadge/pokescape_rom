@@ -550,9 +550,11 @@
 #define OBJ_EVENT_GFX_KREEARRA			        536
 #define OBJ_EVENT_GFX_STRYKEWYRM_WILDY			537
 #define OBJ_EVENT_GFX_HANANNIE			        538
+#define OBJ_EVENT_GFX_VORKATH			        539
+#define OBJ_EVENT_GFX_BEHEMOTH			        540
 
 
-#define NUM_OBJ_EVENT_GFX                        539
+#define NUM_OBJ_EVENT_GFX                        541
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic

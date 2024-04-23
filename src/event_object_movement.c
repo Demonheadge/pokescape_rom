@@ -737,6 +737,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_DRAGONS           0x1273
 #define OBJ_EVENT_PAL_SKOTIZO           0x1274
 #define OBJ_EVENT_PAL_DUNGEONEERING     0x1275
+#define OBJ_EVENT_PAL_VORKATH           0x1276
 
 
 /*
@@ -1114,6 +1115,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = { //Was 0xF
     {gObjectEventPalette_Skotizo, OBJ_EVENT_PAL_SKOTIZO},
     {gObjectEventPalette_DRAGONS, OBJ_EVENT_PAL_DRAGONS},
     {gObjectEventPalette_DUNGEONEERING, OBJ_EVENT_PAL_DUNGEONEERING},
+    {gObjectEventPalette_VORKATH, OBJ_EVENT_PAL_VORKATH},
+
+    
 
 
     

@@ -545,6 +545,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_thok_happy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_kreearra;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_strykewyrm_wildy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_hanannie;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_vorkath;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_behemoth;
 
 
 //ORES
@@ -1101,6 +1103,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_KREEARRA] =                              &gObjectEventGraphicsInfo_kreearra,
     [OBJ_EVENT_GFX_STRYKEWYRM_WILDY] =                      &gObjectEventGraphicsInfo_strykewyrm_wildy,
     [OBJ_EVENT_GFX_HANANNIE] =                              &gObjectEventGraphicsInfo_hanannie,
+    [OBJ_EVENT_GFX_VORKATH] =                              &gObjectEventGraphicsInfo_vorkath,
+    [OBJ_EVENT_GFX_BEHEMOTH] =                              &gObjectEventGraphicsInfo_behemoth,
 
 
 //ORES 

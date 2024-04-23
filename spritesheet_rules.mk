@@ -1692,3 +1692,12 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/strykewyrm_wildy.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/hanannie.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/vorkath.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/behemoth.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+	

@@ -716,6 +716,8 @@ const u32 gObjectEventPic_kreearra[] = INCBIN_U32("graphics/object_events/pics/p
 const u32 gObjectEventPic_strykewyrm_wildy[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/strykewyrm_wildy.4bpp");
 const u32 gObjectEventPic_hanannie[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/hanannie.4bpp");
 
+const u32 gObjectEventPic_behemoth[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/behemoth.4bpp");
+const u32 gObjectEventPic_vorkath[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/vorkath.4bpp");
 
 
 
@@ -1010,6 +1012,8 @@ const u16 gObjectEventPalette_GIANTS[] = INCBIN_U16("graphics/object_events/pale
 const u16 gObjectEventPalette_Skotizo[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/skotizo.gbapal");
 const u16 gObjectEventPalette_DRAGONS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/dragons.gbapal");
 const u16 gObjectEventPalette_DUNGEONEERING[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/dungeoneering.gbapal");
+const u16 gObjectEventPalette_VORKATH[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/vorkath.gbapal");
+
 
 
 /*

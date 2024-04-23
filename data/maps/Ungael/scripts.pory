@@ -1,0 +1,134 @@
+
+mapscripts Ungael_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(PORTSARIM_STATE)
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_B, 0: UNGAEL_arrive
+    ]
+}
+
+script UNGAEL_STATE {
+    if (flag(FLAG_CAPTURED_VORKATH) == TRUE) {
+        removeobject(1)
+        setflag(FLAG_TEMP_F)
+    }
+}
+
+
+
+
+
+
+script ENCOUNTER_VORKATH
+{
+	lock
+    namebox ("VORKATH")
+    playmoncry(SPECIES_CHAOS_ELE, 0)
+	msgbox(format("ROOOAAAR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+	setwildbattle (SPECIES_CHAOS_ELE, 60, ITEM_NONE)
+    special(BattleSetup_StartLegendaryBattle)
+    if (var(VAR_RESULT) == B_OUTCOME_WON) { //DEFEATED, Can still encounter again.
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_TEMP_F)
+        removeobject (VAR_LAST_TALKED)
+        fadescreen(FADE_FROM_BLACK)
+        msgbox(format("Vorkath seems to have flown off."))
+        closemessage
+	}
+	elif (var(VAR_RESULT) == B_OUTCOME_CAUGHT) { //CAPTURED! Cannot encounter again.
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_TEMP_F)
+        setflag(FLAG_CAPTURED_VORKATH)
+        removeobject (VAR_LAST_TALKED)
+        fadescreen(FADE_FROM_BLACK)
+        msgbox(format("After capturing Vorkath the island goes quiet…"))
+        closemessage
+	}
+    release
+	end
+}
+
+
+script UNGAEL_arrive {
+    lock
+    applymovement(3, MOVEMENT_FACE_PLAYER)
+    waitmovement(0)
+    namebox("Sailor")
+    msgbox(format("This is Ungael.\pBe wary, danger lurks on this island.\pIt's not too late to turn back."))
+    closemessage
+    hidenamebox
+    release
+    setvar(VAR_TEMP_B, 1)
+    return
+}
+
+
+script UNGAEL_Fremennik_Sailor {
+    lock
+    faceplayer
+    namebox("Sailor")
+    msgbox(format("Do you wish to leave this cursed place?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        msgbox(format("Wise choice, let us return to the mainland."))
+        applymovement(3, MOVEMENT_BOARD_BOAT_DOWN)
+        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_DOWN)
+        waitmovement(0)
+        warp(MAP_RELLEKKA, 0, 0, 0)
+    }
+    else {
+        msgbox(format("Be wary, danger lurks on this island.\pIt's not too late to turn back."))
+    }
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+movement MOVEMENT_BOARD_BOAT_DOWN {
+    face_down
+    jump_2_down
+    set_invisible
+}
+
+
+
+script RELEKKA_Ungael_Sailor {
+    lock
+    faceplayer
+    namebox("Sailor")
+    if (var(VAR_TEMP_7) == 1) //If Fremmy Gym is not completed
+    { 
+        msgbox(format("No outsiders, may not sail this vessel!"))
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+//check for multiple areas to sail to.
+    msgbox(format("Where would you like to set sail to?"))
+//Ungael, Waterbirth island, Lunar island, Miscalania.
+
+    msgbox(format("Do you wish to set sail to the cursed island Ungael?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        msgbox(format("Very well, pray to your gods now as there may be no return…"))
+        applymovement(3, MOVEMENT_BOARD_BOAT_DOWN)
+        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_BOARD_BOAT_DOWN)
+        waitmovement(0)
+        warp(MAP_UNGAEL, 0, 0, 0)
+    }
+    else {
+        msgbox(format("Wise choice.\pUngael is a dangerous place."))
+    }
+    closemessage
+    hidenamebox
+    release
+    end
+}

@@ -23862,6 +23862,130 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_UNGAEL",
+          "base_label": "gUngael0",
+          "land_mons": {
+            "encounter_rate": 5,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 40,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 50,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 60,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 60,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 70,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 100,
+                "species": "SPECIES_SPIDER_UNGAEL_FORM"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },

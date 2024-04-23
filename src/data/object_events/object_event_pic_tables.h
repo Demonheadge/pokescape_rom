@@ -5392,7 +5392,15 @@ static const struct SpriteFrameImage sPicTable_kreearra[] = {
     overworld_frame(gObjectEventPic_kreearra, 4, 4, 1),
 };
 
+static const struct SpriteFrameImage sPicTable_vorkath[] = {
+    overworld_frame(gObjectEventPic_vorkath, 4, 4, 0),
+    overworld_frame(gObjectEventPic_vorkath, 4, 4, 1),
+};
 
+static const struct SpriteFrameImage sPicTable_behemoth[] = {
+    overworld_frame(gObjectEventPic_behemoth, 4, 4, 0),
+    overworld_frame(gObjectEventPic_behemoth, 4, 4, 1),
+};
 
 
 
