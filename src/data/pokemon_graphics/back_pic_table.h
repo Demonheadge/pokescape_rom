@@ -1339,6 +1339,7 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 	SPECIES_SPRITE(SCURRIUS_MELEE_FORM, gMonBackPic_Scurrius_Melee_Form),
 	SPECIES_SPRITE(SCURRIUS_RANGED_FORM, gMonBackPic_Scurrius_Ranged_Form),
 	SPECIES_SPRITE(SCURRIUS_MAGIC_FORM, gMonBackPic_Scurrius_Magic_Form),
+	SPECIES_SPRITE(VORKATH, gMonBackPic_Vorkath),
 
 
 

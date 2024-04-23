@@ -1339,6 +1339,7 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_SCURRIUS_MELEE_FORM] = gMonFootprint_Scurrius_Melee_Form,
     [SPECIES_SCURRIUS_RANGED_FORM] = gMonFootprint_Scurrius_Ranged_Form,
     [SPECIES_SCURRIUS_MAGIC_FORM] = gMonFootprint_Scurrius_Magic_Form,
+    [SPECIES_VORKATH] = gMonFootprint_Vorkath,
 
 
 

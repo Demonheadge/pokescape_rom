@@ -17761,7 +17761,35 @@ const u32 gTMHMLearnsets[][2] =
 									| TMHM(TM60_BULK_UP)
 									| TMHM(TM64_REVENGE)
 									),
-
+	[SPECIES_VORKATH]				= TMHM_LEARNSET(
+									 TMHM(TM01_SUNNY_DAY)
+									| TMHM(TM04_SANDSTORM)
+									| TMHM(TM05_TAILWIND)
+									| TMHM(TM06_FLAME_CHARGE)
+									| TMHM(TM09_GRASSY_TERRAIN)
+									| TMHM(TM12_MISTY_TERRAIN)
+									| TMHM(TM19_VOLT_TACKLE)
+									| TMHM(TM20_DRAINING_KISS)
+									| TMHM(TM21_TOXIC)
+									| TMHM(TM24_U_TURN)
+									| TMHM(TM27_SACRED_SWORD)
+									| TMHM(TM28_SWORDS_DANCE)
+									| TMHM(TM29_SECRET_SWORD)
+									| TMHM(TM30_RETURN)
+									| TMHM(TM31_FRUSTRATION)
+									| TMHM(TM33_DRAGON_BREATH)
+									| TMHM(TM34_DRAGON_HAMMER)
+									| TMHM(TM36_SLACK_OFF)
+									| TMHM(TM37_THOUSAND_ARROWS)
+									| TMHM(TM38_ROCK_TOMB)
+									| TMHM(TM44_PLAY_ROUGH)
+									| TMHM(TM47_LUNAR_DANCE)
+									| TMHM(TM49_SNARL)
+									| TMHM(TM50_POISON_JAB)
+									| TMHM(TM54_MUD_BOMB)
+									| TMHM(TM60_BULK_UP)
+									| TMHM(TM64_REVENGE)
+									),
 
 
 };

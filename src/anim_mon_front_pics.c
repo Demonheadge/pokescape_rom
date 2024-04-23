@@ -1319,6 +1319,7 @@ const u32 gMonFrontPic_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/Skoti
 const u32 gMonFrontPic_Scurrius_Melee_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Melee_Form/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Scurrius_Ranged_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Ranged_Form/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scurrius_Magic_Form/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Vorkath[] = INCBIN_U32("graphics/pokescape_monsters/Vorkath/anim_front.4bpp.lz");
 //POKESCAPE END
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");

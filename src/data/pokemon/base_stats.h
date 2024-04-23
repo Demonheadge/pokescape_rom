@@ -42072,6 +42072,38 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = TRUE,
 	},
 
+    [SPECIES_VORKATH] =
+	{
+		.baseHP = 150,
+		.baseAttack = 120,
+		.baseDefense = 90,
+		.baseSpAttack = 90,
+		.baseSpDefense = 90,
+		.baseSpeed = 90,
+		.type1 = TYPE_ICE,
+		.type2 = TYPE_DRAGON,
+		.catchRate = 20,
+		.expYield = 151,
+		.evYield_HP = 0,
+		.evYield_Attack = 3,
+		.evYield_Defense = 0,
+		.evYield_SpAttack = 0,
+		.evYield_SpDefense = 0,
+		.evYield_Speed = 1,
+		.itemCommon = ITEM_NONE,
+		.itemRare = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(50),
+		.eggCycles = 20,
+		.friendship = 70,
+		.growthRate = GROWTH_MEDIUM_FAST,
+		.eggGroup1 = EGG_GROUP_FIELD,
+		.eggGroup2 = EGG_GROUP_FIELD,
+		.abilities = {ABILITY_THICK_FAT, ABILITY_PICKUP},
+		.safariZoneFleeRate = 0,
+		.bodyColor = BODY_COLOR_BLACK,
+		.noFlip = TRUE,
+	},
+
 
 
 	

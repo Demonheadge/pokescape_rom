@@ -1363,6 +1363,7 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_SCURRIUS_MELEE_FORM] = gMonIcon_Scurrius_Melee_Form,
 	[SPECIES_SCURRIUS_RANGED_FORM] = gMonIcon_Scurrius_Ranged_Form,
 	[SPECIES_SCURRIUS_MAGIC_FORM] = gMonIcon_Scurrius_Magic_Form,
+	[SPECIES_VORKATH] = gMonIcon_Vorkath,
 	//POKESCAPE END
     [SPECIES_EGG] = gMonIcon_Egg,
     [SPECIES_UNOWN_B] = gMonIcon_UnownB,
@@ -2738,6 +2739,9 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_SCURRIUS_MELEE_FORM] = 0,
 	[SPECIES_SCURRIUS_RANGED_FORM] = 0,
 	[SPECIES_SCURRIUS_MAGIC_FORM] = 0,
+	[SPECIES_VORKATH] = 0,
+
+	
 
 	//POKESCAPE END
     [SPECIES_EGG] = 2,

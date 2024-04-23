@@ -9195,6 +9195,12 @@ const u32 gMonShinyPalette_Scurrius_Magic_Form[] = INCBIN_U32("graphics/pokescap
 const u8 gMonIcon_Scurrius_Magic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Magic_Form/icon.4bpp");
 const u8 gMonFootprint_Scurrius_Magic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scurrius_Magic_Form/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Vorkath[] = INCBIN_U32("graphics/pokescape_monsters/Vorkath/front.4bpp.lz");
+const u32 gMonPalette_Vorkath[] = INCBIN_U32("graphics/pokescape_monsters/Vorkath/normal.gbapal.lz");
+const u32 gMonBackPic_Vorkath[] = INCBIN_U32("graphics/pokescape_monsters/Vorkath/back.4bpp.lz");
+const u32 gMonShinyPalette_Vorkath[] = INCBIN_U32("graphics/pokescape_monsters/Vorkath/shiny.gbapal.lz");
+const u8 gMonIcon_Vorkath[] = INCBIN_U8("graphics/pokescape_monsters/Vorkath/icon.4bpp");
+const u8 gMonFootprint_Vorkath[] = INCBIN_U8("graphics/pokescape_monsters/Vorkath/footprint.1bpp");
 
 
 

@@ -1342,6 +1342,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_SCURRIUS_MELEE_FORM] = sScurrius_Melee_FormLevelUpLearnset,
     [SPECIES_SCURRIUS_RANGED_FORM] = sScurrius_Ranged_FormLevelUpLearnset,
     [SPECIES_SCURRIUS_MAGIC_FORM] = sScurrius_Magic_FormLevelUpLearnset,
+    [SPECIES_VORKATH] = sVorkathLevelUpLearnset,
 
 
 

@@ -1339,6 +1339,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(SCURRIUS_MELEE_FORM, gMonPalette_Scurrius_Melee_Form),
     SPECIES_PAL(SCURRIUS_RANGED_FORM, gMonPalette_Scurrius_Ranged_Form),
     SPECIES_PAL(SCURRIUS_MAGIC_FORM, gMonPalette_Scurrius_Magic_Form),
+    SPECIES_PAL(VORKATH, gMonPalette_Vorkath),
 
 
 

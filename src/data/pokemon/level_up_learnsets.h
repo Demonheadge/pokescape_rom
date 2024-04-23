@@ -25154,3 +25154,8 @@ static const struct LevelUpMove sScurrius_Magic_FormLevelUpLearnset[] = {
 LEVEL_UP_MOVE(1, MOVE_SCRATCH),
 LEVEL_UP_END
 };
+
+static const struct LevelUpMove sVorkathLevelUpLearnset[] = {
+LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+LEVEL_UP_END
+};

@@ -9278,6 +9278,13 @@ extern const u32 gMonShinyPalette_Scurrius_Magic_Form[];
 extern const u32 gMonStillFrontPic_Scurrius_Magic_Form[];
 extern const u8 gMonIcon_Scurrius_Magic_Form[];
 extern const u8 gMonFootprint_Scurrius_Magic_Form[];
+extern const u32 gMonFrontPic_Vorkath[];
+extern const u32 gMonPalette_Vorkath[];
+extern const u32 gMonBackPic_Vorkath[];
+extern const u32 gMonShinyPalette_Vorkath[];
+extern const u32 gMonStillFrontPic_Vorkath[];
+extern const u8 gMonIcon_Vorkath[];
+extern const u8 gMonFootprint_Vorkath[];
 
 //POKESCAPE END
 extern const u32 gMonPic_Egg[];

@@ -15649,6 +15649,17 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerOffset = 0 ,
 	},
 
+	[NATIONAL_DEX_VORKATH] =
+	{
+	.categoryName = _("Dragon"),
+	.height = 0,
+	.weight = 0,
+	.description = gScurriusPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
 
 
 

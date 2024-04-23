@@ -1339,6 +1339,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     SPECIES_SHINY_PAL(SCURRIUS_MELEE_FORM, gMonShinyPalette_Scurrius_Melee_Form),
     SPECIES_SHINY_PAL(SCURRIUS_RANGED_FORM, gMonShinyPalette_Scurrius_Ranged_Form),
     SPECIES_SHINY_PAL(SCURRIUS_MAGIC_FORM, gMonShinyPalette_Scurrius_Magic_Form),
+    SPECIES_SHINY_PAL(VORKATH, gMonShinyPalette_Vorkath),
 
 
 

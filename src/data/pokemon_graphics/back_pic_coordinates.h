@@ -6696,6 +6696,11 @@ const struct MonCoords gMonBackPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
+	[SPECIES_VORKATH] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
 
 
 

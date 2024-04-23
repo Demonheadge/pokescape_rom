@@ -510,6 +510,7 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_GIANT_MOLE:
     case SPECIES_ELVARG:
+    case SPECIES_VORKATH:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_PS_VS_LEGENDARY);
         break;
     }

@@ -1339,5 +1339,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
 [SPECIES_SCURRIUS_MELEE_FORM] = _("Scurrius"),
 [SPECIES_SCURRIUS_RANGED_FORM] = _("Scurrius"),
 [SPECIES_SCURRIUS_MAGIC_FORM] = _("Scurrius"),
+[SPECIES_VORKATH] = _("Vorkath"),
 	//POKESCAPE END
 };
