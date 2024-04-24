@@ -619,6 +619,7 @@
 #define MAP_VARROCK_CHURCH              (23 | (34 << 8))
 #define MAP_CRANDOR                     (24 | (34 << 8))
 #define MAP_DAEMONHEIM                  (25 | (34 << 8))
+#define MAP_DIGSITE                     (26 | (34 << 8))
 
 // gMapGroup_PokescapeRoutes
 #define MAP_ROUTE1   (0 | (35 << 8))
@@ -927,6 +928,8 @@
 #define MAP_ROUTE170      (22 | (48 << 8))
 #define MAP_ROUTE171      (23 | (48 << 8))
 #define MAP_ROUTE172      (24 | (48 << 8))
+#define MAP_CANIFIS       (25 | (48 << 8))
+#define MAP_ROUTE180      (26 | (48 << 8))
 
 // gMapGroup_PokescapeIndoorTzhaar
 #define MAP_TZHAAR_1F          (0 | (49 << 8))

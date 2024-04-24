@@ -1855,3 +1855,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Crandor_SeaRoute/scripts.inc"
 
 	.include "data/maps/Ungael/scripts.inc"
+
+	.include "data/maps/Digsite/scripts.inc"
+
+	.include "data/maps/Canifis/scripts.inc"
+
+	.include "data/maps/Route180/scripts.inc"

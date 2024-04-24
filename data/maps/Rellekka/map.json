@@ -22,6 +22,11 @@
       "map": "MAP_JATIZSO",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_UNGAEL",
+      "offset": -22,
+      "direction": "right"
     }
   ],
   "object_events": [

@@ -665,7 +665,8 @@
     "Varrock_GrandExchange_Path",
     "Varrock_Church",
     "Crandor",
-    "Daemonheim"
+    "Daemonheim",
+    "Digsite"
   ],
   "gMapGroup_PokescapeRoutes": [
     "Route1",
@@ -973,7 +974,9 @@
     "Route169",
     "Route170",
     "Route171",
-    "Route172"
+    "Route172",
+    "Canifis",
+    "Route180"
   ],
   "gMapGroup_PokescapeIndoorTzhaar": [
     "Tzhaar_1F",

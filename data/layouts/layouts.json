@@ -7907,7 +7907,7 @@
       "width": 80,
       "height": 80,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "secondary_tileset": "gTileset_ChaosTunnels",
       "border_filepath": "data/layouts/Chaos_Tunnels_B2F/border.bin",
       "blockdata_filepath": "data/layouts/Chaos_Tunnels_B2F/map.bin"
     },
@@ -8430,6 +8430,36 @@
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Ungael/border.bin",
       "blockdata_filepath": "data/layouts/Ungael/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGSITE",
+      "name": "Digsite_Layout",
+      "width": 40,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Digsite/border.bin",
+      "blockdata_filepath": "data/layouts/Digsite/map.bin"
+    },
+    {
+      "id": "LAYOUT_CANIFIS",
+      "name": "Canifis_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Canifis/border.bin",
+      "blockdata_filepath": "data/layouts/Canifis/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE180",
+      "name": "Route180_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route180/border.bin",
+      "blockdata_filepath": "data/layouts/Route180/map.bin"
     }
   ]
 }
