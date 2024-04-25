@@ -1,0 +1,42 @@
+mapscripts Varrock_House_8_MapScripts {
+
+}
+
+script NPC_BLACK_ARM_KATRINE {
+	lock
+	faceplayer
+    namebox ("Katrine")
+	msgbox(format("Who are you, and how did you get in here?\pYou aren't with the law are you?\pThis is a private business, I'm going to have to ask you to leave."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_BLACK_ARM_1 {
+	lock
+	faceplayer
+    namebox ("Mugger")
+	msgbox(format("Lady Katrine asked me to steal a crossbow from the Phoenix Gang to prove my loyalty.\pI've stolen plenty of things over the years, but I think I'll need some help to get into their weapon store..."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_BLACK_ARM_2 {
+	lock
+	faceplayer
+    namebox ("Thief")
+	msgbox(format("I heard that Scarface Pete has the candlesticks, but I have no idea how to get past his security...\p{PAUSE 15}Hey!\pForget you heard anything, or else!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script BLACK_ARM_MITH_SCIM
+{
+    finditem(ITEM_MITHRIL_SCIMITAR)
+    end
+}

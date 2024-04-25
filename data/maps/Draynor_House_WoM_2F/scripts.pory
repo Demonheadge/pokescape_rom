@@ -1,0 +1,13 @@
+mapscripts Draynor_House_WoM_2F {
+
+}
+
+//Signs
+
+script WOM_BED
+{
+	lock
+	msgbox(format("It's a fairly ordinary bed, but...\p{PAUSE 15}Was that a hand!?\pYou decide it's best not to try to sleep in this bed."))
+	release
+	end
+}

@@ -56,18 +56,21 @@ script POTTERINGTON_FARM_OUTDOOR_STATE{
 
 script MuggerBattleRoute4{
     trainerbattle_single(TRAINER_MUGGER_ROUTE4, "Stand and deliver!",format("People seem very afraid of me.\pMaybe it's the way I say hello?"))
+    namebox ("Miles")
     msgbox(format("People seem very afraid of me.\pMaybe it's the way I say hello?"))
     release
 }
 
 script ScammerBattleRoute4{
     trainerbattle_single(TRAINER_SCAMMER_ROUTE4, format("Psst… Want to buy some cabbage?"),format("A no would have been fine…"))
+    namebox ("Fr33Trims")
     msgbox(format("Selling rare black lobster!"))
     release
 }
 
 script FarmerBattleRoute4{
     trainerbattle_single(TRAINER_FARMER_ROUTE4, format("I breed all my animals here at Potterington farm."),format("Guess I need to breed stronger monsters!"))
+    namebox ("Leeroy")
     msgbox(format("Have you checked out the farm?\pIt's a great place to raise monsters of your own!"))
     release
 }
@@ -127,7 +130,7 @@ script ROUTE4_TRIGGER_DaycareWatcher_PART2
 {
     delay(8)
     namebox ("Niece Pott.")
-    msgbox(format("This place is called Potterington Farm!\pWe look after your Monsters and help them grow while you are away.\pWe have also set up special breeding pens for certain monsters.\pYou should and inquire about it if it is something that intrests you!\pAnyway that is all I wanted to show you.\pTake care!"))
+    msgbox(format("This place is called Potterington Farm!\pWe look after your Monsters and help them grow while you are away.\pWe have also set up special breeding pens for certain monsters.\pYou should inquire about it, if it's something that interests you!\pAnyway that is all I wanted to show you.\pTake care!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_DAYCAREWATCHER, MOVEMENT_ROUTE4_DaycareWatcher2)

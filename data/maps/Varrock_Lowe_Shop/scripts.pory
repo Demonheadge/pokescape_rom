@@ -1,0 +1,59 @@
+mapscripts Varrock_Lowe_Shop_MapScripts {
+
+} 
+
+script NPC_LOWE
+{
+	lock
+	faceplayer
+    namebox ("Lowe")
+	msgbox(format("This used to be one of the best places in Misthalin to buy arrows.\pHowever, people don't care about archery anymore!\pThey just want to catch monsters..."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script LOWES_SHOP_NPC
+{
+	lock
+	faceplayer
+    namebox ("Der4ng3d")
+	msgbox(format("I thought this place sold arrows?\pHow am I meant to train ranged without them, it's not like I could make my own!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_LOWES_DOG
+{
+	lock
+	faceplayer
+	msgbox(format("You lean down and scratch the dog behind the ears.\pIt looks up at you as it stretches out on the ground"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script LOWESBOOK {
+    lock
+    msgbox(format("There is a journal on the table.\pDo you want to read it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)){
+            msgbox(format("I've heard rumours that Robin lives across the River Salve.\pImagine living so close to THE Robin.\pA Master Bowman.\pI'd love to meet him one day, and get some tips.\pI don't think anybody else in Gielinor shares my love of archery like he does.\p{PAUSE 15}The journal continues on sharing Lowe's admiration of Robin for many, many, many more pages.\pYou decide not to continue reading..."))
+            closemessage
+        }
+        else {
+        msgbox(format("You decide not to read the journal."))
+           closemessage
+        }
+    release
+    end   
+}
+
+script LOWES_BONE_CROSSBOW
+{
+    finditem(ITEM_BONECROSSBOW)
+    end
+}

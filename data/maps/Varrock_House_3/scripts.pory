@@ -1,0 +1,14 @@
+mapscripts Varrock_House_3_MapScripts {
+
+}
+
+script NPC_VARROCK_ZAFF {
+	lock
+	faceplayer
+    namebox ("Zaff")
+	msgbox(format("Did you know that some monsters can change form when they faint?\pDid you also know that you can make them change form by using a Death Rune on them instead?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}

@@ -24,9 +24,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Added Thurgo's Hut.
 
+- Added a variety of new sprites for ones which previously only showed cupholders, in particular a number of implings. See whether you can find these new forms by evolving them.
+
 - (WIP) Added Jad encounter.
 
+- (WIP) Added Ungael and Vorkath encounter.
+
 - Updated Al Kharid scripts, including adding interior to various houses that were previously inaccessible.
+
+- Updated Varrock scripts, including adding interior to various houses that were previously inaccessible.
 
 - Updated Taverley and Route 35 scripts.
 
@@ -50,9 +56,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Added trainer battles to NPCs in Varrock Sewers.
 
+- Updated tilesets for lava and flowers to make them look more animated.
+
 - (WIP) Added Port Sarim Lighthouse, along with NPCs and trainer battles.
 
+- (WIP) Added Crandor, along with NPCs and trainer battles.
+
 - (WIP) Rework of Melzars Maze and the Wilderness to tie in with future content.
+
+- (WIP) Added Canifis
 
 ### Fixed
 
@@ -61,6 +73,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Fixed some graphical issues.
 
 - Fixed some collisions.
+
+- Fixed the music for legendary monster battles.
 
 ### Removed
 

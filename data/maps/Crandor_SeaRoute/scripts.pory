@@ -383,7 +383,7 @@ script CRANDOR_EVENT_PORTSARIM_CABIN_BOY {
 
     if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
         if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 150) { 
-        msgbox(format("Finally the day has come!\pI can set sail with her and make my dream cometrue!"))
+        msgbox(format("Finally the day has come!\pI can set sail with her and make my dream come true!"))
         }
     }
     else {

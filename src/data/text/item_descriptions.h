@@ -344,14 +344,14 @@ static const u8 sFluffyTailDesc[] = _(
 
 // Field items
 static const u8 sSuperRepelDesc[] = _(
-    "Repels weak wild\n"
-    "MONSTERS for 200\n"
-    "steps.");
+    "A warm beverage that\n"
+    "calms wild MONSTERS\n"
+    "for 200 steps.");
 
 static const u8 sMaxRepelDesc[] = _(
-    "Repels weak wild\n"
-    "MONSTERS for 250\n"
-    "steps.");
+    "A warm beverage that\n"
+    "calms wild MONSTERS\n"
+    "for 300 steps.");
 
 static const u8 sEscapeRopeDesc[] = _(
     "Use to escape\n"
@@ -359,9 +359,9 @@ static const u8 sEscapeRopeDesc[] = _(
     "cave or a dungeon.");
 
 static const u8 sRepelDesc[] = _(
-    "Repels weak wild\n"
-    "MONSTERS for 100\n"
-    "steps.");
+    "A warm beverage that\n"
+    "calms wild MONSTERS\n"
+    "for 100 steps.");
 
 // Evolution stones
 static const u8 sSunStoneDesc[] = _(

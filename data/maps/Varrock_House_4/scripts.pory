@@ -1,0 +1,14 @@
+mapscripts Varrock_House_4_MapScripts {
+
+}
+
+script NPC_VARROCK_NOOB {
+	lock
+	faceplayer
+    namebox ("Noob")
+	msgbox(format("I bought a house from an estate agent, but he never actually told me where it was....\pI wandered around Varrock for a bit until I found this run down house.\pThere was some old man in here babbling on about needing furniture replaced.\pHe said he was going to get Marlo from Mahogany Homes?\pAre they the ones who'll be redecorating for me?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}

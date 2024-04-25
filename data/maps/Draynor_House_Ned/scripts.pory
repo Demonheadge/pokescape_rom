@@ -1,0 +1,14 @@
+mapscripts Draynor_House_Ned {
+
+} 
+
+//NEED SOME VARIABLE DIALOGUE SO THIS IS ONLY UNLOCKED WHEN THE QUEST STATE HAS BEEN TRIGGERED
+
+script Ned_Draynor{
+	lock
+    namebox("Ned")
+	msgbox(format("Hello, is there something I can help you with?\pWant to buy some rope perhaps?\p{PAUSE 15}\pYou need to charter a ship to an island?\pWell, I was a sailor but I've not been able to get work at sea for a while.\pThey say I'm too old now.\pBut...\pIt would be a chance to sail a ship again.\pWhere do you need to sail to?\p{PAUSE 15}Crandor!?\pNo captain in their right mind would sail there, it's too dangerous!\pPlus we'd need a map and nobody has chartered a map there for decades.\pNot since, well...\pWait, you have a map? Let me take a look!{PAUSE 15}I said I'd sail anywhere if it was a chance to sail again.\pMeet me at my ship, the Lady Lumbridge in Port Sarim.\pI'll have Cabin Boy Jenkins get everything ready for us to set sail."))
+    hidenamebox
+    release
+	end
+}

@@ -1,0 +1,42 @@
+mapscripts Varrock_House_9_MapScripts {
+
+}
+
+script NPC_VARROCK_ZMI_1 {
+	lock
+	faceplayer
+    namebox ("Mage of Zamorak")
+	msgbox(format("We are a group of mages in service to Zamorak.\pOur group is called the Zamorak Magical Institute, or Z.M.I. for short.\pThere are too many Saradominist groups in these lands for us to practice freely, so we have to hide in the shadows.\p{PAUSE 15}Perhaps if you can prove yourself in future, we can share some of our knowledge with you."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_VARROCK_ZMI_2 {
+	lock
+	faceplayer
+    namebox ("Acolyte")
+	msgbox(format("Did you know that the Order of Wizards wasn't always a Saradominist group?\pThey used to allow all mages to study with them, but they became greedy and started stealing other wizard's research!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_VARROCK_ZMI_3 {
+	lock
+	faceplayer
+    namebox ("Acolyte")
+	msgbox(format("Did you ever hear the tragedy of Zamorak, Lord of Chaos?\pI thought not.\pIt’s not a story the Saradominists would tell you..."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script ZMI_DEATH_RUNE
+{
+    finditem(ITEM_DEATH_RUNE)
+    end
+}

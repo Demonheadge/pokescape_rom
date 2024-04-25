@@ -372,20 +372,20 @@ script CRANDOR_SEAGULL
         end
     }
     elif (var(VAR_HATTENKRAPPER_STATE) == 2) { 
-        msgbox(format("THEIF!!\pYou may not use my store!"))
+        msgbox(format("THIEF!!\pYou may not use my store!"))
         hidenamebox
         release
         end
     }
     elif (var(VAR_HATTENKRAPPER_STATE) == 3) { 
-        msgbox(format("THEIF!!\pYou may not use my store!\pGo away and don't come back!"))
+        msgbox(format("THIEF!!\pYou may not use my store!\pGo away and don't come back!"))
         setvar(VAR_HATTENKRAPPER_STATE, 7)
         hidenamebox
         release
         end
     }
     //elif (var(VAR_HATTENKRAPPER_STATE) == 4) { 
-       // msgbox(format("I am impressed you managed to defeat my at my full power but you still may not use my store!\pGo away and don't come back!"))
+       // msgbox(format("I am impressed you managed to defeat me at my full power, but you still may not use my store!\pGo away and don't come back!"))
        // setvar(VAR_HATTENKRAPPER_STATE, 7)
        // hidenamebox
         //release
@@ -399,7 +399,7 @@ script CRANDOR_SEAGULL
         end
     }
     elif (var(VAR_HATTENKRAPPER_STATE) == 8) { 
-        msgbox(format("Go away!\pI am not selling anything to a theif!"))
+        msgbox(format("Go away!\pI am not selling anything to a thief!"))
         setvar(VAR_HATTENKRAPPER_STATE, 9)
         hidenamebox
         release
@@ -434,7 +434,7 @@ script CRANDOR_SEAGULL
         end
     }
     elif (var(VAR_HATTENKRAPPER_STATE) == 13) { 
-        msgbox(format("Welcome to my store you bad human.\pWhat would you like to buy?"))
+        msgbox(format("Welcome to my store, you bad human.\pWhat would you like to buy?"))
         call(GeneralStoreShopScript)
         closemessage
         hidenamebox
@@ -463,12 +463,12 @@ script CRANDOR_SEAGULL_ITEMS
 {
     namebox ("Hattenkrapper")
     if (var(VAR_HATTENKRAPPER_STATE) == 0) {
-        msgbox(format("HEEYYY!\pDON'T TOUCH THOSE THEIR MIIIINNNEEE!"))
+        msgbox(format("HEEYYY!\pDON'T TOUCH THOSE THEY'RE MIIIINNNEEE!"))
         hidenamebox
         closemessage
     }
     elif (var(VAR_HATTENKRAPPER_STATE) == 2) {
-        msgbox(format("THAT IS MINNNEE DON'T TOUCH IT!!"))
+        msgbox(format("THAT IS MINNNEE, DON'T TOUCH IT!!"))
         hidenamebox
         closemessage
     }
@@ -497,7 +497,7 @@ script ENCOUNTER_HATTENKRAPPER {
 	lock
     namebox ("Hattenkrapper")
 	playmoncry(SPECIES_SEAGULL_HATTENKRAPPER_FORM, 0)
-	msgbox(format("SKREEEECH!\pI TOLD YOU THAT IS MINE GIVE IT BACK NOW!"))
+	msgbox(format("SKREEEECH!\pI TOLD YOU THAT IS MINE, GIVE IT BACK NOW!"))
 	waitmoncry
     hidenamebox
 	closemessage

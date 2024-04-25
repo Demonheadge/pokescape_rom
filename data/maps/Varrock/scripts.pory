@@ -840,9 +840,29 @@ script NPC_SLAYERMASTERLIST
 }
 
 
+script NPC_VARROCK_PILLORY_GUARD
+{
+    lock
+    faceplayer
+    namebox ("Pillory Guard")
+	msgbox(format("If I catch you stealing from anybody in the city, you'll end up locked away in here like this delinquent!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
-
-
+script NPC_VARROCK_PILLORY_MUGGER
+{
+    lock
+    faceplayer
+    namebox ("Mugger")
+	msgbox(format("Argh! My fingers are so numb from all the pickpocketing I've been doing that I can't pick this damn lock to escape..."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 
