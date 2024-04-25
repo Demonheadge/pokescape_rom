@@ -68,7 +68,7 @@ XERICS_TELEPORT_2:
 
 
 ANCIENT_SHARD_TELEPORT::
-	msgbox ANCIENT_SHARD_TELEPORT_Text_0, MSGBOX_YESNO
+	msgbox XERICS_TELEPORT_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne ANCIENT_SHARD_TELEPORT_2
 	closemessage
@@ -435,10 +435,6 @@ ZEAH_TELEPORT_EXIT_Text_0:
 	.string "Altar in the Catacombs?$"
 
 XERICS_TELEPORT_Text_0:
-	.string "Would you like to teleport to the\n"
-	.string "Kourend?$"
-
-ANCIENT_SHARD_TELEPORT_Text_0:
 	.string "Would you like to teleport to the\n"
 	.string "Catacombs of Kourend?$"
 

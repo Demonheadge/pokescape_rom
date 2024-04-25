@@ -1,0 +1,28 @@
+{
+  "id": "MAP_VARROCK_HOUSE_7",
+  "name": "Varrock_House_7",
+  "layout": "LAYOUT_VARROCK_HOUSE_7",
+  "music": "MUS_PS_VARROCK",
+  "region_map_section": "MAPSEC_VARROCK",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

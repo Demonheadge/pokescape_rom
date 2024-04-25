@@ -1861,3 +1861,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Canifis/scripts.inc"
 
 	.include "data/maps/Route180/scripts.inc"
+
+	.include "data/maps/Varrock_House_6/scripts.inc"
+
+	.include "data/maps/Varrock_House_7/scripts.inc"
+
+	.include "data/maps/Varrock_House_8/scripts.inc"
+
+	.include "data/maps/Varrock_House_9/scripts.inc"
+
+	.include "data/maps/Varlamore/scripts.inc"

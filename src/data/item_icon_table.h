@@ -703,7 +703,7 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_CRANDOR_MAP_PIECE1] = {gItemIcon_CRANDOR_MAP_PIECE1, gItemIconPalette_CRANDOR_MAP_PIECE1},
     [ITEM_CRANDOR_MAP_PIECE2] = {gItemIcon_CRANDOR_MAP_PIECE2, gItemIconPalette_CRANDOR_MAP_PIECE2},
     [ITEM_CRANDOR_MAP_PIECE3] = {gItemIcon_CRANDOR_MAP_PIECE3, gItemIconPalette_CRANDOR_MAP_PIECE3},
-    
+    [ITEM_WHISTLE] = {gItemIcon_Whistle, gItemIconPalette_Whistle},
 
 
 

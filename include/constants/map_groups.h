@@ -847,6 +847,10 @@
 #define MAP_VARROCK_SEWERS_3F         (26 | (43 << 8))
 #define MAP_ROUTE19_COOKING_GUILD     (27 | (43 << 8))
 #define MAP_VARROCK_HOUSE_5           (28 | (43 << 8))
+#define MAP_VARROCK_HOUSE_6           (29 | (43 << 8))
+#define MAP_VARROCK_HOUSE_7           (30 | (43 << 8))
+#define MAP_VARROCK_HOUSE_8           (31 | (43 << 8))
+#define MAP_VARROCK_HOUSE_9           (32 | (43 << 8))
 
 // gMapGroup_PokescapeIndoorBarbarianVillage
 #define MAP_BARBARIAN_VILLAGE_GYM_HALL (0 | (44 << 8))
@@ -1029,6 +1033,7 @@
 #define MAP_ZAMORAK_CHURCH                      (85 | (50 << 8))
 #define MAP_CRANDOR_SEA_ROUTE                   (86 | (50 << 8))
 #define MAP_UNGAEL                              (87 | (50 << 8))
+#define MAP_VARLAMORE                           (88 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

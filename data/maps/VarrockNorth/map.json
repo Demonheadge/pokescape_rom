@@ -42,6 +42,11 @@
       "map": "MAP_GRAND_EXCHANGE",
       "offset": -12,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE18",
+      "offset": 42,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -125,10 +130,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WIZARD_GUTHIX",
-      "x": 7,
-      "y": 36,
+      "x": 8,
+      "y": 33,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

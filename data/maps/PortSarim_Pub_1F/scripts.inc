@@ -129,26 +129,6 @@ NPC_PortSarimPub_PUBCRAWL::
 	end
 
 
-NPC_PortSarim_Church_Monk_1::
-	lock
-	faceplayer
-	namebox NPC_PortSarim_Church_Monk_1_Text_0
-	msgbox NPC_PortSarim_Church_Monk_1_Text_1
-	hidenamebox
-	release
-	end
-
-
-NPC_PortSarim_Church_Monk_2::
-	lock
-	faceplayer
-	namebox NPC_PortSarim_Church_Monk_1_Text_0
-	msgbox NPC_PortSarim_Church_Monk_2_Text_0
-	hidenamebox
-	release
-	end
-
-
 GIVE_RANDOM_ITEM::
 	random 17
 	switch VAR_RESULT
@@ -239,6 +219,66 @@ GIVE_RANDOM_ITEM_18:
 GIVE_RANDOM_ITEM_19:
 	giveitem ITEM_GODRABBITFOOT, 1
 	goto GIVE_RANDOM_ITEM_1
+
+
+NPC_PortSarim_Church_Monk_1::
+	lock
+	faceplayer
+	namebox NPC_PortSarim_Church_Monk_1_Text_0
+	msgbox NPC_PortSarim_Church_Monk_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_PortSarim_Church_Monk_2::
+	lock
+	faceplayer
+	namebox NPC_PortSarim_Church_Monk_1_Text_0
+	msgbox NPC_PortSarim_Church_Monk_2_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_Smuggler_Varlamore::
+	lock
+	faceplayer
+	namebox NPC_Smuggler_Varlamore_Text_0
+	checkitem ITEM_WHISTLE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq NPC_Smuggler_Varlamore_2
+NPC_Smuggler_Varlamore_1:
+	msgbox NPC_Smuggler_Varlamore_Text_2
+	closemessage
+	hidenamebox
+	release
+	end
+
+NPC_Smuggler_Varlamore_2:
+	msgbox NPC_Smuggler_Varlamore_Text_1
+	closemessage
+	hidenamebox
+	giveitem ITEM_WHISTLE, 1
+	goto NPC_Smuggler_Varlamore_1
+
+
+WHISTLE_TELEPORT::
+	msgbox WHISTLE_TELEPORT_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne WHISTLE_TELEPORT_2
+	closemessage
+	release
+	end
+
+WHISTLE_TELEPORT_2:
+	playse SE_M_SCREECH
+	msgbox WHISTLE_TELEPORT_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	warpteleport MAP_VARLAMORE, 0, 0, 0
+	closemessage
+	release
+	end
 
 
 NPC_PortSarimPub_BARTENDER_Text_0:
@@ -333,3 +373,32 @@ NPC_PortSarim_Church_Monk_2_Text_0:
 	.string "here.\p"
 	.string "I don't think many people know of its\n"
 	.string "existence.$"
+
+NPC_Smuggler_Varlamore_Text_0:
+	.string "Smuggler$"
+
+NPC_Smuggler_Varlamore_Text_1:
+	.string "Psst, have you heard?\p"
+	.string "There's a religion that worships the sun\n"
+	.string "to the content to the west.\p"
+	.string "Not many people from this continent\n"
+	.string "know about them.\p"
+	.string "The people from the continent are also\n"
+	.string "know to travel around by flying on the\l"
+	.string "backs of huge birds!\p"
+	.string "How cool is that!\p"
+	.string "……\p"
+	.string "Speaking of which, I need to get rid of\n"
+	.string "this whistle.\p"
+	.string "Take it.$"
+
+NPC_Smuggler_Varlamore_Text_2:
+	.string "You never got that whistle from me.$"
+
+WHISTLE_TELEPORT_Text_0:
+	.string "Would you like to teleport to\n"
+	.string "Varlamore?$"
+
+WHISTLE_TELEPORT_Text_1:
+	.string "Suddenly the world starts to warp\n"
+	.string "around you.$"

@@ -315,6 +315,50 @@ playbgmchaostunnels::
 	end
 
 
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY::
+	lock
+	faceplayer
+	namebox CRANDOR_SHIP_SCENE_Text_0
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq CRANDOR_EVENT_PORTSARIM_CABIN_BOY_2
+	msgbox CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_1
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY_1:
+	closemessage
+	hidenamebox
+	release
+	end
+
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY_2:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 150
+	goto_if_le CRANDOR_EVENT_PORTSARIM_CABIN_BOY_5
+	goto CRANDOR_EVENT_PORTSARIM_CABIN_BOY_1
+
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY_5:
+	msgbox CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_0
+	goto CRANDOR_EVENT_PORTSARIM_CABIN_BOY_1
+
+
+CRANDOR_EVENT_PORTSARIM_NED::
+	lock
+	faceplayer
+	namebox CRANDOR_SHIP_SCENE_Text_2
+	msgbox CRANDOR_EVENT_PORTSARIM_NED_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne CRANDOR_EVENT_PORTSARIM_NED_2
+CRANDOR_EVENT_PORTSARIM_NED_1:
+	closemessage
+	hidenamebox
+	release
+	end
+
+CRANDOR_EVENT_PORTSARIM_NED_2:
+	msgbox CRANDOR_EVENT_PORTSARIM_NED_Text_1
+	closemessage
+	hidenamebox
+	warp MAP_CRANDOR_SEA_ROUTE, 0, 57, 5
+	goto CRANDOR_EVENT_PORTSARIM_NED_1
+
+
 CRANDOR_SHIP_SCENE_Text_0:
 	.string "Cabin Boy$"
 
@@ -360,3 +404,21 @@ ENCOUNTER_CHAOS_ELEMENTAL_Text_0:
 
 ENCOUNTER_CHAOS_ELEMENTAL_Text_1:
 	.string "SNEEEEEE!$"
+
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_0:
+	.string "Finally the day has come!\p"
+	.string "I can set sail with her and make my\n"
+	.string "dream cometrue!$"
+
+CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_1:
+	.string "This ship is called the Lady Lumbridge!\p"
+	.string "One day I hope to set sail with her!\p"
+	.string "But alas the lady, she needs a captain.\p"
+	.string "Not a wee cabin boy like myself…$"
+
+CRANDOR_EVENT_PORTSARIM_NED_Text_0:
+	.string "{PLAYER}, are you ready to set sail to\n"
+	.string "the Isle of Crandor?$"
+
+CRANDOR_EVENT_PORTSARIM_NED_Text_1:
+	.string "Let us embark on this voyage!$"

@@ -7934,4 +7934,15 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+
+    [ITEM_WHISTLE] =
+    {
+        .name = _("WHISTLE"),
+        .itemId = ITEM_WHISTLE,
+        .price = 0,
+        .description = sWhistle_Desc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Function,
+    },
 };

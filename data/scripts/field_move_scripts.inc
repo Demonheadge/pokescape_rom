@@ -689,6 +689,10 @@ EventScript_ROTTEN_POTATO::
 	goto ROTTEN_POTATO_TELEPORT
 	end
 
+EventScript_WHISTLE::
+	goto WHISTLE_TELEPORT
+	end
+
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"

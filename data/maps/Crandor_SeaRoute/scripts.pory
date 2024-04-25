@@ -371,3 +371,49 @@ script playbgmchaostunnels
 
 
 
+
+
+
+
+//
+script CRANDOR_EVENT_PORTSARIM_CABIN_BOY {
+    lock
+    faceplayer
+    namebox("Cabin Boy")
+
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
+        if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 150) { 
+        msgbox(format("Finally the day has come!\pI can set sail with her and make my dream cometrue!"))
+        }
+    }
+    else {
+        msgbox(format("This ship is called the Lady Lumbridge!\pOne day I hope to set sail with her!\pBut alas the lady, she needs a captain.\pNot a wee cabin boy like myself…"))
+    }
+
+
+
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script CRANDOR_EVENT_PORTSARIM_NED {
+    lock
+    faceplayer
+    namebox("Ned")
+    msgbox(format("{PLAYER}, are you ready to set sail to the Isle of Crandor?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+        msgbox(format("Let us embark on this voyage!"))
+        closemessage
+        hidenamebox
+        warp(MAP_CRANDOR_SEA_ROUTE, 0, 57, 5)
+    }
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+

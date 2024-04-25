@@ -50,6 +50,16 @@ GE_TRADE_WARP_2:
 	end
 
 
+GE_WONDER_TRADE::
+	faceplayer
+	namebox GE_WONDER_TRADE_Text_0
+	msgbox GE_WONDER_TRADE_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 GE_GUARD_BLOCK_Text_0:
 	.string "Guard$"
 
@@ -84,3 +94,13 @@ GE_TRADE_WARP_Text_1:
 
 GE_TRADE_WARP_Text_2:
 	.string "Please come again soon.$"
+
+GE_WONDER_TRADE_Text_0:
+	.string "Clerk$"
+
+GE_WONDER_TRADE_Text_1:
+	.string "Welcome to the Wonder Trade desk!\p"
+	.string "Here you can trade monsters with\n"
+	.string "random strangers.\p"
+	.string "We are still setting up, please come\n"
+	.string "back later.$"

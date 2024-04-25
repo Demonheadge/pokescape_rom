@@ -249,7 +249,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MUGGER",
-      "x": 40,
+      "x": 39,
       "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -262,12 +262,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_THIEF",
-      "x": 46,
+      "x": 45,
       "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VARROCK_SCAMMER",
@@ -275,12 +275,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 58,
-      "y": 35,
+      "x": 59,
+      "y": 33,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VARROCK_NPC_THUG_2",
@@ -313,11 +313,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_IRONMAN",
-      "x": 29,
-      "y": 24,
+      "graphics_id": "OBJ_EVENT_GFX_MUGGER",
+      "x": 37,
+      "y": 26,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -519,6 +519,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_CAT",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
+      "x": 35,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MERCHER",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VARROCK_NPC_FROGEELBURGER",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IRONMAN",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VARROCK_NPC_WondertradeHint",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -607,14 +646,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 46,
+      "x": 45,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
     },
     {
-      "x": 48,
+      "x": 49,
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
@@ -635,7 +674,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
+      "x": 8,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_WEST",
@@ -658,6 +697,48 @@
     {
       "x": 54,
       "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 50,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_HOUSE_9",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 50,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_HOUSE_9",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_HOUSE_8",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_HOUSE_8",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
@@ -717,7 +798,7 @@
     },
     {
       "type": "sign",
-      "x": 46,
+      "x": 45,
       "y": 33,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -725,7 +806,7 @@
     },
     {
       "type": "sign",
-      "x": 48,
+      "x": 49,
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -751,6 +832,14 @@
       "type": "sign",
       "x": 4,
       "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 60,
+      "y": 29,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LOCKED_DOOR"

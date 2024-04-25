@@ -23986,6 +23986,190 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_CRANDOR",
+          "base_label": "gCrandor0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SCORPLING"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPIDER_GIANT_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SEAGULL_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SCORPION_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SCORPION_PIT_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPIDER_HUGE_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SCORPION_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPIDER_HUGE_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_DEMON_LESSER_RS3_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_DEMON_LESSER_RS3_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_DRAGONLING_GREEN_FORM"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_BASS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_HERRING"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_SEA_TURTLE"
+              },
+              {
+                "min_level": 22,
+                "max_level": 50,
+                "species": "SPECIES_SWORDFISH"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_SAILFISH"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 15,
+                "max_level": 25,
+                "species": "SPECIES_CRAB_RED_FORM"
+              },
+              {
+                "min_level": 15,
+                "max_level": 30,
+                "species": "SPECIES_SHRIMP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 35,
+                "species": "SPECIES_LOBSTER_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 35,
+                "species": "SPECIES_CRAB_RED_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 35,
+                "species": "SPECIES_SHRIMP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LOBSTER_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_LOBSTER_NORMAL_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_GIANT_CRAB_RED_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_SWORDFISH"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_JELLYFISH_BLUBBER_FORM"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 100,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ROCK_CRAB_SAND_FORM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_GOLEM_TITAN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_WINSTON"
+              }
+            ]
+          }
         }
       ]
     },

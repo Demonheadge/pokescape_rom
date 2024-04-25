@@ -131,39 +131,6 @@ script NPC_PortSarimPub_PUBCRAWL {
 
 
 
-
-
-
-
-//PORT SARIM CHURCH
-script NPC_PortSarim_Church_Monk_1 { 
-	lock
-	faceplayer
-    namebox("MONK")
-	msgbox(format("The other night I saw a drunk throwing things into the ocean.\pHe was shouting something about Mudskippers.\pI don't even know what a Mudskipper is."))
-    hidenamebox
-    release
-	end
-}
-
-script NPC_PortSarim_Church_Monk_2 { 
-	lock
-	faceplayer
-    namebox("MONK")
-	msgbox(format("Not many people visit our Church out here.\pI don't think many people know of its existence."))
-    hidenamebox
-    release
-	end
-}
-
-
-
-
-
-
-
-
-
 script GIVE_RANDOM_ITEM {
 	random(17) 
 	switch (var(VAR_RESULT)) { 
@@ -204,3 +171,68 @@ script GIVE_RANDOM_ITEM {
 	}
 	return
 }
+
+
+
+
+
+
+
+//PORT SARIM CHURCH
+script NPC_PortSarim_Church_Monk_1 { 
+	lock
+	faceplayer
+    namebox("MONK")
+	msgbox(format("The other night I saw a drunk throwing things into the ocean.\pHe was shouting something about Mudskippers.\pI don't even know what a Mudskipper is."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarim_Church_Monk_2 { 
+	lock
+	faceplayer
+    namebox("MONK")
+	msgbox(format("Not many people visit our Church out here.\pI don't think many people know of its existence."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_Smuggler_Varlamore
+{
+    lock
+    faceplayer
+    namebox("Smuggler")
+    checkitem(ITEM_WHISTLE, 1)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Psst, have you heard?\pThere's a religion that worships the sun to the content to the west.\pNot many people from this continent know about them.\pThe people from the continent are also know to travel around by flying on the backs of huge birds!\pHow cool is that!\p……\pSpeaking of which, I need to get rid of this whistle.\pTake it."))
+        closemessage
+        hidenamebox
+        giveitem(ITEM_WHISTLE, 1)
+    }
+    msgbox(format("You never got that whistle from me."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script WHISTLE_TELEPORT {
+    msgbox(format("Would you like to teleport to Varlamore?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+			playse(SE_M_SCREECH)
+            msgbox(format("Suddenly the world starts to warp around you."))
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            warpteleport (MAP_VARLAMORE,0,0,0)
+            closemessage
+            release
+            end
+        }  
+    closemessage
+    release
+    end
+}
+
+

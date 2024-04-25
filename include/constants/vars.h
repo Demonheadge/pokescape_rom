@@ -202,8 +202,8 @@
 #define VAR_DUNGEONEERING_OBJECT_SCRIPT_8         0x40B7 //VAR_SLATEPORT_FAN_CLUB_STATE
 #define VAR_DUNGEONEERING_OBJECT_SCRIPT_9                    0x40B8 //VAR_UNUSED_0x40B8 // Unused Var
 #define VAR_DUNGEONEERING_OBJECT_SCRIPT_10                    0x40B9 //VAR_MT_PYRE_STATE
-#define VAR_NEW_MAUVILLE_STATE               0x40BA
-#define VAR_UNUSED_0x40BB                    0x40BB // Unused Var
+#define VAR_NEW_MAUVILLE_STATE               0x40BA //
+#define VAR_HATTENKRAPPER_STATE                    0x40BB // Unused Var //VAR_UNUSED_0x40BB
 #define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON    0x40BC
 #define VAR_JAGGED_PASS_ASH_WEATHER          0x40BD
 #define VAR_GLASS_WORKSHOP_STATE             0x40BE

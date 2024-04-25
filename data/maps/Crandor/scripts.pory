@@ -1,18 +1,139 @@
 mapscripts Crandor_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(CRANDOR_STATE)
+    }
 }
+
+
+
+
+script CRANDOR_STATE {
+    if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 150) { 
+        setvar(VAR_TEMP_0, 1)
+        setvar(VAR_TEMP_1, 1)
+        clearflag(FLAG_TEMP_1E) //ham
+        setflag(FLAG_TEMP_1F) //elvarg
+    }
+    else {
+        setflag(FLAG_TEMP_1E) //ham
+        setflag(FLAG_TEMP_1F) //elvarg
+    }
+
+
+    if (var(VAR_HATTENKRAPPER_STATE) == 2) { 
+        setflag(FLAG_TEMP_1D)
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) >= 3) { 
+        setflag(FLAG_TEMP_1C)
+        setflag(FLAG_TEMP_1D)
+    }
+    return
+}
+
+
+
+
+script CRANDOR_SIGNPOST_STORE
+{
+    msgbox(format("Hattenkrapper's Wares."))
+    closemessage
+    end
+}
+
+
+
+
+
+
 
 //NPCS
 
 script CRANDOR_NED
 {
+    lock
     faceplayer
     namebox ("Ned")
-    msgbox(format("It looks like we're stranded!\pNo wonder no other captains wanted to sail anywhere near Crandor.."))
-    closemessage
+    if (var(VAR_HATTENKRAPPER_STATE) == 0) { 
+        setrespawn(HEAL_LOCATION_CRANDOR)
+        msgbox(format("It looks like we're stranded!\pNo wonder no other captains wanted to sail anywhere near Crandor…"))
+        msgbox(format("Be careful {PLAYER}, who knows what lies upon this island.\pCome see me if you need healing or access to your bank system."))
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+
+
+    msgbox(format("Ahoy {PLAYER}, what can I do for you?"))
     hidenamebox
+    multichoicedefault (1, 0, MULTI_BANKOPTIONS, 0, 0)
+    switch (var(VAR_RESULT))
+    {
+        case 0:
+            goto(CRANDOR_BANK_HEAL)
+        case 1:
+            goto(EventScript_AccessPokemonStorage)
+            //goto(EventScript_AccessHallOfFame)
+        case 2:
+            goto(EventScript_AccessPlayersPC)
+        //case: MULTI_B_PRESSED (BANK_ExitBank)
+        case 3:
+            goto (BANK_ExitBank)
+    }	
     release
     end
 }
+
+
+
+
+
+
+
+script CRANDOR_BANK_ExitBank
+{
+    msgbox(format("Be careful {PLAYER}, who knows what lies upon this island.\pCome see me if you need healing or access to your bank system."))
+    closemessage
+    hidenamebox
+	releaseall
+	end
+}
+
+script CRANDOR_BANK_HEAL {
+    msgbox(format("Sure thing, I will take your MONSTERs for a minute."))
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    playfanfare (MUS_HEAL)
+	waitfanfare
+	special (HealPlayerParty)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("Your MONSTERs are all healed!\pGood luck out there {PLAYER}."))
+    hidenamebox
+	releaseall
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //ITEMS
 
@@ -34,6 +155,11 @@ script ITEM_CRANDOR_RUNE_POUCH
     end
 }
 
+script ITEM_CRANDOR_CABBAGE
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
 
 
 
@@ -96,6 +222,28 @@ script TRIGGER_CRANDOR_SHAKE
 	special (ShakeCamera)
 	waitstate
     //msgbox(format("Something just shook the entire island…"))
+    setvar(VAR_TEMP_0, 0)
+    closemessage
+    releaseall
+    end
+}
+
+script TRIGGER_CRANDOR_SHAKE2
+{
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+	waitstate
+    setvar (VAR_0x8004, 1  @ vertical pan)
+	setvar (VAR_0x8005, 1  @ horizontal pan)
+	setvar (VAR_0x8006, 8  @ num shakes)
+	setvar (VAR_0x8007, 3  @ shake delay)
+	special (ShakeCamera)
+	waitstate
+    //msgbox(format("Something just shook the entire island…"))
+    setvar(VAR_TEMP_1, 0)
     closemessage
     releaseall
     end
@@ -107,11 +255,10 @@ script TRIGGER_CRANDOR_SHAKE
 
 
 
-
-
 script TRIGGER_ELVARGFLYOVER
 {
     lock
+    
     applymovement(OBJ_EVENT_ID_PLAYER, movement_elvargflyover4)
     savebgm(MUS_DUMMY)
     fadeoutbgm(1)
@@ -124,6 +271,9 @@ script TRIGGER_ELVARGFLYOVER
     waitmoncry
     delay(16)
     playse(SE_M_FLY)
+    clearflag(FLAG_TEMP_1F)
+    addobject(33)
+    setobjectxy(33,21,31)
     applymovement(33, movement_elvargflyover2)
     waitmovement(0)
     playse(SE_PIN)
@@ -131,7 +281,7 @@ script TRIGGER_ELVARGFLYOVER
     
     //setobjectxy(33,21,31)
     delay(32)
-    //special(RemoveCameraObject)
+    special(RemoveCameraObject)
     //fadeinbgm(1)
     waitmovement(0)
     warp(MAP_KARAMJA_VOLCANO_B3F, 1)
@@ -191,4 +341,190 @@ movement movement_elvargflyover1 {
     fly_down
     delay_16
     figure_8
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script CRANDOR_SEAGULL
+{
+    lock
+    faceplayer
+    namebox ("Hattenkrapper")
+    if (var(VAR_HATTENKRAPPER_STATE) == 0) { 
+        msgbox(format("Gull!\nWelcome to my store!\pWhat would you like to buy?"))
+        call(GeneralStoreShopScript)
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 2) { 
+        msgbox(format("THEIF!!\pYou may not use my store!"))
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 3) { 
+        msgbox(format("THEIF!!\pYou may not use my store!\pGo away and don't come back!"))
+        setvar(VAR_HATTENKRAPPER_STATE, 7)
+        hidenamebox
+        release
+        end
+    }
+    //elif (var(VAR_HATTENKRAPPER_STATE) == 4) { 
+       // msgbox(format("I am impressed you managed to defeat my at my full power but you still may not use my store!\pGo away and don't come back!"))
+       // setvar(VAR_HATTENKRAPPER_STATE, 7)
+       // hidenamebox
+        //release
+        //end
+    //}
+    elif (var(VAR_HATTENKRAPPER_STATE) == 7) { 
+        msgbox(format("You again?!\pGo away you thief!"))
+        setvar(VAR_HATTENKRAPPER_STATE, 8)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 8) { 
+        msgbox(format("Go away!\pI am not selling anything to a theif!"))
+        setvar(VAR_HATTENKRAPPER_STATE, 9)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 9) { 
+        msgbox(format("You again?!\pGo away you thief!"))
+        setvar(VAR_HATTENKRAPPER_STATE, 10)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 10) { 
+        msgbox(format("…"))
+        setvar(VAR_HATTENKRAPPER_STATE, 11)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 11) { 
+        msgbox(format("Are you going to buy something if I let you use my store again?"))
+        setvar(VAR_HATTENKRAPPER_STATE, 12)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 12) { 
+        msgbox(format("Fine…\pYou may use my store again.\pBUT DON'T STEAL MY STUFF!"))
+        setvar(VAR_HATTENKRAPPER_STATE, 13)
+        hidenamebox
+        release
+        end
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 13) { 
+        msgbox(format("Welcome to my store you bad human.\pWhat would you like to buy?"))
+        call(GeneralStoreShopScript)
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script CRANDOR_SEAGULL_ITEMS
+{
+    namebox ("Hattenkrapper")
+    if (var(VAR_HATTENKRAPPER_STATE) == 0) {
+        msgbox(format("HEEYYY!\pDON'T TOUCH THOSE THEIR MIIIINNNEEE!"))
+        hidenamebox
+        closemessage
+    }
+    elif (var(VAR_HATTENKRAPPER_STATE) == 2) {
+        msgbox(format("THAT IS MINNNEE DON'T TOUCH IT!!"))
+        hidenamebox
+        closemessage
+    }
+    msgbox(format("The Seagull has warned you not to take his items.\pTake the item anyway?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+
+            if (var(VAR_HATTENKRAPPER_STATE) == 0) {
+                finditem(ITEM_CABBAGE)
+                setvar(VAR_HATTENKRAPPER_STATE, 2)
+            }
+            elif (var(VAR_HATTENKRAPPER_STATE) == 2) {
+                finditem(ITEM_STAT_BEER)
+                setvar(VAR_HATTENKRAPPER_STATE, 3)
+            }
+            
+			playse(SE_M_SCREECH)
+            applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP)
+            waitmovement(0)
+            call(ENCOUNTER_HATTENKRAPPER)
+    }
+    release
+    end
+}
+
+script ENCOUNTER_HATTENKRAPPER {
+	lock
+    namebox ("Hattenkrapper")
+	playmoncry(SPECIES_SEAGULL_HATTENKRAPPER_FORM, 0)
+	msgbox(format("SKREEEECH!\pI TOLD YOU THAT IS MINE GIVE IT BACK NOW!"))
+	waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    if (var(VAR_HATTENKRAPPER_STATE) == 3) {
+        setwildbattle (SPECIES_SEAGULL_HATTENKRAPPER_FORM, 99, ITEM_FIGHTER_TORSO)
+    }
+    else {
+        setwildbattle (SPECIES_SEAGULL_HATTENKRAPPER_FORM, 30, ITEM_FIGHTER_TORSO)
+    }
+	dowildbattleNoCatch
+	if (var(VAR_RESULT) == B_OUTCOME_WON) {
+        namebox ("Hattenkrapper")
+        msgbox(format("GGUUULLL!!!\pGOOO AWAAAY!!!"))
+        hidenamebox
+		closemessage
+	}
+    elif (var(VAR_RESULT) == B_OUTCOME_LOST) { //Doesnt work?
+		//setvar(VAR_HATTENKRAPPER_STATE, 4) 
+	}
+    elif (var(VAR_RESULT) == B_OUTCOME_RAN) {
+        namebox ("Hattenkrapper")
+        playmoncry(SPECIES_EKANS, 0)
+        msgbox(format("GGUUULLL!!!\pGGUUULLL!!!\pYOU MAY NOT USE MYYY STORE!!"))
+		closemessage
+        hidenamebox
+		//setvar(VAR_HATTENKRAPPER_STATE, 18) 
+	}
+	return
 }

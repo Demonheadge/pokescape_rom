@@ -893,7 +893,11 @@
     "Grand_Exchange_Indoor",
     "Varrock_Sewers_3F",
     "Route19_CookingGuild",
-    "Varrock_House_5"
+    "Varrock_House_5",
+    "Varrock_House_6",
+    "Varrock_House_7",
+    "Varrock_House_8",
+    "Varrock_House_9"
   ],
   "gMapGroup_PokescapeIndoorBarbarianVillage": [
     "BarbarianVillage_GymHall",
@@ -1075,6 +1079,7 @@
     "Mudskipper_Point_ThurgosHut",
     "Zamorak_Church",
     "Crandor_SeaRoute",
-    "Ungael"
+    "Ungael",
+    "Varlamore"
   ]
 }

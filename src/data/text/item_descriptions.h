@@ -2697,5 +2697,8 @@ static const u8 sDGItemDesc[] = _(
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");
 
-
+static const u8 sWhistle_Desc[] = _(
+    "An whistle that\n"
+    "will teleport you\n"
+    "to another land.");
 

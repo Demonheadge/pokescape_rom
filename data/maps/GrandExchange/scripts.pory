@@ -56,3 +56,13 @@ script GE_TRADE_WARP
 
 
 
+script GE_WONDER_TRADE
+{
+    faceplayer
+    namebox ("Clerk")
+    msgbox(format("Welcome to the Wonder Trade desk!\pHere you can trade monsters with random strangers.\pWe are still setting up, please come back later."))
+    closemessage
+    hidenamebox
+    release
+    end
+}

@@ -8460,6 +8460,56 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/Route180/border.bin",
       "blockdata_filepath": "data/layouts/Route180/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_6",
+      "name": "Varrock_House_6_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_6/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_6/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_7",
+      "name": "Varrock_House_7_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_7/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_7/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_8",
+      "name": "Varrock_House_8_Layout",
+      "width": 18,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_8/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_8/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_9",
+      "name": "Varrock_House_9_Layout",
+      "width": 12,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/Varrock_House_9/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_9/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARLAMORE",
+      "name": "Varlamore_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Varlamore/border.bin",
+      "blockdata_filepath": "data/layouts/Varlamore/map.bin"
     }
   ]
 }

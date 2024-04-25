@@ -11437,6 +11437,8 @@ extern const u32 gItemIcon_CRANDOR_MAP_PIECE2[];
 extern const u32 gItemIconPalette_CRANDOR_MAP_PIECE2[];
 extern const u32 gItemIcon_CRANDOR_MAP_PIECE3[];
 extern const u32 gItemIconPalette_CRANDOR_MAP_PIECE3[];
+extern const u32 gItemIcon_Whistle[];
+extern const u32 gItemIconPalette_Whistle[];
 //------
 
 // pokescape crops

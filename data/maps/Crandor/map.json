@@ -52,7 +52,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "BATTLE_CRANDOR_MOSS_GIANT_3",
       "flag": "0"
     },
@@ -74,7 +74,7 @@
       "x": 13,
       "y": 40,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -119,7 +119,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_KaramjaVolcano_HAM_3",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
@@ -132,7 +132,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_KaramjaVolcano_HAM_4",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MOSS_GIANT",
@@ -158,7 +158,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_KaramjaVolcano_HAM_1",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
@@ -183,7 +183,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "CRANDOR_SEAGULL",
       "flag": "0"
     },
     {
@@ -197,7 +197,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_TEMP_13"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -210,11 +210,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_2"
+      "flag": "FLAG_TEMP_9"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 12,
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 11,
       "y": 37,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -222,8 +222,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_3"
+      "script": "EventScript_StrengthBoulder",
+      "flag": "FLAG_TEMP_7"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -236,7 +236,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_4"
+      "flag": "FLAG_TEMP_6"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -249,7 +249,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_5"
+      "flag": "FLAG_TEMP_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -262,7 +262,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_6"
+      "flag": "FLAG_TEMP_14"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -275,7 +275,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_7"
+      "flag": "FLAG_TEMP_11"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -288,7 +288,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_8"
+      "flag": "FLAG_TEMP_10"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -301,7 +301,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_9"
+      "flag": "FLAG_TEMP_5"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -314,7 +314,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_A"
+      "flag": "FLAG_TEMP_12"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -327,7 +327,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "FLAG_TEMP_B"
+      "flag": "FLAG_TEMP_15"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -357,7 +357,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 25,
+      "x": 26,
       "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -365,8 +365,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_CRANDOR_CABBAGE",
+      "flag": "FLAG_ITEM_CRANDOR_CABBAGE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -392,7 +392,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "0"
+      "flag": "FLAG_TEMP_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -405,7 +405,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -418,7 +418,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "0"
+      "flag": "FLAG_TEMP_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -431,7 +431,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_New_RockSmash",
-      "flag": "0"
+      "flag": "FLAG_TEMP_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
@@ -444,12 +444,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BATTLE_KaramjaVolcano_HAM_2",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ELVARG",
-      "x": 17,
-      "y": 25,
+      "x": 20,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -457,7 +457,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SHIP_1",
@@ -484,6 +484,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TELEPORT_TO_SHIP_SCENE",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 36,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CRANDOR_SEAGULL_ITEMS",
+      "flag": "FLAG_TEMP_1D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 38,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CRANDOR_SEAGULL_ITEMS",
+      "flag": "FLAG_TEMP_1C"
     }
   ],
   "warp_events": [
@@ -508,9 +534,9 @@
       "x": 17,
       "y": 33,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "TRIGGER_CRANDOR_SHAKE"
+      "var": "VAR_TEMP_1",
+      "var_value": "1",
+      "script": "TRIGGER_CRANDOR_SHAKE2"
     },
     {
       "type": "trigger",
@@ -526,9 +552,9 @@
       "x": 18,
       "y": 33,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "TRIGGER_CRANDOR_SHAKE"
+      "var": "VAR_TEMP_1",
+      "var_value": "1",
+      "script": "TRIGGER_CRANDOR_SHAKE2"
     },
     {
       "type": "trigger",
@@ -550,8 +576,17 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 11,
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TRIGGER_ELVARGFLYOVER"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -563,26 +598,35 @@
       "y": 10,
       "elevation": 0,
       "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "TRIGGER_ELVARGFLYOVER"
+      "var_value": "1",
+      "script": "TRIGGER_CRANDOR_SHAKE"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "TRIGGER_CRANDOR_SHAKE"
     }
   ],
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 39,
-      "y": 40,
+      "x": 35,
+      "y": 42,
       "elevation": 0,
       "item": "ITEM_PURPLE_SWEETS",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_2"
     },
     {
       "type": "hidden_item",
-      "x": 35,
-      "y": 41,
+      "x": 39,
+      "y": 40,
       "elevation": 0,
       "item": "ITEM_FIRE_RUNE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_3"
     },
     {
       "type": "hidden_item",
@@ -590,7 +634,7 @@
       "y": 33,
       "elevation": 0,
       "item": "ITEM_REPEL_TEA_1",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_4"
     },
     {
       "type": "hidden_item",
@@ -598,31 +642,31 @@
       "y": 28,
       "elevation": 0,
       "item": "ITEM_FLAX",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_6"
     },
     {
       "type": "hidden_item",
-      "x": 15,
-      "y": 26,
+      "x": 31,
+      "y": 45,
       "elevation": 0,
       "item": "ITEM_CABBAGE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_7"
     },
     {
       "type": "hidden_item",
-      "x": 20,
-      "y": 21,
+      "x": 7,
+      "y": 5,
       "elevation": 0,
       "item": "ITEM_PINEAPPLE_PUNCH",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_8"
     },
     {
       "type": "hidden_item",
       "x": 45,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_RING_OF_LIFE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_CABBAGE",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_11"
     },
     {
       "type": "hidden_item",
@@ -630,23 +674,23 @@
       "y": 3,
       "elevation": 0,
       "item": "ITEM_POTION_HP",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_10"
     },
     {
       "type": "hidden_item",
-      "x": 7,
-      "y": 5,
+      "x": 20,
+      "y": 21,
       "elevation": 0,
       "item": "ITEM_GREEN_SCALE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_9"
     },
     {
       "type": "hidden_item",
-      "x": 31,
-      "y": 45,
+      "x": 15,
+      "y": 26,
       "elevation": 0,
       "item": "ITEM_STAT_BEER",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_1"
     },
     {
       "type": "hidden_item",
@@ -654,7 +698,7 @@
       "y": 20,
       "elevation": 0,
       "item": "ITEM_LAMP_SPEED",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_12"
     },
     {
       "type": "sign",
@@ -662,15 +706,23 @@
       "y": 42,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "CRANDOR_SIGNPOST_STORE"
     },
     {
       "type": "hidden_item",
       "x": 18,
       "y": 28,
       "elevation": 0,
-      "item": "ITEM_LAMP_DEF",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_MINT_CAKE",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_5"
+    },
+    {
+      "type": "hidden_item",
+      "x": 46,
+      "y": 38,
+      "elevation": 0,
+      "item": "ITEM_REPEL_TEA_2",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_13"
     }
   ]
 }

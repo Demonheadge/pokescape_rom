@@ -1202,3 +1202,57 @@ script GIVE_RANDOM_ITEM_28 {
 
 
 
+script VARROCK_POTIONSTORE_BOOK
+{
+	msgbox(format("Using potions in battle allow your stats to temporarily be boosted.\pThe strength of a potion determines how much stats are boosted by.\pRegular potions boost stats by 2 levels.\pSuper Potions boosts stats by 3 levels.\pExtreme potions boosts stats by 5 levels."))
+    closemessage
+	release
+	end
+}
+
+script ITEM_VARROCK_POTIONSTORE
+{
+    finditem(ITEM_POTION_ATT)
+    end
+}
+
+script ITEM_VARROCK_CLOTHESSTORE
+{
+    finditem(ITEM_ELEMENTAL_POUCH)
+    end
+}
+
+script VARROCK_NPC_FROGEELBURGER
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("{COLOR BLUE}cyan:wave: Buying Frogeel Burgers 20k ea!"))
+    closemessage
+    hidenamebox
+    checkitem(ITEM_FROGEEL_BURGER, 1)
+    if (var(VAR_RESULT)) {
+        msgbox(format("Oh my!\pIs that a Frogeel burger I smell?!\pMay I buy it off you for 20k gp?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            removeitem(ITEM_FROGEEL_BURGER, 1)
+            addmoney(20000, 0)
+            playse(SE_SHOP)
+            msgbox(format("Thank you, these are delicious!\pIf you have any more come back and I'll buy them from you."))
+            closemessage
+            hidenamebox
+        }
+    }
+    release
+    end
+}
+
+script VARROCK_NPC_WondertradeHint
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("There is a desk at the Grand Exchange that allows you to trade your monsters with a stranger.\pIt's very useful for those who don't have any friends to trade with, like me."))
+    closemessage
+    hidenamebox
+    release
+    end
+}

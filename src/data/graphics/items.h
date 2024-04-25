@@ -1484,7 +1484,8 @@ const u32 gItemIcon_CRANDOR_MAP_PIECE2[] = INCBIN_U32("graphics/items/pokescape_
 const u32 gItemIconPalette_CRANDOR_MAP_PIECE2[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/crandor_map_piece2.gbapal.lz");
 const u32 gItemIcon_CRANDOR_MAP_PIECE3[] = INCBIN_U32("graphics/items/pokescape_icons/crandor_map_piece3.4bpp.lz");
 const u32 gItemIconPalette_CRANDOR_MAP_PIECE3[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/crandor_map_piece3.gbapal.lz");
-
+const u32 gItemIcon_Whistle[] = INCBIN_U32("graphics/items/pokescape_icons/whistle.4bpp.lz");
+const u32 gItemIconPalette_Whistle[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/whistle.gbapal.lz");
 
 
 

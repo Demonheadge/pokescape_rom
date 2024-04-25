@@ -44,7 +44,7 @@ script ZEAH_TELEPORT_EXIT {
 
 
 script XERICS_TELEPORT {
-    msgbox(format("Would you like to teleport to the Kourend?"), MSGBOX_YESNO)
+    msgbox(format("Would you like to teleport to the Catacombs of Kourend?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)){
             msgbox(format("Suddenly the world starts to warp around you."))
             applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)

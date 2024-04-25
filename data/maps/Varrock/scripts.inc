@@ -1058,6 +1058,60 @@ GIVE_RANDOM_ITEM_28_30:
 	goto GIVE_RANDOM_ITEM_28_1
 
 
+VARROCK_POTIONSTORE_BOOK::
+	msgbox VARROCK_POTIONSTORE_BOOK_Text_0
+	closemessage
+	release
+	end
+
+
+ITEM_VARROCK_POTIONSTORE::
+	finditem ITEM_POTION_ATT
+	end
+
+
+ITEM_VARROCK_CLOTHESSTORE::
+	finditem ITEM_ELEMENTAL_POUCH
+	end
+
+
+VARROCK_NPC_FROGEELBURGER::
+	faceplayer
+	msgbox VARROCK_NPC_FROGEELBURGER_Text_0
+	closemessage
+	hidenamebox
+	checkitem ITEM_FROGEEL_BURGER, 1
+	compare VAR_RESULT, 0
+	goto_if_ne VARROCK_NPC_FROGEELBURGER_2
+VARROCK_NPC_FROGEELBURGER_1:
+	release
+	end
+
+VARROCK_NPC_FROGEELBURGER_2:
+	msgbox VARROCK_NPC_FROGEELBURGER_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne VARROCK_NPC_FROGEELBURGER_4
+	goto VARROCK_NPC_FROGEELBURGER_1
+
+VARROCK_NPC_FROGEELBURGER_4:
+	removeitem ITEM_FROGEEL_BURGER, 1
+	addmoney 20000, 0
+	playse SE_SHOP
+	msgbox VARROCK_NPC_FROGEELBURGER_Text_2
+	closemessage
+	hidenamebox
+	goto VARROCK_NPC_FROGEELBURGER_1
+
+
+VARROCK_NPC_WondertradeHint::
+	faceplayer
+	msgbox VARROCK_NPC_WondertradeHint_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 VARROCK_SEWERS_SIGNPOST_Text_0:
 	.string "Sewers - Watch out for rats.$"
 
@@ -1621,3 +1675,35 @@ NPC_GOODIEBAG_Text_6:
 NPC_GOODIEBAG_Text_7:
 	.string "You should come back tomorrow for\n"
 	.string "another Goodie.$"
+
+VARROCK_POTIONSTORE_BOOK_Text_0:
+	.string "Using potions in battle allow your\n"
+	.string "stats to temporarily be boosted.\p"
+	.string "The strength of a potion determines\n"
+	.string "how much stats are boosted by.\p"
+	.string "Regular potions boost stats by 2\n"
+	.string "levels.\p"
+	.string "Super Potions boosts stats by 3 levels.\p"
+	.string "Extreme potions boosts stats by 5\n"
+	.string "levels.$"
+
+VARROCK_NPC_FROGEELBURGER_Text_0:
+	.string "{COLOR BLUE}cyan:wave: Buying Frogeel Burgers 20k\n"
+	.string "ea!$"
+
+VARROCK_NPC_FROGEELBURGER_Text_1:
+	.string "Oh my!\p"
+	.string "Is that a Frogeel burger I smell?!\p"
+	.string "May I buy it off you for 20k gp?$"
+
+VARROCK_NPC_FROGEELBURGER_Text_2:
+	.string "Thank you, these are delicious!\p"
+	.string "If you have any more come back and I'll\n"
+	.string "buy them from you.$"
+
+VARROCK_NPC_WondertradeHint_Text_0:
+	.string "There is a desk at the Grand Exchange\n"
+	.string "that allows you to trade your monsters\l"
+	.string "with a stranger.\p"
+	.string "It's very useful for those who don't\n"
+	.string "have any friends to trade with, like me.$"

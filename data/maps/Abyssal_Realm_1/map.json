@@ -497,6 +497,13 @@
       "elevation": 0,
       "dest_map": "MAP_CANIFIS",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 73,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CRANDOR",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
