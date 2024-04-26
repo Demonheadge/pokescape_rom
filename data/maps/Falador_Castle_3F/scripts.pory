@@ -62,6 +62,13 @@ movement movement_falador_postgym_4 {
     set_invisible
 }
 
+movement movement_falador_postgym_5 {
+    face_down
+    walk_down * 2
+    face_right
+    walk_right *2
+}
+
 script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to interrogation room.
 {
     applymovement(1, movement_falador_postgym_4)
@@ -76,33 +83,58 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
 
 	//player walks over to owen
     namebox ("Sir Owen")
-	msgbox(format("Thanks for coming everyone.\pWe have been hard at work interrogating the prisoners, so far we've worked out that the H.A.M and the Black Knights have been working together to recover some sort of map.\pAppearntly the map leads to some sort of weapon that will wipe out many of the inhabitants of Gilenor.\pOne bit of information we do not know is where the map leads and without it we will never know."))
+	msgbox(format("Thanks for coming everyone.\pWe have been hard at work interrogating the prisoners, so far we've worked out that the H.A.M members and the Black Knights have been working together to recover some sort of map.\pApparently, the map leads to some sort of weapon that will wipe out many of the inhabitants of Gielinor!\pHowever, we have no idea where the map leads and without it I doubt we will ever find out."))
     closemessage
     hidenamebox
 
     namebox ("Sir Owen")
-	msgbox(format("What's that {PLAYER}?!\pYou have all the map peices they were trying to obtain?!\pQuick, show Tiffy Cashien the map!"))
+	msgbox(format("What's that {PLAYER}?!\pYou have all the map pieces they were trying to obtain?!\pHow did you...\pThat doesn't matter right now, quickly, show Sir Tiffy the map!"))
     closemessage
     hidenamebox
 
+    applymovement(10, movement_falador_postgym_5)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, face_left)
+    applymovement(1, face_up)
+
     //Player faces Sir Tiffy
-    namebox ("Sir Tiffy")
-	msgbox(format("Now what do we have here, old bean?\pHmm…{PAUSE 15}…\pThis is…{PAUSE 15}\nYou must be pulling on my leg!\pThis is a map of Crandor!\pAround thirty years ago, it was a thriving community full of mages and adventurers.\pMany of them even became part of the Champions' Guild over in Varrock!\pHowever, one day one of their adventurers went too far and awoke a dragon that laid waste to the entire island.\pThey say it's nothing but a wasteland now.\pThat dragon must be the weapon they're looking for!\pNow how to get there…{PAUSE 15}…\pYou'd have to sail, of course, but no captain in his right mind would sail to that island…"))
+    namebox ("Sir Tiffy Cashien")
+	msgbox(format("Now what do we have here, old bean?\pHmm…{PAUSE 15}…\pThis is…{PAUSE 15}\nYou must be pulling on my leg!\pThis is a map of Crandor!\pAround thirty years ago, it was a thriving community full of mages and adventurers.\pMany of them even became part of the Champions' Guild over in Varrock!\pHowever, one day one of their adventurers went too far and awoke a dragon that laid waste to the entire island.\pThey say it's nothing but a wasteland now.\pAll that death and destruction...\pThat dragon must be the weapon they're looking for!\pNow how to get there…{PAUSE 15}…\pYou'd have to sail, of course, but no captain in his right mind would sail to that island…"))
     closemessage
     hidenamebox
     //face up thinking
     namebox ("Sir Tiffy")
-    msgbox(format("Hmm…{PAUSE 15}…\pActually, there may be one, mad enough.\pCaptain Ned.\pHe's a veteran sailor who has retired and settled in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
+    msgbox(format("Hmm…{PAUSE 15}…\pActually, there may be one mad enough.\pCaptain Ned.\pHe's a veteran sailor who has retired and settled in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
 
-
+    applymovement(10, face_down)
+    applymovement(OBJ_EVENT_ID_PLAYER, face_down)
+    waitmovement(0)
+    
     namebox ("Sir Amik Varze")
-    msgbox(format("This is serious indeed, we will need to assemble a team to investegate immediately.\p{PLAYER} I wish to ask for your assistance on this matter since not only do you have the map but you have also managed to defeat myself and even the best the White Knights had to offer.\pIf you could, please give this Ned a visit over in Draynor and convince him to sail to Crandor.\pIn the meantime Sir Tiffy Cachien and I will assemble an elite force of White Knights to tackle this threat."))
+    msgbox(format("This is serious indeed, we will need to investigate immediately and neutralise the H.A.M threat!\pUnfortunately, I can't spare any of my White Knights...\pThey need to keep the peace here in Falador, the last time I sent them outside the city to help someone else a deranged lunatic in a green partyhat went around massacring everyone!\p{PLAYER}, I wouldn't normally do this but in the circumstances...\pSince not only do you have the map, but you have also managed to defeat both myself and the best the White Knights had to offer in battle, I wish to ask for your assistance.\pIf you could, please give this Ned a visit over in Draynor and convince him to sail to Crandor.\pSir Theodore will accompany you, to show that you have the White Knight's full support for this mission."))
+
+    applymovement(10, face_right)
+    applymovement(OBJ_EVENT_ID_PLAYER, face_left)
+    waitmovement(0)
+
+    namebox ("Sir Tiffy Cashien")
+    msgbox(format("Sir Amik may not have any Knights to spare, but I will see what I can do...\pI will try and assemble a small, but elite troop of Knights to sail with you and tackle this threat.\pI'll arrange for them to meet you in Port Sarim before you set sail."))
+
+    applymovement(10, face_right)
+    applymovement(OBJ_EVENT_ID_PLAYER, face_right)
+    applymovement(1, face_right)
+    waitmovement(0)
 
     namebox ("Sir Owen")
-    msgbox(format("Sir Theodore and I will assist by monitoring their activity here and see if we can get any more information out of them."))
+    msgbox(format("And I will assist by seeing if we can get any more information out of the prisoners.\pAfter that, I will attempt to head north to investigate the Black Knight's Fortress and try and gather some intel!"))
+
+    applymovement(10, face_down)
+    applymovement(OBJ_EVENT_ID_PLAYER, face_down)
+    applymovement(1, face_up)
+    waitmovement(0)
 
     namebox ("Sir Amik Varze")
-    msgbox(format("Great it seems like everyone has their tasks.\pGood luck everyone!"))
+    msgbox(format("Great, it seems like everyone has their tasks.\pGood luck everyone!"))
 
 
     setvar(VAR_TEMP_B, 0)
