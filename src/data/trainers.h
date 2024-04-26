@@ -2834,7 +2834,7 @@ const struct Trainer gTrainers[] =
         .trainerClass = TRAINER_CLASS_SKILLER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
         .trainerPic = TRAINER_PIC_skiller,
-        .trainerName = _(""),
+        .trainerName = _("JAM HUG"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
@@ -2848,7 +2848,7 @@ const struct Trainer gTrainers[] =
         .trainerClass = TRAINER_CLASS_PLAYER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
         .trainerPic = TRAINER_PIC_prezleek,
-        .trainerName = _("Prezleek"),
+        .trainerName = _("PREZLEEK"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
@@ -5391,6 +5391,19 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_ROUTE26_TRAINER_4},
     },
 
+    [TRAINER_FALADOR_GYM_5] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("SIR VING"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_5),
+        .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_5},
+    },
 
 
 

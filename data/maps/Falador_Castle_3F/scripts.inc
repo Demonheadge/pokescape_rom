@@ -1,5 +1,6 @@
 Falador_Castle_3F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
@@ -10,6 +11,10 @@ Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto FALADORCASTLE_3F_STATE
 	return
+
+Falador_Castle_3F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_TEMP_B, 1, QUEST_FALADORCASTLE_EVENT_AFTER_GYM
+	.2byte 0
 
 
 FALADORCASTLE_3F_STATE::
@@ -35,55 +40,72 @@ FALADORCASTLE_3F_STATE_2:
 	addobject 8
 	addobject 9
 	addobject 10
-	call QUEST_FALADORCASTLE_EVENT_AFTER_GYM
+	setvar VAR_TEMP_B, 1
+	setobjectxyperm 4, 20, 9
+	setobjectxyperm 1, 20, 10
 	goto FALADORCASTLE_3F_STATE_1
 
 
+movement_falador_postgym_1:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+movement_falador_postgym_2:
+	face_down
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_right
+	face_left
+	step_end
+
+movement_falador_postgym_3:
+	set_visible
+	face_up
+	delay_16
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+movement_falador_postgym_4:
+	set_invisible
+	step_end
+
 QUEST_FALADORCASTLE_EVENT_AFTER_GYM::
+	applymovement 1, movement_falador_postgym_4
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, movement_falador_postgym_1
+	applymovement 4, movement_falador_postgym_2
+	applymovement 1, movement_falador_postgym_3
+	waitmovement 0
+	delay 120
 	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
 	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_1
 	closemessage
 	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_2
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_3
+	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
+	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_2
 	closemessage
 	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
+	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_3
 	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_4
 	closemessage
 	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_5
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_6
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
+	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_3
+	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_5
+	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_6
 	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_7
-	closemessage
-	hidenamebox
 	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
 	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_8
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_5
+	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_6
 	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_9
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_10
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_11
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_12
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_13
-	closemessage
-	hidenamebox
-	namebox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0
-	msgbox QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_14
-	closemessage
-	hidenamebox
+	setvar VAR_TEMP_B, 0
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 125
 	release
 	end
 
@@ -92,102 +114,34 @@ QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_0:
 	.string "Sir Owen$"
 
 QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_1:
-	.string "Thanks for coming {PLAYER}.\p"
+	.string "Thanks for coming everyone.\p"
 	.string "We have been hard at work interrogating\n"
-	.string "the prisoners, but have run into a\l"
-	.string "little problem.{PAUSE 15}Nothing they say makes\l"
-	.string "any sense!\p"
-	.string "Listen for yourself. The Black Knights\n"
-	.string "are just complaining...$"
+	.string "the prisoners, so far we've worked out\l"
+	.string "that the H.A.M and the Black Knights\l"
+	.string "have been working together to recover\l"
+	.string "some sort of map.\p"
+	.string "Appearntly the map leads to some sort\n"
+	.string "of weapon that will wipe out many of\l"
+	.string "the inhabitants of Gilenor.\p"
+	.string "One bit of information we do not know is\n"
+	.string "where the map leads and without it we\l"
+	.string "will never know.$"
 
 QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_2:
-	.string "Black Knight$"
+	.string "What's that {PLAYER}?!\p"
+	.string "You have all the map peices they were\n"
+	.string "trying to obtain?!\p"
+	.string "Quick, show Tiffy Cashien the map!$"
 
 QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_3:
-	.string "Did you know that Black Knights have\n"
-	.string "twice the chance to get called in for\l"
-	.string "an interrogation than any other type\l"
-	.string "of knight???{PAUSE 15}I bet ironmen or\l"
-	.string "mithrilmen don't get pulled over nearly\l"
-	.string "as often by you White Knights!{PAUSE 15}These\l"
-	.string "people are armourist, I tell you!\p"
-	.string "ARMOURIST!!$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_4:
-	.string "And don't get me started on the H.A.M\n"
-	.string "members...$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_5:
-	.string "H.A.M Grunt$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_6:
-	.string "H.A.M are going to rid Gielinor of all the\n"
-	.string "monsters.\p"
-	.string "No more smelly goblins.\p"
-	.string "No more grimy dwarves.\p"
-	.string "No more wretched frogeels!{PAUSE 15}We'll\n"
-	.string "probably leave the livestock though...\p"
-	.string "We will still need to eat after all.\p"
-	.string "All we needed to succeed was to finish\n"
-	.string "the map.\p"
-	.string "And locate the ultimate weapon to\n"
-	.string "destroy every single monster in\l"
-	.string "existence.$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_7:
-	.string "See what I mean?\p"
-	.string "They're talking nonsense about a map\n"
-	.string "when all they had was a scrap of paper\l"
-	.string "with a scrawl on it.\p"
-	.string "It wasn't even worth picking up off the\n"
-	.string "floor!\p"
-	.string "They've clearly never seen a map\n"
-	.string "before!\p"
-	.string "{PAUSE 15}What do you mean that it's a fragment\n"
-	.string "of a larger map?\p"
-	.string "Oh, but you have all three of the pieces\n"
-	.string "now?\p"
-	.string "{PAUSE 15}Good, then they won't be able to go\n"
-	.string "through with their plan!$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_8:
-	.string "And what do you think you're laughing\n"
-	.string "at?$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_9:
-	.string "You might have taken this piece from\n"
-	.string "us, but what you don't realise is that\l"
-	.string "we'd already made a copy!\p"
-	.string "Our colleague managed to sneak off\n"
-	.string "with it through a tunnel in the mines\l"
-	.string "before you got there.\p"
-	.string "Blew it up behind them too so nobody\n"
-	.string "could follow.\p"
-	.string "Hahahahahahahahaha!\p"
-	.string "Now who're the stupid ones!?$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_10:
-	.string "Oh no!\p"
-	.string "If they have even one piece of the map,\n"
-	.string "we must move swiftly to stop them from\l"
-	.string "locating this weapon!$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_11:
-	.string "{PLAYER}, show Sir Tiffy the map!$"
-
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_12:
 	.string "Sir Tiffy$"
 
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_13:
-	.string "Now what do we have here, old\n"
-	.string "bean?{PAUSE 15}Hmm...\p"
-	.string "Let me think.\p"
-	.string "We have dossiers on most of the islands\n"
-	.string "on Gielinor.\p"
-	.string "It pays to know what's happening\n"
-	.string "across the other kingdoms.\p"
-	.string "{PAUSE 15}You must be pulling on my leg!\p"
-	.string "This is a map of Crandor.\p"
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_4:
+	.string "Now what do we have here, old bean?\p"
+	.string "Hmm…{PAUSE 15}…\p"
+	.string "This is…{PAUSE 15}\n"
+	.string "You must be pulling on my leg!\p"
+	.string "This is a map of Crandor!\p"
 	.string "Around thirty years ago, it was a\n"
 	.string "thriving community full of mages and\l"
 	.string "adventurers.\p"
@@ -201,25 +155,47 @@ QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_13:
 	.string "now.\p"
 	.string "That dragon must be the weapon they're\n"
 	.string "looking for!\p"
-	.string "{PAUSE 15}Now how to get there...\p"
+	.string "Now how to get there…{PAUSE 15}…\p"
 	.string "You'd have to sail, of course, but no\n"
 	.string "captain in his right mind would sail to\l"
-	.string "that island...{PAUSE 15}There may be one, though.\p"
-	.string "Ned.\p"
-	.string "He's a veteran sailor who settled in\n"
-	.string "Draynor Village when people stopped\l"
-	.string "letting him sail.\p"
-	.string "If anyone has the knowledge and\n"
-	.string "experience to get there, it'll be him.\p"
-	.string "Since you were strong enough to defeat\n"
-	.string "even the best the White Knights had to\l"
-	.string "offer, I trust you'll be up to the task\l"
-	.string "of stopping H.A.M, old bean?\p"
-	.string "I'll need to report this to the top\n"
-	.string "brass so we can keep monitoring their\l"
-	.string "activity here.\p"
-	.string "Ta-ta for now.$"
+	.string "that island…$"
 
-QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_14:
-	.string "What are you waiting for {PLAYER}, go!\p"
-	.string "Head to Draynor Village and talk to Ned!$"
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_5:
+	.string "Hmm…{PAUSE 15}…\p"
+	.string "Actually, there may be one, mad enough.\p"
+	.string "Captain Ned.\p"
+	.string "He's a veteran sailor who has retired\n"
+	.string "and settled in Draynor Village.\p"
+	.string "If anyone has the knowledge and\n"
+	.string "experience to get there, it'll be him.$"
+
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_6:
+	.string "Sir Amik Varze$"
+
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_7:
+	.string "This is serious indeed, we will need to\n"
+	.string "assemble a team to investegate\l"
+	.string "immediately.\p"
+	.string "{PLAYER} I wish to ask for your\n"
+	.string "assistance on this matter since not\l"
+	.string "only do you have the map but you have\l"
+	.string "also managed to defeat myself and\l"
+	.string "even the best the White Knights had to\l"
+	.string "offer.\p"
+	.string "If you could, please give this Ned a\n"
+	.string "visit over in Draynor and convince him\l"
+	.string "to sail to Crandor.\p"
+	.string "In the meantime Sir Tiffy Cachien and I\n"
+	.string "will assemble an elite force of White\l"
+	.string "Knights to tackle this threat.$"
+
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_8:
+	.string "Sir Theodore and I will assist by\n"
+	.string "monitoring their activity here and see\l"
+	.string "if we can get any more information out\l"
+	.string "of them.$"
+
+QUEST_FALADORCASTLE_EVENT_AFTER_GYM_Text_9:
+	.string "Great it seems like everyone has their\n"
+	.string "tasks.\p"
+	.string "Good luck everyone!$"

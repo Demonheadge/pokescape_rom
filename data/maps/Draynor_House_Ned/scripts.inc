@@ -11,6 +11,15 @@ Ned_Draynor::
 	end
 
 
+DRAYNOR_NED_EVENT_WHITE_KNIGHT::
+	lock
+	namebox DRAYNOR_NED_EVENT_WHITE_KNIGHT_Text_0
+	msgbox DRAYNOR_NED_EVENT_WHITE_KNIGHT_Text_1
+	hidenamebox
+	release
+	end
+
+
 Ned_Draynor_Text_0:
 	.string "Ned$"
 
@@ -40,3 +49,16 @@ Ned_Draynor_Text_1:
 	.string "in Port Sarim.\p"
 	.string "I'll have Cabin Boy Jenkins get\n"
 	.string "everything ready for us to set sail.$"
+
+DRAYNOR_NED_EVENT_WHITE_KNIGHT_Text_0:
+	.string "Sir Owen$"
+
+DRAYNOR_NED_EVENT_WHITE_KNIGHT_Text_1:
+	.string "The white knights have been able to\n"
+	.string "secure a ship for transport.\p"
+	.string "It is called Lady Falador located south\n"
+	.string "of the docks in Port Sarim.\p"
+	.string "The name of the ship was orginally\n"
+	.string "called Lady Lumbridge but considering\l"
+	.string "Falador is purchasing it and paying for\l"
+	.string "transport it was fitting to rename it.$"

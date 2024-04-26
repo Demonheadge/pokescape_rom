@@ -264,13 +264,11 @@ NPC_FALADORCASTLE_QUEST_PART_4::
 
 
 FALADORCASTLE_MOVEMENT_6:
-	walk_down
 	walk_right
 	walk_down
 	step_end
 
 FALADORCASTLE_MOVEMENT_7:
-	walk_down
 	walk_down
 	step_end
 
@@ -392,6 +390,8 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_4:
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
 	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6
+	closemessage
+	hidenamebox
 	setvar VAR_POKESCAPE_FALADOR_STATE, 5
 	setflag FLAG_BADGE02_GET
 	addvar VAR_GAMEMODE_LEVEL_SCALING, 1
@@ -399,7 +399,6 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_4:
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_8
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_7:
-	hidenamebox
 	release
 	end
 
@@ -414,14 +413,17 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_8:
 
 
 QUEST_FALADORCASTLE_GYM_SIRTHEO::
-	lock
+	setvar VAR_POKESCAPE_STORYMODE_PROGRESS, 120
+	addobject 4
+	clearflag FLAG_TEMP_1F
 	applymovement 4, movement_faladorCastle_sirtheo
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN
 	waitmovement 0
 	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_6
 	msgbox QUEST_FALADORCASTLE_GYM_SIRTHEO_Text_0
 	closemessage
 	hidenamebox
-	setvar VAR_POKESCAPE_GAMEMODE_STATE, 120
 	warp MAP_FALADOR_CASTLE_3F, 3, 0, 0
 	release
 	end
@@ -442,6 +444,7 @@ SetGymTrainers_FALADOR::
 	settrainerflag TRAINER_FALADOR_GYM_2
 	settrainerflag TRAINER_FALADOR_GYM_3
 	settrainerflag TRAINER_FALADOR_GYM_4
+	settrainerflag TRAINER_FALADOR_GYM_5
 	return
 
 
@@ -561,28 +564,19 @@ NPC_FALADORCASTLE_WHITEKNIGHT_2_3:
 
 
 NPC_FALADORCASTLE_WHITEKNIGHT_3::
-	switch VAR_POKESCAPE_FALADOR_STATE
-	case 4, NPC_FALADORCASTLE_WHITEKNIGHT_3_2
-	case 5, NPC_FALADORCASTLE_WHITEKNIGHT_3_3
-	return
+	trainerbattle_single TRAINER_FALADOR_GYM_5, NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_0, NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_1
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_2
+	goto_if_unset FLAG_BADGE02_GET, NPC_FALADORCASTLE_WHITEKNIGHT_3_2
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_4
+NPC_FALADORCASTLE_WHITEKNIGHT_3_1:
+	hidenamebox
+	closemessage
+	release
+	end
 
 NPC_FALADORCASTLE_WHITEKNIGHT_3_2:
-	lock
-	faceplayer
-	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_0
-	hidenamebox
-	closemessage
-	release
-	end
-
-NPC_FALADORCASTLE_WHITEKNIGHT_3_3:
-	lock
-	faceplayer
-	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_1
-	hidenamebox
-	closemessage
-	release
-	end
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_3
+	goto NPC_FALADORCASTLE_WHITEKNIGHT_3_1
 
 
 NPC_FALADORCASTLE_WHITEKNIGHT_4::
@@ -921,8 +915,8 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
 	.string "knight instead?$"
 
 QUEST_FALADORCASTLE_GYM_SIRTHEO_Text_0:
-	.string "Hello {PLAYER}, Sir Owen has\n"
-	.string "requested your assistnace in the\l"
+	.string "Sir Amik, {PLAYER}, Sir Owen has\n"
+	.string "requested your assistance in the\l"
 	.string "interrogation chamber.\p"
 	.string "If you would kindly follow me.$"
 
@@ -997,11 +991,19 @@ NPC_FALADORCASTLE_WHITEKNIGHT_2_Text_1:
 
 NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_0:
 	.string "Hello my name is Sir Amik Varze.\p"
-	.string "Just kidding!\p"
-	.string "He is inside just down the corridor next\n"
-	.string "door to our torture chamber.$"
+	.string "Just kidding!$"
 
 NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_1:
+	.string "I got you for a second didn't I?$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_2:
+	.string "Sir Ving$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_3:
+	.string "Sir Amik is inside just down the corridor\n"
+	.string "next door to our torture chamber.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_4:
 	.string "Our enemy are the Black Knights.\p"
 	.string "They call themselves Kinshra though.$"
 

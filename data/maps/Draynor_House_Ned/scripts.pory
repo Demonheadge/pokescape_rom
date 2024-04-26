@@ -12,3 +12,13 @@ script Ned_Draynor{
     release
 	end
 }
+
+script DRAYNOR_NED_EVENT_WHITE_KNIGHT {
+
+    lock
+    namebox("Sir Owen")
+	msgbox(format("The white knights have been able to secure a ship for transport.\pIt is called Lady Falador located south of the docks in Port Sarim.\pThe name of the ship was orginally called Lady Lumbridge but considering Falador is purchasing it and paying for transport it was fitting to rename it."))
+    hidenamebox
+    release
+	end
+}

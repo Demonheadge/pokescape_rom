@@ -305,8 +305,11 @@ script NPC_FALADOR_WHITEKNIGHT_2
 	lock
 	faceplayer
     namebox ("White Knight")
-	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 120 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 115 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
 		msgbox(format("Sorry the Gym is closed until the disturbance at the Dwarven Mines are resolved.\pHuh?\nYou want to know where the Dwarven Mines are?\pThey are underneath us!\pIf you go to the east of town there you can find a small shack which leads to the mines."))
+	}
+	elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 115) {
+		msgbox(format("Welcome to the Faldor Gym!\pNow that the disturbance at the mines have been dealt with we can reopen."))
 	}
 	else {
 		msgbox(format("Past this bridge is Falador Castle!\pWhich is also the gym location for the MvM Championships."))
@@ -323,8 +326,11 @@ script NPC_FALADOR_WHITEKNIGHT_3
 	lock
 	faceplayer
     namebox ("White Knight")
-	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 120 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
+	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) < 115 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) {
 		msgbox(format("Sorry but the gym is closed for a very important mission.\pIn the meantime you should go visit the Party room in the east of town.\pIt looks like a big castle, you cannot miss it."))
+	}
+	elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 115) {
+		msgbox(format("Welcome to the Faldor Gym!\pNow that the disturbance at the mines have been dealt with we can reopen."))
 	}
 	else {
 		msgbox(format("Sir Amik Varze is our town's gym leader."))

@@ -274,12 +274,11 @@ script NPC_FALADORCASTLE_QUEST_PART_4
 	end
 }
 movement FALADORCASTLE_MOVEMENT_6{
-    walk_down
     walk_right
     walk_down
 }
 movement FALADORCASTLE_MOVEMENT_7{
-    walk_down * 2
+    walk_down * 1
 }
 movement FALADORCASTLE_MOVEMENT_8{
     face_left
@@ -392,6 +391,8 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         goto_if_eq(Common_EventScript_ShowBagIsFull)
         namebox("Sir Amik Varze")
         msgbox(format("That move is called Razor Shell, it is a very sharp move.\pHopefully it will help you on your journey."))
+        closemessage
+        hidenamebox
         setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
         setflag(FLAG_BADGE02_GET)
         addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
@@ -400,7 +401,6 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
     	{
             goto(QUEST_FALADORCASTLE_GYM_SIRTHEO)
     	}
-        hidenamebox
         release
         end
     }
@@ -413,14 +413,17 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
 
 script QUEST_FALADORCASTLE_GYM_SIRTHEO
 {
-	lock
+	setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 120)
+    addobject(4)
+    clearflag(FLAG_TEMP_1F)
     applymovement(4, movement_faladorCastle_sirtheo)
     waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN)
+    waitmovement(0)
     namebox ("Sir Theodore")
-	msgbox(format("Hello {PLAYER}, Sir Owen has requested your assistnace in the interrogation chamber.\pIf you would kindly follow me."))
+	msgbox(format("Sir Amik, {PLAYER}, Sir Owen has requested your assistance in the interrogation chamber.\pIf you would kindly follow me."))
     closemessage
     hidenamebox
-    setvar(VAR_POKESCAPE_GAMEMODE_STATE, 120)
     warp(MAP_FALADOR_CASTLE_3F, 3, 0, 0)
 	release
 	end
@@ -437,6 +440,7 @@ script SetGymTrainers_FALADOR {
     settrainerflag(TRAINER_FALADOR_GYM_2)
     settrainerflag(TRAINER_FALADOR_GYM_3)
     settrainerflag(TRAINER_FALADOR_GYM_4)
+    settrainerflag(TRAINER_FALADOR_GYM_5)
     return
 }
 
@@ -566,26 +570,18 @@ script NPC_FALADORCASTLE_WHITEKNIGHT_2
 
 script NPC_FALADORCASTLE_WHITEKNIGHT_3
 {
-	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-		case 4: 
-			lock
-			faceplayer
-			//namebox("Sir Loin")
-			msgbox(format("Hello my name is Sir Amik Varze.\pJust kidding!\pHe is inside just down the corridor next door to our torture chamber."))
-            hidenamebox
-            closemessage
-			release
-			end
-        case 5:
-			lock
-			faceplayer
-            //namebox("Sir Loin")
-			msgbox(format("Our enemy are the Black Knights.\pThey call themselves Kinshra though."))
-            hidenamebox
-            closemessage
-            release
-			end
-	}
+    trainerbattle_single(TRAINER_FALADOR_GYM_5, format("Hello my name is Sir Amik Varze.\pJust kidding!"),format("I got you for a second didn't I?") )
+    namebox("Sir Ving")
+    if (!flag(FLAG_BADGE02_GET)) {
+    msgbox(format("Sir Amik is inside just down the corridor next door to our torture chamber."))
+    }
+    else {
+        msgbox(format("Our enemy are the Black Knights.\pThey call themselves Kinshra though."))
+    }
+    hidenamebox
+    closemessage
+    release
+    end
 }
 
 script NPC_FALADORCASTLE_WHITEKNIGHT_4

@@ -262,7 +262,7 @@ script BATTLE_ROUTE17_TRAINER_1
 script BATTLE_ROUTE17_TRAINER_2
 {//Bat. Dobbin. butterfly. clowckwork cat.
     trainerbattle_single(TRAINER_ROUTE17_TRAINER_2, format("To get to Morytania I need to get past those blasted bats…\pNow if I only- WAH!"),format("You scared me there.\pI thought you were a bat."))
-    namebox ("Skiller")
+    namebox("Jam Hug")
     msgbox(format("You scared me there.\pI thought you were a bat."))
 	hidenamebox
     release

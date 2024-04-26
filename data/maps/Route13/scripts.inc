@@ -429,4 +429,4 @@ BATTLE_ROUTE17_TRAINER_2_Text_1:
 	.string "I thought you were a bat.$"
 
 BATTLE_ROUTE17_TRAINER_2_Text_2:
-	.string "Skiller$"
+	.string "Jam Hug$"
