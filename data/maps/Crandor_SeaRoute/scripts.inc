@@ -408,7 +408,7 @@ ENCOUNTER_CHAOS_ELEMENTAL_Text_1:
 CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_0:
 	.string "Finally the day has come!\p"
 	.string "I can set sail with her and make my\n"
-	.string "dream cometrue!$"
+	.string "dream come true!$"
 
 CRANDOR_EVENT_PORTSARIM_CABIN_BOY_Text_1:
 	.string "This ship is called the Lady Lumbridge!\p"

@@ -50,6 +50,7 @@ POTTERINGTON_FARM_OUTDOOR_STATE_3:
 
 MuggerBattleRoute4::
 	trainerbattle_single TRAINER_MUGGER_ROUTE4, MuggerBattleRoute4_Text_0, MuggerBattleRoute4_Text_1
+	namebox MuggerBattleRoute4_Text_2
 	msgbox MuggerBattleRoute4_Text_1
 	release
 	return
@@ -57,14 +58,16 @@ MuggerBattleRoute4::
 
 ScammerBattleRoute4::
 	trainerbattle_single TRAINER_SCAMMER_ROUTE4, ScammerBattleRoute4_Text_0, ScammerBattleRoute4_Text_1
-	msgbox ScammerBattleRoute4_Text_2
+	namebox ScammerBattleRoute4_Text_2
+	msgbox ScammerBattleRoute4_Text_3
 	release
 	return
 
 
 FarmerBattleRoute4::
 	trainerbattle_single TRAINER_FARMER_ROUTE4, FarmerBattleRoute4_Text_0, FarmerBattleRoute4_Text_1
-	msgbox FarmerBattleRoute4_Text_2
+	namebox FarmerBattleRoute4_Text_2
+	msgbox FarmerBattleRoute4_Text_3
 	release
 	return
 
@@ -231,6 +234,9 @@ MuggerBattleRoute4_Text_1:
 	.string "People seem very afraid of me.\p"
 	.string "Maybe it's the way I say hello?$"
 
+MuggerBattleRoute4_Text_2:
+	.string "Miles$"
+
 ScammerBattleRoute4_Text_0:
 	.string "Psst… Want to buy some cabbage?$"
 
@@ -238,6 +244,9 @@ ScammerBattleRoute4_Text_1:
 	.string "A no would have been fine…$"
 
 ScammerBattleRoute4_Text_2:
+	.string "Fr33Trims$"
+
+ScammerBattleRoute4_Text_3:
 	.string "Selling rare black lobster!$"
 
 FarmerBattleRoute4_Text_0:
@@ -249,6 +258,9 @@ FarmerBattleRoute4_Text_1:
 	.string "monsters!$"
 
 FarmerBattleRoute4_Text_2:
+	.string "Leeroy$"
+
+FarmerBattleRoute4_Text_3:
 	.string "Have you checked out the farm?\p"
 	.string "It's a great place to raise monsters of\n"
 	.string "your own!$"
@@ -273,8 +285,8 @@ ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_1:
 	.string "them grow while you are away.\p"
 	.string "We have also set up special breeding\n"
 	.string "pens for certain monsters.\p"
-	.string "You should and inquire about it if it is\n"
-	.string "something that intrests you!\p"
+	.string "You should inquire about it, if it's\n"
+	.string "something that interests you!\p"
 	.string "Anyway that is all I wanted to show you.\p"
 	.string "Take care!$"
 

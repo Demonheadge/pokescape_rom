@@ -637,11 +637,11 @@ CRANDOR_SEAGULL_Text_1:
 	.string "What would you like to buy?$"
 
 CRANDOR_SEAGULL_Text_2:
-	.string "THEIF!!\p"
+	.string "THIEF!!\p"
 	.string "You may not use my store!$"
 
 CRANDOR_SEAGULL_Text_3:
-	.string "THEIF!!\p"
+	.string "THIEF!!\p"
 	.string "You may not use my store!\p"
 	.string "Go away and don't come back!$"
 
@@ -651,7 +651,7 @@ CRANDOR_SEAGULL_Text_4:
 
 CRANDOR_SEAGULL_Text_5:
 	.string "Go away!\p"
-	.string "I am not selling anything to a theif!$"
+	.string "I am not selling anything to a thief!$"
 
 CRANDOR_SEAGULL_Text_6:
 	.string "…$"
@@ -666,15 +666,15 @@ CRANDOR_SEAGULL_Text_8:
 	.string "BUT DON'T STEAL MY STUFF!$"
 
 CRANDOR_SEAGULL_Text_9:
-	.string "Welcome to my store you bad human.\p"
+	.string "Welcome to my store, you bad human.\p"
 	.string "What would you like to buy?$"
 
 CRANDOR_SEAGULL_ITEMS_Text_0:
 	.string "HEEYYY!\p"
-	.string "DON'T TOUCH THOSE THEIR MIIIINNNEEE!$"
+	.string "DON'T TOUCH THOSE THEY'RE MIIIINNNEEE!$"
 
 CRANDOR_SEAGULL_ITEMS_Text_1:
-	.string "THAT IS MINNNEE DON'T TOUCH IT!!$"
+	.string "THAT IS MINNNEE, DON'T TOUCH IT!!$"
 
 CRANDOR_SEAGULL_ITEMS_Text_2:
 	.string "The Seagull has warned you not to take\n"
@@ -683,7 +683,7 @@ CRANDOR_SEAGULL_ITEMS_Text_2:
 
 ENCOUNTER_HATTENKRAPPER_Text_0:
 	.string "SKREEEECH!\p"
-	.string "I TOLD YOU THAT IS MINE GIVE IT BACK\n"
+	.string "I TOLD YOU THAT IS MINE, GIVE IT BACK\n"
 	.string "NOW!$"
 
 ENCOUNTER_HATTENKRAPPER_Text_1:

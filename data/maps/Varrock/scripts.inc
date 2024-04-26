@@ -676,6 +676,28 @@ NPC_SLAYERMASTERLIST::
 	end
 
 
+NPC_VARROCK_PILLORY_GUARD::
+	lock
+	faceplayer
+	namebox NPC_VARROCK_PILLORY_GUARD_Text_0
+	msgbox NPC_VARROCK_PILLORY_GUARD_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_VARROCK_PILLORY_MUGGER::
+	lock
+	faceplayer
+	namebox NPC_VARROCK_PILLORY_MUGGER_Text_0
+	msgbox NPC_VARROCK_PILLORY_MUGGER_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 GAMEMODE_MONSTER_OR_POKEMON_SCRIPT::
 	faceplayer
 	msgbox GAMEMODE_MONSTER_OR_POKEMON_SCRIPT_Text_0, MSGBOX_YESNO
@@ -1537,6 +1559,22 @@ NPC_SLAYERMASTERLIST_Text_2:
 	.string "Badges you will then be eligible to\l"
 	.string "participate in the… …\p"
 	.string "The page is torn.$"
+
+NPC_VARROCK_PILLORY_GUARD_Text_0:
+	.string "Pillory Guard$"
+
+NPC_VARROCK_PILLORY_GUARD_Text_1:
+	.string "If I catch you stealing from anybody in\n"
+	.string "the city, you'll end up locked away in\l"
+	.string "here like this delinquent!$"
+
+NPC_VARROCK_PILLORY_MUGGER_Text_0:
+	.string "Mugger$"
+
+NPC_VARROCK_PILLORY_MUGGER_Text_1:
+	.string "Argh! My fingers are so numb from all\n"
+	.string "the pickpocketing I've been doing that\l"
+	.string "I can't pick this damn lock to escape...$"
 
 GAMEMODE_MONSTER_OR_POKEMON_SCRIPT_Text_0:
 	.string "EDIT GAMEMODE?$"

@@ -21,7 +21,7 @@ mapscripts Port_Sarim_MapScripts {
 
 
 script VARSETTER {
-    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 100)
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 110)
 }
 
 
