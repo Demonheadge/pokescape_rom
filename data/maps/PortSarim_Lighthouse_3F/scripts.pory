@@ -48,13 +48,13 @@ script LIGHTHOUSE_3F_NPC_1
 {
     //namebox ("")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
-	    msgbox(format("The guard looks like they're struggling to hold the HAM member off."))
+	    msgbox(format("The guard looks like they're struggling to hold the H.A.M member off."))
     }
     else { //not guard captian but oh well
         lock
         faceplayer
-        namebox ("Guard Captain")
-        msgbox(format("The lighthouse is for authorized personnel only.\pBut if want to know more about it, basically we go up there every night and light a bonfire to help ships find thier way."))
+        namebox ("GUARD CAPTAIN")
+        msgbox(format("The lighthouse is for authorized personnel only.\pBut if you want to know more about it, basically we go up there every night and light a bonfire to help ships find their way."))
     }
     closemessage
     hidenamebox
@@ -65,7 +65,7 @@ script LIGHTHOUSE_3F_NPC_1
 script LIGHTHOUSE_3F_NPC_2
 {
     //namebox ("")
-	msgbox(format("They appear to be winning.\pSomeone needs to stop these HAM members before it's too late."))
+	msgbox(format("They appear to be winning.\pSomeone needs to stop these H.A.M members before it's too late."))
     closemessage
     //hidenamebox
 	release
@@ -76,13 +76,13 @@ script LIGHTHOUSE_3F_NPC_3
 {
     //namebox ("")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
-	    msgbox(format("The guard hurriedly points to the nearby HAM members.")) 
+	    msgbox(format("The guard hurriedly points to the nearby H.A.M members.")) 
     }
     else {
         lock
         faceplayer
-        namebox ("Guard Captain")
-        msgbox(format("The lighthouse is for authorized personnel only.\pBut if want to know more about it, basically we go up there every night and light a bonfire to help ships find thier way."))
+        namebox ("GUARD CAPTAIN")
+        msgbox(format("The lighthouse is for authorized personnel only.\pBut if you want to know more about it, basically we go up there every night and light a bonfire to help ships find their way."))
     }
     closemessage
     hidenamebox
@@ -93,7 +93,7 @@ script LIGHTHOUSE_3F_NPC_3
 script LIGHTHOUSE_3F_NPC_4
 {
     //namebox ("")
-	msgbox(format("The HAM member looks like they're about to cry.\pProbably not a good look in front of one of their boss."))
+	msgbox(format("The H.A.M member looks like they're about to cry.\pProbably not a good look in front of one of their boss."))
     closemessage
     //hidenamebox
 	release
@@ -105,7 +105,7 @@ script LIGHTHOUSE_3F_NPC_4
 script BATTLE_LIGHTHOUSE_3F_TRAINER_1
 {
     trainerbattle_single(TRAINER_LIGHTHOUSE_3F_TRAINER_1, format("Our Admin is still getting what she needs, so I guess it's up to me to stop you."),format("Aw, doesn't look like I'll be getting that promotion now…"))
-	namebox ("HAM Member")
+	namebox ("H.A.M MEMBER")
     msgbox(format("Aw, doesn't look like I'll be getting that promotion now…"))
 	hidenamebox
     release
@@ -129,23 +129,23 @@ script TRIGGER_LIGHTHOUSE_HAM_PATTY
 
 script LIGHTHOUSE_HAM_PATTY
 {
-    namebox ("Patty")
+    namebox ("PATTY")
     applymovement(OBJ_EVENT_ID_PATTY, MOVEMENT_INTERACT_LEFT)
 	msgbox(format("Give me the map you stupid Goblin!"))
     waitmovement(0)
-    namebox ("Wormbrain")
+    namebox ("WORMBRAIN")
     applymovement(OBJ_EVENT_ID_WORMBRAIN, MOVEMENT_INTERACT_RIGHT)
 	msgbox(format("If human want map, then human must pay Wormbrain 10,000GP."))
     waitmovement(0)
-    namebox ("Patty")
+    namebox ("PATTY")
 	msgbox(format("You must be joking…"))
-    namebox ("Wormbrain")
+    namebox ("WORMBRAIN")
 	msgbox(format("Wormbrain never joke if pink human want map, then pink human must pay Wormbrain 10,000GP."))
-    namebox ("Patty")
-	msgbox(format("How about I just take it from you instead, hows that sound?"))
-    namebox ("Wormbrain")
+    namebox ("PATTY")
+	msgbox(format("How about I just take it from you instead, how does that sound?"))
+    namebox ("WORMBRAIN")
 	msgbox(format("Wormbrain think human is funny, would like to see human try."))
-    namebox ("Patty")
+    namebox ("PATTY")
 	msgbox(format("Have it your way then goblin.\pGet a taste of this Wind Blast!"))
 
 //apllymovement, punches goblin back 2 spots.
@@ -171,7 +171,7 @@ script LIGHTHOUSE_HAM_PATTY
     waitmovement(0)
     delay(32)
     namebox ("Patty")
-	msgbox(format("Ew such a disgusting goblin, I don't want to go near you.\pSo I won't I'll just telekentic grab it from here."))
+	msgbox(format("Ew such a disgusting goblin, I don't want to go near you.\pSo I won't. I'll just telekentic grab it from here."))
     closemessage
     hidenamebox
     removeobject(OBJ_EVENT_ID_MAP)
@@ -226,11 +226,11 @@ script LIGHTHOUSE_HAM_PATTY
     namebox ("H.A.M Grunt")
 	msgbox(format("Yes ma'am!"))
     namebox ("Patty")
-	msgbox(format("We're heading out, plan A is ruined, were going with plan B.\pBabe will fix things in the maze, meanwhile we head for Musa Point on Karamja."))
+	msgbox(format("We're heading out, plan A is ruined, we're going with plan B.\pBabe will fix things in the maze, meanwhile we head for Musa Point on Karamja."))
     applymovement(OBJ_EVENT_ID_PATTY, Movement_InteractFACEPLAYER)
     waitmovement(0)
     namebox ("Patty")
-	msgbox(format("Dont meddle with us again if you know whats good for you.\pWe serve the populace of Gielinor by ridding it of monsters, opposing us means opposing the natural order."))
+	msgbox(format("Don't meddle with us again if you know what's good for you.\pWe serve the populace of Gielinor by ridding it of monsters, opposing us means opposing the natural order."))
     closemessage
     hidenamebox
     //fadescreen black

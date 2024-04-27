@@ -47,7 +47,7 @@ script LIGHTHOUSE_2F_NPC_1
     else {
         lock
         faceplayer
-        msgbox(format("Being a guard in Port Sarim is exhausting!\pWhy?\pBecause everything comes and goes from Port Sarim!\pWe have muggers, theives, scammers, pirates, goblins if you can think of it we have it."))
+        msgbox(format("Being a guard in Port Sarim is exhausting!\pWhy?\pBecause everything comes and goes from Port Sarim!\pWe have muggers, thieves, scammers, pirates, goblins if you can think of it we have it."))
     }
     closemessage
     //hidenamebox
@@ -58,7 +58,7 @@ script LIGHTHOUSE_2F_NPC_1
 script LIGHTHOUSE_2F_NPC_2
 {
     //namebox ("")
-	msgbox(format("The HAM member is too busy battling the guard.\pYou really hope they're losing…"))
+	msgbox(format("The H.A.M member is too busy battling the guard.\pYou really hope they're losing…"))
     closemessage
     //hidenamebox
 	release
@@ -90,7 +90,7 @@ script LIGHTHOUSE_2F_NPC_3
 script LIGHTHOUSE_2F_NPC_4
 {
     //namebox ("")
-	msgbox(format("You can hear the HAM member chuckling.\pThat's probably not a good sign."))
+	msgbox(format("You can hear the H.A.M member chuckling.\pThat's probably not a good sign."))
     closemessage
     //hidenamebox
 	release
@@ -101,9 +101,9 @@ script LIGHTHOUSE_2F_NPC_5
 {
 	lock
 	faceplayer
-    namebox ("Security Guard")
+    namebox ("SECURITY GUARD")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
-	    msgbox(format("Oh god I only came here to give people tips on security!\pI'm not built for battling."))
+	    msgbox(format("Oh god! I only came here to give people tips on security!\pI'm not built for battling."))
     }
     else {
         msgbox(format("Ahem…\pPiracy is bad.\pWhat's that?\pThis game is technically piracy?\p…I don't know how to reply to this."))
@@ -118,7 +118,7 @@ script LIGHTHOUSE_2F_NPC_6
 {
 	lock
 	faceplayer
-    //namebox ("Guard")
+    //namebox ("GUARD")
 	msgbox(format("This lighthouse is also acts as the jail.\pThat way we can guard both at the same time."))
     closemessage
     hidenamebox
@@ -130,7 +130,7 @@ script LIGHTHOUSE_2F_NPC_6
 script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1
 {
     trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("What do you think you are doing?!\pWe're in the middle of a battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
-	namebox ("Dennis")
+	namebox ("DENNIS")
     msgbox(format("I knew I should have taken today off…"))
 	hidenamebox
     release
@@ -140,7 +140,7 @@ script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1
 script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2
 {
     trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_2, format("Get out of our way, we need to battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
-    namebox ("HAM Grunt")
+    namebox ("H.A.M GRUNT")
     msgbox(format("I've done my job and slowed you down.\pI bet we've got what we wanted here now."))
 	hidenamebox
     release

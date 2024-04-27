@@ -6,6 +6,7 @@ mapscripts Route5_MapScripts {
 
 script BATTLE_ROUTE5_CAPTAINTOCK{
     trainerbattle_single(TRAINER_ROUTE5_CAPTAINTOCK, format("Avast ye landlubber!\pPort Sarim be forward!"),format("Arrr… Hang the Jib…"))
+    namebox ("Captain Tock")
     msgbox(format("Me hearties be at thee pub.\pMe hasn't enough doubloons after thee battle with ye to join them thour."))
     release
 }
@@ -13,6 +14,7 @@ script BATTLE_ROUTE5_CAPTAINTOCK{
 
 script BATTLE_ROUTE5_WOODCUTTER{
     trainerbattle_single(TRAINER_ROUTE5_WOODCUTTER, format("See those chopped trees?\pYeah, I did that and now I will do the same to you!"),format("Tiiiimmmmbbbeeerrr!"))
+    namebox ("CHOPSALOT")
     msgbox(format("Well you sure chopped me down to size."))
     release
 }

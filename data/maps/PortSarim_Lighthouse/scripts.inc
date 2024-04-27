@@ -259,13 +259,13 @@ LIGHTHOUSE_NPC_4_Text_0:
 
 LIGHTHOUSE_NPC_4_Text_1:
 	.string "Oi!\p"
-	.string "Will you ask those HAM members to let me\n"
+	.string "Will you ask those H.A.M members to let me\n"
 	.string "out on their way back down?\p"
 	.string "They just walked right past me like we\n"
 	.string "didn't even know each other!$"
 
 LIGHTHOUSE_NPC_4_Text_2:
-	.string "Man, I cannot beleive those HAM guys\n"
+	.string "Man, I cannot believe those H.A.M guys\n"
 	.string "left me in here to rot.\p"
 	.string "I'm never working with them again…$"
 
@@ -321,7 +321,7 @@ BATTLE_LIGHTHOUSE_TRAINER_1_Text_2:
 	.string "Dave$"
 
 BATTLE_LIGHTHOUSE_TRAINER_2_Text_0:
-	.string "Vile HAM member!\n"
+	.string "Vile H.A.M member!\n"
 	.string "You will go any further!$"
 
 BATTLE_LIGHTHOUSE_TRAINER_2_Text_1:
@@ -332,7 +332,7 @@ BATTLE_LIGHTHOUSE_TRAINER_2_Text_2:
 
 BATTLE_LIGHTHOUSE_TRAINER_2_Text_3:
 	.string "Sorry I mistook you for being apart of\n"
-	.string "HAM.\p"
+	.string "H.A.M.\p"
 	.string "But please stop them before they cause\n"
 	.string "any more damage.$"
 

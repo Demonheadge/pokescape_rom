@@ -123,7 +123,7 @@ script Melzar_Maze_B1F_HAM_GRUNT_1 {
 	lock
 	faceplayer
 	namebox("H.A.M Grunt")
-	msgbox(format("So glad you dealt with that guy.\pI'm only a lower middle management grunt, I cant deal with actual opposition."))
+	msgbox(format("So glad you dealt with that guy.\pI'm only a lower middle management grunt, I can't deal with actual opposition."))
 	closemessage
 	hidenamebox
 	release
@@ -167,7 +167,7 @@ script Melzar_Maze_B1F_MelzarTheMad {
 	lock
 	faceplayer
 	namebox("Melzar")
-	msgbox(format("I gave my pet rock some custard, its feeling better now."))
+	msgbox(format("I gave my pet rock some custard, it's feeling better now."))
 	closemessage
 	hidenamebox
 	release
@@ -276,12 +276,12 @@ script TRIGGER_Melzar_Maze_HAM_EVENT_BABE {
     waitmovement(0)
 
 	namebox("Babe")
-	msgbox(format("Ok guys mission failed, we're going to Musa Point and meet up with Pattys crew."))
+	msgbox(format("Ok guys mission failed, we're going to Musa Point and meet up with Patty's crew."))
 	closemessage
 	hidenamebox
 	applymovement(6, MOVEMENT_INTERACT_LEFT)
 	namebox("H.A.M Grunt")
-	msgbox(format("What about the batallion sent to falador?"))
+	msgbox(format("What about the batallion sent to Falador?"))
 	closemessage
 	hidenamebox
 	waitmovement(0)

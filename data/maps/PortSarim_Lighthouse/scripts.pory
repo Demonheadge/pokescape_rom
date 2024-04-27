@@ -53,7 +53,7 @@ script LIGHTHOUSE_NPC_1
 {
 	lock
 	faceplayer
-    namebox ("Thief")
+    namebox ("THIEF")
 	msgbox(format("I tried to rob Shantay and his guards at the pass in Al Kharid.\pNext thing I knew, I woke up locked up in here!"))
     closemessage
     hidenamebox
@@ -65,7 +65,7 @@ script LIGHTHOUSE_NPC_2
 {
 	lock
 	faceplayer
-    namebox ("Skeleton")
+    namebox ("SKELETON")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
 	    msgbox(format("The skeleton chuckles at all of the commotion."))
     }
@@ -82,7 +82,7 @@ script LIGHTHOUSE_NPC_3
 {
 	lock
 	faceplayer
-    namebox ("Mugger")
+    namebox ("MUGGER")
 	msgbox(format("Psst.\pHelp me sneak outta here, yeah?\pI promise I won't rob you when we get outside…"))
     closemessage
     hidenamebox
@@ -94,15 +94,15 @@ script LIGHTHOUSE_NPC_4
 {
 	lock
 	faceplayer
-    namebox ("Black Knight")
+    namebox ("BLACK KNIGHT")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 100) { 
-	    msgbox(format("Oi!\pWill you ask those HAM members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
+	    msgbox(format("Oi!\pWill you ask those H.A.M members to let me out on their way back down?\pThey just walked right past me like we didn't even know each other!"))
     }
     elif (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
-        msgbox(format("Man, I cannot beleive those HAM guys left me in here to rot.\pI'm never working with them again…"))
+        msgbox(format("Man, I cannot believe those H.A.M guys left me in here to rot.\pI'm never working with them again…"))
     }
     else {
-        msgbox(format("Our hideout is located near Ice Mountain.\pThere can I go now?"))
+        msgbox(format("Our hideout is located near Ice Mountain.\pThere, can I go now?"))
     }
     closemessage
     hidenamebox
@@ -114,7 +114,7 @@ script LIGHTHOUSE_NPC_WORMBRAIN
 {
 	lock
 	faceplayer
-    namebox ("Wormbrain")
+    namebox ("WORMBRAIN")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
         msgbox(format("Me nose hurts…"))
     }
@@ -131,7 +131,7 @@ script LIGHTHOUSE_GUARD_1
 {
 	lock
 	faceplayer
-    namebox ("Jailer")
+    namebox ("JAILER")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
         msgbox(format("I overheard some H.A.M members mentioning something about a maze near Rimmington.\pHopefully they aren't planning anything."))
     }
@@ -148,7 +148,7 @@ script LIGHTHOUSE_GUARD_2
 {
 	lock
 	faceplayer
-    namebox ("Jailer")
+    namebox ("JAILER")
     if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 105) { 
         msgbox(format("I'm contacting the customs officers over at Rimmington just incase H.A.M attempt to show up there."))
     }
@@ -166,7 +166,7 @@ script LIGHTHOUSE_GUARD_2
 script BATTLE_LIGHTHOUSE_TRAINER_1
 {
     trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_1, format("I couldn't stop your friends before they forced their way upstairs, but I'll make sure I stop you!"),format("What do you mean you're not with them?"))
-    namebox ("Dave")
+    namebox ("DAVE")
     msgbox(format("What do you mean you're not with them?"))
 	hidenamebox
     release
@@ -175,8 +175,8 @@ script BATTLE_LIGHTHOUSE_TRAINER_1
 
 script BATTLE_LIGHTHOUSE_TRAINER_2
 {
-    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_2, format("Vile HAM member!\nYou will go any further!"),format("You're a lot stronger than you look!"))
-    namebox ("Darren")
+    trainerbattle_single(TRAINER_LIGHTHOUSE_TRAINER_2, format("Vile HAM member!\nYou will not go any further!"),format("You're a lot stronger than you look!"))
+    namebox ("DARREN")
     msgbox(format("Sorry I mistook you for being apart of HAM.\pBut please stop them before they cause any more damage."))
 	hidenamebox
     release
@@ -213,7 +213,7 @@ script BATTLE_LIGHTHOUSE_TRAINER_2
 script LIGHTHOUSE_CAPN_HAND_QUEST {
     lock
     faceplayer
-    namebox ("Cap'n Hand")
+    namebox ("CAP'N HAND")
     if (flag(FLAG_LIGHTHOUSE_PIRATE) == FALSE) {
         msgbox(format("I used to sail the seven seas, a- lootin' and a-plunderin' whatever took my fancy.\pThen I got a conscience, so I stopped being a pirate, and travelled the world giving back some of the loot.\pSeems people didn't appreciate me interruptin' their business to give 'em free stuff, so now I'm locked up for harassment.\pWill ye help an ol' pirate?"), MSGBOX_YESNO)
         if (var(VAR_RESULT)){

@@ -89,3 +89,9 @@ script MELZAR_3F_NOOB
     release
     end
 }
+
+script ITEM_MELZARS_3F_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}

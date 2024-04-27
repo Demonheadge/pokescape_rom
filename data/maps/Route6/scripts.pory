@@ -149,13 +149,14 @@ movement MOVEMENT_ROUTE6_UNICORN
 
 script BATTLE_ROUTE6_FIREMAKER{
     trainerbattle_single(TRAINER_ROUTE6_FIREMAKER, format("Hey get out of my way, I'm making bonfires here!"),format("Burned to a crisp.\pI hope you levelled up…"))
+    namebox ("ASH")
     msgbox(format("Burned to a crisp.\pI hope you levelled up…"))
     release
 }
 
 script BATTLE_ROUTE6_MUGGER{
     trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Your money or your life!"),format("Okay I guess you can keep both…"))
-    namebox ("Mugger")
+    namebox ("LEO")
     msgbox(format("Shoo you're making it hard for me to mug people."))
     hidenamebox
     release

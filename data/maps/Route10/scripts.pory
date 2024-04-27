@@ -96,18 +96,21 @@ script ROUTE10_WhiteKnight_2
 
 script BATTLE_ROUTE10_MONK{
     trainerbattle_single(TRAINER_ROUTE10_MONK, format("You don't seem to be dead…\pWe might be able arrange something to fix that."),format("Oh you prefer to live?\pThat too is an option."))
+    namebox ("Jeremiah")
     msgbox(format("Did you know Death Runes make certain monsters evolve?\pDo you think there are Life Rune too?\pIt really makes you think."))
     release
 }
 
 script BATTLE_ROUTE10_GOBLIN_1{
     trainerbattle_single(TRAINER_ROUTE10_GOBLIN_1, format("HUMAN!\pMe not let you pass!\pThis is goblin road!"),format("Ok human can pass!"))
+    namebox ("FEETSTOMPER")
     msgbox(format("Me sorry for causing trouble for human!\pDon't hurt goblin!"))
     release
 }
 
 script BATTLE_ROUTE10_GOBLIN_2{
     trainerbattle_single(TRAINER_ROUTE10_GOBLIN_2, format("Me want to visit graves but stupid humans won't let me!"),format("Me just want to see friend…"))
+    namebox ("WINDBURSTER")
     msgbox(format("Me friend is spider.\pMe accidently sat on him.\pMe want to visit grave and say sorry…"))
     release
 }

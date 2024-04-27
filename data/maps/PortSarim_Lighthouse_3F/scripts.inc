@@ -340,15 +340,15 @@ LIGHTHOUSE_3F_NPC_1_Text_2:
 
 LIGHTHOUSE_3F_NPC_2_Text_0:
 	.string "They appear to be winning.\p"
-	.string "Someone needs to stop these HAM\n"
+	.string "Someone needs to stop these H.A.M\n"
 	.string "members before it's too late.$"
 
 LIGHTHOUSE_3F_NPC_3_Text_0:
 	.string "The guard hurriedly points to the\n"
-	.string "nearby HAM members.$"
+	.string "nearby H.A.M members.$"
 
 LIGHTHOUSE_3F_NPC_4_Text_0:
-	.string "The HAM member looks like they're about\n"
+	.string "The H.A.M member looks like they're about\n"
 	.string "to cry.\p"
 	.string "Probably not a good look in front of one\n"
 	.string "of their boss.$"
@@ -363,7 +363,7 @@ BATTLE_LIGHTHOUSE_3F_TRAINER_1_Text_1:
 	.string "that promotion now…$"
 
 BATTLE_LIGHTHOUSE_3F_TRAINER_1_Text_2:
-	.string "HAM Member$"
+	.string "H.A.M MEMBER$"
 
 LIGHTHOUSE_HAM_PATTY_Text_0:
 	.string "Patty$"
