@@ -206,10 +206,10 @@ const u16 *const gTilesetAnims_Wizards_Tower_Portal[] = {
 };
 
 
-const u16 gTilesetAnims_Karamja_scorchfire1_Frame0[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_0.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire1_Frame1[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_1.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire1_Frame2[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_2.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire1_Frame3[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire1/scorchfire1_3.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame0[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire1/scorchfire1_0.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame1[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire1/scorchfire1_1.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame2[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire1/scorchfire1_2.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire1_Frame3[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire1/scorchfire1_3.4bpp");
 
 const u16 *const gTilesetAnims_Karamja_scorchfire1[] = {
     gTilesetAnims_Karamja_scorchfire1_Frame0,
@@ -218,10 +218,10 @@ const u16 *const gTilesetAnims_Karamja_scorchfire1[] = {
     gTilesetAnims_Karamja_scorchfire1_Frame3
 };
 
-const u16 gTilesetAnims_Karamja_scorchfire2_Frame0[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_0.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire2_Frame1[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_1.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire2_Frame2[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_2.4bpp");
-const u16 gTilesetAnims_Karamja_scorchfire2_Frame3[] = INCBIN_U16("data/tilesets/secondary/Karamja/anim/scorchfire2/scorchfire2_3.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame0[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire2/scorchfire2_0.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame1[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire2/scorchfire2_1.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame2[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire2/scorchfire2_2.4bpp");
+const u16 gTilesetAnims_Karamja_scorchfire2_Frame3[] = INCBIN_U16("data/tilesets/secondary/karamja/anim/scorchfire2/scorchfire2_3.4bpp");
 
 const u16 *const gTilesetAnims_Karamja_scorchfire2[] = {
     gTilesetAnims_Karamja_scorchfire2_Frame0,
