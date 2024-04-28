@@ -35,7 +35,7 @@ NPC_VARROCK_ZMI_3::
 	end
 
 
-ZMI_DEATH_RUNE::
+ITEM_ZMI_DEATH_RUNE::
 	finditem ITEM_DEATH_RUNE
 	end
 

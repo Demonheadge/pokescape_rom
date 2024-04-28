@@ -19,6 +19,11 @@ script MELZARS_3F_STATE {
 }
 
 
+script ITEM_MELZARS_3F_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}
 
 
 //Battles
@@ -90,8 +95,3 @@ script MELZAR_3F_NOOB
     end
 }
 
-script ITEM_MELZARS_3F_PRAYER_POTION
-{
-    finditem(ITEM_PRAYER_POTION)
-    end
-}

@@ -35,7 +35,7 @@ script NPC_BLACK_ARM_2 {
 	end
 }
 
-script BLACK_ARM_MITH_SCIM
+script ITEM_BLACK_ARM_MITH_SCIM
 {
     finditem(ITEM_MITHRIL_SCIMITAR)
     end

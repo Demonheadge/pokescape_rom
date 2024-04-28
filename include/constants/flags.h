@@ -1286,8 +1286,8 @@
 #define FLAG_ITEM_VARROCK_CLOTHESSTORE                              0x4A7 // Unused Flag //FLAG_UNUSED_0x4A7
 #define FLAG_ITEM_CRANDOR_CABBAGE                                   0x4A8 // Unused Flag //FLAG_UNUSED_0x4A8                                          0x4A8 // Unused Flag
 #define FLAG_LOWES_BONE_CROSSBOW                                          0x4A9 // Unused Flag
-#define FLAG_ZMI_DEATH_RUNE                                           0x4AA // Unused Flag
-#define FLAG_BLACK_ARM_MITH_SCIM                                           0x4AB // Unused Flag
+#define FLAG_ITEM_ZMI_DEATH_RUNE                                           0x4AA // Unused Flag
+#define FLAG_ITEM_BLACK_ARM_MITH_SCIM                                           0x4AB // Unused Flag
 #define FLAG_ITEM_MELZARS_3F_PRAYER_POTION                          0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag

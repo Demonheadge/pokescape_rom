@@ -94,8 +94,8 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
 
     applymovement(10, movement_falador_postgym_5)
     waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, face_left)
-    applymovement(1, face_up)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT)
+    applymovement(1, MOVEMENT_FACE_UP)
 
     //Player faces Sir Tiffy
     namebox ("Sir Tiffy Cashien")
@@ -106,31 +106,31 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
     namebox ("Sir Tiffy")
     msgbox(format("Hmm…{PAUSE 15}…\pActually, there may be one mad enough.\pCaptain Ned.\pHe's a veteran sailor who has retired and settled in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
 
-    applymovement(10, face_down)
-    applymovement(OBJ_EVENT_ID_PLAYER, face_down)
+    applymovement(10, MOVEMENT_FACE_DOWN)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN)
     waitmovement(0)
     
     namebox ("Sir Amik Varze")
     msgbox(format("This is serious indeed, we will need to investigate immediately and neutralise the H.A.M threat!\pUnfortunately, I can't spare any of my White Knights...\pThey need to keep the peace here in Falador, the last time I sent them outside the city to help someone else a deranged lunatic in a green partyhat went around massacring everyone!\p{PLAYER}, I wouldn't normally do this but in the circumstances...\pSince not only do you have the map, but you have also managed to defeat both myself and the best the White Knights had to offer in battle, I wish to ask for your assistance.\pIf you could, please give this Ned a visit over in Draynor and convince him to sail to Crandor.\pSir Theodore will accompany you, to show that you have the White Knight's full support for this mission."))
 
-    applymovement(10, face_right)
-    applymovement(OBJ_EVENT_ID_PLAYER, face_left)
+    applymovement(10, MOVEMENT_FACE_RIGHT)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_LEFT)
     waitmovement(0)
 
     namebox ("Sir Tiffy Cashien")
     msgbox(format("Sir Amik may not have any Knights to spare, but I will see what I can do...\pI will try and assemble a small, but elite troop of Knights to sail with you and tackle this threat.\pI'll arrange for them to meet you in Port Sarim before you set sail."))
 
-    applymovement(10, face_right)
-    applymovement(OBJ_EVENT_ID_PLAYER, face_right)
-    applymovement(1, face_right)
+    applymovement(10, MOVEMENT_FACE_RIGHT)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT)
+    applymovement(1, MOVEMENT_FACE_RIGHT)
     waitmovement(0)
 
     namebox ("Sir Owen")
     msgbox(format("And I will assist by seeing if we can get any more information out of the prisoners.\pAfter that, I will attempt to head north to investigate the Black Knight's Fortress and try and gather some intel!"))
 
-    applymovement(10, face_down)
-    applymovement(OBJ_EVENT_ID_PLAYER, face_down)
-    applymovement(1, face_up)
+    applymovement(10, MOVEMENT_FACE_DOWN)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN)
+    applymovement(1, MOVEMENT_FACE_UP)
     waitmovement(0)
 
     namebox ("Sir Amik Varze")
