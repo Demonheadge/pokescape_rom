@@ -277,7 +277,7 @@ script BATTLE_MELZARS_1F_TRAINER_2
 {
     trainerbattle_single(TRAINER_MELZARS_1F_TRAINER_2, format("Melzar has taught us the dark arts of necromancy. There is no way you can win."),format("I guess I should go back to studying.."))
     namebox ("Nuxor")
-    msgbox(format("They say Melzar built this place on top of the ruins of a camp of Crandorian refugees.\pI wonder what happened to them all?"))
+    msgbox(format("Some say Melzar built this place on top of the ruins of a camp of Crandorian refugees.\pI wonder what happened to them all?"))
 	hidenamebox
     release
 	end

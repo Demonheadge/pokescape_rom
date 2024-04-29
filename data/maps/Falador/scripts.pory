@@ -223,7 +223,7 @@ script NPC_FALADOR_NPC_4
 	lock
 	faceplayer
     //namebox ("RSN")
-	msgbox(format("Gnome cocktails are very useful.\pThey increase your monsters stats."))
+	msgbox(format("Gnome cocktails are very useful.\pThey cure monsters' status effects."))
     waitmessage
     hidenamebox
 	release

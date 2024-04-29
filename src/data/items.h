@@ -7798,7 +7798,7 @@ const struct Item gItems[] =
 
     [ITEM_REPEL_TEA_2] =
     {
-        .name = _("SUPER TEA"),
+        .name = _("NETTLE TEA"),
         .itemId = ITEM_REPEL_TEA_2,
         .price = 800,
         .holdEffectParam = 200,
@@ -7945,4 +7945,18 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
+
+
+//Need an icon/sprite added for this
+    [ITEM_ROPE] =
+    {
+        .name = _("ROPE"),
+        .itemId = ITEM_ROPE,
+        .price = 550,
+        .description = sEscapeRopeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
+    },
+
 };

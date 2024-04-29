@@ -36,7 +36,7 @@ script NPC_PortSarimPub_NPC_2 {
 script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 	lock
 	faceplayer
-    namebox("PIRATE")
+    namebox("PIRATE GIBBS")
 	msgbox(format("The customs officer confiscates all Karamja Rum.\pShe is the reason the Rum is always gone."))
 	hidenamebox
 	if (flag(FLAG_UNUSED_0x935) == false) 
@@ -47,7 +47,7 @@ script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 				hidenamebox
 				setflag(FLAG_UNUSED_0x935)
 				trainerbattle_no_intro(TRAINER_PUB_SARIM_1, msgbox(format("…")))
-				namebox("PIRATE")
+				namebox("PIRATE GIBBS")
 				msgbox(format("I guess I owe you this."))
 				hidenamebox
 				call(GIVE_RANDOM_ITEM)
@@ -62,7 +62,7 @@ script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
 	lock
 	faceplayer
-    namebox("PIRATE")
+    namebox("PIRATE POPEYE")
 	msgbox(format("AYE!\pThis is Port Sarim's Battle Pub."))
 	hidenamebox
 	if (flag(FLAG_UNUSED_0x936) == false) 
@@ -73,7 +73,7 @@ script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
 				hidenamebox
 				setflag(FLAG_UNUSED_0x936)
 				trainerbattle_no_intro(TRAINER_PUB_SARIM_2, msgbox(format("…")))
-				namebox("PIRATE")
+				namebox("PIRATE POPEYE")
 				msgbox(format("Yaarr, take this."))
 				hidenamebox
 				call(GIVE_RANDOM_ITEM)
@@ -87,7 +87,7 @@ script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
 script NPC_PortSarimPub_Dwarf {	// PUB TRAINER 3
 	lock
 	faceplayer
-    namebox("DWARF")
+    namebox("BREHAN")
 	msgbox(format("Outrageous!\pThe barmaid does not want to sell me drinks because I am a miner!"))
 	hidenamebox
 	if (flag(FLAG_UNUSED_0x937) == false) 
@@ -98,7 +98,7 @@ script NPC_PortSarimPub_Dwarf {	// PUB TRAINER 3
 				hidenamebox
 				setflag(FLAG_UNUSED_0x937)
 				trainerbattle_no_intro(TRAINER_PUB_SARIM_3, msgbox(format("…")))
-				namebox("DWARF")
+				namebox("BREHAN")
 				msgbox(format("This round is on me."))
 				hidenamebox
 				call(GIVE_RANDOM_ITEM)
