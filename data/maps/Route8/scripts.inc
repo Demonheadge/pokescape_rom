@@ -1,5 +1,42 @@
 Route8_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route8_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route8_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	call PENGUIN_EVENT
+	return
+
+
+ENCOUNTER_PENGUIN_BUSH_ROUTE8::
+	lock
+	faceplayer
+	namebox ENCOUNTER_PENGUIN_BUSH_ROUTE8_Text_0
+	playmoncry SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 0
+	msgbox ENCOUNTER_PENGUIN_BUSH_ROUTE8_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 15, ITEM_NONE
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_PENGUIN_BUSH_ROUTE8_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_PENGUIN_BUSH_ROUTE8_2
+ENCOUNTER_PENGUIN_BUSH_ROUTE8_1:
+	end
+
+ENCOUNTER_PENGUIN_BUSH_ROUTE8_2:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	removeobject 28
+	removeobject 27
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	goto ENCOUNTER_PENGUIN_BUSH_ROUTE8_1
 
 
 ROUTE8_SIGNPOST::
@@ -385,6 +422,12 @@ PEST_CONTROL_RETURN_2:
 	release
 	end
 
+
+ENCOUNTER_PENGUIN_BUSH_ROUTE8_Text_0:
+	.string "Penguin$"
+
+ENCOUNTER_PENGUIN_BUSH_ROUTE8_Text_1:
+	.string "Noot! Noot!$"
 
 ROUTE8_SIGNPOST_Text_0:
 	.string "WEST to Crafting Guild.\p"

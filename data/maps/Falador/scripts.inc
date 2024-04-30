@@ -1303,7 +1303,7 @@ NPC_FALADOR_NPC_3_Text_0:
 
 NPC_FALADOR_NPC_4_Text_0:
 	.string "Gnome cocktails are very useful.\p"
-	.string "They increase your monsters stats.$"
+	.string "They cure monsters' status effects.$"
 
 NPC_FALADOR_GUARD_4_Text_0:
 	.string "Falador is a nice city, the white\n"

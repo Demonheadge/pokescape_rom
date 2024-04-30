@@ -818,6 +818,7 @@
 #define ITEM_CRANDOR_MAP_PIECE2 663
 #define ITEM_CRANDOR_MAP_PIECE3 664
 #define ITEM_WHISTLE 665
+#define ITEM_ROPE 666
 
 
 
@@ -827,7 +828,8 @@
 
 
 
-#define ITEMS_COUNT 666
+
+#define ITEMS_COUNT 667
 // Last available item ID due to ITEM_EXPANSION (see battle_config.h)
 // #define ITEM_ID_LIMIT 964
 #define ITEM_FIELD_ARROW ITEMS_COUNT

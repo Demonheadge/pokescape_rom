@@ -196,7 +196,7 @@
       "movement_range_y": 11,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ENCOUNTER_PENGUIN_CACTUS",
+      "script": "ENCOUNTER_PENGUIN_CACTUS_ROUTE28",
       "flag": "FLAG_TEMP_9"
     },
     {

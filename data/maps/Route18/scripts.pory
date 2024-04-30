@@ -5,78 +5,119 @@ const OBJ_EVENT_ID_PENGUIN = 16
 mapscripts Route18_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //0-Nothing, 1-Varrock, 2-Morytania, 3-Members.
-        call(SPECIAL_PENGUIN_EVENT)
+        call(PENGUIN_EVENT)
     }
 }
 
-script SPECIAL_PENGUIN_EVENT
-{
-	random(20)
-
-	switch (var(VAR_RESULT)) { 
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            case 15:
-            case 16:
-            case 17:
-            case 18: 
-				setflag(FLAG_TEMP_8)
-				setflag(FLAG_TEMP_9)
-                removeobject(OBJ_EVENT_ID_PENGUIN_DND)
-				removeobject(OBJ_EVENT_ID_PENGUIN)
-            case 19:
-				clearflag(FLAG_TEMP_8)
-				clearflag(FLAG_TEMP_9)
-                addobject(OBJ_EVENT_ID_PENGUIN_DND)
-				addobject(OBJ_EVENT_ID_PENGUIN)
-				playbgm(MUS_PS_TERRORBIRD, 0)
-				savebgm(MUS_PS_TERRORBIRD)
-            
-	}
-	return
-}
-
-
-
-script ENCOUNTER_PENGUIN_BUSH {
+script ENCOUNTER_PENGUIN_BUSH_ROUTE18 {
 	lock
 	faceplayer
     namebox ("Penguin")
-	playmoncry(SPECIES_PIDGEY, 0)
+	playmoncry(SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 0)
 	msgbox(format("Noot! Noot!"))
 	waitmoncry
     hidenamebox
 	closemessage
 	delay(1)
-	setwildbattle (SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 15, ITEM_NONE)
+	setwildbattle (SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 30, ITEM_NONE)
 	dowildbattle
-	
-    fadescreen(FADE_TO_BLACK)
-    
-    setflag(FLAG_TEMP_8)
-    setflag(FLAG_TEMP_9)
-    removeobject(OBJ_EVENT_ID_PENGUIN_DND)
-    removeobject(OBJ_EVENT_ID_PENGUIN)
-    fadedefaultbgm
-
-    fadescreen(FADE_FROM_BLACK)
-    closemessage
+    if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_TEMP_8)
+        setflag(FLAG_TEMP_9)
+        removeobject(OBJ_EVENT_ID_PENGUIN_DND)
+        removeobject(OBJ_EVENT_ID_PENGUIN)
+		savebgm(MUS_DUMMY) //<- IMPORTANT
+        fadedefaultbgm //<- IMPORTANT
+        fadescreen(FADE_FROM_BLACK)
+        closemessage
+	}
     end
-	
 }
+
+script PENGUIN_EVENT {
+	//Random chance for Penguin Event to spawn on Route.
+	random(20)
+	if (var(VAR_RESULT) == 1) {
+		clearflag(FLAG_TEMP_8)
+		clearflag(FLAG_TEMP_9)
+		addobject(OBJ_EVENT_ID_PENGUIN_DND)
+		addobject(OBJ_EVENT_ID_PENGUIN)
+		playbgm(MUS_PS_TERRORBIRD, TRUE)
+		savebgm(MUS_PS_TERRORBIRD)
+	}
+	else {
+		setflag(FLAG_TEMP_8)
+		setflag(FLAG_TEMP_9)
+		removeobject(OBJ_EVENT_ID_PENGUIN_DND)
+		removeobject(OBJ_EVENT_ID_PENGUIN)
+		clearflag(FLAG_PENGUIN_HUNT_ON_ROUTE)
+	}
+	return
+}
+
+script PENGUIN_EVENT_CANADA_GRRL //Canada Grrl
+{
+    lock
+	faceplayer
+    namebox ("Canada Grrl")
+    msgbox(format("I heard there was a Penguin in this area.\pHave you spotted any?"))
+	hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

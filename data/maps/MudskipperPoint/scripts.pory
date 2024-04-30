@@ -1,0 +1,34 @@
+const OBJ_EVENT_ID_PENGUIN_DND = 7
+const OBJ_EVENT_ID_PENGUIN = 8
+
+mapscripts MudskipperPoint_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(PENGUIN_EVENT)
+    }
+}
+
+script ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT {
+	lock
+	faceplayer
+    namebox ("Penguin")
+	playmoncry(SPECIES_PENGUIN_DISGUISE_BOX_FORM, 0)
+	msgbox(format("Noot! Noot!"))
+	waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+	setwildbattle (SPECIES_PENGUIN_DISGUISE_BOX_FORM, 30, ITEM_NONE)
+	dowildbattle
+    if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_TEMP_8)
+        setflag(FLAG_TEMP_9)
+        removeobject(OBJ_EVENT_ID_PENGUIN_DND)
+        removeobject(OBJ_EVENT_ID_PENGUIN)
+		savebgm(MUS_DUMMY) //<- IMPORTANT
+        fadedefaultbgm //<- IMPORTANT
+        fadescreen(FADE_FROM_BLACK)
+        closemessage
+	}
+    end
+}

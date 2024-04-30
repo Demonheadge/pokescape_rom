@@ -35,8 +35,8 @@ NPC_PortSarimPub_NPC_2::
 NPC_PortSarimPub_Pirate_1::
 	lock
 	faceplayer
-	namebox NPC_PortSarimPub_NPC_2_Text_0
-	msgbox NPC_PortSarimPub_Pirate_1_Text_0
+	namebox NPC_PortSarimPub_Pirate_1_Text_0
+	msgbox NPC_PortSarimPub_Pirate_1_Text_1
 	hidenamebox
 	goto_if_unset FLAG_UNUSED_0x935, NPC_PortSarimPub_Pirate_1_2
 NPC_PortSarimPub_Pirate_1_1:
@@ -45,7 +45,7 @@ NPC_PortSarimPub_Pirate_1_1:
 	end
 
 NPC_PortSarimPub_Pirate_1_2:
-	msgbox NPC_PortSarimPub_Pirate_1_Text_1, MSGBOX_YESNO
+	msgbox NPC_PortSarimPub_Pirate_1_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne NPC_PortSarimPub_Pirate_1_4
 	goto NPC_PortSarimPub_Pirate_1_1
@@ -53,9 +53,9 @@ NPC_PortSarimPub_Pirate_1_2:
 NPC_PortSarimPub_Pirate_1_4:
 	hidenamebox
 	setflag FLAG_UNUSED_0x935
-	trainerbattle_no_intro TRAINER_PUB_SARIM_1, NPC_PortSarimPub_Pirate_1_Text_2
-	namebox NPC_PortSarimPub_NPC_2_Text_0
-	msgbox NPC_PortSarimPub_Pirate_1_Text_3
+	trainerbattle_no_intro TRAINER_PUB_SARIM_1, NPC_PortSarimPub_Pirate_1_Text_3
+	namebox NPC_PortSarimPub_Pirate_1_Text_0
+	msgbox NPC_PortSarimPub_Pirate_1_Text_4
 	hidenamebox
 	call GIVE_RANDOM_ITEM
 	goto NPC_PortSarimPub_Pirate_1_1
@@ -64,8 +64,8 @@ NPC_PortSarimPub_Pirate_1_4:
 NPC_PortSarimPub_Pirate_2::
 	lock
 	faceplayer
-	namebox NPC_PortSarimPub_NPC_2_Text_0
-	msgbox NPC_PortSarimPub_Pirate_2_Text_0
+	namebox NPC_PortSarimPub_Pirate_2_Text_0
+	msgbox NPC_PortSarimPub_Pirate_2_Text_1
 	hidenamebox
 	goto_if_unset FLAG_UNUSED_0x936, NPC_PortSarimPub_Pirate_2_2
 NPC_PortSarimPub_Pirate_2_1:
@@ -74,7 +74,7 @@ NPC_PortSarimPub_Pirate_2_1:
 	end
 
 NPC_PortSarimPub_Pirate_2_2:
-	msgbox NPC_PortSarimPub_Pirate_1_Text_1, MSGBOX_YESNO
+	msgbox NPC_PortSarimPub_Pirate_1_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne NPC_PortSarimPub_Pirate_2_4
 	goto NPC_PortSarimPub_Pirate_2_1
@@ -82,9 +82,9 @@ NPC_PortSarimPub_Pirate_2_2:
 NPC_PortSarimPub_Pirate_2_4:
 	hidenamebox
 	setflag FLAG_UNUSED_0x936
-	trainerbattle_no_intro TRAINER_PUB_SARIM_2, NPC_PortSarimPub_Pirate_1_Text_2
-	namebox NPC_PortSarimPub_NPC_2_Text_0
-	msgbox NPC_PortSarimPub_Pirate_2_Text_1
+	trainerbattle_no_intro TRAINER_PUB_SARIM_2, NPC_PortSarimPub_Pirate_1_Text_3
+	namebox NPC_PortSarimPub_Pirate_2_Text_0
+	msgbox NPC_PortSarimPub_Pirate_2_Text_2
 	hidenamebox
 	call GIVE_RANDOM_ITEM
 	goto NPC_PortSarimPub_Pirate_2_1
@@ -103,7 +103,7 @@ NPC_PortSarimPub_Dwarf_1:
 	end
 
 NPC_PortSarimPub_Dwarf_2:
-	msgbox NPC_PortSarimPub_Pirate_1_Text_1, MSGBOX_YESNO
+	msgbox NPC_PortSarimPub_Pirate_1_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne NPC_PortSarimPub_Dwarf_4
 	goto NPC_PortSarimPub_Dwarf_1
@@ -111,7 +111,7 @@ NPC_PortSarimPub_Dwarf_2:
 NPC_PortSarimPub_Dwarf_4:
 	hidenamebox
 	setflag FLAG_UNUSED_0x937
-	trainerbattle_no_intro TRAINER_PUB_SARIM_3, NPC_PortSarimPub_Pirate_1_Text_2
+	trainerbattle_no_intro TRAINER_PUB_SARIM_3, NPC_PortSarimPub_Pirate_1_Text_3
 	namebox NPC_PortSarimPub_Dwarf_Text_0
 	msgbox NPC_PortSarimPub_Dwarf_Text_2
 	hidenamebox
@@ -314,30 +314,36 @@ NPC_PortSarimPub_NPC_2_Text_1:
 	.string "Disgusting!$"
 
 NPC_PortSarimPub_Pirate_1_Text_0:
+	.string "PIRATE GIBBS$"
+
+NPC_PortSarimPub_Pirate_1_Text_1:
 	.string "The customs officer confiscates all\n"
 	.string "Karamja Rum.\p"
 	.string "She is the reason the Rum is always\n"
 	.string "gone.$"
 
-NPC_PortSarimPub_Pirate_1_Text_1:
+NPC_PortSarimPub_Pirate_1_Text_2:
 	.string "Do you wish to challenge them to a\n"
 	.string "battle?$"
 
-NPC_PortSarimPub_Pirate_1_Text_2:
+NPC_PortSarimPub_Pirate_1_Text_3:
 	.string "…$"
 
-NPC_PortSarimPub_Pirate_1_Text_3:
+NPC_PortSarimPub_Pirate_1_Text_4:
 	.string "I guess I owe you this.$"
 
 NPC_PortSarimPub_Pirate_2_Text_0:
+	.string "PIRATE POPEYE$"
+
+NPC_PortSarimPub_Pirate_2_Text_1:
 	.string "AYE!\p"
 	.string "This is Port Sarim's Battle Pub.$"
 
-NPC_PortSarimPub_Pirate_2_Text_1:
+NPC_PortSarimPub_Pirate_2_Text_2:
 	.string "Yaarr, take this.$"
 
 NPC_PortSarimPub_Dwarf_Text_0:
-	.string "DWARF$"
+	.string "BREHAN$"
 
 NPC_PortSarimPub_Dwarf_Text_1:
 	.string "Outrageous!\p"

@@ -5,7 +5,40 @@ Route26_MapScripts::
 Route26_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 3
 	call WEATHER_CHANGE_ROUTE_SNOW
+	call PENGUIN_EVENT
 	return
+
+
+ENCOUNTER_PENGUIN_BOX_ROUTE26::
+	lock
+	faceplayer
+	namebox ENCOUNTER_PENGUIN_BOX_ROUTE26_Text_0
+	playmoncry SPECIES_PENGUIN_DISGUISE_BOX_FORM, 0
+	msgbox ENCOUNTER_PENGUIN_BOX_ROUTE26_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_PENGUIN_DISGUISE_BOX_FORM, 15, ITEM_NONE
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_PENGUIN_BOX_ROUTE26_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_PENGUIN_BOX_ROUTE26_2
+ENCOUNTER_PENGUIN_BOX_ROUTE26_1:
+	end
+
+ENCOUNTER_PENGUIN_BOX_ROUTE26_2:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	removeobject 11
+	removeobject 12
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	goto ENCOUNTER_PENGUIN_BOX_ROUTE26_1
 
 
 SIGN_ROUTE26::
@@ -60,6 +93,12 @@ ROUTE26_ADAMANT_POUCH::
 	finditem ITEM_ADAMANT_POUCH
 	end
 
+
+ENCOUNTER_PENGUIN_BOX_ROUTE26_Text_0:
+	.string "Penguin$"
+
+ENCOUNTER_PENGUIN_BOX_ROUTE26_Text_1:
+	.string "Noot! Noot!$"
 
 SIGN_ROUTE26_Text_0:
 	.string "NORTH to ICE MOUNTAIN\p"

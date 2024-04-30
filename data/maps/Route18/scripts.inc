@@ -4,73 +4,71 @@ Route18_MapScripts::
 
 Route18_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
-	call SPECIAL_PENGUIN_EVENT
+	call PENGUIN_EVENT
 	return
 
 
-SPECIAL_PENGUIN_EVENT::
-	random 20
-	switch VAR_RESULT
-	case 0, SPECIAL_PENGUIN_EVENT_3
-	case 1, SPECIAL_PENGUIN_EVENT_3
-	case 2, SPECIAL_PENGUIN_EVENT_3
-	case 3, SPECIAL_PENGUIN_EVENT_3
-	case 4, SPECIAL_PENGUIN_EVENT_3
-	case 5, SPECIAL_PENGUIN_EVENT_3
-	case 6, SPECIAL_PENGUIN_EVENT_3
-	case 7, SPECIAL_PENGUIN_EVENT_3
-	case 8, SPECIAL_PENGUIN_EVENT_3
-	case 9, SPECIAL_PENGUIN_EVENT_3
-	case 10, SPECIAL_PENGUIN_EVENT_3
-	case 11, SPECIAL_PENGUIN_EVENT_3
-	case 12, SPECIAL_PENGUIN_EVENT_3
-	case 13, SPECIAL_PENGUIN_EVENT_3
-	case 14, SPECIAL_PENGUIN_EVENT_3
-	case 15, SPECIAL_PENGUIN_EVENT_3
-	case 16, SPECIAL_PENGUIN_EVENT_3
-	case 17, SPECIAL_PENGUIN_EVENT_3
-	case 18, SPECIAL_PENGUIN_EVENT_3
-	case 19, SPECIAL_PENGUIN_EVENT_4
-SPECIAL_PENGUIN_EVENT_1:
-	return
-
-SPECIAL_PENGUIN_EVENT_3:
-	setflag FLAG_TEMP_8
-	setflag FLAG_TEMP_9
-	removeobject 10
-	removeobject 16
-	goto SPECIAL_PENGUIN_EVENT_1
-
-SPECIAL_PENGUIN_EVENT_4:
-	clearflag FLAG_TEMP_8
-	clearflag FLAG_TEMP_9
-	addobject 10
-	addobject 16
-	playbgm MUS_PS_TERRORBIRD, 0
-	savebgm MUS_PS_TERRORBIRD
-	goto SPECIAL_PENGUIN_EVENT_1
-
-
-ENCOUNTER_PENGUIN_BUSH::
+ENCOUNTER_PENGUIN_BUSH_ROUTE18::
 	lock
 	faceplayer
-	namebox ENCOUNTER_PENGUIN_BUSH_Text_0
-	playmoncry SPECIES_PIDGEY, 0
-	msgbox ENCOUNTER_PENGUIN_BUSH_Text_1
+	namebox ENCOUNTER_PENGUIN_BUSH_ROUTE18_Text_0
+	playmoncry SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 0
+	msgbox ENCOUNTER_PENGUIN_BUSH_ROUTE18_Text_1
 	waitmoncry
 	hidenamebox
 	closemessage
 	delay 1
-	setwildbattle SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 15, ITEM_NONE
+	setwildbattle SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 30, ITEM_NONE
 	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_PENGUIN_BUSH_ROUTE18_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_PENGUIN_BUSH_ROUTE18_2
+ENCOUNTER_PENGUIN_BUSH_ROUTE18_1:
+	end
+
+ENCOUNTER_PENGUIN_BUSH_ROUTE18_2:
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_TEMP_8
 	setflag FLAG_TEMP_9
 	removeobject 10
 	removeobject 16
+	savebgm MUS_DUMMY
 	fadedefaultbgm
 	fadescreen FADE_FROM_BLACK
 	closemessage
+	goto ENCOUNTER_PENGUIN_BUSH_ROUTE18_1
+
+
+PENGUIN_EVENT::
+	random 20
+	compare VAR_RESULT, 1
+	goto_if_eq PENGUIN_EVENT_2
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	removeobject 10
+	removeobject 16
+	clearflag FLAG_PENGUIN_HUNT_ON_ROUTE
+PENGUIN_EVENT_1:
+	return
+
+PENGUIN_EVENT_2:
+	clearflag FLAG_TEMP_8
+	clearflag FLAG_TEMP_9
+	addobject 10
+	addobject 16
+	playbgm MUS_PS_TERRORBIRD, TRUE
+	savebgm MUS_PS_TERRORBIRD
+	goto PENGUIN_EVENT_1
+
+
+PENGUIN_EVENT_CANADA_GRRL::
+	lock
+	faceplayer
+	namebox PENGUIN_EVENT_CANADA_GRRL_Text_0
+	msgbox PENGUIN_EVENT_CANADA_GRRL_Text_1
+	hidenamebox
+	release
 	end
 
 
@@ -94,8 +92,8 @@ BATTLE_ROUTE18_TRAINER1::
 
 BATTLE_ROUTE18_TRAINER2::
 	trainerbattle_single TRAINER_ROUTE18_TRAINER_2, BATTLE_ROUTE18_TRAINER2_Text_0, BATTLE_ROUTE18_TRAINER2_Text_1
-	namebox BATTLE_ROUTE18_TRAINER2_Text_2
-	msgbox BATTLE_ROUTE18_TRAINER2_Text_3
+	namebox PENGUIN_EVENT_CANADA_GRRL_Text_0
+	msgbox BATTLE_ROUTE18_TRAINER2_Text_2
 	hidenamebox
 	release
 	end
@@ -179,11 +177,19 @@ BATTLE_ROUTE19_TRAINER1::
 	end
 
 
-ENCOUNTER_PENGUIN_BUSH_Text_0:
+ENCOUNTER_PENGUIN_BUSH_ROUTE18_Text_0:
 	.string "Penguin$"
 
-ENCOUNTER_PENGUIN_BUSH_Text_1:
+ENCOUNTER_PENGUIN_BUSH_ROUTE18_Text_1:
 	.string "Noot! Noot!$"
+
+PENGUIN_EVENT_CANADA_GRRL_Text_0:
+	.string "Canada Grrl$"
+
+PENGUIN_EVENT_CANADA_GRRL_Text_1:
+	.string "I heard there was a Penguin in this\n"
+	.string "area.\p"
+	.string "Have you spotted any?$"
 
 NPC_ROUTE18_NPC1_Text_0:
 	.string ".$"
@@ -207,9 +213,6 @@ BATTLE_ROUTE18_TRAINER2_Text_1:
 	.string "Oh wait, you aren't a penguin.$"
 
 BATTLE_ROUTE18_TRAINER2_Text_2:
-	.string "Canada Grrl$"
-
-BATTLE_ROUTE18_TRAINER2_Text_3:
 	.string "I heard there was a Penguin in this area\n"
 	.string "but all I see are cats.\p"
 	.string "Have you seen any?$"

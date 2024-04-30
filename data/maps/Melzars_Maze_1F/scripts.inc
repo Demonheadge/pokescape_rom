@@ -417,7 +417,7 @@ BATTLE_MELZARS_1F_TRAINER_2_Text_2:
 	.string "Nuxor$"
 
 BATTLE_MELZARS_1F_TRAINER_2_Text_3:
-	.string "They say Melzar built this place on top\n"
+	.string "Some say Melzar built this place on top\n"
 	.string "of the ruins of a camp of Crandorian\l"
 	.string "refugees.\p"
 	.string "I wonder what happened to them all?$"
