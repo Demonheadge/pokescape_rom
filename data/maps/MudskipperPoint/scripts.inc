@@ -39,8 +39,18 @@ ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT_2:
 	goto ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT_1
 
 
+SIGN_MudskipperPoint::
+	msgbox SIGN_MudskipperPoint_Text_0
+	closemessage
+	end
+
+
 ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT_Text_0:
 	.string "Penguin$"
 
 ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT_Text_1:
 	.string "Noot! Noot!$"
+
+SIGN_MudskipperPoint_Text_0:
+	.string "Mudskipper Point.\n"
+	.string "Beware of Mudskippers.$"

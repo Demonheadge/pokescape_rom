@@ -121,22 +121,22 @@ LIGHTHOUSE_2F_NPC_6::
 	end
 
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1::
-	trainerbattle_double TRAINER_LIGHTHOUSE_2F_TRAINER_1, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_0, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_1, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_2
-	namebox BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_3
-	msgbox BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_4
+BATTLE_LIGHTHOUSE_2F_HAM::
+	trainerbattle_single TRAINER_LIGHTHOUSE_2F_TRAINER_1, BATTLE_LIGHTHOUSE_2F_HAM_Text_0, BATTLE_LIGHTHOUSE_2F_HAM_Text_1
+	namebox BATTLE_LIGHTHOUSE_2F_HAM_Text_2
+	msgbox BATTLE_LIGHTHOUSE_2F_HAM_Text_3
 	hidenamebox
 	release
-	end
+	return
 
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2::
-	trainerbattle_double TRAINER_LIGHTHOUSE_2F_TRAINER_2, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_0, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_1, BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_2
-	namebox BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_1
-	msgbox BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_2
+BATTLE_LIGHTHOUSE_2F_GUARD::
+	trainerbattle_single TRAINER_LIGHTHOUSE_2F_TRAINER_2, BATTLE_LIGHTHOUSE_2F_GUARD_Text_0, BATTLE_LIGHTHOUSE_2F_GUARD_Text_1
+	namebox BATTLE_LIGHTHOUSE_2F_GUARD_Text_2
+	msgbox BATTLE_LIGHTHOUSE_2F_GUARD_Text_3
 	hidenamebox
 	release
-	end
+	return
 
 
 LIGHTHOUSE_2F_NPC_1_Text_0:
@@ -156,13 +156,13 @@ LIGHTHOUSE_2F_NPC_1_Text_2:
 	.string "Why?\p"
 	.string "Because everything comes and goes\n"
 	.string "from Port Sarim!\p"
-	.string "We have muggers, theives, scammers,\n"
+	.string "We have muggers, thieves, scammers,\n"
 	.string "pirates, goblins if you can think of it\l"
 	.string "we have it.$"
 
 LIGHTHOUSE_2F_NPC_2_Text_0:
-	.string "The HAM member is too busy battling the\n"
-	.string "guard.\p"
+	.string "The H.A.M member is too busy battling\n"
+	.string "the guard.\p"
 	.string "You really hope they're losing…$"
 
 LIGHTHOUSE_2F_NPC_3_Text_0:
@@ -183,14 +183,14 @@ LIGHTHOUSE_2F_NPC_3_Text_2:
 	.string "gym leader.$"
 
 LIGHTHOUSE_2F_NPC_4_Text_0:
-	.string "You can hear the HAM member chuckling.\p"
+	.string "You can hear the H.A.M member chuckling.\p"
 	.string "That's probably not a good sign.$"
 
 LIGHTHOUSE_2F_NPC_5_Text_0:
-	.string "Security Guard$"
+	.string "SECURITY GUARD$"
 
 LIGHTHOUSE_2F_NPC_5_Text_1:
-	.string "Oh god I only came here to give people\n"
+	.string "Oh god! I only came here to give people\n"
 	.string "tips on security!\p"
 	.string "I'm not built for battling.$"
 
@@ -206,30 +206,31 @@ LIGHTHOUSE_2F_NPC_6_Text_0:
 	.string "That way we can guard both at the same\n"
 	.string "time.$"
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_0:
-	.string "What do you think you are doing?!\p"
-	.string "We're in the middle of a battle!$"
+BATTLE_LIGHTHOUSE_2F_HAM_Text_0:
+	.string "Get out of our way, we are in the middle\n"
+	.string "of a battle!$"
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_1:
-	.string "We should have just let you go on ahead.$"
+BATTLE_LIGHTHOUSE_2F_HAM_Text_1:
+	.string "Just who…\n"
+	.string "Are you?$"
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_2:
-	.string "Why do you only have one monster?\p"
-	.string "What is wrong with you.$"
+BATTLE_LIGHTHOUSE_2F_HAM_Text_2:
+	.string "H.A.M GRUNT$"
 
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_3:
-	.string "Dennis$"
-
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1_Text_4:
-	.string "I knew I should have taken today off…$"
-
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_0:
-	.string "Get out of our way, we need to battle!$"
-
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_1:
-	.string "HAM Grunt$"
-
-BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2_Text_2:
+BATTLE_LIGHTHOUSE_2F_HAM_Text_3:
 	.string "I've done my job and slowed you down.\p"
 	.string "I bet we've got what we wanted here\n"
 	.string "now.$"
+
+BATTLE_LIGHTHOUSE_2F_GUARD_Text_0:
+	.string "What do you think you are doing?!\p"
+	.string "We're in the middle of a battle!$"
+
+BATTLE_LIGHTHOUSE_2F_GUARD_Text_1:
+	.string "We should have just let you go on ahead.$"
+
+BATTLE_LIGHTHOUSE_2F_GUARD_Text_2:
+	.string "GUARD$"
+
+BATTLE_LIGHTHOUSE_2F_GUARD_Text_3:
+	.string "I knew I should have taken today off…$"

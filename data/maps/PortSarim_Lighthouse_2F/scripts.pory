@@ -126,25 +126,20 @@ script LIGHTHOUSE_2F_NPC_6
 	end
 }
 
-//Battles
-script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_1
-{
-    trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("What do you think you are doing?!\pWe're in the middle of a battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
-	namebox ("DENNIS")
-    msgbox(format("I knew I should have taken today off…"))
-	hidenamebox
-    release
-	end
-}
+//Battles 
 
-script BATTLE_LIGHTHOUSE_2F_DOUBLE_BATTLE_2
-{
-    trainerbattle_double(TRAINER_LIGHTHOUSE_2F_TRAINER_2, format("Get out of our way, we need to battle!"),format("We should have just let you go on ahead."),format("Why do you only have one monster?\pWhat is wrong with you."))
+//Double Battles
+script BATTLE_LIGHTHOUSE_2F_HAM{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_2F_TRAINER_1, format("Get out of our way, we are in the middle of a battle!"),format("Just who…\nAre you?"))
     namebox ("H.A.M GRUNT")
     msgbox(format("I've done my job and slowed you down.\pI bet we've got what we wanted here now."))
-	hidenamebox
+    hidenamebox
     release
-	end
 }
-
-
+script BATTLE_LIGHTHOUSE_2F_GUARD{
+    trainerbattle_single(TRAINER_LIGHTHOUSE_2F_TRAINER_2, format("What do you think you are doing?!\pWe're in the middle of a battle!"),format("We should have just let you go on ahead."))
+    namebox ("GUARD")
+    msgbox(format("I knew I should have taken today off…"))
+    hidenamebox
+    release
+}

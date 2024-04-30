@@ -5881,12 +5881,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_2F_TRAINER_1[
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_PIG,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
     },
-        {
+    {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_CHICKEN_NORMAL_FORM,
+    .species = SPECIES_SHEEP_BLACK_FORM,
     }
 };
 
@@ -5894,12 +5894,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LIGHTHOUSE_2F_TRAINER_2[
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    .species = SPECIES_PIG,
     },
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_SHEEP_BLACK_FORM,
+    .species = SPECIES_CHICKEN_NORMAL_FORM,
     }
 };
 

@@ -4713,13 +4713,13 @@ const struct Trainer gTrainers[] =
 //LIGHTHOUSE 2F
     [TRAINER_LIGHTHOUSE_2F_TRAINER_1] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_GUARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
         .trainerPic = TRAINER_PIC_guard_draynor,
-        .trainerName = _("Lin & Den"),
+        .trainerName = _("JAILER"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_1),
         .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_1},
@@ -4727,13 +4727,13 @@ const struct Trainer gTrainers[] =
 
     [TRAINER_LIGHTHOUSE_2F_TRAINER_2] =
     {
-        .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_GUARD,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
-        .trainerPic = TRAINER_PIC_guard_draynor,
-        .trainerName = _("Lin & Den"),
+        .trainerPic = TRAINER_PIC_ham_grunt_m,
+        .trainerName = _("GRUNT"),
         .items = {},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_LIGHTHOUSE_2F_TRAINER_2),
         .party = {.NoItemDefaultMoves = sParty_LIGHTHOUSE_2F_TRAINER_2},

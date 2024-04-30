@@ -32,3 +32,10 @@ script ENCOUNTER_PENGUIN_BARREL_MUDSKIPPER_POINT {
 	}
     end
 }
+
+
+script SIGN_MudskipperPoint {
+    msgbox(format("Mudskipper Point.\nBeware of Mudskippers."))
+    closemessage
+    end
+}
