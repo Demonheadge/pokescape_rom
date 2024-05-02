@@ -8,7 +8,7 @@ script BATTLE_ROUTE0_TRAINER_1
 {
     trainerbattle_single(TRAINER_ROUTE0_TRAINER_1, format("You are interrupting me!"),format("I figured I could cheat and dig my way to the bottom of the dungeon...\pTurns out there's only bedrock here."))
     namebox ("RockS0lid")
-    msgbox(format("I figured I could cheat and dig my way to the bottom of the dungeon...\pTurns out there's only bedrock here."))
+    msgbox(format("I figured I could cheat and dig my way to the bottom of the dungeon…\pTurns out there's only bedrock here."))
 	hidenamebox
     release
 	end
@@ -46,7 +46,7 @@ script BATTLE_ROUTE0_TRAINER_4
 
 script BATTLE_ROUTE0_TRAINER_5
 {
-    trainerbattle_double(TRAINER_ROUTE0_TRAINER_5, format("Stop...\pIf you can't defeat us...\pYou will not survive the doom of Daemonheim...\pBoo!"),format("You might survive...\pThe doom...\pOf the dungeon...\pBoo!"))
+    trainerbattle_double(TRAINER_ROUTE0_TRAINER_5, format("Stop...\pIf you can't defeat us...\pYou will not survive the doom of Daemonheim...\pBoo!"),format("You might survive...\pThe doom...\pOf the dungeon...\pBoo!"),format("okay."))
     namebox ("Knoll and Tott")
     msgbox(format("You might survive...\pThe doom...\pOf the dungeon...\pBoo!"))
 	hidenamebox
@@ -133,6 +133,6 @@ script NPC_ROUTE0_CHICKEN
 //ITEMS
 script ITEM_ROUTE0_cupholder
 {
-    finditem(ITEM_cupholder)
+    finditem(ITEM_PURPLE_SWEETS)
     end
 }

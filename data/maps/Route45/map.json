@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE45",
   "name": "Route45",
   "layout": "LAYOUT_ROUTE45",
-  "music": "MUS_PS_ENCOUNTER_SPECIAL",
+  "music": "MUS_ABNORMAL_WEATHER",
   "region_map_section": "MAPSEC_MORYTANIA",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
@@ -70,7 +70,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MYSTIC_BLUE",
+      "graphics_id": "OBJ_EVENT_GFX_NECROMANCER",
       "x": 16,
       "y": 21,
       "elevation": 0,
