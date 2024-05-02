@@ -298,11 +298,11 @@ script BATTLE_MELZARS_1F_TRAINER_3
 //ITEMS
 script ITEM_MELZARS_1F_ROPE
 {
-    finditem(ITEM_ESCAPE_ROPE)
+    finditem(ITEM_ROPE)
     end
 }
 
-//Need a PokeScape equivalent? Cannot currently see one in the code
+//Need a sprite for the rope still
 
 
 

@@ -5405,9 +5405,75 @@ const struct Trainer gTrainers[] =
         .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_5},
     },
 
+//Route 0 - Daemonheim Outskirts
+    [TRAINER_ROUTE0_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _("RockS0lid"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_1},
+    },
 
+    [TRAINER_ROUTE0_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_barbarian_m,
+        .trainerName = _("Torbit"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_2},
+    },
 
+    [TRAINER_ROUTE0_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_barbarian_m,
+        .trainerName = _("Geir"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_3},
+    },
 
+    [TRAINER_ROUTE0_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_barbarian_m,
+        .trainerName = _("Cupholder"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_4},
+    },
 
+    [TRAINER_ROUTE0_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_barbarian_duo,
+        .trainerName = _("Knoll&Tott"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_5},
+    },
 
 };

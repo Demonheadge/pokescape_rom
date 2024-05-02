@@ -6318,6 +6318,109 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_5[] = {
     }
 };
 
+//Route 0 - Daemonheim Outskirts
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ZOMBIE_RAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 53,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_WOLF_HATI_HATI,
+    },
+    {
+    .iv = 0,
+    .lvl = 53,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_WOLF_SKOLL_FORM,
+    }
+};
+
+
+
+
+
+
+
 
 /*
 //#GYM - KARAMJA - TokHaar

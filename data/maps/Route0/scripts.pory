@@ -1,0 +1,138 @@
+mapscripts Route0_MapScripts {
+
+}
+
+//Battles
+
+script BATTLE_ROUTE0_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE0_TRAINER_1, format("You are interrupting me!"),format("I figured I could cheat and dig my way to the bottom of the dungeon...\pTurns out there's only bedrock here."))
+    namebox ("RockS0lid")
+    msgbox(format("I figured I could cheat and dig my way to the bottom of the dungeon...\pTurns out there's only bedrock here."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE0_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE0_TRAINER_2, format("Who goes there?\pDo you think you may survive this land?"),format("You may pass, we have need of you in the dungeon."))
+    namebox ("Torbit")
+    msgbox(format("You may pass, we have need of you in the dungeon."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE0_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE0_TRAINER_3, format("Come to see the dungeon, have you?\pI will show you to the dungeon all right!"),format("That was a test, you have got what it takes."))
+    namebox ("Geir")
+    msgbox(format("That was a test, you have got what it takes."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE0_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE0_TRAINER_4, format("I'm busy charting this region, don't get in my way."),format("Ugh, you've made me smudge my map..."))
+    namebox ("Sonje")
+    msgbox(format("If you're that strong you're wasted here, go up to the castle and help explore the depths below."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE0_TRAINER_5
+{
+    trainerbattle_double(TRAINER_ROUTE0_TRAINER_5, format("Stop...\pIf you can't defeat us...\pYou will not survive the doom of Daemonheim...\pBoo!"),format("You might survive...\pThe doom...\pOf the dungeon...\pBoo!"))
+    namebox ("Knoll and Tott")
+    msgbox(format("You might survive...\pThe doom...\pOf the dungeon...\pBoo!"))
+	hidenamebox
+    release
+	end
+}
+
+//NEED A DOUBLE BATTLE ADDING TOO
+
+//NPCs
+
+script NPC_ROUTE0_NPC_1
+{
+	lock
+	faceplayer
+    //namebox ("Barbarian")
+	msgbox(format("We came here across the sea after our Seer said a great evil lurked here.\pHow we crossed the sea is a mystery.\pIf you look at the map, it makes no sense!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_ROUTE0_NPC_2
+{
+	lock
+	faceplayer
+    //namebox ("Firemaker")
+	msgbox(format("It's really cold up here so I'm in need of a fire.\pI brought magic logs but my firemaking level is too low.\pI deserve to freeze..."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_ROUTE0_NPC_3
+{
+	lock
+	faceplayer
+    //namebox ("Man")
+	msgbox(format("Thok is our fiercest warrior, he and his brother Marmaros almost made it to the bottom of Daemonheim once!\pThey don't talk about it however."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_ROUTE0_NPC_4
+{
+	lock
+	faceplayer
+    namebox ("Marmaros")
+	msgbox(format("I-if you need Thok, g-go right up ahead."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_ROUTE0_NPC_5
+{
+	lock
+	faceplayer
+    //namebox ("Barbarian")
+	msgbox(format("Don't think you can just go to the bottom of the dungeon on your first try.\pThis is a tough place!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_ROUTE0_CHICKEN
+{
+	lock
+	faceplayer
+    //namebox ("Chicken")
+	msgbox(format("Bwuk bwuk bwaaaaauuuuukk"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+//ITEMS
+script ITEM_ROUTE0_cupholder
+{
+    finditem(ITEM_cupholder)
+    end
+}
