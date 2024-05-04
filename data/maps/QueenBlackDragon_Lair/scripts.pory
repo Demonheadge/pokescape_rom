@@ -3,6 +3,34 @@ mapscripts QueenBlackDragon_Lair_MapScripts{
 
 
 
+script TELEPORT_ENTER_QBD_LAIR {
+    msgbox(format("Touch the strange device?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("You are suddenly teleported deeper into the depths."))
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            warpteleport (MAP_QUEENBLACKDRAGON_LAIR,0,0,0)
+            closemessage
+            release
+            end
+        }  
+    closemessage
+    release
+    end
+}
+script TELEPORT_EXIT_QBD_LAIR {
+    msgbox(format("Touch the strange device?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("You are suddenly teleported out of the depths."))
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            warpteleport (MAP_RIMMINGTON_MINES_B3F,2,0,0)
+            closemessage
+            release
+            end
+        }  
+    closemessage
+    release
+    end
+}
 
 
 

@@ -654,7 +654,7 @@
     },
     {
       "x": 49,
-      "y": 38,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
@@ -668,9 +668,9 @@
     },
     {
       "x": 40,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK",
+      "dest_map": "MAP_VARROCK_HOUSE_7",
       "dest_warp_id": "0"
     },
     {
@@ -783,7 +783,7 @@
     {
       "type": "sign",
       "x": 40,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LOCKED_DOOR"
@@ -799,7 +799,7 @@
     {
       "type": "sign",
       "x": 49,
-      "y": 39,
+      "y": 38,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LOCKED_DOOR"

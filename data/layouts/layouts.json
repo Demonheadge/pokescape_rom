@@ -6784,10 +6784,10 @@
     {
       "id": "LAYOUT_RIMMINGTON_MINES_B3F",
       "name": "Rimmington_Mines_B3F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 26,
+      "height": 16,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "secondary_tileset": "gTileset_QueenBlackDragon",
       "border_filepath": "data/layouts/Rimmington_Mines_B3F/border.bin",
       "blockdata_filepath": "data/layouts/Rimmington_Mines_B3F/map.bin"
     },

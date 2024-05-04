@@ -2,6 +2,40 @@ QueenBlackDragon_Lair_MapScripts::
 	.byte 0
 
 
+TELEPORT_ENTER_QBD_LAIR::
+	msgbox TELEPORT_ENTER_QBD_LAIR_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne TELEPORT_ENTER_QBD_LAIR_2
+	closemessage
+	release
+	end
+
+TELEPORT_ENTER_QBD_LAIR_2:
+	msgbox TELEPORT_ENTER_QBD_LAIR_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	warpteleport MAP_QUEENBLACKDRAGON_LAIR, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+TELEPORT_EXIT_QBD_LAIR::
+	msgbox TELEPORT_ENTER_QBD_LAIR_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne TELEPORT_EXIT_QBD_LAIR_2
+	closemessage
+	release
+	end
+
+TELEPORT_EXIT_QBD_LAIR_2:
+	msgbox TELEPORT_EXIT_QBD_LAIR_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	warpteleport MAP_RIMMINGTON_MINES_B3F, 2, 0, 0
+	closemessage
+	release
+	end
+
+
 QBD_Battle_QBD::
 	lock
 	faceplayer
@@ -208,6 +242,17 @@ BATTLE_RimmingtonMines_Slayer_1::
 	release
 	end
 
+
+TELEPORT_ENTER_QBD_LAIR_Text_0:
+	.string "Touch the strange device?$"
+
+TELEPORT_ENTER_QBD_LAIR_Text_1:
+	.string "You are suddenly teleported deeper\n"
+	.string "into the depths.$"
+
+TELEPORT_EXIT_QBD_LAIR_Text_0:
+	.string "You are suddenly teleported out of the\n"
+	.string "depths.$"
 
 QBDLAIR_1_Text_0:
 	.string "You activate the pillar!$"
