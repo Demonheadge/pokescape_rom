@@ -8,7 +8,7 @@ script TELEPORT_ENTER_QBD_LAIR {
     if (var(VAR_RESULT)){
             msgbox(format("You are suddenly teleported deeper into the depths."))
             applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
-            warpteleport (MAP_QUEENBLACKDRAGON_LAIR,0,0,0)
+            warpteleport (MAP_QUEEN_BLACK_DRAGON_LAIR,0,0,0)
             closemessage
             release
             end

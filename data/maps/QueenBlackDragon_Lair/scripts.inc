@@ -13,7 +13,7 @@ TELEPORT_ENTER_QBD_LAIR::
 TELEPORT_ENTER_QBD_LAIR_2:
 	msgbox TELEPORT_ENTER_QBD_LAIR_Text_1
 	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
-	warpteleport MAP_QUEENBLACKDRAGON_LAIR, 0, 0, 0
+	warpteleport MAP_QUEEN_BLACK_DRAGON_LAIR, 0, 0, 0
 	closemessage
 	release
 	end
