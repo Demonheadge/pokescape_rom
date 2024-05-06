@@ -1289,8 +1289,8 @@
 #define FLAG_ITEM_ZMI_DEATH_RUNE                                           0x4AA // Unused Flag
 #define FLAG_ITEM_BLACK_ARM_MITH_SCIM                                           0x4AB // Unused Flag
 #define FLAG_ITEM_MELZARS_3F_PRAYER_POTION                          0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
+#define FLAG_ITEM_ROUTE0_TINDERBOX                                           0x4AD // Unused Flag
+#define FLAG_ITEM_ROUTE0_SWEETS                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag

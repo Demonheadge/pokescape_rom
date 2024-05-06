@@ -6323,72 +6323,87 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 13,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 50,
+    .species = SPECIES_SPOOKAXE,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 50,
+    .species = SPECIES_BABY_MOLE,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_HAND_ZOMBIE_FORM,
+    .lvl = 51,
+    .species = SPECIES_BABY_MOLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 51,
+    .species = SPECIES_ROCK_STRANGE_FORM,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 13,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 50,
+    .species = SPECIES_WOLF_DIRE_FORM,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 51,
+    .species = SPECIES_WOLF_DIRE_FORM,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_HAND_ZOMBIE_FORM,
+    .lvl = 50,
+    .species = SPECIES_FOX,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 13,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 51,
+    .species = SPECIES_DRAUGEN,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 51,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_HAND_ZOMBIE_FORM,
+    .lvl = 51,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 52,
+    .species = SPECIES_DAGANNOTH_GUARDIAN_FORM,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_4[] = {
     {
     .iv = 0,
-    .lvl = 13,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 52,
+    .species = SPECIES_POLAR_BEAR_NORMAL_FORM,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ZOMBIE_RAT,
+    .lvl = 52,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
     },
     {
     .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_HAND_ZOMBIE_FORM,
+    .lvl = 53,
+    .species = SPECIES_DAGANNOTH_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 53,
+    .species = SPECIES_BEAR_GRIZZLY_FORM,
     }
 };
 

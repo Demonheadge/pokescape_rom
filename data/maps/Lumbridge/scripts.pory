@@ -521,6 +521,9 @@ movement LUMBRIDGE_GUARD_EAST_TRIGGER_2{
 	face_left
 }
 
+
+//This is my attempt at moving the guard block and adding a Hatius block as suggested by Lopen. 
+
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH_TRIGGER{
 	if ((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_STORYMODE_PROGRESS) <= 10)) {
@@ -549,14 +552,50 @@ movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_1{
 	emote_exclamation_mark
     face_player
 }
+
 movement LUMBRIDGE_PLAYER_SOUTH_TRIGGER{
-	walk_left
+	walk_up
 }
 movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_2{
 	face_left
 }
 
+//Hatius Graveyard Block
+script Lumbridge_Hatius_TRIGGER{
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1)){
+		lock
+		PlaySE(SE_PIN)
+		applymovement(22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_1)
+		waitmovement(0)
+		namebox ("Hatius")
+		msgbox(format("Did you not hear?\pProfessor Normaltree is visiting Lumbridge!\pYou better head to the castle before you miss him!"))
+		waitmessage 
+		hidenamebox
+		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_GRAVE_TRIGGER)
+		applymovement(22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_2)
+		waitmovement(0)
+		release
+		end	
+	}
+	else
+	{
+		release
+		end
+	}
+}
 
+movement LUMBRIDGE_HATIUS_GRAVE_TRIGGER_1{
+	walk_down
+	face_right
+	emote_exclamation_mark
+}
+movement LUMBRIDGE_PLAYER_GRAVE_TRIGGER{
+	walk_left
+}
+movement LUMBRIDGE_HATIUS_GRAVE_TRIGGER_2{
+	face_up
+	walk_up
+}
 
 
 

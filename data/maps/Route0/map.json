@@ -113,7 +113,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_ROUTE0_RAPTOR",
       "flag": "0"
     },
     {
@@ -165,8 +165,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE0_SWEETS",
+      "flag": "FLAG_ITEM_ROUTE0_SWEETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -178,8 +178,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE0_TINDERBOX",
+      "flag": "FLAG_ITEM_ROUTE0_TINDERBOX"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHICKEN",
@@ -239,7 +239,7 @@
       "x": 32,
       "y": 14,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_PURPLE_SWEETS",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -255,7 +255,7 @@
       "x": 9,
       "y": 3,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_CHOCOLATE_CAKE",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -263,7 +263,7 @@
       "x": 6,
       "y": 30,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_STAT_MOONLIGHT_MEAD",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -271,7 +271,7 @@
       "x": 29,
       "y": 20,
       "elevation": 0,
-      "item": "ITEM_NONE",
+      "item": "ITEM_SNOW_GLOBE",
       "flag": "FLAG_TEMP_1"
     }
   ]

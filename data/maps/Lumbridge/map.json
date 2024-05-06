@@ -185,8 +185,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
-      "x": 37,
-      "y": 33,
+      "x": 46,
+      "y": 42,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 9,
@@ -575,8 +575,8 @@
     },
     {
       "type": "trigger",
-      "x": 37,
-      "y": 34,
+      "x": 45,
+      "y": 43,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -584,8 +584,8 @@
     },
     {
       "type": "trigger",
-      "x": 37,
-      "y": 35,
+      "x": 44,
+      "y": 43,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -618,6 +618,24 @@
       "y": 47,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "trigger",
+      "x": 37,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Lumbridge_Hatius_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 37,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Lumbridge_Hatius_TRIGGER"
     }
   ],
   "bg_events": [

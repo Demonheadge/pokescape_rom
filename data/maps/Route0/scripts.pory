@@ -54,8 +54,6 @@ script BATTLE_ROUTE0_TRAINER_5
 	end
 }
 
-//NEED A DOUBLE BATTLE ADDING TOO
-
 //NPCs
 
 script NPC_ROUTE0_NPC_1
@@ -130,9 +128,29 @@ script NPC_ROUTE0_CHICKEN
 	end
 }
 
+script NPC_ROUTE0_RAPTOR
+{
+	lock
+	faceplayer
+    //namebox ("The Raptor")
+	msgbox(format("The Raptor ignores you."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+//Possibly include some variable dialogue for The Raptor once the gym badge has been obtained, for example: "Heard you defeated Thok.\pImpressed.\pMaybe you're as good as me."
+
 //ITEMS
-script ITEM_ROUTE0_cupholder
+script ITEM_ROUTE0_SWEETS
 {
     finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+
+script ITEM_ROUTE0_TINDERBOX
+{
+    finditem(ITEM_TINDERBOX)
     end
 }
