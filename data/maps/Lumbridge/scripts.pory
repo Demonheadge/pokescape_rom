@@ -57,6 +57,8 @@ script OPENWORLD_STATE_LUMBRIDGE {
 script STORYMODE_STATE_LUMBRIDGE {
 	//Explorer Jack tells the player to go to Lumbridge Castle to meet the Prof.
 	if (var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1) {
+		setobjectxyperm(22, 35, 33)
+		setobjectmovementtype(22, MOVEMENT_TYPE_LOOK_AROUND)
 		return
 	}
 	//NPCS before you obtain the lumbridge badge.
@@ -235,8 +237,14 @@ script Lumbridge_HATIUS
 	lock
 	faceplayer
 	namebox ("Hatius")
-	msgbox(format("There were some muggers in the alley eyeing up my 3rd age armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_STORYMODE_PROGRESS) == 1)){
+		msgbox(format("Professor Normal Tree is visiting Lumbridge!\pYou better head to the castle before you miss him!"))
+	}
+	else {
+		msgbox(format("There were some muggers in the alley eyeing up my 3rd age armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
+	}
 	hidenamebox
+	closemessage
 	release
 	end
 }
@@ -535,6 +543,7 @@ script Lumbridge_Guard_SOUTH_TRIGGER{
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
 		waitmessage 
 		hidenamebox
+		closemessage
 		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
 		applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
 		waitmovement(0)
@@ -568,9 +577,10 @@ script Lumbridge_Hatius_TRIGGER{
 		applymovement(22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_1)
 		waitmovement(0)
 		namebox ("Hatius")
-		msgbox(format("Did you not hear?\pProfessor Normaltree is visiting Lumbridge!\pYou better head to the castle before you miss him!"))
+		msgbox(format("Did you not hear?\pProfessor Normal Tree is visiting Lumbridge!\pYou better head to the castle before you miss him!"))
 		waitmessage 
 		hidenamebox
+		closemessage
 		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_GRAVE_TRIGGER)
 		applymovement(22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_2)
 		waitmovement(0)
