@@ -22,11 +22,6 @@
       "map": "MAP_CAMELOT",
       "offset": 16,
       "direction": "right"
-    },
-    {
-      "map": "MAP_RELLEKKA",
-      "offset": -24,
-      "direction": "up"
     }
   ],
   "object_events": [

@@ -934,6 +934,7 @@
 #define MAP_ROUTE172      (24 | (48 << 8))
 #define MAP_CANIFIS       (25 | (48 << 8))
 #define MAP_ROUTE180      (26 | (48 << 8))
+#define MAP_ROUTE60       (27 | (48 << 8))
 
 // gMapGroup_PokescapeIndoorTzhaar
 #define MAP_TZHAAR_1F          (0 | (49 << 8))

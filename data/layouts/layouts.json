@@ -8510,6 +8510,16 @@
       "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Varlamore/border.bin",
       "blockdata_filepath": "data/layouts/Varlamore/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE60",
+      "name": "Route60_Layout",
+      "width": 70,
+      "height": 35,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Route60/border.bin",
+      "blockdata_filepath": "data/layouts/Route60/map.bin"
     }
   ]
 }
