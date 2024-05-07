@@ -27,6 +27,10 @@ script FALADORCASTLE_3F_STATE {
         setvar(VAR_TEMP_B, 1)
         setobjectxyperm(4, 20, 9)
         setobjectxyperm(1, 20, 10) 
+
+        removeobject(2)
+        removeobject(3)
+        setflag(FLAG_TEMP_1E)
     }
     else {
         removeobject(4)
@@ -42,21 +46,20 @@ script FALADORCASTLE_3F_STATE {
 }
 
 movement movement_falador_postgym_1 {
-    walk_up
-    walk_right * 3
+    walk_up * 5
 }
 movement movement_falador_postgym_2 {
-    face_down
-    walk_right * 3
-    walk_down
-    walk_right
-    face_left
+    face_up * 5
+    walk_left
+    face_right
 }
 movement movement_falador_postgym_3 {
     set_visible
     face_up
     delay_16
-    walk_right * 3
+    walk_up * 4
+    walk_right 
+    walk_up
 }
 movement movement_falador_postgym_4 {
     set_invisible
@@ -76,6 +79,144 @@ movement movement_falador_postgym_6 {
     walk_up * 2
 }
 
+movement movement_falador_postgym_7 {
+    lock_facing_direction
+    walk_down
+    unlock_facing_direction
+}
+movement movement_falador_postgym_8 {
+    walk_down
+    face_left
+}
+movement movement_falador_postgym_9 {
+    face_up
+    delay_16 * 3
+    face_down
+}
+
+
+
+script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to interrogation room.
+{
+    applymovement(1, movement_falador_postgym_4)
+    waitmovement(0)
+
+//WIP
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_falador_postgym_1)
+    applymovement(4, movement_falador_postgym_2)
+    applymovement(1, movement_falador_postgym_3)
+    waitmovement(0)
+    delay(120)
+
+	//player walks over to owen
+    namebox ("Sir Owen")
+	msgbox(format("Thank you all for coming.\pWe have been hard at work interrogating the prisoners, so far we've worked out that the H.A.M members and the Black Knights have been working together to recover some sort of map.\pApparently, the map leads to some sort of weapon that will wipe out many of the inhabitants of Gielinor!\pHowever, we have no idea where the map leads and without it I doubt we will ever find out."))
+    closemessage
+    hidenamebox
+
+
+    applymovement(10, MOVEMENT_WALK_DOWN)
+    
+//Sir Owen
+    namebox ("Sir Owen")
+    Thank you all for coming.
+    We have been hard at work interrograting the prisoners.
+    It appears that H.A.M and the Black Knights have been working together.
+    They were one of three squads that were sent to search around Asganina in search for map pieces.
+
+    closemessage
+    hidenamebox
+    applymovement(5, MOVEMENT_INTERACT_DOWN)
+    waitmovement(0)
+
+    namebox ("Sir Owen")
+    What?!
+    You have the map peices?!
+    {PLAYER} show them to Sir Tiffy Cashein now!
+    closemessage
+    hidenamebox
+
+    applymovement(10, movement_falador_postgym_8)
+    applymovement(1, movement_falador_postgym_7)
+    waitmovement(0)
+    
+    namebox ("Sir Tiffy Cashien")
+//Sir Tiffy
+    Now what do we have here, old bean?
+    Hmm…
+    This is…
+    You must be pulling my leg!
+    This is a map to the lost island Crandor!
+    closemessage
+    hidenamebox
+
+//Sir Amik Varze
+    namebox ("Sir Amik Varze")
+    Crandor!?
+    closemessage
+    hidenamebox
+
+//Sir Tiffy
+    namebox ("Sir Tiffy Cashien")
+    30 years ago, Crandor used to be a thriving city full of adventurers and mages but one day we lost all contact with them.
+    To this day no one has figured out what happened, as sailing to the island has been next to impossible due to the harsh seas.
+    //
+    closemessage
+    hidenamebox
+
+    applymovement(10, movement_falador_postgym_9)
+    waitmovement(0)
+
+    namebox ("Sir Tiffy Cashien")
+    Hmm…
+    Actually there may be someone who can help.
+    Captain Ned.
+    He is used to be one of the best sailors back in the day but has since retired in Draynor Village.
+    If anyone has the knowledge and experience to get there, it'll be him.
+    closemessage
+    hidenamebox
+
+//Sir Amik Varze
+    namebox ("Sir Amik Varze")
+    What would H.A.M and the Black Knights want with Crandor?
+    closemessage
+    hidenamebox
+
+//Sir Owen 
+    namebox ("Sir Owen")
+    According to the prisoners they are looking for information to assist them with their plan to rid the world of monsters.
+    closemessage
+    hidenamebox
+
+//Sir Amik Varze
+    namebox ("Sir Amik Varze")
+    We will need invesetigate this immediantly and nutralise the H.A.M threat!
+    Unfortunanately, I all of my White Knights are busy protecting Falador.
+    {PLAYER} I wouldn't normally do this but…
+    Since you have the map and have proven your strength against the White Knights, I wish to ask for you assistance.
+    Please give Ned a visit over in Draynor and convice him to sail to Crandor.
+    closemessage
+    hidenamebox
+
+
+
+
+    setvar(VAR_TEMP_B, 0)
+    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 125)
+
+	release
+	end
+
+}
+
+
+
+
+
+
+
+
+
 //I just wrote small scripts for these because it was easier than searching for existing ones
 
 movement movement_falador_postgym_face_left {     
@@ -94,23 +235,50 @@ movement movement_falador_postgym_face_down {
     face_down
 }
 
-script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to interrogation room.
-{
-    applymovement(1, movement_falador_postgym_4)
-    waitmovement(0)
 
-//WIP
-    applymovement(OBJ_EVENT_ID_PLAYER, movement_falador_postgym_1)
-    applymovement(4, movement_falador_postgym_2)
-    applymovement(1, movement_falador_postgym_3)
-    waitmovement(0)
-    delay(120)
+    //They were appearntly looking for a piece of a map.
+    
+    //When we asked them what was special about the map they told us it will assist with their plans to rid the Gielnor of all monsters.
+    //And that is all we got out of them and without the map we will never know what they were planning…
 
-	//player walks over to owen
-    namebox ("Sir Owen")
-	msgbox(format("Thanks for coming everyone.\pWe have been hard at work interrogating the prisoners, so far we've worked out that the H.A.M members and the Black Knights have been working together to recover some sort of map.\pApparently, the map leads to some sort of weapon that will wipe out many of the inhabitants of Gielinor!\pHowever, we have no idea where the map leads and without it I doubt we will ever find out."))
-    closemessage
-    hidenamebox
+    What we do not know is where the map leads and without it we will never know. 
+    
+    Where it leads is unknown as they don't have that information.
+
+
+    Where it leads we may never know 
+
+    One bit of information we do not know is where the map leads and without it we will never know.
+
+    It appears that H.A.M and the Black Knights have been working together to a obtain map piece from the Dwarven Mines
+    but they appear to have lost it upon us capturing them.
+
+    What's that?
+    {PLAYER} you encountered H.A.M a
+
+    And you have more pieces?!
+
+    We will invesetigate immediantly and nutralise the H.A.M threat!
+    Unfortunanately, I cannot spare any of my White Knights…
+    They need to keep the peace here in Falador.
+    {PLAYER} I wouldn't normally do this but…
+    Since you have the map and have proven your strength against the White Knights, I wish to ask for you assistance.
+    Please give Ned a visit over in Draynor and convice him to sail to Crandor.
+    //Sir Theodore will accompany you, it is the least we can do.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     namebox ("Sir Owen")
 	msgbox(format("What's that {PLAYER}?!\pThey told you that they were wanting to travel to Crandor, but you have all the map pieces they were trying to obtain?!\pHow did you...\pThat doesn't matter right now!\pSir Tiffy, come quickly, you have to see this map!"))
@@ -128,7 +296,7 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
     closemessage
     hidenamebox
     //face up thinking
-    namebox ("Sir Tiffy")
+    namebox ("Sir Tiffy Cashien")
     msgbox(format("Hmm…{PAUSE 15}…\pActually, there may be someone who can help.\pCaptain Ned.\pHe's a veteran sailor who has retired and settled in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
 
     applymovement(10, movement_falador_postgym_face_down)

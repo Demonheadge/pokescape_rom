@@ -421,7 +421,7 @@ script QUEST_FALADORCASTLE_GYM_SIRTHEO
     applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_DOWN)
     waitmovement(0)
     namebox ("Sir Theodore")
-	msgbox(format("Sir Amik, {PLAYER}, Sir Owen has requested your assistance in the interrogation chamber.\pIf you would kindly follow me."))
+	msgbox(format("{PLAYER}.\nSir Amik Varze.\pSir Owen has requested your assistance in the interrogation chamber.\pIf you would kindly follow me."))
     closemessage
     hidenamebox
     warp(MAP_FALADOR_CASTLE_3F, 3, 0, 0)
