@@ -2390,3 +2390,23 @@ gTilesetPalettes_ChaosTunnels::
 	.align 2
 gTilesetTiles_ChaosTunnels::
 	.incbin "data/tilesets/secondary/chaos_tunnels/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Rellekka::
+	.incbin "data/tilesets/secondary/rellekka/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rellekka/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Rellekka::
+	.incbin "data/tilesets/secondary/rellekka/tiles.4bpp.lz"

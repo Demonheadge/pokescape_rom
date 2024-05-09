@@ -119,20 +119,14 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
     
 //Sir Owen
     namebox ("Sir Owen")
-    Thank you all for coming.
-    We have been hard at work interrograting the prisoners.
-    It appears that H.A.M and the Black Knights have been working together.
-    They were one of three squads that were sent to search around Asganina in search for map pieces.
-
+    msgbox(format("Thank you all for coming.\pWe have been hard at work interrograting the prisoners.\pIt appears that H.A.M and the Black Knights have been working together, but despite our best efforts they refuse to tell us their plans.\p{PLAYER} do you know anything that might be of help in our investigation?"))
     closemessage
     hidenamebox
     applymovement(5, MOVEMENT_INTERACT_DOWN)
     waitmovement(0)
 
     namebox ("Sir Owen")
-    What?!
-    You have the map peices?!
-    {PLAYER} show them to Sir Tiffy Cashein now!
+    msgbox(format("What!?\pYou have already encountered two other H.A.M squads around Asgarnia!\pThey were trying to obtain these map pieces?"))
     closemessage
     hidenamebox
 
@@ -140,61 +134,59 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
     applymovement(1, movement_falador_postgym_7)
     waitmovement(0)
     
-    namebox ("Sir Tiffy Cashien")
+    
 //Sir Tiffy
-    Now what do we have here, old bean?
-    Hmm…
-    This is…
-    You must be pulling my leg!
-    This is a map to the lost island Crandor!
+    namebox ("Sir Tiffy Cashien")
+    msgbox(format("May I take a look at those?\pHmm…{PAUSE 15}\nThis is…\pYou must be pulling my leg!\pThis is a map to the lost island Crandor!"))
     closemessage
     hidenamebox
 
 //Sir Amik Varze
     namebox ("Sir Amik Varze")
-    Crandor!?
+    msgbox(format("What would H.A.M and the Black Knights want with Crandor?"))
     closemessage
     hidenamebox
 
 //Sir Tiffy
     namebox ("Sir Tiffy Cashien")
-    30 years ago, Crandor used to be a thriving city full of adventurers and mages but one day we lost all contact with them.
-    To this day no one has figured out what happened, as sailing to the island has been next to impossible due to the harsh seas.
+    msgbox(format("30 years ago, Crandor used to be a thriving city full of adventurers and mages but one day we lost all contact with them.\pThere must be something on the Island they want."))
+    //30 years ago, Crandor used to be a thriving city full of adventurers and mages but one day we lost all contact with them.
+    //To this day no one has figured out what happened, as sailing to the island has been next to impossible due to the harsh seas.
     //
     closemessage
     hidenamebox
+
+    
+
+//Sir Amik Varze
+    namebox ("Sir Amik Varze")
+    msgbox(format("We will need to investigate this immediately and neutralise the H.A.M threat!\pI will organise the funds for a ship to set sail from Port Sarim to Crandor."))
+    closemessage
+    hidenamebox
+
+
+
+
+
+//Sir Owen 
+    namebox ("Sir Owen")
+    msgbox(format("That is easier said than done.\pSailing to the island has been next to impossible due to the harsh seas!"))
+    closemessage
+    hidenamebox
+
 
     applymovement(10, movement_falador_postgym_9)
     waitmovement(0)
 
     namebox ("Sir Tiffy Cashien")
-    Hmm…
-    Actually there may be someone who can help.
-    Captain Ned.
-    He is used to be one of the best sailors back in the day but has since retired in Draynor Village.
-    If anyone has the knowledge and experience to get there, it'll be him.
+    msgbox(format("Actually there may be someone who can help.\pCaptain Ned.\pHe is used to be one of the best sailors back in the day but has since retired in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
     closemessage
     hidenamebox
+
 
 //Sir Amik Varze
     namebox ("Sir Amik Varze")
-    What would H.A.M and the Black Knights want with Crandor?
-    closemessage
-    hidenamebox
-
-//Sir Owen 
-    namebox ("Sir Owen")
-    According to the prisoners they are looking for information to assist them with their plan to rid the world of monsters.
-    closemessage
-    hidenamebox
-
-//Sir Amik Varze
-    namebox ("Sir Amik Varze")
-    We will need invesetigate this immediantly and nutralise the H.A.M threat!
-    Unfortunanately, I all of my White Knights are busy protecting Falador.
-    {PLAYER} I wouldn't normally do this but…
-    Since you have the map and have proven your strength against the White Knights, I wish to ask for you assistance.
-    Please give Ned a visit over in Draynor and convice him to sail to Crandor.
+    msgbox(format("Very well, {PLAYER} I wouldn't normally do this but since you have the map and have proven your strength against the White Knights, I wish to ask for you assistance.\pPlease give Ned a visit over in Draynor and convice him to sail to Crandor.\pWe will be in contact once we have organised a vessel."))
     closemessage
     hidenamebox
 
@@ -212,121 +204,3 @@ script QUEST_FALADORCASTLE_EVENT_AFTER_GYM //after the gym you get teleported to
 
 
 
-
-
-
-
-
-//I just wrote small scripts for these because it was easier than searching for existing ones
-
-movement movement_falador_postgym_face_left {     
-    face_left
-}
-
-movement movement_falador_postgym_face_right {
-    face_right
-}
-
-movement movement_falador_postgym_face_up {
-    face_up
-}
-
-movement movement_falador_postgym_face_down {
-    face_down
-}
-
-
-    //They were appearntly looking for a piece of a map.
-    
-    //When we asked them what was special about the map they told us it will assist with their plans to rid the Gielnor of all monsters.
-    //And that is all we got out of them and without the map we will never know what they were planning…
-
-    What we do not know is where the map leads and without it we will never know. 
-    
-    Where it leads is unknown as they don't have that information.
-
-
-    Where it leads we may never know 
-
-    One bit of information we do not know is where the map leads and without it we will never know.
-
-    It appears that H.A.M and the Black Knights have been working together to a obtain map piece from the Dwarven Mines
-    but they appear to have lost it upon us capturing them.
-
-    What's that?
-    {PLAYER} you encountered H.A.M a
-
-    And you have more pieces?!
-
-    We will invesetigate immediantly and nutralise the H.A.M threat!
-    Unfortunanately, I cannot spare any of my White Knights…
-    They need to keep the peace here in Falador.
-    {PLAYER} I wouldn't normally do this but…
-    Since you have the map and have proven your strength against the White Knights, I wish to ask for you assistance.
-    Please give Ned a visit over in Draynor and convice him to sail to Crandor.
-    //Sir Theodore will accompany you, it is the least we can do.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    namebox ("Sir Owen")
-	msgbox(format("What's that {PLAYER}?!\pThey told you that they were wanting to travel to Crandor, but you have all the map pieces they were trying to obtain?!\pHow did you...\pThat doesn't matter right now!\pSir Tiffy, come quickly, you have to see this map!"))
-    closemessage
-    hidenamebox
-
-    applymovement(10, movement_falador_postgym_5)
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, movement_falador_postgym_face_left)
-    applymovement(1, movement_falador_postgym_face_up)
-
-    //Player faces Sir Tiffy
-    namebox ("Sir Tiffy Cashien")
-	msgbox(format("Now what do we have here, old bean?\pHmm…{PAUSE 15}…\pThis is…{PAUSE 15}\nYou must be pulling on my leg!\pWhat would they want with Crandor!\pAround thirty years ago, it was a thriving community full of mages and adventurers.\pMany of them even became part of the Champions' Guild over in Varrock!\pHowever, one day there was some kind of natural disaster...\pThey think the volcano erupted, and it just devastated the entire island with fire.\pThey say it's nothing but a wasteland now.\pI can't imagine what weapon they possibly think they could find there.\pNow how to get there…{PAUSE 15}…\pYou'd have to sail, of course, but nobody has been back since it went up in flames…"))
-    closemessage
-    hidenamebox
-    //face up thinking
-    namebox ("Sir Tiffy Cashien")
-    msgbox(format("Hmm…{PAUSE 15}…\pActually, there may be someone who can help.\pCaptain Ned.\pHe's a veteran sailor who has retired and settled in Draynor Village.\pIf anyone has the knowledge and experience to get there, it'll be him."))
-
-    applymovement(10, movement_falador_postgym_face_down)
-    applymovement(OBJ_EVENT_ID_PLAYER, movement_falador_postgym_face_down)
-    waitmovement(0)
-    
-    namebox ("Sir Amik Varze")
-    msgbox(format("This is serious indeed, we will need to investigate immediately and neutralise the H.A.M threat!\p{PLAYER}, I wouldn't normally do this but in the circumstances...\pSince not only do you have the map, but you have also managed to defeat both myself and the best the White Knights had to offer in battle, I wish to ask for your assistance.\pIf you could, please give this Ned a visit over in Draynor and convince him to sail to Crandor.\pSir Theodore, there are a few things I need you to take care of first but then will you please meet {PLAYER} there, to show Ned that they have the White Knight's full support for this mission?"))
-
-    namebox ("Sir Owen")
-    msgbox(format("And we will see if we can get any more information out of the prisoners.\pAfter that, we will head north to investigate the Black Knight's Fortress and try and gather some intel from them!"))
-
-    applymovement(10, movement_falador_postgym_face_down)
-    applymovement(OBJ_EVENT_ID_PLAYER, movement_falador_postgym_face_down)
-    applymovement(1, movement_falador_postgym_face_up)
-    waitmovement(0)
-
-    namebox ("Sir Amik Varze")
-    msgbox(format("Great, it seems like everyone has their tasks.\pGood luck everyone!"))
-
-    applymovement(10, movement_falador_postgym_6)
-    waitmovement(0)
-
-    setvar(VAR_TEMP_B, 0)
-    setvar(VAR_POKESCAPE_STORYMODE_PROGRESS, 125)
-
-	release
-	end
-}
-
-//White knights join the boat.
-//Sir Owen follow quest on the island?
-//White knight vists ned and player, ready for ship arrangement in port sarim.

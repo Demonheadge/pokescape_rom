@@ -148,67 +148,67 @@ LIGHTHOUSE_HAM_PATTY::
 	waitmovement 1
 	addobject 9
 	clearflag FLAG_TEMP_F
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_9
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_10
 	closemessage
 	hidenamebox
 	applymovement 2, MOVEMENT_WALKLEFT
 	waitmovement 0
 	delay 32
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_10
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_11
 	closemessage
 	hidenamebox
 	removeobject 9
 	setflag FLAG_TEMP_F
 	delay 60
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_11
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_12
 	closemessage
 	hidenamebox
 	applymovement 2, movement_WALKRIGHT
 	waitmovement 0
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_12
-	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_LEFT
-	waitmovement 0
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
 	msgbox LIGHTHOUSE_HAM_PATTY_Text_13
-	closemessage
-	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_LEFT
 	waitmovement 0
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
 	msgbox LIGHTHOUSE_HAM_PATTY_Text_14
 	closemessage
 	hidenamebox
-	trainerbattle_no_intro TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_PATTY, LIGHTHOUSE_HAM_PATTY_Text_15
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_16
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_INTERACT_LEFT
+	waitmovement 0
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_15
+	closemessage
+	hidenamebox
+	trainerbattle_no_intro TRAINER_LIGHTHOUSE_3F_HAM_ADMIN_PATTY, LIGHTHOUSE_HAM_PATTY_Text_16
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_17
 	hidenamebox
 	closemessage
 	giveitem ITEM_CRANDOR_MAP_PIECE1, 1
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_17
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_18
 	closemessage
 	hidenamebox
 	applymovement 2, movement_WALKRIGHT
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_lighthouse_ham_3
 	waitmovement 0
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_18
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_19
 	hidenamebox
 	closemessage
 	applymovement 5, MOVEMENT_FACE_UP
 	applymovement 4, Movement_lighthouse_ham_5
 	waitmovement 0
-	namebox LIGHTHOUSE_HAM_PATTY_Text_19
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_20
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
+	namebox LIGHTHOUSE_HAM_PATTY_Text_20
 	msgbox LIGHTHOUSE_HAM_PATTY_Text_21
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_22
 	applymovement 2, Movement_InteractFACEPLAYER
 	waitmovement 0
-	namebox LIGHTHOUSE_HAM_PATTY_Text_0
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_22
+	namebox LIGHTHOUSE_HAM_PATTY_Text_9
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_23
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
@@ -228,18 +228,18 @@ LIGHTHOUSE_HAM_PATTY::
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox LIGHTHOUSE_3F_NPC_1_Text_1
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_23
+	namebox LIGHTHOUSE_HAM_PATTY_Text_24
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_25
 	closemessage
 	hidenamebox
 	giveitem ITEM_TM62, 1
 	closemessage
 	applymovement 5, Movement_lighthouse_ham_0
 	waitmovement 0
-	namebox LIGHTHOUSE_3F_NPC_1_Text_1
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_24
-	namebox LIGHTHOUSE_HAM_PATTY_Text_2
-	msgbox LIGHTHOUSE_HAM_PATTY_Text_25
+	namebox LIGHTHOUSE_HAM_PATTY_Text_24
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_26
+	namebox LIGHTHOUSE_HAM_PATTY_Text_27
+	msgbox LIGHTHOUSE_HAM_PATTY_Text_28
 	closemessage
 	hidenamebox
 	applymovement 5, Movement_lighthouse_ham_1
@@ -325,18 +325,18 @@ Movement_punchGoblin:
 
 LIGHTHOUSE_3F_NPC_1_Text_0:
 	.string "The guard looks like they're struggling\n"
-	.string "to hold the HAM member off.$"
+	.string "to hold the H.A.M member off.$"
 
 LIGHTHOUSE_3F_NPC_1_Text_1:
-	.string "Guard Captain$"
+	.string "GUARD CAPTAIN$"
 
 LIGHTHOUSE_3F_NPC_1_Text_2:
 	.string "The lighthouse is for authorized\n"
 	.string "personnel only.\p"
-	.string "But if want to know more about it,\n"
+	.string "But if you want to know more about it,\n"
 	.string "basically we go up there every night\l"
 	.string "and light a bonfire to help ships find\l"
-	.string "thier way.$"
+	.string "their way.$"
 
 LIGHTHOUSE_3F_NPC_2_Text_0:
 	.string "They appear to be winning.\p"
@@ -348,8 +348,8 @@ LIGHTHOUSE_3F_NPC_3_Text_0:
 	.string "nearby H.A.M members.$"
 
 LIGHTHOUSE_3F_NPC_4_Text_0:
-	.string "The H.A.M member looks like they're about\n"
-	.string "to cry.\p"
+	.string "The H.A.M member looks like they're\n"
+	.string "about to cry.\p"
 	.string "Probably not a good look in front of one\n"
 	.string "of their boss.$"
 
@@ -366,13 +366,13 @@ BATTLE_LIGHTHOUSE_3F_TRAINER_1_Text_2:
 	.string "H.A.M MEMBER$"
 
 LIGHTHOUSE_HAM_PATTY_Text_0:
-	.string "Patty$"
+	.string "PATTY$"
 
 LIGHTHOUSE_HAM_PATTY_Text_1:
 	.string "Give me the map you stupid Goblin!$"
 
 LIGHTHOUSE_HAM_PATTY_Text_2:
-	.string "Wormbrain$"
+	.string "WORMBRAIN$"
 
 LIGHTHOUSE_HAM_PATTY_Text_3:
 	.string "If human want map, then human must pay\n"
@@ -388,7 +388,7 @@ LIGHTHOUSE_HAM_PATTY_Text_5:
 
 LIGHTHOUSE_HAM_PATTY_Text_6:
 	.string "How about I just take it from you\n"
-	.string "instead, hows that sound?$"
+	.string "instead, how does that sound?$"
 
 LIGHTHOUSE_HAM_PATTY_Text_7:
 	.string "Wormbrain think human is funny, would\n"
@@ -399,22 +399,25 @@ LIGHTHOUSE_HAM_PATTY_Text_8:
 	.string "Get a taste of this Wind Blast!$"
 
 LIGHTHOUSE_HAM_PATTY_Text_9:
-	.string "I'll be taking that map piece now.$"
+	.string "Patty$"
 
 LIGHTHOUSE_HAM_PATTY_Text_10:
-	.string "Ew such a disgusting goblin, I don't\n"
-	.string "want to go near you.\p"
-	.string "So I won't I'll just telekentic grab it\n"
-	.string "from here.$"
+	.string "I'll be taking that map piece now.$"
 
 LIGHTHOUSE_HAM_PATTY_Text_11:
-	.string "Map piece retrieved, time to head out.$"
+	.string "Ew such a disgusting goblin, I don't\n"
+	.string "want to go near you.\p"
+	.string "So I won't. I'll just telekentic grab it\n"
+	.string "from here.$"
 
 LIGHTHOUSE_HAM_PATTY_Text_12:
+	.string "Map piece retrieved, time to head out.$"
+
+LIGHTHOUSE_HAM_PATTY_Text_13:
 	.string "Hey who are you?\p"
 	.string "Grunts who let this one up here?!$"
 
-LIGHTHOUSE_HAM_PATTY_Text_13:
+LIGHTHOUSE_HAM_PATTY_Text_14:
 	.string "Monster sympathiser?\p"
 	.string "Are you here to stop me?\p"
 	.string "Or maybe you just want the map piece.\p"
@@ -422,17 +425,17 @@ LIGHTHOUSE_HAM_PATTY_Text_13:
 	.string "called Crandor, we the Humans Against\l"
 	.string "Monsters simply won't let you have it.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_14:
+LIGHTHOUSE_HAM_PATTY_Text_15:
 	.string "Oh you want it that bad?\p"
 	.string "Well lets see how much you want it!!$"
 
-LIGHTHOUSE_HAM_PATTY_Text_15:
+LIGHTHOUSE_HAM_PATTY_Text_16:
 	.string "Why do you even want the map piece?$"
 
-LIGHTHOUSE_HAM_PATTY_Text_16:
+LIGHTHOUSE_HAM_PATTY_Text_17:
 	.string "Fine, take it…$"
 
-LIGHTHOUSE_HAM_PATTY_Text_17:
+LIGHTHOUSE_HAM_PATTY_Text_18:
 	.string "You may have won this time but you\n"
 	.string "cannot stop the grand ambitions of\l"
 	.string "H.A.M.\p"
@@ -441,38 +444,44 @@ LIGHTHOUSE_HAM_PATTY_Text_17:
 	.string "Fight us and you fight against the\n"
 	.string "people.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_18:
+LIGHTHOUSE_HAM_PATTY_Text_19:
 	.string "GRUNTS!!$"
 
-LIGHTHOUSE_HAM_PATTY_Text_19:
+LIGHTHOUSE_HAM_PATTY_Text_20:
 	.string "H.A.M Grunt$"
 
-LIGHTHOUSE_HAM_PATTY_Text_20:
+LIGHTHOUSE_HAM_PATTY_Text_21:
 	.string "Yes ma'am!$"
 
-LIGHTHOUSE_HAM_PATTY_Text_21:
-	.string "We're heading out, plan A is ruined, were\n"
+LIGHTHOUSE_HAM_PATTY_Text_22:
+	.string "We're heading out, plan A is ruined, we're\n"
 	.string "going with plan B.\p"
 	.string "Babe will fix things in the maze,\n"
 	.string "meanwhile we head for Musa Point on\l"
 	.string "Karamja.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_22:
-	.string "Dont meddle with us again if you know\n"
-	.string "whats good for you.\p"
+LIGHTHOUSE_HAM_PATTY_Text_23:
+	.string "Don't meddle with us again if you know\n"
+	.string "what's good for you.\p"
 	.string "We serve the populace of Gielinor by\n"
 	.string "ridding it of monsters, opposing us\l"
 	.string "means opposing the natural order.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_23:
+LIGHTHOUSE_HAM_PATTY_Text_24:
+	.string "Guard Captain$"
+
+LIGHTHOUSE_HAM_PATTY_Text_25:
 	.string "Thank you for assisting us in repelling\n"
 	.string "H.A.M.\p"
 	.string "They've been very organised as of late.\p"
 	.string "I'm not sure what they are after.\p"
 	.string "But here take this for helping us out.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_24:
+LIGHTHOUSE_HAM_PATTY_Text_26:
 	.string "Come on goblin, back to your cell.$"
 
-LIGHTHOUSE_HAM_PATTY_Text_25:
+LIGHTHOUSE_HAM_PATTY_Text_27:
+	.string "Wormbrain$"
+
+LIGHTHOUSE_HAM_PATTY_Text_28:
 	.string "Me think me nose is broken…$"

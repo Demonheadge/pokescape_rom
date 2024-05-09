@@ -981,7 +981,10 @@
     "Route172",
     "Canifis",
     "Route180",
-    "Route60"
+    "Route60",
+    "Route61",
+    "Route62",
+    "Route63"
   ],
   "gMapGroup_PokescapeIndoorTzhaar": [
     "Tzhaar_1F",

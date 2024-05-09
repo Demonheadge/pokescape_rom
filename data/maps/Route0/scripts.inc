@@ -108,8 +108,23 @@ NPC_ROUTE0_CHICKEN::
 	end
 
 
-ITEM_ROUTE0_cupholder::
+NPC_ROUTE0_RAPTOR::
+	lock
+	faceplayer
+	msgbox NPC_ROUTE0_RAPTOR_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+ITEM_ROUTE0_SWEETS::
 	finditem ITEM_PURPLE_SWEETS
+	end
+
+
+ITEM_ROUTE0_TINDERBOX::
+	finditem ITEM_TINDERBOX
 	end
 
 
@@ -219,3 +234,6 @@ NPC_ROUTE0_NPC_5_Text_0:
 
 NPC_ROUTE0_CHICKEN_Text_0:
 	.string "Bwuk bwuk bwaaaaauuuuukk$"
+
+NPC_ROUTE0_RAPTOR_Text_0:
+	.string "The Raptor ignores you.$"

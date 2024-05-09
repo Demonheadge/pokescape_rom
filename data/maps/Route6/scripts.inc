@@ -118,6 +118,7 @@ MOVEMENT_ROUTE6_UNICORN:
 
 BATTLE_ROUTE6_FIREMAKER::
 	trainerbattle_single TRAINER_ROUTE6_FIREMAKER, BATTLE_ROUTE6_FIREMAKER_Text_0, BATTLE_ROUTE6_FIREMAKER_Text_1
+	namebox BATTLE_ROUTE6_FIREMAKER_Text_2
 	msgbox BATTLE_ROUTE6_FIREMAKER_Text_1
 	release
 	return
@@ -125,8 +126,8 @@ BATTLE_ROUTE6_FIREMAKER::
 
 BATTLE_ROUTE6_MUGGER::
 	trainerbattle_single TRAINER_MUGGER_ROUTE6, BATTLE_ROUTE6_MUGGER_Text_0, BATTLE_ROUTE6_MUGGER_Text_1
-	namebox ROUTE6_BLOCK_FaladorGuard_Text_0
-	msgbox BATTLE_ROUTE6_MUGGER_Text_2
+	namebox BATTLE_ROUTE6_MUGGER_Text_2
+	msgbox BATTLE_ROUTE6_MUGGER_Text_3
 	hidenamebox
 	release
 	end
@@ -183,6 +184,9 @@ BATTLE_ROUTE6_FIREMAKER_Text_1:
 	.string "Burned to a crisp.\p"
 	.string "I hope you levelled up…$"
 
+BATTLE_ROUTE6_FIREMAKER_Text_2:
+	.string "ASH$"
+
 BATTLE_ROUTE6_MUGGER_Text_0:
 	.string "Your money or your life!$"
 
@@ -190,6 +194,9 @@ BATTLE_ROUTE6_MUGGER_Text_1:
 	.string "Okay I guess you can keep both…$"
 
 BATTLE_ROUTE6_MUGGER_Text_2:
+	.string "LEO$"
+
+BATTLE_ROUTE6_MUGGER_Text_3:
 	.string "Shoo you're making it hard for me to mug\n"
 	.string "people.$"
 

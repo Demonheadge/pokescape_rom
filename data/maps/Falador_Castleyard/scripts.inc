@@ -915,9 +915,10 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
 	.string "knight instead?$"
 
 QUEST_FALADORCASTLE_GYM_SIRTHEO_Text_0:
-	.string "Sir Amik, {PLAYER}, Sir Owen has\n"
-	.string "requested your assistance in the\l"
-	.string "interrogation chamber.\p"
+	.string "{PLAYER}.\n"
+	.string "Sir Amik Varze.\p"
+	.string "Sir Owen has requested your assistance\n"
+	.string "in the interrogation chamber.\p"
 	.string "If you would kindly follow me.$"
 
 NPC_FALADORCASTLE_GYM_SIRTIFFY_Text_0:

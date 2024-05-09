@@ -19,11 +19,6 @@
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE57",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
       "map": "MAP_CAMELOT",
       "offset": -4,
       "direction": "right"
@@ -32,6 +27,11 @@
       "map": "MAP_ROUTE58",
       "offset": 16,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE61",
+      "offset": -22,
+      "direction": "up"
     }
   ],
   "object_events": [

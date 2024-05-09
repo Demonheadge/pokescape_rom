@@ -15267,22 +15267,22 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_BLOODVELD"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
                 "species": "SPECIES_RAT_CRYPT_FORM"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_GIANT_BAT"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
                 "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ANIMOUR"
               }
             ]
           }
@@ -15405,17 +15405,17 @@
               {
                 "min_level": 9,
                 "max_level": 14,
-                "species": "SPECIES_ERNEST"
+                "species": "SPECIES_BAT"
               },
               {
                 "min_level": 9,
                 "max_level": 14,
-                "species": "SPECIES_ERNEST"
+                "species": "SPECIES_KILLERWATT"
               },
               {
                 "min_level": 5,
                 "max_level": 14,
-                "species": "SPECIES_KILLERWATT"
+                "species": "SPECIES_ERNEST"
               },
               {
                 "min_level": 5,
@@ -18050,7 +18050,7 @@
               {
                 "min_level": 5,
                 "max_level": 14,
-                "species": "SPECIES_SPIDERLING"
+                "species": "SPECIES_RAT_CRYPT_FORM"
               },
               {
                 "min_level": 5,
@@ -18085,7 +18085,7 @@
               {
                 "min_level": 5,
                 "max_level": 14,
-                "species": "SPECIES_GIANT_BAT"
+                "species": "SPECIES_BLOODVELD"
               }
             ]
           }

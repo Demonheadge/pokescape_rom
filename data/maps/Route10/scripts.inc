@@ -83,21 +83,24 @@ ROUTE10_WhiteKnight_2::
 
 BATTLE_ROUTE10_MONK::
 	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE10_MONK_Text_0, BATTLE_ROUTE10_MONK_Text_1
-	msgbox BATTLE_ROUTE10_MONK_Text_2
+	namebox BATTLE_ROUTE10_MONK_Text_2
+	msgbox BATTLE_ROUTE10_MONK_Text_3
 	release
 	return
 
 
 BATTLE_ROUTE10_GOBLIN_1::
 	trainerbattle_single TRAINER_ROUTE10_GOBLIN_1, BATTLE_ROUTE10_GOBLIN_1_Text_0, BATTLE_ROUTE10_GOBLIN_1_Text_1
-	msgbox BATTLE_ROUTE10_GOBLIN_1_Text_2
+	namebox BATTLE_ROUTE10_GOBLIN_1_Text_2
+	msgbox BATTLE_ROUTE10_GOBLIN_1_Text_3
 	release
 	return
 
 
 BATTLE_ROUTE10_GOBLIN_2::
 	trainerbattle_single TRAINER_ROUTE10_GOBLIN_2, BATTLE_ROUTE10_GOBLIN_2_Text_0, BATTLE_ROUTE10_GOBLIN_2_Text_1
-	msgbox BATTLE_ROUTE10_GOBLIN_2_Text_2
+	namebox BATTLE_ROUTE10_GOBLIN_2_Text_2
+	msgbox BATTLE_ROUTE10_GOBLIN_2_Text_3
 	release
 	return
 
@@ -196,6 +199,9 @@ BATTLE_ROUTE10_MONK_Text_1:
 	.string "That too is an option.$"
 
 BATTLE_ROUTE10_MONK_Text_2:
+	.string "Jeremiah$"
+
+BATTLE_ROUTE10_MONK_Text_3:
 	.string "Did you know Death Runes make certain\n"
 	.string "monsters evolve?\p"
 	.string "Do you think there are Life Rune too?\p"
@@ -210,6 +216,9 @@ BATTLE_ROUTE10_GOBLIN_1_Text_1:
 	.string "Ok human can pass!$"
 
 BATTLE_ROUTE10_GOBLIN_1_Text_2:
+	.string "FEETSTOMPER$"
+
+BATTLE_ROUTE10_GOBLIN_1_Text_3:
 	.string "Me sorry for causing trouble for human!\p"
 	.string "Don't hurt goblin!$"
 
@@ -221,6 +230,9 @@ BATTLE_ROUTE10_GOBLIN_2_Text_1:
 	.string "Me just want to see friend…$"
 
 BATTLE_ROUTE10_GOBLIN_2_Text_2:
+	.string "WINDBURSTER$"
+
+BATTLE_ROUTE10_GOBLIN_2_Text_3:
 	.string "Me friend is spider.\p"
 	.string "Me accidently sat on him.\p"
 	.string "Me want to visit grave and say sorry…$"

@@ -793,3 +793,11 @@ gMetatiles_ChaosTunnels::
 	.align 1
 gMetatileAttributes_ChaosTunnels::
 	.incbin "data/tilesets/secondary/chaos_tunnels/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Rellekka::
+	.incbin "data/tilesets/secondary/rellekka/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Rellekka::
+	.incbin "data/tilesets/secondary/rellekka/metatile_attributes.bin"

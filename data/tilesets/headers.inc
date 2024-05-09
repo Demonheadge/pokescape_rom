@@ -1195,3 +1195,14 @@ gTileset_ChaosTunnels::
 	.4byte gMetatiles_ChaosTunnels
 	.4byte gMetatileAttributes_ChaosTunnels
 	.4byte NULL @ animation callback
+
+	.align 2
+gTileset_Rellekka::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_Rellekka
+	.4byte gTilesetPalettes_Rellekka
+	.4byte gMetatiles_Rellekka
+	.4byte gMetatileAttributes_Rellekka
+	.4byte NULL @ animation callback

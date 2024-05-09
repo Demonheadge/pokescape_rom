@@ -50,6 +50,8 @@ STORYMODE_STATE_LUMBRIDGE::
 	return
 
 STORYMODE_STATE_LUMBRIDGE_2:
+	setobjectxyperm 22, 35, 33
+	setobjectmovementtype 22, MOVEMENT_TYPE_LOOK_AROUND
 	return
 
 STORYMODE_STATE_LUMBRIDGE_5:
@@ -183,10 +185,24 @@ Lumbridge_HATIUS::
 	lock
 	faceplayer
 	namebox Lumbridge_HATIUS_Text_0
-	msgbox Lumbridge_HATIUS_Text_1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_HATIUS_4
+Lumbridge_HATIUS_3:
+	msgbox Lumbridge_HATIUS_Text_2
+Lumbridge_HATIUS_1:
 	hidenamebox
+	closemessage
 	release
 	end
+
+Lumbridge_HATIUS_2:
+	msgbox Lumbridge_HATIUS_Text_1
+	goto Lumbridge_HATIUS_1
+
+Lumbridge_HATIUS_4:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
+	goto_if_eq Lumbridge_HATIUS_2
+	goto Lumbridge_HATIUS_3
 
 
 Lumbridge_LACHTOPHER::
@@ -534,6 +550,7 @@ Lumbridge_Guard_SOUTH_TRIGGER_1:
 	msgbox Lumbridge_Guard_SOUTH_Text_1
 	waitmessage
 	hidenamebox
+	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2
 	waitmovement 0
@@ -552,11 +569,55 @@ LUMBRIDGE_GUARD_SOUTH_TRIGGER_1:
 	step_end
 
 LUMBRIDGE_PLAYER_SOUTH_TRIGGER:
-	walk_left
+	walk_up
 	step_end
 
 LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	face_left
+	step_end
+
+Lumbridge_Hatius_TRIGGER::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Hatius_TRIGGER_3
+Lumbridge_Hatius_TRIGGER_2:
+	release
+	end
+
+Lumbridge_Hatius_TRIGGER_1:
+	lock
+	PlaySE SE_PIN
+	applymovement 22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_1
+	waitmovement 0
+	namebox Lumbridge_HATIUS_Text_0
+	msgbox Lumbridge_Hatius_TRIGGER_Text_0
+	waitmessage
+	hidenamebox
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_GRAVE_TRIGGER
+	applymovement 22, LUMBRIDGE_HATIUS_GRAVE_TRIGGER_2
+	waitmovement 0
+	release
+	end
+
+Lumbridge_Hatius_TRIGGER_3:
+	compare VAR_POKESCAPE_STORYMODE_PROGRESS, 1
+	goto_if_eq Lumbridge_Hatius_TRIGGER_1
+	goto Lumbridge_Hatius_TRIGGER_2
+
+
+LUMBRIDGE_HATIUS_GRAVE_TRIGGER_1:
+	walk_down
+	face_right
+	emote_exclamation_mark
+	step_end
+
+LUMBRIDGE_PLAYER_GRAVE_TRIGGER:
+	walk_left
+	step_end
+
+LUMBRIDGE_HATIUS_GRAVE_TRIGGER_2:
+	face_up
+	walk_up
 	step_end
 
 Lumbridge_House_NPC1::
@@ -813,6 +874,12 @@ Lumbridge_HATIUS_Text_0:
 	.string "Hatius$"
 
 Lumbridge_HATIUS_Text_1:
+	.string "Professor Normal Tree is visiting\n"
+	.string "Lumbridge!\p"
+	.string "You better head to the castle before\n"
+	.string "you miss him!$"
+
+Lumbridge_HATIUS_Text_2:
 	.string "There were some muggers in the alley\n"
 	.string "eyeing up my 3rd age armour.\p"
 	.string "So I've had to change into a more casual\n"
@@ -929,6 +996,13 @@ Lumbridge_Guard_SOUTH_Text_2:
 	.string "It's quite dangerous even with a\n"
 	.string "monster to protect you.\p"
 	.string "So be careful.$"
+
+Lumbridge_Hatius_TRIGGER_Text_0:
+	.string "Did you not hear?\p"
+	.string "Professor Normal Tree is visiting\n"
+	.string "Lumbridge!\p"
+	.string "You better head to the castle before\n"
+	.string "you miss him!$"
 
 Lumbridge_House_NPC1_Text_0:
 	.string "The forge broke, so I've requested\n"

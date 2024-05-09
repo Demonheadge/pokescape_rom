@@ -468,7 +468,7 @@ TRIGGER_Melzar_Maze_HAM_EVENT_MELZAR_Text_5:
 Melzar_Maze_B1F_HAM_GRUNT_1_Text_0:
 	.string "So glad you dealt with that guy.\p"
 	.string "I'm only a lower middle management\n"
-	.string "grunt, I cant deal with actual\l"
+	.string "grunt, I can't deal with actual\l"
 	.string "opposition.$"
 
 Melzar_Maze_B1F_HAM_GRUNT_2_Text_0:
@@ -482,7 +482,7 @@ Melzar_Maze_B1F_HAM_GRUNT_4_Text_0:
 	.string "When does this end…$"
 
 Melzar_Maze_B1F_MelzarTheMad_Text_0:
-	.string "I gave my pet rock some custard, its\n"
+	.string "I gave my pet rock some custard, it's\n"
 	.string "feeling better now.$"
 
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_0:
@@ -547,12 +547,12 @@ TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_14:
 
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_15:
 	.string "Ok guys mission failed, we're going to\n"
-	.string "Musa Point and meet up with Pattys\l"
+	.string "Musa Point and meet up with Patty's\l"
 	.string "crew.$"
 
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_16:
 	.string "What about the batallion sent to\n"
-	.string "falador?$"
+	.string "Falador?$"
 
 TRIGGER_Melzar_Maze_HAM_EVENT_BABE_Text_17:
 	.string "Right…{PAUSE 32}\n"

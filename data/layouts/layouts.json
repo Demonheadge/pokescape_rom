@@ -6155,9 +6155,9 @@
       "id": "LAYOUT_RELLEKKA",
       "name": "Rellekka_Layout",
       "width": 70,
-      "height": 46,
+      "height": 56,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Barbarian_Village",
+      "secondary_tileset": "gTileset_Rellekka",
       "border_filepath": "data/layouts/Rellekka/border.bin",
       "blockdata_filepath": "data/layouts/Rellekka/map.bin"
     },
@@ -7195,7 +7195,7 @@
       "id": "LAYOUT_ROUTE57",
       "name": "Route57_Layout",
       "width": 38,
-      "height": 20,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Falador",
       "border_filepath": "data/layouts/Route57/border.bin",
@@ -8515,11 +8515,41 @@
       "id": "LAYOUT_ROUTE60",
       "name": "Route60_Layout",
       "width": 70,
-      "height": 35,
+      "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Barbarian_Village",
+      "secondary_tileset": "gTileset_Rellekka",
       "border_filepath": "data/layouts/Route60/border.bin",
       "blockdata_filepath": "data/layouts/Route60/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE61",
+      "name": "Route61_Layout",
+      "width": 60,
+      "height": 42,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rellekka",
+      "border_filepath": "data/layouts/Route61/border.bin",
+      "blockdata_filepath": "data/layouts/Route61/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE62",
+      "name": "Route62_Layout",
+      "width": 46,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rellekka",
+      "border_filepath": "data/layouts/Route62/border.bin",
+      "blockdata_filepath": "data/layouts/Route62/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE63",
+      "name": "Route63_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rellekka",
+      "border_filepath": "data/layouts/Route63/border.bin",
+      "blockdata_filepath": "data/layouts/Route63/map.bin"
     }
   ]
 }

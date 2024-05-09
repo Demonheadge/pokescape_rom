@@ -1873,3 +1873,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Varlamore/scripts.inc"
 
 	.include "data/maps/Route60/scripts.inc"
+
+	.include "data/maps/Route61/scripts.inc"
+
+	.include "data/maps/Route62/scripts.inc"
+
+	.include "data/maps/Route63/scripts.inc"
