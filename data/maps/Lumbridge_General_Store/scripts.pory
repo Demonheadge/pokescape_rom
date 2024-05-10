@@ -89,7 +89,16 @@ script GeneralStore_RIMMINGTON {
     msgbox("Thank you, come again!")
     release
 }
-
+//ALKHARID
+script GeneralStore_ALKHARID {
+    lock
+    faceplayer
+    msgbox(format("Welcome to the Al-Kharid General Store.\pHow may I help you?"))
+    waitmessage
+    call(GeneralStoreShopScript)
+    msgbox("Thank you, come again!")
+    release
+}
 
 
 ///STORE SCRIPTS

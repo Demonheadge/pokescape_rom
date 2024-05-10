@@ -108,6 +108,17 @@ GeneralStore_RIMMINGTON::
 	return
 
 
+GeneralStore_ALKHARID::
+	lock
+	faceplayer
+	msgbox GeneralStore_ALKHARID_Text_0
+	waitmessage
+	call GeneralStoreShopScript
+	msgbox GeneralStore_LUMBRIDGE_Text_1
+	release
+	return
+
+
 SHOP_RUNESTORE_VARROCK::
 	lock
 	faceplayer
@@ -437,6 +448,10 @@ GeneralStore_PORTSARIM_Text_0:
 GeneralStore_RIMMINGTON_Text_0:
 	.string "Welcome to the Rimmington General\n"
 	.string "Store.\p"
+	.string "How may I help you?$"
+
+GeneralStore_ALKHARID_Text_0:
+	.string "Welcome to the Al-Kharid General Store.\p"
 	.string "How may I help you?$"
 
 SHOP_RUNESTORE_VARROCK_Text_0:

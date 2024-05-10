@@ -276,3 +276,27 @@ script ALKHARID_INDOOR_NPC_3
     release
     end
 } 
+
+
+
+//General Store
+script NPC_ALKHARID_GENERALSTORE_1
+{
+    faceplayer
+    namebox ("Kathaar")
+    msgbox(format("Greetings effendi.\pRemember, if you venture into the desert often you will need waterskins to prevent dehydration for both you and your monsters."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script NPC_ALKHARID_GENERALSTORE_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("During sandstorms you may find stronger monsters in the desert.\pI'd suggest you be careful and run away if you see a Strykewyrm."))
+    closemessage
+    //hidenamebox
+    release
+    end
+}

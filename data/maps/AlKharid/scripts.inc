@@ -215,6 +215,24 @@ ALKHARID_INDOOR_NPC_3::
 	end
 
 
+NPC_ALKHARID_GENERALSTORE_1::
+	faceplayer
+	namebox NPC_ALKHARID_GENERALSTORE_1_Text_0
+	msgbox NPC_ALKHARID_GENERALSTORE_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_ALKHARID_GENERALSTORE_2::
+	faceplayer
+	msgbox NPC_ALKHARID_GENERALSTORE_2_Text_0
+	closemessage
+	release
+	end
+
+
 ALKHARID_GNOMEGLIDER_Text_0:
 	.string "It is a Gnome Glider.$"
 
@@ -331,3 +349,19 @@ SHANTYPASS_NPC_3_Text_0:
 
 ALKHARID_INDOOR_NPC_1_Text_0:
 	.string "Hello, I am a Cupholder.$"
+
+NPC_ALKHARID_GENERALSTORE_1_Text_0:
+	.string "Kathaar$"
+
+NPC_ALKHARID_GENERALSTORE_1_Text_1:
+	.string "Greetings effendi.\p"
+	.string "Remember, if you venture into the\n"
+	.string "desert often you will need waterskins\l"
+	.string "to prevent dehydration for both you\l"
+	.string "and your monsters.$"
+
+NPC_ALKHARID_GENERALSTORE_2_Text_0:
+	.string "During sandstorms you may find\n"
+	.string "stronger monsters in the desert.\p"
+	.string "I'd suggest you be careful and run away\n"
+	.string "if you see a Strykewyrm.$"
