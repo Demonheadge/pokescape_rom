@@ -216,7 +216,9 @@ VARROCKBANKWEST_NPC_NPC1_Text_0:
 VARROCKBANKWEST_NPC_NPC2_Text_0:
 	.string "I only made 1m profit today.\p"
 	.string "If this keeps up I might be poor in 5\n"
-	.string "years or so.$"
+	.string "years or so.\p"
+	.string "Or if the economy suddenly suffered\n"
+	.string "from inflation.$"
 
 VARROCKBANKWEST_NPC_NPC3_Text_0:
 	.string "Nice outfit Noob!\p"

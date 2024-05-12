@@ -444,10 +444,10 @@ MauvilleCity_GameCorner_EventScript_PokefanM::
 	end
 
 MauvilleCity_GameCorner_EventScript_TryGive20Coins::
-	goto_if_set FLAG_RECEIVED_20_COINS, MauvilleCity_GameCorner_EventScript_PokefanMNormal
+	
 	checkcoins VAR_TEMP_1
 	goto_if_ge VAR_TEMP_1, 1, MauvilleCity_GameCorner_EventScript_PokefanMNormal @ Only give 20 coins if player has no coins
-	setflag FLAG_RECEIVED_20_COINS
+	
 	addcoins 20
 	msgbox MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT
 	playse SE_SHOP

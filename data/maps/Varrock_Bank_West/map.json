@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MERCHER",
-      "x": 3,
+      "x": 2,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DIVINER",
-      "x": 4,
+      "x": 3,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PVMER",
-      "x": 14,
+      "x": 15,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -233,14 +233,14 @@
     },
     {
       "x": 16,
-      "y": 7,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_WEST_B1F",
       "dest_warp_id": "0"
     },
     {
       "x": 2,
-      "y": 7,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_BANK_WEST",
       "dest_warp_id": "0"
@@ -250,6 +250,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    }
   ]
 }

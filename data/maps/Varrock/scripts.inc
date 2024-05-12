@@ -42,6 +42,16 @@ VARROCK_Gypsy_Aris_SIGNPOST::
 	end
 
 
+VARROCK_GYPSY_ARIS::
+	faceplayer
+	namebox VARROCK_GYPSY_ARIS_Text_0
+	msgbox VARROCK_GYPSY_ARIS_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 VARROCK_SCAMMER::
 	faceplayer
 	namebox VARROCK_SCAMMER_Text_0
@@ -1097,6 +1107,11 @@ ITEM_VARROCK_CLOTHESSTORE::
 	end
 
 
+ITEM_NORTH_VARROCK_1::
+	finditem ITEM_EARTH_RUNE
+	end
+
+
 VARROCK_NPC_FROGEELBURGER::
 	faceplayer
 	msgbox VARROCK_NPC_FROGEELBURGER_Text_0
@@ -1151,6 +1166,18 @@ VARROCK_Gypsy_Aris_SIGNPOST_Text_0:
 	.string "I've moved to a small house in north\n"
 	.string "Varrock for the time being.\l"
 	.string "-Gypsy Aris.$"
+
+VARROCK_GYPSY_ARIS_Text_0:
+	.string "Gypsy Aris$"
+
+VARROCK_GYPSY_ARIS_Text_1:
+	.string "Hello, sorry my future-sight services\n"
+	.string "are not currently available.\p"
+	.string "As MvM challengers like yourself\n"
+	.string "destroyed my tent.\p"
+	.string "Thankfully Sir Prysin was kind enough\n"
+	.string "to allow me to stay in his home until my\l"
+	.string "tent is repaired.$"
 
 VARROCK_SCAMMER_Text_0:
 	.string "Suspicious Man$"

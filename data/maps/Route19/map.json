@@ -64,13 +64,13 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CHEF",
       "x": 15,
-      "y": 13,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE19_TRAINER1",
       "flag": "4"
     },
@@ -91,9 +91,9 @@
   "warp_events": [
     {
       "x": 2,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_EDGEVILLE_GYM",
+      "dest_map": "MAP_EDGEVILLE_ROUTE19_BRASS_HOUSE",
       "dest_warp_id": "0"
     },
     {
@@ -112,7 +112,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "TRIGGER_BRASS_KEY_DOOR"
+    }
   ],
   "bg_events": [
     {

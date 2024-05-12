@@ -279,7 +279,7 @@
 #define FLAG_WINGULL_SENT_ON_ERRAND          0xDE
 #define FLAG_RECEIVED_MENTAL_HERB            0xDF
 #define FLAG_WINGULL_DELIVERED_MAIL          0xE0
-#define FLAG_RECEIVED_20_COINS               0xE1
+#define FLAG_BRASS_KEY                       0xE1 //FLAG_RECEIVED_20_COINS
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
@@ -1291,8 +1291,8 @@
 #define FLAG_ITEM_MELZARS_3F_PRAYER_POTION                          0x4AC // Unused Flag
 #define FLAG_ITEM_ROUTE0_TINDERBOX                                           0x4AD // Unused Flag
 #define FLAG_ITEM_ROUTE0_SWEETS                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
+#define FLAG_ITEM_NORTH_VARROCK_1                                   0x4AF // Unused Flag //FLAG_UNUSED_0x4AF
+#define FLAG_ITEM_BRASS_HOUSE                                           0x4B0 // Unused Flag //FLAG_UNUSED_0x4B0 
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag

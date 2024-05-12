@@ -50,6 +50,19 @@ script VARROCK_Gypsy_Aris_SIGNPOST
 
 //NPCS
 
+script VARROCK_GYPSY_ARIS
+{
+    faceplayer
+    namebox ("Gypsy Aris")
+    msgbox(format("Hello, sorry my future-sight services are not currently available.\pAs MvM challengers like yourself destroyed my tent.\pThankfully Sir Prysin was kind enough to allow me to stay in his home until my tent is repaired."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
 
 //an NPC that offer to trim a monster, and after you accept and give them one they just disappear
 script VARROCK_SCAMMER
@@ -1239,6 +1252,12 @@ script ITEM_VARROCK_POTIONSTORE
 script ITEM_VARROCK_CLOTHESSTORE
 {
     finditem(ITEM_ELEMENTAL_POUCH)
+    end
+}
+
+script ITEM_NORTH_VARROCK_1
+{
+    finditem(ITEM_EARTH_RUNE)
     end
 }
 

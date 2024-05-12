@@ -1,40 +1,47 @@
 {
-  "id": "MAP_VARROCK_HOUSE_6",
-  "name": "Varrock_House_6",
-  "layout": "LAYOUT_VARROCK_HOUSE_6",
-  "music": "MUS_PS_VARROCK",
-  "region_map_section": "MAPSEC_VARROCK",
+  "id": "MAP_EDGEVILLE_ROUTE19_BRASS_HOUSE",
+  "name": "Edgeville_Route19_Brass_House",
+  "layout": "LAYOUT_EDGEVILLE_ROUTE19_BRASS_HOUSE",
+  "music": "MUS_PS_CAVE_F2P",
+  "region_map_section": "MAPSEC_ROUTE_19",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAGGIE",
-      "x": 3,
-      "y": 3,
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 5,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VARROCK_GYPSY_ARIS",
-      "flag": "0"
+      "script": "ITEM_BRASS_HOUSE",
+      "flag": "FLAG_ITEM_BRASS_HOUSE"
     }
   ],
   "warp_events": [
     {
       "x": 3,
-      "y": 6,
+      "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_ROUTE19",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EDGEVILLE_GYM",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -370,10 +370,45 @@ script EDGEVILLE_GYM_GIVE_SLAYER_POINTS {
 	return
 }
 
+script NPC_EDGEVILLE_GYM_LADDER {
+	msgbox(format("The ladder appears to be broken."))
+	closemessage
+	end
+}
+
+script ITEM_BRASS_HOUSE
+{
+    finditem(ITEM_EFFIGY) //Make this a TM?
+    end
+}
+
+script TRIGGER_BRASS_KEY_DOOR {
+	lock
+    if (flag(FLAG_BRASS_KEY) == FALSE) {
+		msgbox(format("The door is locked with what looks like a brass padlock."))
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_DOWN)
+		waitmovement(0)
+		release
+		end
+	}
+	setvar(VAR_TEMP_1, 1)
+	release
+	end
+}
 
 
-
-
+script FIND_BRASS_KEY {
+	lock
+	setflag(FLAG_BRASS_KEY)
+	removeobject(VAR_LAST_TALKED)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained the BRASS KEY."))
+	waitfanfare
+	closemessage
+	release
+	end
+}
 
 
 

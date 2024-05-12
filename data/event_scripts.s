@@ -1879,3 +1879,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route62/scripts.inc"
 
 	.include "data/maps/Route63/scripts.inc"
+
+	.include "data/maps/Edgeville_Route19_Brass_House/scripts.inc"

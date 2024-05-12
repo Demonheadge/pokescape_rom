@@ -8550,6 +8550,16 @@
       "secondary_tileset": "gTileset_Rellekka",
       "border_filepath": "data/layouts/Route63/border.bin",
       "blockdata_filepath": "data/layouts/Route63/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE_ROUTE19_BRASS_HOUSE",
+      "name": "Edgeville_Route19_Brass_House_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Edgeville_Route19_Brass_House/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville_Route19_Brass_House/map.bin"
     }
   ]
 }

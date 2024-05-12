@@ -4,6 +4,35 @@ mapscripts GrandExchange_MapScripts {
     }
 }
 
+script TRIGGER_GE_GUARD_BLOCK {
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_UP)
+    waitmovement(0)
+    namebox("Guard")
+    msgbox(format("Hello adventurer.\pI have a message for you from the POKESCAPERS."))
+    closemessage
+    hidenamebox
+    msgbox(format("The Grand Exchange is currently a Work in progress.\pThe plan is to have to make use of multiplayer features.\pUse it at your own risk."))
+    closemessage
+    hidenamebox
+    setvar(VAR_TEMP_0, 1)
+    release
+    end
+}
+script TRIGGER_GE_GUARD_BLOCK_2 {
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_FACE_RIGHT)
+    waitmovement(0)
+    namebox("Guard")
+    msgbox(format("Hello adventurer.\pI have a message for you from the POKESCAPERS."))
+    closemessage
+    hidenamebox
+    msgbox(format("The Grand Exchange is currently a Work in progress.\pThe plan is to have to make use of multiplayer features.\pUse it at your own risk."))
+    closemessage
+    hidenamebox
+    setvar(VAR_TEMP_0, 1)
+    release
+    end
+}
+
 script GE_GUARD_BLOCK
 {
     lock
@@ -61,6 +90,40 @@ script GE_WONDER_TRADE
     faceplayer
     namebox ("Clerk")
     msgbox(format("Welcome to the Wonder Trade desk!\pHere you can trade monsters with random strangers.\pWe are still setting up, please come back later."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script NPC_GE_SPIRITTREE
+{
+    faceplayer
+    namebox ("Spirit Tree")
+    msgbox(format("The… Forest…\lwas… destroyed…\lfor… this…\pHelp… me…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_GE_NPC1
+{
+    faceplayer
+    namebox ("Clerk")
+    msgbox(format("Just ahead is the Grand Exchange!\pIt was recently built so the services they offer still aren't up and running yet."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_GE_NPC2
+{
+    faceplayer
+    namebox ("Merchant")
+    msgbox(format("All the construction works are on a tea break.\pI wish they'd hurry up and finish work on the GE.\pI want to do some more merching."))
     closemessage
     hidenamebox
     release
