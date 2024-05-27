@@ -97,10 +97,24 @@ BATTLE_LumbridgeSwamp_TRAINER_4::
 	end
 
 
+BATTLE_LumbridgeSwamp_TRAINER_5::
+	trainerbattle_single TRAINER_LUM_SWAMP_TRAINER_5, BATTLE_LumbridgeSwamp_TRAINER_5_Text_0, BATTLE_LumbridgeSwamp_TRAINER_5_Text_1
+	namebox BATTLE_LumbridgeSwamp_TRAINER_5_Text_2
+	msgbox BATTLE_LumbridgeSwamp_TRAINER_5_Text_3
+	hidenamebox
+	closemessage
+	end
+
+
 LumSwampSign::
 	msgbox LumSwampSign_Text_0, MSGBOX_SIGN
-	release
-	return
+	closemessage
+	end
+
+
+ITEM_LUMBRIDGESWAMP_ITEM_2::
+	finditem ITEM_MITHRIL_POUCH
+	end
 
 
 LUMBRIDGESWAMP_CANDLESELLER::
@@ -253,6 +267,22 @@ BATTLE_LumbridgeSwamp_TRAINER_4_Text_1:
 
 BATTLE_LumbridgeSwamp_TRAINER_4_Text_2:
 	.string "Grassteeth$"
+
+BATTLE_LumbridgeSwamp_TRAINER_5_Text_0:
+	.string "My pickaxe head just flew right off!\p"
+	.string "Woah, you think you can just take it?\p"
+	.string "Yeah I don't think so buddy.$"
+
+BATTLE_LumbridgeSwamp_TRAINER_5_Text_1:
+	.string "Take this reward money in exchange for\n"
+	.string "my pickaxe head back.$"
+
+BATTLE_LumbridgeSwamp_TRAINER_5_Text_2:
+	.string "Miner$"
+
+BATTLE_LumbridgeSwamp_TRAINER_5_Text_3:
+	.string "I guess I need to visit Bob's Axes to\n"
+	.string "get my pickaxe fixed now.$"
 
 LumSwampSign_Text_0:
 	.string "WARNING: Goblins below!$"

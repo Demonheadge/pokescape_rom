@@ -1230,7 +1230,6 @@
 #define FLAG_ITEM_LUMBRIDGE_FOREST_3                                           0x472 // Unused Flag
 #define FLAG_ITEM_EDGEVILLE_1                              0x473
 #define FLAG_CHEAT_ITEM_PULSE_CORE                                  0x474
-
 #define FLAG_ITEM_KOUREND_CATACOMBS_1                                  0x475
 #define FLAG_ITEM_KOUREND_CATACOMBS_2                                  0x476
 #define FLAG_ITEM_KOUREND_CATACOMBS_3                            0x477
@@ -1293,7 +1292,7 @@
 #define FLAG_ITEM_ROUTE0_SWEETS                                           0x4AE // Unused Flag
 #define FLAG_ITEM_NORTH_VARROCK_1                                   0x4AF // Unused Flag //FLAG_UNUSED_0x4AF
 #define FLAG_ITEM_BRASS_HOUSE                                           0x4B0 // Unused Flag //FLAG_UNUSED_0x4B0 
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
+#define FLAG_ITEM_LUMBRIDGESWAMP_ITEM_2                                  0x4B1 // Unused Flag //FLAG_UNUSED_0x4B1
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag

@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Added
 
+- Added Trainers & items to Lumbridge Forest & Swamps. Also Reworking the maps.
+
 - Updated various sprites throughout the game.
 
 - Followers! Now you can explore Gielinor with your favourite monsters alongside you in the overworld.

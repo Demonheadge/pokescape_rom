@@ -5475,5 +5475,19 @@ const struct Trainer gTrainers[] =
         .partySize = ARRAY_COUNT(sParty_ROUTE0_TRAINER_5),
         .party = {.NoItemDefaultMoves = sParty_ROUTE0_TRAINER_5},
     },
+    
+    [TRAINER_LUM_SWAMP_TRAINER_5] =
+	{
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUM_SWAMP_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_LUM_SWAMP_TRAINER_5},
+    },
 
 };

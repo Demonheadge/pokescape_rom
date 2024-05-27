@@ -6430,6 +6430,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE0_TRAINER_5[] = {
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_LUM_SWAMP_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 7,
+    .species = SPECIES_SPOOKAXE,
+    }
+};
+
 
 
 

@@ -490,6 +490,8 @@
 #define TRAINER_ROUTE0_TRAINER_4 398
 #define TRAINER_ROUTE0_TRAINER_5 399
 
+#define TRAINER_LUM_SWAMP_TRAINER_5 400
+
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows

@@ -78,14 +78,28 @@ NPC_LUMBRIDGE_FOREST_3::
 
 NPC_LUMBRIDGE_FOREST_4::
 	lock
-	faceplayer
 	namebox NPC_LUMBRIDGE_FOREST_4_Text_0
 	msgbox NPC_LUMBRIDGE_FOREST_4_Text_1
+	closemessage
+	hidenamebox
+	playse SE_LEDGE
+	applymovement 13, MOVEMENT_SHOCKED_FACEPLAYER
+	waitmovement 0
+	namebox NPC_LUMBRIDGE_FOREST_4_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_4_Text_2
 	closemessage
 	hidenamebox
 	release
 	end
 
+
+MOVEMENT_SHOCKED_FACEPLAYER:
+	emote_exclamation_mark
+	face_player
+	lock_facing_direction
+	jump_in_place_down
+	unlock_facing_direction
+	step_end
 
 NPC_LUMBRIDGE_FOREST_5::
 	lock
@@ -101,8 +115,8 @@ NPC_LUMBRIDGE_FOREST_5::
 NPC_LUMBRIDGE_FOREST_6::
 	lock
 	faceplayer
-	namebox NPC_LUMBRIDGE_FOREST_5_Text_0
-	msgbox NPC_LUMBRIDGE_FOREST_5_Text_1
+	namebox NPC_LUMBRIDGE_FOREST_6_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_6_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -193,8 +207,9 @@ NPC_LUMBRIDGE_FOREST_1_Text_0:
 	.string "Monk$"
 
 NPC_LUMBRIDGE_FOREST_1_Text_1:
-	.string "Why are all of standing around here?\p"
-	.string "None of your business. Get lost.$"
+	.string "Why are all of us standing around here?\p"
+	.string "None of your business.\p"
+	.string "Get lost.$"
 
 NPC_LUMBRIDGE_FOREST_2_Text_0:
 	.string "Warrior$"
@@ -221,17 +236,27 @@ NPC_LUMBRIDGE_FOREST_4_Text_0:
 	.string "Archer$"
 
 NPC_LUMBRIDGE_FOREST_4_Text_1:
-	.string "Rats, I dropped my last sweet looking\n"
-	.string "for that stupid lepre-\p"
-	.string "Hey! Forget anything you might have\n"
-	.string "heard us say when we didn't realise you\l"
-	.string "were there!$"
+	.string "Rats!\p"
+	.string "I dropped my last sweet looking for\n"
+	.string "that stupid lepre-$"
+
+NPC_LUMBRIDGE_FOREST_4_Text_2:
+	.string "Forget anything you might have heard!\p"
+	.string "Now go away this is our quest!$"
 
 NPC_LUMBRIDGE_FOREST_5_Text_0:
 	.string "Cupholder$"
 
 NPC_LUMBRIDGE_FOREST_5_Text_1:
 	.string "Hello, I am a Cupholder.$"
+
+NPC_LUMBRIDGE_FOREST_6_Text_0:
+	.string "Woodcutter$"
+
+NPC_LUMBRIDGE_FOREST_6_Text_1:
+	.string "I can see Lumbridge on the other side.\p"
+	.string "If only I had the Woodcutting level to\n"
+	.string "get past these trees…$"
 
 BATTLE_LUMBRIDGEFOREST_BOT1_Text_0:
 	.string "ALERT!\p"

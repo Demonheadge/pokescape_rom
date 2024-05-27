@@ -60,7 +60,7 @@ script NPC_LUMBRIDGE_FOREST_1
 	lock
 	faceplayer
     namebox ("Monk")
-	msgbox(format("Why are all of standing around here?\pNone of your business. Get lost."))
+	msgbox(format("Why are all of us standing around here?\pNone of your business.\pGet lost."))
     closemessage
     hidenamebox
 	release
@@ -91,14 +91,29 @@ script NPC_LUMBRIDGE_FOREST_3
 script NPC_LUMBRIDGE_FOREST_4
 {
 	lock
-	faceplayer
     namebox ("Archer")
-	msgbox(format("Rats, I dropped my last sweet looking for that stupid lepre-\pHey! Forget anything you might have heard us say when we didn't realise you were there!"))
+	msgbox(format("Rats!\pI dropped my last sweet looking for that stupid lepre-"))
+    closemessage
+    hidenamebox
+    playse(SE_LEDGE)
+    applymovement(13, MOVEMENT_SHOCKED_FACEPLAYER)
+    waitmovement(0)
+    namebox ("Archer")
+    msgbox(format("Forget anything you might have heard!\pNow go away this is our quest!"))
     closemessage
     hidenamebox
 	release
 	end
 }
+movement MOVEMENT_SHOCKED_FACEPLAYER {
+    emote_exclamation_mark
+    face_player
+    lock_facing_direction
+    jump_in_place_down
+    unlock_facing_direction
+}
+
+
 script NPC_LUMBRIDGE_FOREST_5
 {
 	lock
@@ -111,14 +126,12 @@ script NPC_LUMBRIDGE_FOREST_5
 	end
 }
 
-//Does anyone in Lumbridge Forest actually use this code? I can't see anyone on the map with it.
-
 script NPC_LUMBRIDGE_FOREST_6
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    namebox ("Woodcutter")
+	msgbox(format("I can see Lumbridge on the other side.\pIf only I had the Woodcutting level to get past these trees…"))
     closemessage
     hidenamebox
 	release
