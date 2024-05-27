@@ -313,7 +313,7 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_28
 	closemessage
 	hidenamebox
-	applymovement 39, MOVEMENT_INTERACT_UP
+	applymovement 51, MOVEMENT_INTERACT_UP
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_29
 	closemessage

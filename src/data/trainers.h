@@ -5490,4 +5490,18 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_LUM_SWAMP_TRAINER_5},
     },
 
+    [TRAINER_FALADOR_GYM_6] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("SIR ???"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_6),
+        .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_6},
+    },
+
 };

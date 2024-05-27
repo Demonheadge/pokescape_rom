@@ -862,7 +862,10 @@
     "Falador_Castle_2F",
     "Falador_Castle_3F",
     "Falador_Mace_Store",
-    "Falador_PartyRoom"
+    "Falador_PartyRoom",
+    "Falador_Castle_1F_R2",
+    "Falador_Castle_1F_R3",
+    "Falador_Castle_3F_R2"
   ],
   "gMapGroup_PokescapeIndoorVarrock": [
     "Varrock_Thessalia_Shop",

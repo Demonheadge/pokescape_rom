@@ -1881,3 +1881,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route63/scripts.inc"
 
 	.include "data/maps/Edgeville_Route19_Brass_House/scripts.inc"
+
+	.include "data/maps/Falador_Castle_1F_R2/scripts.inc"
+
+	.include "data/maps/Falador_Castle_1F_R3/scripts.inc"
+
+	.include "data/maps/Falador_Castle_3F_R2/scripts.inc"

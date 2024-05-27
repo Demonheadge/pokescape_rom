@@ -203,6 +203,28 @@ NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_7:
 	goto NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_1
 
 
+NPC_FALADORCASTLE_KNIGHT_CHAT_2::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_0
+	msgbox NPC_FALADORCASTLE_KNIGHT_CHAT_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_KNIGHT_CHAT_3::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_0
+	msgbox NPC_FALADORCASTLE_KNIGHT_CHAT_3_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 NPC_FALADORCASTLE_QUEST_PART_4_1::
 	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_6
 	waitmovement 0
@@ -259,6 +281,16 @@ NPC_FALADORCASTLE_QUEST_PART_4::
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_3
 	setvar VAR_POKESCAPE_FALADOR_STATE, 4
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIREQUEST1
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_8
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_9
+	closemessage
+	hidenamebox
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIREQUEST2
+	waitmovement 0
+	setvar VAR_POKESCAPE_FALADOR_GYM_QUEST, 5
+	playbgm MUS_PS_GYM, 0
 	release
 	end
 
@@ -293,6 +325,19 @@ FALADORCASTLE_MOVEMENT_10:
 
 FALADORCASTLE_MOVEMENT_12:
 	face_down
+	step_end
+
+FALADORCASTLE_MOVEMENT_SQUIREQUEST1:
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+FALADORCASTLE_MOVEMENT_SQUIREQUEST2:
+	walk_down
+	walk_right
+	walk_right
+	face_left
 	step_end
 
 NPC_FALADORCASTLE_GYM_SIRTHEO::
@@ -396,6 +441,7 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_4:
 	setflag FLAG_BADGE02_GET
 	addvar VAR_GAMEMODE_LEVEL_SCALING, 1
 	call SetGymTrainers_FALADOR
+	setvar VAR_POKESCAPE_FALADOR_GYM_QUEST, 10
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_8
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_7:
@@ -633,8 +679,152 @@ NPC_FALADORCASTLE_WHITEKNIGHT_7::
 
 NPC_FALADORCASTLE_WHITEKNIGHT_8::
 	lock
+	faceplayer
 	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
 	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_8_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9::
+	trainerbattle_single TRAINER_FALADOR_GYM_6, NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_0, NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_1
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_2
+	goto_if_unset FLAG_BADGE02_GET, NPC_FALADORCASTLE_WHITEKNIGHT_9_2
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_4
+NPC_FALADORCASTLE_WHITEKNIGHT_9_1:
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_2:
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_3
+	goto NPC_FALADORCASTLE_WHITEKNIGHT_9_1
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_10::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_10_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_11::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_11_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_12::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_13::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, NPC_FALADORCASTLE_WHITEKNIGHT_13_2
+	case 5, NPC_FALADORCASTLE_WHITEKNIGHT_13_3
+	return
+
+NPC_FALADORCASTLE_WHITEKNIGHT_13_2:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_13_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_FALADORCASTLE_WHITEKNIGHT_13_3:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_13_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_14::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_14_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_GUARD_3::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GUARD_3_Text_0
+	msgbox NPC_FALADORCASTLE_GUARD_3_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+BOOK_FALADORCASTLE_GUARD_INFO::
+	lock
+	msgbox BOOK_FALADORCASTLE_GUARD_INFO_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+SIGN_BLURITE_CUPBOARD::
+	lock
+	msgbox SIGN_BLURITE_CUPBOARD_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+BOOK_FALADORCASTLE_SIRVYVIN::
+	lock
+	msgbox BOOK_FALADORCASTLE_SIRVYVIN_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+BOOK_CRANDOR::
+	lock
+	msgbox BOOK_CRANDOR_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_COOK::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_COOK_Text_0
+	msgbox NPC_FALADORCASTLE_COOK_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -666,13 +856,92 @@ NPC_ROUTE24_DORIC::
 NPC_FALADORCASTLE_SQUIRE::
 	lock
 	faceplayer
-	namebox NPC_FALADORCASTLE_SQUIRE_Text_0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_8
+	compare VAR_POKESCAPE_FALADOR_GYM_QUEST, 10
+	goto_if_le NPC_FALADORCASTLE_SQUIRE_2
 	msgbox NPC_FALADORCASTLE_SQUIRE_Text_1
+NPC_FALADORCASTLE_SQUIRE_1:
 	closemessage
 	hidenamebox
 	release
 	end
 
+NPC_FALADORCASTLE_SQUIRE_2:
+	msgbox NPC_FALADORCASTLE_SQUIRE_Text_0
+	goto NPC_FALADORCASTLE_SQUIRE_1
+
+
+FALADOR_GYM_1::
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 10
+	goto_if_eq FALADOR_GYM_1_2
+	compare VAR_TEMP_1, 11
+	goto_if_eq FALADOR_GYM_1_3
+	compare VAR_TEMP_1, 12
+	goto_if_eq FALADOR_GYM_1_4
+FALADOR_GYM_1_1:
+	waitmovement 0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_8
+	msgbox FALADOR_GYM_1_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq FALADOR_GYM_1_9
+	msgbox NPC_FALADORCASTLE_SQUIRE_Text_0
+	closemessage
+	hidenamebox
+	setvar VAR_POKESCAPE_FALADOR_GYM_QUEST, 5
+	return
+
+FALADOR_GYM_1_2:
+	goto FALADOR_GYM_1_1
+
+FALADOR_GYM_1_3:
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIRE_2
+	goto FALADOR_GYM_1_1
+
+FALADOR_GYM_1_4:
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIRE_3
+	goto FALADOR_GYM_1_1
+
+FALADOR_GYM_1_9:
+	msgbox FALADOR_GYM_1_Text_1
+	closemessage
+	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_UP
+	waitmovement 0
+	compare VAR_TEMP_1, 11
+	goto_if_eq FALADOR_GYM_1_12
+	compare VAR_TEMP_1, 12
+	goto_if_eq FALADOR_GYM_1_13
+FALADOR_GYM_1_11:
+	waitmovement 0
+	return
+
+FALADOR_GYM_1_12:
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIRE_2r
+	goto FALADOR_GYM_1_11
+
+FALADOR_GYM_1_13:
+	applymovement 5, FALADORCASTLE_MOVEMENT_SQUIRE_3r
+	goto FALADOR_GYM_1_11
+
+
+FALADORCASTLE_MOVEMENT_SQUIRE_2:
+	walk_left
+	step_end
+
+FALADORCASTLE_MOVEMENT_SQUIRE_3:
+	walk_left
+	walk_left
+	step_end
+
+FALADORCASTLE_MOVEMENT_SQUIRE_2r:
+	walk_right
+	step_end
+
+FALADORCASTLE_MOVEMENT_SQUIRE_3r:
+	walk_right
+	walk_right
+	step_end
 
 NPC_FALADORCASTLE_KNIGHT_9::
 	lock
@@ -704,6 +973,11 @@ NPC_FALADORCASTLE_QUESTER::
 	closemessage
 	hidenamebox
 	release
+	end
+
+
+ITEM_FALADOR_CASTLE_1::
+	finditem ITEM_FIRE_RUNE
 	end
 
 
@@ -750,6 +1024,17 @@ NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_2:
 	.string "town, past the Party Room.\p"
 	.string "We don't want you getting in danger.$"
 
+NPC_FALADORCASTLE_KNIGHT_CHAT_2_Text_0:
+	.string "Are you an MvM challenger?\p"
+	.string "Our castle was designed to confuse\n"
+	.string "intruders and we decided to use that\l"
+	.string "for our gym challenge too.$"
+
+NPC_FALADORCASTLE_KNIGHT_CHAT_3_Text_0:
+	.string "Up or Down, Left or Right.\p"
+	.string "Our Castle will confuse even the most\n"
+	.string "smartest Black Knights.$"
+
 NPC_FALADORCASTLE_QUEST_PART_4_Text_0:
 	.string "Sir Amik Varze$"
 
@@ -774,8 +1059,8 @@ NPC_FALADORCASTLE_QUEST_PART_4_Text_4:
 	.string "I know you've already proved yourself\n"
 	.string "within the mines but one more challenge\l"
 	.string "lays before you.\p"
-	.string "Make it to the top of the castle, I shall\n"
-	.string "be waiting.\p"
+	.string "Find me within the castle, I shall be\n"
+	.string "waiting.\p"
 	.string "Good luck!$"
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_5:
@@ -787,6 +1072,23 @@ NPC_FALADORCASTLE_QUEST_PART_4_Text_6:
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_7:
 	.string "Thank you and I will see you soon!$"
+
+NPC_FALADORCASTLE_QUEST_PART_4_Text_8:
+	.string "Squire$"
+
+NPC_FALADORCASTLE_QUEST_PART_4_Text_9:
+	.string "I couldn't help but over hear that you\n"
+	.string "are here for the Gym Challenge.\p"
+	.string "I have some information that might be\n"
+	.string "useful to you.\p"
+	.string "For this gym challenge you must\n"
+	.string "navigate your way through Falador\l"
+	.string "Castle and locate Sir Amik Varze.\p"
+	.string "It sounds simple right?\p"
+	.string "Well it is very easy to get lost, so be\n"
+	.string "sure to ask some of the White Knights\l"
+	.string "for directions.\p"
+	.string "Good luck challenger!$"
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_Text_0:
 	.string "This is Falador Castle, and we are the\n"
@@ -1040,8 +1342,128 @@ NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_1:
 	.string "Knight wrong on purpose, as a joke.$"
 
 NPC_FALADORCASTLE_WHITEKNIGHT_8_Text_0:
-	.string "Want to come with me to the Rising Sun\n"
-	.string "Inn after work?$"
+	.string "I need a friend, want to come with me to\n"
+	.string "the Rising Sun Inn after work?$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_0:
+	.string "Looks like someone is a little lost,\n"
+	.string "don't worry though I'll put you to rest.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_1:
+	.string "Wow, I got wiped!\p"
+	.string "At least I will respawn here.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_2:
+	.string "Sir ???$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_3:
+	.string "If you are tired of searching for Sir\n"
+	.string "Amik Varze, might I suggest taking a\l"
+	.string "rest?$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_4:
+	.string "This is where us White Knights sleep.\p"
+	.string "We spend many hours chatting about our\n"
+	.string "knight names wondering who actually\l"
+	.string "comes up with them.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_10_Text_0:
+	.string "This is our living quaters.\p"
+	.string "I should probably but a barrier up to\n"
+	.string "stop MvM challengers from coming in.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_11_Text_0:
+	.string "THANK YOU!\p"
+	.string "The other White Knights told me to go\n"
+	.string "hide somewhere in the castle where no\l"
+	.string "one would look.\p"
+	.string "We made a bet that if I was found then\n"
+	.string "drinks would be on them!\p"
+	.string "I cannot wait to tell them someone\n"
+	.string "found me!\p"
+	.string "…\p"
+	.string "… But…\p"
+	.string "How do I give them proof that you found\n"
+	.string "me?\p"
+	.string "…\p"
+	.string "…\p"
+	.string "Wait did they just want to get rid of\n"
+	.string "me?!$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_12_Text_0:
+	.string "Hello, this is where you can enlist as a\n"
+	.string "guard of Falador.\p"
+	.string "Oh?\n"
+	.string "Not interested?\p"
+	.string "Well come back anytime, we always have\n"
+	.string "openings!$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_13_Text_0:
+	.string "You would think Sir Amik Varze would be\n"
+	.string "here in the throne room wouldn't you?\p"
+	.string "Well sorry to burst your bubble, but he\n"
+	.string "isn't here.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_13_Text_1:
+	.string "King Vallance?\p"
+	.string "Yeh, he is still alive and kicking.\p"
+	.string "We try our best to keep the bucket away\n"
+	.string "from him.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_14_Text_0:
+	.string "Well this is just one big mess.\p"
+	.string "Where am I meant to take these\n"
+	.string "cabbages?\p"
+	.string "Urgh, I'm so lost man.$"
+
+NPC_FALADORCASTLE_GUARD_3_Text_0:
+	.string "Falador Guard$"
+
+NPC_FALADORCASTLE_GUARD_3_Text_1:
+	.string "I just signed up and was assigned my\n"
+	.string "first shift at the north gate!\p"
+	.string "I cannot wait to tell my wife and kids\n"
+	.string "the good news!$"
+
+BOOK_FALADORCASTLE_GUARD_INFO_Text_0:
+	.string "It is a book containing a list of all of\n"
+	.string "the recently enlisted Guards.\p"
+	.string "Page.9420\p"
+	.string "Paul Gower, Age: 32 Seconds.\l"
+	.string "Andrew Gower, Age: 54 Seconds.\l"
+	.string "Ian Gower, Age: 15 Seconds.\p"
+	.string "Wait, are these how many seconds they\n"
+	.string "lasted as a guard?$"
+
+SIGN_BLURITE_CUPBOARD_Text_0:
+	.string "It looks like there was once a picture\n"
+	.string "in the cupboard but someone must of\l"
+	.string "taken it.$"
+
+BOOK_FALADORCASTLE_SIRVYVIN_Text_0:
+	.string "To my fellow knights, there have been\n"
+	.string "rumours of sightings of the Kinshra\l"
+	.string "around Ice Mountain.\p"
+	.string "I will return once my mission is\n"
+	.string "complete.\l"
+	.string "--Sir Vyvin.\p"
+	.string "P.S. Someone tell my squire that he\n"
+	.string "doesn't need to keep greeting\l"
+	.string "everyone who enters the castle.$"
+
+BOOK_CRANDOR_Text_0:
+	.string "It's a book about the Isle of Crandor.\p"
+	.string "Read it?$"
+
+NPC_FALADORCASTLE_COOK_Text_0:
+	.string "Cook$"
+
+NPC_FALADORCASTLE_COOK_Text_1:
+	.string "Never try cooking with Runes!\p"
+	.string "I tried it once and the food come to\n"
+	.string "life!\p"
+	.string "What did I cook?\p"
+	.string "Uh, I think it was some Anchovies.$"
 
 NPC_ROUTE23_DWARF_ROCKS_Text_0:
 	.string "DWARF$"
@@ -1069,11 +1491,27 @@ NPC_ROUTE24_DORIC_Text_1:
 	.string "I will reward you of course!$"
 
 NPC_FALADORCASTLE_SQUIRE_Text_0:
-	.string "Squire$"
+	.string "For this gym challenge you must\n"
+	.string "navigate your way through Falador\l"
+	.string "Castle and locate Sir Amik Varze.\p"
+	.string "It sounds simple right?\p"
+	.string "Well what are you waiting for, good luck\n"
+	.string "challenger!$"
 
 NPC_FALADORCASTLE_SQUIRE_Text_1:
 	.string "Sorry I cannot chat.\p"
-	.string "I have to go polish Sir Vyvin's sword.$"
+	.string "I have to go find Sir Vyvin's sword.$"
+
+FALADOR_GYM_1_Text_0:
+	.string "Greetings, are you here for an MvM\n"
+	.string "Championship challenge?$"
+
+FALADOR_GYM_1_Text_1:
+	.string "Sorry, but if you are not here for a Gym\n"
+	.string "Challenge then you must leave.\p"
+	.string "Sir Vyvin said no one may enter unless\n"
+	.string "they are on offical White Knights\l"
+	.string "business or a Gym Challenger.$"
 
 NPC_FALADORCASTLE_KNIGHT_9_Text_0:
 	.string "This is the interrogation chamber.\p"

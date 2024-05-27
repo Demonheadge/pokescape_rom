@@ -209,7 +209,29 @@ script NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT
     end	
 }
 
+script NPC_FALADORCASTLE_KNIGHT_CHAT_2
+{
+    lock
+    faceplayer
+    namebox ("WHITE KNIGHT")
+    msgbox(format("Are you an MvM challenger?\pOur castle was designed to confuse intruders and we decided to use that for our gym challenge too."))
+    closemessage
+    hidenamebox
+    release
+    end	
+}
 
+script NPC_FALADORCASTLE_KNIGHT_CHAT_3
+{
+    lock
+    faceplayer
+    namebox ("WHITE KNIGHT")
+    msgbox(format("Up or Down, Left or Right.\pOur Castle will confuse even the most smartest Black Knights."))
+    closemessage
+    hidenamebox
+    release
+    end	
+}
 
 
 
@@ -241,7 +263,7 @@ script NPC_FALADORCASTLE_QUEST_PART_4
     closemessage
     hidenamebox
     namebox ("Sir Amik Varze")
-	msgbox(format("I am grateful for your assistance within the mines.\pHave you considered joining the white knights?\pAh but I am getting ahead of myself, you mentioned you wished to challenge me to a battle.\pI know you've already proved yourself within the mines but one more challenge lays before you.\pMake it to the top of the castle, I shall be waiting.\pGood luck!"))
+	msgbox(format("I am grateful for your assistance within the mines.\pHave you considered joining the white knights?\pAh but I am getting ahead of myself, you mentioned you wished to challenge me to a battle.\pI know you've already proved yourself within the mines but one more challenge lays before you.\pFind me within the castle, I shall be waiting.\pGood luck!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_AMIK, FALADORCASTLE_MOVEMENT_10) // WALK AWAY
@@ -270,6 +292,17 @@ script NPC_FALADORCASTLE_QUEST_PART_4
     setflag(FLAG_TEMP_2)
     setflag(FLAG_TEMP_3)
     setvar(VAR_POKESCAPE_FALADOR_STATE, 4)
+
+    applymovement(5, FALADORCASTLE_MOVEMENT_SQUIREQUEST1) //Squire
+    waitmovement(0)
+    namebox ("Squire")
+    msgbox(format("I couldn't help but over hear that you are here for the Gym Challenge.\pI have some information that might be useful to you.\pFor this gym challenge you must navigate your way through Falador Castle and locate Sir Amik Varze.\pIt sounds simple right?\pWell it is very easy to get lost, so be sure to ask some of the White Knights for directions.\pGood luck challenger!"))
+    closemessage
+    hidenamebox
+    applymovement(5, FALADORCASTLE_MOVEMENT_SQUIREQUEST2) //Squire
+    waitmovement(0)
+    setvar(VAR_POKESCAPE_FALADOR_GYM_QUEST, 5) //START FALADOR GYM CHALLENGE
+    playbgm(MUS_PS_GYM, 0)
 	release
 	end
 }
@@ -292,7 +325,15 @@ movement FALADORCASTLE_MOVEMENT_10{
 movement FALADORCASTLE_MOVEMENT_12{
     face_down
 }
-
+movement FALADORCASTLE_MOVEMENT_SQUIREQUEST1{
+    walk_left * 2
+    walk_up
+}
+movement FALADORCASTLE_MOVEMENT_SQUIREQUEST2{
+    walk_down
+    walk_right * 2
+    face_left
+}
 
 //GYM BATLLES
 //Sir Theodore
@@ -397,6 +438,7 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         setflag(FLAG_BADGE02_GET)
         addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
         call(SetGymTrainers_FALADOR)
+        setvar(VAR_POKESCAPE_FALADOR_GYM_QUEST, 10) //END FALADOR GYM CHALLENGE
         if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
     	{
             goto(QUEST_FALADORCASTLE_GYM_SIRTHEO)
@@ -644,8 +686,49 @@ script NPC_FALADORCASTLE_WHITEKNIGHT_7
 script NPC_FALADORCASTLE_WHITEKNIGHT_8
 {
 	lock
+    faceplayer
     namebox("White Knight")
-	msgbox(format("Want to come with me to the Rising Sun Inn after work?"))
+	msgbox(format("I need a friend, want to come with me to the Rising Sun Inn after work?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_9
+{
+    trainerbattle_single(TRAINER_FALADOR_GYM_6, format("Looks like someone is a little lost, don't worry though I'll put you to rest."),format("Wow, I got wiped!\pAt least I will respawn here.") )
+    namebox("Sir ???")
+    if (!flag(FLAG_BADGE02_GET)) {
+    msgbox(format("If you are tired of searching for Sir Amik Varze, might I suggest taking a rest?"))
+    }
+    else {
+        msgbox(format("This is where us White Knights sleep.\pWe spend many hours chatting about our knight names wondering who actually comes up with them."))
+    }
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_10
+{
+	lock
+    faceplayer
+    namebox("White Knight")
+	msgbox(format("This is our living quaters.\pI should probably but a barrier up to stop MvM challengers from coming in."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_11
+{
+	lock
+    faceplayer
+    namebox("White Knight")
+	msgbox(format("THANK YOU!\pThe other White Knights told me to go hide somewhere in the castle where no one would look.\pWe made a bet that if I was found then drinks would be on them!\pI cannot wait to tell them someone found me!\p…\p… But…\pHow do I give them proof that you found me?\p…\p…\pWait did they just want to get rid of me?!"))
     closemessage
     hidenamebox
 	release
@@ -653,8 +736,117 @@ script NPC_FALADORCASTLE_WHITEKNIGHT_8
 }
 
 
+script NPC_FALADORCASTLE_WHITEKNIGHT_12
+{
+	lock
+    faceplayer
+    namebox("White Knight")
+	msgbox(format("Hello, this is where you can enlist as a guard of Falador.\pOh?\nNot interested?\pWell come back anytime, we always have openings!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
+script NPC_FALADORCASTLE_WHITEKNIGHT_13
+{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			//namebox("Sir Loin")
+			msgbox(format("You would think Sir Amik Varze would be here in the throne room wouldn't you?\pWell sorry to burst your bubble, but he isn't here."))
+            hidenamebox
+            closemessage
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            //namebox("Sir Loin")
+			msgbox(format("King Vallance?\pYeh, he is still alive and kicking.\pWe try our best to keep the bucket away from him."))
+            hidenamebox
+            closemessage
+            release
+			end
+	}
+}
 
+script NPC_FALADORCASTLE_WHITEKNIGHT_14
+{
+	lock
+    faceplayer
+    namebox("White Knight")
+	msgbox(format("Well this is just one big mess.\pWhere am I meant to take these cabbages?\pUrgh, I'm so lost man."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_GUARD_3
+{
+	lock
+    faceplayer
+    namebox("Falador Guard")
+	msgbox(format("I just signed up and was assigned my first shift at the north gate!\pI cannot wait to tell my wife and kids the good news!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script BOOK_FALADORCASTLE_GUARD_INFO
+{
+	lock
+	msgbox(format("It is a book containing a list of all of the recently enlisted Guards.\pPage.9420\pPaul Gower, Age: 32 Seconds.\lAndrew Gower, Age: 54 Seconds.\lIan Gower, Age: 15 Seconds.\pWait, are these how many seconds they lasted as a guard?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script SIGN_BLURITE_CUPBOARD
+{
+	lock
+	msgbox(format("It looks like there was once a picture in the cupboard but someone must of taken it."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script BOOK_FALADORCASTLE_SIRVYVIN
+{
+	lock
+	msgbox(format("To my fellow knights, there have been rumours of sightings of the Kinshra around Ice Mountain.\pI will return once my mission is complete.\l--Sir Vyvin.\pP.S. Someone tell my squire that he doesn't need to keep greeting everyone who enters the castle."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script BOOK_CRANDOR
+{
+	lock
+	msgbox(format("It's a book about the Isle of Crandor.\pRead it?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_COOK
+{
+	lock
+    faceplayer
+    namebox("Cook")
+	msgbox(format("Never try cooking with Runes!\pI tried it once and the food come to life!\pWhat did I cook?\pUh, I think it was some Anchovies."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 
@@ -725,12 +917,87 @@ script NPC_FALADORCASTLE_SQUIRE
     lock
     faceplayer
     namebox ("Squire")
-	msgbox(format("Sorry I cannot chat.\pI have to go polish Sir Vyvin's sword."))
+    if (var(VAR_POKESCAPE_FALADOR_GYM_QUEST) <= 10)
+    { 
+        msgbox(format("For this gym challenge you must navigate your way through Falador Castle and locate Sir Amik Varze.\pIt sounds simple right?\pWell what are you waiting for, good luck challenger!"))
+    }
+    else {
+        msgbox(format("Sorry I cannot chat.\pI have to go find Sir Vyvin's sword."))
+    }
     closemessage
     hidenamebox
 	release
 	end
 }
+
+
+script FALADOR_GYM_1
+{
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if (var(VAR_TEMP_1) == 10){
+        //applymovement(5, FALADORCASTLE_MOVEMENT_SQUIRE_1)
+    } 
+    elif (var(VAR_TEMP_1) == 11){
+        applymovement(5, FALADORCASTLE_MOVEMENT_SQUIRE_2)
+    }
+    elif (var(VAR_TEMP_1) == 12){
+        applymovement(5, FALADORCASTLE_MOVEMENT_SQUIRE_3)
+    }
+    waitmovement(0)
+    namebox("Squire")
+    msgbox(format("Greetings, are you here for an MvM Championship challenge?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT))
+    { 
+        msgbox(format("Sorry, but if you are not here for a Gym Challenge then you must leave.\pSir Vyvin said no one may enter unless they are on offical White Knights business or a Gym Challenger."))
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_WALK_UP)
+        waitmovement(0)
+        if (var(VAR_TEMP_1) == 11){
+        applymovement(5, FALADORCASTLE_MOVEMENT_SQUIRE_2r)
+        }
+        elif (var(VAR_TEMP_1) == 12){
+            applymovement(5, FALADORCASTLE_MOVEMENT_SQUIRE_3r)
+        }
+        waitmovement(0)
+        return
+    }
+    msgbox(format("For this gym challenge you must navigate your way through Falador Castle and locate Sir Amik Varze.\pIt sounds simple right?\pWell what are you waiting for, good luck challenger!"))
+    closemessage
+    hidenamebox
+    setvar(VAR_POKESCAPE_FALADOR_GYM_QUEST, 5) //START FALADOR GYM CHALLENGE
+    return
+}
+
+movement FALADORCASTLE_MOVEMENT_SQUIRE_2 {
+    walk_left
+}
+movement FALADORCASTLE_MOVEMENT_SQUIRE_3 {
+    walk_left * 2
+}
+movement FALADORCASTLE_MOVEMENT_SQUIRE_2r {
+    walk_right
+}
+movement FALADORCASTLE_MOVEMENT_SQUIRE_3r {
+    walk_right * 2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script NPC_FALADORCASTLE_KNIGHT_9
 {
@@ -766,4 +1033,12 @@ script NPC_FALADORCASTLE_QUESTER
     hidenamebox
 	release
 	end
+}
+
+
+
+script ITEM_FALADOR_CASTLE_1
+{
+    finditem(ITEM_FIRE_RUNE)
+    end
 }

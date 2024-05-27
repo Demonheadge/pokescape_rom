@@ -29,12 +29,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_M",
-      "x": 14,
-      "y": 18,
+      "x": 22,
+      "y": 23,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 3,
-      "movement_range_y": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_FALADORCASTLE_WHITEKNIGHT_5",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_F",
-      "x": 17,
+      "x": 16,
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -50,7 +50,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
+      "script": "NPC_FALADORCASTLE_KNIGHT_CHAT_2",
       "flag": "0"
     },
     {
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 24,
-      "y": 20,
+      "x": 13,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -81,12 +81,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
-      "x": 11,
-      "y": 20,
+      "x": 9,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NPC_FALADORCASTLE_WHITEKNIGHT_4",
@@ -121,7 +121,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_M",
       "x": 34,
-      "y": 15,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 3,
@@ -172,15 +172,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_F",
-      "x": 20,
-      "y": 19,
+      "x": 22,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
+      "script": "NPC_FALADORCASTLE_KNIGHT_CHAT_3",
       "flag": "0"
     },
     {
@@ -253,26 +253,61 @@
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLE_1F",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 11,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_1F_R3",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 11,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_1F_R3",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_1F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 26,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_1F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 31,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_3F_R2",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
-      "x": 4,
-      "y": 12,
+      "x": 11,
+      "y": 15,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "1",
-      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT"
+      "var": "VAR_POKESCAPE_FALADOR_GYM_QUEST",
+      "var_value": "0",
+      "script": "FALADOR_GYM_1"
     },
     {
       "type": "trigger",
-      "x": 4,
-      "y": 11,
+      "x": 12,
+      "y": 15,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "1",
-      "script": "NPC_FALADORCASTLE_QUEST_PART_1"
+      "var": "VAR_POKESCAPE_FALADOR_GYM_QUEST",
+      "var_value": "0",
+      "script": "FALADOR_GYM_1"
     },
     {
       "type": "trigger",
@@ -285,12 +320,12 @@
     },
     {
       "type": "trigger",
-      "x": 3,
-      "y": 12,
+      "x": 10,
+      "y": 15,
       "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "2",
-      "script": "NPC_FALADORCASTLE_QUEST_PART_2"
+      "var": "VAR_POKESCAPE_FALADOR_GYM_QUEST",
+      "var_value": "0",
+      "script": "FALADOR_GYM_1"
     },
     {
       "type": "trigger",
@@ -312,6 +347,29 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 6,
+      "y": 14,
+      "elevation": 0,
+      "item": "ITEM_MINT_CAKE",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 22,
+      "y": 12,
+      "elevation": 0,
+      "item": "ITEM_POTION_SPATT",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_2"
+    },
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 33,
+      "elevation": 0,
+      "item": "ITEM_PRAYER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_4"
+    }
   ]
 }

@@ -338,7 +338,7 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     msgbox(format("Thank you for your assistance challenger.\pIf you could stop by the castle a bit later and assist me in filling out a report that'd be appricated."))
     closemessage
     hidenamebox
-    applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, MOVEMENT_INTERACT_UP)
+    applymovement(OBJ_EVENT_ID_QUEST_BLACKKNIGHT, MOVEMENT_INTERACT_UP)
     namebox ("Black Knight")
 	msgbox(format("You'll never get anything from us."))
     closemessage

@@ -6438,6 +6438,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUM_SWAMP_TRAINER_5[] = 
     }
 };
 
+static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_6[] = {
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_MUDSKIPPER,
+    .heldItem = ITEM_NONE
+    }
+};
 
 
 

@@ -1291,9 +1291,9 @@
 #define FLAG_ITEM_ROUTE0_TINDERBOX                                           0x4AD // Unused Flag
 #define FLAG_ITEM_ROUTE0_SWEETS                                           0x4AE // Unused Flag
 #define FLAG_ITEM_NORTH_VARROCK_1                                   0x4AF // Unused Flag //FLAG_UNUSED_0x4AF
-#define FLAG_ITEM_BRASS_HOUSE                                           0x4B0 // Unused Flag //FLAG_UNUSED_0x4B0 
-#define FLAG_ITEM_LUMBRIDGESWAMP_ITEM_2                                  0x4B1 // Unused Flag //FLAG_UNUSED_0x4B1
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
+#define FLAG_ITEM_BRASS_HOUSE                                       0x4B0 // Unused Flag //FLAG_UNUSED_0x4B0 
+#define FLAG_ITEM_LUMBRIDGESWAMP_ITEM_2                             0x4B1 // Unused Flag //FLAG_UNUSED_0x4B1
+#define FLAG_ITEM_FALADOR_CASTLE_1                                  0x4B2 // Unused Flag //FLAG_UNUSED_0x4B2
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
 #define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag

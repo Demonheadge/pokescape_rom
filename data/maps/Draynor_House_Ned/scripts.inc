@@ -5,10 +5,40 @@ Draynor_House_Ned_MapScripts::
 Ned_Draynor::
 	lock
 	namebox Ned_Draynor_Text_0
-	msgbox Ned_Draynor_Text_1
+	msgbox Ned_Draynor_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne Ned_Draynor_2
+	msgbox Ned_Draynor_Text_5
 	hidenamebox
 	release
 	end
+
+Ned_Draynor_2:
+	checkmoney 500, 0
+	compare VAR_RESULT, 0
+	goto_if_eq Ned_Draynor_5
+	msgbox Ned_Draynor_Text_4
+	removemoney 500
+	giveitem ITEM_ROPE
+	closemessage
+	hidenamebox
+	release
+	end
+
+Ned_Draynor_5:
+	checkplayergender
+	compare VAR_RESULT, MALE
+	goto_if_eq Ned_Draynor_8
+	msgbox Ned_Draynor_Text_3
+Ned_Draynor_7:
+	closemessage
+	hidenamebox
+	release
+	end
+
+Ned_Draynor_8:
+	msgbox Ned_Draynor_Text_2
+	goto Ned_Draynor_7
 
 
 DRAYNOR_NED_EVENT_WHITE_KNIGHT::
@@ -24,6 +54,22 @@ Ned_Draynor_Text_0:
 	.string "Ned$"
 
 Ned_Draynor_Text_1:
+	.string "Would you like to buy some of my world\n"
+	.string "famous rope?\p"
+	.string "It is 500gp each.$"
+
+Ned_Draynor_Text_2:
+	.string "Ah my boy, you seem to be short on\n"
+	.string "funds.$"
+
+Ned_Draynor_Text_3:
+	.string "Ah my girl, you seem to be short on\n"
+	.string "funds.$"
+
+Ned_Draynor_Text_4:
+	.string "Here you go, one of my finest!$"
+
+Ned_Draynor_Text_5:
 	.string "Hello, is there something I can help you\n"
 	.string "with?\p"
 	.string "Want to buy some rope perhaps?\p"
