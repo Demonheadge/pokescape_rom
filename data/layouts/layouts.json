@@ -6705,7 +6705,7 @@
       "id": "LAYOUT_FALADOR_CASTLE_1F",
       "name": "Falador_Castle_1F_Layout",
       "width": 20,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_Castle_1F/border.bin",
@@ -6927,7 +6927,7 @@
       "width": 12,
       "height": 18,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_PokeScape_HAM",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/BarbarianVillage_GymHall/border.bin",
       "blockdata_filepath": "data/layouts/BarbarianVillage_GymHall/map.bin"
     },
@@ -8560,6 +8560,36 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Edgeville_Route19_Brass_House/border.bin",
       "blockdata_filepath": "data/layouts/Edgeville_Route19_Brass_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_1F_R2",
+      "name": "Falador_Castle_1F_R2_Layout",
+      "width": 28,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_1F_R2/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_1F_R2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_1F_R3",
+      "name": "Falador_Castle_1F_R3_Layout",
+      "width": 10,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_1F_R3/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_1F_R3/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_3F_R2",
+      "name": "Falador_Castle_3F_R2_Layout",
+      "width": 30,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_3F_R2/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_3F_R2/map.bin"
     }
   ]
 }

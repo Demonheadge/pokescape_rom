@@ -716,7 +716,7 @@ script NPC_FALADORCASTLE_WHITEKNIGHT_10
 	lock
     faceplayer
     namebox("White Knight")
-	msgbox(format("This is our living quaters.\pI should probably but a barrier up to stop MvM challengers from coming in."))
+	msgbox(format("This is our living quaters.\pI should probably put up a barrier up to stop MvM challengers from coming in."))
     closemessage
     hidenamebox
 	release
@@ -1042,3 +1042,34 @@ script ITEM_FALADOR_CASTLE_1
     finditem(ITEM_FIRE_RUNE)
     end
 }
+
+
+
+
+//WHITE KNIGHT NAMES
+
+//Sir Fsup
+//Sir Tinded
+//Sir Prize
+//Sir Plus
+//Sir Tean
+//Sir Komstance
+//Sir Loin
+///Sir Cher
+//Sir Passing
+//Sir Junn
+//Sir Rated
+//Sir Fais
+//Sir Inity
+//Sir Geh
+//Sir Ellie
+//Sir Coat
+//Sir Fable
+//Sir Geon
+//Sir Misher
+//Sir Naime
+//Sir Paiss
+//Sir Plus
+//Sir Real
+//Sir Vival
+//Sir Ender
