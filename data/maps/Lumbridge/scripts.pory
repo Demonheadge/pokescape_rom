@@ -675,6 +675,14 @@ script Lumbridge_House_BobsAxes
 	faceplayer
 	namebox ("Bob")
 	msgbox(format("Welcome to Bob's Brilliant Axes.\pMy name is Bob, how may I be of assistance?"))
+	multichoicedefault (1, 0, MULTI_AXES, 0, 0)
+	switch (var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("Hmm, a Pickaxe you say?\pSorry but I don't sell those here, I only fix them.\pIf you want a pickaxe you should see the Dwarves up in the Dwarven Mines near Falador."))
+		case 1:
+			msgbox(format("An Axe?\pNormally I could help you with that but I am still waiting for my shipment to arrive.\pIt is quite late I hope nothing bad happened to it."))
+	}
+	closemessage
 	hidenamebox
 	release
 	end

@@ -25,6 +25,42 @@ script ITEM_SINKHOLE_3
     end
 }
 
+script BOOK_SMUGGLERS_JOURNAL_1
+{
+    msgbox(format("Smuggers Journal.\pThe Book is iced over and you cannot turn the page to read more.\pMaybe there is a way to thaw it one day."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script BOOK_SMUGGLERS_JOURNAL_2
+{
+    msgbox(format("Smuggers Journal.\pThe Book is iced over and you cannot turn the page to read more.\pMaybe there is a way to thaw it one day."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script BOOK_SMUGGLERS_JOURNAL_3
+{
+    msgbox(format("You find a Smuggers Journal.\pThe Book is iced over and you cannot turn the page to read more.\pMaybe there is a way to thaw it one day."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script DAMAGED_LADDER
+{
+    msgbox(format("The ladder is too damaged to use it."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
 script SINKHOLE_NPC_FORGOTTENWARRIOR_1
 {
     faceplayer
@@ -72,3 +108,56 @@ script BATTLE_SINKHOLE_NPC_FORGOTTENWARRIOR_1
 
 
 
+script ENCOUNTER_BEHEMOTH
+{
+	lock
+    faceplayer
+    namebox ("BEHEMOTH")
+    playmoncry(SPECIES_EKANS, 0)
+	msgbox(format("BEEHEHEHEHHROAAH!!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+
+    if (flag(FLAG_BADGE01_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_ADOLSCENT_FORM, 20, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE02_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_ADOLSCENT_FORM, 25, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE03_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_ADOLSCENT_FORM, 30, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE04_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_GLUTTONOUS_FORM, 35, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE05_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_GLUTTONOUS_FORM, 40, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE06_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_GLUTTONOUS_FORM, 45, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE07_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_GLUTTONOUS_FORM, 50, ITEM_NONE)
+    }
+    elif (flag(FLAG_BADGE08_GET) == TRUE) {
+        setwildbattle (SPECIES_BEHEMOTH_GLUTTONOUS_FORM, 55, ITEM_NONE)
+    }
+    else {
+        setwildbattle (SPECIES_BEHEMOTH_NORMAL_FORM, 10, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}

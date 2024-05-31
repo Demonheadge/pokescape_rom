@@ -137,6 +137,8 @@
 #define MULTI_FREMMYTEAMS                  123
 #define MULTI_SLAYER_MASTER                124
 #define MULTI_SCURRIUS                     125
+#define MULTI_AXES                         126
+
 
 
 

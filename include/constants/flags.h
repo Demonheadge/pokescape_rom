@@ -289,8 +289,8 @@
 #define FLAG_RECEIVED_TM19                   0xE8
 
 #define FLAG_PENGUIN_HUNT_ON_ROUTE                    0xE9 // Unused Flag //FLAG_UNUSED_0x0E9
+#define FLAG_SINKHOLE_BEHEMOTH_1             0xEA   //FLAG_RECEIVED_TM44
 
-#define FLAG_RECEIVED_TM44                   0xEA
 #define FLAG_RECEIVED_TM45                   0xEB
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEC
 #define FLAG_RECEIVED_SILVER_SHIELD          0xED

@@ -3095,6 +3095,10 @@ extern const u8 gText_CAVE_FUNGUS[];
 extern const u8 gText_GLOWING_MOSS[];
 extern const u8 gText_BROWN_WATER[];
 
+extern const u8 gText_PICKAXE[];
+extern const u8 gText_AXE[];
+
+
 //pokescape cheat menu
 extern const u8 gText_CheatEvolutionShop[];
 extern const u8 gText_CheatPouchShop[];

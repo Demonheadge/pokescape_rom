@@ -8,6 +8,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Added
 
+### Fixed
+
+### Removed
+
+
+## [1.5.3] - 31-05-2024
+
+### Added
+
+- Updated the River Lum
+
+- Added Behemoth encounter to Sinkhole.
+
+- Bob in Bob's axe's now hint at locations for Axe & Pickaxe.
+
 - Added new rooms, trainers, npcs, items to Falador Castle.
 
 - Added Trainers & items to Lumbridge Forest & Swamps. Also Reworking the maps.
