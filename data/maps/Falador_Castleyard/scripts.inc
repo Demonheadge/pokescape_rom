@@ -1369,7 +1369,7 @@ NPC_FALADORCASTLE_WHITEKNIGHT_9_Text_4:
 
 NPC_FALADORCASTLE_WHITEKNIGHT_10_Text_0:
 	.string "This is our living quaters.\p"
-	.string "I should probably but a barrier up to\n"
+	.string "I should probably put up a barrier up to\n"
 	.string "stop MvM challengers from coming in.$"
 
 NPC_FALADORCASTLE_WHITEKNIGHT_11_Text_0:

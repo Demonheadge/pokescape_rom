@@ -8,7 +8,7 @@ script TZHAAR_GAAL
 {
     faceplayer
     namebox ("Ga'al")
-    msgbox(format("Guh?\p.TzHaar?"))
+    msgbox(format("Guh?\pTzHaar?"))
     closemessage
     hidenamebox
     release
@@ -31,11 +31,24 @@ script TRIGGER_TZHAAR_GYM_GAAL_1
 
 
 
-script TZHAAR_GYM_NPC
+script TZHAAR_FIGHTCAVES_NPC
 {
     faceplayer
     //namebox ("Tzhaar")
-    msgbox(format("Welcome to the Tzhaar Fight Caves!\pOnly MvM challengers may enter.\pIf you wish to participate see TokHaar-Hok in Kiln to the north."))
+    msgbox(format("Welcome to the Tzhaar Fight Caves!\pOnly those with the Tzhaar badge may enter."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script TZHAAR_GYM_NPC
+{
+    lock
+    faceplayer
+    namebox ("Ga'Al")
+    msgbox(format("Welcome to the Tzhaar Gym."))
     closemessage
     hidenamebox
     release
@@ -46,7 +59,9 @@ script TZHAAR_NPC_1
 {
     faceplayer
     //namebox ("Tzhaar")
-    msgbox(format("We Tzhaar are strong.\pOur strongest participate in what you call MvM Championships.\pWe even have a gym located in the Elder Kiln which is located in the north of the city."))
+    msgbox(format("We Tzhaar are strong.\pOur strongest participate in what you call MvM Championships.\pWe even have a gym located down this corridor."))
+    msgbox(format("Would you like me to show you?"))
+    msgbox(format("Here we are this is the Tzhaar Gym, our champion is one of the strongest Tzhaar!"))
     closemessage
     hidenamebox
     release
@@ -55,15 +70,19 @@ script TZHAAR_NPC_1
 
 script TZHAAR_NPC_2
 {
+    lock
     faceplayer
+    msgbox(format("Through here is the Elder Kiln.\pThis is for Tzhaar only.\pYou are not Tzhaar."))
+
+
     //namebox ("Tzhaar")
-    msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pWould you like me to escort you?"))
+    //msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pWould you like me to escort you?"))
     closemessage
     hidenamebox
     //Warp to gym leader.
 
     //if gym badge is got:
-    msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pYou seem skilled enough that you no longer need an escort."))
+    //msgbox(format("Through here is the Elder Kiln, which is where you can find our Gym Leader.\pYou seem skilled enough that you no longer need an escort."))
     release
     end
 }
@@ -105,7 +124,7 @@ script TZHAAR_NPC_6
 {
     faceplayer
     //namebox ("Tzhaar")
-    msgbox(format("To the north are our sacred Kilns.\pTo the west leads deep into the volcano.\pTo the south-east leads to the Fight Caves.\pTo the south leads to the island.\pSo many ways to go, which way will you take?"))
+    msgbox(format("To the north are our sacred Kilns.\pTo the west leads deep into the volcanos inferno.\pTo the south-east leads to the Fight Caves.\pTo the south leads to the island.\pSo many ways to go, which way will you take?"))
     closemessage
     hidenamebox
     release
@@ -160,7 +179,7 @@ script TZHAAR_NPC_11
 {
     faceplayer
     //namebox ("Tzhaar")
-    msgbox(format("There are 3 different races.\pTokHaar, Jal and Tzhaar.\pThere are also the Ga'al, they are new."))
+    msgbox(format("There are 3 different races.\pTokHaar, Jal and Tzhaar.\pThere are also the Ga'al, they are new.\pSo I suppose there are 4 now."))
     closemessage
     hidenamebox
     release
@@ -232,3 +251,29 @@ script TZHAAR_ZANIK
 }
 
 //Possibly include some variable dialogue that acknowledges you have seen Jad if you have the badge?
+
+
+
+
+
+
+
+
+script STORYMODE_TZHAAR_NPC
+{
+    faceplayer
+    //namebox ("Tzhaar")
+    msgbox(format("Thank you for chasing off those pink men, they have been very destructive to the area.\pFeel free to use our facilities, and seeing as your are an MvM challenger our gym is located to the west of here."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+

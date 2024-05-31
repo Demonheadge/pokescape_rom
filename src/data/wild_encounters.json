@@ -14200,17 +14200,17 @@
               {
                 "min_level": 30,
                 "max_level": 36,
-                "species": "SPECIES_ALBINO_BAT"
-              },
-              {
-                "min_level": 30,
-                "max_level": 36,
-                "species": "SPECIES_CRAWLER_CAVE_FORM"
+                "species": "SPECIES_DESERTWYRM"
               },
               {
                 "min_level": 30,
                 "max_level": 36,
                 "species": "SPECIES_DESERTWYRM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 36,
+                "species": "SPECIES_ALBINO_BAT"
               },
               {
                 "min_level": 30,

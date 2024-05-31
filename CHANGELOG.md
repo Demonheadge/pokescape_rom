@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Added
 
+- Tzhaar Gym leader has been changed from TokHaar to Tzhaar Champion.
+- Tzhaar area NPCs & Maps updated.
+
 ### Fixed
 
 ### Removed

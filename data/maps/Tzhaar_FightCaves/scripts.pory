@@ -173,3 +173,58 @@ script BATTLE_MOD_SARNIE
     release
 	end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//New Tzhaar Gym.
+
+script NPC_TZHAAR_GYM_LEADER
+{
+    lock
+    faceplayer
+    namebox("Tzhaar Champion")
+    switch (var(VAR_POKESCAPE_TZHAAR_GYM_QUEST)){ 
+		case 0:
+			msgbox(format("Welcome to the Tzhaar Gym, MvM Challenger.\pI am TzHaar Champion.\pIf the Tzhaar Badge is what you seek, then you must participate in our Gym Challenge.\pBattle your way through 2 Waves of my brethren then defeat me in battle."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1)
+        case 1:
+            msgbox(format("Would you like to start your Gym challenge?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT))
+            {
+            msgbox(format("Very well, Ga'al will escort you to the caves."))
+            closemessage
+            hidenamebox
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 5)
+
+            //applymovement to tzhaar.
+            msgbox(format("Follow me."))
+            //warp()
+            }
+        case 10: // If you lose the Gym Challenge.
+            msgbox(format("Us Tzhaar have proven Victorious this time.\pCome back and challenge us again when you are ready."))
+            setvar(VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1)
+    }
+    hidenamebox
+    closemessage
+    release
+    end
+}

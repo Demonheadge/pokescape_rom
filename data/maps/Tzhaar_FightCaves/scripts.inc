@@ -181,6 +181,45 @@ BATTLE_MOD_SARNIE::
 	end
 
 
+NPC_TZHAAR_GYM_LEADER::
+	lock
+	faceplayer
+	namebox NPC_TZHAAR_GYM_LEADER_Text_0
+	switch VAR_POKESCAPE_TZHAAR_GYM_QUEST
+	case 0, NPC_TZHAAR_GYM_LEADER_3
+	case 1, NPC_TZHAAR_GYM_LEADER_4
+	case 10, NPC_TZHAAR_GYM_LEADER_5
+NPC_TZHAAR_GYM_LEADER_1:
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_TZHAAR_GYM_LEADER_3:
+	msgbox NPC_TZHAAR_GYM_LEADER_Text_1
+	setvar VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1
+	goto NPC_TZHAAR_GYM_LEADER_1
+
+NPC_TZHAAR_GYM_LEADER_4:
+	msgbox NPC_TZHAAR_GYM_LEADER_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_TZHAAR_GYM_LEADER_6
+	goto NPC_TZHAAR_GYM_LEADER_1
+
+NPC_TZHAAR_GYM_LEADER_5:
+	msgbox NPC_TZHAAR_GYM_LEADER_Text_4
+	setvar VAR_POKESCAPE_TZHAAR_GYM_QUEST, 1
+	goto NPC_TZHAAR_GYM_LEADER_1
+
+NPC_TZHAAR_GYM_LEADER_6:
+	msgbox NPC_TZHAAR_GYM_TOKHAAR_Text_3
+	closemessage
+	hidenamebox
+	setvar VAR_POKESCAPE_TZHAAR_GYM_QUEST, 5
+	msgbox NPC_TZHAAR_GYM_LEADER_Text_3
+	goto NPC_TZHAAR_GYM_LEADER_1
+
+
 NPC_TZHAAR_GYM_TOKHAAR_Text_0:
 	.string "TokHaar-Hok$"
 
@@ -292,3 +331,29 @@ BATTLE_MOD_SARNIE_Text_3:
 	.string "You should try the special fight wave\n"
 	.string "challenges.\p"
 	.string "You could get a Fire Cape like me.$"
+
+NPC_TZHAAR_GYM_LEADER_Text_0:
+	.string "Tzhaar Champion$"
+
+NPC_TZHAAR_GYM_LEADER_Text_1:
+	.string "Welcome to the Tzhaar Gym, MvM\n"
+	.string "Challenger.\p"
+	.string "I am TzHaar Champion.\p"
+	.string "If the Tzhaar Badge is what you seek,\n"
+	.string "then you must participate in our Gym\l"
+	.string "Challenge.\p"
+	.string "Battle your way through 2 Waves of my\n"
+	.string "brethren then defeat me in battle.$"
+
+NPC_TZHAAR_GYM_LEADER_Text_2:
+	.string "Would you like to start your Gym\n"
+	.string "challenge?$"
+
+NPC_TZHAAR_GYM_LEADER_Text_3:
+	.string "Follow me.$"
+
+NPC_TZHAAR_GYM_LEADER_Text_4:
+	.string "Us Tzhaar have proven Victorious this\n"
+	.string "time.\p"
+	.string "Come back and challenge us again when\n"
+	.string "you are ready.$"
